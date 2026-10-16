@@ -12,7 +12,9 @@ if (!file) { console.error('Usage: node scripts/validate-draft.mjs <draft.json>'
 const draft = JSON.parse(readFileSync(file, 'utf8'));
 const bank = JSON.parse(readFileSync(path.join(root, 'data/question-bank.json'), 'utf8'));
 const glossary = JSON.parse(readFileSync(path.join(root, 'content/glossary.json'), 'utf8'));
-const topics = ['meal-foundations', 'theory-of-change', 'results-framework', 'kpis-measurement', 'data-quality', 'evidence-systems', 'impact-assessment', 'learning-adaptation', 'accountability-inclusion', 'implementation-governance'];
+const topics = ['meal-foundations', 'theory-of-change', 'results-framework', 'kpis-measurement', 'evidence-systems', 'impact-assessment', 'learning-adaptation', 'accountability-inclusion', 'implementation-governance'];
+// Question id block per topic. Q221..Q250 belonged to the retired data-quality module and stays unused.
+const BLOCK_START = { 'meal-foundations': 101, 'theory-of-change': 131, 'results-framework': 161, 'kpis-measurement': 191, 'evidence-systems': 251, 'impact-assessment': 281, 'learning-adaptation': 311, 'accountability-inclusion': 341, 'implementation-governance': 371 };
 const SECTIONS = new Set(['1', '1.1', '1.2', '1.3', '2', '2.1', '2.2', '2.3', '2.4', '2.5', '2.6', '2.7', '3', '3.1', '3.2', '3.3', '4', '4.1', '4.2', '4.3', '5', '5.1', '5.2', '5.3', '5.4', '5.5', '5.6', '5.7', '5.8', '5.9', '5.10', '6', '6.1', '6.2', 'Annex A']);
 const SCENES = {
   title: ['title'], cards: ['items'], chain: ['steps'], stack: ['layers'], sort: ['bins', 'cards'], split: ['left', 'right'], dial: ['segments', 'value'], fan: ['source', 'branches', 'target'], compass: ['directions'], grid: ['rows', 'cols'], loop: ['steps'], counter: ['items'], dissolve: ['from', 'to'], checklist: ['items'],
@@ -60,7 +62,7 @@ for (const sb of mod.storyboards ?? []) {
   for (const f of sb.frames ?? []) {
     if (!f.id || frameIds.has(f.id)) err(`storyboard ${sb.id}: frame id missing or duplicate (${f.id})`);
     frameIds.add(f.id);
-    if (typeof f.seconds !== 'number' || f.seconds < 4 || f.seconds > 30) err(`storyboard ${sb.id} frame ${f.id}: seconds must be 4..30`);
+    if (typeof f.seconds !== 'number' || f.seconds < 4 || f.seconds > 40) err(`storyboard ${sb.id} frame ${f.id}: seconds must be 4..40`);
     if (!f.narration || f.narration.length < 20) err(`storyboard ${sb.id} frame ${f.id}: narration too short`);
     if (/—/.test(f.narration ?? '')) warn(`storyboard ${sb.id} frame ${f.id}: narration contains an em dash`);
     const scene = f.scene;
@@ -133,7 +135,7 @@ for (const m of draft.misconceptions ?? []) {
 }
 
 // Questions
-const block = isOrientation ? null : [101 + topicIndex * 30, 130 + topicIndex * 30];
+const block = isOrientation ? null : [BLOCK_START[mod.id], BLOCK_START[mod.id] + 29];
 const keyCounts = { a: 0, b: 0, c: 0, d: 0 };
 const checkByObjective = new Map();
 let practice = 0, check = 0;

@@ -249,13 +249,13 @@ footer.site{padding:34px 0;font-size:11px;color:var(--gray);display:flex;justify
   <div>
     <p class="eyebrow">CIMMYT MEAL Framework 2026–2030 · Course specification</p>
     <h1>Diagnose.<br><span class="highlight">Study</span><br>what matters.</h1>
-    <p class="lead">A self-paced course that wraps the 15-question assessment. The diagnostic becomes a prescription, each module ends in a mastery check, and the plan shrinks as gaps close. This page shows the philosophy, the rules, the modules and the engine behind it, with the motion language demonstrated live.</p>
+    <p class="lead">A self-paced course that wraps the 10-question assessment. The diagnostic becomes a prescription, each module ends in a mastery check, and the plan shrinks as gaps close. This page shows the philosophy, the rules, the modules and the engine behind it, with the motion language demonstrated live.</p>
     <div class="facts"><span><strong>10</strong> modules</span><span><strong>62</strong> lessons</span><span><strong>347</strong> questions</span><span><strong>280</strong> storyboard frames</span><span><strong>~5.5 h</strong> of study</span></div>
   </div>
   <div class="chain-demo paper" id="heroChain">
     <div class="top"><span class="eyebrow">The learner journey</span><span class="small-tag">assembles on load</span></div>
     <div class="chain">
-      <div class="cell"><div class="slab tint-b"><strong>Diagnostic</strong><span>15 questions, Sure or Not sure</span></div><div class="conn"><i></i><b></b><em>scored</em></div></div>
+      <div class="cell"><div class="slab tint-b"><strong>Diagnostic</strong><span>10 questions, Sure or Not sure</span></div><div class="conn"><i></i><b></b><em>scored</em></div></div>
       <div class="cell"><div class="slab tint-y"><strong>Plan</strong><span>Modules and lessons, with reasons</span></div><div class="conn"><i></i><b></b><em>per module</em></div></div>
       <div class="cell"><div class="slab tint-g"><strong>Lessons</strong><span>3 to 6 minutes, five beats</span></div><div class="conn"><i></i><b></b><em>4 of 5</em></div></div>
       <div class="cell"><div class="slab green"><strong>Mastered</strong><span>Check passed, plan shrinks</span></div></div>
@@ -416,7 +416,7 @@ footer.site{padding:34px 0;font-size:11px;color:var(--gray);display:flex;justify
 
   <p class="eyebrow" style="margin-top:36px">Content pipeline</p>
   <div class="pipeline">
-    <div class="card paper" data-reveal style="--i:0"><span class="micro">Step 1</span><h3>Author a draft</h3><p>One bundle per module: module, misconceptions, tags for its ten diagnostic items, new practice and check questions in its own id block.</p></div>
+    <div class="card paper" data-reveal style="--i:0"><span class="micro">Step 1</span><h3>Author a draft</h3><p>One bundle per module: module, misconceptions, tags for its retained diagnostic items, new practice and check questions in its own id block.</p></div>
     <div class="card paper" data-reveal style="--i:1"><span class="micro">Step 2</span><h3>Validate</h3><p><code>validate-draft.mjs</code>: ids, beats, scene fields, pools, objective coverage, key balance, option lengths, no em dashes.</p></div>
     <div class="card paper" data-reveal style="--i:2"><span class="micro">Step 3</span><h3>Merge</h3><p><code>merge-drafts.mjs</code> writes modules, appends questions, applies diagnostic tags, collects misconceptions and glossary additions.</p></div>
     <div class="card paper" data-reveal style="--i:3"><span class="micro">Step 4</span><h3>Test</h3><p><code>content.test.ts</code> enforces the schema; engine and learner tests run against the real content with seeded draws.</p></div>

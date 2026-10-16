@@ -29,7 +29,7 @@ export type Attempt = {
   cursor: number;
 };
 export type TopicScore = { topicId: TopicId; asked: number; correct: number; percent: number };
-export const SESSION_SIZE = 15;
+export const SESSION_SIZE = 10;
 /** Legacy (v1) storage key. Learner state v2 lives under lib/learner.ts STORAGE_KEY and migrates from this key. */
 export const STORAGE_KEY = 'cimmyt-meal-assessment-v1';
 export const diagnosticPool = (bank: Bank) => bank.questions.filter(q => q.pool === 'diagnostic');
@@ -51,13 +51,11 @@ export function shuffle<T>(items: readonly T[], rng: () => number = random): T[]
 }
 
 export function createAttempt(bank: Bank, name = '', rng: () => number = random): Attempt {
-  const doubledTopics = new Set(shuffle(TOPICS.map(t => t.id), rng).slice(0, 5));
-  const selected = TOPICS.flatMap(topic => {
-    const pool = shuffle(bank.questions.filter(q => q.topicId === topic.id && q.pool === 'diagnostic'), rng);
-    const count = doubledTopics.has(topic.id) ? 2 : 1;
-    if (pool.length < count) throw new Error(`Not enough questions for ${topic.id}`);
-    return pool.slice(0, count);
-  });
+  // Every learner sees the ten workshop messages; only display order changes.
+  const selected = diagnosticPool(bank);
+  if (selected.length !== SESSION_SIZE || TOPICS.some(t => !selected.some(q => q.topicId === t.id))) {
+    throw new Error('The diagnostic needs 10 questions covering every topic.');
+  }
   return {
     id: globalThis.crypto.randomUUID(),
     bankVersion: bank.bankVersion,
@@ -93,12 +91,12 @@ export function scoreAttempt(bank: Bank, attempt: Attempt) {
 }
 
 export function finishAttempt(attempt: Attempt): Attempt {
-  if (answeredCount(attempt) !== SESSION_SIZE) throw new Error('Answer all 15 questions before finishing.');
+  if (attempt.items.length !== SESSION_SIZE || answeredCount(attempt) !== SESSION_SIZE) throw new Error(`Answer all ${SESSION_SIZE} questions before finishing.`);
   return { ...attempt, finishedAt: new Date().toISOString() };
 }
 
-/** Bank versions whose diagnostic items (Q001 to Q100) are unchanged, so saved attempts can be carried forward. */
-export const COMPATIBLE_BANK_VERSIONS = ['1.0.0'];
+/** Earlier banks used different questions and a 15-item diagnostic. */
+export const COMPATIBLE_BANK_VERSIONS: string[] = [];
 
 export function restoreAttempt(raw: string | null, bank: Bank, acceptVersions: readonly string[] = []): Attempt | null {
   if (!raw) return null;
@@ -114,7 +112,7 @@ export function restoreAttempt(raw: string | null, bank: Bank, acceptVersions: r
     const counts = new Map<string, number>();
     for (const item of a.items) {
       const q = questionMap.get(item.questionId);
-      if (!q || !Array.isArray(item.optionIds) || item.optionIds.length !== q.options.length || new Set(item.optionIds).size !== q.options.length || item.optionIds.some(id => !q.options.some(o => o.id === id))) return null;
+      if (!q || q.pool !== 'diagnostic' || !Array.isArray(item.optionIds) || item.optionIds.length !== q.options.length || new Set(item.optionIds).size !== q.options.length || item.optionIds.some(id => !q.options.some(o => o.id === id))) return null;
       counts.set(q.topicId, (counts.get(q.topicId) ?? 0) + 1);
     }
     if (TOPICS.some(t => ![1, 2].includes(counts.get(t.id) ?? 0))) return null;

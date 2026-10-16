@@ -1,54 +1,127 @@
-# CIMMYT MEAL assessment bank review
+# Revised MEAL workshop assessment
 
-Source: `CIMMYT_MEAL_Framework_2026-2030_FINAL.docx`, read through the full paragraph-and-table extraction in `framework_full.txt`.
+Bank 4.0.0. Ten questions; one point each. Choose the best answer.
 
-## Coverage
+The questions focus on the workshop messages rather than recall of framework labels, indicator counts, budget formulas or roadmap dates. All ten appear in every assessment, with question and option order shuffled. The other 94 practice and 129 mastery-check questions remain available in their course modules.
 
-The bank contains 100 single-answer multiple-choice questions. Each of the ten topics has ten questions and each question has four options, a correct-answer key, a two-sentence explanation, a study action and a reference to an actual section or Annex A.
+Source: the user-supplied presentation transcript and the CIMMYT MEAL Framework 2026-2030. The transcript is incomplete (it jumps from 08:41 to 38:28) and contains transcription errors. Timestamps below identify supporting discussion, not verbatim quotations or verified speaker identities. Indicator alignment at 05:03 is a participant expectation; the measurement rule comes from framework section 3. Learning actions and theory-of-change details are supported by the framework.
 
-| Topic | Question IDs | Main coverage |
-| --- | --- | --- |
-| MEAL foundations | Q001–Q010 | Purpose, strategic effects, observation-level evidence, evidence functions, institutional value and 2030 capabilities |
-| Theory of change | Q011–Q020 | Proposal timing, results architecture, assumptions, adoption pathways, digital advice, upstream science, seed systems and ownership |
-| Results framework | Q021–Q030 | Processes, outputs, outcomes, impact, policy change, reach and quality, indicator crosswalks, ownership and measurement plans |
-| KPIs and measurement | Q031–Q040 | Toolbox structure, Thrusts, harmonization, yield methods, aggregation, local scope, reference sheets and quality ratings |
-| Data quality | Q041–Q050 | Six quality dimensions, identifiers, outliers, missingness, representativeness, provenance, validation, re-analysis, cadence and staff roles |
-| Evidence systems | Q051–Q060 | Four evidence layers, satellite calibration, context, operational links, authoritative systems, offline work, reporting mappings, KPI engine and ownership |
-| Impact assessment | Q061–Q070 | Contribution, context, counterfactuals, triangulation, direct measurement, study methods, baselines, uncertainty, roles and shock-event studies |
-| Learning and adaptation | Q071–Q080 | Evidence reviews, decision logs, management responses, context differences, evidence gaps, staff support, pilots, handover and cross-site learning |
-| Accountability and inclusion | Q081–Q090 | Four accountability directions, community feedback, disaggregation, negative findings, scientific accountability, consent, access and internal responsibility |
-| Implementation and governance | Q091–Q100 | Matrix classification, complexity adjustment, Small/Medium/MEGA budgeting, indicator approval, exceptions, pillars, roadmap and pilot selection |
+## Questions and facilitator answer key
 
-All six main framework sections and Annex A supply content. Direct source references span 31 distinct section identifiers. The bank has 34 foundation, 58 applied and 8 advanced questions; 65 items carry `source.kind: application`, including realistic project decisions and calculations.
+### 1. Why is CIMMYT changing its MEAL approach?
 
-## Source limits and deliberate choices
+- **A.** To focus reporting on how many activities were completed.
+- **B.** To show what changed, for whom, and how CIMMYT contributed.
+- **C.** To make the MEAL team responsible for all project results.
+- **D.** To collect more data before deciding what it will be used for.
 
-- The framework gives no standalone textbook definition of a theory of change. The bank tests its documented use in proposal design, results architecture, assumptions and contribution pathways. Inferred uses carry the `application` tag and explanations that connect the scenario to the source.
-- The framework describes 142 indicators but does not provide the full reference sheets for all 142 in this document. The questions test its stated architecture and measurement rules. They do not invent indicator-level thresholds, formulas or definitions.
-- Section 5.10 gives a MEGA minimum institutional contribution of USD 27,000 per project year. Several Annex A rows also state that minimum for Large projects, while others leave it unspecified. The bank does not assert a universal Large-project minimum. Q095 explicitly cites the MEGA rule in section 5.10.
-- The Matrix says to move up one complexity level for certain evidence commitments but does not name a level above Complex. Q092 starts from Intermediate and therefore has an unambiguous Complex answer.
-- Roadmap dates describe the plan in the supplied document. The bank does not claim that the planned milestones have already occurred.
-- The stated 12.5% maize moisture value appears only as the source’s example in Q034’s explanation. The bank does not present it as a universal standard for all crops.
-- The bank does not test AURORA-specific rules, legal variety-release criteria or external evaluation methods that the supplied framework does not explain.
+**Answer: B.** MEAL means Monitoring, Evaluation, Accountability and Learning. The new approach uses evidence to explain change and improve decisions, as well as report what was delivered.
 
-## Validation completed
+Evidence: transcript 42:12-42:50; 45:43-46:42; framework 1, A New MEAL Approach for CIMMYT. Stable item ID: Q002.
 
-- Exactly 100 unique, sequential IDs: Q001 through Q100.
-- Exactly ten questions in each requested topic.
-- Exactly four distinct options per item, with option IDs `a`, `b`, `c` and `d`.
-- Exactly one valid correct-answer key per item.
-- No duplicate question text.
-- Correct keys balance at 25 per letter, with shuffled positions.
-- All required text and source fields are present; every source reference maps to a real heading in the supplied document.
-- Checked application items against their source sections, including the Medium budget calculation: 5% of USD 300,000 is USD 15,000, so the USD 18,000 minimum applies.
-- Revised distractors to reflect MEAL choices and common errors rather than unrelated office tasks.
-- Checked answer lengths for obvious clues. Correct and incorrect options have similar average lengths; exact named categories retain their natural label lengths.
-- Checked the supplied writing-style ban list and removed prohibited vocabulary and em dashes. Assessment questions are required by the user’s task; they are not rhetorical questions.
+### 2. A project plans to train seed companies so more farmers can use improved seed. What should its theory of change explain?
 
-This is a source-grounded formative assessment bank, not a psychometrically validated examination. A 15-item attempt samples a small share of the bank, so topic scores should show the number answered and be described as guidance for review. A one-question topic result should not be presented as a reliable mastery estimate.
+- **A.** How many training sessions the project plans to hold.
+- **B.** How the training budget will be divided among partners.
+- **C.** Which report will record the number of people trained.
+- **D.** How training could lead to seed use, and what must happen along the way.
 
-Suggested app behavior: select one question from every topic, then five additional questions from distinct topics; shuffle question order and option display order. Keep answers hidden until submission, award one point per correct answer and show source-linked explanations afterward. Report the attempt score as correct answers divided by 15, with the numerator and denominator visible.
+**Answer: D.** A theory of change explains how activities are expected to lead to change. Here, the team needs to consider whether companies will produce and sell the seed and whether farmers can access and use it.
 
-## Course extension (bank 2.0.0)
+Evidence: transcript 43:08-43:47; 47:18-47:49; framework Annex A, MEAL Matrix. Stable item ID: Q013.
 
-The bank now holds 347 items in three pools. The 100 diagnostic items (Q001 to Q100) are unchanged in text and key; they gained `objectiveIds` and, where a distractor reflects a named mix-up, `misconceptions` tags. Each topic module adds 10 to 11 practice items (used by lesson micro-checks, answer shown immediately) and 13 to 15 check items (mastery checks, 5 drawn per attempt, never repeating an item the learner has seen). Each module owns a 30-id block starting at Q101 in topic order. Every objective has at least two check items; every check pool covers at least four objectives. Authoring rules, the draft validator and the merge step are described in `content-authoring.md`; the schema test in `tests/content.test.ts` enforces them.
+### 3. After training seed companies, which follow-up best shows a change in their practice?
+
+- **A.** Check whether the companies now produce and sell the improved seed.
+- **B.** Count how many company staff attended the training.
+- **C.** Confirm that the trainers shared all presentation materials.
+- **D.** Check whether the training was completed within its budget.
+
+**Answer: A.** Outcome monitoring follows what partners do after an activity. Seed production and sales show a next step beyond training, but do not by themselves prove improved farmer yields or income.
+
+Evidence: transcript 42:50-43:47; framework 2.3, Outcomes. Stable item ID: Q023.
+
+### 4. Two projects both measure farmer adoption of a practice. How can they make their results comparable?
+
+- **A.** Add their totals because both indicators use the word adoption.
+- **B.** Use the same survey form, even if it does not suit both projects.
+- **C.** Agree what counts as adoption and use compatible measurement methods.
+- **D.** Let each project define adoption and compare the final percentages.
+
+**Answer: C.** Shared indicator definitions help teams compare results meaningfully. Methods can fit local conditions, but the team must check that the results measure the same concept before combining them.
+
+Evidence: transcript 05:03-05:21 (participant expectation); framework section 3; framework 3, KPI Approach: Comparable and Fit for Purpose. Stable item ID: Q033.
+
+### 5. A team has limited time to collect evidence. What should it prioritize?
+
+- **A.** Collecting the largest possible number of survey responses.
+- **B.** Reliable records that answer its questions and show where the data came from.
+- **C.** Keeping only the summary totals needed for the final report.
+- **D.** Collecting every available variable in case it is useful later.
+
+**Answer: B.** The priority is useful, good-quality evidence, not simply more data. Keep records of what happened, where and when, how it was measured, and the conditions that help explain the result.
+
+Evidence: transcript 45:43-46:42; framework 2.5, The Five Evidence Functions. Stable item ID: Q053.
+
+### 6. Farmer yields improve during a project, and rainfall also improves. What should the team conclude?
+
+- **A.** The project caused the full increase because it worked with these farmers.
+- **B.** Rainfall caused the full increase because growing conditions improved.
+- **C.** The increase proves that the project will work equally well everywhere.
+- **D.** More evidence is needed to understand the project contribution alongside rainfall.
+
+**Answer: D.** Changes can have several causes, including weather, markets and partner actions. The team should investigate CIMMYT's contribution and explain the limits of the evidence.
+
+Evidence: transcript 41:49-44:09; framework 2.4, Impact. Stable item ID: Q061.
+
+### 7. Yields stay the same during a drought in an area supported by a project. How should the team interpret this result?
+
+- **A.** The project may have prevented a decline; check what would likely have happened without it.
+- **B.** The project had no benefit because yields did not increase during the drought.
+- **C.** The project was successful because stable yields always show a positive effect.
+- **D.** The result adds no useful information and should be left out of the report.
+
+**Answer: A.** No observed increase does not always mean no benefit: the project may have helped prevent a decline. A suitable comparison and evidence about other conditions are needed to assess what would likely have happened without it.
+
+Evidence: transcript 39:25-41:23; 44:09-45:30; framework 2.4, Impact. Stable item ID: Q062.
+
+### 8. Monitoring shows that few farmers use a practice after training. What should the team do next?
+
+- **A.** Repeat the training in the same way to reach more farmers.
+- **B.** Wait for the final report before discussing low use.
+- **C.** Explore the reasons with farmers and partners, agree changes, and follow up.
+- **D.** Record the low use in a dashboard and continue the existing plan.
+
+**Answer: C.** Learning means using evidence to improve what the team does. Agree what will change, who will act and when to check whether the change helped; record difficult findings as well as positive ones.
+
+Evidence: transcript 43:47-43:56; framework section 5.7; framework 5.7, Operating Cadence and Assurance. Stable item ID: Q071.
+
+### 9. Who does CIMMYT need to account to for its work and results?
+
+- **A.** Investors and institutional partners only.
+- **B.** Investors and partners, farmers and communities, science and CGIAR, and internal teams.
+- **C.** Scientific peers and CGIAR only.
+- **D.** Project managers and CIMMYT leadership only.
+
+**Answer: B.** Accountability runs in four directions. It includes explaining results and limitations, listening and responding to communities, maintaining scientific standards, and taking responsibility within the organization.
+
+Evidence: transcript 47:49-48:35; framework 2.7, Accountability in Practice. Stable item ID: Q081.
+
+### 10. When should a project plan and budget for monitoring, evidence collection and learning?
+
+- **A.** When the investor asks for the first progress report.
+- **B.** After activities are finished and results are available.
+- **C.** When an impact study is commissioned at project closure.
+- **D.** During proposal design, with clear roles and resources agreed early.
+
+**Answer: D.** Build MEAL into the proposal, workplan and budget from the start. Project teams, partners and MEAL colleagues need agreed responsibilities so evidence is collected during implementation and used in decisions.
+
+Evidence: transcript 39:13-39:22; 47:18-47:49; framework 5.1, Project Lifecycle: MEAL from Proposal to Impact. Stable item ID: Q091.
+
+## Scoring and continuity
+
+Report the score as correct answers out of 10, with a percentage. Each topic has one question, except impact assessment, which has two to cover contribution and avoided decline. Topic results guide review; they are not a reliable measure of mastery. Answers, explanations and review tips appear after submission.
+
+Previous 15-question diagnostic scores are not comparable with this revision. Version 3 lesson completion, mastery checks and capstone progress are preserved, while the old diagnostic and its study plan are cleared. A new diagnostic rebuilds the plan.
+
+Both JSON bank copies and draft objective/misconception tags are synchronized. Framework source references, four options per item, one correct answer, all nine topics, scoring, incomplete submissions and saved-progress handling are covered by automated checks.

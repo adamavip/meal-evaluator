@@ -1,7 +1,7 @@
 {
   "module": {
     "id": "accountability-inclusion",
-    "order": 9,
+    "order": 8,
     "title": "Accountability & inclusion",
     "short": "Accountability",
     "minutes": 26,
@@ -56,7 +56,7 @@
     ],
     "lessons": [
       {
-        "id": "L9.1",
+        "id": "L8.1",
         "moduleId": "accountability-inclusion",
         "title": "Four directions of accountability",
         "objectiveIds": [
@@ -67,7 +67,7 @@
           "hook": "Every investor deadline met. Does that make the project accountable? The framework says accountability runs in four directions, and the investor is only one of them.",
           "explainer": {
             "kind": "storyboard",
-            "storyboardId": "sb-m9-hero"
+            "storyboardId": "sb-m8-hero"
           },
           "example": {
             "kind": "interactive",
@@ -163,7 +163,7 @@
         ]
       },
       {
-        "id": "L9.2",
+        "id": "L8.2",
         "moduleId": "accountability-inclusion",
         "title": "Community feedback that reaches decisions",
         "objectiveIds": [
@@ -174,7 +174,7 @@
           "hook": "Fourteen pieces of participant feedback sit in a folder. Nobody has acted on any of them. Is that a feedback mechanism? Not yet. The framework measures feedback by what it changes.",
           "explainer": {
             "kind": "storyboard",
-            "storyboardId": "sb-m9-loop"
+            "storyboardId": "sb-m8-loop"
           },
           "example": {
             "kind": "text",
@@ -210,7 +210,7 @@
         ]
       },
       {
-        "id": "L9.3",
+        "id": "L8.3",
         "moduleId": "accountability-inclusion",
         "title": "Disaggregation and inclusion",
         "objectiveIds": [
@@ -221,7 +221,7 @@
           "hook": "The outcome study says 31% of participants adopted the variety and yields rose. True. It also says nothing about women-headed households, because nobody asked. Which groups does your average hide?",
           "explainer": {
             "kind": "storyboard",
-            "storyboardId": "sb-m9-split"
+            "storyboardId": "sb-m8-split"
           },
           "example": {
             "kind": "text",
@@ -256,7 +256,7 @@
         ]
       },
       {
-        "id": "L9.4",
+        "id": "L8.4",
         "moduleId": "accountability-inclusion",
         "title": "Negative findings and scientific accountability",
         "objectiveIds": [
@@ -267,7 +267,7 @@
           "hook": "The subgroup result is negative, the investor report is due, and a colleague suggests leaving it for the annex. What does the framework say to do with a finding nobody wants?",
           "explainer": {
             "kind": "storyboard",
-            "storyboardId": "sb-m9-open"
+            "storyboardId": "sb-m8-open"
           },
           "example": {
             "kind": "text",
@@ -303,7 +303,7 @@
         ]
       },
       {
-        "id": "L9.5",
+        "id": "L8.5",
         "moduleId": "accountability-inclusion",
         "title": "Consent, access and internal responsibility",
         "objectiveIds": [
@@ -314,7 +314,7 @@
           "hook": "A partner wants the participant records: names, phone numbers, plot locations. They are a partner, so it should be fine? The framework says four things must be in place first, and it names who answers for them.",
           "explainer": {
             "kind": "storyboard",
-            "storyboardId": "sb-m9-checklist"
+            "storyboardId": "sb-m8-checklist"
           },
           "example": {
             "kind": "interactive",
@@ -453,12 +453,12 @@
     ],
     "storyboards": [
       {
-        "id": "sb-m9-hero",
+        "id": "sb-m8-hero",
         "title": "The accountability compass",
         "frames": [
           {
             "id": "f1",
-            "seconds": 8,
+            "seconds": 6,
             "narration": "Every investor deadline met. Is the project accountable? Only in one direction.",
             "scene": {
               "kind": "title",
@@ -468,7 +468,7 @@
           },
           {
             "id": "f2",
-            "seconds": 12,
+            "seconds": 17,
             "narration": "Section 2.7 names four directions. Investors and institutional partners. Farmers and communities. The scientific community and CGIAR. And CIMMYT itself.",
             "scene": {
               "kind": "compass",
@@ -494,7 +494,7 @@
           },
           {
             "id": "f3",
-            "seconds": 16,
+            "seconds": 20,
             "narration": "Investors and partners are owed transparent, timely and comparable reporting on what was delivered, what changed and what was learned. MEAL supports it with harmonised KPIs, documented methods, data-quality governance and portfolio synthesis.",
             "scene": {
               "kind": "compass",
@@ -523,7 +523,7 @@
           },
           {
             "id": "f4",
-            "seconds": 20,
+            "seconds": 16,
             "narration": "Farmers and communities are owed proof of real benefit, and an honest answer when there is none. That means disaggregation by gender, age and equity dimensions, and feedback that returns evidence to the communities it concerns.",
             "scene": {
               "kind": "compass",
@@ -552,7 +552,7 @@
           },
           {
             "id": "f5",
-            "seconds": 16,
+            "seconds": 14,
             "narration": "The scientific community and CGIAR are owed rigour, reproducibility and transparency. FAIR data, documented methods, open publication and evaluation designs others can learn from.",
             "scene": {
               "kind": "compass",
@@ -581,7 +581,7 @@
           },
           {
             "id": "f6",
-            "seconds": 14,
+            "seconds": 13,
             "narration": "Inside CIMMYT, teams answer for the processes and outputs in their remit. Leadership answers for portfolio-level results. MEAL makes contributions visible through synthesised information.",
             "scene": {
               "kind": "compass",
@@ -610,7 +610,7 @@
           },
           {
             "id": "f7",
-            "seconds": 12,
+            "seconds": 9,
             "narration": "All four lit. The thread running through them: be open about what works, what does not, and what CIMMYT is learning.",
             "scene": {
               "kind": "compass",
@@ -643,7 +643,7 @@
         ]
       },
       {
-        "id": "sb-m9-loop",
+        "id": "sb-m8-loop",
         "title": "Feedback that reaches a decision",
         "frames": [
           {
@@ -658,7 +658,7 @@
           },
           {
             "id": "f2",
-            "seconds": 14,
+            "seconds": 13,
             "narration": "Participants in two municipalities report late seed. Each report is logged against the participant's identifier and the delivery record, so the feedback is tied to the evidence behind it.",
             "scene": {
               "kind": "loop",
@@ -686,7 +686,7 @@
           },
           {
             "id": "f3",
-            "seconds": 14,
+            "seconds": 12,
             "narration": "At the seasonal review the reports meet the delivery data. The decision log records what changes, who acts and by when. The management response is written beside it.",
             "scene": {
               "kind": "loop",
@@ -714,7 +714,7 @@
           },
           {
             "id": "f4",
-            "seconds": 12,
+            "seconds": 10,
             "narration": "Then the answer goes back to the community on the date in the learning and accountability cycle. The loop is closed when the participants hear what changed.",
             "scene": {
               "kind": "loop",
@@ -743,12 +743,12 @@
         ]
       },
       {
-        "id": "sb-m9-split",
+        "id": "sb-m8-split",
         "title": "The average is true",
         "frames": [
           {
             "id": "f1",
-            "seconds": 8,
+            "seconds": 7,
             "narration": "Adoption 31 percent, yields up. The average is true. Which households does it hide?",
             "scene": {
               "kind": "title",
@@ -758,7 +758,7 @@
           },
           {
             "id": "f2",
-            "seconds": 16,
+            "seconds": 13,
             "narration": "Break the same records down by gender of household head, age and municipality. Women-headed households show no change. Two municipalities lag on everything.",
             "scene": {
               "kind": "split",
@@ -786,7 +786,7 @@
           },
           {
             "id": "f3",
-            "seconds": 12,
+            "seconds": 16,
             "narration": "Section 2.3 names gender, age and territory for heterogeneity analysis. Section 2.7 adds other equity dimensions. The measurement plan row fixes them before collection starts.",
             "scene": {
               "kind": "cards",
@@ -818,7 +818,7 @@
           },
           {
             "id": "f4",
-            "seconds": 8,
+            "seconds": 10,
             "narration": "Accountability to participants improves through attention to who benefits and who may be excluded. The average alone cannot show it.",
             "scene": {
               "kind": "title",
@@ -830,7 +830,7 @@
         ]
       },
       {
-        "id": "sb-m9-open",
+        "id": "sb-m8-open",
         "title": "A result nobody wanted",
         "frames": [
           {
@@ -845,7 +845,7 @@
           },
           {
             "id": "f2",
-            "seconds": 14,
+            "seconds": 16,
             "narration": "One path softens: pooled gain only, subgroup in an annex, wait a season. The other is open: report it, document the method and its limits, respond, return it to the community.",
             "scene": {
               "kind": "split",
@@ -873,7 +873,7 @@
           },
           {
             "id": "f3",
-            "seconds": 14,
+            "seconds": 15,
             "narration": "To the scientific community and CGIAR the finding is knowledge. FAIR data, documented methods, open publication and designs others can learn from are how MEAL meets that standard.",
             "scene": {
               "kind": "cards",
@@ -938,12 +938,12 @@
         ]
       },
       {
-        "id": "sb-m9-checklist",
+        "id": "sb-m8-checklist",
         "title": "The partner wants the records",
         "frames": [
           {
             "id": "f1",
-            "seconds": 8,
+            "seconds": 7,
             "narration": "A partner asks for the participant list. They are on the project. Does that settle it?",
             "scene": {
               "kind": "title",
@@ -976,7 +976,7 @@
           },
           {
             "id": "f3",
-            "seconds": 12,
+            "seconds": 13,
             "narration": "They are ticked at the Phase 3 gate, when protocols, roles, consent and QA procedures are approved. Before routine collection, not when the request arrives.",
             "scene": {
               "kind": "checklist",
@@ -1044,7 +1044,7 @@
           },
           {
             "id": "f5",
-            "seconds": 10,
+            "seconds": 9,
             "narration": "And inside CIMMYT: teams answer for the processes and outputs in their remit. Leadership answers for portfolio-level results.",
             "scene": {
               "kind": "cards",
@@ -1073,50 +1073,50 @@
       "tag": "accountability-equals-reporting",
       "description": "You treated an on-time report to investors or leadership as the whole of accountability. The framework says it runs in four directions, and the other three need their own evidence and responses.",
       "remedyLessonIds": [
-        "L9.1"
+        "L8.1"
       ]
     },
     {
       "tag": "feedback-counted-not-used",
       "description": "You treated collecting, storing or counting participant feedback as closing the loop. The loop closes only when feedback is linked to evidence, a decision and a management response that goes back to the people who gave it.",
       "remedyLessonIds": [
-        "L9.2"
+        "L8.2"
       ]
     },
     {
       "tag": "average-hides-exclusion",
       "description": "You accepted a pooled average, or a reach count, as evidence of benefit. An average can hide a group that gained nothing; disaggregation shows who benefits and who may be excluded.",
       "remedyLessonIds": [
-        "L9.3"
+        "L8.3"
       ]
     },
     {
       "tag": "omit-negative-finding",
       "description": "You chose to delay, soften or leave out a finding that shows no benefit. Accountability means saying openly what works and what does not, with every audience.",
       "remedyLessonIds": [
-        "L9.4"
+        "L8.4"
       ]
     },
     {
       "tag": "scientific-rigor-optional",
       "description": "You treated documented methods, reproducible analysis and FAIR data as optional extras. They are how CIMMYT meets its accountability to the scientific community and CGIAR.",
       "remedyLessonIds": [
-        "L9.4"
+        "L8.4"
       ]
     },
     {
       "tag": "partner-means-open-access",
       "description": "You assumed that a partner's shared purpose removes the need for consent records, role-based access and agreed data-sharing rules. It does not.",
       "remedyLessonIds": [
-        "L9.5"
+        "L8.5"
       ]
     },
     {
       "tag": "internal-accountability-misplaced",
       "description": "You placed accountability with the wrong role: the Data Group or MEAL for a project's data arrangements, or project teams for portfolio-level results. The framework names who is accountable at each level.",
       "remedyLessonIds": [
-        "L9.5",
-        "L9.1"
+        "L8.5",
+        "L8.1"
       ]
     }
   ],
@@ -1126,85 +1126,7 @@
         "accountability-inclusion.O1"
       ],
       "misconceptions": {
-        "c": "accountability-equals-reporting"
-      }
-    },
-    "Q082": {
-      "objectiveIds": [
-        "accountability-inclusion.O2",
-        "accountability-inclusion.O1"
-      ],
-      "misconceptions": {
-        "a": "accountability-equals-reporting",
-        "c": "accountability-equals-reporting"
-      }
-    },
-    "Q083": {
-      "objectiveIds": [
-        "accountability-inclusion.O3"
-      ],
-      "misconceptions": {
-        "a": "average-hides-exclusion",
-        "c": "average-hides-exclusion"
-      }
-    },
-    "Q084": {
-      "objectiveIds": [
-        "accountability-inclusion.O4"
-      ],
-      "misconceptions": {
-        "b": "omit-negative-finding",
-        "d": "omit-negative-finding"
-      }
-    },
-    "Q085": {
-      "objectiveIds": [
-        "accountability-inclusion.O4"
-      ],
-      "misconceptions": {
-        "c": "scientific-rigor-optional",
-        "d": "scientific-rigor-optional"
-      }
-    },
-    "Q086": {
-      "objectiveIds": [
-        "accountability-inclusion.O5"
-      ],
-      "misconceptions": {
-        "a": "partner-means-open-access",
-        "d": "partner-means-open-access"
-      }
-    },
-    "Q087": {
-      "objectiveIds": [
-        "accountability-inclusion.O5"
-      ],
-      "misconceptions": {
-        "a": "internal-accountability-misplaced",
-        "c": "internal-accountability-misplaced"
-      }
-    },
-    "Q088": {
-      "objectiveIds": [
-        "accountability-inclusion.O2"
-      ],
-      "misconceptions": {
-        "a": "feedback-counted-not-used",
-        "c": "feedback-counted-not-used",
-        "d": "feedback-counted-not-used"
-      }
-    },
-    "Q089": {
-      "objectiveIds": [
-        "accountability-inclusion.O5"
-      ]
-    },
-    "Q090": {
-      "objectiveIds": [
-        "accountability-inclusion.O1"
-      ],
-      "misconceptions": {
-        "d": "omit-negative-finding"
+        "a": "accountability-equals-reporting"
       }
     }
   },

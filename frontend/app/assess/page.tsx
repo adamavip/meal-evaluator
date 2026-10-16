@@ -59,8 +59,8 @@ export default function AssessPage() {
     <aside className="assessment-sidebar">
       <Link className="text-button back-link" href="/"><ArrowLeft size={17} aria-hidden="true" />Home</Link>
       <p className="eyebrow">Your diagnostic</p><h1 className="side-title" tabIndex={-1} data-page-heading>One question<br />at a time.</h1>
-      <div className="progress-summary"><strong>{answered}<span> / 15</span></strong><span>answered</span></div>
-      <div className="progress-track" role="progressbar" aria-label="Diagnostic progress" aria-valuenow={answered} aria-valuemin={0} aria-valuemax={15}><motion.div initial={false} animate={{ width: `${answered / 15 * 100}%` }} transition={{ type: 'spring', stiffness: 160, damping: 26 }} /></div>
+      <div className="progress-summary"><strong>{answered}<span> / {SESSION_SIZE}</span></strong><span>answered</span></div>
+      <div className="progress-track" role="progressbar" aria-label="Diagnostic progress" aria-valuenow={answered} aria-valuemin={0} aria-valuemax={SESSION_SIZE}><motion.div initial={false} animate={{ width: `${answered / SESSION_SIZE * 100}%` }} transition={{ type: 'spring', stiffness: 160, damping: 26 }} /></div>
       <nav className="question-map" aria-label="Jump to a question">{attempt.items.map((entry, i) => {
         const done = Boolean(attempt.answers[entry.questionId]);
         const withConfidence = done && Boolean(state.confidence[entry.questionId]);
@@ -73,7 +73,7 @@ export default function AssessPage() {
       {state.name && <p className="participant-label">Diagnostic for <strong>{state.name}</strong></p>}
     </aside>
     <section className="question-section" aria-label="Current question">
-      <div className="question-meta"><span className={`label-chip ${topic.color}`}><TopicIcon name={topic.icon} size={16} />{topic.title}</span><span className="micro">Question {String(attempt.cursor + 1).padStart(2, '0')} / 15</span></div>
+      <div className="question-meta"><span className={`label-chip ${topic.color}`}><TopicIcon name={topic.icon} size={16} />{topic.title}</span><span className="micro">Question {String(attempt.cursor + 1).padStart(2, '0')} / {SESSION_SIZE}</span></div>
       <div className="question-panel paper">
         <motion.div key={question.id} initial={{ opacity: 0, x: 12 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: .22 }}>
           <div className="question-kicker"><span className="micro">{question.difficulty === 'foundation' ? 'Core understanding' : 'Apply your understanding'}</span><button className={`flag-button ${flagged ? 'flagged' : ''}`} aria-pressed={flagged} onClick={() => setAttempt({ ...attempt, flagged: flagged ? attempt.flagged.filter(id => id !== question.id) : [...attempt.flagged, question.id] })}><Flag size={16} aria-hidden="true" />{flagged ? 'Marked for review' : 'Mark for review'}</button></div>
@@ -86,7 +86,7 @@ export default function AssessPage() {
       <div className="question-controls"><button className="button secondary" disabled={attempt.cursor === 0} onClick={() => go(attempt.cursor - 1)}><ArrowLeft size={18} aria-hidden="true" />Previous</button>
         {attempt.cursor < SESSION_SIZE - 1 ? <button className="button primary" onClick={() => go(attempt.cursor + 1)}>Next question<ArrowRight size={18} aria-hidden="true" /></button> : !ready ? <button className="button primary" onClick={nextIncomplete}>Go to incomplete<ArrowRight size={18} aria-hidden="true" /></button> : <button className="button primary" onClick={finish}>See my plan<ArrowUpRight size={20} aria-hidden="true" /></button>}
       </div>
-      {ready && attempt.cursor !== SESSION_SIZE - 1 && <div className="all-done"><CheckCheck size={20} aria-hidden="true" /><span>All 15 answers are ready.</span><button className="text-button" onClick={finish}>See my plan<ArrowRight size={17} aria-hidden="true" /></button></div>}
+      {ready && attempt.cursor !== SESSION_SIZE - 1 && <div className="all-done"><CheckCheck size={20} aria-hidden="true" /><span>All {SESSION_SIZE} answers are ready.</span><button className="text-button" onClick={finish}>See my plan<ArrowRight size={17} aria-hidden="true" /></button></div>}
       {answered === SESSION_SIZE && confident < SESSION_SIZE && <p className="review-reminder"><Info size={15} aria-hidden="true" />{SESSION_SIZE - confident} {SESSION_SIZE - confident === 1 ? 'answer still needs' : 'answers still need'} a Sure or Not sure tap before you can finish.</p>}
       {attempt.flagged.length > 0 && ready && <p className="review-reminder"><Flag size={15} aria-hidden="true" />You marked {attempt.flagged.length} {attempt.flagged.length === 1 ? 'question' : 'questions'} for review. Use the numbered buttons to revisit them before submitting.</p>}
     </section>

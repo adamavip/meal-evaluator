@@ -3,255 +3,204 @@
     "tag": "accountability-equals-reporting",
     "description": "You treated an on-time report to investors or leadership as the whole of accountability. The framework says it runs in four directions, and the other three need their own evidence and responses.",
     "remedyLessonIds": [
-      "L9.1"
+      "L8.1"
     ]
   },
   {
     "tag": "feedback-counted-not-used",
     "description": "You treated collecting, storing or counting participant feedback as closing the loop. The loop closes only when feedback is linked to evidence, a decision and a management response that goes back to the people who gave it.",
     "remedyLessonIds": [
-      "L9.2"
+      "L8.2"
     ]
   },
   {
     "tag": "average-hides-exclusion",
     "description": "You accepted a pooled average, or a reach count, as evidence of benefit. An average can hide a group that gained nothing; disaggregation shows who benefits and who may be excluded.",
     "remedyLessonIds": [
-      "L9.3"
+      "L8.3"
     ]
   },
   {
     "tag": "omit-negative-finding",
     "description": "You chose to delay, soften or leave out a finding that shows no benefit. Accountability means saying openly what works and what does not, with every audience.",
     "remedyLessonIds": [
-      "L9.4"
+      "L8.4"
     ]
   },
   {
     "tag": "scientific-rigor-optional",
     "description": "You treated documented methods, reproducible analysis and FAIR data as optional extras. They are how CIMMYT meets its accountability to the scientific community and CGIAR.",
     "remedyLessonIds": [
-      "L9.4"
+      "L8.4"
     ]
   },
   {
     "tag": "partner-means-open-access",
     "description": "You assumed that a partner's shared purpose removes the need for consent records, role-based access and agreed data-sharing rules. It does not.",
     "remedyLessonIds": [
-      "L9.5"
+      "L8.5"
     ]
   },
   {
     "tag": "internal-accountability-misplaced",
     "description": "You placed accountability with the wrong role: the Data Group or MEAL for a project's data arrangements, or project teams for portfolio-level results. The framework names who is accountable at each level.",
     "remedyLessonIds": [
-      "L9.5",
-      "L9.1"
-    ]
-  },
-  {
-    "tag": "missing-as-zero",
-    "description": "You treated a blank or missing value as a confirmed zero. A blank means you do not know; coding it as zero invents an observation and hides the gap.",
-    "remedyLessonIds": [
-      "L5.3"
-    ]
-  },
-  {
-    "tag": "delete-outliers",
-    "description": "You removed or capped an unusual value without investigating its cause. An outlier is not an error until you have checked the record at source and documented the decision.",
-    "remedyLessonIds": [
-      "L5.3"
-    ]
-  },
-  {
-    "tag": "big-sample-is-representative",
-    "description": "You assumed that a large or clean sample can speak for the whole population in the claim. Size does not fix who was left out.",
-    "remedyLessonIds": [
-      "L5.4",
-      "L5.1"
-    ]
-  },
-  {
-    "tag": "name-as-identifier",
-    "description": "You used a name, phone number or project-specific number to link records. The framework asks for identifiers that are unique and stable across projects and years.",
-    "remedyLessonIds": [
-      "L5.2"
-    ]
-  },
-  {
-    "tag": "total-without-provenance",
-    "description": "You accepted a reported total, screenshot or summary as sufficient. Without record-level provenance and an audit trail, a figure cannot be audited or recalculated.",
-    "remedyLessonIds": [
-      "L5.2",
-      "L5.5"
-    ]
-  },
-  {
-    "tag": "qa-only-at-endline",
-    "description": "You placed quality checks at endline or at the annual report. The cadence runs continuous or monthly checks, with exceptions resolved close to collection.",
-    "remedyLessonIds": [
-      "L5.5"
-    ]
-  },
-  {
-    "tag": "qa-is-central-only",
-    "description": "You handed first-line quality work to central MEAL or the Data Group. Project teams run first-line checks and keep source records; central roles set rules and follow up.",
-    "remedyLessonIds": [
-      "L5.6"
+      "L8.5",
+      "L8.1"
     ]
   },
   {
     "tag": "report-as-unit-of-evidence",
     "description": "You treated a project report or its totals as the primary evidence, instead of the observation-level records the report summarises.",
     "remedyLessonIds": [
-      "L6.1",
-      "L6.2"
+      "L5.1",
+      "L5.2"
     ]
   },
   {
     "tag": "satellite-substitutes-ground",
     "description": "You let satellite or secondary data stand in for ground measurement that the KPI method requires, instead of using them to calibrate, contextualise, stratify or upscale.",
     "remedyLessonIds": [
-      "L6.3"
+      "L5.3"
     ]
   },
   {
     "tag": "any-source-triangulates",
     "description": "You counted a second source as support for a claim even though it measured a different construct, population, geography or period.",
     "remedyLessonIds": [
-      "L6.3"
+      "L5.3"
     ]
   },
   {
     "tag": "copy-not-connect",
     "description": "You chose to copy records out of an authoritative system by hand, or to move them into MEAL, instead of connecting to that system through integration.",
     "remedyLessonIds": [
-      "L6.4"
+      "L5.4"
     ]
   },
   {
     "tag": "online-only",
     "description": "You designed collection around a connection that field teams do not reliably have, instead of the offline capture the framework requires.",
     "remedyLessonIds": [
-      "L6.4"
+      "L5.4"
     ]
   },
   {
     "tag": "meal-owns-infrastructure",
     "description": "You assigned software, hosting or engineering to the MEAL team. The Data Group owns the infrastructure; MEAL owns indicators, the data dictionary and quality rules.",
     "remedyLessonIds": [
-      "L6.4"
+      "L5.4"
     ]
   },
   {
     "tag": "new-template-new-collection",
     "description": "You responded to a new or changed reporting template by changing forms or collecting again, instead of updating the central mapping from source variables.",
     "remedyLessonIds": [
-      "L6.5"
+      "L5.5"
     ]
   },
   {
     "tag": "sole-cause-claim",
     "description": "You treated the whole observed change as caused by CIMMYT. The framework asks for credible evidence of contribution alongside other factors, and says CIMMYT does not claim to be the sole cause.",
     "remedyLessonIds": [
-      "L7.1",
-      "L7.2"
+      "L6.1",
+      "L6.2"
     ]
   },
   {
     "tag": "before-after-is-impact",
     "description": "You read a rise between baseline and endline, or a target met, as the effect of the intervention. Without a counterfactual it is change, not effect, and not yet lasting change.",
     "remedyLessonIds": [
-      "L7.2",
-      "L7.4"
+      "L6.2",
+      "L6.4"
     ]
   },
   {
     "tag": "method-mismatch",
     "description": "You picked a method that cannot answer the question or support the claim, such as summing reports or counting deliveries to answer what CIMMYT contributed.",
     "remedyLessonIds": [
-      "L7.3"
+      "L6.3"
     ]
   },
   {
     "tag": "trend-agreement-is-triangulation",
     "description": "You treated two sources that move the same way as confirming each other, without checking that they share construct, population, geography, period and definitions.",
     "remedyLessonIds": [
-      "L7.5"
+      "L6.5"
     ]
   },
   {
     "tag": "satellite-replaces-ground",
     "description": "You let satellite or secondary data stand in for the ground measurement the KPI method requires, instead of using them for calibration, context, stratification or upscaling.",
     "remedyLessonIds": [
-      "L7.5"
+      "L6.5"
     ]
   },
   {
     "tag": "baseline-at-endline",
     "description": "You left the baseline or reference to the end of the project, or used the target as the baseline, when the minimum package requires it to be decided at inception.",
     "remedyLessonIds": [
-      "L7.4"
+      "L6.4"
     ]
   },
   {
     "tag": "hide-uncertainty",
     "description": "You presented a precise-looking result without its coverage, uncertainty and limits, or stretched a finding beyond the districts, seasons or populations it covers.",
     "remedyLessonIds": [
-      "L7.6"
+      "L6.6"
     ]
   },
   {
     "tag": "budget-sets-complexity",
     "description": "You let the budget, the duration or the number of countries set the complexity level, or you mixed up the two axes of the Matrix. The project type sets the default M&E complexity; budget and duration set the scale.",
     "remedyLessonIds": [
-      "L10.2",
-      "L10.3"
+      "L9.2",
+      "L9.3"
     ]
   },
   {
     "tag": "percentage-without-floor",
     "description": "You applied the Medium percentage or the Small minimum on its own. The Medium rule needs both: take 3%, 4% or 5% of the total budget, then check that it is never less than the Small amount for the same complexity level.",
     "remedyLessonIds": [
-      "L10.4"
+      "L9.4"
     ]
   },
   {
     "tag": "large-fixed-minimum",
     "description": "You treated Large or MEGA projects as if they had a fixed amount or a percentage. Above USD 800,000 the MEAL budget is co-designed with the team from the start of proposal development; MEGA adds at least USD 27,000 per project year.",
     "remedyLessonIds": [
-      "L10.4"
+      "L9.4"
     ]
   },
   {
     "tag": "meal-after-award",
     "description": "You left MEAL design, classification or budgeting until after the award. The first gate is passed before submission, and from October 2026 every proposal goes through the MEAL team at concept-note stage.",
     "remedyLessonIds": [
-      "L10.1",
-      "L10.7"
+      "L9.1",
+      "L9.7"
     ]
   },
   {
     "tag": "central-does-project-monitoring",
     "description": "You handed routine project monitoring to the central MEAL team. Projects own process and output evidence and first-line quality checks; the centre sets standards, assures quality and integrates from outcomes upward.",
     "remedyLessonIds": [
-      "L10.5",
-      "L10.6"
+      "L9.5",
+      "L9.6"
     ]
   },
   {
     "tag": "project-adds-institutional-kpi",
     "description": "You let a project add or redefine an institutional KPI on its own. Projects can add project-specific indicators, but nothing becomes institutional without MEAL review and approval by the Design, Standards and Enablement pillar.",
     "remedyLessonIds": [
-      "L10.5"
+      "L9.5"
     ]
   },
   {
     "tag": "lead-decides-exceptions",
     "description": "You gave the project lead, the Regional MEAL Lead or a pillar the final say on a KPI method exception or on the annual review. The MEAL Group Lead is accountable for exceptions; the MEAL Review Committee endorses the annual changes.",
     "remedyLessonIds": [
-      "L10.3",
-      "L10.6"
+      "L9.3",
+      "L9.6"
     ]
   },
   {
@@ -303,52 +252,52 @@
     "tag": "review-without-decision",
     "description": "You treated a review that summarised findings but recorded no change, no owner and no deadline as a completed evidence review.",
     "remedyLessonIds": [
-      "L8.1",
-      "L8.2"
+      "L7.1",
+      "L7.2"
     ]
   },
   {
     "tag": "wait-for-annual",
     "description": "You waited for annual reporting to act on evidence that the quarterly or seasonal review exists to handle during implementation.",
     "remedyLessonIds": [
-      "L8.1",
-      "L8.3"
+      "L7.1",
+      "L7.3"
     ]
   },
   {
     "tag": "response-not-recorded",
     "description": "You treated delivering a report or recommendation as the management response, without recording what management decided or tracking whether anyone acted on it.",
     "remedyLessonIds": [
-      "L8.2"
+      "L7.2"
     ]
   },
   {
     "tag": "meeting-equals-learning",
     "description": "You counted holding learning meetings as learning, even though no decision was logged and no practice or guidance changed.",
     "remedyLessonIds": [
-      "L8.2",
-      "L8.4"
+      "L7.2",
+      "L7.4"
     ]
   },
   {
     "tag": "pilot-ignored",
     "description": "You let a pilot finding about an impractical method pass without refining the guidance and tools, or you changed the method locally without recording it.",
     "remedyLessonIds": [
-      "L8.4"
+      "L7.4"
     ]
   },
   {
     "tag": "dashboard-equals-action",
     "description": "You treated a dashboard figure as a decision in itself: you acted on it without investigating what it meant, or you assumed nothing needed to change because a delivery target was met.",
     "remedyLessonIds": [
-      "L8.3"
+      "L7.3"
     ]
   },
   {
     "tag": "training-equals-handover",
     "description": "You treated training delivered as the handover, without the competency check, live system and named data and MEAL owners the gate requires.",
     "remedyLessonIds": [
-      "L8.4"
+      "L7.4"
     ]
   },
   {

@@ -7,7 +7,7 @@ Owner: MEAL team, CIMMYT · Builds on the existing `frontend/` assessment app
 
 ## 0. Summary
 
-Build a modular, self-paced course on the CIMMYT MEAL Framework 2026–2030 that wraps around the existing 15-question assessment. The assessment becomes a **diagnostic**: after submitting, every learner receives a personal study plan that names the modules, and the lessons inside them, where their answers showed gaps. Each module ends with a short mastery check that updates the plan. Lessons are short (3 to 6 minutes), built around animated explainers and applied scenarios, and respect the Neobrutalist visual system and CIMMYT colours already in the app.
+Build a modular, self-paced course on the CIMMYT MEAL Framework 2026–2030 that wraps around the existing 10-question assessment. The assessment becomes a **diagnostic**: after submitting, every learner receives a personal study plan that names the modules, and the lessons inside them, where their answers showed gaps. Each module ends with a short mastery check that updates the plan. Lessons are short (3 to 6 minutes), built around animated explainers and applied scenarios, and respect the Neobrutalist visual system and CIMMYT colours already in the app.
 
 The design borrows what works on the best self-paced platforms:
 
@@ -73,7 +73,7 @@ Design consequence: the diagnostic must let the MEAL specialist skip most of the
 ### 3.2 Learner journey
 
 ```
-Home ─▶ Diagnostic (15 q) ─▶ Results + Personal plan
+Home ─▶ Diagnostic (10 q) ─▶ Results + Personal plan
                                    │
           ┌────────────────────────┼─────────────────────────┐
           ▼                        ▼                         ▼
@@ -156,6 +156,8 @@ Objectives: describe the KPI toolbox (volumes and thrusts); explain why one KPI 
 - Mastery check M4
 
 #### M5 · Data quality and collection (§2.5–2.6, 4.1, 5.4) · 35 min
+
+> Removed from the course on 2026-10-16. The modules below are now numbered M5 to M9 in the app; this section is kept for the record.
 Objectives: name the six quality dimensions; design identifiers and provenance; handle outliers and missingness; judge representativeness; set a validation cadence and assign roles.
 - L5.1 Six dimensions of data quality (animated "quality dial")
 - L5.2 Identifiers and provenance: can you find this observation again?
@@ -293,7 +295,7 @@ The current bank has 100 items, 10 per topic, all used by the diagnostic. The co
 
 | Pool | Per topic | Use |
 | --- | --- | --- |
-| diagnostic | 10 (existing) | 15-question draw, unchanged |
+| diagnostic | 1 per topic; 2 for impact assessment | 10 workshop questions, all included; display order shuffled |
 | practice | 8 to 12 | Micro-checks inside lessons, answer shown immediately |
 | check | 12 to 15 | Mastery checks, 5 drawn per attempt, new draw per retry |
 

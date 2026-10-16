@@ -9,13 +9,28 @@
     {
       "id": "d1",
       "moduleId": "implementation-governance",
-      "lessonId": "L10.2",
+      "lessonId": "L9.2",
       "title": "Concept note week: classify and budget",
       "situation": "The proposal lead has three weeks to submit. The project is applied agronomy and farming systems, USD 300,000 over two years, and it commits to report farmer-level adoption to the investor.",
       "choices": [
-        { "id": "a", "label": "Classify it in the MEAL Matrix with the Regional MEAL Lead now: Medium scale, Complex complexity. Budget 5% of USD 300,000, which is USD 15,000, so the USD 18,000 minimum applies.", "good": true, "consequence": "Correct. Applied agronomy defaults to Complex; the adoption commitment would move a lower level up anyway. Medium projects use the percentage but never less than the Small amount for the same complexity, so USD 18,000 goes in the budget and is confirmed with MEAL during proposal writing." },
-        { "id": "b", "label": "Budget 3% of the total (USD 9,000) because it is a Medium project, and classify later at inception.", "good": false, "consequence": "Two problems. Three percent is the Standard rate; applied agronomy defaults to Complex, and the floor for Complex is USD 18,000. And classification happens at proposal stage, before indicators, budgets and systems are fixed." },
-        { "id": "c", "label": "Skip the Matrix. The investor's template already lists indicators, so MEAL can be costed when the award arrives.", "good": false, "consequence": "Every proposal goes through the MEAL team at proposal stage. Waiting for the award locks in investor indicators without a crosswalk and leaves no MEAL budget line." }
+        {
+          "id": "a",
+          "label": "Classify it in the MEAL Matrix with the Regional MEAL Lead now: Medium scale, Complex complexity. Budget 5% of USD 300,000, which is USD 15,000, so the USD 18,000 minimum applies.",
+          "good": true,
+          "consequence": "Correct. Applied agronomy defaults to Complex; the adoption commitment would move a lower level up anyway. Medium projects use the percentage but never less than the Small amount for the same complexity, so USD 18,000 goes in the budget and is confirmed with MEAL during proposal writing."
+        },
+        {
+          "id": "b",
+          "label": "Budget 3% of the total (USD 9,000) because it is a Medium project, and classify later at inception.",
+          "good": false,
+          "consequence": "Two problems. Three percent is the Standard rate; applied agronomy defaults to Complex, and the floor for Complex is USD 18,000. And classification happens at proposal stage, before indicators, budgets and systems are fixed."
+        },
+        {
+          "id": "c",
+          "label": "Skip the Matrix. The investor's template already lists indicators, so MEAL can be costed when the award arrives.",
+          "good": false,
+          "consequence": "Every proposal goes through the MEAL team at proposal stage. Waiting for the award locks in investor indicators without a crosswalk and leaves no MEAL budget line."
+        }
       ]
     },
     {
@@ -25,9 +40,24 @@
       "title": "Proposal design: the theory of change",
       "situation": "The team drafts its results chain: demonstration plots and field days, then seed companies multiply the variety, then farmers adopt it, then yields and incomes rise. The investor asks what could break the chain.",
       "choices": [
-        { "id": "a", "label": "State the assumptions behind each link, for example that seed companies will multiply without a subsidy and that farmers can afford certified seed, and plan to check them during implementation.", "good": true, "consequence": "Correct. Assumptions are the links you cannot control. Naming them at proposal stage lets the quarterly reviews test them with evidence instead of discovering them at endline." },
-        { "id": "b", "label": "Add a larger field-day target so adoption is more likely, and leave the assumptions implicit.", "good": false, "consequence": "More delivery does not test the link between delivery and adoption. Annex A asks projects to check their adoption and diffusion logic, which means stating the assumptions and checking them." },
-        { "id": "c", "label": "Replace the outcome level with a yield target so the chain is shorter and easier to report.", "good": false, "consequence": "Outcomes are where CIMMYT's contribution becomes visible. Jumping from outputs to yield skips the change in practice the whole claim depends on." }
+        {
+          "id": "a",
+          "label": "State the assumptions behind each link, for example that seed companies will multiply without a subsidy and that farmers can afford certified seed, and plan to check them during implementation.",
+          "good": true,
+          "consequence": "Correct. Assumptions are the links you cannot control. Naming them at proposal stage lets the quarterly reviews test them with evidence instead of discovering them at endline."
+        },
+        {
+          "id": "b",
+          "label": "Add a larger field-day target so adoption is more likely, and leave the assumptions implicit.",
+          "good": false,
+          "consequence": "More delivery does not test the link between delivery and adoption. Annex A asks projects to check their adoption and diffusion logic, which means stating the assumptions and checking them."
+        },
+        {
+          "id": "c",
+          "label": "Replace the outcome level with a yield target so the chain is shorter and easier to report.",
+          "good": false,
+          "consequence": "Outcomes are where CIMMYT's contribution becomes visible. Jumping from outputs to yield skips the change in practice the whole claim depends on."
+        }
       ]
     },
     {
@@ -37,21 +67,51 @@
       "title": "Inception: the measurement plan",
       "situation": "At inception the measurement matrix lists 'farmers adopting the variety' with a target of 2,000 and nothing else. The MEAL Focal Point has one afternoon to fix it.",
       "choices": [
-        { "id": "a", "label": "Complete the row: unit of observation (farmer), source (registry plus follow-up survey), valid method per the KPI reference sheet, frequency (each main season), coverage (registered participants in three sub-counties), disaggregation (gender, age), owner (Focal Point), timing (eight weeks after planting).", "good": true, "consequence": "Correct. A measurement plan row needs all eight fields. Now the enumerators know what to collect, from whom and when, and the KPI engine can compute the institutional indicator from the records." },
-        { "id": "b", "label": "Keep the target and add a dashboard mock-up so the investor can see progress.", "good": false, "consequence": "A dashboard shows records that exist. Without unit, method, coverage and owner there will be no comparable records to show." },
-        { "id": "c", "label": "Relabel 'farmers reached at field days' as the adoption indicator, since that count is already collected.", "good": false, "consequence": "Reach is an output. Adoption is an outcome. Relabelling a count does not move it up a level, and it silently redefines the institutional KPI." }
+        {
+          "id": "a",
+          "label": "Complete the row: unit of observation (farmer), source (registry plus follow-up survey), valid method per the KPI reference sheet, frequency (each main season), coverage (registered participants in three sub-counties), disaggregation (gender, age), owner (Focal Point), timing (eight weeks after planting).",
+          "good": true,
+          "consequence": "Correct. A measurement plan row needs all eight fields. Now the enumerators know what to collect, from whom and when, and the KPI engine can compute the institutional indicator from the records."
+        },
+        {
+          "id": "b",
+          "label": "Keep the target and add a dashboard mock-up so the investor can see progress.",
+          "good": false,
+          "consequence": "A dashboard shows records that exist. Without unit, method, coverage and owner there will be no comparable records to show."
+        },
+        {
+          "id": "c",
+          "label": "Relabel 'farmers reached at field days' as the adoption indicator, since that count is already collected.",
+          "good": false,
+          "consequence": "Reach is an output. Adoption is an outcome. Relabelling a count does not move it up a level, and it silently redefines the institutional KPI."
+        }
       ]
     },
     {
       "id": "d4",
-      "moduleId": "data-quality",
+      "moduleId": "evidence-systems",
       "lessonId": "L5.2",
       "title": "System design: identifiers",
       "situation": "Enumerators will register farmers at field days and survey them a season later. Some farmers attend several events, and the seed companies keep their own customer lists.",
       "choices": [
-        { "id": "a", "label": "Assign each farmer a persistent identifier at first registration, reuse it across events, the survey and the seed-company lists, and keep provenance on every record.", "good": true, "consequence": "Correct. Persistent identifiers link delivery to later uptake and prevent double counting. Provenance lets the institutional figure be audited and recalculated." },
-        { "id": "b", "label": "Record names and villages at each event and match them up by hand at endline.", "good": false, "consequence": "Name matching fails on spelling, shared names and movement. The framework requires unique, stable IDs across projects and years, defined at system design, not at endline." },
-        { "id": "c", "label": "Count attendance per event and report the sum as farmers reached.", "good": false, "consequence": "The same farmer at three events becomes three farmers. Uniqueness is one of the six quality dimensions, and a sum of event counts cannot meet it." }
+        {
+          "id": "a",
+          "label": "Assign each farmer a persistent identifier at first registration, reuse it across events, the survey and the seed-company lists, and keep provenance on every record.",
+          "good": true,
+          "consequence": "Correct. Persistent identifiers link delivery to later uptake and prevent double counting. Provenance lets the institutional figure be audited and recalculated."
+        },
+        {
+          "id": "b",
+          "label": "Record names and villages at each event and match them up by hand at endline.",
+          "good": false,
+          "consequence": "Name matching fails on spelling, shared names and movement. The framework requires unique, stable IDs across projects and years, defined at system design, not at endline."
+        },
+        {
+          "id": "c",
+          "label": "Count attendance per event and report the sum as farmers reached.",
+          "good": false,
+          "consequence": "The same farmer at three events becomes three farmers. A unique, persistent identifier is assigned at capture and carried through integration; a sum of event counts can never recover it."
+        }
       ]
     },
     {
@@ -61,47 +121,107 @@
       "title": "Season two: the yield figure",
       "situation": "Crop cuts on 240 sampled plots give one yield estimate. The seed companies report a higher yield from farmer recall. The investor wants a single project yield number.",
       "choices": [
-        { "id": "a", "label": "Report the crop-cut estimate with its method, coverage and quality rating, keep the farmer-recall figure as a separately rated source, and let the institutional KPI be recomputed from the eligible records with the approved method.", "good": true, "consequence": "Correct. One KPI can have several valid methods, each with its own quality rating. The institutional value comes from eligible records under the indicator's rules, reported with coverage and uncertainty, never from picking the bigger number." },
-        { "id": "b", "label": "Average the two figures so both sources are represented.", "good": false, "consequence": "Averaging a high-quality crop-cut estimate with an unrated recall figure destroys both. Methods are documented and rated; they are not blended without a defined aggregation rule." },
-        { "id": "c", "label": "Report the higher seed-company figure because it covers more farmers.", "good": false, "consequence": "Coverage does not make a method valid. The framework asks for the most reliable feasible method, documented, with a quality rating." }
+        {
+          "id": "a",
+          "label": "Report the crop-cut estimate with its method, coverage and quality rating, keep the farmer-recall figure as a separately rated source, and let the institutional KPI be recomputed from the eligible records with the approved method.",
+          "good": true,
+          "consequence": "Correct. One KPI can have several valid methods, each with its own quality rating. The institutional value comes from eligible records under the indicator's rules, reported with coverage and uncertainty, never from picking the bigger number."
+        },
+        {
+          "id": "b",
+          "label": "Average the two figures so both sources are represented.",
+          "good": false,
+          "consequence": "Averaging a high-quality crop-cut estimate with an unrated recall figure destroys both. Methods are documented and rated; they are not blended without a defined aggregation rule."
+        },
+        {
+          "id": "c",
+          "label": "Report the higher seed-company figure because it covers more farmers.",
+          "good": false,
+          "consequence": "Coverage does not make a method valid. The framework asks for the most reliable feasible method, documented, with a quality rating."
+        }
       ]
     },
     {
       "id": "d6",
       "moduleId": "learning-adaptation",
-      "lessonId": "L8.3",
+      "lessonId": "L7.3",
       "title": "Mid-project: the quarterly review",
       "situation": "The quarterly dashboard shows strong field-day attendance but adoption at 9% against an assumption of 30%. One seed company has not multiplied the variety. The evidence review is tomorrow.",
       "choices": [
-        { "id": "a", "label": "Bring the evidence to the review, test the assumption about seed availability, agree what changes, who acts and by when, and record it in the decision log.", "good": true, "consequence": "Correct. A quarterly or seasonal review produces a decision log: what changes, who acts, by when. The failed assumption is exactly what the theory of change was meant to surface in time to act." },
-        { "id": "b", "label": "Wait for the annual report, when the endline survey will give a more reliable adoption figure.", "good": false, "consequence": "Adaptive management uses evidence during implementation, not only at closure. Waiting a year leaves the seed gap unaddressed for another season." },
-        { "id": "c", "label": "Increase field-day frequency to lift adoption.", "good": false, "consequence": "Adoption is low because seed is not available, not because farmers have not heard about it. More delivery of the same output does not fix a broken assumption." }
+        {
+          "id": "a",
+          "label": "Bring the evidence to the review, test the assumption about seed availability, agree what changes, who acts and by when, and record it in the decision log.",
+          "good": true,
+          "consequence": "Correct. A quarterly or seasonal review produces a decision log: what changes, who acts, by when. The failed assumption is exactly what the theory of change was meant to surface in time to act."
+        },
+        {
+          "id": "b",
+          "label": "Wait for the annual report, when the endline survey will give a more reliable adoption figure.",
+          "good": false,
+          "consequence": "Adaptive management uses evidence during implementation, not only at closure. Waiting a year leaves the seed gap unaddressed for another season."
+        },
+        {
+          "id": "c",
+          "label": "Increase field-day frequency to lift adoption.",
+          "good": false,
+          "consequence": "Adoption is low because seed is not available, not because farmers have not heard about it. More delivery of the same output does not fix a broken assumption."
+        }
       ]
     },
     {
       "id": "d7",
       "moduleId": "accountability-inclusion",
-      "lessonId": "L9.3",
+      "lessonId": "L8.3",
       "title": "Endline: who benefited",
       "situation": "The endline survey shows adoption at 28% overall. Disaggregated, adoption among women-headed households is 11%. A community meeting is scheduled and the investor report is due.",
       "choices": [
-        { "id": "a", "label": "Report the disaggregated result openly to the investor and to the communities, explain what the evidence shows about why, and record a management response with follow-up.", "good": true, "consequence": "Correct. Accountability to farmers and communities means showing real benefits and saying so openly when they do not reach everyone. Disaggregation is how exclusion becomes visible, and feedback returns evidence to the people it concerns." },
-        { "id": "b", "label": "Report the 28% average; the subgroup result is small and would distract from a positive story.", "good": false, "consequence": "The average hides exactly what the framework asks projects to show. Omitting a negative finding breaks accountability to communities, investors and the scientific community." },
-        { "id": "c", "label": "Hold the community meeting but share only the field-day numbers, since outcome results are still being analysed.", "good": false, "consequence": "Returning only delivery counts is not feedback on what changed. The communities are owed the outcome evidence that concerns them." }
+        {
+          "id": "a",
+          "label": "Report the disaggregated result openly to the investor and to the communities, explain what the evidence shows about why, and record a management response with follow-up.",
+          "good": true,
+          "consequence": "Correct. Accountability to farmers and communities means showing real benefits and saying so openly when they do not reach everyone. Disaggregation is how exclusion becomes visible, and feedback returns evidence to the people it concerns."
+        },
+        {
+          "id": "b",
+          "label": "Report the 28% average; the subgroup result is small and would distract from a positive story.",
+          "good": false,
+          "consequence": "The average hides exactly what the framework asks projects to show. Omitting a negative finding breaks accountability to communities, investors and the scientific community."
+        },
+        {
+          "id": "c",
+          "label": "Hold the community meeting but share only the field-day numbers, since outcome results are still being analysed.",
+          "good": false,
+          "consequence": "Returning only delivery counts is not feedback on what changed. The communities are owed the outcome evidence that concerns them."
+        }
       ]
     },
     {
       "id": "d8",
       "moduleId": "impact-assessment",
-      "lessonId": "L7.2",
+      "lessonId": "L6.2",
       "title": "Two years on: the impact question",
       "situation": "Yields in the project area rose 18% over two seasons of unusually good rainfall. The investor asks what CIMMYT contributed.",
       "choices": [
-        { "id": "a", "label": "Commission a contribution analysis against a credible counterfactual, using the baseline, comparison areas, adoption records and rainfall and price data, and report the estimate with its uncertainty and limits.", "good": true, "consequence": "Correct. CIMMYT claims contribution, not sole cause. A credible counterfactual separates the variety's effect from rainfall and prices, and the finding is reported with its uncertainty. Central MEAL leads this with science and evaluation specialists; the project supplies records and context." },
-        { "id": "b", "label": "Report the 18% as the project's impact, since the farmers were in the project.", "good": false, "consequence": "Before-and-after is not impact. Without a counterfactual the 18% cannot be separated from two good rainy seasons." },
-        { "id": "c", "label": "Use the satellite greenness trend instead of the plot data, since it covers the whole county.", "good": false, "consequence": "Satellite data can calibrate, contextualise and upscale, but they do not replace ground measurement where the KPI method requires it, and greenness is not the same construct as yield." }
+        {
+          "id": "a",
+          "label": "Commission a contribution analysis against a credible counterfactual, using the baseline, comparison areas, adoption records and rainfall and price data, and report the estimate with its uncertainty and limits.",
+          "good": true,
+          "consequence": "Correct. CIMMYT claims contribution, not sole cause. A credible counterfactual separates the variety's effect from rainfall and prices, and the finding is reported with its uncertainty. Central MEAL leads this with science and evaluation specialists; the project supplies records and context."
+        },
+        {
+          "id": "b",
+          "label": "Report the 18% as the project's impact, since the farmers were in the project.",
+          "good": false,
+          "consequence": "Before-and-after is not impact. Without a counterfactual the 18% cannot be separated from two good rainy seasons."
+        },
+        {
+          "id": "c",
+          "label": "Use the satellite greenness trend instead of the plot data, since it covers the whole county.",
+          "good": false,
+          "consequence": "Satellite data can calibrate, contextualise and upscale, but they do not replace ground measurement where the KPI method requires it, and greenness is not the same construct as yield."
+        }
       ]
     }
   ],
-  "closing": "Eight decisions, ten modules, one chain from concept note to contribution claim. Every good branch used something a report alone could never show: a classified project, a stated assumption, a complete measurement row, a persistent identifier, a rated method, a decision log, a disaggregated result and a counterfactual. That is the framework in practice."
+  "closing": "Eight decisions, nine modules, one chain from concept note to contribution claim. Every good branch used something a report alone could never show: a classified project, a stated assumption, a complete measurement row, a persistent identifier, a rated method, a decision log, a disaggregated result and a counterfactual. That is the framework in practice."
 }

@@ -48,9 +48,9 @@ test('a complete v2 state survives a JSON round trip, export and import', () => 
   assert.equal(restoreLearner(exported, null, bank, lessonIds)?.diagnostic?.id, state.diagnostic!.id);
 });
 
-test('a v1 attempt migrates into a fresh v2 state and carries the compatible bank version forward', () => {
+test('a legacy storage record with the current bank version migrates into v2', () => {
   const attempt = createAttempt(bank, 'Legacy user', seeded(4));
-  const legacy = JSON.stringify({ ...attempt, bankVersion: '1.0.0' });
+  const legacy = JSON.stringify(attempt);
   const migrated = migrateV1(legacy, bank);
   assert.ok(migrated);
   assert.equal(migrated!.version, 2);
@@ -101,4 +101,32 @@ test('seen tracking keeps order with most recent last and removes duplicates', (
   assert.deepEqual(state.seenQuestionIds, ['Q001', 'Q002', 'Q003']);
   state = withSeen(state, ['Q001']);
   assert.deepEqual(state.seenQuestionIds, ['Q002', 'Q003', 'Q001']);
+});
+
+ test('version 3 keeps lessons and mastery but retires the old diagnostic and plan', () => {
+  const state = fullState();
+  const old = structuredClone(state);
+  old.bankVersion = '3.0.0';
+  old.diagnostic!.bankVersion = '3.0.0';
+  old.diagnostic!.items.push(...old.diagnostic!.items.slice(0, 5));
+  old.seenQuestionIds.push('Q001');
+  for (const record of Object.values(old.checks)) for (const attempt of record!.attempts) attempt.bankVersion = '3.0.0';
+  old.activeCheck = createCheck(bank, TOPICS[1].id, [], seeded(7));
+  old.activeCheck.bankVersion = '3.0.0';
+  const restored = restoreLearner(JSON.stringify(old), null, bank, lessonIds)!;
+  assert.ok(restored);
+  assert.equal(restored.bankVersion, bank.bankVersion);
+  assert.equal(restored.name, state.name);
+  assert.equal(restored.diagnostic, null);
+  assert.equal(restored.plan, null);
+  assert.deepEqual(restored.confidence, {});
+  assert.deepEqual(restored.lessons, state.lessons);
+  assert.deepEqual(restored.checks, state.checks);
+  assert.deepEqual(restored.capstone, state.capstone);
+  assert.equal(restored.activeCheck!.bankVersion, bank.bankVersion);
+  assert.equal(masteredCount(restored), 1);
+  assert.ok(!restored.seenQuestionIds.includes('Q001'));
+  assert.deepEqual(importLearner(JSON.stringify(old), bank, lessonIds), restored);
+  old.checks[TOPICS[2].id]!.attempts[0].answers = { Q999: 'a' };
+  assert.equal(restoreLearner(JSON.stringify(old), null, bank, lessonIds), null);
 });

@@ -1,6 +1,6 @@
 # CIMMYT MEAL course
 
-A Next.js static site that teaches the CIMMYT MEAL Framework 2026–2030: a 15-question diagnostic, a personal study plan, ten self-standing modules with animated explainers and interactive examples, five-question mastery checks, a branching capstone and a printable completion record. It implements [docs/course-spec.md](../docs/course-spec.md).
+A Next.js static site that teaches the CIMMYT MEAL Framework 2026–2030: a 10-question diagnostic, a personal study plan, ten self-standing modules with animated explainers and interactive examples, five-question mastery checks, a branching capstone and a printable completion record. It implements [docs/course-spec.md](../docs/course-spec.md).
 
 ## Run locally
 
@@ -18,7 +18,7 @@ The development server uses port 4173. `npm run build` creates a static export i
 | Route | Screen |
 | --- | --- |
 | `/` | Home: start or continue; "Next for you" follows the plan |
-| `/assess/` | Diagnostic (15 questions, Sure / Not sure tap after each answer) |
+| `/assess/` | Diagnostic (10 questions, Sure / Not sure tap after each answer) |
 | `/results/` | Score, topic breakdown, personal plan, answer review, print |
 | `/course/` | Course map with status stamps; export and import of the learning record |
 | `/course/[module]/` | Scenario, objectives, lesson list with "Start at" markers, glossary cards, check button |
@@ -31,7 +31,7 @@ The development server uses port 4173. `npm run build` creates a static export i
 
 ## How the engine works
 
-- **Diagnostic** (`lib/assessment.ts`): one item per topic plus a second in five random topics, drawn from the 100-item diagnostic pool, shuffled. Unchanged from the assessment app.
+- **Diagnostic** (`lib/assessment.ts`): ten workshop questions covering all nine topics, with two on impact assessment. Every attempt includes all ten; question and answer order are shuffled.
 - **Plan** (`lib/plan.ts`): per topic, status rules in order: foundation miss or no correct answer gives *Start here*; any other miss or a confident miss gives *Review* from a named lesson; right but unsure gives *Check first*; otherwise *Looking good*. Priority uses a gap score (foundation 1.5, applied 1.0, advanced 0.7, plus 0.5 per confident miss). Missed items point at the lessons teaching their objectives and, through the distractor's misconception tag, at remedy lessons.
 - **Checks** (`lib/checks.ts`): 5 items from the module's check pool covering at least 4 objectives, never repeating a question seen in this browser until the pool is exhausted. Pass at 4 of 5. Two consecutive failures start a 10-minute cool-down. A 3-item refresher is offered 7 days after mastery; failing it moves the module to *Review*, never *Start here*.
 - **Learner state** (`lib/learner.ts`): version 2 record in local storage (`cimmyt-meal-learner-v2`) with defensive validation, migration from the v1 assessment key, and JSON export and import.
@@ -41,9 +41,9 @@ The development server uses port 4173. `npm run build` creates a static export i
 Everything the learner reads is data. See [docs/content-authoring.md](docs/content-authoring.md).
 
 - `content/modules/*.json`: eleven modules (orientation plus ten topics), each with scenario, objectives, lessons and storyboards.
-- `content/drafts/*.json`: the authoring bundles, one per topic module, including the module's new questions, misconception tags and tags for its ten diagnostic items. `node scripts/validate-draft.mjs <file>` checks one; `node scripts/merge-drafts.mjs` folds all drafts into the live content and bank.
+- `content/drafts/*.json`: the authoring bundles, one per topic module, including the module's new questions, misconception tags and tags for its retained diagnostic items. `node scripts/validate-draft.mjs <file>` checks one; `node scripts/merge-drafts.mjs` folds all drafts into the live content and bank.
 - `content/misconceptions.json`, `content/glossary.json`, `content/capstone.json`.
-- `data/question-bank.json` (copied to `public/`): 347 items in three pools: 100 diagnostic (Q001 to Q100, unchanged), 104 practice and 143 check. Every item carries `objectiveIds` and `pool`; check and diagnostic distractors carry `misconceptions` tags where one applies.
+- `data/question-bank.json` (copied to `public/`): 233 items in three pools: 10 diagnostic, 94 practice and 129 check. Every item carries `objectiveIds` and `pool`; check and diagnostic distractors carry `misconceptions` tags where one applies.
 
 Explainers are storyboards: frames with narration and a scene from a small declarative DSL (title, cards, chain, stack, sort, split, dial, fan, compass, grid, loop, counter, dissolve, checklist) rendered in the app with Motion using the primitives from the spec (slab in, connect, stack, split, dim and spotlight, count up, stamp, sort). A rendered video can replace any storyboard by setting `explainer.kind` to `video` with `src`, `poster` and `captions`; the storyboard then remains as transcript. Interactive examples (`sorter`, `order`, `branch`, `dial`, `matrix`, `budget`, `persona`) are keyboard-operable.
 

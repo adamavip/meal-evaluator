@@ -1,6 +1,6 @@
 {
   "id": "learning-adaptation",
-  "order": 8,
+  "order": 7,
   "title": "Learning & adaptation",
   "short": "Learning",
   "minutes": 25,
@@ -58,7 +58,7 @@
   ],
   "lessons": [
     {
-      "id": "L8.1",
+      "id": "L7.1",
       "moduleId": "learning-adaptation",
       "title": "Evidence reviews: the operating cadence",
       "objectiveIds": [
@@ -69,7 +69,7 @@
         "hook": "Your dashboard just showed a problem. Annual reporting is seven months away. The framework does not expect you to wait. It expects a review, and a review has a specific output.",
         "explainer": {
           "kind": "storyboard",
-          "storyboardId": "sb-m8-hero"
+          "storyboardId": "sb-m7-hero"
         },
         "example": {
           "kind": "interactive",
@@ -165,7 +165,7 @@
       ]
     },
     {
-      "id": "L8.2",
+      "id": "L7.2",
       "moduleId": "learning-adaptation",
       "title": "Decision logs and management responses",
       "objectiveIds": [
@@ -176,7 +176,7 @@
         "hook": "A good review can still leave no trace. Six months later nobody remembers what was agreed or whether anyone did it. The decision log and the management response exist to stop that.",
         "explainer": {
           "kind": "storyboard",
-          "storyboardId": "sb-m8-log"
+          "storyboardId": "sb-m7-log"
         },
         "example": {
           "kind": "text",
@@ -213,7 +213,7 @@
       ]
     },
     {
-      "id": "L8.3",
+      "id": "L7.3",
       "moduleId": "learning-adaptation",
       "title": "When evidence should change a decision",
       "objectiveIds": [
@@ -224,7 +224,7 @@
         "hook": "Nine percent uptake in two districts. Do you change delivery today, wait, or ask why? The framework gives you three routes, and the first move is almost never the big one.",
         "explainer": {
           "kind": "storyboard",
-          "storyboardId": "sb-m8-branch"
+          "storyboardId": "sb-m7-branch"
         },
         "example": {
           "kind": "interactive",
@@ -355,7 +355,7 @@
       ]
     },
     {
-      "id": "L8.4",
+      "id": "L7.4",
       "moduleId": "learning-adaptation",
       "title": "Pilots, handover and cross-site learning",
       "objectiveIds": [
@@ -367,7 +367,7 @@
         "hook": "Learning is not only about this project. A form that fails in one pilot, a handover that skips the competency check, a question that keeps coming to office hours: each is evidence that the guidance itself should change.",
         "explainer": {
           "kind": "storyboard",
-          "storyboardId": "sb-m8-pilot"
+          "storyboardId": "sb-m7-pilot"
         },
         "example": {
           "kind": "text",
@@ -402,7 +402,7 @@
       ]
     },
     {
-      "id": "L8.5",
+      "id": "L7.5",
       "moduleId": "learning-adaptation",
       "title": "Evidence gaps and the 2030 capabilities",
       "objectiveIds": [
@@ -413,7 +413,7 @@
         "hook": "Once a year the whole portfolio is recomputed. The point is not only the dashboard. It is the register of what CIMMYT still cannot answer, and the eight things it should be able to do by 2030.",
         "explainer": {
           "kind": "storyboard",
-          "storyboardId": "sb-m8-2030"
+          "storyboardId": "sb-m7-2030"
         },
         "example": {
           "kind": "text",
@@ -451,12 +451,12 @@
   ],
   "storyboards": [
     {
-      "id": "sb-m8-hero",
+      "id": "sb-m7-hero",
       "title": "The evidence review loop",
       "frames": [
         {
           "id": "f1",
-          "seconds": 8,
+          "seconds": 9,
           "narration": "A dashboard shows a problem in the middle of the season. The question is not whether to react. It is where the reaction gets recorded.",
           "scene": {
             "kind": "title",
@@ -466,7 +466,7 @@
         },
         {
           "id": "f2",
-          "seconds": 16,
+          "seconds": 15,
           "narration": "The loop has four steps. Evidence enters. A joint review reads it. A decision log entry records what changes, who acts and by when. A practice changes. Then new evidence enters.",
           "scene": {
             "kind": "loop",
@@ -494,7 +494,7 @@
         },
         {
           "id": "f3",
-          "seconds": 18,
+          "seconds": 17,
           "narration": "Step two. The quarterly or seasonal review is a joint review. It looks at implementation, reach, early uptake and emerging outcomes. The Focal Point is responsible, the project lead is accountable, the Regional Lead and Pillar C are consulted.",
           "scene": {
             "kind": "loop",
@@ -550,7 +550,7 @@
         },
         {
           "id": "f5",
-          "seconds": 16,
+          "seconds": 17,
           "narration": "Step four. The practice changes while delivery is still underway. Next quarter the loop runs again and checks whether the change moved uptake. That is adaptive management: during implementation, not only at closure.",
           "scene": {
             "kind": "loop",
@@ -619,7 +619,7 @@
         },
         {
           "id": "f7",
-          "seconds": 8,
+          "seconds": 9,
           "narration": "A review without a decision log is a meeting. Evidence in, decision out, practice changed. That is the loop.",
           "scene": {
             "kind": "title",
@@ -631,12 +631,12 @@
       ]
     },
     {
-      "id": "sb-m8-log",
+      "id": "sb-m7-log",
       "title": "Decision logs and management responses",
       "frames": [
         {
           "id": "f1",
-          "seconds": 8,
+          "seconds": 9,
           "narration": "Here is how most reviews end: a summary of findings and a date for the next meeting. Nothing anyone can act on.",
           "scene": {
             "kind": "checklist",
@@ -666,7 +666,7 @@
         },
         {
           "id": "f2",
-          "seconds": 16,
+          "seconds": 17,
           "narration": "A decision log entry fills the three fields the framework names. What changes: extend the enrolment window. Who acts: the Focal Point with district leads. By when: end of next month. And the entry is linked to the evidence behind it.",
           "scene": {
             "kind": "checklist",
@@ -693,7 +693,7 @@
         },
         {
           "id": "f3",
-          "seconds": 16,
+          "seconds": 15,
           "narration": "Evaluations produce recommendations, not decisions. The management response records what management decided about each one, and Pillar C tracks whether significant recommendations are acted on. The analyst keeps the log current.",
           "scene": {
             "kind": "chain",
@@ -724,7 +724,7 @@
         },
         {
           "id": "f4",
-          "seconds": 8,
+          "seconds": 15,
           "narration": "The data system has a place for both. The learning and feedback functionality holds decision logs, management responses and participant feedback, linked to the evidence behind them. It closes the loop from evidence to action.",
           "scene": {
             "kind": "title",
@@ -736,12 +736,12 @@
       ]
     },
     {
-      "id": "sb-m8-branch",
+      "id": "sb-m7-branch",
       "title": "Decide, investigate or ask",
       "frames": [
         {
           "id": "f1",
-          "seconds": 10,
+          "seconds": 12,
           "narration": "Two districts at nine percent. The instinct is to act now or to wait for annual data. The framework offers a third move first: investigate the anomaly.",
           "scene": {
             "kind": "split",
@@ -766,7 +766,7 @@
         },
         {
           "id": "f2",
-          "seconds": 16,
+          "seconds": 14,
           "narration": "The sequence is set by the implementation phase. Investigate anomalies. Use dashboards and reviews to adapt. Document decisions. The gate is a review with actions, owners and follow-up.",
           "scene": {
             "kind": "chain",
@@ -797,7 +797,7 @@
         },
         {
           "id": "f3",
-          "seconds": 16,
+          "seconds": 21,
           "narration": "At the review, evidence takes one of three routes. Clear enough to act: a decision log entry. Not yet clear: a further question with an owner. Beyond routine monitoring, such as why results differ across contexts: a learning review or a trigger-based study with Pillar C.",
           "scene": {
             "kind": "cards",
@@ -835,12 +835,12 @@
       ]
     },
     {
-      "id": "sb-m8-pilot",
+      "id": "sb-m7-pilot",
       "title": "Pilots, handover and support",
       "frames": [
         {
           "id": "f1",
-          "seconds": 14,
+          "seconds": 15,
           "narration": "Pilots test KPIs, methods and data collection in real implementation. When a form fails in the field, the finding flows back into the guidance. Improvements are released as new versions, not as local workarounds.",
           "scene": {
             "kind": "chain",
@@ -867,7 +867,7 @@
         },
         {
           "id": "f2",
-          "seconds": 12,
+          "seconds": 10,
           "narration": "Handover has a gate. Training delivered is not it. The gate is a competency check, a live system and named data and MEAL owners.",
           "scene": {
             "kind": "checklist",
@@ -893,7 +893,7 @@
         },
         {
           "id": "f3",
-          "seconds": 14,
+          "seconds": 18,
           "narration": "Between pilots and gates sits day-to-day support. Office hours, clinics and refresher sessions answer questions. A log of recurrent issues shows which questions are really gaps in the guidance. Communities of practice carry the answer across the network.",
           "scene": {
             "kind": "cards",
@@ -924,7 +924,7 @@
         },
         {
           "id": "f4",
-          "seconds": 8,
+          "seconds": 11,
           "narration": "The enabling condition is continuous learning and adaptation: evidence reviewed and acted on, improvements released as new versions of the guidance.",
           "scene": {
             "kind": "title",
@@ -936,12 +936,12 @@
       ]
     },
     {
-      "id": "sb-m8-2030",
+      "id": "sb-m7-2030",
       "title": "Evidence gaps and 2030",
       "frames": [
         {
           "id": "f1",
-          "seconds": 14,
+          "seconds": 21,
           "narration": "Once a year the KPI engine recomputes institutional KPIs from eligible records, with coverage, uncertainty and method version. Out come a portfolio dashboard, an evidence-gap register and method notes. The register feeds resource allocation and the annual review of the Handbook.",
           "scene": {
             "kind": "loop",
@@ -969,7 +969,7 @@
         },
         {
           "id": "f2",
-          "seconds": 20,
+          "seconds": 8,
           "narration": "By 2030 the framework should give CIMMYT eight capabilities it does not have in a systematic form today.",
           "scene": {
             "kind": "cards",
@@ -1021,7 +1021,7 @@
         },
         {
           "id": "f3",
-          "seconds": 10,
+          "seconds": 16,
           "narration": "The biggest change is in the question CIMMYT can answer. Today, what did we do. By 2030, what changed, for whom, where, under what conditions, at what scale, and what did CIMMYT contribute.",
           "scene": {
             "kind": "split",

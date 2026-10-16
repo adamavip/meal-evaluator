@@ -8,7 +8,7 @@ import { ArrowDown, ArrowRight, ArrowUpRight, Award, BookOpen, Layers3, Network,
 import { useLearner } from '../components/LearnerProvider';
 import { Loading, TopicIcon, usePageFocus } from '../components/ui';
 import { BANK, DIAGNOSTIC_COUNT } from '../lib/bank';
-import { answeredCount, createAttempt } from '../lib/assessment';
+import { answeredCount, createAttempt, SESSION_SIZE } from '../lib/assessment';
 import { COURSE_MINUTES, COURSE_MODULES, LESSONS, modulePath } from '../lib/content';
 import { recheckDue } from '../lib/checks';
 import { completedLessonIds, masteredCount } from '../lib/learner';
@@ -63,7 +63,7 @@ export default function Home() {
     router.push('/assess/');
   }
   function requestStart() {
-    if (attempt && !attempt.finishedAt) confirm({ title: 'Start a fresh diagnostic?', body: 'Your current answers will be replaced by a new random set of 15 questions.', confirmLabel: 'Start fresh', cancelLabel: 'Keep current diagnostic', onConfirm: start });
+    if (attempt && !attempt.finishedAt) confirm({ title: 'Start a fresh diagnostic?', body: `Your current answers will be replaced by the ${SESSION_SIZE}-question assessment in a new order.`, confirmLabel: 'Start fresh', cancelLabel: 'Keep current diagnostic', onConfirm: start });
     else if (hasPlan) confirm({ title: 'Retake the diagnostic?', body: 'A new diagnostic rebuilds your plan from scratch. Mastered modules stay mastered.', confirmLabel: 'Retake', cancelLabel: 'Keep my plan', onConfirm: start });
     else start();
   }
@@ -72,7 +72,7 @@ export default function Home() {
       <div className="hero-copy">
         <div className="eyebrow"><span className="square-dot" /> CIMMYT MEAL · Self-paced course</div>
         <h1 tabIndex={-1} data-page-heading>Learn the<br /><span className="highlight">MEAL</span><br />framework.</h1>
-        <p className="hero-description">A 15-question diagnostic tells you what to skip and what to study. Ten short modules, animated explainers, mastery checks and a capstone take you from a theory of change to evidence of impact.</p>
+        <p className="hero-description">A {SESSION_SIZE}-question diagnostic checks the key MEAL messages and helps you choose what to study. Nine short modules, animated explainers, mastery checks and a capstone take you from a theory of change to evidence of impact.</p>
         <div className="hero-facts"><span><strong>{COURSE_MODULES.length}</strong> modules</span><span><strong>{LESSONS.length}</strong> lessons</span><span><strong>~{Math.round(COURSE_MINUTES / 60 * 2) / 2} h</strong> at your pace</span></div>
         {hasPlan ? <div className="continue-box paper">
           <p className="eyebrow">Continue your plan</p>
@@ -83,7 +83,7 @@ export default function Home() {
           <label htmlFor="participant">Your name <span>(optional, for your plan and certificate)</span></label>
           <input id="participant" autoComplete="name" maxLength={80} value={currentName} placeholder="Enter your name" onChange={event => setName(event.target.value)} />
           <button className="button primary start-button" type="submit">{attempt && !attempt.finishedAt ? 'Start a fresh diagnostic' : 'Start the diagnostic'}<ArrowUpRight size={24} aria-hidden="true" /></button>
-          {attempt && !attempt.finishedAt && <Link href="/assess/" className="resume-link">Resume your diagnostic · {answeredCount(attempt)}/15 answered<ArrowRight size={17} aria-hidden="true" /></Link>}
+          {attempt && !attempt.finishedAt && <Link href="/assess/" className="resume-link">Resume your diagnostic · {answeredCount(attempt)}/{SESSION_SIZE} answered<ArrowRight size={17} aria-hidden="true" /></Link>}
           <p className="privacy-note">Your answers stay in this browser. No time limit. Nothing is locked: you can also <Link href="/course/">browse the course</Link> without the diagnostic.</p>
         </form>}
       </div>
@@ -94,12 +94,12 @@ export default function Home() {
       <div className="recheck-links">{rechecks.map(m => <Link key={m.id} className="button secondary" href={`${modulePath(m.id)}check/?recheck=1`}>{m.short}<ArrowRight size={16} aria-hidden="true" /></Link>)}</div>
     </section>}
     <section className="how-strip" aria-label="How the course works">
-      <div><span className="number-box">01</span><p><strong>Take the diagnostic</strong><span>15 questions, with a Sure or Not sure tap after each.</span></p></div>
+      <div><span className="number-box">01</span><p><strong>Take the diagnostic</strong><span>{SESSION_SIZE} questions, with a Sure or Not sure tap after each.</span></p></div>
       <div><span className="number-box">02</span><p><strong>Follow your plan</strong><span>Modules and lessons where your answers showed gaps, with a reason for each.</span></p></div>
-      <div><span className="number-box">03</span><p><strong>Prove mastery</strong><span>Five-question checks per module. Capstone and certificate when all ten are done.</span></p></div>
+      <div><span className="number-box">03</span><p><strong>Prove mastery</strong><span>Five-question checks per module. Capstone and certificate when all nine are done.</span></p></div>
     </section>
     <section className="topics-section">
-      <div className="section-heading"><div><p className="eyebrow">Inside the course</p><h2>Ten modules. One framework.</h2></div><Link className="text-button" href="/course/">Open the course map<ArrowUpRight size={18} aria-hidden="true" /></Link></div>
+      <div className="section-heading"><div><p className="eyebrow">Inside the course</p><h2>Nine modules. One framework.</h2></div><Link className="text-button" href="/course/">Open the course map<ArrowUpRight size={18} aria-hidden="true" /></Link></div>
       <p className="section-intro">Every module is self-standing. The order follows the framework's own logic: why, what, how to measure, how to manage data, how to claim impact, how to learn and account, how to run it.</p>
       <div className="topics-grid">{TOPICS.map((topic, i) => {
         const module = COURSE_MODULES.find(m => m.id === topic.id);
@@ -109,7 +109,7 @@ export default function Home() {
         </Link>;
       })}</div>
     </section>
-    <section className="source-strip"><BookOpen size={27} aria-hidden="true" /><p><strong>Built from the CIMMYT MEAL Framework 2026–2030.</strong><span>Every lesson cites the section it teaches. Every one of the {BANK.questions.length} questions keeps its source reference ({DIAGNOSTIC_COUNT} in the diagnostic draw).</span></p><Link className="text-button" href="/about/">How it works<ArrowRight size={18} aria-hidden="true" /></Link></section>
+    <section className="source-strip"><BookOpen size={27} aria-hidden="true" /><p><strong>Built from the CIMMYT MEAL Framework 2026–2030.</strong><span>Every lesson cites the section it teaches. Every one of the {BANK.questions.length} questions keeps its source reference ({DIAGNOSTIC_COUNT} in the diagnostic).</span></p><Link className="text-button" href="/about/">How it works<ArrowRight size={18} aria-hidden="true" /></Link></section>
   </>;
 }
 

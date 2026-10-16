@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { ArrowLeft, ArrowRight, ArrowUpRight, BookOpen, Check, ClipboardCheck, Download, ThumbsDown, ThumbsUp } from 'lucide-react';
 import { useLearner } from './LearnerProvider';
 import { Explainer } from './Explainer';
+import { clipsForLesson } from '../lib/audio';
 import { MicroCheck } from './MicroCheck';
 import { WidgetView } from './Widgets';
 import { BackLink, Loading, SectionRef, TopicIcon, usePageFocus } from './ui';
@@ -42,7 +43,7 @@ export function LessonPage({ moduleId, lessonSlug }: { moduleId: string; lessonS
 
     <section className="beat beat-explainer" aria-labelledby="beat-explainer"><span className="beat-label" id="beat-explainer"><i>2</i>Explainer</span>
       {lesson.beats.explainer.kind === 'video' && lesson.beats.explainer.src ? <div className="video-wrap paper"><video controls preload="metadata" poster={lesson.beats.explainer.poster} src={lesson.beats.explainer.src}>{lesson.beats.explainer.captions && <track kind="captions" srcLang="en" src={lesson.beats.explainer.captions} default />}</video></div> : null}
-      {storyboard ? <Explainer storyboard={storyboard} /> : <p>Explainer unavailable.</p>}
+      {storyboard ? <Explainer storyboard={storyboard} clips={clipsForLesson(lesson, storyboard)} /> : <p>Explainer unavailable.</p>}
     </section>
 
     <section className="beat beat-example" aria-labelledby="beat-example"><span className="beat-label" id="beat-example"><i>3</i>Worked example</span>

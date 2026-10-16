@@ -23,7 +23,7 @@ Authoring happens in a **draft bundle**, one file per module, in `content/drafts
 | Field | Rule |
 | --- | --- |
 | `id` | the topic id from `lib/topics.ts` |
-| `order` | 1..10 in topic order (orientation is 0) |
+| `order` | 1..9 in topic order (orientation is 0) |
 | `title`, `short` | as in `lib/topics.ts` |
 | `minutes` | sum of lesson minutes plus 5 for the check, within the spec's module length |
 | `sections` | framework section ids, e.g. `"2.1"`, `"5.10"`, `"Annex A"` |
@@ -32,7 +32,7 @@ Authoring happens in a **draft bundle**, one file per module, in `content/drafts
 | `lessons` | 4 to 7, ids `L<order>.<n>` in sequence |
 | `storyboards` | one per lesson; the first lesson carries the module's hero explainer |
 | `prerequisites` | topic ids used only to order recommendations |
-| `assessed` | `true` for the ten topic modules |
+| `assessed` | `true` for the nine topic modules |
 
 ## Lesson
 
@@ -50,7 +50,7 @@ Every lesson teaches exactly one objective or a tightly linked pair. Every objec
 
 ## Storyboards (the motion graphics)
 
-A storyboard is a list of frames. Each frame has `seconds` (4 to 30), a `narration` line (spoken caption, one to three short sentences) and a `scene`. The player animates the scene's entry with the motion primitives from the spec (slab in, connect, stack, split, dim and spotlight, count up, stamp, sort) and respects reduced motion. Keep one explanatory move per frame. No decorative motion: if a frame can be removed without losing meaning, remove it.
+A storyboard is a list of frames. Each frame has `seconds` (4 to 40, overwritten from the measured clip by `scripts/retime-storyboards.mjs`), a `narration` line (spoken caption and voice-over text, one to three short sentences) and a `scene`. After editing narration, re-run the audio pipeline in `docs/implementation-notes.md`. The player animates the scene's entry with the motion primitives from the spec (slab in, connect, stack, split, dim and spotlight, count up, stamp, sort) and respects reduced motion. Keep one explanatory move per frame. No decorative motion: if a frame can be removed without losing meaning, remove it.
 
 Scene kinds and their fields:
 
@@ -86,7 +86,7 @@ Scene kinds and their fields:
 
 ## Questions
 
-Question ids are assigned by block: module with topic index *i* (0-based) owns `Q{101+30i}` to `Q{130+30i}`. Use ids in order, practice first then check.
+Question ids are assigned by block per topic (see `BLOCK_START` in `scripts/validate-draft.mjs`): meal-foundations Q101, theory-of-change Q131, results-framework Q161, kpis-measurement Q191, evidence-systems Q251, impact-assessment Q281, learning-adaptation Q311, accountability-inclusion Q341, implementation-governance Q371, each block 30 ids. Q221 to Q250 belonged to the retired data-quality module and stay unused. Use ids in order, practice first then check.
 
 | Pool | Count | Used for |
 | --- | --- | --- |
@@ -106,7 +106,7 @@ Rules (from `docs/question-bank-review.md`):
 
 ## Diagnostic tags
 
-For each of the module's ten existing diagnostic items (`Q001`..`Q100` in the bank), give `objectiveIds` and, where a distractor reflects a misconception, a `misconceptions` map. Do not change the items themselves.
+For each of the module's retained workshop diagnostic items (one per topic, two for impact assessment), give `objectiveIds` and, where a distractor reflects a misconception, a `misconceptions` map. Do not change the items themselves.
 
 ## Misconceptions
 

@@ -5,7 +5,6 @@ import mealFoundations from '../content/modules/meal-foundations.json';
 import theoryOfChange from '../content/modules/theory-of-change.json';
 import resultsFramework from '../content/modules/results-framework.json';
 import kpisMeasurement from '../content/modules/kpis-measurement.json';
-import dataQuality from '../content/modules/data-quality.json';
 import evidenceSystems from '../content/modules/evidence-systems.json';
 import impactAssessment from '../content/modules/impact-assessment.json';
 import learningAdaptation from '../content/modules/learning-adaptation.json';
@@ -24,7 +23,7 @@ export type ModuleId = TopicId | 'orientation';
 export type Persona = 'project-lead' | 'field-officer' | 'scientist' | 'meal-specialist' | 'partner-liaison';
 export const PERSONAS: { id: Persona; label: string; blurb: string }[] = [
   { id: 'project-lead', label: 'Project lead', blurb: 'PI or project manager. You need proposal-stage requirements, the minimum package, budgets and who owns what.' },
-  { id: 'field-officer', label: 'Field or data officer', blurb: 'Enumerator lead or data manager. You need quality dimensions, collection plans, the evidence stack and identifiers.' },
+  { id: 'field-officer', label: 'Field or data officer', blurb: 'Enumerator lead or data manager. You need the evidence stack, the journey of one observation, identifiers and offline work.' },
   { id: 'scientist', label: 'Scientist', blurb: 'Breeder, agronomist or economist. You need the case for observation-level evidence, contribution versus attribution and measurement levels.' },
   { id: 'meal-specialist', label: 'MEAL specialist', blurb: 'Institutional or regional MEAL staff. You need fast confirmation and the governance and roadmap detail.' },
   { id: 'partner-liaison', label: 'Partner or donor liaison', blurb: 'Communications or partnerships. You need accountability directions, collect-once reporting and the 2030 ambition.' },
@@ -102,7 +101,7 @@ export type GlossaryEntry = { term: string; definition: string; section: string 
 export type CapstoneDecision = { id: string; moduleId: TopicId; lessonId: string; title: string; situation: string; choices: { id: string; label: string; good: boolean; consequence: string }[] };
 export type Capstone = { title: string; intro: string; project: { name: string; summary: string }; decisions: CapstoneDecision[]; closing: string };
 
-const CONTENT_MODULES = [orientation, mealFoundations, theoryOfChange, resultsFramework, kpisMeasurement, dataQuality, evidenceSystems, impactAssessment, learningAdaptation, accountabilityInclusion, implementationGovernance] as unknown as Module[];
+const CONTENT_MODULES = [orientation, mealFoundations, theoryOfChange, resultsFramework, kpisMeasurement, evidenceSystems, impactAssessment, learningAdaptation, accountabilityInclusion, implementationGovernance] as unknown as Module[];
 
 export const MODULES: Module[] = [...CONTENT_MODULES].sort((a, b) => a.order - b.order);
 export const COURSE_MODULES: Module[] = MODULES.filter(m => m.assessed);

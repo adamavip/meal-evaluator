@@ -428,7 +428,7 @@
       "frames": [
         {
           "id": "f1",
-          "seconds": 6,
+          "seconds": 8,
           "narration": "Your team knows the variety. The concept note still cannot say how a release becomes a change for farmers.",
           "scene": {
             "kind": "title",
@@ -438,7 +438,7 @@
         },
         {
           "id": "f2",
-          "seconds": 14,
+          "seconds": 15,
           "narration": "In Phase 1 the project defines intended results, intervention logic, investor requirements, geography, target populations and feasibility. The theory of change is where the intervention logic gets written down.",
           "scene": {
             "kind": "cards",
@@ -478,7 +478,7 @@
         },
         {
           "id": "f3",
-          "seconds": 14,
+          "seconds": 13,
           "narration": "Central MEAL co-develops it with you. It traces your activities through outputs and outcomes to impact, so the proposal can say what will change, not only what will be delivered.",
           "scene": {
             "kind": "chain",
@@ -539,7 +539,7 @@
       "frames": [
         {
           "id": "f1",
-          "seconds": 6,
+          "seconds": 9,
           "narration": "A results chain is four slabs and three links. The slabs are easy. The links are where proposals go wrong.",
           "scene": {
             "kind": "title",
@@ -549,7 +549,7 @@
         },
         {
           "id": "f2",
-          "seconds": 14,
+          "seconds": 28,
           "narration": "Slab one: processes. Trials run with national partners. Slab two: outputs. A variety released, seed sold, field days held. Slab three: outcomes. Farmers plant it. Slab four: impact. Gains that last.",
           "scene": {
             "kind": "chain",
@@ -579,7 +579,7 @@
         },
         {
           "id": "f3",
-          "seconds": 20,
+          "seconds": 14,
           "narration": "Now hang a tag on each link. Each tag is an assumption: something the chain relies on but the project does not control. Write them down. A link without a tag is a hope, not a plan.",
           "scene": {
             "kind": "chain",
@@ -621,7 +621,7 @@
         },
         {
           "id": "f4",
-          "seconds": 14,
+          "seconds": 13,
           "narration": "Follow one farmer along the chain. She attends a field day. That is an output. She plants the variety next season. That is an outcome. Nothing at slab two told you slab three would happen.",
           "scene": {
             "kind": "chain",
@@ -653,7 +653,7 @@
         },
         {
           "id": "f5",
-          "seconds": 20,
+          "seconds": 13,
           "narration": "Now the assumption fails. Certified seed never reaches her agro-dealer. Outputs are complete. The outcome slab stays empty. The chain breaks at the link, not at the slab.",
           "scene": {
             "kind": "chain",
@@ -697,7 +697,7 @@
         },
         {
           "id": "f6",
-          "seconds": 14,
+          "seconds": 13,
           "narration": "The last link is different again. Impact is lasting change. CIMMYT does not claim to be the sole cause. The chain states a contribution alongside rainfall, prices and other actors.",
           "scene": {
             "kind": "chain",
@@ -736,7 +736,7 @@
         },
         {
           "id": "f7",
-          "seconds": 8,
+          "seconds": 9,
           "narration": "Slabs are what you deliver and what changes. Links are what you assume. Name each one and plan the evidence that will test it.",
           "scene": {
             "kind": "title",
@@ -753,7 +753,7 @@
       "frames": [
         {
           "id": "f1",
-          "seconds": 6,
+          "seconds": 8,
           "narration": "Ask one question at every link: what has to be true, outside your control, for the next slab to fill?",
           "scene": {
             "kind": "title",
@@ -763,7 +763,7 @@
         },
         {
           "id": "f2",
-          "seconds": 16,
+          "seconds": 20,
           "narration": "Seed sold, to farmers plant it: the assumption is that seed reaches the dealers farmers use, at a price they will pay, and that they choose it. Farmers plant it, to lasting gains: the assumption is that the gain persists across seasons and markets.",
           "scene": {
             "kind": "chain",
@@ -796,7 +796,7 @@
         },
         {
           "id": "f3",
-          "seconds": 14,
+          "seconds": 19,
           "narration": "The Matrix names this check. Seed systems: does the adoption and diffusion logic hold? System change: check the assumptions in the theory of change. Breeding and upstream science: periodic review against the theory of change.",
           "scene": {
             "kind": "cards",
@@ -828,7 +828,7 @@
         },
         {
           "id": "f4",
-          "seconds": 12,
+          "seconds": 11,
           "narration": "An unstated assumption cannot be checked. A stated one names the evidence that would show it failing. That evidence becomes a row in the measurement plan.",
           "scene": {
             "kind": "split",
@@ -860,7 +860,7 @@
       "frames": [
         {
           "id": "f1",
-          "seconds": 10,
+          "seconds": 12,
           "narration": "Three project types, three different routes from output to outcome. The Matrix describes each one. Copying the wrong route is a common proposal error.",
           "scene": {
             "kind": "cards",
@@ -886,7 +886,7 @@
         },
         {
           "id": "f2",
-          "seconds": 14,
+          "seconds": 15,
           "narration": "Seed systems: seed is multiplied and distributed, farmers adopt it, and the variety diffuses. MEAL checks that the adoption and diffusion logic holds, with registries and adoption dashboards.",
           "scene": {
             "kind": "chain",
@@ -920,7 +920,7 @@
         },
         {
           "id": "f3",
-          "seconds": 14,
+          "seconds": 18,
           "narration": "Digital advice: the chain runs through usefulness and engagement before practice changes. The Matrix asks for a user-centred theory of change covering usefulness, behaviour change and relevance, with usage and engagement KPIs.",
           "scene": {
             "kind": "chain",
@@ -954,7 +954,7 @@
         },
         {
           "id": "f4",
-          "seconds": 14,
+          "seconds": 13,
           "narration": "Upstream science: the chain connects scientific advances to impact pathways and innovation readiness. It does not pretend that a laboratory output is farmer adoption.",
           "scene": {
             "kind": "chain",
@@ -988,7 +988,7 @@
         },
         {
           "id": "f5",
-          "seconds": 14,
+          "seconds": 16,
           "narration": "Match the logic to the type. Adoption and diffusion belongs to seed systems. Usefulness and engagement to digital. Innovation readiness to upstream science. Seed logic dropped into a digital project bounces back.",
           "scene": {
             "kind": "sort",
@@ -1027,7 +1027,7 @@
       "frames": [
         {
           "id": "f1",
-          "seconds": 14,
+          "seconds": 15,
           "narration": "One RACI row. The project lead is accountable. The Regional MEAL Lead is responsible for doing the work. The Design pillar and the Evaluation pillar are consulted. One A per activity.",
           "scene": {
             "kind": "grid",
@@ -1059,7 +1059,7 @@
         },
         {
           "id": "f2",
-          "seconds": 14,
+          "seconds": 13,
           "narration": "Accountable means you own the result, even if someone else drafts it. The Regional MEAL Lead holds the pen. For complex or strategic proposals the Design pillar leads the theory of change work.",
           "scene": {
             "kind": "cards",
@@ -1090,7 +1090,7 @@
         },
         {
           "id": "f3",
-          "seconds": 12,
+          "seconds": 11,
           "narration": "The chain is co-developed in Phase 1, confirmed at inception, and revisited in reviews and contribution analysis. Ownership does not end at submission.",
           "scene": {
             "kind": "loop",
@@ -1117,7 +1117,7 @@
         },
         {
           "id": "f4",
-          "seconds": 8,
+          "seconds": 12,
           "narration": "For a Small project on the standard package, the Regional MEAL Lead's Phase 1 role is limited to confirming the classification and the base budget. The chain is still yours.",
           "scene": {
             "kind": "title",
@@ -1134,7 +1134,7 @@
       "frames": [
         {
           "id": "f1",
-          "seconds": 12,
+          "seconds": 30,
           "narration": "Six minutes, six moves. Four slabs. A tag on each link. Evidence for each tag. Impact as a contribution. One learning question. A pathway check against your Matrix row.",
           "scene": {
             "kind": "checklist",
@@ -1163,7 +1163,7 @@
         },
         {
           "id": "f2",
-          "seconds": 16,
+          "seconds": 15,
           "narration": "Here is the maize draft. Trials with partners. Variety released, seed sold, field days held. Farmers plant it and companies keep multiplying it. Lasting gains, alongside other factors.",
           "scene": {
             "kind": "chain",
@@ -1226,7 +1226,7 @@
         },
         {
           "id": "f4",
-          "seconds": 8,
+          "seconds": 10,
           "narration": "Draft it now, at concept-note stage. The Design pillar exists so that weak theories of change are not locked in at proposal stage.",
           "scene": {
             "kind": "title",

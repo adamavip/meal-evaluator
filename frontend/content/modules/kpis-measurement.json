@@ -539,7 +539,7 @@
       "frames": [
         {
           "id": "f1",
-          "seconds": 10,
+          "seconds": 16,
           "narration": "The KPI Toolbox holds 142 indicators in 13 volumes. Ten volumes cover impact pathways, which measure CIMMYT's contribution to change. Three cover enabling pathways, which measure how CIMMYT itself performs.",
           "scene": {
             "kind": "counter",
@@ -570,7 +570,7 @@
         },
         {
           "id": "f2",
-          "seconds": 16,
+          "seconds": 19,
           "narration": "The impact volumes are grouped under three Thrusts: Human Wellbeing, Planetary Health and Peace. That is the top level at which institutional results are aggregated and reported. The enabling volumes sit beside them as institutional performance.",
           "scene": {
             "kind": "cards",
@@ -601,7 +601,7 @@
         },
         {
           "id": "f3",
-          "seconds": 18,
+          "seconds": 20,
           "narration": "Watch four volumes find their place. Productivity goes to Human Wellbeing. Environmental sustainability to Planetary Health. Policy, finance and markets to Peace. Workforce and talent tries to join Peace and bounces back: it is an enabling volume.",
           "scene": {
             "kind": "sort",
@@ -635,7 +635,7 @@
         },
         {
           "id": "f4",
-          "seconds": 8,
+          "seconds": 13,
           "narration": "One volume refuses to pick a Thrust. Volume 1, innovation development and scaling, applies across all three, because innovations and partnerships feed every pathway.",
           "scene": {
             "kind": "title",
@@ -652,7 +652,7 @@
       "frames": [
         {
           "id": "f1",
-          "seconds": 8,
+          "seconds": 11,
           "narration": "Three projects, three countries, one yield KPI. Each measures differently. By the end of this story they will reconverge on one reported value.",
           "scene": {
             "kind": "title",
@@ -662,7 +662,7 @@
         },
         {
           "id": "f2",
-          "seconds": 22,
+          "seconds": 23,
           "narration": "The yield KPI fans out into three measurement levels. At farm and plot level: direct measurement, crop cuts or a farmer survey. At trial and station level: harvested-plot measurement under standard protocols. At region and country level: aggregation from trials and farm data, with modelling where needed.",
           "scene": {
             "kind": "fan",
@@ -686,7 +686,7 @@
         },
         {
           "id": "f3",
-          "seconds": 18,
+          "seconds": 21,
           "narration": "Each level has its own key standards. Farm: most reliable method feasible, documented and rated. Trial: net plot, standard moisture, minimum plot size and repetitions. Region: inclusion criteria, weighting, uncertainty bounds.",
           "scene": {
             "kind": "cards",
@@ -712,7 +712,7 @@
         },
         {
           "id": "f4",
-          "seconds": 20,
+          "seconds": 21,
           "narration": "Take one trial standard. A fresh harvest weighs more than a dry one. So the protocol measures the net plot and adjusts the yield to a standard moisture. The framework's example for maize is 12.5 percent. Only after that dial completes are two trials comparable.",
           "scene": {
             "kind": "dial",
@@ -731,7 +731,7 @@
         },
         {
           "id": "f5",
-          "seconds": 16,
+          "seconds": 21,
           "narration": "This is what harmonisation means. What is shared: the definition, the methodological logic and the interpretation rules. What varies by level: the method, the key standards and the quality rating.",
           "scene": {
             "kind": "split",
@@ -758,7 +758,7 @@
         },
         {
           "id": "f6",
-          "seconds": 20,
+          "seconds": 23,
           "narration": "Now the three levels reconverge. The KPI engine recomputes from the eligible records with the indicator's method. What comes out is one value, and it never travels alone: coverage, uncertainty, provenance and method quality travel with it. The figures here are an illustration.",
           "scene": {
             "kind": "counter",
@@ -792,7 +792,7 @@
         },
         {
           "id": "f7",
-          "seconds": 8,
+          "seconds": 11,
           "narration": "Projects may set their local scope. They do not silently redefine the institutional indicator. That one sentence is what makes the fan close again.",
           "scene": {
             "kind": "title",
@@ -809,7 +809,7 @@
       "frames": [
         {
           "id": "f1",
-          "seconds": 10,
+          "seconds": 12,
           "narration": "Three project figures arrive for the annual KPI run. The spreadsheet is begging you to add them, or average them. Both are shortcuts over the records.",
           "scene": {
             "kind": "counter",
@@ -870,7 +870,7 @@
         },
         {
           "id": "f3",
-          "seconds": 16,
+          "seconds": 20,
           "narration": "The method depends on the KPI. Section 3.3 lists what it may involve: de-duplication, weighting, pooling of microdata, extrapolation, spatial interpolation, modelling or meta-analysis, and triangulation with compatible secondary sources.",
           "scene": {
             "kind": "cards",
@@ -952,7 +952,7 @@
       "frames": [
         {
           "id": "f1",
-          "seconds": 14,
+          "seconds": 15,
           "narration": "Two ways a project can touch an institutional KPI. Local scope says where and for whom it applies. Silent redefinition changes what it means while keeping the label. The first is allowed. The second is not.",
           "scene": {
             "kind": "split",
@@ -981,7 +981,7 @@
         },
         {
           "id": "f2",
-          "seconds": 18,
+          "seconds": 21,
           "narration": "Sort four moves. Restricting to irrigated plots: scope. Reporting the main season only: scope. Counting seed recipients as adopters tries to pass as scope and bounces: that is a redefinition. Changing the unit of observation: also a redefinition.",
           "scene": {
             "kind": "sort",
@@ -1013,7 +1013,7 @@
         },
         {
           "id": "f3",
-          "seconds": 16,
+          "seconds": 22,
           "narration": "If a team genuinely needs the definition changed, there is a door. Governance rule 1: the MEAL team reviews, the Design, Standards and Enablement pillar approves, and the change is published in a new version of the Handbook. Until then, a project-specific indicator stays project-specific.",
           "scene": {
             "kind": "chain",
@@ -1044,7 +1044,7 @@
         },
         {
           "id": "f4",
-          "seconds": 8,
+          "seconds": 12,
           "narration": "Keep the institutional definition. Report the investor measure separately. Write your scope down. Ask for review when the definition itself must change.",
           "scene": {
             "kind": "title",
@@ -1061,7 +1061,7 @@
       "frames": [
         {
           "id": "f1",
-          "seconds": 18,
+          "seconds": 23,
           "narration": "For every KPI, CIMMYT defines nine things. The concept. The unit of observation. The data sources. The valid methods by measurement level. The calculation and aggregation rules. The disaggregation. The quality assurance requirements. The data provenance.",
           "scene": {
             "kind": "checklist",
@@ -1108,7 +1108,7 @@
         },
         {
           "id": "f2",
-          "seconds": 18,
+          "seconds": 20,
           "narration": "The methods section reads like a table. One row per measurement level. For yield: farm and plot, trial and station, region and country. Each row names the method, the key standards and the quality rating. Your measurement plan row picks one level and follows that row.",
           "scene": {
             "kind": "grid",
@@ -1148,7 +1148,7 @@
         },
         {
           "id": "f3",
-          "seconds": 10,
+          "seconds": 12,
           "narration": "Forms are built from the sheet. Plan rows are checked against it. The KPI engine computes with it. Read the sheet before you plan, and you will not be surprised at the annual run.",
           "scene": {
             "kind": "title",
@@ -1165,7 +1165,7 @@
       "frames": [
         {
           "id": "f1",
-          "seconds": 14,
+          "seconds": 18,
           "narration": "A quality rating says how reliable a measurement is, given the method used. Farm-level methods earn high to medium, depending on the method. Trial protocols earn high. An undocumented method earns nothing, because nobody can rate it.",
           "scene": {
             "kind": "dial",
@@ -1183,7 +1183,7 @@
         },
         {
           "id": "f2",
-          "seconds": 12,
+          "seconds": 15,
           "narration": "Three levels, three rating bands. Farm and plot: high to medium. Trial and station: high, controlled protocols. Region and country: variable, so document coverage and method quality.",
           "scene": {
             "kind": "cards",
@@ -1209,7 +1209,7 @@
         },
         {
           "id": "f3",
-          "seconds": 14,
+          "seconds": 21,
           "narration": "Two records from the same county. Record A carries its method and its rating. Record B carries a number. Only A can be judged eligible, weighted and recalculated later. The rating is what lets a reviewer trust the figure without re-measuring it.",
           "scene": {
             "kind": "split",
@@ -1235,7 +1235,7 @@
         },
         {
           "id": "f4",
-          "seconds": 8,
+          "seconds": 10,
           "narration": "Ratings travel with the record. An aggregate does not inherit the best one in the set. It documents its own coverage and method quality.",
           "scene": {
             "kind": "title",
@@ -1252,7 +1252,7 @@
       "frames": [
         {
           "id": "f1",
-          "seconds": 8,
+          "seconds": 7,
           "narration": "The question the framework uses as its own example: what has CIMMYT contributed to yield change in Kenya?",
           "scene": {
             "kind": "title",
@@ -1262,7 +1262,7 @@
         },
         {
           "id": "f2",
-          "seconds": 14,
+          "seconds": 16,
           "narration": "Three project reports cannot answer it. So the framework dissolves the reports into the observations underneath: plots, trials, farms, participants, each with identifiers and provenance.",
           "scene": {
             "kind": "dissolve",
@@ -1279,7 +1279,7 @@
         },
         {
           "id": "f3",
-          "seconds": 16,
+          "seconds": 20,
           "narration": "Answering needs four things the records make possible. Contribution or attribution analysis against a credible counterfactual. Agronomic, socioeconomic and climate modelling. Adoption data. Geospatial assessment. A sum of reported numbers cannot provide any of them.",
           "scene": {
             "kind": "cards",
@@ -1311,7 +1311,7 @@
         },
         {
           "id": "f4",
-          "seconds": 14,
+          "seconds": 20,
           "narration": "From records to decision. Eligible records go into the KPI engine. Out comes a value with coverage, uncertainty, provenance and method quality. It rolls up by volume and Thrust, and leadership gets an answer it can act on and audit.",
           "scene": {
             "kind": "chain",

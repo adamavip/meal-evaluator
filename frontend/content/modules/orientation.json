@@ -4,34 +4,57 @@
   "title": "Orientation",
   "short": "Orientation",
   "minutes": 10,
-  "sections": ["1", "2", "6.2"],
+  "sections": [
+    "1",
+    "2",
+    "6.2"
+  ],
   "assessed": false,
   "prerequisites": [],
   "scenario": {
     "title": "Ten minutes before you start",
     "intro": "You are about to learn the CIMMYT MEAL Framework 2026–2030 in about five hours of self-paced study. Before the first module, three short lessons show you how the course works, preview every concept in ninety seconds, and let you pick the examples that match your role. None of this is assessed.",
-    "persona": ["project-lead", "field-officer", "scientist", "meal-specialist", "partner-liaison"]
+    "persona": [
+      "project-lead",
+      "field-officer",
+      "scientist",
+      "meal-specialist",
+      "partner-liaison"
+    ]
   },
   "objectives": [
-    { "id": "orientation.O1", "text": "Describe how the diagnostic, personal plan, mastery checks and certificate fit together.", "bloom": "understand" },
-    { "id": "orientation.O2", "text": "Name the ten module concepts in the order the framework presents them.", "bloom": "remember" }
+    {
+      "id": "orientation.O1",
+      "text": "Describe how the diagnostic, personal plan, mastery checks and certificate fit together.",
+      "bloom": "understand"
+    },
+    {
+      "id": "orientation.O2",
+      "text": "Name the nine module concepts in the order the framework presents them.",
+      "bloom": "remember"
+    }
   ],
   "lessons": [
     {
       "id": "L0.1",
       "moduleId": "orientation",
       "title": "How this course works: diagnostic, plan, mastery checks, certificate",
-      "objectiveIds": ["orientation.O1"],
+      "objectiveIds": [
+        "orientation.O1"
+      ],
       "minutes": 2,
       "beats": {
         "hook": "You do not have to study everything. The course first finds out what you already know, then tells you what to skip as clearly as what to study.",
-        "explainer": { "kind": "storyboard", "storyboardId": "sb-m0-how" },
+        "explainer": {
+          "kind": "storyboard",
+          "storyboardId": "sb-m0-how"
+        },
         "example": {
           "kind": "text",
           "title": "What a plan looks like",
           "body": [
-            "A field officer takes the 15-question diagnostic and taps Sure or Not sure after each answer. She misses a foundation question on KPIs and a scenario question on accountability, and she is unsure about her correct answer on impact.",
-            "Her plan says: Start here for KPIs & measurement (the full module, 40 minutes). Review for Accountability & inclusion, starting at lesson 9.2. Check first for Impact assessment (take the 5-question check, study only if needed). Everything else is Looking good, optional.",
+            "A field officer takes the 10-question diagnostic and taps Sure or Not sure after each answer. She misses a foundation question on KPIs and a scenario question on accountability, and she is unsure about her correct answer on impact.",
+            "Her plan says: Start here for KPIs & measurement (the full module, 40 minutes). Review for Accountability & inclusion, starting at lesson 8.2. Check first for Impact assessment (take the 5-question check, study only if needed). Everything else is Looking good, optional.",
             "About 1 h 10 min to close her gaps. She passes the KPI check at 4 out of 5, the module stamps Mastered and the plan shrinks. Seven days later the home page offers a 3-question refresher."
           ]
         },
@@ -40,28 +63,38 @@
           "bullets": [
             "Diagnostic first. Then a plan that names modules and the lessons inside them, with a reason for each.",
             "A module is mastered when you pass its 5-question check at 80%. Watching lessons is never required to unlock a check.",
-            "All ten modules mastered plus the capstone unlocks the completion certificate."
+            "All nine modules mastered plus the capstone unlocks the completion certificate."
           ],
-          "source": { "section": "1", "title": "A New MEAL Approach for CIMMYT" }
+          "source": {
+            "section": "1",
+            "title": "A New MEAL Approach for CIMMYT"
+          }
         }
       },
-      "glossary": ["MEAL"]
+      "glossary": [
+        "MEAL"
+      ]
     },
     {
       "id": "L0.2",
       "moduleId": "orientation",
       "title": "The framework in 90 seconds",
-      "objectiveIds": ["orientation.O2"],
+      "objectiveIds": [
+        "orientation.O2"
+      ],
       "minutes": 3,
       "beats": {
-        "hook": "Ten modules, one logic: why evidence changes, what the results chain is, how to measure, how to manage data, how to claim impact, how to learn and account for it, and how to run it all.",
-        "explainer": { "kind": "storyboard", "storyboardId": "sb-m0-framework" },
+        "hook": "Nine modules, one logic: why evidence changes, what the results chain is, how to measure, how to manage data, how to claim impact, how to learn and account for it, and how to run it all.",
+        "explainer": {
+          "kind": "storyboard",
+          "storyboardId": "sb-m0-framework"
+        },
         "example": {
           "kind": "text",
-          "title": "The ten modules, in the framework's own order",
+          "title": "The nine modules, in the framework's own order",
           "body": [
-            "Why: M1 MEAL foundations. What: M2 Theory of change, M3 Results framework. How to measure: M4 KPIs & measurement. How to manage data: M5 Data quality & collection, M6 Evidence & data systems.",
-            "How to claim impact: M7 Impact assessment. How to learn and account: M8 Learning & adaptation, M9 Accountability & inclusion. How to run it: M10 Implementation & governance.",
+            "Why: M1 MEAL foundations. What: M2 Theory of change, M3 Results framework. How to measure: M4 KPIs & measurement. How to manage data: M5 Evidence & data systems.",
+            "How to claim impact: M6 Impact assessment. How to learn and account: M7 Learning & adaptation, M8 Accountability & inclusion. How to run it: M9 Implementation & governance.",
             "Every module is self-standing. The order is a recommendation, not a gate."
           ]
         },
@@ -70,23 +103,42 @@
           "bullets": [
             "The framework moves from reports to observation-level evidence so CIMMYT can say what changed, for whom, where and what it contributed.",
             "Four results levels, five evidence functions, one KPI toolbox, one data system, four directions of accountability.",
-            "Modules map one to one to the ten diagnostic topics."
+            "Modules map one to one to the nine diagnostic topics."
           ],
-          "source": { "section": "6.2", "title": "Eight Strategic Capabilities by 2030" }
+          "source": {
+            "section": "6.2",
+            "title": "Eight Strategic Capabilities by 2030"
+          }
         }
       },
-      "glossary": ["Results chain", "Five evidence functions", "KPI Toolbox", "Evidence stack", "Four directions of accountability"]
+      "glossary": [
+        "Results chain",
+        "Five evidence functions",
+        "KPI Toolbox",
+        "Evidence stack",
+        "Four directions of accountability"
+      ]
     },
     {
       "id": "L0.3",
       "moduleId": "orientation",
       "title": "Set your goal",
-      "objectiveIds": ["orientation.O1"],
+      "objectiveIds": [
+        "orientation.O1"
+      ],
       "minutes": 2,
       "beats": {
         "hook": "A project lead and a data officer need different examples. Tell the course who you are and the scenarios will lean your way.",
-        "explainer": { "kind": "storyboard", "storyboardId": "sb-m0-persona" },
-        "example": { "kind": "interactive", "title": "Choose the role closest to yours", "widget": "persona", "prompt": "Your choice tunes which scenarios and examples the course highlights. You can change it any time from this lesson." },
+        "explainer": {
+          "kind": "storyboard",
+          "storyboardId": "sb-m0-persona"
+        },
+        "example": {
+          "kind": "interactive",
+          "title": "Choose the role closest to yours",
+          "widget": "persona",
+          "prompt": "Your choice tunes which scenarios and examples the course highlights. You can change it any time from this lesson."
+        },
         "microCheck": [],
         "recap": {
           "bullets": [
@@ -94,7 +146,10 @@
             "The plan, not the module order, decides what the course suggests next.",
             "Nothing is locked. Open any module, lesson or check whenever you want."
           ],
-          "source": { "section": "1.3", "title": "MEAL in the Context of CIMMYT" }
+          "source": {
+            "section": "1.3",
+            "title": "MEAL in the Context of CIMMYT"
+          }
         }
       },
       "glossary": []
@@ -105,31 +160,316 @@
       "id": "sb-m0-how",
       "title": "How the course works",
       "frames": [
-        { "id": "f1", "seconds": 8, "narration": "Start with the diagnostic: fifteen questions, one per topic plus a second in five of them. After each answer, tap Sure or Not sure.", "scene": { "kind": "title", "title": "Diagnostic first", "subtitle": "15 questions. Sure or Not sure after each." } },
-        { "id": "f2", "seconds": 14, "narration": "Your answers become a plan. Modules land in one of four bands: Start here, Review, Check first or Looking good, each with a reason and the first lesson to open.", "scene": { "kind": "cards", "layout": "row", "items": [ { "label": "Start here", "detail": "Full module", "tone": "gold" }, { "label": "Review", "detail": "Start at a lesson", "tone": "sky" }, { "label": "Check first", "detail": "5 questions, study if needed", "tone": "paper" }, { "label": "Looking good", "detail": "Optional", "tone": "green" } ] } },
-        { "id": "f3", "seconds": 14, "narration": "Each module ends with a five-question mastery check. Four out of five passes. Pass, and the module stamps Mastered and leaves your plan. Miss, and the plan lists the lessons for what you missed and offers a fresh draw.", "scene": { "kind": "checklist", "items": [ { "label": "M4 KPIs & measurement", "done": true }, { "label": "M9 Accountability & inclusion", "done": true }, { "label": "M7 Impact assessment" }, { "label": "M2 Theory of change" } ], "stamp": "Mastered" } },
-        { "id": "f4", "seconds": 12, "narration": "The plan shrinks as checks are passed. When all ten modules are mastered and the capstone is done, you can print a completion certificate. No score on it, only completed.", "scene": { "kind": "counter", "items": [ { "label": "Modules mastered", "value": 10, "suffix": " / 10", "tone": "green" }, { "label": "Minutes left in your plan", "value": 0, "tone": "gold" } ], "note": "Capstone done: certificate unlocked" } },
-        { "id": "f5", "seconds": 8, "narration": "Seven and thirty days after mastering a module, the home page offers a three-question refresher. Everything stays in your browser. Export your learning record whenever you like.", "scene": { "kind": "loop", "steps": [ { "label": "Master" }, { "label": "7 days" }, { "label": "Refresher" }, { "label": "30 days" } ], "active": 2, "log": "Spaced re-checks keep what you learned" } }
+        {
+          "id": "f1",
+          "seconds": 10,
+          "narration": "Start with the diagnostic: ten questions covering the key MEAL messages from the workshop. After each answer, tap Sure or Not sure.",
+          "scene": {
+            "kind": "title",
+            "title": "Diagnostic first",
+            "subtitle": "10 questions. Sure or Not sure after each."
+          }
+        },
+        {
+          "id": "f2",
+          "seconds": 12,
+          "narration": "Your answers become a plan. Modules land in one of four bands: Start here, Review, Check first or Looking good, each with a reason and the first lesson to open.",
+          "scene": {
+            "kind": "cards",
+            "layout": "row",
+            "items": [
+              {
+                "label": "Start here",
+                "detail": "Full module",
+                "tone": "gold"
+              },
+              {
+                "label": "Review",
+                "detail": "Start at a lesson",
+                "tone": "sky"
+              },
+              {
+                "label": "Check first",
+                "detail": "5 questions, study if needed",
+                "tone": "paper"
+              },
+              {
+                "label": "Looking good",
+                "detail": "Optional",
+                "tone": "green"
+              }
+            ]
+          }
+        },
+        {
+          "id": "f3",
+          "seconds": 17,
+          "narration": "Each module ends with a five-question mastery check. Four out of five passes. Pass, and the module stamps Mastered and leaves your plan. Miss, and the plan lists the lessons for what you missed and offers a fresh draw.",
+          "scene": {
+            "kind": "checklist",
+            "items": [
+              {
+                "label": "M4 KPIs & measurement",
+                "done": true
+              },
+              {
+                "label": "M8 Accountability & inclusion",
+                "done": true
+              },
+              {
+                "label": "M6 Impact assessment"
+              },
+              {
+                "label": "M2 Theory of change"
+              }
+            ],
+            "stamp": "Mastered"
+          }
+        },
+        {
+          "id": "f4",
+          "seconds": 12,
+          "narration": "The plan shrinks as checks are passed. When all nine modules are mastered and the capstone is done, you can print a completion certificate. No score on it, only completed.",
+          "scene": {
+            "kind": "counter",
+            "items": [
+              {
+                "label": "Modules mastered",
+                "value": 9,
+                "suffix": " / 9",
+                "tone": "green"
+              },
+              {
+                "label": "Minutes left in your plan",
+                "value": 0,
+                "tone": "gold"
+              }
+            ],
+            "note": "Capstone done: certificate unlocked"
+          }
+        },
+        {
+          "id": "f5",
+          "seconds": 11,
+          "narration": "Seven and thirty days after mastering a module, the home page offers a three-question refresher. Everything stays in your browser. Export your learning record whenever you like.",
+          "scene": {
+            "kind": "loop",
+            "steps": [
+              {
+                "label": "Master"
+              },
+              {
+                "label": "7 days"
+              },
+              {
+                "label": "Refresher"
+              },
+              {
+                "label": "30 days"
+              }
+            ],
+            "active": 2,
+            "log": "Spaced re-checks keep what you learned"
+          }
+        }
       ]
     },
     {
       "id": "sb-m0-framework",
       "title": "The framework in 90 seconds",
       "frames": [
-        { "id": "f1", "seconds": 10, "narration": "Why change? Reports can say what was delivered. They cannot show what changed on the ground. The framework builds evidence from observations instead.", "scene": { "kind": "dissolve", "from": ["Annual report", "Quarterly report", "Donor report"], "to": { "label": "Plots, farms, households, trials", "dots": 36 } } },
-        { "id": "f2", "seconds": 12, "narration": "Evidence is organised along a results chain: processes, outputs, outcomes and impact. A theory of change says how each link is expected to lead to the next, and under which assumptions.", "scene": { "kind": "chain", "steps": [ { "label": "Processes", "tone": "sky" }, { "label": "Outputs", "tone": "gold" }, { "label": "Outcomes", "tone": "green" }, { "label": "Impact", "tone": "green" } ], "links": [ { "label": "assumption" }, { "label": "assumption" }, { "label": "assumption" } ] } },
-        { "id": "f3", "seconds": 12, "narration": "Measurement runs through one KPI toolbox: 142 indicators in 13 volumes under three Thrusts. One KPI can be measured at several levels with different valid methods, and institutional totals are recomputed from records, never summed from reports.", "scene": { "kind": "fan", "source": "One KPI", "branches": [ { "label": "Farm / plot" }, { "label": "Trial / station" }, { "label": "Region / country" } ], "target": "One comparable result" } },
-        { "id": "f4", "seconds": 12, "narration": "Data quality has six dimensions. The evidence stack combines direct observations, earth observation, context data and operational records in one data system that collects data once and reports many times.", "scene": { "kind": "stack", "layers": [ { "label": "Operational records", "tone": "sky" }, { "label": "External and context data", "tone": "paper" }, { "label": "Earth observation and sensors", "tone": "gold" }, { "label": "Direct observations", "tone": "green" } ] } },
-        { "id": "f5", "seconds": 12, "narration": "Impact claims are about contribution, not sole cause, and they need a credible counterfactual. Learning runs on a cadence of evidence reviews and decision logs. Accountability runs in four directions.", "scene": { "kind": "compass", "directions": [ { "label": "Investors and partners" }, { "label": "Farmers and communities" }, { "label": "Science and CGIAR" }, { "label": "Internal" } ], "active": [0, 1, 2, 3] } },
-        { "id": "f6", "seconds": 12, "narration": "And it all runs through a project lifecycle with gates, a MEAL Matrix that classifies and budgets every project, and a lean MEAL team. By 2030 the question changes from what did we do to what changed, for whom, and what did CIMMYT contribute.", "scene": { "kind": "title", "title": "What changed, for whom, and what did CIMMYT contribute?", "subtitle": "The question the framework is built to answer by 2030.", "stamp": "§6.2" } }
+        {
+          "id": "f1",
+          "seconds": 13,
+          "narration": "Why change? Reports can say what was delivered. They cannot show what changed on the ground. The framework builds evidence from observations instead.",
+          "scene": {
+            "kind": "dissolve",
+            "from": [
+              "Annual report",
+              "Quarterly report",
+              "Donor report"
+            ],
+            "to": {
+              "label": "Plots, farms, households, trials",
+              "dots": 36
+            }
+          }
+        },
+        {
+          "id": "f2",
+          "seconds": 15,
+          "narration": "Evidence is organised along a results chain: processes, outputs, outcomes and impact. A theory of change says how each link is expected to lead to the next, and under which assumptions.",
+          "scene": {
+            "kind": "chain",
+            "steps": [
+              {
+                "label": "Processes",
+                "tone": "sky"
+              },
+              {
+                "label": "Outputs",
+                "tone": "gold"
+              },
+              {
+                "label": "Outcomes",
+                "tone": "green"
+              },
+              {
+                "label": "Impact",
+                "tone": "green"
+              }
+            ],
+            "links": [
+              {
+                "label": "assumption"
+              },
+              {
+                "label": "assumption"
+              },
+              {
+                "label": "assumption"
+              }
+            ]
+          }
+        },
+        {
+          "id": "f3",
+          "seconds": 20,
+          "narration": "Measurement runs through one KPI toolbox: 142 indicators in 13 volumes under three Thrusts. One KPI can be measured at several levels with different valid methods, and institutional totals are recomputed from records, never summed from reports.",
+          "scene": {
+            "kind": "fan",
+            "source": "One KPI",
+            "branches": [
+              {
+                "label": "Farm / plot"
+              },
+              {
+                "label": "Trial / station"
+              },
+              {
+                "label": "Region / country"
+              }
+            ],
+            "target": "One comparable result"
+          }
+        },
+        {
+          "id": "f4",
+          "seconds": 15,
+          "narration": "Evidence lives in one data system. The evidence stack combines direct observations, earth observation, context data and operational records, and the system collects data once and reports many times.",
+          "scene": {
+            "kind": "stack",
+            "layers": [
+              {
+                "label": "Operational records",
+                "tone": "sky"
+              },
+              {
+                "label": "External and context data",
+                "tone": "paper"
+              },
+              {
+                "label": "Earth observation and sensors",
+                "tone": "gold"
+              },
+              {
+                "label": "Direct observations",
+                "tone": "green"
+              }
+            ]
+          }
+        },
+        {
+          "id": "f5",
+          "seconds": 14,
+          "narration": "Impact claims are about contribution, not sole cause, and they need a credible counterfactual. Learning runs on a cadence of evidence reviews and decision logs. Accountability runs in four directions.",
+          "scene": {
+            "kind": "compass",
+            "directions": [
+              {
+                "label": "Investors and partners"
+              },
+              {
+                "label": "Farmers and communities"
+              },
+              {
+                "label": "Science and CGIAR"
+              },
+              {
+                "label": "Internal"
+              }
+            ],
+            "active": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "id": "f6",
+          "seconds": 17,
+          "narration": "And it all runs through a project lifecycle with gates, a MEAL Matrix that classifies and budgets every project, and a lean MEAL team. By 2030 the question changes from what did we do to what changed, for whom, and what did CIMMYT contribute.",
+          "scene": {
+            "kind": "title",
+            "title": "What changed, for whom, and what did CIMMYT contribute?",
+            "subtitle": "The question the framework is built to answer by 2030.",
+            "stamp": "§6.2"
+          }
+        }
       ]
     },
     {
       "id": "sb-m0-persona",
       "title": "Set your goal",
       "frames": [
-        { "id": "f1", "seconds": 10, "narration": "Five kinds of people take this course. A project lead needs budgets and requirements. A data officer needs quality rules. A scientist needs the case for observation-level evidence.", "scene": { "kind": "cards", "layout": "grid", "items": [ { "label": "Project lead", "detail": "Requirements, budgets, ownership", "tone": "gold" }, { "label": "Field or data officer", "detail": "Quality, identifiers, collection", "tone": "sky" }, { "label": "Scientist", "detail": "Evidence, contribution, methods", "tone": "green" }, { "label": "MEAL specialist", "detail": "Governance, roadmap, reference", "tone": "paper" }, { "label": "Partner liaison", "detail": "Accountability, collect once, 2030", "tone": "gold" } ] } },
-        { "id": "f2", "seconds": 8, "narration": "Pick the one closest to your work. The course keeps every lesson open to everyone and only changes which examples it leads with.", "scene": { "kind": "title", "title": "Pick your role", "subtitle": "Examples lean your way. Nothing is hidden." } }
+        {
+          "id": "f1",
+          "seconds": 14,
+          "narration": "Five kinds of people take this course. A project lead needs budgets and requirements. A data officer needs quality rules. A scientist needs the case for observation-level evidence.",
+          "scene": {
+            "kind": "cards",
+            "layout": "grid",
+            "items": [
+              {
+                "label": "Project lead",
+                "detail": "Requirements, budgets, ownership",
+                "tone": "gold"
+              },
+              {
+                "label": "Field or data officer",
+                "detail": "Quality, identifiers, collection",
+                "tone": "sky"
+              },
+              {
+                "label": "Scientist",
+                "detail": "Evidence, contribution, methods",
+                "tone": "green"
+              },
+              {
+                "label": "MEAL specialist",
+                "detail": "Governance, roadmap, reference",
+                "tone": "paper"
+              },
+              {
+                "label": "Partner liaison",
+                "detail": "Accountability, collect once, 2030",
+                "tone": "gold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "f2",
+          "seconds": 10,
+          "narration": "Pick the one closest to your work. The course keeps every lesson open to everyone and only changes which examples it leads with.",
+          "scene": {
+            "kind": "title",
+            "title": "Pick your role",
+            "subtitle": "Examples lean your way. Nothing is hidden."
+          }
+        }
       ]
     }
   ]

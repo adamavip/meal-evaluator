@@ -1,7 +1,7 @@
 {
   "module": {
     "id": "evidence-systems",
-    "order": 6,
+    "order": 5,
     "title": "Evidence & data systems",
     "short": "Evidence systems",
     "minutes": 30,
@@ -14,7 +14,7 @@
     ],
     "assessed": true,
     "prerequisites": [
-      "data-quality"
+      "kpis-measurement"
     ],
     "scenario": {
       "title": "One result, four reports, no signal for weeks",
@@ -55,7 +55,7 @@
     ],
     "lessons": [
       {
-        "id": "L6.1",
+        "id": "L5.1",
         "moduleId": "evidence-systems",
         "title": "The evidence stack: four layers",
         "objectiveIds": [
@@ -66,7 +66,7 @@
           "hook": "A project report says 3,000 farmers adopted early sowing. The framework does not treat that report as the unit of evidence. So what does it treat as evidence, and where does it come from?",
           "explainer": {
             "kind": "storyboard",
-            "storyboardId": "sb-m6-stack"
+            "storyboardId": "sb-m5-stack"
           },
           "example": {
             "kind": "interactive",
@@ -174,7 +174,7 @@
         ]
       },
       {
-        "id": "L6.2",
+        "id": "L5.2",
         "moduleId": "evidence-systems",
         "title": "The journey of one observation",
         "objectiveIds": [
@@ -185,7 +185,7 @@
           "hook": "One enumerator weighs one crop cut on one plot. Eighteen months later that number is part of an institutional yield figure in PRMS. What happened to it on the way?",
           "explainer": {
             "kind": "storyboard",
-            "storyboardId": "sb-m6-hero"
+            "storyboardId": "sb-m5-hero"
           },
           "example": {
             "kind": "text",
@@ -226,7 +226,7 @@
         ]
       },
       {
-        "id": "L6.3",
+        "id": "L5.3",
         "moduleId": "evidence-systems",
         "title": "Satellite, context and operational data: what each adds",
         "objectiveIds": [
@@ -238,7 +238,7 @@
           "hook": "A satellite map covers every field in the district. A government series covers the whole country. The distribution log covers every seed pack. None of them is the measurement. Each adds something the others cannot.",
           "explainer": {
             "kind": "storyboard",
-            "storyboardId": "sb-m6-layers"
+            "storyboardId": "sb-m5-layers"
           },
           "example": {
             "kind": "text",
@@ -276,7 +276,7 @@
         ]
       },
       {
-        "id": "L6.4",
+        "id": "L5.4",
         "moduleId": "evidence-systems",
         "title": "Authoritative systems and offline work",
         "objectiveIds": [
@@ -287,7 +287,7 @@
           "hook": "Breeding data live in the breeding system. The budget lives in the finance system. The enumerators have no signal for three weeks. Does the MEAL data system copy everything, or connect to it?",
           "explainer": {
             "kind": "storyboard",
-            "storyboardId": "sb-m6-systems"
+            "storyboardId": "sb-m5-systems"
           },
           "example": {
             "kind": "text",
@@ -325,7 +325,7 @@
         ]
       },
       {
-        "id": "L6.5",
+        "id": "L5.5",
         "moduleId": "evidence-systems",
         "title": "Collect once, report many times: investor reporting mappings and the KPI engine",
         "objectiveIds": [
@@ -336,7 +336,7 @@
           "hook": "The second investor's template just arrived. It wants the adoption result in a different layout, a different age band and a different season label. Your field team is still offline in the hills. What changes?",
           "explainer": {
             "kind": "storyboard",
-            "storyboardId": "sb-m6-fan"
+            "storyboardId": "sb-m5-fan"
           },
           "example": {
             "kind": "interactive",
@@ -394,12 +394,12 @@
     ],
     "storyboards": [
       {
-        "id": "sb-m6-stack",
+        "id": "sb-m5-stack",
         "title": "The evidence stack: four layers",
         "frames": [
           {
             "id": "f1",
-            "seconds": 6,
+            "seconds": 11,
             "narration": "The MEAL data system does not treat a project report as the primary unit of evidence. It works as close as possible to what is being measured.",
             "scene": {
               "kind": "title",
@@ -409,7 +409,7 @@
           },
           {
             "id": "f2",
-            "seconds": 12,
+            "seconds": 19,
             "narration": "Layer one: direct observations. Plot, farm, household, participant, trial and institution records. The closest evidence of the actual state or change, and the only layer you can disaggregate and re-analyse.",
             "scene": {
               "kind": "stack",
@@ -437,7 +437,7 @@
           },
           {
             "id": "f3",
-            "seconds": 12,
+            "seconds": 15,
             "narration": "Layer two: earth observation and sensors. Satellite imagery, weather, sensors, geospatial layers. They add spatial coverage, frequency and extrapolation between the places you observed.",
             "scene": {
               "kind": "stack",
@@ -466,7 +466,7 @@
           },
           {
             "id": "f4",
-            "seconds": 12,
+            "seconds": 15,
             "narration": "Layer three: external and context data. Government statistics, public datasets, prices, climate and market series. They supply context, denominators, benchmarks and covariates for interpreting change.",
             "scene": {
               "kind": "stack",
@@ -496,7 +496,7 @@
           },
           {
             "id": "f5",
-            "seconds": 12,
+            "seconds": 18,
             "narration": "Layer four: operational records. Workplans, training logs, distribution systems, financial and partner records. They give traceability from intervention to output and link who received a service to later uptake.",
             "scene": {
               "kind": "stack",
@@ -528,7 +528,7 @@
           },
           {
             "id": "f6",
-            "seconds": 8,
+            "seconds": 14,
             "narration": "Four layers, so each result can be checked from more than one angle. But not every indicator needs every source. The KPI reference sheet sets what is valid.",
             "scene": {
               "kind": "title",
@@ -540,12 +540,12 @@
         ]
       },
       {
-        "id": "sb-m6-hero",
+        "id": "sb-m5-hero",
         "title": "The journey of one observation",
         "frames": [
           {
             "id": "f1",
-            "seconds": 6,
+            "seconds": 9,
             "narration": "One crop cut. One record. Follow it through the five evidence functions and watch what it picks up.",
             "scene": {
               "kind": "title",
@@ -555,7 +555,7 @@
           },
           {
             "id": "f2",
-            "seconds": 18,
+            "seconds": 20,
             "narration": "Capture. The question comes first: what is the yield on this plot? The form is built from the KPI reference sheet. It records the net-plot weight, the moisture and the plot's persistent identifier. No signal, so it waits on the tablet.",
             "scene": {
               "kind": "chain",
@@ -588,7 +588,7 @@
           },
           {
             "id": "f3",
-            "seconds": 18,
+            "seconds": 15,
             "narration": "Quality Assurance. On sync the record is checked for completeness, range and duplicates. It gets a quality flag and a provenance entry: who, when, which form version. From now on it can be audited.",
             "scene": {
               "kind": "chain",
@@ -622,7 +622,7 @@
           },
           {
             "id": "f4",
-            "seconds": 16,
+            "seconds": 13,
             "narration": "Integration. The plot identifier links the crop cut to the farmer's training record, to rainfall for the district and to the satellite field boundary. A shared data dictionary keeps yield meaning yield.",
             "scene": {
               "kind": "chain",
@@ -657,7 +657,7 @@
           },
           {
             "id": "f5",
-            "seconds": 16,
+            "seconds": 14,
             "narration": "The record now sits in a stack. Each layer adds what the others cannot: coverage from imagery, denominators and context from external data, and from the training log the link between delivery and uptake.",
             "scene": {
               "kind": "stack",
@@ -725,7 +725,7 @@
           },
           {
             "id": "f7",
-            "seconds": 16,
+            "seconds": 15,
             "narration": "Use and Visualization. The same validated record feeds the dashboard, the PRMS submission and two investor exports. When a review decides to act, the decision log points back to this record.",
             "scene": {
               "kind": "chain",
@@ -764,12 +764,12 @@
         ]
       },
       {
-        "id": "sb-m6-layers",
+        "id": "sb-m5-layers",
         "title": "What each layer adds",
         "frames": [
           {
             "id": "f1",
-            "seconds": 14,
+            "seconds": 17,
             "narration": "Three layers sit around the direct observation. Earth observation adds coverage, frequency and extrapolation. Context data add denominators and benchmarks. Operational records add traceability from delivery to uptake.",
             "scene": {
               "kind": "cards",
@@ -795,7 +795,7 @@
           },
           {
             "id": "f2",
-            "seconds": 14,
+            "seconds": 13,
             "narration": "Where the KPI method requires direct measurement, satellite data do not replace it. They calibrate, contextualise, stratify or upscale, under documented rules.",
             "scene": {
               "kind": "split",
@@ -822,7 +822,7 @@
           },
           {
             "id": "f3",
-            "seconds": 16,
+            "seconds": 18,
             "narration": "The triangulation rule is a four-part match: construct, population, geography, period. An image from another season tries to count as support and bounces back. Context, yes. Triangulation, no.",
             "scene": {
               "kind": "sort",
@@ -854,7 +854,7 @@
           },
           {
             "id": "f4",
-            "seconds": 8,
+            "seconds": 10,
             "narration": "Four matches, or it is context. Construct, population, geography, period, under compatible definitions.",
             "scene": {
               "kind": "title",
@@ -866,12 +866,12 @@
         ]
       },
       {
-        "id": "sb-m6-systems",
+        "id": "sb-m5-systems",
         "title": "Authoritative systems and offline work",
         "frames": [
           {
             "id": "f1",
-            "seconds": 6,
+            "seconds": 8,
             "narration": "Section 4 describes the functions the MEAL data system needs, not a specific product. Nine of them.",
             "scene": {
               "kind": "title",
@@ -881,7 +881,7 @@
           },
           {
             "id": "f2",
-            "seconds": 16,
+            "seconds": 18,
             "narration": "The first five get the data in and make it trustworthy: multi-channel capture, online and offline; persistent identifiers; quality assurance and provenance; privacy, consent and access; and integration with CIMMYT and external systems.",
             "scene": {
               "kind": "cards",
@@ -949,7 +949,7 @@
           },
           {
             "id": "f4",
-            "seconds": 14,
+            "seconds": 13,
             "narration": "Where another system is the authoritative source, breeding, trials, finance or project management, the MEAL data system connects to it. It does not replace it, and it does not copy by hand.",
             "scene": {
               "kind": "chain",
@@ -983,7 +983,7 @@
           },
           {
             "id": "f5",
-            "seconds": 14,
+            "seconds": 19,
             "narration": "Four design principles: open standards and FAIR, offline where connectivity is poor, modular so each project configures shared components. And one split: the Data Group owns the infrastructure, MEAL owns the content.",
             "scene": {
               "kind": "split",
@@ -1011,12 +1011,12 @@
         ]
       },
       {
-        "id": "sb-m6-fan",
+        "id": "sb-m5-fan",
         "title": "Collect once, report many times",
         "frames": [
           {
             "id": "f1",
-            "seconds": 6,
+            "seconds": 7,
             "narration": "One adoption result. Five places it has to appear. The field team collects it once.",
             "scene": {
               "kind": "title",
@@ -1026,7 +1026,7 @@
           },
           {
             "id": "f2",
-            "seconds": 16,
+            "seconds": 15,
             "narration": "The same validated record feeds the institutional KPI, the PRMS submission, both investor templates and the national partner's system. A direct link where the receiving system allows it, an export where it does not.",
             "scene": {
               "kind": "fan",
@@ -1058,7 +1058,7 @@
           },
           {
             "id": "f3",
-            "seconds": 16,
+            "seconds": 17,
             "narration": "A new template arrives. The MEAL team maps its fields to source variables already collected, sets up a link or an export, and the project keeps the same forms. A new system means a new mapping, not a new collection.",
             "scene": {
               "kind": "chain",
@@ -1087,7 +1087,7 @@
           },
           {
             "id": "f4",
-            "seconds": 10,
+            "seconds": 12,
             "narration": "Whatever the destination, the institutional figure comes from the KPI engine: eligible records, the approved method, reported with coverage, uncertainty and method version.",
             "scene": {
               "kind": "cards",
@@ -1121,128 +1121,60 @@
       "tag": "report-as-unit-of-evidence",
       "description": "You treated a project report or its totals as the primary evidence, instead of the observation-level records the report summarises.",
       "remedyLessonIds": [
-        "L6.1",
-        "L6.2"
+        "L5.1",
+        "L5.2"
       ]
     },
     {
       "tag": "satellite-substitutes-ground",
       "description": "You let satellite or secondary data stand in for ground measurement that the KPI method requires, instead of using them to calibrate, contextualise, stratify or upscale.",
       "remedyLessonIds": [
-        "L6.3"
+        "L5.3"
       ]
     },
     {
       "tag": "any-source-triangulates",
       "description": "You counted a second source as support for a claim even though it measured a different construct, population, geography or period.",
       "remedyLessonIds": [
-        "L6.3"
+        "L5.3"
       ]
     },
     {
       "tag": "copy-not-connect",
       "description": "You chose to copy records out of an authoritative system by hand, or to move them into MEAL, instead of connecting to that system through integration.",
       "remedyLessonIds": [
-        "L6.4"
+        "L5.4"
       ]
     },
     {
       "tag": "online-only",
       "description": "You designed collection around a connection that field teams do not reliably have, instead of the offline capture the framework requires.",
       "remedyLessonIds": [
-        "L6.4"
+        "L5.4"
       ]
     },
     {
       "tag": "meal-owns-infrastructure",
       "description": "You assigned software, hosting or engineering to the MEAL team. The Data Group owns the infrastructure; MEAL owns indicators, the data dictionary and quality rules.",
       "remedyLessonIds": [
-        "L6.4"
+        "L5.4"
       ]
     },
     {
       "tag": "new-template-new-collection",
       "description": "You responded to a new or changed reporting template by changing forms or collecting again, instead of updating the central mapping from source variables.",
       "remedyLessonIds": [
-        "L6.5"
+        "L5.5"
       ]
     }
   ],
   "diagnosticTags": {
-    "Q051": {
-      "objectiveIds": [
-        "evidence-systems.O1"
-      ]
-    },
-    "Q052": {
-      "objectiveIds": [
-        "evidence-systems.O5"
-      ],
-      "misconceptions": {
-        "a": "satellite-substitutes-ground",
-        "b": "satellite-substitutes-ground",
-        "c": "any-source-triangulates"
-      }
-    },
     "Q053": {
       "objectiveIds": [
-        "evidence-systems.O1"
-      ]
-    },
-    "Q054": {
-      "objectiveIds": [
-        "evidence-systems.O1",
         "evidence-systems.O2"
-      ]
-    },
-    "Q055": {
-      "objectiveIds": [
-        "evidence-systems.O3"
       ],
       "misconceptions": {
-        "b": "copy-not-connect",
-        "c": "copy-not-connect"
-      }
-    },
-    "Q056": {
-      "objectiveIds": [
-        "evidence-systems.O3"
-      ],
-      "misconceptions": {
-        "c": "online-only"
-      }
-    },
-    "Q057": {
-      "objectiveIds": [
-        "evidence-systems.O4"
-      ],
-      "misconceptions": {
-        "b": "new-template-new-collection",
-        "d": "new-template-new-collection"
-      }
-    },
-    "Q058": {
-      "objectiveIds": [
-        "evidence-systems.O4"
-      ],
-      "misconceptions": {
-        "b": "report-as-unit-of-evidence"
-      }
-    },
-    "Q059": {
-      "objectiveIds": [
-        "evidence-systems.O3"
-      ],
-      "misconceptions": {
-        "b": "report-as-unit-of-evidence"
-      }
-    },
-    "Q060": {
-      "objectiveIds": [
-        "evidence-systems.O3"
-      ],
-      "misconceptions": {
-        "c": "meal-owns-infrastructure"
+        "c": "report-as-unit-of-evidence"
       }
     }
   },

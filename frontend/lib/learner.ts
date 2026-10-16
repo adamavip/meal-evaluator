@@ -69,6 +69,26 @@ function validPlan(raw: unknown, lessonIds: Set<string>): raw is Plan {
 export function validateLearner(raw: unknown, bank: Bank, lessonIds: Set<string>): LearnerState | null {
   try {
     if (!isRecord(raw)) return null;
+    // Version 4 replaces only the diagnostic. Keep course work from version 3,
+    // but require a fresh diagnostic before generating another study plan.
+    if (raw.version === 2 && raw.bankVersion === '3.0.0' && bank.bankVersion === '4.0.0') {
+      const previous = structuredClone(raw) as LearnerState;
+      if (!isRecord(previous.checks) || !Array.isArray(previous.seenQuestionIds)) return null;
+      for (const record of Object.values(previous.checks)) {
+        if (!isRecord(record) || !Array.isArray(record.attempts)) return null;
+        for (const attempt of record.attempts) {
+          if (!isRecord(attempt) || attempt.bankVersion !== '3.0.0') return null;
+          attempt.bankVersion = bank.bankVersion;
+        }
+      }
+      if (previous.activeCheck) {
+        if (!isRecord(previous.activeCheck) || previous.activeCheck.bankVersion !== '3.0.0') return null;
+        previous.activeCheck.bankVersion = bank.bankVersion;
+      }
+      const retainedIds = new Set(bank.questions.filter(q => q.pool !== 'diagnostic').map(q => q.id));
+      return validateLearner({ ...previous, bankVersion: bank.bankVersion, diagnostic: null, confidence: {}, plan: null,
+        seenQuestionIds: previous.seenQuestionIds.filter(id => retainedIds.has(id)) }, bank, lessonIds);
+    }
     const s = raw as LearnerState;
     if (s.version !== 2 || s.bankVersion !== bank.bankVersion) return null;
     if (typeof s.name !== 'string' || s.name.length > 80) return null;

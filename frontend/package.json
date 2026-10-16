@@ -21,6 +21,7 @@
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "music-metadata": "^12.2.1",
     "typescript": "latest"
   }
 }

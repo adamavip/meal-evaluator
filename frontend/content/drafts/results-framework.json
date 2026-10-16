@@ -469,7 +469,7 @@
         "frames": [
           {
             "id": "f1",
-            "seconds": 6,
+            "seconds": 5,
             "narration": "Two projects reported success. Only one measured change.",
             "scene": {
               "kind": "title",
@@ -479,7 +479,7 @@
           },
           {
             "id": "f2",
-            "seconds": 14,
+            "seconds": 16,
             "narration": "The framework sorts evidence into four levels. Processes enable delivery. Outputs are what is delivered. Outcomes are what changes for people and systems. Impact is lasting change in agrifood systems.",
             "scene": {
               "kind": "chain",
@@ -509,7 +509,7 @@
           },
           {
             "id": "f3",
-            "seconds": 24,
+            "seconds": 14,
             "narration": "Watch six results find their level. Trials coordinated: a process. Variety released: an output. Farmers adopting: an outcome. Incomes sustained: impact.",
             "scene": {
               "kind": "sort",
@@ -549,7 +549,7 @@
           },
           {
             "id": "f4",
-            "seconds": 14,
+            "seconds": 11,
             "narration": "Here is the one everyone gets wrong. Farmers trained tries to land in outcomes. It bounces back. Training is delivered. Adoption is a change.",
             "scene": {
               "kind": "sort",
@@ -571,7 +571,7 @@
           },
           {
             "id": "f5",
-            "seconds": 20,
+            "seconds": 16,
             "narration": "Even inside outputs, there are two ways to look. Reach counts how many. Quality asks where, to whom, how well and at what scale. Only the second side gives you a foundation for outcome evidence.",
             "scene": {
               "kind": "split",
@@ -599,7 +599,7 @@
           },
           {
             "id": "f6",
-            "seconds": 12,
+            "seconds": 13,
             "narration": "Each level has its own data, its own products and its own owner. Projects own processes and outputs. Outcomes are shared. Impact sits with central MEAL and specialists.",
             "scene": {
               "kind": "cards",
@@ -637,7 +637,7 @@
         "frames": [
           {
             "id": "f1",
-            "seconds": 8,
+            "seconds": 11,
             "narration": "Four questions sort any result. Was it done? Was it delivered? Did something change? Did the change last?",
             "scene": {
               "kind": "cards",
@@ -668,7 +668,7 @@
           },
           {
             "id": "f2",
-            "seconds": 14,
+            "seconds": 13,
             "narration": "Apply the test. A digital advisory tool is deployed: delivered, so an output. Farmers change their planting date after using it: a change, so an outcome.",
             "scene": {
               "kind": "sort",
@@ -692,7 +692,7 @@
           },
           {
             "id": "f3",
-            "seconds": 14,
+            "seconds": 13,
             "narration": "Partners count too. A seed company multiplying the variety on its own account has changed its behaviour. A ministry adopting a guideline has changed a policy. Both are outcomes.",
             "scene": {
               "kind": "sort",
@@ -721,7 +721,7 @@
           },
           {
             "id": "f4",
-            "seconds": 8,
+            "seconds": 7,
             "narration": "When in doubt, ask who or what changed. If the answer is nobody yet, you are still at output level.",
             "scene": {
               "kind": "title",
@@ -759,7 +759,7 @@
           },
           {
             "id": "f2",
-            "seconds": 16,
+            "seconds": 15,
             "narration": "Quality asks what the count hides. Where were they? Who were they? How well was it delivered? At what scale? Report B answers each question and records an identifier for every participant.",
             "scene": {
               "kind": "split",
@@ -820,7 +820,7 @@
         "frames": [
           {
             "id": "f1",
-            "seconds": 10,
+            "seconds": 8,
             "narration": "A policy brief is written and published. That is a recommendation produced: an output.",
             "scene": {
               "kind": "chain",
@@ -846,7 +846,7 @@
           },
           {
             "id": "f2",
-            "seconds": 12,
+            "seconds": 10,
             "narration": "The regulator revises its release procedure using that evidence. A partner's system changed. Policy implementation is an outcome.",
             "scene": {
               "kind": "chain",
@@ -873,7 +873,7 @@
           },
           {
             "id": "f3",
-            "seconds": 12,
+            "seconds": 14,
             "narration": "Two seasons later, varieties reach farmers a year earlier. Stronger service delivery: still an outcome. Whether yields and incomes rise and stay up is the impact question, and it needs its own evidence.",
             "scene": {
               "kind": "chain",
@@ -918,7 +918,7 @@
         "frames": [
           {
             "id": "f1",
-            "seconds": 10,
+            "seconds": 13,
             "narration": "One adoption result. Four places it has to appear: the institutional KPI, the investor template, the CGIAR system and the project's own dashboard.",
             "scene": {
               "kind": "fan",
@@ -987,7 +987,7 @@
           },
           {
             "id": "f3",
-            "seconds": 8,
+            "seconds": 11,
             "narration": "Relabelling is not harmonising. Shared definitions are. If a label is the only thing two indicators share, the crosswalk must say so.",
             "scene": {
               "kind": "title",
@@ -1046,7 +1046,7 @@
           },
           {
             "id": "f2",
-            "seconds": 18,
+            "seconds": 27,
             "narration": "Section 5.4 lists what the row needs. Unit of observation: plot. Source: crop cuts. Method: net-plot harvest at standard moisture. Frequency: each main season. Coverage: 240 sampled plots in three districts. Disaggregation: gender of plot manager. Owner: the Focal Point. Timing: within four weeks of harvest.",
             "scene": {
               "kind": "checklist",
@@ -1089,7 +1089,7 @@
           },
           {
             "id": "f3",
-            "seconds": 8,
+            "seconds": 10,
             "narration": "Eight fields. One row per indicator. It is part of the minimum package, so it is finished at inception, not at reporting time.",
             "scene": {
               "kind": "title",
@@ -1150,82 +1150,13 @@
     }
   ],
   "diagnosticTags": {
-    "Q021": {
-      "objectiveIds": [
-        "results-framework.O1"
-      ]
-    },
-    "Q022": {
-      "objectiveIds": [
-        "results-framework.O2"
-      ],
-      "misconceptions": {
-        "b": "process-vs-output"
-      }
-    },
     "Q023": {
       "objectiveIds": [
         "results-framework.O2"
       ],
       "misconceptions": {
-        "d": "output-vs-outcome",
-        "c": "process-vs-output"
-      }
-    },
-    "Q024": {
-      "objectiveIds": [
-        "results-framework.O2"
-      ],
-      "misconceptions": {
         "b": "output-vs-outcome",
-        "d": "outcome-vs-impact"
-      }
-    },
-    "Q025": {
-      "objectiveIds": [
-        "results-framework.O1"
-      ],
-      "misconceptions": {
         "c": "output-vs-outcome"
-      }
-    },
-    "Q026": {
-      "objectiveIds": [
-        "results-framework.O2"
-      ],
-      "misconceptions": {
-        "d": "output-vs-outcome",
-        "a": "outcome-vs-impact"
-      }
-    },
-    "Q027": {
-      "objectiveIds": [
-        "results-framework.O3"
-      ],
-      "misconceptions": {
-        "a": "reach-equals-change",
-        "c": "reach-equals-change"
-      }
-    },
-    "Q028": {
-      "objectiveIds": [
-        "results-framework.O4"
-      ],
-      "misconceptions": {
-        "c": "relabel-indicator"
-      }
-    },
-    "Q029": {
-      "objectiveIds": [
-        "results-framework.O6"
-      ]
-    },
-    "Q030": {
-      "objectiveIds": [
-        "results-framework.O5"
-      ],
-      "misconceptions": {
-        "d": "indicator-without-plan"
       }
     }
   },

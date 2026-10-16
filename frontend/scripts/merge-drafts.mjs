@@ -9,7 +9,9 @@ import { execFileSync } from 'node:child_process';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const draftsDir = path.join(root, 'content/drafts');
-const topics = ['meal-foundations', 'theory-of-change', 'results-framework', 'kpis-measurement', 'data-quality', 'evidence-systems', 'impact-assessment', 'learning-adaptation', 'accountability-inclusion', 'implementation-governance'];
+const topics = ['meal-foundations', 'theory-of-change', 'results-framework', 'kpis-measurement', 'evidence-systems', 'impact-assessment', 'learning-adaptation', 'accountability-inclusion', 'implementation-governance'];
+// Question id block per topic. Q221..Q250 belonged to the retired data-quality module and stays unused.
+const BLOCK_START = { 'meal-foundations': 101, 'theory-of-change': 131, 'results-framework': 161, 'kpis-measurement': 191, 'evidence-systems': 251, 'impact-assessment': 281, 'learning-adaptation': 311, 'accountability-inclusion': 341, 'implementation-governance': 371 };
 const bankPath = path.join(root, 'data/question-bank.json');
 const bank = JSON.parse(readFileSync(bankPath, 'utf8'));
 const glossaryPath = path.join(root, 'content/glossary.json');
@@ -46,9 +48,9 @@ for (const f of files) {
 }
 
 // Replace every question above Q100 whose module draft exists, keep others, sort by id.
-const topicIndexOf = id => Math.floor((Number(id.slice(1)) - 101) / 30);
+const topicOfBlock = id => Object.keys(BLOCK_START).find(t => Number(id.slice(1)) >= BLOCK_START[t] && Number(id.slice(1)) <= BLOCK_START[t] + 29);
 const draftedTopics = new Set(files.map(f => f.replace('.json', '')));
-const kept = bank.questions.filter(q => Number(q.id.slice(1)) <= 100 || !draftedTopics.has(topics[topicIndexOf(q.id)]));
+const kept = bank.questions.filter(q => topics.includes(q.topicId) && (Number(q.id.slice(1)) <= 100 || !draftedTopics.has(topicOfBlock(q.id))));
 const merged = [...kept, ...newQuestions.values()].sort((a, b) => a.id.localeCompare(b.id));
 for (const q of merged) if (!q.pool) q.pool = 'diagnostic';
 const ordered = merged.map(q => ({ id: q.id, topicId: q.topicId, difficulty: q.difficulty, pool: q.pool, objectiveIds: q.objectiveIds ?? [], question: q.question, options: q.options, correctOptionId: q.correctOptionId, ...(q.misconceptions ? { misconceptions: q.misconceptions } : {}), explanation: q.explanation, source: q.source, reviewTip: q.reviewTip }));

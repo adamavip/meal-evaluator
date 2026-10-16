@@ -1,6 +1,6 @@
 {
   "id": "impact-assessment",
-  "order": 7,
+  "order": 6,
   "title": "Impact assessment",
   "short": "Impact assessment",
   "minutes": 40,
@@ -61,7 +61,7 @@
   ],
   "lessons": [
     {
-      "id": "L7.1",
+      "id": "L6.1",
       "moduleId": "impact-assessment",
       "title": "Contribution, not attribution",
       "objectiveIds": [
@@ -72,7 +72,7 @@
         "hook": "Yields rose. Rain was good, prices were high, and the new variety was in the ground. The investor asks what CIMMYT did. Answer with the wrong word and you promise more than the evidence can keep.",
         "explainer": {
           "kind": "storyboard",
-          "storyboardId": "sb-m7-contribution"
+          "storyboardId": "sb-m6-contribution"
         },
         "example": {
           "kind": "text",
@@ -109,7 +109,7 @@
       ]
     },
     {
-      "id": "L7.2",
+      "id": "L6.2",
       "moduleId": "impact-assessment",
       "title": "Counterfactuals: the split-screen farm",
       "objectiveIds": [
@@ -120,7 +120,7 @@
         "hook": "You cannot plant the same field twice, once with the variety and once without. So how do you ever know what the variety did?",
         "explainer": {
           "kind": "storyboard",
-          "storyboardId": "sb-m7-hero"
+          "storyboardId": "sb-m6-hero"
         },
         "example": {
           "kind": "text",
@@ -129,7 +129,7 @@
             "The clean version. Imagine two identical fields: same soil, same rain, same prices, same farmer. One gets the variety. The other does not. At harvest, the gap between them is the effect. Nothing else could have caused it, because nothing else differed.",
             "The real version. The Kenya project area has one history. Yields rose between baseline and endline. But rain and prices rose over the same two seasons. Before-and-after shows change. It does not show what the project added, because the comparison with the same area without the project is missing.",
             "The stand-in. A counterfactual is a credible estimate of what would have happened without the intervention. The usual way to build one is a comparison group: similar farms, in similar conditions, over the same seasons, that did not get the intervention. Their result stands in for the missing second field. The gap between project farms and comparison farms is the estimate of the effect.",
-            "The blur. Real farms are not identical. Soils, management and luck vary. The gap is still an estimate of the effect, but its edges are blurred. That blur is uncertainty, and the report has to say how wide it is. Lesson 7.6 returns to it.",
+            "The blur. Real farms are not identical. Soils, management and luck vary. The gap is still an estimate of the effect, but its edges are blurred. That blur is uncertainty, and the report has to say how wide it is. Lesson 6.6 returns to it.",
             "The limit. Even a clean gap is the effect of the whole package: variety, seed partners, advice. It is CIMMYT's contribution alongside other actors, not proof that CIMMYT alone did it."
           ]
         },
@@ -157,7 +157,7 @@
       ]
     },
     {
-      "id": "L7.3",
+      "id": "L6.3",
       "moduleId": "impact-assessment",
       "title": "Study designs the framework recognises",
       "objectiveIds": [
@@ -169,7 +169,7 @@
         "hook": "Four method families. One question from an investor. Pick the family that can carry the claim, or the answer will be a sum of reports dressed up as impact.",
         "explainer": {
           "kind": "storyboard",
-          "storyboardId": "sb-m7-methods"
+          "storyboardId": "sb-m6-methods"
         },
         "example": {
           "kind": "interactive",
@@ -274,7 +274,7 @@
       ]
     },
     {
-      "id": "L7.4",
+      "id": "L6.4",
       "moduleId": "impact-assessment",
       "title": "Baselines and timing",
       "objectiveIds": [
@@ -285,7 +285,7 @@
         "hook": "An endline without a baseline is a photograph without the before. You can admire it. You cannot say what changed.",
         "explainer": {
           "kind": "storyboard",
-          "storyboardId": "sb-m7-baseline"
+          "storyboardId": "sb-m6-baseline"
         },
         "example": {
           "kind": "text",
@@ -320,7 +320,7 @@
       ]
     },
     {
-      "id": "L7.5",
+      "id": "L6.5",
       "moduleId": "impact-assessment",
       "title": "Triangulation and direct measurement",
       "objectiveIds": [
@@ -331,7 +331,7 @@
         "hook": "Two sources agree, so the finding must be solid. Not so fast. Agreement counts only when both measure the same thing, for the same people, in the same place and time.",
         "explainer": {
           "kind": "storyboard",
-          "storyboardId": "sb-m7-triangulation"
+          "storyboardId": "sb-m6-triangulation"
         },
         "example": {
           "kind": "interactive",
@@ -422,7 +422,7 @@
       ]
     },
     {
-      "id": "L7.6",
+      "id": "L6.6",
       "moduleId": "impact-assessment",
       "title": "Uncertainty: saying how sure you are",
       "objectiveIds": [
@@ -433,7 +433,7 @@
         "hook": "A clean number travels fast. A clean number with no coverage, no uncertainty and no limits travels faster, and lands as a promise you never made.",
         "explainer": {
           "kind": "storyboard",
-          "storyboardId": "sb-m7-uncertainty"
+          "storyboardId": "sb-m6-uncertainty"
         },
         "example": {
           "kind": "text",
@@ -467,7 +467,7 @@
       ]
     },
     {
-      "id": "L7.7",
+      "id": "L6.7",
       "moduleId": "impact-assessment",
       "title": "Shock-event studies and roles",
       "objectiveIds": [
@@ -478,7 +478,7 @@
         "hook": "A drought arrives in year two. Nobody planned a study for it. The calendar says the next evaluation is at endline. The framework says something else.",
         "explainer": {
           "kind": "storyboard",
-          "storyboardId": "sb-m7-cadence"
+          "storyboardId": "sb-m6-cadence"
         },
         "example": {
           "kind": "text",
@@ -515,12 +515,12 @@
   ],
   "storyboards": [
     {
-      "id": "sb-m7-contribution",
+      "id": "sb-m6-contribution",
       "title": "Contribution, not attribution",
       "frames": [
         {
           "id": "f1",
-          "seconds": 6,
+          "seconds": 5,
           "narration": "Yields rose in the project area. The investor wants to know what CIMMYT did.",
           "scene": {
             "kind": "title",
@@ -530,7 +530,7 @@
         },
         {
           "id": "f2",
-          "seconds": 16,
+          "seconds": 13,
           "narration": "Rain was good. Prices were high. A new variety went in through partners. Extension and a county programme ran at the same time. All of these fed one change.",
           "scene": {
             "kind": "fan",
@@ -558,7 +558,7 @@
         },
         {
           "id": "f3",
-          "seconds": 18,
+          "seconds": 16,
           "narration": "Attribution asks how much of the change the intervention caused, against a counterfactual. Contribution asks what role CIMMYT played alongside the rest. Both are impact methods the framework names. Neither claims sole cause.",
           "scene": {
             "kind": "split",
@@ -583,7 +583,7 @@
         },
         {
           "id": "f4",
-          "seconds": 10,
+          "seconds": 11,
           "narration": "CIMMYT does not claim to be the sole cause of observed changes. The aim is credible evidence of contribution, and that is the word to use with the investor.",
           "scene": {
             "kind": "title",
@@ -595,12 +595,12 @@
       ]
     },
     {
-      "id": "sb-m7-hero",
+      "id": "sb-m6-hero",
       "title": "The split-screen farm",
       "frames": [
         {
           "id": "f1",
-          "seconds": 8,
+          "seconds": 7,
           "narration": "To know what an intervention did, you need to know what would have happened without it. Here is the cleanest way to picture that.",
           "scene": {
             "kind": "title",
@@ -641,7 +641,7 @@
         },
         {
           "id": "f3",
-          "seconds": 18,
+          "seconds": 17,
           "narration": "In real life you have one field and two seasons. Yield rose from before to after. But rain and prices rose too. Before-and-after shows change. It cannot show the effect, because the field without the variety is missing.",
           "scene": {
             "kind": "split",
@@ -699,7 +699,7 @@
         },
         {
           "id": "f5",
-          "seconds": 18,
+          "seconds": 16,
           "narration": "Real farms are noisy. Soils differ, rain is patchy, some farmers were already ahead. The gap is still there, but its edges are blurred. That blur is uncertainty, and the report has to say how wide it is.",
           "scene": {
             "kind": "split",
@@ -729,7 +729,7 @@
         },
         {
           "id": "f6",
-          "seconds": 14,
+          "seconds": 16,
           "narration": "The stand-in only works if it is truly comparable. Same thing measured, same kind of farms, same seasons, same method. Break one of these and the gap measures the difference between the groups, not the effect.",
           "scene": {
             "kind": "cards",
@@ -773,12 +773,12 @@
       ]
     },
     {
-      "id": "sb-m7-methods",
+      "id": "sb-m6-methods",
       "title": "Four method families",
       "frames": [
         {
           "id": "f1",
-          "seconds": 14,
+          "seconds": 26,
           "narration": "Section 2.4 names four method families for impact. Counterfactual impact evaluation estimates an effect against what would have happened anyway. Attribution and contribution analysis ask how much, or what role. Geospatial assessment extends change across space. Modelling and scenario analysis explore what might happen.",
           "scene": {
             "kind": "cards",
@@ -809,7 +809,7 @@
         },
         {
           "id": "f2",
-          "seconds": 16,
+          "seconds": 22,
           "narration": "The framework's own example: what has CIMMYT contributed to yield change in Kenya? It needs contribution or attribution analysis against a credible counterfactual, agronomic, socioeconomic and climate modelling, adoption data and geospatial assessment. Several families, one question.",
           "scene": {
             "kind": "fan",
@@ -837,7 +837,7 @@
         },
         {
           "id": "f3",
-          "seconds": 12,
+          "seconds": 15,
           "narration": "Match the method to the question. How many farmers got seed is descriptive. What did CIMMYT contribute tries to land in descriptive too, and bounces back. A sum of reported numbers cannot answer it.",
           "scene": {
             "kind": "sort",
@@ -861,7 +861,7 @@
         },
         {
           "id": "f4",
-          "seconds": 8,
+          "seconds": 10,
           "narration": "The Analysis function in one line: apply methods that match the question and the claim, and document uncertainty and limits.",
           "scene": {
             "kind": "title",
@@ -873,12 +873,12 @@
       ]
     },
     {
-      "id": "sb-m7-baseline",
+      "id": "sb-m6-baseline",
       "title": "Baselines and timing",
       "frames": [
         {
           "id": "f1",
-          "seconds": 14,
+          "seconds": 11,
           "narration": "A project starts without a baseline. Two years later the endline measures yields. Good yields. Compared with what? Nobody can say.",
           "scene": {
             "kind": "chain",
@@ -911,7 +911,7 @@
         },
         {
           "id": "f2",
-          "seconds": 18,
+          "seconds": 20,
           "narration": "Now the same project with the reference decided at inception. Baseline on project and comparison farms before the first season. The same measures repeated each season. Endline with the same method on the same farms. The gap at the end is an effect estimate, with its uncertainty.",
           "scene": {
             "kind": "chain",
@@ -948,7 +948,7 @@
         },
         {
           "id": "f3",
-          "seconds": 14,
+          "seconds": 17,
           "narration": "Element 6 of the minimum package: a baseline, a comparison group or another valid reference where the method requires it. Otherwise a documented alternative. What it never allows is leaving the question to end-of-project reporting.",
           "scene": {
             "kind": "checklist",
@@ -991,12 +991,12 @@
       ]
     },
     {
-      "id": "sb-m7-triangulation",
+      "id": "sb-m6-triangulation",
       "title": "Triangulation and direct measurement",
       "frames": [
         {
           "id": "f1",
-          "seconds": 14,
+          "seconds": 17,
           "narration": "The evidence stack has four layers. Direct observations sit closest to what is being measured. Earth observation, context data and operational records add coverage, interpretation and traceability. Not every indicator needs every layer.",
           "scene": {
             "kind": "stack",
@@ -1027,7 +1027,7 @@
         },
         {
           "id": "f2",
-          "seconds": 16,
+          "seconds": 18,
           "narration": "The triangulation rule has five conditions. Same construct. Same population. Same geography. Same period. Compatible definitions. A second source strengthens a claim only when all five hold.",
           "scene": {
             "kind": "cards",
@@ -1059,7 +1059,7 @@
         },
         {
           "id": "f3",
-          "seconds": 16,
+          "seconds": 19,
           "narration": "On the left, a project survey from one year and a national series from another, both rising. Looks like confirmation. It is not: different population, different period. On the right, crop cuts and farmer reports from the same plots in the same season. That is triangulation.",
           "scene": {
             "kind": "split",
@@ -1086,7 +1086,7 @@
         },
         {
           "id": "f4",
-          "seconds": 14,
+          "seconds": 18,
           "narration": "And the limit. Where the KPI method requires direct measurement, satellite or secondary data do not replace it. They calibrate, contextualise, stratify or upscale, under documented rules. The ground stays.",
           "scene": {
             "kind": "split",
@@ -1115,12 +1115,12 @@
       ]
     },
     {
-      "id": "sb-m7-uncertainty",
+      "id": "sb-m6-uncertainty",
       "title": "Saying how sure you are",
       "frames": [
         {
           "id": "f1",
-          "seconds": 12,
+          "seconds": 15,
           "narration": "Here is the footprint of one impact estimate. Three of seven districts. Two seasons, both with good rain. Two hundred and forty sampled plots. Before you quote the number, quote this.",
           "scene": {
             "kind": "counter",
@@ -1148,7 +1148,7 @@
         },
         {
           "id": "f2",
-          "seconds": 16,
+          "seconds": 19,
           "narration": "Version A: the project raised maize yields in Kenya. Version B: adopters out-yielded comparison farms in three districts over two good-rain seasons, with wide uncertainty, and lasting change not yet shown. Same data. Only one is honest about it.",
           "scene": {
             "kind": "split",
@@ -1174,7 +1174,7 @@
         },
         {
           "id": "f3",
-          "seconds": 12,
+          "seconds": 13,
           "narration": "Section 3.3 names what travels with every institutional result: coverage, uncertainty, provenance and method quality. Never an unqualified sum.",
           "scene": {
             "kind": "cards",
@@ -1206,7 +1206,7 @@
         },
         {
           "id": "f4",
-          "seconds": 8,
+          "seconds": 10,
           "narration": "Say how sure you are. The Analysis function requires uncertainty and limits to be documented explicitly, every time.",
           "scene": {
             "kind": "title",
@@ -1218,12 +1218,12 @@
       ]
     },
     {
-      "id": "sb-m7-cadence",
+      "id": "sb-m6-cadence",
       "title": "Shock-event studies and roles",
       "frames": [
         {
           "id": "f1",
-          "seconds": 14,
+          "seconds": 20,
           "narration": "The operating cadence has four rows. Continuous checks. Quarterly or seasonal reviews. The annual KPI run. And a fourth row: midterm, endline or trigger-based studies. A drought in season two lights up that row.",
           "scene": {
             "kind": "loop",
@@ -1273,7 +1273,7 @@
         },
         {
           "id": "f3",
-          "seconds": 16,
+          "seconds": 30,
           "narration": "Who does what. Impact evidence is owned by central MEAL with science and evaluation specialists. The Evaluation, Learning and Accountability pillar is accountable for outcome and impact studies and responsible for contribution analysis. The MEAL Group Lead is accountable for institutional impact claims. The project provides source data, context and implementation history.",
           "scene": {
             "kind": "cards",
