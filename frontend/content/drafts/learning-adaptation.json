@@ -1,0 +1,2146 @@
+{
+  "module": {
+    "id": "learning-adaptation",
+    "order": 8,
+    "title": "Learning & adaptation",
+    "short": "Learning",
+    "minutes": 25,
+    "sections": [
+      "2.5",
+      "4.1",
+      "5.1",
+      "5.5",
+      "5.6",
+      "5.7",
+      "5.8",
+      "6.1",
+      "6.2"
+    ],
+    "assessed": true,
+    "prerequisites": [
+      "impact-assessment"
+    ],
+    "scenario": {
+      "title": "Low uptake, one week to decide",
+      "intro": "A digital advisory project in South Asia is halfway through implementation. Farmers in five districts receive sowing and irrigation advice by phone. The project dashboard now shows early uptake of the service at 9% in two districts and around 30% in the other three. The quarterly review is in a week. Nobody is sure yet whether the number is a data problem, a timing effect or a real gap. This module shows you how the framework turns that signal into a decision, a log entry and a change in practice, and when it should become a question instead.",
+      "persona": [
+        "project-lead",
+        "meal-specialist",
+        "field-officer",
+        "scientist"
+      ]
+    },
+    "objectives": [
+      {
+        "id": "learning-adaptation.O1",
+        "text": "Run a quarterly or seasonal evidence review and name its output, and place the other outputs of the operating cadence in their rows.",
+        "bloom": "apply"
+      },
+      {
+        "id": "learning-adaptation.O2",
+        "text": "Keep a decision log that states what changes, who acts and by when, and write a management response that tracks whether a recommendation is acted on.",
+        "bloom": "apply"
+      },
+      {
+        "id": "learning-adaptation.O3",
+        "text": "Decide whether a piece of evidence should change a decision now, be investigated first, or be logged as a further question for a learning review or study.",
+        "bloom": "analyse"
+      },
+      {
+        "id": "learning-adaptation.O4",
+        "text": "Use pilot findings, the handover gate and first-line support to improve guidance and practice, and name the enabling condition this serves.",
+        "bloom": "apply"
+      },
+      {
+        "id": "learning-adaptation.O5",
+        "text": "Explain how learning is shared across sites, what the evidence-gap register is for, and list the eight capabilities CIMMYT aims for by 2030.",
+        "bloom": "understand"
+      }
+    ],
+    "lessons": [
+      {
+        "id": "L8.1",
+        "moduleId": "learning-adaptation",
+        "title": "Evidence reviews: the operating cadence",
+        "objectiveIds": [
+          "learning-adaptation.O1"
+        ],
+        "minutes": 4,
+        "beats": {
+          "hook": "Your dashboard just showed a problem. Annual reporting is seven months away. The framework does not expect you to wait. It expects a review, and a review has a specific output.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m8-hero"
+          },
+          "example": {
+            "kind": "interactive",
+            "title": "Put each output in its cadence row",
+            "widget": "sorter",
+            "prompt": "Section 5.7 sets four cadence rows, each with a purpose and a typical output. Drop each output into the row that produces it.",
+            "bins": [
+              {
+                "id": "monthly",
+                "label": "Continuous / monthly",
+                "hint": "Routine data-quality checks; exceptions resolved close to collection."
+              },
+              {
+                "id": "quarterly",
+                "label": "Quarterly / seasonal",
+                "hint": "Joint evidence review of implementation, reach, early uptake and emerging outcomes."
+              },
+              {
+                "id": "annual",
+                "label": "Annual",
+                "hint": "Recompute institutional KPIs; review coverage, uncertainty and evidence gaps."
+              },
+              {
+                "id": "trigger",
+                "label": "Midterm / endline / trigger-based",
+                "hint": "Outcome or impact studies, contribution or evaluation analysis, shock events."
+              }
+            ],
+            "cards": [
+              {
+                "label": "Decision log: what changes, who acts, by when",
+                "bin": "quarterly",
+                "why": "The joint quarterly or seasonal review ends in a decision log. That is its typical output."
+              },
+              {
+                "label": "Quality flags and corrected records",
+                "bin": "monthly",
+                "why": "Routine checks catch exceptions close to collection and fix the records before they reach a review."
+              },
+              {
+                "label": "Portfolio dashboard",
+                "bin": "annual",
+                "why": "The annual cadence recomputes KPIs from eligible records and publishes the portfolio dashboard."
+              },
+              {
+                "label": "Evidence-gap register",
+                "bin": "annual",
+                "why": "Reviewing coverage, uncertainty and gaps is annual work, and the register is its product."
+              },
+              {
+                "label": "Method notes",
+                "bin": "annual",
+                "why": "Method notes accompany the annual KPI run so that figures can be interpreted and reproduced."
+              },
+              {
+                "label": "System issue log",
+                "bin": "monthly",
+                "why": "System issues surface in routine checks and are logged there, not saved for a review."
+              },
+              {
+                "label": "Evaluation findings and contribution analysis",
+                "bin": "trigger",
+                "why": "Outcome and impact questions need a study: midterm, endline or triggered by an event."
+              },
+              {
+                "label": "Updated impact narrative",
+                "bin": "trigger",
+                "why": "The impact narrative is updated from evaluation work, not from a quarterly meeting."
+              }
+            ]
+          },
+          "microCheck": [
+            "Q311",
+            "Q312"
+          ],
+          "recap": {
+            "bullets": [
+              "Implementation runs on a light, regular cadence in addition to annual reporting, adapted to seasonality and risk.",
+              "The quarterly or seasonal review looks at implementation, reach, early uptake and emerging outcomes, and produces a decision log.",
+              "Monthly checks produce corrected records; the annual run produces the portfolio dashboard, evidence-gap register and method notes; studies produce findings."
+            ],
+            "source": {
+              "section": "5.7",
+              "title": "Operating Cadence and Assurance"
+            }
+          }
+        },
+        "glossary": [
+          "Operating cadence",
+          "Decision log",
+          "Evidence-gap register",
+          "Trigger-based study"
+        ]
+      },
+      {
+        "id": "L8.2",
+        "moduleId": "learning-adaptation",
+        "title": "Decision logs and management responses",
+        "objectiveIds": [
+          "learning-adaptation.O2"
+        ],
+        "minutes": 4,
+        "beats": {
+          "hook": "A good review can still leave no trace. Six months later nobody remembers what was agreed or whether anyone did it. The decision log and the management response exist to stop that.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m8-log"
+          },
+          "example": {
+            "kind": "text",
+            "title": "One review, one log entry, one management response",
+            "body": [
+              "The advisory project holds its quarterly review. The evidence: uptake at 9% in two districts, with registration there completed three weeks later than elsewhere. The team agrees that late registration explains part of the gap, not all of it.",
+              "Decision log entry. What changes: the enrolment window in the two districts is extended by one month and the welcome call is repeated. Who acts: the Project MEAL Focal Point coordinates with the two district leads. By when: end of next month, with a check at the following review. The entry is linked to the dashboard view and the registration records it rests on, which is what the learning and feedback functionality in section 4.1 asks for.",
+              "Three months later an outcome study recommends moving the advisory to voice messages for farmers who cannot read SMS. That is a recommendation, not yet a decision. The management response records what management decided: accepted for the two low-uptake districts first, declined for the rest until the pilot result is in. It names the owner and the date, and the Evaluation and Research Analyst adds it to the management-response log.",
+              "The Lead for Evaluation, Learning and Accountability then tracks whether this significant recommendation is acted on. A recommendation that is received, filed and never answered is a gap in accountability, and the log makes that gap visible."
+            ]
+          },
+          "microCheck": [
+            "Q313",
+            "Q314",
+            "Q315"
+          ],
+          "recap": {
+            "bullets": [
+              "A decision log entry answers three questions: what changes, who acts, by when.",
+              "A management response records what management decided about a finding or recommendation, and is linked to the evidence behind it.",
+              "Pillar C translates findings into management responses and tracks whether significant recommendations are acted on; the analyst keeps the log current."
+            ],
+            "source": {
+              "section": "5.8",
+              "title": "MEAL Team Structure and Roles"
+            }
+          }
+        },
+        "glossary": [
+          "Decision log",
+          "Management response",
+          "Project MEAL Focal Point",
+          "Core Layer"
+        ]
+      },
+      {
+        "id": "L8.3",
+        "moduleId": "learning-adaptation",
+        "title": "When evidence should change a decision",
+        "objectiveIds": [
+          "learning-adaptation.O3"
+        ],
+        "minutes": 5,
+        "beats": {
+          "hook": "Nine percent uptake in two districts. Do you change delivery today, wait, or ask why? The framework gives you three routes, and the first move is almost never the big one.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m8-branch"
+          },
+          "example": {
+            "kind": "interactive",
+            "title": "One week to the review",
+            "widget": "branch",
+            "prompt": "You lead the advisory project. The dashboard shows early uptake at 9% in two districts against about 30% elsewhere. The quarterly review is in seven days. Choose your moves and watch where they lead.",
+            "start": "start",
+            "nodes": {
+              "start": {
+                "text": "The dashboard refreshed this morning. Uptake of the advisory service sits at 9% in two districts and around 30% in the other three. The quarterly review is in a week. What do you do first?",
+                "choices": [
+                  {
+                    "label": "Ask the Focal Point to investigate the anomaly: check the records behind the number before the review.",
+                    "next": "investigate",
+                    "feedback": "Right. In the implementation phase the project role is to investigate anomalies and use dashboards and reviews to adapt. First find out what the number means.",
+                    "good": true
+                  },
+                  {
+                    "label": "Redirect field officers to the two districts today.",
+                    "next": "rushed",
+                    "feedback": "A dashboard figure is a signal, not a decision. You have changed delivery without knowing whether the number reflects a data issue, timing or a real gap."
+                  },
+                  {
+                    "label": "Note it for the annual report and carry on.",
+                    "next": "waited",
+                    "feedback": "The quarterly or seasonal review exists so that teams adapt during implementation, not only at closure. Waiting for annual reporting skips the cadence built for this."
+                  }
+                ]
+              },
+              "investigate": {
+                "text": "The Focal Point checks. Records are complete and there are no duplicates. Registration in the two districts finished three weeks later than elsewhere, so uptake there was measured sooner after enrolment. Even so, early uptake looks lower. What goes to the review?",
+                "choices": [
+                  {
+                    "label": "A short evidence brief: what the data show, what they cannot yet show, and two options for the team.",
+                    "next": "review",
+                    "feedback": "Good. The review is a joint evidence review of implementation, reach and early uptake. Give it the evidence and its limits, and let it decide.",
+                    "good": true
+                  },
+                  {
+                    "label": "A recommendation to drop the two districts from the next phase.",
+                    "next": "drop",
+                    "feedback": "The evidence shows a timing effect that you have not yet separated from a real gap. It does not support a decision that large."
+                  }
+                ]
+              },
+              "rushed": {
+                "text": "Officers moved. Two weeks later uptake in the two districts has barely shifted, and the three strong districts have slipped because fewer officers cover them. The review is in a few days. What now?",
+                "choices": [
+                  {
+                    "label": "Pull back, investigate the records, and bring the evidence to the review.",
+                    "next": "investigate",
+                    "feedback": "Better late than never. The cost of acting on an uninvestigated number was two weeks and three districts. Now follow the sequence.",
+                    "good": true
+                  },
+                  {
+                    "label": "Keep the officers there and wait for the annual figures to judge.",
+                    "next": "waited",
+                    "feedback": "You are now compounding a rushed change with a long wait. Neither move uses the review the framework gives you."
+                  }
+                ]
+              },
+              "waited": {
+                "text": "Months pass. At annual reporting the uptake gap has widened and the sowing season is over. The annual run produces a portfolio dashboard and an evidence-gap register, but it cannot give the season back. The quarterly review was the moment to decide, and it went unused.",
+                "end": true
+              },
+              "drop": {
+                "text": "Dropping two districts is a major change in delivery. The evidence shows a timing effect you have not separated from a real gap. Choose a smaller first step.",
+                "choices": [
+                  {
+                    "label": "Take the evidence and its limits to the review and let it decide.",
+                    "next": "review",
+                    "feedback": "Yes. Big decisions need the joint review and, often, a further question answered first.",
+                    "good": true
+                  },
+                  {
+                    "label": "Submit the drop recommendation anyway and let management answer it.",
+                    "next": "minutes",
+                    "feedback": "A recommendation that outruns its evidence usually gets a vague answer. You will see what that looks like."
+                  }
+                ]
+              },
+              "review": {
+                "text": "At the review the team agrees: late registration explains part of the gap, not all of it. The team wants to act on the part it understands and ask about the rest. What do you record?",
+                "choices": [
+                  {
+                    "label": "A decision log entry (extend the enrolment window; Focal Point and district leads; by end of next month) and a learning question for Pillar C: why does uptake lag where registration was on time?",
+                    "next": "logged",
+                    "feedback": "Exactly. One decision with what changes, who acts and by when. One further question routed to the people who answer why results differ across contexts.",
+                    "good": true
+                  },
+                  {
+                    "label": "Minutes of the discussion, to revisit next quarter.",
+                    "next": "minutes",
+                    "feedback": "Minutes record that people talked. The required output of the review is a decision log with actions, owners and follow-up."
+                  }
+                ]
+              },
+              "logged": {
+                "text": "The log entry is linked to the dashboard view and the registration records. Next quarter the review checks whether the extended window moved uptake, and Pillar C scopes the question of why some on-time districts still lag. Evidence changed a decision where the evidence was clear, and became a question where it was not.",
+                "end": true
+              },
+              "minutes": {
+                "text": "Next quarter the same dashboard appears, the same discussion happens, and nobody can say what was agreed last time. Without a decision log entry, a review is a meeting. Without a management response, a recommendation is a document.",
+                "end": true
+              }
+            }
+          },
+          "microCheck": [
+            "Q316",
+            "Q317"
+          ],
+          "recap": {
+            "bullets": [
+              "Investigate anomalies before you act on them. A dashboard number is a signal, not a decision.",
+              "Where the evidence is clear, the review decides and the decision log records it. Where it is not, log a further question with an owner.",
+              "Questions that routine monitoring cannot answer, such as whether outcomes occur and why results differ across contexts, go to Pillar C and to midterm, endline or trigger-based studies."
+            ],
+            "source": {
+              "section": "5.1",
+              "title": "Project Lifecycle: MEAL from Proposal to Impact"
+            }
+          }
+        },
+        "glossary": [
+          "Decision log",
+          "Trigger-based study",
+          "Regional MEAL Lead"
+        ]
+      },
+      {
+        "id": "L8.4",
+        "moduleId": "learning-adaptation",
+        "title": "Pilots, handover and cross-site learning",
+        "objectiveIds": [
+          "learning-adaptation.O4",
+          "learning-adaptation.O5"
+        ],
+        "minutes": 4,
+        "beats": {
+          "hook": "Learning is not only about this project. A form that fails in one pilot, a handover that skips the competency check, a question that keeps coming to office hours: each is evidence that the guidance itself should change.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m8-pilot"
+          },
+          "example": {
+            "kind": "text",
+            "title": "Three places where practice improves",
+            "body": [
+              "The pilot. The advisory project is one of the ongoing projects piloting the KPI system. MEAL ran a readiness diagnostic of its indicators and data systems, a selection check on duration, budget flexibility, system maturity and team capacity, and a KPI crosswalk workshop that flagged what had to change. In the field the pilot shows that the uptake form takes too long on a low-bandwidth channel. The roadmap is explicit: refine guidance and tools based on what the pilots show. The fix goes into the next version of the guidance, not into a local workaround that quietly changes the method.",
+              "The handover. Before the project ran routine monitoring on its own, phase 4 required a competency check, a live system and named data and MEAL owners. Training alone did not pass the gate. When the two low-uptake districts turned out to have had no named data owner for the first month, the gap pointed straight back to the handover, and the regional team now checks named owners per district before sign-off.",
+              "First-line support. Field officers in three projects keep asking how to count a farmer who received advice but never opened it. The Enablement and Backstopping Officer answers through office hours, keeps a log of recurrent implementation issues, and escalates the technical question to the Measurement Specialist, who updates the KPI reference sheet. Communities of practice across the Extended MEAL Network carry the answer to other sites.",
+              "All three serve the same enabling condition in section 5.6: continuous learning and adaptation, where evidence is reviewed and acted on and improvements are released as new versions of the guidance. A meeting that changes nothing does not meet it."
+            ]
+          },
+          "microCheck": [
+            "Q318",
+            "Q319"
+          ],
+          "recap": {
+            "bullets": [
+              "Pilots test KPIs, methods and data collection in real contexts, and their findings refine the guidance and tools.",
+              "The handover gate is a competency check, a live system and named data and MEAL owners; training delivered is not enough.",
+              "Office hours, support logs, escalation and communities of practice carry learning across projects; improvements are released as new versions of the guidance."
+            ],
+            "source": {
+              "section": "5.6",
+              "title": "Enabling Success"
+            }
+          }
+        },
+        "glossary": [
+          "Project MEAL Focal Point",
+          "KPI reference sheet",
+          "Regional MEAL Lead"
+        ]
+      },
+      {
+        "id": "L8.5",
+        "moduleId": "learning-adaptation",
+        "title": "Evidence gaps and the 2030 capabilities",
+        "objectiveIds": [
+          "learning-adaptation.O5"
+        ],
+        "minutes": 3,
+        "beats": {
+          "hook": "Once a year the whole portfolio is recomputed. The point is not only the dashboard. It is the register of what CIMMYT still cannot answer, and the eight things it should be able to do by 2030.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m8-2030"
+          },
+          "example": {
+            "kind": "text",
+            "title": "From one project's gap to an institutional capability",
+            "body": [
+              "At the annual run, the KPI engine recomputes institutional KPIs from eligible records and reports coverage, uncertainty and method version. The advisory project's uptake figure comes with a note: two districts measured early, outcome data not yet available. That is an entry in the evidence-gap register, which the Portfolio Performance and Visualization Analyst maintains.",
+              "The register travels. The MEAL Group Lead allocates resources according to institutional priorities and evidence gaps. The MEAL Review Committee uses the annual KPI run and the register to review the Handbook, Toolbox and Matrix and endorse changes for the following year. A gap seen in one project can change the guidance for all of them.",
+              "Across sites, learning depends on comparability. A wheat advisory project in South Asia and a maize advisory project in East Africa can only be compared if their uptake indicators share a definition and their methods are documented. That is what the Science and Impact value in section 6.1 promises researchers: harmonized datasets and documented methods for synthesis, evaluation and cross-site comparison.",
+              "Put together, these are the capabilities section 6.2 lists for 2030, from a consolidated portfolio view to an institutional learning infrastructure. The test is the question CIMMYT can answer. Today it is mostly what did we do. By 2030 it should be what changed, for whom, where, under what conditions, at what scale, and what did CIMMYT contribute."
+            ]
+          },
+          "microCheck": [
+            "Q320",
+            "Q321"
+          ],
+          "recap": {
+            "bullets": [
+              "The annual cadence produces the portfolio dashboard, the evidence-gap register and method notes; the register feeds resource allocation and the annual review of the Handbook.",
+              "Cross-site learning rests on comparable indicators and documented methods, which is the Science and Impact value of the framework.",
+              "Eight capabilities by 2030: consolidated view, comparability, credible evidence, attribution and contribution narratives, adaptive management, reduced burden, data reuse, learning infrastructure."
+            ],
+            "source": {
+              "section": "6.2",
+              "title": "Eight Strategic Capabilities by 2030"
+            }
+          }
+        },
+        "glossary": [
+          "Evidence-gap register",
+          "KPI engine",
+          "MEAL Review Committee",
+          "Eight strategic capabilities"
+        ]
+      }
+    ],
+    "storyboards": [
+      {
+        "id": "sb-m8-hero",
+        "title": "The evidence review loop",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 8,
+            "narration": "A dashboard shows a problem in the middle of the season. The question is not whether to react. It is where the reaction gets recorded.",
+            "scene": {
+              "kind": "title",
+              "title": "Evidence in. Decision out.",
+              "subtitle": "The review loop that runs between annual reports."
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 16,
+            "narration": "The loop has four steps. Evidence enters. A joint review reads it. A decision log entry records what changes, who acts and by when. A practice changes. Then new evidence enters.",
+            "scene": {
+              "kind": "loop",
+              "steps": [
+                {
+                  "label": "Evidence enters",
+                  "detail": "Dashboard, records, feedback"
+                },
+                {
+                  "label": "Joint review",
+                  "detail": "Implementation, reach, early uptake, emerging outcomes"
+                },
+                {
+                  "label": "Decision log",
+                  "detail": "What changes, who acts, by when"
+                },
+                {
+                  "label": "Practice changes",
+                  "detail": "Then the loop runs again"
+                }
+              ],
+              "active": 0,
+              "log": "Uptake: 9% in two districts, 30% elsewhere"
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 18,
+            "narration": "Step two. The quarterly or seasonal review is a joint review. It looks at implementation, reach, early uptake and emerging outcomes. The Focal Point is responsible, the project lead is accountable, the Regional Lead and Pillar C are consulted.",
+            "scene": {
+              "kind": "loop",
+              "steps": [
+                {
+                  "label": "Evidence enters",
+                  "detail": "Dashboard, records, feedback"
+                },
+                {
+                  "label": "Joint review",
+                  "detail": "Implementation, reach, early uptake, emerging outcomes"
+                },
+                {
+                  "label": "Decision log",
+                  "detail": "What changes, who acts, by when"
+                },
+                {
+                  "label": "Practice changes",
+                  "detail": "Then the loop runs again"
+                }
+              ],
+              "active": 1,
+              "log": "Review: records complete; registration late in two districts; gap partly explained"
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 18,
+            "narration": "Step three. The output of the review is a decision log. Not minutes, not a slide pack. What changes: the enrolment window is extended. Who acts: the Focal Point with the district leads. By when: end of next month.",
+            "scene": {
+              "kind": "loop",
+              "steps": [
+                {
+                  "label": "Evidence enters",
+                  "detail": "Dashboard, records, feedback"
+                },
+                {
+                  "label": "Joint review",
+                  "detail": "Implementation, reach, early uptake, emerging outcomes"
+                },
+                {
+                  "label": "Decision log",
+                  "detail": "What changes, who acts, by when"
+                },
+                {
+                  "label": "Practice changes",
+                  "detail": "Then the loop runs again"
+                }
+              ],
+              "active": 2,
+              "log": "Decision log: extend enrolment window | Focal Point + district leads | end of next month"
+            }
+          },
+          {
+            "id": "f5",
+            "seconds": 16,
+            "narration": "Step four. The practice changes while delivery is still underway. Next quarter the loop runs again and checks whether the change moved uptake. That is adaptive management: during implementation, not only at closure.",
+            "scene": {
+              "kind": "loop",
+              "steps": [
+                {
+                  "label": "Evidence enters",
+                  "detail": "Dashboard, records, feedback"
+                },
+                {
+                  "label": "Joint review",
+                  "detail": "Implementation, reach, early uptake, emerging outcomes"
+                },
+                {
+                  "label": "Decision log",
+                  "detail": "What changes, who acts, by when"
+                },
+                {
+                  "label": "Practice changes",
+                  "detail": "Then the loop runs again"
+                }
+              ],
+              "active": 3,
+              "log": "Enrolment reopened in two districts; follow-up at next review"
+            }
+          },
+          {
+            "id": "f6",
+            "seconds": 20,
+            "narration": "This loop sits inside a larger cadence. Monthly checks fix records close to collection. Quarterly reviews produce decision logs. The annual run produces the portfolio dashboard, the evidence-gap register and method notes. Studies produce findings when a question needs them.",
+            "scene": {
+              "kind": "grid",
+              "rows": [
+                "Continuous / monthly",
+                "Quarterly / seasonal",
+                "Annual",
+                "Midterm / endline / trigger"
+              ],
+              "cols": [
+                "Purpose",
+                "Typical output"
+              ],
+              "cells": [
+                [
+                  "Data-quality checks",
+                  "Quality flags, corrected records, issue log"
+                ],
+                [
+                  "Joint evidence review",
+                  "Decision log"
+                ],
+                [
+                  "Recompute KPIs; review gaps",
+                  "Portfolio dashboard, evidence-gap register, method notes"
+                ],
+                [
+                  "Outcome and impact studies",
+                  "Evaluation findings, contribution analysis"
+                ]
+              ],
+              "token": {
+                "row": 1,
+                "col": 1,
+                "label": "This module"
+              }
+            }
+          },
+          {
+            "id": "f7",
+            "seconds": 8,
+            "narration": "A review without a decision log is a meeting. Evidence in, decision out, practice changed. That is the loop.",
+            "scene": {
+              "kind": "title",
+              "title": "Evidence in. Decision out. Practice changed.",
+              "subtitle": "Quarterly or seasonal, adapted to the season and the risk.",
+              "stamp": "§5.7"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m8-log",
+        "title": "Decision logs and management responses",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 8,
+            "narration": "Here is how most reviews end: a summary of findings and a date for the next meeting. Nothing anyone can act on.",
+            "scene": {
+              "kind": "checklist",
+              "items": [
+                {
+                  "label": "Findings summarised",
+                  "done": true
+                },
+                {
+                  "label": "Next meeting scheduled",
+                  "done": true
+                },
+                {
+                  "label": "What changes"
+                },
+                {
+                  "label": "Who acts"
+                },
+                {
+                  "label": "By when"
+                },
+                {
+                  "label": "Linked to the evidence"
+                }
+              ]
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 16,
+            "narration": "A decision log entry fills the three fields the framework names. What changes: extend the enrolment window. Who acts: the Focal Point with district leads. By when: end of next month. And the entry is linked to the evidence behind it.",
+            "scene": {
+              "kind": "checklist",
+              "items": [
+                {
+                  "label": "What changes: enrolment window extended in two districts",
+                  "done": true
+                },
+                {
+                  "label": "Who acts: Focal Point with district leads",
+                  "done": true
+                },
+                {
+                  "label": "By when: end of next month, checked at next review",
+                  "done": true
+                },
+                {
+                  "label": "Linked to: dashboard view, registration records",
+                  "done": true
+                }
+              ],
+              "stamp": "Decision log entry"
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 16,
+            "narration": "Evaluations produce recommendations, not decisions. The management response records what management decided about each one, and Pillar C tracks whether significant recommendations are acted on. The analyst keeps the log current.",
+            "scene": {
+              "kind": "chain",
+              "steps": [
+                {
+                  "label": "Evaluation finding",
+                  "detail": "Recommends voice messages",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Management response",
+                  "detail": "Accepted for two districts; owner; date",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Tracked",
+                  "detail": "Pillar C checks it was acted on",
+                  "tone": "green"
+                },
+                {
+                  "label": "Logged",
+                  "detail": "Management-response log, kept by the analyst",
+                  "tone": "green"
+                }
+              ],
+              "traveler": true
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 8,
+            "narration": "The data system has a place for both. The learning and feedback functionality holds decision logs, management responses and participant feedback, linked to the evidence behind them. It closes the loop from evidence to action.",
+            "scene": {
+              "kind": "title",
+              "title": "Closes the loop from evidence to action",
+              "subtitle": "Decision logs, management responses, participant feedback: linked to their evidence.",
+              "stamp": "§4.1"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m8-branch",
+        "title": "Decide, investigate or ask",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 10,
+            "narration": "Two districts at nine percent. The instinct is to act now or to wait for annual data. The framework offers a third move first: investigate the anomaly.",
+            "scene": {
+              "kind": "split",
+              "left": {
+                "title": "Act on the number",
+                "lines": [
+                  "Move officers today",
+                  "Nobody knows why yet"
+                ],
+                "tone": "gold"
+              },
+              "right": {
+                "title": "Wait for annual",
+                "lines": [
+                  "Season ends first",
+                  "Review cadence unused"
+                ],
+                "tone": "gold"
+              },
+              "gap": "Neither. Investigate first."
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 16,
+            "narration": "The sequence is set by the implementation phase. Investigate anomalies. Use dashboards and reviews to adapt. Document decisions. The gate is a review with actions, owners and follow-up.",
+            "scene": {
+              "kind": "chain",
+              "steps": [
+                {
+                  "label": "Anomaly seen",
+                  "detail": "Uptake 9% in two districts",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Investigate",
+                  "detail": "Records complete? Timing? Real gap?",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Joint review",
+                  "detail": "Evidence and its limits",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Decide and document",
+                  "detail": "Actions, owners, follow-up",
+                  "tone": "green"
+                }
+              ],
+              "traveler": true
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 16,
+            "narration": "At the review, evidence takes one of three routes. Clear enough to act: a decision log entry. Not yet clear: a further question with an owner. Beyond routine monitoring, such as why results differ across contexts: a learning review or a trigger-based study with Pillar C.",
+            "scene": {
+              "kind": "cards",
+              "layout": "row",
+              "items": [
+                {
+                  "label": "Decide now",
+                  "detail": "Decision log: what changes, who acts, by when",
+                  "tone": "green"
+                },
+                {
+                  "label": "Ask first",
+                  "detail": "Learning question with an owner and a date",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Study it",
+                  "detail": "Why results differ: Pillar C, midterm, endline or trigger-based",
+                  "tone": "sky"
+                }
+              ]
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 8,
+            "narration": "Act on what the evidence supports. Log the rest as a question. Never leave a review with only minutes.",
+            "scene": {
+              "kind": "title",
+              "title": "Decide, ask, or study",
+              "subtitle": "A dashboard number is a signal. The review turns it into one of three things.",
+              "stamp": "§5.1"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m8-pilot",
+        "title": "Pilots, handover and support",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 14,
+            "narration": "Pilots test KPIs, methods and data collection in real implementation. When a form fails in the field, the finding flows back into the guidance. Improvements are released as new versions, not as local workarounds.",
+            "scene": {
+              "kind": "chain",
+              "steps": [
+                {
+                  "label": "Pilot in a live project",
+                  "detail": "Readiness diagnostic, selection check, crosswalk workshop",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Field finding",
+                  "detail": "Uptake form too long on low bandwidth",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Guidance refined",
+                  "detail": "New version of the tool and guidance",
+                  "tone": "green"
+                }
+              ],
+              "traveler": true,
+              "stamp": "§5.5"
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 12,
+            "narration": "Handover has a gate. Training delivered is not it. The gate is a competency check, a live system and named data and MEAL owners.",
+            "scene": {
+              "kind": "checklist",
+              "items": [
+                {
+                  "label": "Training delivered",
+                  "done": true
+                },
+                {
+                  "label": "Competency check passed",
+                  "done": true
+                },
+                {
+                  "label": "Live system",
+                  "done": true
+                },
+                {
+                  "label": "Named data and MEAL owners"
+                }
+              ],
+              "stamp": "Gate not yet passed"
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 14,
+            "narration": "Between pilots and gates sits day-to-day support. Office hours, clinics and refresher sessions answer questions. A log of recurrent issues shows which questions are really gaps in the guidance. Communities of practice carry the answer across the network.",
+            "scene": {
+              "kind": "cards",
+              "layout": "grid",
+              "items": [
+                {
+                  "label": "Office hours and clinics",
+                  "detail": "First-line support",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Support log",
+                  "detail": "Recurrent issues escalated",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Communities of practice",
+                  "detail": "Peer learning across the Extended MEAL Network",
+                  "tone": "green"
+                },
+                {
+                  "label": "New guidance version",
+                  "detail": "Improvements released",
+                  "tone": "green"
+                }
+              ]
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 8,
+            "narration": "The enabling condition is continuous learning and adaptation: evidence reviewed and acted on, improvements released as new versions of the guidance.",
+            "scene": {
+              "kind": "title",
+              "title": "Reviewed, acted on, released",
+              "subtitle": "A meeting that changes nothing does not meet the condition.",
+              "stamp": "§5.6"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m8-2030",
+        "title": "Evidence gaps and 2030",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 14,
+            "narration": "Once a year the KPI engine recomputes institutional KPIs from eligible records, with coverage, uncertainty and method version. Out come a portfolio dashboard, an evidence-gap register and method notes. The register feeds resource allocation and the annual review of the Handbook.",
+            "scene": {
+              "kind": "loop",
+              "steps": [
+                {
+                  "label": "Annual KPI run",
+                  "detail": "Eligible records, approved method"
+                },
+                {
+                  "label": "Portfolio dashboard",
+                  "detail": "Results across the portfolio"
+                },
+                {
+                  "label": "Evidence-gap register",
+                  "detail": "What is missing or weak"
+                },
+                {
+                  "label": "Review Committee",
+                  "detail": "Endorses changes for next year"
+                }
+              ],
+              "active": 2,
+              "log": "Gap: advisory uptake measured early in two districts; no outcome data yet"
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 20,
+            "narration": "By 2030 the framework should give CIMMYT eight capabilities it does not have in a systematic form today.",
+            "scene": {
+              "kind": "cards",
+              "layout": "grid",
+              "items": [
+                {
+                  "label": "Consolidated view",
+                  "detail": "Results across the portfolio",
+                  "tone": "green"
+                },
+                {
+                  "label": "Comparability",
+                  "detail": "Across projects, regions, years, populations",
+                  "tone": "green"
+                },
+                {
+                  "label": "Credible evidence",
+                  "detail": "Traceable method, documented quality",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Attribution and contribution",
+                  "detail": "Narratives linking the four levels",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Adaptive management",
+                  "detail": "During implementation, not only after",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Reduced reporting burden",
+                  "detail": "Standardised, integrated systems",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Data reuse",
+                  "detail": "One project's data feed research and services",
+                  "tone": "ink"
+                },
+                {
+                  "label": "Learning infrastructure",
+                  "detail": "MEAL as a transversal capacity",
+                  "tone": "ink"
+                }
+              ],
+              "stamp": "§6.2"
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 10,
+            "narration": "The biggest change is in the question CIMMYT can answer. Today, what did we do. By 2030, what changed, for whom, where, under what conditions, at what scale, and what did CIMMYT contribute.",
+            "scene": {
+              "kind": "split",
+              "left": {
+                "title": "Today",
+                "lines": [
+                  "What did we do?"
+                ],
+                "tone": "paper"
+              },
+              "right": {
+                "title": "2030",
+                "lines": [
+                  "What changed?",
+                  "For whom, where?",
+                  "Under what conditions, at what scale?",
+                  "What did CIMMYT contribute?"
+                ],
+                "tone": "green"
+              },
+              "gap": "The question is the test"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "tag": "review-without-decision",
+      "description": "You treated a review that summarised findings but recorded no change, no owner and no deadline as a completed evidence review.",
+      "remedyLessonIds": [
+        "L8.1",
+        "L8.2"
+      ]
+    },
+    {
+      "tag": "wait-for-annual",
+      "description": "You waited for annual reporting to act on evidence that the quarterly or seasonal review exists to handle during implementation.",
+      "remedyLessonIds": [
+        "L8.1",
+        "L8.3"
+      ]
+    },
+    {
+      "tag": "response-not-recorded",
+      "description": "You treated delivering a report or recommendation as the management response, without recording what management decided or tracking whether anyone acted on it.",
+      "remedyLessonIds": [
+        "L8.2"
+      ]
+    },
+    {
+      "tag": "meeting-equals-learning",
+      "description": "You counted holding learning meetings as learning, even though no decision was logged and no practice or guidance changed.",
+      "remedyLessonIds": [
+        "L8.2",
+        "L8.4"
+      ]
+    },
+    {
+      "tag": "pilot-ignored",
+      "description": "You let a pilot finding about an impractical method pass without refining the guidance and tools, or you changed the method locally without recording it.",
+      "remedyLessonIds": [
+        "L8.4"
+      ]
+    },
+    {
+      "tag": "dashboard-equals-action",
+      "description": "You treated a dashboard figure as a decision in itself: you acted on it without investigating what it meant, or you assumed nothing needed to change because a delivery target was met.",
+      "remedyLessonIds": [
+        "L8.3"
+      ]
+    },
+    {
+      "tag": "training-equals-handover",
+      "description": "You treated training delivered as the handover, without the competency check, live system and named data and MEAL owners the gate requires.",
+      "remedyLessonIds": [
+        "L8.4"
+      ]
+    }
+  ],
+  "diagnosticTags": {
+    "Q071": {
+      "objectiveIds": [
+        "learning-adaptation.O1"
+      ],
+      "misconceptions": {
+        "a": "wait-for-annual",
+        "b": "review-without-decision",
+        "c": "review-without-decision"
+      }
+    },
+    "Q072": {
+      "objectiveIds": [
+        "learning-adaptation.O3"
+      ],
+      "misconceptions": {
+        "a": "wait-for-annual",
+        "d": "dashboard-equals-action"
+      }
+    },
+    "Q073": {
+      "objectiveIds": [
+        "learning-adaptation.O2"
+      ],
+      "misconceptions": {
+        "a": "response-not-recorded",
+        "b": "response-not-recorded"
+      }
+    },
+    "Q074": {
+      "objectiveIds": [
+        "learning-adaptation.O5",
+        "learning-adaptation.O3"
+      ],
+      "misconceptions": {
+        "a": "dashboard-equals-action"
+      }
+    },
+    "Q075": {
+      "objectiveIds": [
+        "learning-adaptation.O5"
+      ]
+    },
+    "Q076": {
+      "objectiveIds": [
+        "learning-adaptation.O4"
+      ],
+      "misconceptions": {
+        "c": "wait-for-annual"
+      }
+    },
+    "Q077": {
+      "objectiveIds": [
+        "learning-adaptation.O4"
+      ],
+      "misconceptions": {
+        "b": "pilot-ignored",
+        "c": "pilot-ignored",
+        "d": "pilot-ignored"
+      }
+    },
+    "Q078": {
+      "objectiveIds": [
+        "learning-adaptation.O4"
+      ]
+    },
+    "Q079": {
+      "objectiveIds": [
+        "learning-adaptation.O4"
+      ],
+      "misconceptions": {
+        "b": "training-equals-handover"
+      }
+    },
+    "Q080": {
+      "objectiveIds": [
+        "learning-adaptation.O5"
+      ]
+    }
+  },
+  "questions": [
+    {
+      "id": "Q311",
+      "topicId": "learning-adaptation",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "learning-adaptation.O1"
+      ],
+      "question": "Which cadence row produces quality flags, corrected records and a system issue log?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quarterly / seasonal"
+        },
+        {
+          "id": "b",
+          "text": "Continuous / monthly"
+        },
+        {
+          "id": "c",
+          "text": "Annual"
+        },
+        {
+          "id": "d",
+          "text": "Midterm / endline / trigger-based"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Continuous or monthly work is automated or routine data-quality checking, with exceptions resolved close to collection, and its outputs are flags, corrected records and an issue log. The quarterly row is a joint evidence review and produces a decision log instead.",
+      "source": {
+        "section": "5.7",
+        "title": "Operating Cadence and Assurance",
+        "kind": "direct"
+      },
+      "reviewTip": "Read the four rows of the cadence table in 5.7 and memorise each typical output."
+    },
+    {
+      "id": "Q312",
+      "topicId": "learning-adaptation",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "learning-adaptation.O1"
+      ],
+      "question": "A project is in the implementation and adaptive management phase. What is the required gate or deliverable for this phase?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A quarterly or seasonal evidence review with actions, owners and follow-up"
+        },
+        {
+          "id": "b",
+          "text": "A competency check, a live system and named data and MEAL owners"
+        },
+        {
+          "id": "c",
+          "text": "A validated outcome dataset and an institutional KPI update"
+        },
+        {
+          "id": "d",
+          "text": "An approved MEAL plan and measurement matrix within inception"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Phase 5 of the lifecycle requires a quarterly or seasonal evidence review with actions, owners and follow-up. The competency check belongs to the handover phase, and the validated outcome dataset to phase 6.",
+      "source": {
+        "section": "5.1",
+        "title": "Project Lifecycle: MEAL from Proposal to Impact",
+        "kind": "application"
+      },
+      "reviewTip": "Compare the gate column of phases 4, 5 and 6 in the lifecycle table."
+    },
+    {
+      "id": "Q313",
+      "topicId": "learning-adaptation",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "learning-adaptation.O2"
+      ],
+      "question": "Which three questions does a decision log entry answer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "What was measured, which method was used, which quality rating applies"
+        },
+        {
+          "id": "b",
+          "text": "What was delivered, how many were reached, where and when"
+        },
+        {
+          "id": "c",
+          "text": "What changes, who acts, by when"
+        },
+        {
+          "id": "d",
+          "text": "Which KPI, which Thrust, which investor template"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The cadence table defines the decision log as what changes, who acts, by when. The other sets describe measurement plan fields or output reporting, not a decision.",
+      "source": {
+        "section": "5.7",
+        "title": "Operating Cadence and Assurance",
+        "kind": "direct"
+      },
+      "reviewTip": "Say the three fields aloud before you close any review."
+    },
+    {
+      "id": "Q314",
+      "topicId": "learning-adaptation",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "learning-adaptation.O2"
+      ],
+      "question": "The MEAL data system must hold decision logs, management responses and participant feedback linked to the evidence behind them. Why does MEAL need this functionality?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It replaces summing project reports"
+        },
+        {
+          "id": "b",
+          "text": "It prevents double counting of farmers"
+        },
+        {
+          "id": "c",
+          "text": "It lets institutional figures be recalculated"
+        },
+        {
+          "id": "d",
+          "text": "It closes the loop from evidence to action"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The learning and feedback functionality exists to close the loop from evidence to action. Replacing summed reports, preventing double counting and recalculation are the reasons for the KPI engine, persistent identifiers and provenance.",
+      "source": {
+        "section": "4.1",
+        "title": "Required Functionalities",
+        "kind": "direct"
+      },
+      "reviewTip": "Read the last row of the nine functionalities table in 4.1."
+    },
+    {
+      "id": "Q315",
+      "topicId": "learning-adaptation",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "learning-adaptation.O2"
+      ],
+      "question": "In the Core Layer, which role keeps the decision and management-response log up to date?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The MEAL Measurement Specialist"
+        },
+        {
+          "id": "b",
+          "text": "The Portfolio Performance and Visualization Analyst"
+        },
+        {
+          "id": "c",
+          "text": "The Evaluation / Research Analyst"
+        },
+        {
+          "id": "d",
+          "text": "The Evidence Systems, Data Quality and Reporting Analyst"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Evaluation / Research Analyst in Pillar C supports learning reviews and keeps the decision and management-response log up to date. The Portfolio Performance analyst maintains the evidence-gap register, a different product.",
+      "source": {
+        "section": "5.8",
+        "title": "MEAL Team Structure and Roles",
+        "kind": "application"
+      },
+      "reviewTip": "Read the key outputs of the three Pillar C roles."
+    },
+    {
+      "id": "Q316",
+      "topicId": "learning-adaptation",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "learning-adaptation.O3"
+      ],
+      "question": "The dashboard shows uptake of 9% in one district against 30% elsewhere. According to the project role in the implementation phase, what comes first?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Investigate the anomaly, then use the review to decide whether to adapt"
+        },
+        {
+          "id": "b",
+          "text": "Change delivery in the district immediately to close the gap"
+        },
+        {
+          "id": "c",
+          "text": "Hold the figure until annual reporting confirms it"
+        },
+        {
+          "id": "d",
+          "text": "Ask the Data Group to recalculate the dashboard"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The project role in phase 5 is to maintain timely data capture, investigate anomalies, use dashboards and reviews to adapt implementation, and document decisions. Acting on an uninvestigated figure, or waiting for annual data, both skip that sequence.",
+      "source": {
+        "section": "5.1",
+        "title": "Project Lifecycle: MEAL from Proposal to Impact",
+        "kind": "application"
+      },
+      "reviewTip": "Read the project role column for phase 5 and note the order of its verbs."
+    },
+    {
+      "id": "Q317",
+      "topicId": "learning-adaptation",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "learning-adaptation.O3"
+      ],
+      "question": "Which question goes beyond what a quarterly review can settle and belongs to Pillar C or to a midterm, endline or trigger-based study?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Are last month's uptake records complete and free of duplicates?"
+        },
+        {
+          "id": "b",
+          "text": "Are intended outcomes occurring, and why do results differ across districts?"
+        },
+        {
+          "id": "c",
+          "text": "Should the enrolment window be extended in two districts next month?"
+        },
+        {
+          "id": "d",
+          "text": "Who is the named data owner for each district?"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Pillar C answers the questions routine monitoring cannot: whether intended outcomes are occurring and why results differ across contexts, through learning reviews and outcome or evaluation studies. Record completeness, an enrolment decision and ownership are handled by monthly checks, the quarterly review and the handover gate.",
+      "source": {
+        "section": "5.8",
+        "title": "MEAL Team Structure and Roles",
+        "kind": "application"
+      },
+      "reviewTip": "Read the opening sentence of Pillar C and the last row of the cadence table."
+    },
+    {
+      "id": "Q318",
+      "topicId": "learning-adaptation",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "learning-adaptation.O4"
+      ],
+      "question": "What are the three steps MEAL runs for a shortlisted pilot project before it joins the KPI pilot?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Baseline survey, endline survey and evaluation design"
+        },
+        {
+          "id": "b",
+          "text": "Proposal review, MEAL Matrix classification and base budget"
+        },
+        {
+          "id": "c",
+          "text": "Dashboard build, investor mapping and reporting calendar"
+        },
+        {
+          "id": "d",
+          "text": "Readiness diagnostic, selection check and KPI crosswalk workshop"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Pilots join work already underway, so MEAL runs a readiness diagnostic, a selection check on duration, budget flexibility, system maturity and capacity, and a KPI crosswalk workshop that flags what must change. The MEAL Matrix alone is not enough for a pilot.",
+      "source": {
+        "section": "5.5",
+        "title": "Institutional Rollout Roadmap",
+        "kind": "direct"
+      },
+      "reviewTip": "Read the entry point text under milestone 6 of the roadmap."
+    },
+    {
+      "id": "Q319",
+      "topicId": "learning-adaptation",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "learning-adaptation.O4"
+      ],
+      "question": "How does section 5.6 describe the enabling condition of continuous learning and adaptation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Evidence reviewed and acted on; improvements released as new versions of the guidance"
+        },
+        {
+          "id": "b",
+          "text": "Role-based training, communities of practice, office hours and reusable resources"
+        },
+        {
+          "id": "c",
+          "text": "Quality controls, assurance reviews and documented standards across the lifecycle"
+        },
+        {
+          "id": "d",
+          "text": "Defined responsibilities across project teams, MEAL, Data Group and leadership"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Continuous learning and adaptation means evidence is reviewed and acted on, and improvements are released as new versions of the guidance. The other options describe capacity development, quality and accountability, and clear roles and governance.",
+      "source": {
+        "section": "5.6",
+        "title": "Enabling Success",
+        "kind": "direct"
+      },
+      "reviewTip": "Match each of the five enabling conditions to its one-line description."
+    },
+    {
+      "id": "Q320",
+      "topicId": "learning-adaptation",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "learning-adaptation.O5"
+      ],
+      "question": "Which question should CIMMYT be able to answer by 2030, according to the framework?",
+      "options": [
+        {
+          "id": "a",
+          "text": "What did we do, how many did we reach, and what did it cost, by project and by year?"
+        },
+        {
+          "id": "b",
+          "text": "What changed, for whom, where, under what conditions, at what scale, and what did CIMMYT contribute?"
+        },
+        {
+          "id": "c",
+          "text": "Which projects met their targets, which investors were satisfied, and which reports were on time?"
+        },
+        {
+          "id": "d",
+          "text": "Which varieties were released, which tools were deployed, and which trainings were delivered?"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The framework says the biggest change is in the question CIMMYT can answer: from mostly what did we do, to what changed, for whom, where, under what conditions, at what scale, and what did CIMMYT contribute. The other options stay at the level of activities and outputs.",
+      "source": {
+        "section": "6.2",
+        "title": "Eight Strategic Capabilities by 2030",
+        "kind": "direct"
+      },
+      "reviewTip": "Read the boxed text at the end of section 6.2."
+    },
+    {
+      "id": "Q321",
+      "topicId": "learning-adaptation",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "learning-adaptation.O5"
+      ],
+      "question": "Who maintains the institutional evidence-gap register, and which body uses it in the annual review?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Project MEAL Focal Point; the project steering committee"
+        },
+        {
+          "id": "b",
+          "text": "The Regional MEAL Lead; regional leadership"
+        },
+        {
+          "id": "c",
+          "text": "The Evaluation / Research Analyst; the Data Group"
+        },
+        {
+          "id": "d",
+          "text": "The Portfolio Performance and Visualization Analyst; the MEAL Review Committee"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Portfolio Performance and Visualization Analyst maintains the institutional evidence-gap register. Once a year the MEAL Review Committee uses the annual KPI run and the register to review the Handbook, Toolbox and Matrix.",
+      "source": {
+        "section": "5.8",
+        "title": "MEAL Team Structure and Roles",
+        "kind": "application"
+      },
+      "reviewTip": "Read the Portfolio Performance analyst's key outputs in 5.8 and the third governance rule in 5.3."
+    },
+    {
+      "id": "Q322",
+      "topicId": "learning-adaptation",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "learning-adaptation.O1"
+      ],
+      "question": "A seed systems project in Mexico closes its seasonal review with a slide pack of findings and a date for the next meeting. What is missing for this to count as the review the framework requires?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A revised indicator list for the annual report"
+        },
+        {
+          "id": "b",
+          "text": "An investor-format export of the findings"
+        },
+        {
+          "id": "c",
+          "text": "A decision log stating what changes, who acts and by when"
+        },
+        {
+          "id": "d",
+          "text": "A recalculated KPI with coverage and uncertainty"
+        }
+      ],
+      "correctOptionId": "c",
+      "misconceptions": {
+        "a": "review-without-decision",
+        "b": "review-without-decision",
+        "d": "wait-for-annual"
+      },
+      "explanation": "The typical output of the quarterly or seasonal review is a decision log: what changes, who acts, by when. A slide pack summarises evidence but records no decision, and a recalculated KPI is annual work.",
+      "source": {
+        "section": "5.7",
+        "title": "Operating Cadence and Assurance",
+        "kind": "application"
+      },
+      "reviewTip": "Before you leave any review, check that each agreed change has an owner and a date."
+    },
+    {
+      "id": "Q323",
+      "topicId": "learning-adaptation",
+      "difficulty": "foundation",
+      "pool": "check",
+      "objectiveIds": [
+        "learning-adaptation.O1"
+      ],
+      "question": "Which cadence row recomputes institutional KPIs from eligible records and reviews coverage, uncertainty and evidence gaps?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Continuous / monthly"
+        },
+        {
+          "id": "b",
+          "text": "Quarterly / seasonal"
+        },
+        {
+          "id": "c",
+          "text": "Midterm / endline / trigger-based"
+        },
+        {
+          "id": "d",
+          "text": "Annual"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The annual row recomputes institutional KPIs from eligible records and reviews coverage, uncertainty and gaps, producing the portfolio dashboard, evidence-gap register and method notes. The quarterly row is a joint review of implementation, reach and early uptake.",
+      "source": {
+        "section": "5.7",
+        "title": "Operating Cadence and Assurance",
+        "kind": "direct"
+      },
+      "reviewTip": "Pair each cadence row with its purpose, then with its output."
+    },
+    {
+      "id": "Q324",
+      "topicId": "learning-adaptation",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "learning-adaptation.O1"
+      ],
+      "question": "In the RACI matrix, who is responsible for quarterly or seasonal evidence reviews and adaptation decisions, and who is accountable?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Project MEAL Focal Point is responsible; the project lead is accountable"
+        },
+        {
+          "id": "b",
+          "text": "The Regional MEAL Lead is responsible; the MEAL Group Lead is accountable"
+        },
+        {
+          "id": "c",
+          "text": "Pillar C is responsible; the Regional MEAL Lead is accountable"
+        },
+        {
+          "id": "d",
+          "text": "The project lead is responsible; Pillar B is accountable"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The RACI row for quarterly or seasonal reviews gives R to the Focal Point and A to the project lead, with the Regional MEAL Lead and Pillar C consulted. The review is a project-level responsibility, not something central MEAL runs for the project.",
+      "source": {
+        "section": "5.1",
+        "title": "Project Lifecycle: MEAL from Proposal to Impact",
+        "kind": "direct"
+      },
+      "reviewTip": "Find the phase 5 rows of the RACI matrix and read the PI and FP columns."
+    },
+    {
+      "id": "Q325",
+      "topicId": "learning-adaptation",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "learning-adaptation.O2"
+      ],
+      "question": "An outcome study of a digital advisory project recommends switching to voice messages for farmers who cannot read SMS. Which action is a management response as the framework describes it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Attach the study to the next annual report so the recommendation is on record"
+        },
+        {
+          "id": "b",
+          "text": "Record what management decided, with an owner and a date, linked to the study, and track it"
+        },
+        {
+          "id": "c",
+          "text": "Hold a learning meeting to discuss the study and schedule another after the season"
+        },
+        {
+          "id": "d",
+          "text": "Wait for the endline evaluation to confirm the finding before responding"
+        }
+      ],
+      "correctOptionId": "b",
+      "misconceptions": {
+        "a": "response-not-recorded",
+        "c": "meeting-equals-learning",
+        "d": "wait-for-annual"
+      },
+      "explanation": "Pillar C ensures evaluation findings are translated into management responses and tracks whether significant recommendations are acted on, and the data system links responses to the evidence behind them. Filing the report or discussing it records no decision.",
+      "source": {
+        "section": "5.8",
+        "title": "MEAL Team Structure and Roles",
+        "kind": "application"
+      },
+      "reviewTip": "For every recommendation ask: what did management decide, who owns it, and who checks it was done?"
+    },
+    {
+      "id": "Q326",
+      "topicId": "learning-adaptation",
+      "difficulty": "foundation",
+      "pool": "check",
+      "objectiveIds": [
+        "learning-adaptation.O2"
+      ],
+      "question": "Which required functionality of the MEAL data system holds decision logs and management responses linked to the evidence behind them?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dashboards and reporting"
+        },
+        {
+          "id": "b",
+          "text": "KPI engine"
+        },
+        {
+          "id": "c",
+          "text": "Learning and feedback"
+        },
+        {
+          "id": "d",
+          "text": "Quality assurance and provenance"
+        }
+      ],
+      "correctOptionId": "c",
+      "misconceptions": {
+        "a": "dashboard-equals-action"
+      },
+      "explanation": "The learning and feedback functionality holds decision logs, management responses and participant feedback linked to their evidence, so the loop from evidence to action closes. Dashboards get evidence to decision-makers but do not record what they decided.",
+      "source": {
+        "section": "4.1",
+        "title": "Required Functionalities",
+        "kind": "direct"
+      },
+      "reviewTip": "Separate the row that shows evidence from the row that records the response to it."
+    },
+    {
+      "id": "Q327",
+      "topicId": "learning-adaptation",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "learning-adaptation.O2"
+      ],
+      "question": "Six months after an evaluation of a maize project in Kenya, nobody can say whether its main recommendations were acted on. Which responsibility in the MEAL team addresses this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Data Group audits the evaluation dataset"
+        },
+        {
+          "id": "b",
+          "text": "The Focal Point resubmits the report to the investor"
+        },
+        {
+          "id": "c",
+          "text": "The Measurement Specialist updates the KPI reference sheet"
+        },
+        {
+          "id": "d",
+          "text": "The Pillar C Lead tracks whether significant recommendations are acted on"
+        }
+      ],
+      "correctOptionId": "d",
+      "misconceptions": {
+        "b": "response-not-recorded",
+        "a": "response-not-recorded"
+      },
+      "explanation": "The Lead for Evaluation, Learning and Accountability ensures findings become management responses and tracks whether significant recommendations are acted upon, with the analyst keeping the log. Resubmitting the report or auditing the dataset does not tell you whether anyone acted.",
+      "source": {
+        "section": "5.8",
+        "title": "MEAL Team Structure and Roles",
+        "kind": "application"
+      },
+      "reviewTip": "Read the Pillar C Lead's responsibilities on management responses and tracking."
+    },
+    {
+      "id": "Q328",
+      "topicId": "learning-adaptation",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "learning-adaptation.O3"
+      ],
+      "question": "Halfway through a wheat advisory project in South Asia, the dashboard shows low early uptake in two districts and the quarterly review is next week. Which sequence matches adaptive management in the framework?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Investigate the anomaly, decide at the review, and document the decision with an owner and follow-up"
+        },
+        {
+          "id": "b",
+          "text": "Move delivery resources to the two districts now and review the result at annual reporting"
+        },
+        {
+          "id": "c",
+          "text": "Commission an endline evaluation before changing anything in the two districts"
+        },
+        {
+          "id": "d",
+          "text": "Keep delivery unchanged because output targets in the two districts are still being met"
+        }
+      ],
+      "correctOptionId": "a",
+      "misconceptions": {
+        "b": "dashboard-equals-action",
+        "c": "wait-for-annual",
+        "d": "dashboard-equals-action"
+      },
+      "explanation": "The project role in phase 5 is to investigate anomalies, use dashboards and reviews to adapt implementation, and document decisions, with a review that has actions, owners and follow-up. Acting on the raw number, or deferring to an endline, both bypass that review.",
+      "source": {
+        "section": "5.1",
+        "title": "Project Lifecycle: MEAL from Proposal to Impact",
+        "kind": "application"
+      },
+      "reviewTip": "Investigate, review, decide, document: keep the order."
+    },
+    {
+      "id": "Q329",
+      "topicId": "learning-adaptation",
+      "difficulty": "advanced",
+      "pool": "check",
+      "objectiveIds": [
+        "learning-adaptation.O3"
+      ],
+      "question": "At the review the team finds that uptake lags in two districts even where registration was on time. Nobody knows why. What is the right record to make?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A decision to withdraw the service from both districts, effective immediately"
+        },
+        {
+          "id": "b",
+          "text": "A learning question with an owner, routed to Pillar C to examine why results differ across contexts"
+        },
+        {
+          "id": "c",
+          "text": "A note in the minutes to see whether the gap persists at annual reporting"
+        },
+        {
+          "id": "d",
+          "text": "A request to the Data Group to remove the two districts from the dashboard"
+        }
+      ],
+      "correctOptionId": "b",
+      "misconceptions": {
+        "a": "dashboard-equals-action",
+        "c": "review-without-decision",
+        "d": "dashboard-equals-action"
+      },
+      "explanation": "Why results differ across contexts is a question routine monitoring cannot answer, so Pillar C examines it through learning reviews and studies. Withdrawing the service outruns the evidence, and a note in the minutes assigns nobody to find out.",
+      "source": {
+        "section": "5.8",
+        "title": "MEAL Team Structure and Roles",
+        "kind": "application"
+      },
+      "reviewTip": "When the evidence raises a why question, log the question with an owner rather than forcing a decision."
+    },
+    {
+      "id": "Q330",
+      "topicId": "learning-adaptation",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "learning-adaptation.O3"
+      ],
+      "question": "Monthly checks flag a spike of duplicate uptake records in one district. Should this change delivery?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, cut delivery in that district until the next quarterly review"
+        },
+        {
+          "id": "b",
+          "text": "Yes, treat the spike as evidence of over-reporting by field officers"
+        },
+        {
+          "id": "c",
+          "text": "No, resolve the exception close to collection so corrected records reach the review"
+        },
+        {
+          "id": "d",
+          "text": "No, ignore it until the annual KPI run deduplicates the records"
+        }
+      ],
+      "correctOptionId": "c",
+      "misconceptions": {
+        "a": "dashboard-equals-action",
+        "b": "dashboard-equals-action",
+        "d": "wait-for-annual"
+      },
+      "explanation": "Continuous or monthly checks exist so that exceptions are resolved close to collection, producing corrected records; delivery decisions wait for the joint review that reads those records. Leaving duplicates for the annual run lets a data problem sit in the evidence for months.",
+      "source": {
+        "section": "5.7",
+        "title": "Operating Cadence and Assurance",
+        "kind": "application"
+      },
+      "reviewTip": "A data-quality flag is fixed in the data, not in the field plan."
+    },
+    {
+      "id": "Q331",
+      "topicId": "learning-adaptation",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "learning-adaptation.O4"
+      ],
+      "question": "A project has trained its staff and partners, but the data system is not yet live and no district has a named data owner. Has it passed the handover gate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, training delivered is the deliverable for the handover phase"
+        },
+        {
+          "id": "b",
+          "text": "Yes, provided the Regional MEAL Lead signs the attendance list"
+        },
+        {
+          "id": "c",
+          "text": "No, the gate also needs the approved MEAL plan and measurement matrix"
+        },
+        {
+          "id": "d",
+          "text": "No, the gate is a competency check, a live system and named owners"
+        }
+      ],
+      "correctOptionId": "d",
+      "misconceptions": {
+        "a": "training-equals-handover",
+        "b": "training-equals-handover"
+      },
+      "explanation": "The enable and hand over phase ends with a competency check, a live system and named data and MEAL owners. Training is an input to that gate, and the MEAL plan belongs to the inception phase.",
+      "source": {
+        "section": "5.1",
+        "title": "Project Lifecycle: MEAL from Proposal to Impact",
+        "kind": "application"
+      },
+      "reviewTip": "Read the required gate for phase 4 and check each of its three parts."
+    },
+    {
+      "id": "Q332",
+      "topicId": "learning-adaptation",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "learning-adaptation.O4"
+      ],
+      "question": "A pilot shows that the plot-record form takes too long to complete on a low-bandwidth channel. What should happen next under the rollout roadmap?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Refine the guidance and tools from the pilot evidence and release the improvement"
+        },
+        {
+          "id": "b",
+          "text": "Let each pilot project shorten the form in its own way and keep collecting"
+        },
+        {
+          "id": "c",
+          "text": "Discuss the problem at a learning meeting and keep the form as it is"
+        },
+        {
+          "id": "d",
+          "text": "Keep the form unchanged until all regions have finished rollout"
+        }
+      ],
+      "correctOptionId": "a",
+      "misconceptions": {
+        "b": "pilot-ignored",
+        "c": "meeting-equals-learning",
+        "d": "pilot-ignored"
+      },
+      "explanation": "The pilot milestone exists to test methods and data collection in real contexts and to refine guidance and tools based on what the pilots show, with improvements released as new versions. Local shortcuts change the method without recording it, and waiting defeats the purpose of piloting.",
+      "source": {
+        "section": "5.5",
+        "title": "Institutional Rollout Roadmap",
+        "kind": "application"
+      },
+      "reviewTip": "Read milestone 6 of the roadmap and the continuous learning condition in 5.6 together."
+    },
+    {
+      "id": "Q333",
+      "topicId": "learning-adaptation",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "learning-adaptation.O4"
+      ],
+      "question": "Field officers in three projects keep asking the same question about how to count an indicator. Which role logs the recurrent issue and escalates it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Project MEAL Focal Point of the largest project"
+        },
+        {
+          "id": "b",
+          "text": "The MEAL Enablement and Backstopping Officer"
+        },
+        {
+          "id": "c",
+          "text": "The Portfolio Performance and Visualization Analyst"
+        },
+        {
+          "id": "d",
+          "text": "The MEAL Review Committee at its annual meeting"
+        }
+      ],
+      "correctOptionId": "b",
+      "misconceptions": {
+        "d": "wait-for-annual"
+      },
+      "explanation": "The Enablement and Backstopping Officer provides first-line support through office hours and clinics, maintains a log of recurrent implementation issues and escalates technical issues as needed. A question repeated across projects is a signal that the guidance needs a new version, not a matter for the annual committee.",
+      "source": {
+        "section": "5.8",
+        "title": "MEAL Team Structure and Roles",
+        "kind": "application"
+      },
+      "reviewTip": "Read the Enablement Officer's responsibilities on support logs and escalation."
+    },
+    {
+      "id": "Q334",
+      "topicId": "learning-adaptation",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "learning-adaptation.O5"
+      ],
+      "question": "A wheat advisory project in South Asia and a maize advisory project in East Africa show different uptake. Which 2030 capability makes a meaningful comparison possible?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reduced reporting burden through integrated data systems"
+        },
+        {
+          "id": "b",
+          "text": "A ranking of projects by their reported totals"
+        },
+        {
+          "id": "c",
+          "text": "Comparability of indicators across projects, regions, years and populations"
+        },
+        {
+          "id": "d",
+          "text": "Separate uptake definitions tailored to each project's investor"
+        }
+      ],
+      "correctOptionId": "c",
+      "misconceptions": {
+        "b": "dashboard-equals-action"
+      },
+      "explanation": "Comparability of indicators across projects, regions, years and populations is one of the eight capabilities, and it is what lets scientists compare sites and synthesise. Ranking totals or using project-specific definitions compares numbers that do not mean the same thing.",
+      "source": {
+        "section": "6.2",
+        "title": "Eight Strategic Capabilities by 2030",
+        "kind": "application"
+      },
+      "reviewTip": "Read the eight capabilities and the Science and Impact value in 6.1 together."
+    },
+    {
+      "id": "Q335",
+      "topicId": "learning-adaptation",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "learning-adaptation.O5"
+      ],
+      "question": "What is the evidence-gap register for?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Recording where evidence is missing or weak so the annual review and resource allocation can address it"
+        },
+        {
+          "id": "b",
+          "text": "Listing projects whose investor reports were late in the reporting year"
+        },
+        {
+          "id": "c",
+          "text": "Logging quarterly decisions that were not implemented by their deadline"
+        },
+        {
+          "id": "d",
+          "text": "Tracking duplicate records flagged by the monthly quality checks"
+        }
+      ],
+      "correctOptionId": "a",
+      "misconceptions": {
+        "c": "response-not-recorded"
+      },
+      "explanation": "The annual cadence reviews coverage, uncertainty and evidence gaps and produces the register; the MEAL Group Lead allocates resources according to evidence gaps and the Review Committee uses the register in its annual review. Unimplemented decisions belong in the management-response log, and duplicates in the system issue log.",
+      "source": {
+        "section": "5.7",
+        "title": "Operating Cadence and Assurance",
+        "kind": "application"
+      },
+      "reviewTip": "Trace the register from the annual row of 5.7 to the governance rule in 5.3."
+    }
+  ],
+  "glossaryAdditions": [
+    {
+      "term": "Eight strategic capabilities",
+      "definition": "The capabilities the framework aims to give CIMMYT by 2030: a consolidated portfolio view, comparability of indicators, credible evidence with traceable methods, clearer attribution and contribution narratives, adaptive management during implementation, reduced reporting burden, greater data reuse, and an institutional learning infrastructure.",
+      "section": "6.2"
+    }
+  ]
+}

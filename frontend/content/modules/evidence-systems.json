@@ -1,0 +1,1117 @@
+{
+  "id": "evidence-systems",
+  "order": 6,
+  "title": "Evidence & data systems",
+  "short": "Evidence systems",
+  "minutes": 30,
+  "sections": [
+    "2.6",
+    "4",
+    "4.1",
+    "4.2",
+    "4.3"
+  ],
+  "assessed": true,
+  "prerequisites": [
+    "data-quality"
+  ],
+  "scenario": {
+    "title": "One result, four reports, no signal for weeks",
+    "intro": "A wheat project in South Asia measures adoption of early sowing among registered farmers. The same adoption result must reach CGIAR's PRMS, two investors with different templates and a national partner's own system. Meanwhile the field teams work in hill districts where there is no connection for weeks at a time. The team's first instinct is four spreadsheets and a lot of re-typing. This module shows how one validated record can travel to every destination without being collected twice.",
+    "persona": [
+      "meal-specialist",
+      "project-lead",
+      "field-officer",
+      "scientist"
+    ]
+  },
+  "objectives": [
+    {
+      "id": "evidence-systems.O1",
+      "text": "Name the four layers of the Evidence Stack (direct observations, earth observation and sensors, external and context data, operational records) and state what each adds.",
+      "bloom": "remember"
+    },
+    {
+      "id": "evidence-systems.O2",
+      "text": "Trace one observation from Capture through Quality Assurance, Integration, Analysis and Use & Visualization, naming what it picks up at each step.",
+      "bloom": "understand"
+    },
+    {
+      "id": "evidence-systems.O3",
+      "text": "Explain the nine required functionalities and the design principles of the MEAL data system, including what the Data Group owns and what MEAL owns.",
+      "bloom": "understand"
+    },
+    {
+      "id": "evidence-systems.O4",
+      "text": "Apply collect data once: decide what changes when a new reporting template arrives and state what the KPI engine reports with each institutional result.",
+      "bloom": "apply"
+    },
+    {
+      "id": "evidence-systems.O5",
+      "text": "Apply the triangulation rule to judge whether a source strengthens a claim and when satellite or secondary data may not replace required ground measurement.",
+      "bloom": "apply"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "L6.1",
+      "moduleId": "evidence-systems",
+      "title": "The evidence stack: four layers",
+      "objectiveIds": [
+        "evidence-systems.O1"
+      ],
+      "minutes": 5,
+      "beats": {
+        "hook": "A project report says 3,000 farmers adopted early sowing. The framework does not treat that report as the unit of evidence. So what does it treat as evidence, and where does it come from?",
+        "explainer": {
+          "kind": "storyboard",
+          "storyboardId": "sb-m6-stack"
+        },
+        "example": {
+          "kind": "interactive",
+          "title": "Sort ten sources into the four layers",
+          "widget": "sorter",
+          "prompt": "Drop each source into its Evidence Stack layer. Ask what it adds: the closest view of the state or change, spatial coverage, context, or traceability of delivery.",
+          "bins": [
+            {
+              "id": "direct",
+              "label": "Direct observations",
+              "hint": "Plot, farm, household, participant, trial, institution or result-object records."
+            },
+            {
+              "id": "eo",
+              "label": "Earth observation and sensors",
+              "hint": "Satellite imagery, weather, sensors and geospatial layers."
+            },
+            {
+              "id": "context",
+              "label": "External and context data",
+              "hint": "Government statistics, public datasets, prices, climate and market series."
+            },
+            {
+              "id": "operational",
+              "label": "Operational records",
+              "hint": "Workplans, training logs, distribution systems, financial and partner records."
+            }
+          ],
+          "cards": [
+            {
+              "label": "Crop-cut weights from 240 sampled wheat plots",
+              "bin": "direct",
+              "why": "A plot record is the closest evidence of the actual yield. It permits disaggregation and re-analysis."
+            },
+            {
+              "label": "Household survey records of which variety each farmer planted",
+              "bin": "direct",
+              "why": "Farmer records used to measure adoption are the direct-observation example in section 2.6."
+            },
+            {
+              "label": "Multi-environment trial results for a candidate line",
+              "bin": "direct",
+              "why": "Trial records are listed with plot and household records as direct observations."
+            },
+            {
+              "label": "Satellite imagery of crop cover across three districts",
+              "bin": "eo",
+              "why": "Imagery adds spatial coverage, frequency and extrapolation between observed locations."
+            },
+            {
+              "label": "Automatic weather station readings at the trial sites",
+              "bin": "eo",
+              "why": "Weather and sensor data belong to the earth observation and sensors layer."
+            },
+            {
+              "label": "National wheat production statistics from the statistics bureau",
+              "bin": "context",
+              "why": "Government statistics give benchmarks and denominators for interpreting change."
+            },
+            {
+              "label": "Monthly grain price series from the market board",
+              "bin": "context",
+              "why": "Price and market series are context data, used as covariates when interpreting outcomes."
+            },
+            {
+              "label": "Training attendance log with farmer identifiers",
+              "bin": "operational",
+              "why": "Training logs trace who received a service, which later links delivery to uptake."
+            },
+            {
+              "label": "Seed distribution records from a partner company",
+              "bin": "operational",
+              "why": "Distribution systems and partner records are operational records, whoever holds them."
+            },
+            {
+              "label": "The project's financial records",
+              "bin": "operational",
+              "why": "Financial records are named in the operational records row. They show traceability from intervention to output."
+            }
+          ]
+        },
+        "microCheck": [
+          "Q251",
+          "Q252"
+        ],
+        "recap": {
+          "bullets": [
+            "The Evidence Stack has four layers: direct observations, earth observation and sensors, external and context data, and operational records.",
+            "Direct observations sit closest to the state or change being measured and allow disaggregation and re-analysis.",
+            "Not every indicator needs every source. The KPI reference sheet sets what is valid."
+          ],
+          "source": {
+            "section": "2.6",
+            "title": "The Evidence Stack"
+          }
+        }
+      },
+      "glossary": [
+        "Evidence stack",
+        "Direct observations",
+        "Earth observation and sensors",
+        "External and context data",
+        "Operational records",
+        "KPI reference sheet"
+      ]
+    },
+    {
+      "id": "L6.2",
+      "moduleId": "evidence-systems",
+      "title": "The journey of one observation",
+      "objectiveIds": [
+        "evidence-systems.O2"
+      ],
+      "minutes": 6,
+      "beats": {
+        "hook": "One enumerator weighs one crop cut on one plot. Eighteen months later that number is part of an institutional yield figure in PRMS. What happened to it on the way?",
+        "explainer": {
+          "kind": "storyboard",
+          "storyboardId": "sb-m6-hero"
+        },
+        "example": {
+          "kind": "text",
+          "title": "From a crop cut in a hill district to a PRMS entry",
+          "body": [
+            "Capture. An enumerator in a hill district records the net-plot weight of a wheat crop cut on a tablet with no signal. The form was built from the yield KPI reference sheet, so it already asks for moisture, plot size and the plot's persistent identifier, which links back to the registered farmer. The record waits on the device until the team reaches a connection.",
+            "Quality Assurance. On sync, validation checks the weight against the expected range, confirms that the plot identifier exists and has not been submitted twice this season, and attaches a quality flag and a provenance entry: who collected it, when, on which form version.",
+            "Integration. The plot identifier connects the crop cut to the farmer's training record (operational records), to the district's rainfall series (external and context data) and to the satellite field boundary (earth observation and sensors). The data dictionary makes sure that yield means the same thing here as in every other project's records.",
+            "Analysis. At the annual KPI run, the KPI engine recomputes the institutional yield figure from all eligible plot records with the approved method and reports coverage, uncertainty and the method version. Nobody adds the project's reported yield into a total.",
+            "Use & Visualization. The same validated record feeds the project dashboard, the PRMS submission through the central mapping and two investor exports. When the quarterly review decides to extend early sowing to a fourth district, the decision log links back to the evidence that prompted it."
+          ]
+        },
+        "microCheck": [
+          "Q253",
+          "Q254"
+        ],
+        "recap": {
+          "bullets": [
+            "An observation passes through Capture, Quality Assurance, Integration, Analysis and Use & Visualization, in that order.",
+            "On the way it picks up a persistent identifier, quality flags, provenance and links to the other evidence layers.",
+            "Institutional figures are recomputed from the underlying records, which stay in the system so results can be recalculated and audited."
+          ],
+          "source": {
+            "section": "2.5",
+            "title": "The Five Evidence Functions"
+          }
+        }
+      },
+      "glossary": [
+        "Five evidence functions",
+        "Capture",
+        "Quality assurance",
+        "Integration",
+        "Provenance",
+        "Persistent identifier",
+        "KPI engine",
+        "Data dictionary"
+      ]
+    },
+    {
+      "id": "L6.3",
+      "moduleId": "evidence-systems",
+      "title": "Satellite, context and operational data: what each adds",
+      "objectiveIds": [
+        "evidence-systems.O5",
+        "evidence-systems.O1"
+      ],
+      "minutes": 4,
+      "beats": {
+        "hook": "A satellite map covers every field in the district. A government series covers the whole country. The distribution log covers every seed pack. None of them is the measurement. Each adds something the others cannot.",
+        "explainer": {
+          "kind": "storyboard",
+          "storyboardId": "sb-m6-layers"
+        },
+        "example": {
+          "kind": "text",
+          "title": "Three sources, one adoption claim",
+          "body": [
+            "The wheat project claims that 38% of registered farmers sowed early in the 2027 season. The claim rests on farmer-level plot records, the direct observations. Then three other sources arrive.",
+            "A satellite crop-calendar map shows sowing dates across all three districts, not just the sampled plots. Under the triangulation rule it can be calibrated against the plot records and used to upscale the estimate or to stratify next season's sample. It cannot replace the plot records, because the KPI method requires farmer-level measurement.",
+            "The national statistics bureau publishes total wheat area by district. That is a denominator and a benchmark: it tells the team what share of the district's wheat the registered farmers represent. It says nothing about who sowed early.",
+            "The partner's seed distribution log shows which registered farmers received early-maturing seed and when. Linked by persistent identifier to the plot records, it lets the team ask whether the farmers who received seed were the ones who changed their sowing date. That is the link from delivery to uptake.",
+            "Each source faces the same test: same construct, same population, same geography, same period, compatible definitions. A clear image from the 2025 season fails on period. A national series on total area fails on construct. Both can still give context. Neither strengthens the claim."
+          ]
+        },
+        "microCheck": [
+          "Q255",
+          "Q256"
+        ],
+        "recap": {
+          "bullets": [
+            "Earth observation and sensors add spatial coverage, frequency and extrapolation between observed locations.",
+            "External and context data add denominators, benchmarks and covariates. Operational records add traceability from delivery to later uptake.",
+            "A source strengthens a claim only when it matches construct, population, geography and period. Satellite and secondary data calibrate, contextualise, stratify or upscale; they do not replace required ground measurement."
+          ],
+          "source": {
+            "section": "2.6",
+            "title": "The Evidence Stack"
+          }
+        }
+      },
+      "glossary": [
+        "Triangulation rule",
+        "Earth observation and sensors",
+        "External and context data",
+        "Operational records",
+        "Persistent identifier"
+      ]
+    },
+    {
+      "id": "L6.4",
+      "moduleId": "evidence-systems",
+      "title": "Authoritative systems and offline work",
+      "objectiveIds": [
+        "evidence-systems.O3"
+      ],
+      "minutes": 5,
+      "beats": {
+        "hook": "Breeding data live in the breeding system. The budget lives in the finance system. The enumerators have no signal for three weeks. Does the MEAL data system copy everything, or connect to it?",
+        "explainer": {
+          "kind": "storyboard",
+          "storyboardId": "sb-m6-systems"
+        },
+        "example": {
+          "kind": "text",
+          "title": "Filling in the data architecture for the wheat project",
+          "body": [
+            "The minimum package asks every project to name its authoritative systems, persistent identifiers, integration points, access rules, consent requirements and planned data flows. Here is how the wheat project fills that in.",
+            "Authoritative systems. Trial yields for the candidate varieties already sit in the breeding system, and the budget sits in the corporate finance system. The MEAL data system connects to both through integration rather than copying their records by hand. Farmer registrations and plot observations have no other home, so the MEAL data system holds them.",
+            "Capture. The field forms are built from the KPI reference sheets and run offline on tablets, syncing when enumerators reach a town. A low-bandwidth channel lets partner extension agents report sowing dates by message.",
+            "Configuration. The project does not build its own tool. It configures what it needs from shared, modular components: the farmer registry, the yield form, the validation rules for the sowing-date KPI. Open standards and FAIR principles mean the records can be found and reused by the next project in the region.",
+            "Ownership. The Data Group owns the infrastructure. The MEAL team owns the content: the indicators, the data dictionary and the quality rules. When the project wants a new validation rule, it asks MEAL. When sync fails, it asks the Data Group."
+          ]
+        },
+        "microCheck": [
+          "Q257",
+          "Q258"
+        ],
+        "recap": {
+          "bullets": [
+            "Where another system is the authoritative source for an indicator, the MEAL data system connects to it instead of copying data by hand.",
+            "The nine functionalities describe what the system must do, not a product: multi-channel capture, persistent identifiers, quality assurance and provenance, privacy consent and access, integration, KPI engine, analytics and geospatial, dashboards and reporting, learning and feedback.",
+            "Open standards, FAIR principles, offline operation and modular configuration. The Data Group owns the infrastructure; MEAL owns the content."
+          ],
+          "source": {
+            "section": "4.1",
+            "title": "Required Functionalities"
+          }
+        }
+      },
+      "glossary": [
+        "Authoritative system",
+        "Nine required functionalities",
+        "Multi-channel capture",
+        "FAIR data",
+        "Data dictionary"
+      ]
+    },
+    {
+      "id": "L6.5",
+      "moduleId": "evidence-systems",
+      "title": "Collect once, report many times: investor reporting mappings and the KPI engine",
+      "objectiveIds": [
+        "evidence-systems.O4"
+      ],
+      "minutes": 5,
+      "beats": {
+        "hook": "The second investor's template just arrived. It wants the adoption result in a different layout, a different age band and a different season label. Your field team is still offline in the hills. What changes?",
+        "explainer": {
+          "kind": "storyboard",
+          "storyboardId": "sb-m6-fan"
+        },
+        "example": {
+          "kind": "interactive",
+          "title": "A new reporting template arrives. What happens, in what order?",
+          "widget": "order",
+          "prompt": "A second investor sends a new adoption template for a result the project already collects. Arrange the steps the collect-once approach follows.",
+          "items": [
+            {
+              "label": "Compare the template's required fields with the source variables already collected",
+              "detail": "The MEAL team starts from what exists, not from a blank form."
+            },
+            {
+              "label": "Add or update the central mapping from source variables to the template's fields",
+              "detail": "Done by the MEAL team, centrally. A new system means a new mapping."
+            },
+            {
+              "label": "Set up the connection: a direct automated link where the system allows it, otherwise an export in the required format",
+              "detail": "Two options, both fed from the same place."
+            },
+            {
+              "label": "Generate the submission from the same validated records used for institutional KPIs",
+              "detail": "No result is entered a second time."
+            },
+            {
+              "label": "Confirm with the project that its forms are unchanged and nothing needs re-collecting",
+              "detail": "Projects keep collecting through the same forms."
+            }
+          ],
+          "why": "Section 4.3 says that adding a new reporting system, or adjusting to changed requirements, means adding or updating a mapping, not creating a new data collection. The MEAL team maps required fields to source variables, sets up a link or an export, and generates every submission from the same validated records. The field team never sees the template."
+        },
+        "microCheck": [
+          "Q259",
+          "Q260"
+        ],
+        "recap": {
+          "bullets": [
+            "For each reporting system the MEAL team maps the required fields to source variables already collected, then sets up a direct link or an export.",
+            "Every submission is generated from the same validated records used for institutional KPIs. A new template means a new mapping, not a new collection.",
+            "The KPI engine calculates institutional KPIs from eligible records with the approved method and reports coverage, uncertainty and method version."
+          ],
+          "source": {
+            "section": "4.3",
+            "title": "Alignment with Investor Reporting Systems: Collect Data Once"
+          }
+        }
+      },
+      "glossary": [
+        "Collect data once",
+        "PRMS",
+        "Reporting mapping",
+        "KPI engine",
+        "Institutional KPI"
+      ]
+    }
+  ],
+  "storyboards": [
+    {
+      "id": "sb-m6-stack",
+      "title": "The evidence stack: four layers",
+      "frames": [
+        {
+          "id": "f1",
+          "seconds": 6,
+          "narration": "The MEAL data system does not treat a project report as the primary unit of evidence. It works as close as possible to what is being measured.",
+          "scene": {
+            "kind": "title",
+            "title": "A report is not the evidence",
+            "subtitle": "Work as close as possible to what is being measured."
+          }
+        },
+        {
+          "id": "f2",
+          "seconds": 12,
+          "narration": "Layer one: direct observations. Plot, farm, household, participant, trial and institution records. The closest evidence of the actual state or change, and the only layer you can disaggregate and re-analyse.",
+          "scene": {
+            "kind": "stack",
+            "layers": [
+              {
+                "label": "Direct observations",
+                "detail": "Plots, households, trials: closest to the change",
+                "tone": "green"
+              },
+              {
+                "label": "Earth observation and sensors",
+                "tone": "paper"
+              },
+              {
+                "label": "External and context data",
+                "tone": "paper"
+              },
+              {
+                "label": "Operational records",
+                "tone": "paper"
+              }
+            ],
+            "spotlight": 0
+          }
+        },
+        {
+          "id": "f3",
+          "seconds": 12,
+          "narration": "Layer two: earth observation and sensors. Satellite imagery, weather, sensors, geospatial layers. They add spatial coverage, frequency and extrapolation between the places you observed.",
+          "scene": {
+            "kind": "stack",
+            "layers": [
+              {
+                "label": "Direct observations",
+                "detail": "Plots, households, trials: closest to the change",
+                "tone": "green"
+              },
+              {
+                "label": "Earth observation and sensors",
+                "detail": "Imagery, weather, sensors: coverage and extrapolation",
+                "tone": "sky"
+              },
+              {
+                "label": "External and context data",
+                "tone": "paper"
+              },
+              {
+                "label": "Operational records",
+                "tone": "paper"
+              }
+            ],
+            "spotlight": 1
+          }
+        },
+        {
+          "id": "f4",
+          "seconds": 12,
+          "narration": "Layer three: external and context data. Government statistics, public datasets, prices, climate and market series. They supply context, denominators, benchmarks and covariates for interpreting change.",
+          "scene": {
+            "kind": "stack",
+            "layers": [
+              {
+                "label": "Direct observations",
+                "detail": "Plots, households, trials: closest to the change",
+                "tone": "green"
+              },
+              {
+                "label": "Earth observation and sensors",
+                "detail": "Imagery, weather, sensors: coverage and extrapolation",
+                "tone": "sky"
+              },
+              {
+                "label": "External and context data",
+                "detail": "Statistics, prices, climate: denominators and context",
+                "tone": "gold"
+              },
+              {
+                "label": "Operational records",
+                "tone": "paper"
+              }
+            ],
+            "spotlight": 2
+          }
+        },
+        {
+          "id": "f5",
+          "seconds": 12,
+          "narration": "Layer four: operational records. Workplans, training logs, distribution systems, financial and partner records. They give traceability from intervention to output and link who received a service to later uptake.",
+          "scene": {
+            "kind": "stack",
+            "layers": [
+              {
+                "label": "Direct observations",
+                "detail": "Plots, households, trials: closest to the change",
+                "tone": "green"
+              },
+              {
+                "label": "Earth observation and sensors",
+                "detail": "Imagery, weather, sensors: coverage and extrapolation",
+                "tone": "sky"
+              },
+              {
+                "label": "External and context data",
+                "detail": "Statistics, prices, climate: denominators and context",
+                "tone": "gold"
+              },
+              {
+                "label": "Operational records",
+                "detail": "Logs, distribution, finance: delivery to uptake",
+                "tone": "ink"
+              }
+            ],
+            "spotlight": 3,
+            "stamp": "Four layers"
+          }
+        },
+        {
+          "id": "f6",
+          "seconds": 8,
+          "narration": "Four layers, so each result can be checked from more than one angle. But not every indicator needs every source. The KPI reference sheet sets what is valid.",
+          "scene": {
+            "kind": "title",
+            "title": "Not every indicator needs every source",
+            "subtitle": "The KPI reference sheet sets what is valid.",
+            "stamp": "§2.6"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sb-m6-hero",
+      "title": "The journey of one observation",
+      "frames": [
+        {
+          "id": "f1",
+          "seconds": 6,
+          "narration": "One crop cut. One record. Follow it through the five evidence functions and watch what it picks up.",
+          "scene": {
+            "kind": "title",
+            "title": "One crop cut. One record.",
+            "subtitle": "Where does it go?"
+          }
+        },
+        {
+          "id": "f2",
+          "seconds": 18,
+          "narration": "Capture. The question comes first: what is the yield on this plot? The form is built from the KPI reference sheet. It records the net-plot weight, the moisture and the plot's persistent identifier. No signal, so it waits on the tablet.",
+          "scene": {
+            "kind": "chain",
+            "steps": [
+              {
+                "label": "Capture",
+                "detail": "Weight, moisture, plot ID. Offline.",
+                "tone": "green"
+              },
+              {
+                "label": "Quality Assurance",
+                "tone": "paper"
+              },
+              {
+                "label": "Integration",
+                "tone": "paper"
+              },
+              {
+                "label": "Analysis",
+                "tone": "paper"
+              },
+              {
+                "label": "Use & Visualization",
+                "tone": "paper"
+              }
+            ],
+            "spotlight": 0,
+            "traveler": true
+          }
+        },
+        {
+          "id": "f3",
+          "seconds": 18,
+          "narration": "Quality Assurance. On sync the record is checked for completeness, range and duplicates. It gets a quality flag and a provenance entry: who, when, which form version. From now on it can be audited.",
+          "scene": {
+            "kind": "chain",
+            "steps": [
+              {
+                "label": "Capture",
+                "detail": "Weight, moisture, plot ID",
+                "tone": "green"
+              },
+              {
+                "label": "Quality Assurance",
+                "detail": "Range check, duplicate check, quality flag, provenance",
+                "tone": "gold"
+              },
+              {
+                "label": "Integration",
+                "tone": "paper"
+              },
+              {
+                "label": "Analysis",
+                "tone": "paper"
+              },
+              {
+                "label": "Use & Visualization",
+                "tone": "paper"
+              }
+            ],
+            "spotlight": 1,
+            "traveler": true
+          }
+        },
+        {
+          "id": "f4",
+          "seconds": 16,
+          "narration": "Integration. The plot identifier links the crop cut to the farmer's training record, to rainfall for the district and to the satellite field boundary. A shared data dictionary keeps yield meaning yield.",
+          "scene": {
+            "kind": "chain",
+            "steps": [
+              {
+                "label": "Capture",
+                "detail": "Weight, moisture, plot ID",
+                "tone": "green"
+              },
+              {
+                "label": "Quality Assurance",
+                "detail": "Flagged, provenance recorded",
+                "tone": "gold"
+              },
+              {
+                "label": "Integration",
+                "detail": "Linked by identifier across sources and years",
+                "tone": "sky"
+              },
+              {
+                "label": "Analysis",
+                "tone": "paper"
+              },
+              {
+                "label": "Use & Visualization",
+                "tone": "paper"
+              }
+            ],
+            "spotlight": 2,
+            "traveler": true
+          }
+        },
+        {
+          "id": "f5",
+          "seconds": 16,
+          "narration": "The record now sits in a stack. Each layer adds what the others cannot: coverage from imagery, denominators and context from external data, and from the training log the link between delivery and uptake.",
+          "scene": {
+            "kind": "stack",
+            "layers": [
+              {
+                "label": "Direct observations",
+                "detail": "This crop cut, this plot, this farmer",
+                "tone": "green"
+              },
+              {
+                "label": "Earth observation and sensors",
+                "detail": "Field boundary, weather",
+                "tone": "sky"
+              },
+              {
+                "label": "External and context data",
+                "detail": "District rainfall, prices, national area",
+                "tone": "gold"
+              },
+              {
+                "label": "Operational records",
+                "detail": "Training log, seed delivery",
+                "tone": "ink"
+              }
+            ],
+            "spotlight": 0,
+            "traveler": true
+          }
+        },
+        {
+          "id": "f6",
+          "seconds": 16,
+          "narration": "Analysis. At the annual run the KPI engine recomputes the institutional yield from every eligible plot record with the approved method. It reports coverage, uncertainty and method version. Nobody sums the project's number.",
+          "scene": {
+            "kind": "chain",
+            "steps": [
+              {
+                "label": "Capture",
+                "detail": "Weight, moisture, plot ID",
+                "tone": "green"
+              },
+              {
+                "label": "Quality Assurance",
+                "detail": "Flagged, provenance recorded",
+                "tone": "gold"
+              },
+              {
+                "label": "Integration",
+                "detail": "Linked across sources",
+                "tone": "sky"
+              },
+              {
+                "label": "Analysis",
+                "detail": "KPI engine: eligible records, approved method, coverage, uncertainty, method version",
+                "tone": "green"
+              },
+              {
+                "label": "Use & Visualization",
+                "tone": "paper"
+              }
+            ],
+            "spotlight": 3,
+            "traveler": true
+          }
+        },
+        {
+          "id": "f7",
+          "seconds": 16,
+          "narration": "Use and Visualization. The same validated record feeds the dashboard, the PRMS submission and two investor exports. When a review decides to act, the decision log points back to this record.",
+          "scene": {
+            "kind": "chain",
+            "steps": [
+              {
+                "label": "Capture",
+                "detail": "Weight, moisture, plot ID",
+                "tone": "green"
+              },
+              {
+                "label": "Quality Assurance",
+                "detail": "Flagged, provenance recorded",
+                "tone": "gold"
+              },
+              {
+                "label": "Integration",
+                "detail": "Linked across sources",
+                "tone": "sky"
+              },
+              {
+                "label": "Analysis",
+                "detail": "Recomputed by the KPI engine",
+                "tone": "green"
+              },
+              {
+                "label": "Use & Visualization",
+                "detail": "Dashboard, PRMS, investor exports, decision log",
+                "tone": "gold"
+              }
+            ],
+            "spotlight": 4,
+            "traveler": true,
+            "stamp": "Collected once"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sb-m6-layers",
+      "title": "What each layer adds",
+      "frames": [
+        {
+          "id": "f1",
+          "seconds": 14,
+          "narration": "Three layers sit around the direct observation. Earth observation adds coverage, frequency and extrapolation. Context data add denominators and benchmarks. Operational records add traceability from delivery to uptake.",
+          "scene": {
+            "kind": "cards",
+            "layout": "row",
+            "items": [
+              {
+                "label": "Earth observation and sensors",
+                "detail": "Coverage, frequency, extrapolation",
+                "tone": "sky"
+              },
+              {
+                "label": "External and context data",
+                "detail": "Denominators, benchmarks, covariates",
+                "tone": "gold"
+              },
+              {
+                "label": "Operational records",
+                "detail": "Delivery linked to later uptake",
+                "tone": "ink"
+              }
+            ]
+          }
+        },
+        {
+          "id": "f2",
+          "seconds": 14,
+          "narration": "Where the KPI method requires direct measurement, satellite data do not replace it. They calibrate, contextualise, stratify or upscale, under documented rules.",
+          "scene": {
+            "kind": "split",
+            "left": {
+              "title": "Satellite replaces crop cuts",
+              "lines": [
+                "KPI method: direct measurement",
+                "Imagery reported as the KPI",
+                "Not allowed"
+              ],
+              "tone": "gold"
+            },
+            "right": {
+              "title": "Satellite supports crop cuts",
+              "lines": [
+                "Calibrated with plot records",
+                "Stratifies the sample",
+                "Upscales under documented rules"
+              ],
+              "tone": "green"
+            },
+            "gap": "Support, not substitute"
+          }
+        },
+        {
+          "id": "f3",
+          "seconds": 16,
+          "narration": "The triangulation rule is a four-part match: construct, population, geography, period. An image from another season tries to count as support and bounces back. Context, yes. Triangulation, no.",
+          "scene": {
+            "kind": "sort",
+            "bins": [
+              "Strengthens the claim",
+              "Context only"
+            ],
+            "cards": [
+              {
+                "label": "Same districts, same season, same definition",
+                "bin": 0
+              },
+              {
+                "label": "Partner log linked by farmer ID",
+                "bin": 0
+              },
+              {
+                "label": "National total area, 2022, old boundaries",
+                "bin": 1
+              },
+              {
+                "label": "Clear image from an earlier season",
+                "bin": 1,
+                "wrong": 0
+              }
+            ],
+            "stamp": "Four matches"
+          }
+        },
+        {
+          "id": "f4",
+          "seconds": 8,
+          "narration": "Four matches, or it is context. Construct, population, geography, period, under compatible definitions.",
+          "scene": {
+            "kind": "title",
+            "title": "Four matches or it is context",
+            "subtitle": "Construct, population, geography, period.",
+            "stamp": "§2.6"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sb-m6-systems",
+      "title": "Authoritative systems and offline work",
+      "frames": [
+        {
+          "id": "f1",
+          "seconds": 6,
+          "narration": "Section 4 describes the functions the MEAL data system needs, not a specific product. Nine of them.",
+          "scene": {
+            "kind": "title",
+            "title": "Functions, not a product",
+            "subtitle": "Nine things the system must do."
+          }
+        },
+        {
+          "id": "f2",
+          "seconds": 16,
+          "narration": "The first five get the data in and make it trustworthy: multi-channel capture, online and offline; persistent identifiers; quality assurance and provenance; privacy, consent and access; and integration with CIMMYT and external systems.",
+          "scene": {
+            "kind": "cards",
+            "layout": "grid",
+            "items": [
+              {
+                "label": "Multi-channel capture",
+                "detail": "Online, offline, low-bandwidth, imports",
+                "tone": "green"
+              },
+              {
+                "label": "Persistent identifiers",
+                "detail": "Stable IDs across projects and years",
+                "tone": "green"
+              },
+              {
+                "label": "Quality assurance and provenance",
+                "detail": "Checks, flags, audit trail",
+                "tone": "gold"
+              },
+              {
+                "label": "Privacy, consent and access",
+                "detail": "Consent records, role-based access",
+                "tone": "gold"
+              },
+              {
+                "label": "Integration",
+                "detail": "APIs, shared data dictionary",
+                "tone": "sky"
+              }
+            ]
+          }
+        },
+        {
+          "id": "f3",
+          "seconds": 14,
+          "narration": "The last four turn records into results and action: the KPI engine, analytics and geospatial, dashboards and reporting, and learning and feedback that links decisions to the evidence behind them.",
+          "scene": {
+            "kind": "cards",
+            "layout": "row",
+            "items": [
+              {
+                "label": "KPI engine",
+                "detail": "Eligible records, approved method",
+                "tone": "green"
+              },
+              {
+                "label": "Analytics and geospatial",
+                "detail": "Reproducible scripts",
+                "tone": "sky"
+              },
+              {
+                "label": "Dashboards and reporting",
+                "detail": "Role-based, investor and CGIAR exports",
+                "tone": "gold"
+              },
+              {
+                "label": "Learning and feedback",
+                "detail": "Decision logs linked to evidence",
+                "tone": "ink"
+              }
+            ],
+            "stamp": "Nine functionalities"
+          }
+        },
+        {
+          "id": "f4",
+          "seconds": 14,
+          "narration": "Where another system is the authoritative source, breeding, trials, finance or project management, the MEAL data system connects to it. It does not replace it, and it does not copy by hand.",
+          "scene": {
+            "kind": "chain",
+            "steps": [
+              {
+                "label": "Breeding system",
+                "detail": "Authoritative source for trial data",
+                "tone": "sky"
+              },
+              {
+                "label": "Integration",
+                "detail": "API, shared dictionary",
+                "tone": "green"
+              },
+              {
+                "label": "MEAL data system",
+                "detail": "Uses the records, does not own them",
+                "tone": "green"
+              }
+            ],
+            "links": [
+              {
+                "label": "Connect"
+              },
+              {
+                "label": "Not copy"
+              }
+            ],
+            "spotlight": 1
+          }
+        },
+        {
+          "id": "f5",
+          "seconds": 14,
+          "narration": "Four design principles: open standards and FAIR, offline where connectivity is poor, modular so each project configures shared components. And one split: the Data Group owns the infrastructure, MEAL owns the content.",
+          "scene": {
+            "kind": "split",
+            "left": {
+              "title": "Data Group",
+              "lines": [
+                "Owns the infrastructure",
+                "Hosting, software, APIs"
+              ],
+              "tone": "sky"
+            },
+            "right": {
+              "title": "MEAL team",
+              "lines": [
+                "Owns the content",
+                "Indicators",
+                "Data dictionary",
+                "Quality rules"
+              ],
+              "tone": "green"
+            },
+            "gap": "Open standards. FAIR. Offline. Modular."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sb-m6-fan",
+      "title": "Collect once, report many times",
+      "frames": [
+        {
+          "id": "f1",
+          "seconds": 6,
+          "narration": "One adoption result. Five places it has to appear. The field team collects it once.",
+          "scene": {
+            "kind": "title",
+            "title": "Five destinations, one record",
+            "subtitle": "Collected once."
+          }
+        },
+        {
+          "id": "f2",
+          "seconds": 16,
+          "narration": "The same validated record feeds the institutional KPI, the PRMS submission, both investor templates and the national partner's system. A direct link where the receiving system allows it, an export where it does not.",
+          "scene": {
+            "kind": "fan",
+            "source": "One validated adoption record",
+            "branches": [
+              {
+                "label": "Institutional KPI",
+                "detail": "KPI engine"
+              },
+              {
+                "label": "PRMS",
+                "detail": "Central mapping"
+              },
+              {
+                "label": "Investor A template",
+                "detail": "Export"
+              },
+              {
+                "label": "Investor B template",
+                "detail": "Direct link"
+              },
+              {
+                "label": "National partner system",
+                "detail": "Export"
+              }
+            ],
+            "target": "Same validated records"
+          }
+        },
+        {
+          "id": "f3",
+          "seconds": 16,
+          "narration": "A new template arrives. The MEAL team maps its fields to source variables already collected, sets up a link or an export, and the project keeps the same forms. A new system means a new mapping, not a new collection.",
+          "scene": {
+            "kind": "chain",
+            "steps": [
+              {
+                "label": "New template arrives",
+                "tone": "gold"
+              },
+              {
+                "label": "MEAL maps fields to source variables",
+                "detail": "Centrally",
+                "tone": "green"
+              },
+              {
+                "label": "Direct link or export",
+                "tone": "sky"
+              },
+              {
+                "label": "Forms unchanged",
+                "detail": "Nothing re-entered",
+                "tone": "green"
+              }
+            ],
+            "stamp": "New mapping, not new collection"
+          }
+        },
+        {
+          "id": "f4",
+          "seconds": 10,
+          "narration": "Whatever the destination, the institutional figure comes from the KPI engine: eligible records, the approved method, reported with coverage, uncertainty and method version.",
+          "scene": {
+            "kind": "cards",
+            "layout": "row",
+            "items": [
+              {
+                "label": "Coverage",
+                "detail": "Which records were eligible",
+                "tone": "green"
+              },
+              {
+                "label": "Uncertainty",
+                "detail": "How wide the estimate is",
+                "tone": "gold"
+              },
+              {
+                "label": "Method version",
+                "detail": "Which approved method was used",
+                "tone": "sky"
+              }
+            ],
+            "stamp": "KPI engine"
+          }
+        }
+      ]
+    }
+  ]
+}

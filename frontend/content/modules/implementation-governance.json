@@ -1,0 +1,1498 @@
+{
+  "id": "implementation-governance",
+  "order": 10,
+  "title": "Implementation & governance",
+  "short": "Implementation",
+  "minutes": 40,
+  "sections": [
+    "5.1",
+    "5.2",
+    "5.3",
+    "5.4",
+    "5.5",
+    "5.6",
+    "5.7",
+    "5.8",
+    "5.9",
+    "5.10",
+    "Annex A"
+  ],
+  "assessed": true,
+  "prerequisites": [
+    "accountability-inclusion"
+  ],
+  "scenario": {
+    "title": "Three weeks to submit",
+    "intro": "You lead an applied agronomy team in Kenya. An investor has invited a USD 300,000 proposal on conservation agriculture packages across two counties, two seasons, and the deadline is in three weeks. The concept note has to go through the MEAL team, and you need three answers fast: how is this project classified in the MEAL Matrix, how much MEAL budget goes in the proposal, and who does what once the project is awarded. This module gives you those answers and the rules behind them.",
+    "persona": [
+      "project-lead",
+      "meal-specialist",
+      "scientist",
+      "partner-liaison"
+    ]
+  },
+  "objectives": [
+    {
+      "id": "implementation-governance.O1",
+      "text": "Classify a proposal with the MEAL Matrix: pick the project type to find its default M&E complexity, and set the scale from budget and duration.",
+      "bloom": "apply"
+    },
+    {
+      "id": "implementation-governance.O2",
+      "text": "Apply the adjustment rule to a project's complexity level, and name who confirms the classification, who decides KPI method exceptions and who endorses the annual review.",
+      "bloom": "apply"
+    },
+    {
+      "id": "implementation-governance.O3",
+      "text": "Compute the base MEAL budget for Small, Medium and MEGA projects from the section 5.10 rules, including the percentage and the floor for Medium projects.",
+      "bloom": "apply"
+    },
+    {
+      "id": "implementation-governance.O4",
+      "text": "Describe the division of responsibility, the three governance rules and the MEAL team structure: three layers, three pillars, Regional MEAL Leads and Project MEAL Focal Points.",
+      "bloom": "understand"
+    },
+    {
+      "id": "implementation-governance.O5",
+      "text": "Read the six lifecycle phases, their gates and the RACI, and list the eight elements of the minimum MEAL package every project leaves inception with.",
+      "bloom": "understand"
+    },
+    {
+      "id": "implementation-governance.O6",
+      "text": "State the rollout milestones and their dates, the two entry points, the five enabling conditions and the operating cadence.",
+      "bloom": "remember"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "L10.1",
+      "moduleId": "implementation-governance",
+      "title": "MEAL across the project lifecycle",
+      "objectiveIds": [
+        "implementation-governance.O5"
+      ],
+      "minutes": 5,
+      "beats": {
+        "hook": "When does MEAL start on your project? If your answer is \"at inception\" you are already one phase late. The framework puts MEAL into the proposal, before indicators, budgets and data systems are fixed.",
+        "explainer": {
+          "kind": "storyboard",
+          "storyboardId": "sb-m10-lifecycle"
+        },
+        "example": {
+          "kind": "interactive",
+          "title": "Put the six phases in order",
+          "widget": "order",
+          "prompt": "Arrange the six lifecycle phases from the first to the last. Each one ends with a gate that must be passed before the next begins.",
+          "items": [
+            {
+              "label": "Opportunity and proposal",
+              "detail": "Gate: MEAL section, KPI crosswalk, indicative data architecture and costed MEAL budget before submission."
+            },
+            {
+              "label": "Award and inception",
+              "detail": "Gate: approved MEAL plan and measurement matrix within the inception period."
+            },
+            {
+              "label": "System and protocol design",
+              "detail": "Gate: data collection system tested; protocols, roles, consent and QA procedures approved."
+            },
+            {
+              "label": "Enable and hand over",
+              "detail": "Gate: competency check, live system and named data and MEAL owners."
+            },
+            {
+              "label": "Implementation and adaptive management",
+              "detail": "Gate: quarterly or seasonal evidence review with actions, owners and follow-up."
+            },
+            {
+              "label": "Outcome, impact, synthesis and learning",
+              "detail": "Gate: validated outcome or impact dataset, institutional KPI update and an evidence product or learning note."
+            }
+          ],
+          "why": "The lifecycle runs from proposal to impact. Central MEAL is heaviest at the start (design, classification, costing) and at the end (integration from outcomes upward). In the middle, the project runs routine monitoring and central MEAL assures quality and supports outcome measurement."
+        },
+        "microCheck": [
+          "Q371",
+          "Q372"
+        ],
+        "recap": {
+          "bullets": [
+            "Six phases, six gates. The first gate is passed before the proposal is submitted: MEAL section, KPI crosswalk, indicative data architecture and costed MEAL budget.",
+            "The RACI gives each activity one accountable role. The project lead is accountable for routine data collection; the Focal Point is responsible for doing it.",
+            "For Small projects taking the standard package, the Regional MEAL Lead's Phase 1 role is limited to confirming the classification and the base budget."
+          ],
+          "source": {
+            "section": "5.1",
+            "title": "Project Lifecycle: MEAL from Proposal to Impact"
+          }
+        }
+      },
+      "glossary": [
+        "RACI",
+        "Project MEAL Focal Point",
+        "Regional MEAL Lead",
+        "Minimum MEAL package"
+      ]
+    },
+    {
+      "id": "L10.2",
+      "moduleId": "implementation-governance",
+      "title": "The MEAL Matrix: classify your project",
+      "objectiveIds": [
+        "implementation-governance.O1"
+      ],
+      "minutes": 6,
+      "beats": {
+        "hook": "Your proposal is applied agronomy, USD 300,000, two years, Kenya. Two choices in the Matrix turn that sentence into a MEAL support package, a KPI list, a set of deliverables and a budget line.",
+        "explainer": {
+          "kind": "storyboard",
+          "storyboardId": "sb-m10-hero"
+        },
+        "example": {
+          "kind": "interactive",
+          "title": "Classify three proposals",
+          "widget": "matrix",
+          "prompt": "Pick the project type first. It sets the default M&E complexity. Then set the scale from budget and duration. Try the Kenya proposal (applied agronomy, USD 300,000, two years), then a USD 150,000 one-year seed multiplication pilot in Mexico, then a USD 2.5 million three-year digital advisory programme in South Asia. Note what the Matrix returns for each."
+        },
+        "microCheck": [
+          "Q373",
+          "Q374"
+        ],
+        "recap": {
+          "bullets": [
+            "Rows are the six project types. Each type carries a default complexity: Standard for upstream discovery; Intermediate for breeding and for digital agriculture; Complex for applied agronomy, seed systems and system change.",
+            "Columns are the four scales: Small up to about USD 280,000 and about one year; Medium about USD 280,000 to 800,000 and 1.5 to 3 years; Large above USD 800,000 up to USD 10 million; MEGA above USD 10 million.",
+            "The budget sets the scale, not the complexity. The Regional MEAL Lead confirms the classification at proposal review."
+          ],
+          "source": {
+            "section": "Annex A",
+            "title": "MEAL Matrix"
+          }
+        }
+      },
+      "glossary": [
+        "MEAL Matrix",
+        "M&E complexity",
+        "Project scale",
+        "Regional MEAL Lead"
+      ]
+    },
+    {
+      "id": "L10.3",
+      "moduleId": "implementation-governance",
+      "title": "Complexity adjustments and exceptions",
+      "objectiveIds": [
+        "implementation-governance.O2"
+      ],
+      "minutes": 5,
+      "beats": {
+        "hook": "The default complexity is a starting point. Three commitments move a project up one level. And when a project cannot follow a KPI method, somebody specific has to say yes.",
+        "explainer": {
+          "kind": "storyboard",
+          "storyboardId": "sb-m10-adjust"
+        },
+        "example": {
+          "kind": "text",
+          "title": "Two proposals, one adjustment",
+          "body": [
+            "A digital advisory proposal in South Asia starts at Intermediate, the default for digital agriculture and AI. Then the team reads the investor's call. It asks for household-level evidence that farmers changed their sowing date after using the advice. The team commits to it. That is the first trigger in the adjustment rule: reporting farmer- or household-level adoption, outcomes or impact to investors. The project moves up one level to Complex. Its Medium budget rule moves with it: 5% instead of 4%, with a floor of USD 18,000 instead of USD 13,000. The scale does not change. It is still a Medium project.",
+            "The other two triggers work the same way. A breeding project that runs its own ground measurement of outcomes moves from Intermediate to Complex. An upstream discovery project that depends on primary data from several implementing partners moves from Standard to Intermediate. The Matrix names one move up and three levels, so start reading the rule from Standard or Intermediate.",
+            "Who confirms the result? The Regional MEAL Lead, at proposal review. The project lead proposes the type and scale in the Matrix and is responsible for the classification; the Regional MEAL Lead is accountable for it.",
+            "Now the exception. The Kenya team wants to estimate yield from farmer recall instead of the crop cuts the KPI reference sheet requires. That is a KPI method exception. Pillar A, Design, Standards and Enablement, works it through; the MEAL Group Lead is accountable for the decision. Neither the project lead nor the Regional MEAL Lead can grant it. Once a year, the MEAL Review Committee, a body at the level of CIMMYT's scientific leadership, reviews the Handbook, the Toolbox and the Matrix and endorses the changes for the following year. The MEAL Group Lead prepares and presents that review."
+          ]
+        },
+        "microCheck": [
+          "Q375",
+          "Q376"
+        ],
+        "recap": {
+          "bullets": [
+            "Three triggers move a project up one complexity level: committing to report farmer- or household-level adoption, outcomes or impact to investors; running its own ground measurement of outcomes; depending on primary data from several implementing partners.",
+            "The adjustment changes complexity, never scale. The Regional MEAL Lead confirms the classification at proposal review.",
+            "KPI method exceptions sit with the MEAL Group Lead. The annual review of the Handbook, Toolbox and Matrix is endorsed by the MEAL Review Committee."
+          ],
+          "source": {
+            "section": "5.3",
+            "title": "Governance"
+          }
+        }
+      },
+      "glossary": [
+        "Adjustment rule",
+        "M&E complexity",
+        "MEAL Group Lead",
+        "MEAL Review Committee"
+      ]
+    },
+    {
+      "id": "L10.4",
+      "moduleId": "implementation-governance",
+      "title": "Budgeting the minimum package",
+      "objectiveIds": [
+        "implementation-governance.O3",
+        "implementation-governance.O5"
+      ],
+      "minutes": 6,
+      "beats": {
+        "hook": "Five percent of USD 300,000 is USD 15,000. Is that your MEAL line? Not quite. The Medium rule has a second half, and skipping it is the most common budgeting mistake in the Matrix.",
+        "explainer": {
+          "kind": "storyboard",
+          "storyboardId": "sb-m10-budget"
+        },
+        "example": {
+          "kind": "interactive",
+          "title": "Run the Kenya calculation, then two more",
+          "widget": "budget",
+          "prompt": "Start with the Kenya proposal: applied agronomy, so Complex by default; USD 300,000 over two years, so Medium. The Medium rule for Complex is 5% of the total project budget: 5% of USD 300,000 is USD 15,000. Now the second half of the rule: never less than the Small amount for the same complexity level. The Small Complex amount is USD 18,000. USD 15,000 is below it, so the floor applies and the base MEAL budget is USD 18,000. Confirm it with the MEAL team while you write the proposal. Then try a USD 500,000 seed systems project (5% is USD 25,000, above the floor) and a USD 290,000 breeding project (4% is USD 11,600, below the USD 13,000 floor). Finish with a Small digital pilot and a MEGA programme to see the fixed amount and the per-year institutional contribution."
+        },
+        "microCheck": [
+          "Q377",
+          "Q378"
+        ],
+        "recap": {
+          "bullets": [
+            "Small: USD 8,000 Standard, USD 13,000 Intermediate, USD 18,000 Complex, per project for its lifetime. Medium: 3%, 4% or 5% of the total project budget, never less than the Small amount for the same complexity level, confirmed with MEAL during proposal writing.",
+            "Large and MEGA are co-designed with MEAL from the start of proposal development. MEGA also carries an institutional contribution of at least USD 27,000 per project year, charged as Core Layer staff time.",
+            "The base contribution buys the institutional services every project receives. It funds the eight-element minimum package, and none of those elements waits for end-of-project reporting."
+          ],
+          "source": {
+            "section": "5.10",
+            "title": "Funding the MEAL Function"
+          }
+        }
+      },
+      "glossary": [
+        "Base MEAL contribution",
+        "Minimum MEAL package",
+        "Core Layer",
+        "Project scale"
+      ]
+    },
+    {
+      "id": "L10.5",
+      "moduleId": "implementation-governance",
+      "title": "Project delivery versus institutional MEAL",
+      "objectiveIds": [
+        "implementation-governance.O4"
+      ],
+      "minutes": 4,
+      "beats": {
+        "hook": "Your base contribution is in. Does that mean central MEAL now runs your monitoring? No. The operating principle is central standards, distributed implementation, institutional integration.",
+        "explainer": {
+          "kind": "storyboard",
+          "storyboardId": "sb-m10-division"
+        },
+        "example": {
+          "kind": "text",
+          "title": "Who owns what on the Kenya project",
+          "body": [
+            "Processes and outputs. Your team keeps the workplan, the demonstration plot records, the training logs and the partner records. Central MEAL gives you standards, KPI definitions, deduplication and aggregation rules and quality assurance. It does not collect your plot data.",
+            "Outcomes. Shared. Your team collects the adoption follow-up with the enumerators you budgeted; central MEAL designs the outcome method, supports sampling and heterogeneity analysis and integrates your records with other projects in the region.",
+            "Impact. Central MEAL with science and evaluation specialists. You provide source data and context: who received the package, where and when, plus the implementation history.",
+            "If you want central MEAL to run routine monitoring, a baseline survey or a dashboard for you, that is an extended service, charged at cost on top of the base contribution. The base contribution pays for standards, proposal review, quality assurance, integration into the MEAL data system, portfolio reporting and PRMS and investor reporting.",
+            "Three rules keep this coherent as the portfolio grows. One: no institutional KPI is added or redefined without MEAL team review, and your project-specific indicators stay project-specific until Pillar A approves them. Two: every proposal goes through the MEAL team at proposal stage, where the Matrix sets scale and complexity. Three: the MEAL Group Lead decides exceptions and the MEAL Review Committee endorses the annual changes."
+          ]
+        },
+        "microCheck": [
+          "Q379"
+        ],
+        "recap": {
+          "bullets": [
+            "Projects own process and output evidence. Outcomes are shared. Impact sits with central MEAL and specialists, with projects supplying source data and context.",
+            "The base contribution pays for institutional services, not for running your monitoring. Monitoring, surveys, studies and dashboards run by the MEAL team are extended services charged at cost.",
+            "Three governance rules: Toolbox changes need MEAL review and Pillar A approval; every proposal goes through MEAL at proposal stage; the Group Lead decides exceptions and the Review Committee endorses the annual review."
+          ],
+          "source": {
+            "section": "5.2",
+            "title": "Division of Responsibility: Project Delivery vs. Institutional MEAL"
+          }
+        }
+      },
+      "glossary": [
+        "Institutional KPI",
+        "Base MEAL contribution",
+        "MEAL Review Committee",
+        "PRMS"
+      ]
+    },
+    {
+      "id": "L10.6",
+      "moduleId": "implementation-governance",
+      "title": "Governance, team structure and how the roles work together",
+      "objectiveIds": [
+        "implementation-governance.O4",
+        "implementation-governance.O2"
+      ],
+      "minutes": 5,
+      "beats": {
+        "hook": "Thirteen positions in two layers, plus a Focal Point in every major project. Who do you call when your crosswalk is stuck, your data dictionary needs a field, or your evaluation needs a design?",
+        "explainer": {
+          "kind": "storyboard",
+          "storyboardId": "sb-m10-team"
+        },
+        "example": {
+          "kind": "interactive",
+          "title": "Who owns this task?",
+          "widget": "sorter",
+          "prompt": "Each task has one owner. Drop it on the role that owns it: Pillar A (Design, Standards and Enablement), Pillar B (Evidence Systems and Portfolio Performance), Pillar C (Evaluation, Learning and Accountability), the Regional MEAL Lead, the Project MEAL Focal Point or the Data Group.",
+          "bins": [
+            {
+              "id": "a",
+              "label": "Pillar A: Design, Standards and Enablement",
+              "hint": "What must be measured and the valid method; KPI architecture; training and onboarding."
+            },
+            {
+              "id": "b",
+              "label": "Pillar B: Evidence Systems and Portfolio Performance",
+              "hint": "How evidence is structured, quality-assured, aggregated and visualised."
+            },
+            {
+              "id": "c",
+              "label": "Pillar C: Evaluation, Learning and Accountability",
+              "hint": "Questions routine monitoring cannot answer; closing the evidence-to-action loop."
+            },
+            {
+              "id": "rl",
+              "label": "Regional MEAL Lead",
+              "hint": "Main interface between projects and the Core Layer; one per region."
+            },
+            {
+              "id": "fp",
+              "label": "Project MEAL Focal Point",
+              "hint": "Day-to-day project monitoring and source evidence."
+            },
+            {
+              "id": "dg",
+              "label": "Data Group",
+              "hint": "Technical infrastructure, software engineering, advanced data science, geospatial processing."
+            }
+          ],
+          "cards": [
+            {
+              "label": "Review and approve a project-specific indicator for institutional use",
+              "bin": "a",
+              "why": "Governance rule 1 names the Design, Standards and Enablement pillar as the approver before a project indicator becomes institutional."
+            },
+            {
+              "label": "Maintain the institutional MEAL data dictionary and the validation and deduplication rules",
+              "bin": "b",
+              "why": "The Evidence Systems, Data Quality and Reporting Analyst in Pillar B maintains the data dictionary and QA rules."
+            },
+            {
+              "label": "Draft evaluation Terms of Reference and manage external evaluators",
+              "bin": "c",
+              "why": "The Evaluation and Research Specialist in Pillar C drafts Terms of Reference and manages commissioned studies."
+            },
+            {
+              "label": "Confirm the Matrix classification of a new proposal in the region",
+              "bin": "rl",
+              "why": "The Regional MEAL Lead oversees the regional proposal pipeline, including Matrix classification and MEAL review of proposals."
+            },
+            {
+              "label": "Run first-line quality checks on the project's monitoring records",
+              "bin": "fp",
+              "why": "First-line quality checks and source-level records are Focal Point work; the project lead is accountable."
+            },
+            {
+              "label": "Build and host the software behind the MEAL data system",
+              "bin": "dg",
+              "why": "The Data Group owns the infrastructure. MEAL owns the content: indicators, data dictionary and quality rules."
+            },
+            {
+              "label": "Prepare the quarterly portfolio performance pack and the evidence-gap register",
+              "bin": "b",
+              "why": "The Portfolio Performance and Visualization Analyst in Pillar B prepares performance packs and maintains the evidence-gap register."
+            },
+            {
+              "label": "Develop KPI reference sheets and map investor indicators to institutional KPIs",
+              "bin": "a",
+              "why": "The MEAL Measurement Specialist in Pillar A develops reference sheets and indicator crosswalks."
+            },
+            {
+              "label": "Keep the decision and management-response log up to date after a learning review",
+              "bin": "c",
+              "why": "The Evaluation and Research Analyst in Pillar C keeps the decision and management-response log."
+            },
+            {
+              "label": "Coach Focal Points and escalate complex technical issues to the right pillar",
+              "bin": "rl",
+              "why": "Regional MEAL Leads coach Focal Points, guide their technical work and escalate to the relevant pillar."
+            },
+            {
+              "label": "Maintain the project MEAL plan and prepare indicator evidence for investor reporting",
+              "bin": "fp",
+              "why": "Maintaining the project MEAL plan and preparing indicator evidence for project, investor and institutional reporting are Focal Point responsibilities."
+            }
+          ]
+        },
+        "microCheck": [
+          "Q380"
+        ],
+        "recap": {
+          "bullets": [
+            "Three layers: the Core Layer (MEAL Group Lead plus three pillars, ten positions), the Regional Layer (one Regional MEAL Lead per region: Latin America, Africa, South Asia) and the Project Layer (the Extended MEAL Network of Focal Points). Thirteen positions in Core and Regional Layers.",
+            "Handoffs are explicit: Pillar A defines what to measure and the valid method; Pillar B structures, assures, aggregates and visualises the evidence; Pillar C answers questions monitoring cannot and closes the loop to action.",
+            "Regional MEAL Leads report to the Group Lead and draw on all three pillars. Focal Points are embedded in and funded by major projects. Geospatial, software and data-science capacity comes from CIMMYT's technical functions, not from inside MEAL."
+          ],
+          "source": {
+            "section": "5.8",
+            "title": "MEAL Team Structure and Roles"
+          }
+        }
+      },
+      "glossary": [
+        "Core Layer",
+        "Regional MEAL Lead",
+        "Project MEAL Focal Point",
+        "Extended MEAL Network",
+        "MEAL Group Lead"
+      ]
+    },
+    {
+      "id": "L10.7",
+      "moduleId": "implementation-governance",
+      "title": "Rollout roadmap and enabling success",
+      "objectiveIds": [
+        "implementation-governance.O6"
+      ],
+      "minutes": 4,
+      "beats": {
+        "hook": "The Handbook is finalised in September 2026 and every new proposal uses it from October. Your Kenya proposal lands in that window. Here is what has to be in place around it, and what keeps the system alive afterwards.",
+        "explainer": {
+          "kind": "storyboard",
+          "storyboardId": "sb-m10-roadmap"
+        },
+        "example": {
+          "kind": "text",
+          "title": "Where the Kenya proposal sits on the roadmap",
+          "body": [
+            "May to September 2026 is design and build: the Handbook and the 13 KPI volumes under the three Thrusts, methods and aggregation rules, and the minimum package. In September 2026 the Handbook and KPI Toolbox are finalised and ready for peer validation. In early October 2026 the Senior Leadership Team launches them in a global webinar. From October 12, 2026 regional training starts, and that is where Project MEAL Focal Points and country-level MEAL contacts are identified.",
+            "From October 2026, all new proposals use the Toolbox and the guidance. That is your entry point. At concept-note stage the proposal goes through the MEAL team using the Matrix: you select the project type and scale, and the Matrix returns the MEAL support, the applicable KPIs, the expected deliverables and the base budget. Budget for data collection, quality assurance, analysis and learning, not only for reporting.",
+            "A sister project in your region, awarded in 2025 with three years still to run, has a different entry point. From November 2026, ongoing projects with more than two years of implementation remaining can pilot the KPI system. The Matrix alone is not enough for them: MEAL runs a readiness diagnostic of existing indicators, systems and gaps against the Handbook, a selection check on remaining duration, budget flexibility, data-system maturity and team capacity, and, for confirmed pilots, a crosswalk workshop that maps existing indicators onto the Toolbox. From 2027 to 2030 the system scales across the portfolio, starting with the first institutional KPI run, a baseline portfolio dashboard and the evidence-gap register.",
+            "Five conditions decide whether the roadmap works: strong data systems built with the Data Group; clear roles and governance; quality and accountability embedded through the lifecycle; capacity development through role-based training, communities of practice and office hours; and continuous learning, with improvements released as new versions of the guidance. Once your project runs, it runs on the cadence in 5.7: continuous or monthly quality checks, a quarterly or seasonal evidence review that ends in a decision log, an annual KPI recomputation with a portfolio dashboard and evidence-gap register, and midterm, endline or trigger-based studies."
+          ]
+        },
+        "microCheck": [
+          "Q381"
+        ],
+        "recap": {
+          "bullets": [
+            "Milestones: design and build May to September 2026; Handbook and Toolbox finalised September 2026; launch webinar early October 2026; regional training from October 12, 2026; all new proposals from October 2026; pilots from November 2026; scale 2027 to 2030.",
+            "Two entry points: new proposals go through the MEAL team at concept-note stage using the Matrix; ongoing projects with more than two years left join through a readiness diagnostic, a selection check and a crosswalk workshop.",
+            "Five enabling conditions: strong data systems, clear roles and governance, quality and accountability, capacity development, continuous learning and adaptation. Then a cadence of monthly checks, quarterly reviews, an annual KPI run and trigger-based studies."
+          ],
+          "source": {
+            "section": "5.5",
+            "title": "Institutional Rollout Roadmap"
+          }
+        }
+      },
+      "glossary": [
+        "KPI Toolbox",
+        "Operating cadence",
+        "Evidence-gap register",
+        "Decision log",
+        "Indicator crosswalk"
+      ]
+    }
+  ],
+  "storyboards": [
+    {
+      "id": "sb-m10-lifecycle",
+      "title": "MEAL across the project lifecycle",
+      "frames": [
+        {
+          "id": "f1",
+          "seconds": 6,
+          "narration": "MEAL enters a project before indicators, budgets and data systems are fixed. That means the proposal, not the inception workshop.",
+          "scene": {
+            "kind": "title",
+            "title": "Before anything is fixed",
+            "subtitle": "MEAL starts at the proposal, not at inception."
+          }
+        },
+        {
+          "id": "f2",
+          "seconds": 18,
+          "narration": "Six phases, from opportunity and proposal to outcome, impact, synthesis and learning. Engagement intensity scales with the project, but the gates are the same for everyone.",
+          "scene": {
+            "kind": "chain",
+            "steps": [
+              {
+                "label": "1. Opportunity & proposal",
+                "detail": "Classify, select KPIs, cost MEAL",
+                "tone": "sky"
+              },
+              {
+                "label": "2. Award & inception",
+                "detail": "Confirm results chain, name Focal Point",
+                "tone": "sky"
+              },
+              {
+                "label": "3. System & protocol design",
+                "detail": "Forms, identifiers, QA with Data Group",
+                "tone": "gold"
+              },
+              {
+                "label": "4. Enable & hand over",
+                "detail": "Train, tools, escalation path",
+                "tone": "gold"
+              },
+              {
+                "label": "5. Implementation",
+                "detail": "Routine monitoring, periodic QA, reviews",
+                "tone": "green"
+              },
+              {
+                "label": "6. Outcome, impact & learning",
+                "detail": "Integrate from outcomes upward",
+                "tone": "green"
+              }
+            ],
+            "traveler": true
+          }
+        },
+        {
+          "id": "f3",
+          "seconds": 18,
+          "narration": "Each phase closes with a gate. Before submission: a MEAL section, a KPI crosswalk, an indicative data architecture and a costed MEAL budget. At inception: an approved MEAL plan and measurement matrix. Before handover: a competency check, a live system and named owners.",
+          "scene": {
+            "kind": "checklist",
+            "items": [
+              {
+                "label": "Phase 1: MEAL section + KPI crosswalk + data architecture + costed budget, before submission",
+                "done": true
+              },
+              {
+                "label": "Phase 2: approved MEAL plan and measurement matrix within inception",
+                "done": true
+              },
+              {
+                "label": "Phase 3: system tested; protocols, roles, consent and QA approved",
+                "done": true
+              },
+              {
+                "label": "Phase 4: competency check + live system + named data and MEAL owners",
+                "done": true
+              },
+              {
+                "label": "Phase 5: quarterly or seasonal evidence review with actions and owners",
+                "done": true
+              },
+              {
+                "label": "Phase 6: validated outcome or impact dataset + KPI update + learning note",
+                "done": true
+              }
+            ],
+            "stamp": "Six gates"
+          }
+        },
+        {
+          "id": "f4",
+          "seconds": 16,
+          "narration": "The RACI puts names on the work. One accountable role per activity. The project lead is accountable for routine data collection and the Focal Point does it. The Regional MEAL Lead is accountable for the Matrix classification. The Group Lead is accountable for exceptions.",
+          "scene": {
+            "kind": "cards",
+            "layout": "grid",
+            "items": [
+              {
+                "label": "PI: project lead",
+                "detail": "A for routine data, ToC, costing",
+                "tone": "ink"
+              },
+              {
+                "label": "FP: Focal Point",
+                "detail": "R for routine data, first-line QA",
+                "tone": "green"
+              },
+              {
+                "label": "RL: Regional MEAL Lead",
+                "detail": "A for Matrix classification",
+                "tone": "sky"
+              },
+              {
+                "label": "A, B, C: pillars",
+                "detail": "Design, systems, evaluation",
+                "tone": "gold"
+              },
+              {
+                "label": "GL: Group Lead",
+                "detail": "A for exceptions, Handbook changes",
+                "tone": "gold"
+              },
+              {
+                "label": "DG: Data Group",
+                "detail": "R for fields, forms, data flows",
+                "tone": "paper"
+              },
+              {
+                "label": "RC: Review Committee",
+                "detail": "A for annual endorsement",
+                "tone": "paper"
+              }
+            ]
+          }
+        },
+        {
+          "id": "f5",
+          "seconds": 8,
+          "narration": "One shortcut. A Small project taking the standard package only needs the Regional MEAL Lead to confirm its classification and its base budget in Phase 1.",
+          "scene": {
+            "kind": "title",
+            "title": "Small projects, light touch",
+            "subtitle": "The Regional MEAL Lead confirms classification and base budget. Then proceed.",
+            "stamp": "5.1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sb-m10-hero",
+      "title": "Classify and budget with the MEAL Matrix",
+      "frames": [
+        {
+          "id": "f1",
+          "seconds": 6,
+          "narration": "Three weeks to submit. Two choices in the Matrix give you the classification and the budget line.",
+          "scene": {
+            "kind": "title",
+            "title": "Classify and budget",
+            "subtitle": "Project type sets complexity. Budget and duration set scale."
+          }
+        },
+        {
+          "id": "f2",
+          "seconds": 14,
+          "narration": "The Matrix is a grid. Six project types down the side, each with a default complexity. Four scales across the top, set by budget and duration. Every cell holds the support, the KPIs, the deliverables and the base budget.",
+          "scene": {
+            "kind": "grid",
+            "rows": [
+              "Upstream discovery (Standard)",
+              "Breeding (Intermediate)",
+              "Applied agronomy (Complex)",
+              "Seed systems (Complex)",
+              "Digital agriculture (Intermediate)",
+              "System change (Complex)"
+            ],
+            "cols": [
+              "Small",
+              "Medium",
+              "Large",
+              "MEGA"
+            ],
+            "cells": [
+              [
+                "USD 8,000",
+                "3%, min 8,000",
+                "Co-designed",
+                "Co-designed"
+              ],
+              [
+                "USD 13,000",
+                "4%, min 13,000",
+                "Co-designed",
+                "Co-designed"
+              ],
+              [
+                "USD 18,000",
+                "5%, min 18,000",
+                "Co-designed",
+                "Co-designed"
+              ],
+              [
+                "USD 18,000",
+                "5%, min 18,000",
+                "Co-designed",
+                "Co-designed"
+              ],
+              [
+                "USD 13,000",
+                "4%, min 13,000",
+                "Co-designed",
+                "Co-designed"
+              ],
+              [
+                "USD 18,000",
+                "5%, min 18,000",
+                "Co-designed",
+                "Co-designed"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "f3",
+          "seconds": 16,
+          "narration": "Start small. A one-year demonstration-plot pilot at USD 150,000 is applied agronomy, so Complex by default, and Small by scale. The base budget is fixed: USD 18,000 for the life of the project.",
+          "scene": {
+            "kind": "grid",
+            "rows": [
+              "Upstream discovery (Standard)",
+              "Breeding (Intermediate)",
+              "Applied agronomy (Complex)",
+              "Seed systems (Complex)",
+              "Digital agriculture (Intermediate)",
+              "System change (Complex)"
+            ],
+            "cols": [
+              "Small",
+              "Medium",
+              "Large",
+              "MEGA"
+            ],
+            "token": {
+              "row": 2,
+              "col": 0,
+              "label": "USD 150,000, 1 year"
+            },
+            "counter": {
+              "label": "Base MEAL budget",
+              "value": 18000
+            }
+          }
+        },
+        {
+          "id": "f4",
+          "seconds": 20,
+          "narration": "Now the Kenya proposal: USD 300,000 over two years. Same row, one column to the right: Medium. The rule is 5% of the total budget, which is USD 15,000. But never less than the Small amount for the same complexity. USD 18,000 is the floor, so the counter stays at USD 18,000.",
+          "scene": {
+            "kind": "grid",
+            "rows": [
+              "Upstream discovery (Standard)",
+              "Breeding (Intermediate)",
+              "Applied agronomy (Complex)",
+              "Seed systems (Complex)",
+              "Digital agriculture (Intermediate)",
+              "System change (Complex)"
+            ],
+            "cols": [
+              "Small",
+              "Medium",
+              "Large",
+              "MEGA"
+            ],
+            "token": {
+              "row": 2,
+              "col": 1,
+              "label": "USD 300,000, 2 years"
+            },
+            "counter": {
+              "label": "5% = 15,000; floor applies",
+              "value": 18000
+            }
+          }
+        },
+        {
+          "id": "f5",
+          "seconds": 16,
+          "narration": "Above USD 800,000 the counter stops. Large and MEGA projects co-design MEAL with the team from the start of proposal development. MEGA adds an institutional contribution of at least USD 27,000 per project year, charged as Core Layer staff time.",
+          "scene": {
+            "kind": "grid",
+            "rows": [
+              "Upstream discovery (Standard)",
+              "Breeding (Intermediate)",
+              "Applied agronomy (Complex)",
+              "Seed systems (Complex)",
+              "Digital agriculture (Intermediate)",
+              "System change (Complex)"
+            ],
+            "cols": [
+              "Small",
+              "Medium",
+              "Large",
+              "MEGA"
+            ],
+            "token": {
+              "row": 2,
+              "col": 3,
+              "label": "Above USD 10 million"
+            },
+            "counter": {
+              "label": "MEGA: institutional contribution per project year, at least",
+              "value": 27000
+            }
+          }
+        },
+        {
+          "id": "f6",
+          "seconds": 16,
+          "narration": "Complexity can move. A Small digital advisory pilot starts Intermediate at USD 13,000. It commits to report household-level adoption to the investor. That is a trigger: up one level to Complex, and the counter moves to USD 18,000. The scale has not changed.",
+          "scene": {
+            "kind": "grid",
+            "rows": [
+              "Upstream discovery (Standard)",
+              "Breeding (Intermediate)",
+              "Applied agronomy (Complex)",
+              "Seed systems (Complex)",
+              "Digital agriculture (Intermediate)",
+              "System change (Complex)"
+            ],
+            "cols": [
+              "Small",
+              "Medium",
+              "Large",
+              "MEGA"
+            ],
+            "token": {
+              "row": 4,
+              "col": 0,
+              "label": "Adjusted: Complex"
+            },
+            "counter": {
+              "label": "Base budget after adjustment",
+              "value": 18000
+            }
+          }
+        },
+        {
+          "id": "f7",
+          "seconds": 12,
+          "narration": "Who signs off. The Regional MEAL Lead confirms the classification. Small projects then proceed with the standard package. Medium projects confirm the budget with MEAL while writing. Large and MEGA co-design from the start.",
+          "scene": {
+            "kind": "cards",
+            "layout": "row",
+            "items": [
+              {
+                "label": "Regional MEAL Lead",
+                "detail": "Confirms classification at proposal review",
+                "tone": "sky"
+              },
+              {
+                "label": "Small",
+                "detail": "Proceed with the standard package and base budget",
+                "tone": "green"
+              },
+              {
+                "label": "Medium",
+                "detail": "Confirm the budget with MEAL while writing",
+                "tone": "gold"
+              },
+              {
+                "label": "Large and MEGA",
+                "detail": "Co-design with MEAL from the start",
+                "tone": "ink"
+              }
+            ],
+            "stamp": "5.3, Annex A"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sb-m10-adjust",
+      "title": "Complexity adjustments and exceptions",
+      "frames": [
+        {
+          "id": "f1",
+          "seconds": 12,
+          "narration": "Three commitments move a project up one complexity level: reporting farmer- or household-level adoption, outcomes or impact to investors; running its own ground measurement of outcomes; depending on primary data from several implementing partners.",
+          "scene": {
+            "kind": "cards",
+            "layout": "row",
+            "items": [
+              {
+                "label": "Household-level results promised to investors",
+                "detail": "Adoption, outcomes or impact",
+                "tone": "gold"
+              },
+              {
+                "label": "Own ground measurement of outcomes",
+                "detail": "The project runs it",
+                "tone": "gold"
+              },
+              {
+                "label": "Primary data from several partners",
+                "detail": "Dependence, not just contact",
+                "tone": "gold"
+              }
+            ],
+            "stamp": "Up one level"
+          }
+        },
+        {
+          "id": "f2",
+          "seconds": 16,
+          "narration": "Watch it work. A digital advisory pilot that promises household-level adoption evidence tries to stay Intermediate. It bounces up to Complex. A discovery project that depends on primary data from four partners moves from Standard to Intermediate.",
+          "scene": {
+            "kind": "sort",
+            "bins": [
+              "Standard",
+              "Intermediate",
+              "Complex"
+            ],
+            "cards": [
+              {
+                "label": "Digital pilot, household adoption promised",
+                "bin": 2,
+                "wrong": 1
+              },
+              {
+                "label": "Discovery project, data from four partners",
+                "bin": 1,
+                "wrong": 0
+              },
+              {
+                "label": "Breeding project, no trigger",
+                "bin": 1
+              }
+            ],
+            "stamp": "Complexity, not scale"
+          }
+        },
+        {
+          "id": "f3",
+          "seconds": 16,
+          "narration": "Three decisions, three owners. The Regional MEAL Lead confirms the classification at proposal review. The MEAL Group Lead is accountable for KPI method exceptions and Handbook changes. The MEAL Review Committee, at the level of scientific leadership, endorses the annual review.",
+          "scene": {
+            "kind": "cards",
+            "layout": "row",
+            "items": [
+              {
+                "label": "Classification",
+                "detail": "Regional MEAL Lead confirms",
+                "tone": "sky"
+              },
+              {
+                "label": "KPI method exceptions",
+                "detail": "MEAL Group Lead accountable; Pillar A responsible",
+                "tone": "gold"
+              },
+              {
+                "label": "Annual endorsement",
+                "detail": "MEAL Review Committee; Group Lead presents",
+                "tone": "green"
+              }
+            ]
+          }
+        },
+        {
+          "id": "f4",
+          "seconds": 8,
+          "narration": "The project lead proposes. The Regional MEAL Lead confirms. The Group Lead decides exceptions. The Committee endorses once a year.",
+          "scene": {
+            "kind": "title",
+            "title": "Propose, confirm, decide, endorse",
+            "subtitle": "Project lead, Regional MEAL Lead, MEAL Group Lead, MEAL Review Committee.",
+            "stamp": "5.3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sb-m10-budget",
+      "title": "Budgeting the minimum package",
+      "frames": [
+        {
+          "id": "f1",
+          "seconds": 12,
+          "narration": "Small projects pay a fixed amount for their lifetime: USD 8,000 Standard, USD 13,000 Intermediate, USD 18,000 Complex. Those three numbers are also the floors for Medium projects.",
+          "scene": {
+            "kind": "counter",
+            "items": [
+              {
+                "label": "Small, Standard",
+                "value": 8000,
+                "prefix": "USD ",
+                "tone": "sky"
+              },
+              {
+                "label": "Small, Intermediate",
+                "value": 13000,
+                "prefix": "USD ",
+                "tone": "gold"
+              },
+              {
+                "label": "Small, Complex",
+                "value": 18000,
+                "prefix": "USD ",
+                "tone": "green"
+              }
+            ],
+            "note": "Per project, for its lifetime"
+          }
+        },
+        {
+          "id": "f2",
+          "seconds": 18,
+          "narration": "Medium is a percentage with a floor. Kenya: applied agronomy, Complex, USD 300,000. Five percent is USD 15,000. The floor for Complex is USD 18,000. Take the larger one.",
+          "scene": {
+            "kind": "split",
+            "left": {
+              "title": "5% of USD 300,000",
+              "lines": [
+                "Complex rate for Medium",
+                "= USD 15,000"
+              ],
+              "value": 15000,
+              "tone": "gold"
+            },
+            "right": {
+              "title": "Small Complex floor",
+              "lines": [
+                "Never less than the Small amount",
+                "= USD 18,000"
+              ],
+              "value": 18000,
+              "tone": "green"
+            },
+            "gap": "The floor wins: USD 18,000"
+          }
+        },
+        {
+          "id": "f3",
+          "seconds": 16,
+          "narration": "Two more. A USD 500,000 seed systems project: 5% is USD 25,000, above the floor, so USD 25,000. A USD 290,000 breeding project: 4% is USD 11,600, below USD 13,000, so the floor applies.",
+          "scene": {
+            "kind": "counter",
+            "items": [
+              {
+                "label": "Kenya agronomy, USD 300,000, Complex",
+                "value": 18000,
+                "prefix": "USD ",
+                "tone": "green"
+              },
+              {
+                "label": "Seed systems, USD 500,000, Complex",
+                "value": 25000,
+                "prefix": "USD ",
+                "tone": "green"
+              },
+              {
+                "label": "Breeding, USD 290,000, Intermediate",
+                "value": 13000,
+                "prefix": "USD ",
+                "tone": "gold"
+              }
+            ],
+            "note": "Percentage first, then check the floor"
+          }
+        },
+        {
+          "id": "f4",
+          "seconds": 12,
+          "narration": "Above USD 800,000 there is no formula. Large and MEGA budgets are co-designed with MEAL from the start of proposal development. MEGA adds at least USD 27,000 per project year of Core Layer staff time.",
+          "scene": {
+            "kind": "cards",
+            "layout": "row",
+            "items": [
+              {
+                "label": "Large",
+                "detail": "USD 800,000 to 10 million. Co-designed from the start.",
+                "tone": "ink"
+              },
+              {
+                "label": "MEGA",
+                "detail": "Above USD 10 million. Co-designed, plus at least USD 27,000 per project year.",
+                "tone": "ink"
+              },
+              {
+                "label": "Extended services",
+                "detail": "Surveys, studies, dashboards: charged at cost",
+                "tone": "paper"
+              }
+            ]
+          }
+        },
+        {
+          "id": "f5",
+          "seconds": 16,
+          "narration": "What the budget buys. Every project leaves inception with eight elements: results architecture, indicator crosswalk, measurement plan, data architecture, quality plan, baseline or reference, a learning and accountability cycle, and handover and capacity. None waits for the final report.",
+          "scene": {
+            "kind": "checklist",
+            "items": [
+              {
+                "label": "1. Results architecture",
+                "done": true
+              },
+              {
+                "label": "2. Indicator crosswalk",
+                "done": true
+              },
+              {
+                "label": "3. Measurement plan",
+                "done": true
+              },
+              {
+                "label": "4. Data architecture",
+                "done": true
+              },
+              {
+                "label": "5. Quality plan",
+                "done": true
+              },
+              {
+                "label": "6. Baseline or reference",
+                "done": true
+              },
+              {
+                "label": "7. Learning and accountability cycle",
+                "done": true
+              },
+              {
+                "label": "8. Handover and capacity",
+                "done": true
+              }
+            ],
+            "stamp": "Minimum package"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sb-m10-division",
+      "title": "Project delivery versus institutional MEAL",
+      "frames": [
+        {
+          "id": "f1",
+          "seconds": 8,
+          "narration": "The operating principle in six words: central standards, distributed implementation, institutional integration.",
+          "scene": {
+            "kind": "title",
+            "title": "Central standards, distributed implementation, institutional integration",
+            "subtitle": "Projects generate the evidence closest to delivery. Central MEAL makes it comparable."
+          }
+        },
+        {
+          "id": "f2",
+          "seconds": 18,
+          "narration": "Row by row. Processes and outputs belong to project teams, with standards and KPI rules from the centre. Outcomes are shared: projects collect, central MEAL integrates and analyses. Impact sits with central MEAL and specialists, with projects supplying source data and context.",
+          "scene": {
+            "kind": "grid",
+            "rows": [
+              "Processes",
+              "Outputs",
+              "Outcomes",
+              "Impact"
+            ],
+            "cols": [
+              "Primary owner",
+              "Central MEAL adds"
+            ],
+            "cells": [
+              [
+                "Project teams",
+                "Standards, minimum requirements, selected QA"
+              ],
+              [
+                "Project teams",
+                "KPI definitions, deduplication, harmonisation"
+              ],
+              [
+                "Shared",
+                "Outcome methods, integration, contribution analysis"
+              ],
+              [
+                "Central MEAL + specialists",
+                "Evaluation design, triangulation, synthesis"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "f3",
+          "seconds": 14,
+          "narration": "The base contribution buys institutional services: standards, proposal review, quality assurance, integration, portfolio and PRMS reporting. Running your monitoring or your baseline is an extended service, charged at cost.",
+          "scene": {
+            "kind": "split",
+            "left": {
+              "title": "Base contribution",
+              "lines": [
+                "Standards and guidance",
+                "Proposal review",
+                "Quality assurance",
+                "Integration and portfolio reporting",
+                "PRMS and investor reporting"
+              ],
+              "tone": "green"
+            },
+            "right": {
+              "title": "Extended services, at cost",
+              "lines": [
+                "Running project monitoring",
+                "Baseline and endline surveys",
+                "Outcome studies and evaluations",
+                "Dashboards and system configuration"
+              ],
+              "tone": "gold"
+            },
+            "gap": "Routine monitoring stays with the project"
+          }
+        },
+        {
+          "id": "f4",
+          "seconds": 14,
+          "narration": "Three rules keep the system coherent. No KPI added or redefined without MEAL review and Pillar A approval. Every proposal through MEAL at proposal stage. The Group Lead decides exceptions; the Review Committee endorses the annual changes.",
+          "scene": {
+            "kind": "cards",
+            "layout": "row",
+            "items": [
+              {
+                "label": "1. KPI Toolbox",
+                "detail": "No new or redefined KPI without review; Pillar A approves; published in a new Handbook version",
+                "tone": "sky"
+              },
+              {
+                "label": "2. Proposal review",
+                "detail": "Every proposal through MEAL; the Matrix sets scale and complexity",
+                "tone": "gold"
+              },
+              {
+                "label": "3. Decisions and exceptions",
+                "detail": "Group Lead accountable; Review Committee endorses yearly",
+                "tone": "green"
+              }
+            ],
+            "stamp": "5.3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sb-m10-team",
+      "title": "Three layers, three pillars",
+      "frames": [
+        {
+          "id": "f1",
+          "seconds": 14,
+          "narration": "Three connected layers. The Core Layer sets standards and integrates evidence. The Regional Layer makes it work in each portfolio. The Project Layer keeps monitoring close to implementation. Thirteen positions in Core and Regional, with Focal Points added as the portfolio grows.",
+          "scene": {
+            "kind": "stack",
+            "layers": [
+              {
+                "label": "Project Layer",
+                "detail": "Extended MEAL Network of Project MEAL Focal Points",
+                "tone": "green"
+              },
+              {
+                "label": "Regional Layer",
+                "detail": "One Regional MEAL Lead each: Latin America, Africa, South Asia",
+                "tone": "sky"
+              },
+              {
+                "label": "Core Layer",
+                "detail": "MEAL Group Lead + three pillars, ten positions",
+                "tone": "gold"
+              }
+            ],
+            "stamp": "13 positions, Core + Regional"
+          }
+        },
+        {
+          "id": "f2",
+          "seconds": 16,
+          "narration": "Inside the Core Layer, three pillars, each with a Senior Lead and two support roles. A: Design, Standards and Enablement. B: Evidence Systems and Portfolio Performance. C: Evaluation, Learning and Accountability. The Group Lead holds them together.",
+          "scene": {
+            "kind": "cards",
+            "layout": "row",
+            "items": [
+              {
+                "label": "MEAL Group Lead",
+                "detail": "Strategy, resources, exceptions, annual review",
+                "tone": "ink"
+              },
+              {
+                "label": "A: Design, Standards & Enablement",
+                "detail": "What to measure, valid methods, training",
+                "tone": "sky"
+              },
+              {
+                "label": "B: Evidence Systems & Portfolio Performance",
+                "detail": "Structure, QA, aggregation, dashboards",
+                "tone": "gold"
+              },
+              {
+                "label": "C: Evaluation, Learning & Accountability",
+                "detail": "Evaluations, learning, management response",
+                "tone": "green"
+              }
+            ]
+          }
+        },
+        {
+          "id": "f3",
+          "seconds": 14,
+          "narration": "Handoffs are explicit. Design defines what and how. Evidence Systems structures, assures, aggregates and visualises. Evaluation answers what monitoring cannot and closes the loop to action. The Regional MEAL Lead brings all three to the project; the Focal Point keeps the source evidence.",
+          "scene": {
+            "kind": "chain",
+            "steps": [
+              {
+                "label": "Pillar A",
+                "detail": "What to measure, valid method",
+                "tone": "sky"
+              },
+              {
+                "label": "Pillar B",
+                "detail": "Structure, QA, aggregate, visualise",
+                "tone": "gold"
+              },
+              {
+                "label": "Pillar C",
+                "detail": "Evaluate, learn, act",
+                "tone": "green"
+              }
+            ],
+            "links": [
+              {
+                "label": "handoff"
+              },
+              {
+                "label": "handoff"
+              }
+            ],
+            "traveler": true
+          }
+        },
+        {
+          "id": "f4",
+          "seconds": 8,
+          "narration": "Not inside MEAL: software, advanced data science, geospatial processing and corporate data governance. Those come from CIMMYT's technical functions, including the Data Group.",
+          "scene": {
+            "kind": "title",
+            "title": "Mobilised, not duplicated",
+            "subtitle": "Data Group and technical functions supply infrastructure and specialist capability.",
+            "stamp": "5.9"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sb-m10-roadmap",
+      "title": "Rollout roadmap and enabling success",
+      "frames": [
+        {
+          "id": "f1",
+          "seconds": 20,
+          "narration": "Design and build from May to September 2026. The Handbook and Toolbox finalised in September 2026. A launch webinar by the Senior Leadership Team in early October. Regional training from October 12. All new proposals from October 2026. Pilots in ongoing projects from November 2026.",
+          "scene": {
+            "kind": "chain",
+            "steps": [
+              {
+                "label": "Design & build",
+                "detail": "May to Sep 2026",
+                "tone": "paper"
+              },
+              {
+                "label": "Handbook & Toolbox",
+                "detail": "Sep 2026",
+                "tone": "sky"
+              },
+              {
+                "label": "Launch webinar",
+                "detail": "Early Oct 2026",
+                "tone": "sky"
+              },
+              {
+                "label": "Regional training",
+                "detail": "From Oct 12, 2026",
+                "tone": "gold"
+              },
+              {
+                "label": "All new proposals",
+                "detail": "From Oct 2026",
+                "tone": "gold"
+              },
+              {
+                "label": "Pilots",
+                "detail": "From Nov 2026",
+                "tone": "green"
+              }
+            ],
+            "traveler": true
+          }
+        },
+        {
+          "id": "f2",
+          "seconds": 14,
+          "narration": "Two entry points. New proposals go through MEAL at concept-note stage using the Matrix. Ongoing projects with more than two years left join through a readiness diagnostic, a selection check and a crosswalk workshop. Then, from 2027 to 2030, scale.",
+          "scene": {
+            "kind": "split",
+            "left": {
+              "title": "New proposals",
+              "lines": [
+                "Concept-note stage",
+                "Matrix: type and scale",
+                "Returns support, KPIs, deliverables, budget"
+              ],
+              "tone": "gold"
+            },
+            "right": {
+              "title": "Ongoing projects, 2+ years left",
+              "lines": [
+                "Readiness diagnostic",
+                "Selection check",
+                "KPI crosswalk workshop"
+              ],
+              "tone": "green"
+            },
+            "gap": "2027 to 2030: first institutional KPI run, then scale"
+          }
+        },
+        {
+          "id": "f3",
+          "seconds": 14,
+          "narration": "Five conditions decide whether this works: strong data systems, clear roles and governance, quality and accountability, capacity development, and continuous learning and adaptation.",
+          "scene": {
+            "kind": "cards",
+            "layout": "row",
+            "items": [
+              {
+                "label": "Strong data systems",
+                "detail": "With the Data Group",
+                "tone": "sky"
+              },
+              {
+                "label": "Clear roles & governance",
+                "detail": "Projects, MEAL, Data Group, science, leadership",
+                "tone": "sky"
+              },
+              {
+                "label": "Quality & accountability",
+                "detail": "Embedded through the lifecycle",
+                "tone": "gold"
+              },
+              {
+                "label": "Capacity development",
+                "detail": "Training, communities of practice, office hours",
+                "tone": "gold"
+              },
+              {
+                "label": "Continuous learning",
+                "detail": "New versions of the guidance",
+                "tone": "green"
+              }
+            ],
+            "stamp": "5.6"
+          }
+        },
+        {
+          "id": "f4",
+          "seconds": 14,
+          "narration": "Once running, the cadence is light and regular. Monthly quality checks. Quarterly or seasonal evidence reviews ending in a decision log. An annual KPI run with a portfolio dashboard and evidence-gap register. Midterm, endline or trigger-based studies when needed.",
+          "scene": {
+            "kind": "loop",
+            "steps": [
+              {
+                "label": "Continuous / monthly",
+                "detail": "Quality flags, corrected records"
+              },
+              {
+                "label": "Quarterly / seasonal",
+                "detail": "Evidence review, decision log"
+              },
+              {
+                "label": "Annual",
+                "detail": "KPI run, dashboard, evidence-gap register"
+              },
+              {
+                "label": "Midterm / endline / trigger",
+                "detail": "Outcome and impact studies"
+              }
+            ],
+            "active": 1,
+            "log": "Decision log: what changes, who acts, by when"
+          }
+        }
+      ]
+    }
+  ]
+}

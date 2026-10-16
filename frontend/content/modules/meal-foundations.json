@@ -1,0 +1,1149 @@
+{
+  "id": "meal-foundations",
+  "order": 1,
+  "title": "MEAL foundations",
+  "short": "Foundations",
+  "minutes": 30,
+  "sections": [
+    "1",
+    "1.1",
+    "1.2",
+    "1.3",
+    "2.5",
+    "2.7"
+  ],
+  "assessed": true,
+  "prerequisites": [],
+  "scenario": {
+    "title": "Same yield gain, two bodies of evidence",
+    "intro": "A maize project in western Kenya and a second maize project in a neighbouring county both report a 20% yield gain among participating farmers. The first cites its annual report: field days held, farmers reached, gain observed. The second can open a map: every participant has an identifier, every sampled plot has a crop-cut record with a date and a location, and the gain can be recomputed by district and by gender. Same number, two very different bodies of evidence. This module explains why CIMMYT now wants the second kind, and what MEAL means once you work that way.",
+    "persona": [
+      "project-lead",
+      "field-officer",
+      "scientist",
+      "meal-specialist",
+      "partner-liaison"
+    ]
+  },
+  "objectives": [
+    {
+      "id": "meal-foundations.O1",
+      "text": "Explain the shift from report-based monitoring to observation-based evidence, and state what a project report can and cannot show on its own.",
+      "bloom": "understand"
+    },
+    {
+      "id": "meal-foundations.O2",
+      "text": "Name the four strategic effects and match each to the purpose the framework gives it.",
+      "bloom": "remember"
+    },
+    {
+      "id": "meal-foundations.O3",
+      "text": "Place MEAL in CIMMYT's context: scientific contribution rather than service delivery, the evidence assets to connect, and what connecting them makes possible.",
+      "bloom": "understand"
+    },
+    {
+      "id": "meal-foundations.O4",
+      "text": "List the five evidence functions in sequence and identify which function a given task or data source belongs to.",
+      "bloom": "apply"
+    },
+    {
+      "id": "meal-foundations.O5",
+      "text": "Describe accountability as running in four directions and give what each direction requires in practice.",
+      "bloom": "understand"
+    },
+    {
+      "id": "meal-foundations.O6",
+      "text": "Explain how monitoring, evaluation, accountability and learning depend on each other, and state the 2030 ambition for MEAL as a strategic capability rather than a compliance function.",
+      "bloom": "analyse"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "L1.1",
+      "moduleId": "meal-foundations",
+      "title": "Why MEAL changes: from reports to observations",
+      "objectiveIds": [
+        "meal-foundations.O1"
+      ],
+      "minutes": 6,
+      "beats": {
+        "hook": "Two projects report the same yield gain. One can show the plots behind the number. The other can show a PDF. Which one would you fund again?",
+        "explainer": {
+          "kind": "storyboard",
+          "storyboardId": "sb-m1-hero"
+        },
+        "example": {
+          "kind": "text",
+          "title": "One reach figure, two ways to read it",
+          "body": [
+            "Report-based reading. A maize project in western Kenya writes in its annual report: 5,000 farmers reached through field days, 20% yield gain among participants. The investor asks: which farmers, where, measured how, compared with what? The report cannot answer. It confirms that field days took place and that farmers were reached. That is all a report can do on its own.",
+            "Observation-based reading. The same project also holds the field-day register with a persistent identifier for every participant, crop-cut records from a sample of participant plots with dates and locations, and the season's rainfall layer. From these records the yield gain can be recomputed, broken down by gender and district, and read next to rainfall. Now the investor's questions have answers.",
+            "Nothing is thrown away. Reporting summaries stay. The difference is that the summary now points to records that can be analysed, aggregated and reused in a later study, instead of standing in for them.",
+            "That is the new approach in one sentence: build a traceable body of evidence on what changed, for whom, where, under what conditions and at what scale."
+          ]
+        },
+        "microCheck": [
+          "Q101",
+          "Q102"
+        ],
+        "recap": {
+          "bullets": [
+            "A report can confirm that training took place or farmers were reached. It cannot by itself show whether practices changed, yields improved or benefits persisted.",
+            "The new approach works from observation-level records: farmers, plots, trials, households and institutions, plus geospatial and contextual data where they strengthen the measurement.",
+            "Reporting summaries stay. The objective is to connect them to observation-level data that can be analysed, aggregated and used for learning and impact."
+          ],
+          "source": {
+            "section": "1",
+            "title": "A New MEAL Approach for CIMMYT"
+          }
+        }
+      },
+      "glossary": [
+        "MEAL",
+        "Report-based monitoring",
+        "Observation-level evidence"
+      ]
+    },
+    {
+      "id": "L1.2",
+      "moduleId": "meal-foundations",
+      "title": "The four strategic effects",
+      "objectiveIds": [
+        "meal-foundations.O2"
+      ],
+      "minutes": 4,
+      "beats": {
+        "hook": "If the new approach works, what should look different at CIMMYT? The framework names four effects. You will meet them again in every later module.",
+        "explainer": {
+          "kind": "storyboard",
+          "storyboardId": "sb-m1-effects"
+        },
+        "example": {
+          "kind": "text",
+          "title": "Four effects in one wheat season",
+          "body": [
+            "Evidence. A wheat project in South Asia tracks sowing dates and yields at plot level, not only the number of farmers trained. The team uses that data to understand progress and, at the end, to demonstrate impact.",
+            "Collaboration. The plot records sit in one system that the breeding team, MEAL, the data team and management all draw on. Nobody re-keys the same figures into a second spreadsheet.",
+            "Agility and foresight. Mid-season sowing-date records show that advice is not reaching one district. The insight arrives while sowing is still underway, so the team changes its extension plan before the window closes.",
+            "Impact. At closure the project can offer credible evidence of CIMMYT's contribution to the yield change, alongside rainfall, prices and other factors.",
+            "The framework says each effect reinforces the others. In this season, the evidence made the timely decision possible, the shared system made the evidence visible, and both made the impact claim credible."
+          ]
+        },
+        "microCheck": [
+          "Q103",
+          "Q104"
+        ],
+        "recap": {
+          "bullets": [
+            "Evidence: quality data used to understand progress and demonstrate impact.",
+            "Collaboration: integrated systems connecting science, MEAL, data, KMIT and management. Agility and foresight: high-frequency insights informing decisions during implementation.",
+            "Impact: credible evidence of CIMMYT's contribution to change. Each effect reinforces the others."
+          ],
+          "source": {
+            "section": "1.2",
+            "title": "Four Strategic Effects"
+          }
+        }
+      },
+      "glossary": [
+        "Four strategic effects"
+      ]
+    },
+    {
+      "id": "L1.3",
+      "moduleId": "meal-foundations",
+      "title": "MEAL in CIMMYT's context: science, partners, geographies",
+      "objectiveIds": [
+        "meal-foundations.O3"
+      ],
+      "minutes": 5,
+      "beats": {
+        "hook": "CIMMYT is not an NGO delivering services. It is a research institution with 50+ years of breeding data. So what does MEAL even mean here?",
+        "explainer": {
+          "kind": "storyboard",
+          "storyboardId": "sb-m1-context"
+        },
+        "example": {
+          "kind": "text",
+          "title": "From a breeding line to a Kenyan farm",
+          "body": [
+            "A maize breeding team holds multi-environment trial results for a drought-tolerant line across dozens of sites. A seed company holds sales records for the released variety. A socioeconomics team ran an adoption survey two seasons ago. A development project holds outcome data on yields among its participants.",
+            "Kept apart, each tells a partial story. The line performs in trials. Seed was sold. Some farmers grow it. Some participants gained yield. None of them, alone, shows CIMMYT's contribution to yield gains.",
+            "Connected through common questions, identifiers and quality rules (which variety, which district, which season), they form the chain the framework describes: breeding results to adoption evidence, agronomic performance to farmer-level outcomes, project delivery data to systemic change indicators.",
+            "What becomes possible is listed in section 1.3: credible claims of CIMMYT's contribution to yield gains, food security and resilience; evidence that resonates with investors, governments and scientific peers; learning that improves breeding decisions and delivery strategies; and accountability to farmers and communities as well as investors.",
+            "This is why MEAL at CIMMYT is about scientific contribution to change in agrifood systems, more than about service delivery. The data already exist. The work is to connect them."
+          ]
+        },
+        "microCheck": [
+          "Q105",
+          "Q106"
+        ],
+        "recap": {
+          "bullets": [
+            "CIMMYT: 50+ years of maize and wheat improvement, a genebank with over 180,000 accessions, trial networks in 90+ countries, partnerships with NARS, extension, seed companies, governments and farmers.",
+            "Most of CIMMYT's evidence concerns scientific contribution to change, not service delivery. Its data are a valuable institutional asset that is still underused.",
+            "The framework connects breeding data, adoption evidence, agronomic performance and project outcome data into one evidence base covering CIMMYT's full contribution to change."
+          ],
+          "source": {
+            "section": "1.3",
+            "title": "MEAL in the Context of CIMMYT"
+          }
+        }
+      },
+      "glossary": [
+        "Evidence assets",
+        "Contribution"
+      ]
+    },
+    {
+      "id": "L1.4",
+      "moduleId": "meal-foundations",
+      "title": "The five evidence functions and when each is used",
+      "objectiveIds": [
+        "meal-foundations.O4"
+      ],
+      "minutes": 6,
+      "beats": {
+        "hook": "A survey platform is bought. Six partner totals are added up. A bar chart is sent to the regional lead. Each step felt like MEAL. Each skipped a function.",
+        "explainer": {
+          "kind": "storyboard",
+          "storyboardId": "sb-m1-functions"
+        },
+        "example": {
+          "kind": "interactive",
+          "title": "Which function is this?",
+          "widget": "sorter",
+          "prompt": "Drop each task into the evidence function it belongs to. Ask: is this asking and collecting, cleaning and documenting, linking, interpreting, or putting evidence in front of a user?",
+          "bins": [
+            {
+              "id": "capture",
+              "label": "Capture",
+              "hint": "Identify the question first, then collect the observation-level and contextual data the indicator method requires."
+            },
+            {
+              "id": "qa",
+              "label": "Quality assurance",
+              "hint": "Validate, standardise, de-duplicate and document provenance and quality."
+            },
+            {
+              "id": "integration",
+              "label": "Integration",
+              "hint": "Link records across sources, projects, partners, locations and time. Recompute from eligible records."
+            },
+            {
+              "id": "analysis",
+              "label": "Analysis",
+              "hint": "Apply methods that match the question and the claim. Document uncertainty."
+            },
+            {
+              "id": "use",
+              "label": "Use and visualization",
+              "hint": "Dashboards, maps, briefs and reviews for specific users. The purpose is action."
+            }
+          ],
+          "cards": [
+            {
+              "label": "Write down the question the adoption indicator must answer before choosing a survey tool",
+              "bin": "capture",
+              "why": "Capture starts with the question, then identifies the observations needed. The tool comes after."
+            },
+            {
+              "label": "Import seed-company sales records through the partner's system, as the indicator method allows",
+              "bin": "capture",
+              "why": "Partner systems are one of the capture sources the framework lists, chosen according to the indicator method."
+            },
+            {
+              "label": "Run completeness and range checks on plot records the day they arrive",
+              "bin": "qa",
+              "why": "Completeness and accuracy are two of the six quality controls. Checking them is quality assurance."
+            },
+            {
+              "label": "Remove duplicate farmer entries and record where each entry came from",
+              "bin": "qa",
+              "why": "De-duplication and documenting provenance are named tasks of quality assurance."
+            },
+            {
+              "label": "Check whether the sampled plots represent the whole district they are meant to describe",
+              "bin": "qa",
+              "why": "Representativeness is the sixth quality control. It is checked before the data are used for a wider claim."
+            },
+            {
+              "label": "Link training records to plot records using each farmer's persistent identifier",
+              "bin": "integration",
+              "why": "Linking records across sources with common identifiers is integration."
+            },
+            {
+              "label": "Recompute the adoption figure from eligible records instead of adding up six partner reports",
+              "bin": "integration",
+              "why": "Integration recomputes institutional indicators from underlying records rather than summing project reports."
+            },
+            {
+              "label": "Choose contribution analysis because the claim is about CIMMYT's role in yield change, and state the uncertainty",
+              "bin": "analysis",
+              "why": "Analysis applies the method that matches the question and the claim, and documents uncertainty and limits."
+            },
+            {
+              "label": "Map adoption by district for the regional team's seasonal review",
+              "bin": "use",
+              "why": "A map for a specific user and a specific decision is use and visualization."
+            },
+            {
+              "label": "Prepare a short brief on early uptake for the project's quarterly evidence review",
+              "bin": "use",
+              "why": "Briefs and learning reviews are decision products. Their purpose is action."
+            }
+          ]
+        },
+        "microCheck": [
+          "Q107",
+          "Q108"
+        ],
+        "recap": {
+          "bullets": [
+            "Capture, Quality Assurance, Integration, Analysis, Use and Visualization: a practical sequence for designing and operating MEAL in every project.",
+            "Capture starts with the question. Integration recomputes institutional indicators from eligible records, never by summing project reports. Analysis matches the method to the claim and documents uncertainty.",
+            "The five functions run across all four results levels. They say how evidence is handled; the levels say what it is about."
+          ],
+          "source": {
+            "section": "2.5",
+            "title": "The Five Evidence Functions"
+          }
+        }
+      },
+      "glossary": [
+        "Five evidence functions",
+        "Capture",
+        "Quality assurance",
+        "Integration",
+        "Analysis",
+        "Use and visualization",
+        "Six quality dimensions",
+        "Provenance",
+        "Persistent identifier"
+      ]
+    },
+    {
+      "id": "L1.5",
+      "moduleId": "meal-foundations",
+      "title": "Monitoring, evaluation, accountability, learning: how the four parts depend on each other",
+      "objectiveIds": [
+        "meal-foundations.O5",
+        "meal-foundations.O6"
+      ],
+      "minutes": 4,
+      "beats": {
+        "hook": "Four letters, one system. Take any one part away and the other three stop working. Here is why, and where accountability points.",
+        "explainer": {
+          "kind": "storyboard",
+          "storyboardId": "sb-m1-loop"
+        },
+        "example": {
+          "kind": "text",
+          "title": "One season in a seed systems project in Mexico",
+          "body": [
+            "Monitoring. The project keeps a seed-recipient registry with a persistent identifier for every farmer, runs first-line quality checks and keeps the records current. This is the routine process and output evidence the project team owns.",
+            "Evaluation. A season later, an outcome study asks whether recipients planted the seed and what happened to their yields, with a method matched to the contribution claim. It can link delivery to outcomes only because the registry records who received what, when and where.",
+            "Accountability. The findings travel in four directions: comparable KPI reporting to the investor; disaggregated results returned to the communities concerned; documented methods and FAIR data for scientific peers; and team contributions made visible internally. Being open includes saying when benefits did not occur.",
+            "Learning. The project's evidence review turns the findings into decisions with owners and dates, so the next season's distribution changes while the project is still running, not only at closure.",
+            "Remove one part and the others weaken. Without the registry, the study cannot link delivery to change. Without the study, there is nothing honest to account for. Without the review, nothing changes. That is why the framework treats MEAL as one connected system, and why by 2030 it should be a strategic capability rather than a compliance function."
+          ]
+        },
+        "microCheck": [
+          "Q109",
+          "Q110"
+        ],
+        "recap": {
+          "bullets": [
+            "Accountability is more than submitting reports on time. It runs in four directions: investors and institutional partners; farmers and communities; the scientific community and CGIAR; internal.",
+            "Each direction has different requirements: comparable reporting and harmonised KPIs; farmer-centred, disaggregated evidence fed back to communities; rigour, reproducibility and FAIR data; teams accountable for their outputs and leadership for portfolio results.",
+            "Monitoring, evaluation, accountability and learning depend on each other. By 2030 MEAL should be a strategic institutional capability, not a compliance function."
+          ],
+          "source": {
+            "section": "2.7",
+            "title": "Accountability in Practice"
+          }
+        }
+      },
+      "glossary": [
+        "Four directions of accountability",
+        "Disaggregation",
+        "FAIR data",
+        "Strategic institutional capability"
+      ]
+    }
+  ],
+  "storyboards": [
+    {
+      "id": "sb-m1-hero",
+      "title": "Reports to observations",
+      "frames": [
+        {
+          "id": "f1",
+          "seconds": 6,
+          "narration": "Two projects report the same yield gain. Only one can show the plots behind the number.",
+          "scene": {
+            "kind": "title",
+            "title": "Same yield gain, two reports",
+            "subtitle": "Only one can show the plots."
+          }
+        },
+        {
+          "id": "f2",
+          "seconds": 12,
+          "narration": "Why now? Major investors ask for evidence of impact as well as delivery outputs. Institutions that can show what changed, how, for whom and why will attract funding, influence policy and sustain partnerships.",
+          "scene": {
+            "kind": "cards",
+            "layout": "row",
+            "items": [
+              {
+                "label": "What was delivered",
+                "detail": "Still needed",
+                "tone": "gold"
+              },
+              {
+                "label": "What changed",
+                "tone": "green"
+              },
+              {
+                "label": "How",
+                "tone": "green"
+              },
+              {
+                "label": "For whom",
+                "tone": "green"
+              },
+              {
+                "label": "Why",
+                "tone": "green"
+              }
+            ],
+            "spotlight": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "stamp": "Investors now ask"
+          }
+        },
+        {
+          "id": "f3",
+          "seconds": 22,
+          "narration": "A report can confirm that training took place or that farmers were reached. It cannot by itself show whether practices changed, yields improved or benefits persisted. So the new approach works from observation-level records: farmers, plots, trials, households and institutions.",
+          "scene": {
+            "kind": "dissolve",
+            "from": [
+              "Annual report",
+              "Quarterly update",
+              "Investor template",
+              "Training summary",
+              "Field-day report"
+            ],
+            "to": {
+              "label": "Farmers, plots, trials, households, institutions",
+              "dots": 120
+            }
+          }
+        },
+        {
+          "id": "f4",
+          "seconds": 26,
+          "narration": "Section 1.1 lists five changes in the role of evidence. From reported figures for compliance to data for learning and impact. From silos to integrated systems. From limited analysis to stronger evidence. From compliance reporting to high-frequency insight. From work that is hard to link to strategy, to credible evidence of contribution.",
+          "scene": {
+            "kind": "split",
+            "left": {
+              "title": "FROM: reported figures for compliance",
+              "lines": [
+                "Activities and outputs from aggregated reports",
+                "Siloed information, manual processes",
+                "Limited analysis and aggregation",
+                "Time-consuming compliance reporting",
+                "Hard to link work to strategy"
+              ],
+              "tone": "gold"
+            },
+            "right": {
+              "title": "TO: data for learning and impact",
+              "lines": [
+                "Quality data to understand progress, adapt, demonstrate impact",
+                "Integrated, interoperable, trusted systems",
+                "Stronger analysis, aggregation and evidence",
+                "High-frequency insights for decisions and learning",
+                "Credible evidence of contribution to strategy"
+              ],
+              "tone": "green"
+            },
+            "gap": "Five changes in the role of evidence"
+          }
+        },
+        {
+          "id": "f5",
+          "seconds": 16,
+          "narration": "CIMMYT already produces a large amount of evidence. The task is to connect these sources through common questions, indicators, identifiers and quality rules, so evidence can be reused across projects and aggregated at portfolio and institutional level.",
+          "scene": {
+            "kind": "cards",
+            "layout": "grid",
+            "items": [
+              {
+                "label": "Trials",
+                "tone": "sky"
+              },
+              {
+                "label": "Producer registries",
+                "tone": "sky"
+              },
+              {
+                "label": "Field surveys",
+                "tone": "sky"
+              },
+              {
+                "label": "Research platforms",
+                "tone": "sky"
+              },
+              {
+                "label": "Administrative systems",
+                "tone": "sky"
+              },
+              {
+                "label": "Sensors and satellite imagery",
+                "tone": "sky"
+              },
+              {
+                "label": "Digital tools",
+                "tone": "sky"
+              },
+              {
+                "label": "Partner systems",
+                "tone": "sky"
+              }
+            ],
+            "stamp": "Connect, do not recollect"
+          }
+        },
+        {
+          "id": "f6",
+          "seconds": 10,
+          "narration": "Reporting summaries stay. The objective is to connect them to observation-level data that can be analysed, aggregated and used for learning and impact.",
+          "scene": {
+            "kind": "title",
+            "title": "Reporting summaries stay",
+            "subtitle": "The objective is to connect them to observation-level data that can be analysed, aggregated and used.",
+            "stamp": "§1"
+          }
+        },
+        {
+          "id": "f7",
+          "seconds": 8,
+          "narration": "That is the question the new approach is built to answer: what changed, for whom, where, under what conditions and at what scale.",
+          "scene": {
+            "kind": "title",
+            "title": "What changed, for whom, where, under what conditions, at what scale",
+            "subtitle": "The question the new approach is built to answer."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sb-m1-effects",
+      "title": "The four strategic effects",
+      "frames": [
+        {
+          "id": "f1",
+          "seconds": 10,
+          "narration": "Four institutional effects are expected from the new approach, each reinforcing the others: evidence, collaboration, agility and foresight, and impact.",
+          "scene": {
+            "kind": "cards",
+            "layout": "row",
+            "items": [
+              {
+                "label": "Evidence",
+                "detail": "Quality data to understand progress and demonstrate impact",
+                "tone": "green"
+              },
+              {
+                "label": "Collaboration",
+                "detail": "Integrated systems connecting science, MEAL, data, KMIT, management",
+                "tone": "sky"
+              },
+              {
+                "label": "Agility and foresight",
+                "detail": "High-frequency insights during implementation",
+                "tone": "gold"
+              },
+              {
+                "label": "Impact",
+                "detail": "Credible evidence of CIMMYT's contribution to change",
+                "tone": "green"
+              }
+            ]
+          }
+        },
+        {
+          "id": "f2",
+          "seconds": 10,
+          "narration": "Evidence: quality data used to understand progress and demonstrate impact. Not figures compiled for compliance.",
+          "scene": {
+            "kind": "cards",
+            "layout": "row",
+            "items": [
+              {
+                "label": "Evidence",
+                "detail": "Quality data to understand progress and demonstrate impact",
+                "tone": "green"
+              },
+              {
+                "label": "Collaboration",
+                "detail": "Integrated systems connecting science, MEAL, data, KMIT, management",
+                "tone": "sky"
+              },
+              {
+                "label": "Agility and foresight",
+                "detail": "High-frequency insights during implementation",
+                "tone": "gold"
+              },
+              {
+                "label": "Impact",
+                "detail": "Credible evidence of CIMMYT's contribution to change",
+                "tone": "green"
+              }
+            ],
+            "spotlight": [
+              0
+            ]
+          }
+        },
+        {
+          "id": "f3",
+          "seconds": 10,
+          "narration": "Collaboration: integrated systems connecting science, MEAL, data, KMIT and management. One shared system instead of five silos.",
+          "scene": {
+            "kind": "cards",
+            "layout": "row",
+            "items": [
+              {
+                "label": "Evidence",
+                "detail": "Quality data to understand progress and demonstrate impact",
+                "tone": "green"
+              },
+              {
+                "label": "Collaboration",
+                "detail": "Integrated systems connecting science, MEAL, data, KMIT, management",
+                "tone": "sky"
+              },
+              {
+                "label": "Agility and foresight",
+                "detail": "High-frequency insights during implementation",
+                "tone": "gold"
+              },
+              {
+                "label": "Impact",
+                "detail": "Credible evidence of CIMMYT's contribution to change",
+                "tone": "green"
+              }
+            ],
+            "spotlight": [
+              1
+            ]
+          }
+        },
+        {
+          "id": "f4",
+          "seconds": 10,
+          "narration": "Agility and foresight: high-frequency insights informing decisions during implementation, not only at closure.",
+          "scene": {
+            "kind": "cards",
+            "layout": "row",
+            "items": [
+              {
+                "label": "Evidence",
+                "detail": "Quality data to understand progress and demonstrate impact",
+                "tone": "green"
+              },
+              {
+                "label": "Collaboration",
+                "detail": "Integrated systems connecting science, MEAL, data, KMIT, management",
+                "tone": "sky"
+              },
+              {
+                "label": "Agility and foresight",
+                "detail": "High-frequency insights during implementation",
+                "tone": "gold"
+              },
+              {
+                "label": "Impact",
+                "detail": "Credible evidence of CIMMYT's contribution to change",
+                "tone": "green"
+              }
+            ],
+            "spotlight": [
+              2
+            ]
+          }
+        },
+        {
+          "id": "f5",
+          "seconds": 10,
+          "narration": "Impact: credible evidence of CIMMYT's contribution to change. Each effect reinforces the others.",
+          "scene": {
+            "kind": "cards",
+            "layout": "row",
+            "items": [
+              {
+                "label": "Evidence",
+                "detail": "Quality data to understand progress and demonstrate impact",
+                "tone": "green"
+              },
+              {
+                "label": "Collaboration",
+                "detail": "Integrated systems connecting science, MEAL, data, KMIT, management",
+                "tone": "sky"
+              },
+              {
+                "label": "Agility and foresight",
+                "detail": "High-frequency insights during implementation",
+                "tone": "gold"
+              },
+              {
+                "label": "Impact",
+                "detail": "Credible evidence of CIMMYT's contribution to change",
+                "tone": "green"
+              }
+            ],
+            "spotlight": [
+              3
+            ],
+            "stamp": "Each reinforcing the others"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sb-m1-context",
+      "title": "MEAL in CIMMYT's context",
+      "frames": [
+        {
+          "id": "f1",
+          "seconds": 10,
+          "narration": "CIMMYT is a global agricultural research institution: 50 plus years of maize and wheat improvement, a genebank conserving over 180,000 seed accessions, trial networks in more than 90 countries, and partnerships across the Global South.",
+          "scene": {
+            "kind": "counter",
+            "items": [
+              {
+                "label": "Years of maize and wheat improvement",
+                "value": 50,
+                "suffix": "+",
+                "tone": "green"
+              },
+              {
+                "label": "Seed accessions conserved",
+                "value": 180000,
+                "prefix": "over ",
+                "tone": "gold"
+              },
+              {
+                "label": "Countries with trial networks",
+                "value": 90,
+                "suffix": "+",
+                "tone": "sky"
+              }
+            ],
+            "note": "Partnerships with NARS, extension services, seed companies, governments and farmers"
+          }
+        },
+        {
+          "id": "f2",
+          "seconds": 12,
+          "narration": "This shapes what MEAL means here. Most of the evidence CIMMYT produces concerns scientific contribution to change in agrifood systems, more than service delivery. Its data are a valuable institutional asset, still underused.",
+          "scene": {
+            "kind": "split",
+            "left": {
+              "title": "Service delivery",
+              "lines": [
+                "Farmers reached",
+                "Trainings held",
+                "Seed distributed"
+              ],
+              "tone": "gold"
+            },
+            "right": {
+              "title": "Scientific contribution to change",
+              "lines": [
+                "Multi-environment trial results",
+                "Adoption surveys",
+                "Genomic data",
+                "Remote sensing",
+                "Agronomic and socioeconomic datasets"
+              ],
+              "tone": "green"
+            },
+            "gap": "Most of CIMMYT's evidence sits on the right"
+          }
+        },
+        {
+          "id": "f3",
+          "seconds": 16,
+          "narration": "The framework connects breeding data from scientists, adoption evidence from socioeconomics teams, agronomic performance data from field programs and outcome data from development projects. Together they form one evidence base.",
+          "scene": {
+            "kind": "chain",
+            "steps": [
+              {
+                "label": "Breeding data",
+                "detail": "CIMMYT scientists",
+                "tone": "sky"
+              },
+              {
+                "label": "Adoption evidence",
+                "detail": "Socioeconomics teams",
+                "tone": "gold"
+              },
+              {
+                "label": "Agronomic performance",
+                "detail": "Field programs",
+                "tone": "gold"
+              },
+              {
+                "label": "Outcome data",
+                "detail": "Development projects",
+                "tone": "green"
+              }
+            ],
+            "traveler": true,
+            "stamp": "One evidence base"
+          }
+        },
+        {
+          "id": "f4",
+          "seconds": 14,
+          "narration": "What becomes possible: credible claims of contribution to yield gains, food security and resilience. Evidence that resonates with investors, governments and scientific peers. Learning that improves breeding and delivery decisions. Accountability to farmers and communities as well as investors.",
+          "scene": {
+            "kind": "fan",
+            "source": "One evidence base",
+            "branches": [
+              {
+                "label": "Credible contribution claims",
+                "detail": "Yield gains, food security, resilience"
+              },
+              {
+                "label": "Evidence that resonates",
+                "detail": "Investors, governments, scientific peers"
+              },
+              {
+                "label": "Learning",
+                "detail": "Better breeding and delivery decisions"
+              },
+              {
+                "label": "Accountability",
+                "detail": "To farmers and communities as well as investors"
+              }
+            ],
+            "target": "CIMMYT's full contribution to change"
+          }
+        },
+        {
+          "id": "f5",
+          "seconds": 8,
+          "narration": "Scientific contribution, not service delivery. The data already exist. The work is to connect what CIMMYT already measures.",
+          "scene": {
+            "kind": "title",
+            "title": "Scientific contribution, not service delivery",
+            "subtitle": "Connect what CIMMYT already measures.",
+            "stamp": "§1.3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sb-m1-functions",
+      "title": "The five evidence functions",
+      "frames": [
+        {
+          "id": "f1",
+          "seconds": 14,
+          "narration": "Five functions run across the results pyramid, at every level from processes to impact. They are a practical sequence for designing and operating MEAL in every project: capture, quality assurance, integration, analysis, use and visualization.",
+          "scene": {
+            "kind": "chain",
+            "steps": [
+              {
+                "label": "Capture",
+                "detail": "Question first, then data",
+                "tone": "sky"
+              },
+              {
+                "label": "Quality assurance",
+                "detail": "Validate, de-duplicate, document",
+                "tone": "sky"
+              },
+              {
+                "label": "Integration",
+                "detail": "Link with common identifiers",
+                "tone": "gold"
+              },
+              {
+                "label": "Analysis",
+                "detail": "Method matches the claim",
+                "tone": "gold"
+              },
+              {
+                "label": "Use and visualization",
+                "detail": "Products for action",
+                "tone": "green"
+              }
+            ],
+            "traveler": true
+          }
+        },
+        {
+          "id": "f2",
+          "seconds": 12,
+          "narration": "Capture. Identify the question first, then capture the observation-level and contextual data needed to answer it. The indicator method decides the source: field measurement, digital records, partner systems, remote sensing or secondary sources.",
+          "scene": {
+            "kind": "chain",
+            "steps": [
+              {
+                "label": "Capture",
+                "detail": "Question first, then data",
+                "tone": "sky"
+              },
+              {
+                "label": "Quality assurance",
+                "detail": "Validate, de-duplicate, document",
+                "tone": "sky"
+              },
+              {
+                "label": "Integration",
+                "detail": "Link with common identifiers",
+                "tone": "gold"
+              },
+              {
+                "label": "Analysis",
+                "detail": "Method matches the claim",
+                "tone": "gold"
+              },
+              {
+                "label": "Use and visualization",
+                "detail": "Products for action",
+                "tone": "green"
+              }
+            ],
+            "spotlight": 0,
+            "stamp": "Question first"
+          }
+        },
+        {
+          "id": "f3",
+          "seconds": 12,
+          "narration": "Quality assurance. Validate, standardise, de-duplicate and document provenance and quality. The controls cover completeness, accuracy, consistency, timeliness, uniqueness and representativeness.",
+          "scene": {
+            "kind": "chain",
+            "steps": [
+              {
+                "label": "Capture",
+                "detail": "Question first, then data",
+                "tone": "sky"
+              },
+              {
+                "label": "Quality assurance",
+                "detail": "Six controls",
+                "tone": "sky"
+              },
+              {
+                "label": "Integration",
+                "detail": "Link with common identifiers",
+                "tone": "gold"
+              },
+              {
+                "label": "Analysis",
+                "detail": "Method matches the claim",
+                "tone": "gold"
+              },
+              {
+                "label": "Use and visualization",
+                "detail": "Products for action",
+                "tone": "green"
+              }
+            ],
+            "spotlight": 1,
+            "stamp": "Completeness, accuracy, consistency, timeliness, uniqueness, representativeness"
+          }
+        },
+        {
+          "id": "f4",
+          "seconds": 12,
+          "narration": "Integration. Link records across sources, projects, partners, locations and time with common identifiers and controlled vocabularies. Recompute institutional indicators from the underlying eligible records rather than summing project reports.",
+          "scene": {
+            "kind": "chain",
+            "steps": [
+              {
+                "label": "Capture",
+                "detail": "Question first, then data",
+                "tone": "sky"
+              },
+              {
+                "label": "Quality assurance",
+                "detail": "Validate, de-duplicate, document",
+                "tone": "sky"
+              },
+              {
+                "label": "Integration",
+                "detail": "Recompute from records",
+                "tone": "gold"
+              },
+              {
+                "label": "Analysis",
+                "detail": "Method matches the claim",
+                "tone": "gold"
+              },
+              {
+                "label": "Use and visualization",
+                "detail": "Products for action",
+                "tone": "green"
+              }
+            ],
+            "spotlight": 2,
+            "stamp": "Recompute, do not sum"
+          }
+        },
+        {
+          "id": "f5",
+          "seconds": 14,
+          "narration": "Analysis applies methods that match the question and the claim, and documents uncertainty and limits. Use and visualization turns evidence into dashboards, maps, briefs and learning reviews for specific users. The purpose is action.",
+          "scene": {
+            "kind": "chain",
+            "steps": [
+              {
+                "label": "Capture",
+                "detail": "Question first, then data",
+                "tone": "sky"
+              },
+              {
+                "label": "Quality assurance",
+                "detail": "Validate, de-duplicate, document",
+                "tone": "sky"
+              },
+              {
+                "label": "Integration",
+                "detail": "Link with common identifiers",
+                "tone": "gold"
+              },
+              {
+                "label": "Analysis",
+                "detail": "Document uncertainty",
+                "tone": "gold"
+              },
+              {
+                "label": "Use and visualization",
+                "detail": "Adaptation, accountability, strategy, impact",
+                "tone": "green"
+              }
+            ],
+            "spotlight": 4,
+            "stamp": "The purpose is action"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sb-m1-loop",
+      "title": "Four parts, one system",
+      "frames": [
+        {
+          "id": "f1",
+          "seconds": 12,
+          "narration": "MEAL is four connected parts. Monitoring keeps routine records of processes and outputs. Evaluation answers whether outcomes occurred and what CIMMYT contributed. Accountability is being open about what works and what does not. Learning turns evidence into adaptation.",
+          "scene": {
+            "kind": "loop",
+            "steps": [
+              {
+                "label": "Monitoring",
+                "detail": "Routine process and output records"
+              },
+              {
+                "label": "Evaluation",
+                "detail": "Outcomes, impact, contribution"
+              },
+              {
+                "label": "Accountability",
+                "detail": "Open about what works and what does not"
+              },
+              {
+                "label": "Learning",
+                "detail": "Adapt during implementation"
+              }
+            ]
+          }
+        },
+        {
+          "id": "f2",
+          "seconds": 14,
+          "narration": "Accountability runs in four directions, each with different requirements: to investors and institutional partners, to farmers and communities, to the scientific community and CGIAR, and internally.",
+          "scene": {
+            "kind": "compass",
+            "directions": [
+              {
+                "label": "Investors and institutional partners",
+                "detail": "Transparent, timely, comparable reporting"
+              },
+              {
+                "label": "Farmers and communities",
+                "detail": "Real benefits shown, disaggregated, fed back"
+              },
+              {
+                "label": "Scientific community and CGIAR",
+                "detail": "Rigour, reproducibility, FAIR data"
+              },
+              {
+                "label": "Internal",
+                "detail": "Teams own their outputs, leadership owns portfolio results"
+              }
+            ],
+            "active": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "id": "f3",
+          "seconds": 12,
+          "narration": "Remove one part and the others weaken. Without traceable monitoring records, evaluation cannot link delivery to change. Without evaluation, accountability has nothing honest to say. Without learning, nothing changes next season.",
+          "scene": {
+            "kind": "loop",
+            "steps": [
+              {
+                "label": "Monitoring",
+                "detail": "Routine process and output records"
+              },
+              {
+                "label": "Evaluation",
+                "detail": "Outcomes, impact, contribution"
+              },
+              {
+                "label": "Accountability",
+                "detail": "Open about what works and what does not"
+              },
+              {
+                "label": "Learning",
+                "detail": "Adapt during implementation"
+              }
+            ],
+            "active": 3,
+            "log": "No records: evaluation cannot link delivery to change. No evaluation: nothing honest to account for. No review: nothing changes next season."
+          }
+        },
+        {
+          "id": "f4",
+          "seconds": 8,
+          "narration": "By 2030, MEAL will no longer be perceived as a compliance function. It will be a strategic institutional capability.",
+          "scene": {
+            "kind": "title",
+            "title": "Not a compliance function",
+            "subtitle": "A strategic institutional capability by 2030.",
+            "stamp": "§6"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2484 @@
+{
+  "module": {
+    "id": "kpis-measurement",
+    "order": 4,
+    "title": "KPIs & measurement",
+    "short": "KPIs",
+    "minutes": 40,
+    "sections": [
+      "3",
+      "3.1",
+      "3.2",
+      "3.3",
+      "5.3"
+    ],
+    "assessed": true,
+    "prerequisites": [
+      "results-framework"
+    ],
+    "scenario": {
+      "title": "Three yields, one number",
+      "intro": "Three projects report yield for the same institutional KPI. In Kenya a maize team runs crop cuts on farmers' plots. In Ethiopia a trial team harvests net plots under a station protocol. In South Asia a wheat team estimates yield from a regional model built on trial and farm data. All three report tons per hectare. Now the annual KPI run needs one institutional figure, and someone has to produce it without pretending the three numbers are the same thing. This module shows you how the Toolbox makes that possible.",
+      "persona": [
+        "meal-specialist",
+        "scientist",
+        "project-lead",
+        "field-officer"
+      ]
+    },
+    "objectives": [
+      {
+        "id": "kpis-measurement.O1",
+        "text": "Describe the KPI Toolbox: 142 indicators in 13 volumes, ten impact and three enabling pathways, the three Thrusts, and the cross-cutting role of Volume 1.",
+        "bloom": "remember"
+      },
+      {
+        "id": "kpis-measurement.O2",
+        "text": "Explain why one KPI can have several valid measurement levels and methods, and what harmonisation does and does not require.",
+        "bloom": "understand"
+      },
+      {
+        "id": "kpis-measurement.O3",
+        "text": "Apply the aggregation rule: recompute institutional values from eligible records with the indicator's method and report them with coverage, uncertainty, provenance and method quality, never as an unqualified sum of project totals.",
+        "bloom": "apply"
+      },
+      {
+        "id": "kpis-measurement.O4",
+        "text": "Distinguish setting a local scope from silently redefining an institutional KPI, and route proposed KPI changes through MEAL review.",
+        "bloom": "apply"
+      },
+      {
+        "id": "kpis-measurement.O5",
+        "text": "Read a KPI reference sheet, name the fields it defines, and interpret a quality rating the way a reviewer would.",
+        "bloom": "analyse"
+      },
+      {
+        "id": "kpis-measurement.O6",
+        "text": "Connect observation-level data to a decision-relevant question and explain why a sum of reported numbers cannot answer what CIMMYT contributed to yield change in Kenya.",
+        "bloom": "analyse"
+      }
+    ],
+    "lessons": [
+      {
+        "id": "L4.1",
+        "moduleId": "kpis-measurement",
+        "title": "The KPI toolbox: volumes, thrusts and the 142",
+        "objectiveIds": [
+          "kpis-measurement.O1"
+        ],
+        "minutes": 5,
+        "beats": {
+          "hook": "Before three projects can agree on one yield figure, they need to agree on which indicator they are reporting. That is what the KPI Toolbox is for.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m4-toolbox"
+          },
+          "example": {
+            "kind": "interactive",
+            "title": "Sort the 13 volumes into their Thrusts",
+            "widget": "sorter",
+            "prompt": "Each Toolbox volume covers one pathway. Drop each volume into the Thrust it reports under, or into the enabling group if it measures how CIMMYT itself performs. One volume is cross-cutting.",
+            "bins": [
+              {
+                "id": "hw",
+                "label": "Human Wellbeing",
+                "hint": "Impact pathways about people's productivity, income, seed and inclusion."
+              },
+              {
+                "id": "ph",
+                "label": "Planetary Health",
+                "hint": "Impact pathways about climate, resilience and environment."
+              },
+              {
+                "id": "peace",
+                "label": "Peace",
+                "hint": "Impact pathways about food security, institutions, policy and markets."
+              },
+              {
+                "id": "enabling",
+                "label": "Institutional enabler",
+                "hint": "Enabling pathways: how CIMMYT itself performs. Reported alongside the Thrusts."
+              },
+              {
+                "id": "cross",
+                "label": "Cross-cutting",
+                "hint": "Applies across all three Thrusts."
+              }
+            ],
+            "cards": [
+              {
+                "label": "Vol. 1 Innovation development and scaling (15 KPIs)",
+                "bin": "cross",
+                "why": "Volume 1 applies across all three Thrusts because innovations and partnerships feed every pathway."
+              },
+              {
+                "label": "Vol. 2 Capacity, data and institutions (10 KPIs)",
+                "bin": "peace",
+                "why": "The volume table places capacity, data and institutions under Peace."
+              },
+              {
+                "label": "Vol. 3 Nutrition and food security (12 KPIs)",
+                "bin": "peace",
+                "why": "Nutrition and food security sits under Peace in the volume table."
+              },
+              {
+                "label": "Vol. 4 Genetic resources, breeding and seed systems (11 KPIs)",
+                "bin": "hw",
+                "why": "Breeding and seed systems are reported under Human Wellbeing."
+              },
+              {
+                "label": "Vol. 5 Income and livelihoods (9 KPIs)",
+                "bin": "hw",
+                "why": "Income and livelihoods are reported under Human Wellbeing."
+              },
+              {
+                "label": "Vol. 6 Resilience and climate adaptation (9 KPIs)",
+                "bin": "ph",
+                "why": "Resilience and climate adaptation sits under Planetary Health."
+              },
+              {
+                "label": "Vol. 7 Productivity (8 KPIs)",
+                "bin": "hw",
+                "why": "Productivity is reported under Human Wellbeing. Yield KPIs live here."
+              },
+              {
+                "label": "Vol. 8 Gender equality, youth and social inclusion (10 KPIs)",
+                "bin": "hw",
+                "why": "Gender, youth and social inclusion are reported under Human Wellbeing."
+              },
+              {
+                "label": "Vol. 9 Environmental sustainability (13 KPIs)",
+                "bin": "ph",
+                "why": "Environmental sustainability sits under Planetary Health."
+              },
+              {
+                "label": "Vol. 10 Policy, finance and market systems (16 KPIs)",
+                "bin": "peace",
+                "why": "Policy, finance and market systems are reported under Peace."
+              },
+              {
+                "label": "Vol. 11 Institutional performance and operations (16 KPIs)",
+                "bin": "enabling",
+                "why": "An enabling pathway. It measures how CIMMYT performs and is reported alongside the Thrusts, not under one of them."
+              },
+              {
+                "label": "Vol. 12 Workforce and talent (5 KPIs)",
+                "bin": "enabling",
+                "why": "Workforce and talent is one of the three enabling volumes."
+              },
+              {
+                "label": "Vol. 13 Resource mobilization and donor relations (8 KPIs)",
+                "bin": "enabling",
+                "why": "Resource mobilization is an enabling volume, reported as institutional performance."
+              }
+            ]
+          },
+          "microCheck": [
+            "Q191",
+            "Q192"
+          ],
+          "recap": {
+            "bullets": [
+              "The Toolbox holds 142 indicators in 13 volumes: ten impact pathways and three enabling pathways.",
+              "Impact volumes are grouped under three Thrusts, Human Wellbeing, Planetary Health and Peace, the top level for institutional aggregation and reporting.",
+              "Volume 1 is cross-cutting. The three enabling volumes are reported alongside the Thrusts as institutional performance."
+            ],
+            "source": {
+              "section": "3.1",
+              "title": "KPI Toolbox: Volumes and Thrusts"
+            }
+          }
+        },
+        "glossary": [
+          "KPI Toolbox",
+          "Thrust",
+          "Institutional KPI"
+        ]
+      },
+      {
+        "id": "L4.2",
+        "moduleId": "kpis-measurement",
+        "title": "One KPI, many valid methods: the yield example",
+        "objectiveIds": [
+          "kpis-measurement.O2"
+        ],
+        "minutes": 6,
+        "beats": {
+          "hook": "Crop cuts in Kenya, net-plot harvests in Ethiopia, a regional model in South Asia. Same KPI, three methods. Is that a problem, or is that the design?",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m4-hero"
+          },
+          "example": {
+            "kind": "text",
+            "title": "Three teams, one yield KPI",
+            "body": [
+              "The Kenyan maize team measures at farm and plot level. The reference sheet lets them choose direct measurement, crop cuts or a farmer survey. The standard is to use the most reliable method feasible in context, document the method used and assign a quality rating. They choose crop cuts on sampled plots, record that choice, and their records carry a rating in the high-to-medium range that the farm level allows.",
+              "The Ethiopian trial team measures at trial and station level. Here the standards are tighter: yield is measured on the net plot, adjusted to a standard moisture (the framework's example is 12.5% for maize), with a minimum plot size and number of repetitions. Controlled protocols earn a high rating.",
+              "The South Asian wheat team works at region and country level. Their figure is aggregated from multiple trials and farm records, with modelling or spatial interpolation where needed. Their standards are to define inclusion criteria, weight by area or representativeness, and report uncertainty bounds. The rating is variable, so they document coverage and method quality.",
+              "None of the three is doing it wrong. Harmonisation does not require every project to measure the same thing in the same way. It requires that, when they measure the same concept, they share a definition, a methodological logic and rules that allow interpretation and, where valid, aggregation. The yield KPI gives each team the method suited to the decision at hand, and the rules for bringing the results together."
+            ]
+          },
+          "microCheck": [
+            "Q193",
+            "Q194"
+          ],
+          "recap": {
+            "bullets": [
+              "A common KPI does not imply one method everywhere. Each measurement level has its own valid methods, key standards and quality rating.",
+              "Harmonisation means a shared definition, methodological logic and interpretation rules, not identical instruments.",
+              "Document the method and the rating with every record. That is what lets the levels reconverge later."
+            ],
+            "source": {
+              "section": "3.2",
+              "title": "One KPI, Multiple Valid Measurement Levels"
+            }
+          }
+        },
+        "glossary": [
+          "KPI harmonisation",
+          "Measurement level",
+          "Quality rating"
+        ]
+      },
+      {
+        "id": "L4.3",
+        "moduleId": "kpis-measurement",
+        "title": "Aggregation: from plots to institutional totals without double counting",
+        "objectiveIds": [
+          "kpis-measurement.O3"
+        ],
+        "minutes": 6,
+        "beats": {
+          "hook": "Three project figures sit in a spreadsheet. The quickest institutional number is the sum. It is also the one number the framework forbids.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m4-aggregate"
+          },
+          "example": {
+            "kind": "interactive",
+            "title": "Allowed or not allowed?",
+            "widget": "sorter",
+            "prompt": "Section 3.3 sets how institutional values are produced. Sort each practice into allowed or not allowed.",
+            "bins": [
+              {
+                "id": "ok",
+                "label": "Allowed under 3.3",
+                "hint": "Recomputed from eligible records with the indicator's method, reported with its qualifiers."
+              },
+              {
+                "id": "no",
+                "label": "Not allowed",
+                "hint": "Shortcuts that lose eligibility, overlap, weighting or uncertainty."
+              }
+            ],
+            "cards": [
+              {
+                "label": "De-duplicate farmers who appear in two projects' lists using persistent identifiers",
+                "bin": "ok",
+                "why": "De-duplication is one of the methods section 3.3 names, and persistent identifiers exist to prevent double counting."
+              },
+              {
+                "label": "Weight farm records by area or representativeness before combining them",
+                "bin": "ok",
+                "why": "Weighting is a named aggregation method, and the regional yield standard says to weight by area or representativeness."
+              },
+              {
+                "label": "Add the three project yield figures and report the sum as the institutional value",
+                "bin": "no",
+                "why": "An unqualified sum of project totals is exactly what the framework rules out."
+              },
+              {
+                "label": "Pool the eligible microdata and recompute with the indicator's method",
+                "bin": "ok",
+                "why": "Institutional values are recomputed from eligible underlying records. Pooling microdata is a named method."
+              },
+              {
+                "label": "Average the three project figures without checking units or populations",
+                "bin": "no",
+                "why": "An average of totals is still a shortcut over the records. It ignores eligibility, weighting and overlap."
+              },
+              {
+                "label": "Report the value with its coverage, uncertainty, provenance and method quality",
+                "bin": "ok",
+                "why": "These four qualifiers travel with every institutional result."
+              },
+              {
+                "label": "Drop the uncertainty bound so the dashboard shows one clean number",
+                "bin": "no",
+                "why": "Uncertainty is part of the reported result, not an optional footnote."
+              },
+              {
+                "label": "Triangulate with compatible secondary sources under documented rules",
+                "bin": "ok",
+                "why": "Triangulation with compatible secondary sources is listed in 3.3, subject to the triangulation rule in 2.6."
+              },
+              {
+                "label": "Include records whose method was never documented, to raise coverage",
+                "bin": "no",
+                "why": "Only eligible records enter the calculation. A record without a documented method cannot be rated or judged eligible."
+              },
+              {
+                "label": "Roll the recomputed results up by KPI volume and then by Thrust",
+                "bin": "ok",
+                "why": "That is the roll-up order section 3.3 describes."
+              }
+            ]
+          },
+          "microCheck": [
+            "Q195",
+            "Q196"
+          ],
+          "recap": {
+            "bullets": [
+              "Institutional values are recomputed from eligible underlying records using the method defined for the indicator.",
+              "Depending on the KPI that may mean de-duplication, weighting, pooling, extrapolation, spatial interpolation, modelling, meta-analysis or triangulation.",
+              "The result carries coverage, uncertainty, provenance and method quality. It is never an unqualified sum of project totals."
+            ],
+            "source": {
+              "section": "3.3",
+              "title": "From Observation-Level Data to Decision-Relevant Insights"
+            }
+          }
+        },
+        "glossary": [
+          "Aggregation",
+          "Persistent identifier",
+          "KPI engine",
+          "Representativeness"
+        ]
+      },
+      {
+        "id": "L4.4",
+        "moduleId": "kpis-measurement",
+        "title": "Harmonisation and local scope",
+        "objectiveIds": [
+          "kpis-measurement.O4"
+        ],
+        "minutes": 5,
+        "beats": {
+          "hook": "The Kenyan team only works on irrigated plots in two counties. The investor wants seed recipients counted as adopters. One of these is fine. One of these is not.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m4-scope"
+          },
+          "example": {
+            "kind": "text",
+            "title": "Scope you may set, meaning you may not change",
+            "body": [
+              "Local scope. The Kenyan maize team applies the institutional yield KPI to irrigated plots in two counties, in the main season only. It writes that scope into its measurement plan and its crosswalk. The concept, unit of observation, valid method and calculation rule are untouched. When the KPI engine recomputes the institutional value, the Kenyan records enter with their scope attached. That is what section 3.2 allows: projects may specify their local scope.",
+              "Silent redefinition. The same team's investor template counts any farmer who received seed as an adopter. If the team quietly reports seed recipients under the institutional adoption KPI label, the meaning of the indicator has changed while its name has not. Anyone combining it with other projects' adoption records will be adding two different things. That is what 3.2 forbids: projects do not silently redefine the institutional indicator.",
+              "The right move is the one you met in the crosswalk lesson. Keep the institutional definition. Report the investor measure separately from the same registry, with the difference noted.",
+              "And if a team believes the institutional definition itself is wrong for its context? Governance rule 1 in section 5.3 applies. No existing KPI is redefined, and no new institutional KPI is added, without review by the MEAL team. Projects can add project-specific indicators, but these are not reported as institutional KPIs until the Design, Standards & Enablement pillar has reviewed and approved them. Approved changes are published in a new version of the MEAL Handbook. A label in a dashboard is not an approval."
+            ]
+          },
+          "microCheck": [
+            "Q197",
+            "Q198"
+          ],
+          "recap": {
+            "bullets": [
+              "Local scope says where and for whom the KPI applies in your project. It leaves the concept, unit, method and calculation intact.",
+              "Silent redefinition changes what the indicator means while keeping its label. It breaks comparability across projects.",
+              "Changes to an institutional KPI go through MEAL review and a new Handbook version. Project-specific indicators stay project-specific until approved."
+            ],
+            "source": {
+              "section": "5.3",
+              "title": "Governance"
+            }
+          }
+        },
+        "glossary": [
+          "Local scope",
+          "Institutional KPI",
+          "Indicator crosswalk",
+          "KPI harmonisation"
+        ]
+      },
+      {
+        "id": "L4.5",
+        "moduleId": "kpis-measurement",
+        "title": "Reading a KPI reference sheet",
+        "objectiveIds": [
+          "kpis-measurement.O5"
+        ],
+        "minutes": 5,
+        "beats": {
+          "hook": "A KPI name and a target tell you what to report. The reference sheet tells you how to measure it so that the number can be trusted and combined.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m4-sheet"
+          },
+          "example": {
+            "kind": "text",
+            "title": "Nine things the sheet defines, and what you do with each",
+            "body": [
+              "For every KPI, CIMMYT defines the concept, the unit of observation, the data sources, the valid methods by measurement level, the calculation and aggregation rules, the disaggregation, the quality assurance requirements and the data provenance. Each volume of the Toolbox contains full reference sheets. The course does not reproduce the 142 sheets, so this lesson teaches you how to read one, not what any particular sheet says.",
+              "When the Kenyan Focal Point writes the measurement plan row for yield, the sheet supplies most of the answers. Unit of observation: from the sheet. Source and valid method: from the valid methods by measurement level, choosing the farm and plot row. Disaggregation: from the sheet. What the project adds is its local scope, its frequency, its coverage, its owner and its timing.",
+              "When a Regional MEAL Lead reviews that row, the sheet is the checklist. Is the method one the sheet lists for that level? Does the plan meet the key standards for that level? Will the records carry the disaggregation and provenance the sheet requires, so the central recomputation can use them?",
+              "When the data system builds a form, it builds it from the reference sheet too. That is why section 4.1 says forms are built from the KPI reference sheets. Sheet, plan row, form and KPI engine all read from the same definition. Change the sheet and everything downstream changes with it, which is why a redefinition needs MEAL review."
+            ]
+          },
+          "microCheck": [
+            "Q199"
+          ],
+          "recap": {
+            "bullets": [
+              "A reference sheet defines concept, unit of observation, data sources, valid methods by level, calculation and aggregation rules, disaggregation, quality assurance requirements and provenance.",
+              "The sheet supplies the fixed parts of a measurement plan row. The project adds scope, frequency, coverage, owner and timing.",
+              "Forms, plan rows and the KPI engine all read from the same sheet. That is what makes evidence comparable and reusable."
+            ],
+            "source": {
+              "section": "3.2",
+              "title": "One KPI, Multiple Valid Measurement Levels"
+            }
+          }
+        },
+        "glossary": [
+          "KPI reference sheet",
+          "Measurement plan",
+          "Disaggregation",
+          "Provenance"
+        ]
+      },
+      {
+        "id": "L4.6",
+        "moduleId": "kpis-measurement",
+        "title": "Quality ratings and what they tell a reviewer",
+        "objectiveIds": [
+          "kpis-measurement.O5"
+        ],
+        "minutes": 4,
+        "beats": {
+          "hook": "Two yield records, both in tons per hectare, both from Kenya. One came from a crop cut, one from a farmer's recollection. The rating is how the difference survives into the database.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m4-rating"
+          },
+          "example": {
+            "kind": "text",
+            "title": "Three ratings, one regional estimate",
+            "body": [
+              "The yield example in section 3.2 gives each measurement level a rating band. Farm and plot: high to medium, depending on the method. Trial and station: high, because of controlled protocols. Region and country: variable, so coverage and method quality must be documented.",
+              "A reviewer reads the rating as a statement about reliability given the method, not as a grade for the team. A medium rating on a farmer survey is an honest record. A missing rating is the problem, because a record with no documented method cannot be judged eligible, weighted sensibly or interpreted later.",
+              "When the South Asian wheat team builds its regional estimate from high-rated trial records and medium-rated farm records, the estimate does not inherit the best rating in the set, and it does not throw the farm records away. It documents its coverage and method quality, and each underlying record keeps its own method and rating, so the figure can be recalculated when methods improve.",
+              "The standard at farm level is the most reliable method feasible in context. Feasible is doing real work in that sentence. A crop cut on every plot in a county may not be feasible. A documented, rated survey is better than an undocumented crop cut."
+            ]
+          },
+          "microCheck": [
+            "Q200"
+          ],
+          "recap": {
+            "bullets": [
+              "Farm and plot methods rate high to medium depending on method. Trial protocols rate high. Regional estimates are variable and must document coverage and method quality.",
+              "A rating describes reliability given the method. Record the method and the rating with every observation.",
+              "Aggregates do not inherit the best rating in the set. Each record keeps its own rating so the figure can be recalculated."
+            ],
+            "source": {
+              "section": "3.2",
+              "title": "One KPI, Multiple Valid Measurement Levels"
+            }
+          }
+        },
+        "glossary": [
+          "Quality rating",
+          "Measurement level",
+          "Provenance"
+        ]
+      },
+      {
+        "id": "L4.7",
+        "moduleId": "kpis-measurement",
+        "title": "From observation-level data to decision-relevant insight",
+        "objectiveIds": [
+          "kpis-measurement.O6"
+        ],
+        "minutes": 4,
+        "beats": {
+          "hook": "Leadership asks a simple question: what has CIMMYT contributed to yield change in Kenya? Three project totals cannot answer it. Here is what can.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m4-insight"
+          },
+          "example": {
+            "kind": "text",
+            "title": "The Kenya yield question",
+            "body": [
+              "Section 3.3 uses this exact question as its example. Answering it needs contribution or attribution analysis against a credible counterfactual, agronomic, socioeconomic and climate modelling, adoption data and geospatial assessment. A sum of reported numbers cannot answer it.",
+              "Look at what each ingredient needs. A counterfactual needs plot and farm records with identifiers, so adopters can be compared with non-adopters. Climate modelling needs the records to carry location and season. Adoption data need the participant registry linked to later observations. Geospatial assessment needs ground records to calibrate against. Every ingredient is observation-level data, kept with its provenance.",
+              "That is why institutional values are recomputed from eligible underlying records rather than compiled from project reports. Records can be disaggregated, re-analysed, audited and recalculated as methods improve. Totals cannot. The data system keeps the records and their provenance for that reason.",
+              "The three project yield figures from the scenario are still useful. Each one tells its own project something about its own plots. What they cannot do, added or averaged, is answer the institutional question. The framework builds the answer from the records underneath them."
+            ]
+          },
+          "microCheck": [
+            "Q201"
+          ],
+          "recap": {
+            "bullets": [
+              "The Kenya yield question needs contribution or attribution analysis against a credible counterfactual, modelling, adoption data and geospatial assessment.",
+              "Every one of those ingredients is observation-level data with provenance. A sum of reported numbers cannot answer the question.",
+              "Recomputing from records lets results be disaggregated, audited and recalculated. That is the path from data to decision-relevant insight."
+            ],
+            "source": {
+              "section": "3.3",
+              "title": "From Observation-Level Data to Decision-Relevant Insights"
+            }
+          }
+        },
+        "glossary": [
+          "Observation-level evidence",
+          "Counterfactual",
+          "Contribution",
+          "Provenance"
+        ]
+      }
+    ],
+    "storyboards": [
+      {
+        "id": "sb-m4-toolbox",
+        "title": "The KPI Toolbox",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 10,
+            "narration": "The KPI Toolbox holds 142 indicators in 13 volumes. Ten volumes cover impact pathways, which measure CIMMYT's contribution to change. Three cover enabling pathways, which measure how CIMMYT itself performs.",
+            "scene": {
+              "kind": "counter",
+              "items": [
+                {
+                  "label": "Indicators",
+                  "value": 142,
+                  "tone": "green"
+                },
+                {
+                  "label": "Volumes",
+                  "value": 13,
+                  "tone": "green"
+                },
+                {
+                  "label": "Impact pathways",
+                  "value": 10,
+                  "tone": "gold"
+                },
+                {
+                  "label": "Enabling pathways",
+                  "value": 3,
+                  "tone": "sky"
+                }
+              ],
+              "note": "Each volume holds full reference sheets"
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 16,
+            "narration": "The impact volumes are grouped under three Thrusts: Human Wellbeing, Planetary Health and Peace. That is the top level at which institutional results are aggregated and reported. The enabling volumes sit beside them as institutional performance.",
+            "scene": {
+              "kind": "cards",
+              "layout": "row",
+              "items": [
+                {
+                  "label": "Human Wellbeing",
+                  "detail": "Vol. 4, 5, 7, 8",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Planetary Health",
+                  "detail": "Vol. 6, 9",
+                  "tone": "green"
+                },
+                {
+                  "label": "Peace",
+                  "detail": "Vol. 2, 3, 10",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Institutional enabler",
+                  "detail": "Vol. 11, 12, 13",
+                  "tone": "paper"
+                }
+              ]
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 18,
+            "narration": "Watch four volumes find their place. Productivity goes to Human Wellbeing. Environmental sustainability to Planetary Health. Policy, finance and markets to Peace. Workforce and talent tries to join Peace and bounces back: it is an enabling volume.",
+            "scene": {
+              "kind": "sort",
+              "bins": [
+                "Human Wellbeing",
+                "Planetary Health",
+                "Peace",
+                "Enabling"
+              ],
+              "cards": [
+                {
+                  "label": "Vol. 7 Productivity",
+                  "bin": 0
+                },
+                {
+                  "label": "Vol. 9 Environmental sustainability",
+                  "bin": 1
+                },
+                {
+                  "label": "Vol. 10 Policy, finance, markets",
+                  "bin": 2
+                },
+                {
+                  "label": "Vol. 12 Workforce and talent",
+                  "bin": 3,
+                  "wrong": 2
+                }
+              ],
+              "stamp": "Enabling volumes sit beside the Thrusts"
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 8,
+            "narration": "One volume refuses to pick a Thrust. Volume 1, innovation development and scaling, applies across all three, because innovations and partnerships feed every pathway.",
+            "scene": {
+              "kind": "title",
+              "title": "Volume 1 is cross-cutting",
+              "subtitle": "Innovations and partnerships feed every pathway.",
+              "stamp": "§3.1"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m4-hero",
+        "title": "One KPI, many methods",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 8,
+            "narration": "Three projects, three countries, one yield KPI. Each measures differently. By the end of this story they will reconverge on one reported value.",
+            "scene": {
+              "kind": "title",
+              "title": "One KPI, many methods",
+              "subtitle": "Kenya, Ethiopia, South Asia. Same KPI. Three ways to measure."
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 22,
+            "narration": "The yield KPI fans out into three measurement levels. At farm and plot level: direct measurement, crop cuts or a farmer survey. At trial and station level: harvested-plot measurement under standard protocols. At region and country level: aggregation from trials and farm data, with modelling where needed.",
+            "scene": {
+              "kind": "fan",
+              "source": "Yield, tons per hectare",
+              "branches": [
+                {
+                  "label": "Farm / plot",
+                  "detail": "Direct measurement, crop cut, farmer survey"
+                },
+                {
+                  "label": "Trial / station",
+                  "detail": "Harvested plot, standard protocols"
+                },
+                {
+                  "label": "Region / country",
+                  "detail": "Aggregated, modelled, interpolated"
+                }
+              ],
+              "target": "One reported value"
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 18,
+            "narration": "Each level has its own key standards. Farm: most reliable method feasible, documented and rated. Trial: net plot, standard moisture, minimum plot size and repetitions. Region: inclusion criteria, weighting, uncertainty bounds.",
+            "scene": {
+              "kind": "cards",
+              "layout": "row",
+              "items": [
+                {
+                  "label": "Farm / plot",
+                  "detail": "Most reliable feasible method. Document and rate.",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Trial / station",
+                  "detail": "Net plot. Standard moisture. Plot size and repetitions.",
+                  "tone": "green"
+                },
+                {
+                  "label": "Region / country",
+                  "detail": "Inclusion criteria. Weights. Uncertainty bounds.",
+                  "tone": "sky"
+                }
+              ]
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 20,
+            "narration": "Take one trial standard. A fresh harvest weighs more than a dry one. So the protocol measures the net plot and adjusts the yield to a standard moisture. The framework's example for maize is 12.5 percent. Only after that dial completes are two trials comparable.",
+            "scene": {
+              "kind": "dial",
+              "segments": [
+                "Field weight",
+                "Net plot only",
+                "Moisture measured",
+                "Adjusted to standard moisture"
+              ],
+              "value": 1,
+              "label": "Trial yield: comparable",
+              "flagged": [
+                0
+              ]
+            }
+          },
+          {
+            "id": "f5",
+            "seconds": 16,
+            "narration": "This is what harmonisation means. What is shared: the definition, the methodological logic and the interpretation rules. What varies by level: the method, the key standards and the quality rating.",
+            "scene": {
+              "kind": "split",
+              "left": {
+                "title": "Shared",
+                "lines": [
+                  "Definition",
+                  "Methodological logic",
+                  "Interpretation and aggregation rules"
+                ],
+                "tone": "green"
+              },
+              "right": {
+                "title": "Varies by level",
+                "lines": [
+                  "Method",
+                  "Key standards",
+                  "Quality rating"
+                ],
+                "tone": "gold"
+              },
+              "gap": "Harmonised, not identical"
+            }
+          },
+          {
+            "id": "f6",
+            "seconds": 20,
+            "narration": "Now the three levels reconverge. The KPI engine recomputes from the eligible records with the indicator's method. What comes out is one value, and it never travels alone: coverage, uncertainty, provenance and method quality travel with it. The figures here are an illustration.",
+            "scene": {
+              "kind": "counter",
+              "items": [
+                {
+                  "label": "Reported yield",
+                  "value": 4.1,
+                  "suffix": " t/ha",
+                  "tone": "green"
+                },
+                {
+                  "label": "Eligible records",
+                  "value": 1260,
+                  "tone": "sky"
+                },
+                {
+                  "label": "Uncertainty",
+                  "value": 0.4,
+                  "prefix": "±",
+                  "suffix": " t/ha",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Countries covered",
+                  "value": 3,
+                  "tone": "sky"
+                }
+              ],
+              "note": "Provenance and method quality recorded. Illustrative figures."
+            }
+          },
+          {
+            "id": "f7",
+            "seconds": 8,
+            "narration": "Projects may set their local scope. They do not silently redefine the institutional indicator. That one sentence is what makes the fan close again.",
+            "scene": {
+              "kind": "title",
+              "title": "Local scope, yes. Silent redefinition, no.",
+              "subtitle": "Shared definition and rules let three methods become one value.",
+              "stamp": "§3.2"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m4-aggregate",
+        "title": "Aggregation without double counting",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 10,
+            "narration": "Three project figures arrive for the annual KPI run. The spreadsheet is begging you to add them, or average them. Both are shortcuts over the records.",
+            "scene": {
+              "kind": "counter",
+              "items": [
+                {
+                  "label": "Kenya (crop cuts)",
+                  "value": 4.2,
+                  "suffix": " t/ha",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Ethiopia (trials)",
+                  "value": 5.6,
+                  "suffix": " t/ha",
+                  "tone": "gold"
+                },
+                {
+                  "label": "South Asia (model)",
+                  "value": 3.3,
+                  "suffix": " t/ha",
+                  "tone": "gold"
+                }
+              ],
+              "note": "Three totals. Different methods, levels and populations. Illustrative."
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 18,
+            "narration": "The framework goes under the totals. Plot and farm records at the bottom. Trial records above. Inclusion criteria select the eligible records. Then the indicator's method, with weighting by area or representativeness, produces the institutional value.",
+            "scene": {
+              "kind": "stack",
+              "layers": [
+                {
+                  "label": "Plot and farm records",
+                  "detail": "Method and rating on each record",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Trial and station records",
+                  "detail": "Net plot, standard moisture",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Eligible records",
+                  "detail": "Inclusion criteria applied, duplicates removed",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Institutional value",
+                  "detail": "Indicator's method, weighted",
+                  "tone": "green"
+                }
+              ],
+              "traveler": true,
+              "stamp": "Recomputed, not summed"
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 16,
+            "narration": "The method depends on the KPI. Section 3.3 lists what it may involve: de-duplication, weighting, pooling of microdata, extrapolation, spatial interpolation, modelling or meta-analysis, and triangulation with compatible secondary sources.",
+            "scene": {
+              "kind": "cards",
+              "layout": "grid",
+              "items": [
+                {
+                  "label": "De-duplication",
+                  "detail": "Same farmer, two projects",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Weighting",
+                  "detail": "By area or representativeness",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Pooling microdata",
+                  "detail": "Records, not totals",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Extrapolation",
+                  "detail": "To the target population",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Spatial interpolation",
+                  "detail": "Between observed locations",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Modelling, meta-analysis",
+                  "detail": "Where the KPI defines it",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Triangulation",
+                  "detail": "Compatible secondary sources",
+                  "tone": "sky"
+                }
+              ]
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 14,
+            "narration": "What comes out is a value with four companions: coverage, uncertainty, provenance and method quality. Then results roll up by KPI volume and by Thrust. Never an unqualified sum of project totals.",
+            "scene": {
+              "kind": "counter",
+              "items": [
+                {
+                  "label": "Institutional yield",
+                  "value": 4.1,
+                  "suffix": " t/ha",
+                  "tone": "green"
+                },
+                {
+                  "label": "Uncertainty",
+                  "value": 0.4,
+                  "prefix": "±",
+                  "suffix": " t/ha",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Coverage",
+                  "value": 1260,
+                  "suffix": " records",
+                  "tone": "sky"
+                }
+              ],
+              "note": "Provenance and method quality attached. Rolled up by volume, then Thrust."
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m4-scope",
+        "title": "Local scope versus silent redefinition",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 14,
+            "narration": "Two ways a project can touch an institutional KPI. Local scope says where and for whom it applies. Silent redefinition changes what it means while keeping the label. The first is allowed. The second is not.",
+            "scene": {
+              "kind": "split",
+              "left": {
+                "title": "Local scope",
+                "lines": [
+                  "Irrigated plots only",
+                  "Two counties",
+                  "Main season",
+                  "Definition and method intact"
+                ],
+                "tone": "green"
+              },
+              "right": {
+                "title": "Silent redefinition",
+                "lines": [
+                  "Seed recipients counted as adopters",
+                  "Unit changed from farmer to household",
+                  "Label unchanged",
+                  "Nobody told"
+                ],
+                "tone": "gold"
+              },
+              "gap": "Same label. Different meaning."
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 18,
+            "narration": "Sort four moves. Restricting to irrigated plots: scope. Reporting the main season only: scope. Counting seed recipients as adopters tries to pass as scope and bounces: that is a redefinition. Changing the unit of observation: also a redefinition.",
+            "scene": {
+              "kind": "sort",
+              "bins": [
+                "Local scope",
+                "Redefinition"
+              ],
+              "cards": [
+                {
+                  "label": "Irrigated plots in two counties",
+                  "bin": 0
+                },
+                {
+                  "label": "Main season only",
+                  "bin": 0
+                },
+                {
+                  "label": "Seed recipients counted as adopters",
+                  "bin": 1,
+                  "wrong": 0
+                },
+                {
+                  "label": "Unit changed to household",
+                  "bin": 1
+                }
+              ],
+              "stamp": "Scope narrows. Redefinition changes meaning."
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 16,
+            "narration": "If a team genuinely needs the definition changed, there is a door. Governance rule 1: the MEAL team reviews, the Design, Standards and Enablement pillar approves, and the change is published in a new version of the Handbook. Until then, a project-specific indicator stays project-specific.",
+            "scene": {
+              "kind": "chain",
+              "steps": [
+                {
+                  "label": "Project proposes change",
+                  "detail": "Or a new indicator",
+                  "tone": "gold"
+                },
+                {
+                  "label": "MEAL team review",
+                  "detail": "Rule 1, section 5.3",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Pillar approval",
+                  "detail": "Design, Standards & Enablement",
+                  "tone": "sky"
+                },
+                {
+                  "label": "New Handbook version",
+                  "detail": "Now institutional",
+                  "tone": "green"
+                }
+              ],
+              "traveler": true
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 8,
+            "narration": "Keep the institutional definition. Report the investor measure separately. Write your scope down. Ask for review when the definition itself must change.",
+            "scene": {
+              "kind": "title",
+              "title": "Scope you set. Meaning you ask for.",
+              "subtitle": "Local scope is yours. Redefinition goes through review.",
+              "stamp": "§3.2, §5.3"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m4-sheet",
+        "title": "Reading a KPI reference sheet",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 18,
+            "narration": "For every KPI, CIMMYT defines nine things. The concept. The unit of observation. The data sources. The valid methods by measurement level. The calculation and aggregation rules. The disaggregation. The quality assurance requirements. The data provenance.",
+            "scene": {
+              "kind": "checklist",
+              "items": [
+                {
+                  "label": "Concept",
+                  "done": true
+                },
+                {
+                  "label": "Unit of observation",
+                  "done": true
+                },
+                {
+                  "label": "Data sources",
+                  "done": true
+                },
+                {
+                  "label": "Valid methods by measurement level",
+                  "done": true
+                },
+                {
+                  "label": "Calculation rules",
+                  "done": true
+                },
+                {
+                  "label": "Aggregation rules",
+                  "done": true
+                },
+                {
+                  "label": "Disaggregation",
+                  "done": true
+                },
+                {
+                  "label": "Quality assurance requirements",
+                  "done": true
+                },
+                {
+                  "label": "Data provenance",
+                  "done": true
+                }
+              ],
+              "stamp": "One sheet per KPI"
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 18,
+            "narration": "The methods section reads like a table. One row per measurement level. For yield: farm and plot, trial and station, region and country. Each row names the method, the key standards and the quality rating. Your measurement plan row picks one level and follows that row.",
+            "scene": {
+              "kind": "grid",
+              "rows": [
+                "Farm / plot",
+                "Trial / station",
+                "Region / country"
+              ],
+              "cols": [
+                "Method",
+                "Key standard",
+                "Rating"
+              ],
+              "cells": [
+                [
+                  "Direct, crop cut, survey",
+                  "Most reliable feasible; document",
+                  "High to medium"
+                ],
+                [
+                  "Harvested net plot",
+                  "Standard moisture; plot size",
+                  "High"
+                ],
+                [
+                  "Aggregated, modelled",
+                  "Inclusion; weights; uncertainty",
+                  "Variable; document"
+                ]
+              ],
+              "token": {
+                "row": 0,
+                "col": 0,
+                "label": "Kenya team"
+              }
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 10,
+            "narration": "Forms are built from the sheet. Plan rows are checked against it. The KPI engine computes with it. Read the sheet before you plan, and you will not be surprised at the annual run.",
+            "scene": {
+              "kind": "title",
+              "title": "Read the sheet before you plan the row",
+              "subtitle": "Sheet, form, plan row and engine share one definition.",
+              "stamp": "§3.2, §4.1"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m4-rating",
+        "title": "Quality ratings",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 14,
+            "narration": "A quality rating says how reliable a measurement is, given the method used. Farm-level methods earn high to medium, depending on the method. Trial protocols earn high. An undocumented method earns nothing, because nobody can rate it.",
+            "scene": {
+              "kind": "dial",
+              "segments": [
+                "Undocumented",
+                "Medium",
+                "High"
+              ],
+              "value": 0.7,
+              "label": "Reliability given the method",
+              "flagged": [
+                0
+              ]
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 12,
+            "narration": "Three levels, three rating bands. Farm and plot: high to medium. Trial and station: high, controlled protocols. Region and country: variable, so document coverage and method quality.",
+            "scene": {
+              "kind": "cards",
+              "layout": "row",
+              "items": [
+                {
+                  "label": "Farm / plot",
+                  "detail": "High to medium, depending on method",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Trial / station",
+                  "detail": "High (controlled protocols)",
+                  "tone": "green"
+                },
+                {
+                  "label": "Region / country",
+                  "detail": "Variable; document coverage and method quality",
+                  "tone": "sky"
+                }
+              ]
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 14,
+            "narration": "Two records from the same county. Record A carries its method and its rating. Record B carries a number. Only A can be judged eligible, weighted and recalculated later. The rating is what lets a reviewer trust the figure without re-measuring it.",
+            "scene": {
+              "kind": "split",
+              "left": {
+                "title": "Record A",
+                "lines": [
+                  "4.3 t/ha",
+                  "Method: crop cut",
+                  "Rating: documented",
+                  "Plot identifier"
+                ],
+                "tone": "green"
+              },
+              "right": {
+                "title": "Record B",
+                "lines": [
+                  "4.3 t/ha"
+                ],
+                "tone": "gold"
+              },
+              "gap": "Same number. Only A is usable."
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 8,
+            "narration": "Ratings travel with the record. An aggregate does not inherit the best one in the set. It documents its own coverage and method quality.",
+            "scene": {
+              "kind": "title",
+              "title": "The rating travels with the record",
+              "subtitle": "Document the method. Assign the rating. Keep both.",
+              "stamp": "§3.2"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m4-insight",
+        "title": "From data to decision-relevant insight",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 8,
+            "narration": "The question the framework uses as its own example: what has CIMMYT contributed to yield change in Kenya?",
+            "scene": {
+              "kind": "title",
+              "title": "What has CIMMYT contributed to yield change in Kenya?",
+              "subtitle": "The framework's own example question."
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 14,
+            "narration": "Three project reports cannot answer it. So the framework dissolves the reports into the observations underneath: plots, trials, farms, participants, each with identifiers and provenance.",
+            "scene": {
+              "kind": "dissolve",
+              "from": [
+                "Maize project report",
+                "Trial programme report",
+                "Seed systems report"
+              ],
+              "to": {
+                "label": "Observation-level records with provenance",
+                "dots": 60
+              }
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 16,
+            "narration": "Answering needs four things the records make possible. Contribution or attribution analysis against a credible counterfactual. Agronomic, socioeconomic and climate modelling. Adoption data. Geospatial assessment. A sum of reported numbers cannot provide any of them.",
+            "scene": {
+              "kind": "cards",
+              "layout": "grid",
+              "items": [
+                {
+                  "label": "Counterfactual",
+                  "detail": "Contribution or attribution analysis",
+                  "tone": "green"
+                },
+                {
+                  "label": "Modelling",
+                  "detail": "Agronomic, socioeconomic, climate",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Adoption data",
+                  "detail": "Who used what, where, when",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Geospatial assessment",
+                  "detail": "Calibrated with ground records",
+                  "tone": "sky"
+                }
+              ],
+              "stamp": "A sum cannot answer it"
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 14,
+            "narration": "From records to decision. Eligible records go into the KPI engine. Out comes a value with coverage, uncertainty, provenance and method quality. It rolls up by volume and Thrust, and leadership gets an answer it can act on and audit.",
+            "scene": {
+              "kind": "chain",
+              "steps": [
+                {
+                  "label": "Eligible records",
+                  "detail": "Plots, trials, farms, participants",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Recompute",
+                  "detail": "Indicator's method",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Qualified value",
+                  "detail": "Coverage, uncertainty, provenance, quality",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Roll up",
+                  "detail": "By volume, by Thrust",
+                  "tone": "green"
+                },
+                {
+                  "label": "Decision",
+                  "detail": "Answerable and auditable",
+                  "tone": "green"
+                }
+              ],
+              "traveler": true,
+              "stamp": "§3.3"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "tag": "sum-of-totals",
+      "description": "You added or averaged project totals to get an institutional figure. The framework recomputes from eligible records with the indicator's method and never reports an unqualified sum of project totals.",
+      "remedyLessonIds": [
+        "L4.3",
+        "L4.7"
+      ]
+    },
+    {
+      "tag": "one-method-everywhere",
+      "description": "You assumed that a shared KPI means every project must use the identical method. A common KPI has valid methods for each measurement level; harmonisation shares the definition and rules, not the instrument.",
+      "remedyLessonIds": [
+        "L4.2"
+      ]
+    },
+    {
+      "tag": "silent-redefinition",
+      "description": "You changed what an institutional indicator means to fit a local activity or an investor template while keeping its label. Projects set local scope; redefinition needs MEAL review and a new Handbook version.",
+      "remedyLessonIds": [
+        "L4.4"
+      ]
+    },
+    {
+      "tag": "label-equals-harmonised",
+      "description": "You treated two figures with the same name or unit as comparable without checking that they share a definition, a methodological logic and the rules for interpretation and aggregation.",
+      "remedyLessonIds": [
+        "L4.2",
+        "L4.4"
+      ]
+    },
+    {
+      "tag": "rating-ignored",
+      "description": "You combined or compared records without recording the method and its quality rating, or you let an aggregate borrow the best rating in the set. Each record keeps its method and rating.",
+      "remedyLessonIds": [
+        "L4.6",
+        "L4.5"
+      ]
+    },
+    {
+      "tag": "toolbox-structure-muddled",
+      "description": "You mixed up the Toolbox's parts: volumes, Thrusts, impact and enabling pathways. Impact volumes sit under three Thrusts; enabling volumes are reported alongside them; Volume 1 is cross-cutting.",
+      "remedyLessonIds": [
+        "L4.1"
+      ]
+    }
+  ],
+  "diagnosticTags": {
+    "Q031": {
+      "objectiveIds": [
+        "kpis-measurement.O1"
+      ],
+      "misconceptions": {
+        "a": "toolbox-structure-muddled",
+        "c": "toolbox-structure-muddled"
+      }
+    },
+    "Q032": {
+      "objectiveIds": [
+        "kpis-measurement.O1"
+      ],
+      "misconceptions": {
+        "b": "toolbox-structure-muddled"
+      }
+    },
+    "Q033": {
+      "objectiveIds": [
+        "kpis-measurement.O2"
+      ],
+      "misconceptions": {
+        "b": "label-equals-harmonised",
+        "c": "sum-of-totals",
+        "d": "one-method-everywhere"
+      }
+    },
+    "Q034": {
+      "objectiveIds": [
+        "kpis-measurement.O2",
+        "kpis-measurement.O5"
+      ],
+      "misconceptions": {
+        "a": "rating-ignored",
+        "c": "rating-ignored"
+      }
+    },
+    "Q035": {
+      "objectiveIds": [
+        "kpis-measurement.O3"
+      ],
+      "misconceptions": {
+        "a": "sum-of-totals",
+        "b": "sum-of-totals",
+        "c": "sum-of-totals"
+      }
+    },
+    "Q036": {
+      "objectiveIds": [
+        "kpis-measurement.O4"
+      ],
+      "misconceptions": {
+        "b": "silent-redefinition",
+        "d": "label-equals-harmonised"
+      }
+    },
+    "Q037": {
+      "objectiveIds": [
+        "kpis-measurement.O5"
+      ]
+    },
+    "Q038": {
+      "objectiveIds": [
+        "kpis-measurement.O5"
+      ],
+      "misconceptions": {
+        "b": "rating-ignored",
+        "c": "rating-ignored",
+        "d": "rating-ignored"
+      }
+    },
+    "Q039": {
+      "objectiveIds": [
+        "kpis-measurement.O3"
+      ],
+      "misconceptions": {
+        "b": "sum-of-totals",
+        "d": "sum-of-totals"
+      }
+    },
+    "Q040": {
+      "objectiveIds": [
+        "kpis-measurement.O1"
+      ],
+      "misconceptions": {
+        "a": "toolbox-structure-muddled",
+        "d": "toolbox-structure-muddled"
+      }
+    }
+  },
+  "questions": [
+    {
+      "id": "Q191",
+      "topicId": "kpis-measurement",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "kpis-measurement.O1"
+      ],
+      "question": "A colleague asks what the KPI Toolbox contains. Which answer matches section 3.1?",
+      "options": [
+        {
+          "id": "a",
+          "text": "142 indicators in 10 volumes, one per Thrust, plus 3 cross-cutting volumes"
+        },
+        {
+          "id": "b",
+          "text": "142 indicators in 13 volumes: ten impact pathways and three enabling pathways"
+        },
+        {
+          "id": "c",
+          "text": "13 indicators in 142 reference sheets, grouped under the three Thrusts"
+        },
+        {
+          "id": "d",
+          "text": "100 indicators in 13 volumes, all of them reported under the three Thrusts"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Toolbox holds 142 indicators organised in 13 volumes, ten covering impact pathways and three covering enabling pathways. There are three Thrusts, not ten, and the enabling volumes are reported alongside the Thrusts rather than under them.",
+      "source": {
+        "section": "3.1",
+        "title": "KPI Toolbox: Volumes and Thrusts",
+        "kind": "direct"
+      },
+      "reviewTip": "Read the first sentence of section 3.1 and count the rows in the volume table."
+    },
+    {
+      "id": "Q192",
+      "topicId": "kpis-measurement",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "kpis-measurement.O1"
+      ],
+      "question": "Volume 9, Environmental sustainability, holds 13 KPIs. Under which Thrust is it reported?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Human Wellbeing"
+        },
+        {
+          "id": "b",
+          "text": "Peace"
+        },
+        {
+          "id": "c",
+          "text": "Planetary Health"
+        },
+        {
+          "id": "d",
+          "text": "Institutional enabler"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The volume table places Environmental sustainability, along with Resilience and climate adaptation, under Planetary Health. Institutional enabler is not a Thrust; it is the label for the three enabling volumes.",
+      "source": {
+        "section": "3.1",
+        "title": "KPI Toolbox: Volumes and Thrusts",
+        "kind": "direct"
+      },
+      "reviewTip": "Find the Thrust column in the volume table and read it top to bottom."
+    },
+    {
+      "id": "Q193",
+      "topicId": "kpis-measurement",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "kpis-measurement.O2"
+      ],
+      "question": "A maize project in Kenya measures yield with crop cuts. A wheat project in South Asia uses farmer surveys for the same institutional yield KPI. Is this a harmonisation problem?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes. Harmonisation means the same instrument in every project."
+        },
+        {
+          "id": "b",
+          "text": "Yes. Only the trial protocol counts as a valid yield method."
+        },
+        {
+          "id": "c",
+          "text": "No. Any two numbers in tons per hectare can be combined as they are."
+        },
+        {
+          "id": "d",
+          "text": "No, as long as both share the definition, logic and rules, and document their method."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Harmonisation does not require every project to measure the same thing in the same way; it requires a shared definition, methodological logic and rules for interpretation and aggregation. Sharing a unit alone is not enough, which is why each record must carry its method and quality rating.",
+      "source": {
+        "section": "3",
+        "title": "KPI Approach: Comparable and Fit for Purpose",
+        "kind": "application"
+      },
+      "reviewTip": "Read the second paragraph of section 3 on what harmonisation does and does not require."
+    },
+    {
+      "id": "Q194",
+      "topicId": "kpis-measurement",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "kpis-measurement.O2"
+      ],
+      "question": "Why does the yield KPI define different methods for farm, trial and regional levels?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Each level answers a different decision and needs a method suited to it"
+        },
+        {
+          "id": "b",
+          "text": "So that every project can pick the method that gives the highest value"
+        },
+        {
+          "id": "c",
+          "text": "Because the Toolbox has not yet agreed on a single method for yield"
+        },
+        {
+          "id": "d",
+          "text": "To let regional offices replace trial data with farmer survey estimates"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Section 3.2 shows yield measured at different levels with different methods, each suited to the decision at hand. The levels are a design choice for fitness for purpose, not a gap waiting for one method to win.",
+      "source": {
+        "section": "3.2",
+        "title": "One KPI, Multiple Valid Measurement Levels",
+        "kind": "direct"
+      },
+      "reviewTip": "Read the sentence introducing the yield table in section 3.2."
+    },
+    {
+      "id": "Q195",
+      "topicId": "kpis-measurement",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "kpis-measurement.O3"
+      ],
+      "question": "Two projects in the same Kenyan county each report participants in capacity development. Persistent identifiers show 300 farmers appear on both lists. How is the institutional value produced?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Add both project totals, since each project delivered its own training"
+        },
+        {
+          "id": "b",
+          "text": "Keep the larger total and drop the smaller one as a duplicate"
+        },
+        {
+          "id": "c",
+          "text": "Recompute from the eligible records with the KPI's de-duplication rule"
+        },
+        {
+          "id": "d",
+          "text": "Average the two totals so the overlap cancels out"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Institutional values are recomputed from eligible underlying records using the method defined for the indicator, which for a participant KPI includes de-duplication. Adding the totals would count the 300 shared farmers twice.",
+      "source": {
+        "section": "3.3",
+        "title": "From Observation-Level Data to Decision-Relevant Insights",
+        "kind": "application"
+      },
+      "reviewTip": "Read the list of methods in the second paragraph of section 3.3."
+    },
+    {
+      "id": "Q196",
+      "topicId": "kpis-measurement",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "kpis-measurement.O3"
+      ],
+      "question": "An institutional KPI value has been recomputed. What must be reported with it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The project totals it was built from and the investor template used"
+        },
+        {
+          "id": "b",
+          "text": "Its coverage, uncertainty, provenance and method quality"
+        },
+        {
+          "id": "c",
+          "text": "The names of the enumerators and the collection platform"
+        },
+        {
+          "id": "d",
+          "text": "The annual target and the percentage of it achieved"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Section 3.3 says the result is reported with its coverage, uncertainty, provenance and method quality. Targets and templates belong to other documents, and project totals are not the input the value is built from.",
+      "source": {
+        "section": "3.3",
+        "title": "From Observation-Level Data to Decision-Relevant Insights",
+        "kind": "direct"
+      },
+      "reviewTip": "Find the four qualifiers in the second paragraph of section 3.3."
+    },
+    {
+      "id": "Q197",
+      "topicId": "kpis-measurement",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "kpis-measurement.O4"
+      ],
+      "question": "A seed systems project in Mexico applies the institutional yield KPI only to irrigated plots in two states, and records that in its measurement plan. What is this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A silent redefinition of the institutional KPI"
+        },
+        {
+          "id": "b",
+          "text": "A new project-specific indicator that needs approval"
+        },
+        {
+          "id": "c",
+          "text": "A breach of the collect data once principle"
+        },
+        {
+          "id": "d",
+          "text": "A local scope, allowed if the definition and method stay intact"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Projects may specify their local scope, and restricting where and for whom the KPI applies is exactly that. It becomes a redefinition only if the concept, unit, method or calculation changes.",
+      "source": {
+        "section": "3.2",
+        "title": "One KPI, Multiple Valid Measurement Levels",
+        "kind": "application"
+      },
+      "reviewTip": "Read the last paragraph of section 3.2 and the glossary entry for local scope."
+    },
+    {
+      "id": "Q198",
+      "topicId": "kpis-measurement",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "kpis-measurement.O4"
+      ],
+      "question": "A project wants to change the definition of an institutional KPI. Under governance rule 1, what has to happen first?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review by the MEAL team, with approved changes published in a new Handbook version"
+        },
+        {
+          "id": "b",
+          "text": "Agreement with the investor, recorded in the project's indicator crosswalk"
+        },
+        {
+          "id": "c",
+          "text": "A note in the project's own measurement plan explaining the new definition"
+        },
+        {
+          "id": "d",
+          "text": "Approval by the Regional MEAL Lead at the next quarterly project review"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "No existing KPI is redefined without review by the MEAL team, and approved changes are published in a new version of the MEAL Handbook. A note in a plan or an investor agreement does not change an institutional definition.",
+      "source": {
+        "section": "5.3",
+        "title": "Governance",
+        "kind": "direct"
+      },
+      "reviewTip": "Read rule 1 under section 5.3."
+    },
+    {
+      "id": "Q199",
+      "topicId": "kpis-measurement",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "kpis-measurement.O5"
+      ],
+      "question": "A reviewer wants to know which methods are acceptable for a KPI at farm level. Which part of the reference sheet defines that?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Data provenance"
+        },
+        {
+          "id": "b",
+          "text": "Disaggregation"
+        },
+        {
+          "id": "c",
+          "text": "Valid methods by measurement level"
+        },
+        {
+          "id": "d",
+          "text": "Quality assurance requirements"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "For every KPI the sheet defines valid methods by measurement level, so the farm-level row lists what is acceptable there. Provenance and disaggregation are separate fields that describe record history and equity breakdowns.",
+      "source": {
+        "section": "3.2",
+        "title": "One KPI, Multiple Valid Measurement Levels",
+        "kind": "direct"
+      },
+      "reviewTip": "List the nine things CIMMYT defines for every KPI in the last paragraph of section 3.2."
+    },
+    {
+      "id": "Q200",
+      "topicId": "kpis-measurement",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "kpis-measurement.O5"
+      ],
+      "question": "One farm-level yield record came from a crop cut, with the method documented. A second is a farmer-reported estimate, also documented. What does the quality rating tell a reviewer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "How reliable each record is given its method, so the two are not treated as equal"
+        },
+        {
+          "id": "b",
+          "text": "That the farmer estimate must be deleted before any aggregation"
+        },
+        {
+          "id": "c",
+          "text": "That both records are high quality because both methods are documented"
+        },
+        {
+          "id": "d",
+          "text": "That both records must be converted to the trial protocol first"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Farm-level methods rate high to medium depending on the method, and the rating records that difference so later analysis can weight or interpret the records appropriately. Documentation makes a record usable; it does not make every method equally reliable.",
+      "source": {
+        "section": "3.2",
+        "title": "One KPI, Multiple Valid Measurement Levels",
+        "kind": "application"
+      },
+      "reviewTip": "Read the quality rating column of the yield table for the farm and plot row."
+    },
+    {
+      "id": "Q201",
+      "topicId": "kpis-measurement",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "kpis-measurement.O6"
+      ],
+      "question": "Leadership asks: what has CIMMYT contributed to yield change in Kenya? Which answer does the framework give?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sum the yield figures reported by every project working in Kenya"
+        },
+        {
+          "id": "b",
+          "text": "Report the average of trial yields across all Kenyan stations"
+        },
+        {
+          "id": "c",
+          "text": "Quote the number of farmers reached with improved varieties"
+        },
+        {
+          "id": "d",
+          "text": "Run contribution analysis against a counterfactual, with modelling, adoption and geospatial data"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Section 3.3 uses this question as its example and says it needs contribution or attribution analysis against a credible counterfactual, modelling, adoption data and geospatial assessment. A sum of reported numbers cannot answer it.",
+      "source": {
+        "section": "3.3",
+        "title": "From Observation-Level Data to Decision-Relevant Insights",
+        "kind": "application"
+      },
+      "reviewTip": "Read the boxed Kenya example in section 3.3."
+    },
+    {
+      "id": "Q202",
+      "topicId": "kpis-measurement",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "kpis-measurement.O1"
+      ],
+      "question": "A regional report lists Volume 11, Institutional performance and operations, under the Peace Thrust. What is wrong?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Volume 11 is an enabling volume, reported alongside the Thrusts as institutional performance"
+        },
+        {
+          "id": "b",
+          "text": "Volume 11 belongs under Human Wellbeing rather than under Peace"
+        },
+        {
+          "id": "c",
+          "text": "Nothing is wrong. Every one of the 13 volumes sits under one Thrust"
+        },
+        {
+          "id": "d",
+          "text": "Volume 11 is cross-cutting, so it belongs under all three Thrusts at once"
+        }
+      ],
+      "correctOptionId": "a",
+      "misconceptions": {
+        "b": "toolbox-structure-muddled",
+        "c": "toolbox-structure-muddled",
+        "d": "toolbox-structure-muddled"
+      },
+      "explanation": "Volumes 11, 12 and 13 are enabling pathways that measure how CIMMYT itself performs, and they are reported alongside the Thrusts, not under one. Only Volume 1 is cross-cutting.",
+      "source": {
+        "section": "3.1",
+        "title": "KPI Toolbox: Volumes and Thrusts",
+        "kind": "application"
+      },
+      "reviewTip": "Read the sentence after the volume table about the three enabling volumes."
+    },
+    {
+      "id": "Q203",
+      "topicId": "kpis-measurement",
+      "difficulty": "foundation",
+      "pool": "check",
+      "objectiveIds": [
+        "kpis-measurement.O1"
+      ],
+      "question": "What is the top level at which institutional results are aggregated and reported?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The project, then the region"
+        },
+        {
+          "id": "b",
+          "text": "The KPI volume"
+        },
+        {
+          "id": "c",
+          "text": "The three Thrusts"
+        },
+        {
+          "id": "d",
+          "text": "The investor portfolio"
+        }
+      ],
+      "correctOptionId": "c",
+      "misconceptions": {
+        "b": "toolbox-structure-muddled",
+        "a": "sum-of-totals"
+      },
+      "explanation": "Section 3.1 names the three Thrusts as the top level at which institutional results are aggregated and reported. Results roll up by KPI volume first and then by Thrust, so the volume is a step below the top.",
+      "source": {
+        "section": "3.1",
+        "title": "KPI Toolbox: Volumes and Thrusts",
+        "kind": "direct"
+      },
+      "reviewTip": "Read the second sentence of section 3.1 and the last sentence of 3.3's second paragraph."
+    },
+    {
+      "id": "Q204",
+      "topicId": "kpis-measurement",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "kpis-measurement.O2"
+      ],
+      "question": "Three projects report the same institutional yield KPI: crop cuts in Kenya, trial protocols in Ethiopia, a regional model in South Asia. A manager insists that all three switch to crop cuts before the figures can be used. What does the framework say?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The manager is right. Harmonisation requires one method everywhere."
+        },
+        {
+          "id": "b",
+          "text": "A common KPI does not imply one method everywhere. Each level has its own valid methods."
+        },
+        {
+          "id": "c",
+          "text": "Only the trial protocol is valid, so the other two figures must be dropped."
+        },
+        {
+          "id": "d",
+          "text": "The regional model should replace the other two because it covers more area."
+        }
+      ],
+      "correctOptionId": "b",
+      "misconceptions": {
+        "a": "one-method-everywhere",
+        "c": "one-method-everywhere",
+        "d": "rating-ignored"
+      },
+      "explanation": "Section 3.2 opens with the statement that a common KPI does not imply one method everywhere, and gives yield three measurement levels with different valid methods. Forcing one method would discard fit-for-purpose evidence, not harmonise it.",
+      "source": {
+        "section": "3.2",
+        "title": "One KPI, Multiple Valid Measurement Levels",
+        "kind": "application"
+      },
+      "reviewTip": "Read the first sentence of section 3.2."
+    },
+    {
+      "id": "Q205",
+      "topicId": "kpis-measurement",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "kpis-measurement.O2"
+      ],
+      "question": "Which key standards does the yield example set for the Region / Country measurement level?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Measure on the net plot, adjust to standard moisture, meet the minimum plot size"
+        },
+        {
+          "id": "b",
+          "text": "Apply the trial protocol to every farm across the whole region"
+        },
+        {
+          "id": "c",
+          "text": "Collect every available yield number and report the total area covered"
+        },
+        {
+          "id": "d",
+          "text": "Define inclusion criteria, weight by area or representativeness, report uncertainty bounds"
+        }
+      ],
+      "correctOptionId": "d",
+      "misconceptions": {
+        "b": "one-method-everywhere",
+        "c": "sum-of-totals"
+      },
+      "explanation": "The regional row of the yield table sets inclusion criteria, weighting by area or representativeness and uncertainty bounds as its key standards. Net-plot and moisture rules belong to the trial and station row.",
+      "source": {
+        "section": "3.2",
+        "title": "One KPI, Multiple Valid Measurement Levels",
+        "kind": "direct"
+      },
+      "reviewTip": "Compare the key standards column across the three rows of the yield table."
+    },
+    {
+      "id": "Q206",
+      "topicId": "kpis-measurement",
+      "difficulty": "advanced",
+      "pool": "check",
+      "objectiveIds": [
+        "kpis-measurement.O3"
+      ],
+      "question": "Three projects in Kenya, Ethiopia and Zambia each submit a yield figure for the same institutional KPI. The annual run must produce one institutional value. What does the KPI engine do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Recompute from the eligible underlying records using the method the indicator defines"
+        },
+        {
+          "id": "b",
+          "text": "Add the three figures and report the total as the institutional yield"
+        },
+        {
+          "id": "c",
+          "text": "Average the three figures, since each one is already an approved KPI value"
+        },
+        {
+          "id": "d",
+          "text": "Report the Kenyan figure alone because it rests on the most plots"
+        }
+      ],
+      "correctOptionId": "a",
+      "misconceptions": {
+        "b": "sum-of-totals",
+        "c": "sum-of-totals",
+        "d": "rating-ignored"
+      },
+      "explanation": "Institutional values are recomputed from eligible underlying records using the method defined for the indicator, and the KPI engine exists to replace summing project reports. Averaging totals is still a shortcut over the records.",
+      "source": {
+        "section": "3.3",
+        "title": "From Observation-Level Data to Decision-Relevant Insights",
+        "kind": "application"
+      },
+      "reviewTip": "Read the second paragraph of 3.3 and the KPI engine row in the table in 4.1."
+    },
+    {
+      "id": "Q207",
+      "topicId": "kpis-measurement",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "kpis-measurement.O3"
+      ],
+      "question": "A participant KPI is recomputed centrally. Which method named in section 3.3 handles a farmer who attended events run by two different projects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Spatial interpolation"
+        },
+        {
+          "id": "b",
+          "text": "Extrapolation"
+        },
+        {
+          "id": "c",
+          "text": "De-duplication"
+        },
+        {
+          "id": "d",
+          "text": "Meta-analysis"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "De-duplication removes the same person counted twice, and persistent identifiers exist so this can be done across projects. Interpolation and extrapolation fill gaps in coverage; they do not resolve overlap.",
+      "source": {
+        "section": "3.3",
+        "title": "From Observation-Level Data to Decision-Relevant Insights",
+        "kind": "application"
+      },
+      "reviewTip": "Match each method in the 3.3 list to the problem it solves."
+    },
+    {
+      "id": "Q208",
+      "topicId": "kpis-measurement",
+      "difficulty": "foundation",
+      "pool": "check",
+      "objectiveIds": [
+        "kpis-measurement.O3"
+      ],
+      "question": "After institutional values have been recomputed, how are results rolled up?",
+      "options": [
+        {
+          "id": "a",
+          "text": "By project, then by investor"
+        },
+        {
+          "id": "b",
+          "text": "By KPI volume, then by Thrust"
+        },
+        {
+          "id": "c",
+          "text": "By country, then by region"
+        },
+        {
+          "id": "d",
+          "text": "By measurement level, then by project"
+        }
+      ],
+      "correctOptionId": "b",
+      "misconceptions": {
+        "a": "toolbox-structure-muddled",
+        "d": "toolbox-structure-muddled"
+      },
+      "explanation": "Section 3.3 ends its aggregation paragraph with results rolled up by KPI volume and by Thrust, matching the Toolbox structure in 3.1. Projects and investors are reporting audiences, not roll-up levels.",
+      "source": {
+        "section": "3.3",
+        "title": "From Observation-Level Data to Decision-Relevant Insights",
+        "kind": "direct"
+      },
+      "reviewTip": "Read the last sentence of the second paragraph of section 3.3."
+    },
+    {
+      "id": "Q209",
+      "topicId": "kpis-measurement",
+      "difficulty": "advanced",
+      "pool": "check",
+      "objectiveIds": [
+        "kpis-measurement.O4"
+      ],
+      "question": "An investor asks a maize project to report every farmer who received seed under the institutional adoption KPI, which counts farmers who planted it. What should the project do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adopt the investor's definition for the institutional KPI, since the investor funds the work"
+        },
+        {
+          "id": "b",
+          "text": "Rename the institutional KPI so that the two labels match in both reports"
+        },
+        {
+          "id": "c",
+          "text": "Pick whichever definition produces the higher number and use it for both"
+        },
+        {
+          "id": "d",
+          "text": "Keep the institutional definition and report the investor measure separately"
+        }
+      ],
+      "correctOptionId": "d",
+      "misconceptions": {
+        "a": "silent-redefinition",
+        "b": "label-equals-harmonised",
+        "c": "silent-redefinition"
+      },
+      "explanation": "Projects may specify local scope but do not silently redefine the institutional indicator, so the investor measure is reported under its own definition with the difference recorded in the crosswalk. Matching labels does not make receipt and use the same thing.",
+      "source": {
+        "section": "3.2",
+        "title": "One KPI, Multiple Valid Measurement Levels",
+        "kind": "application"
+      },
+      "reviewTip": "Reread the local scope sentence in 3.2 alongside the crosswalk element in 5.4."
+    },
+    {
+      "id": "Q210",
+      "topicId": "kpis-measurement",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "kpis-measurement.O4"
+      ],
+      "question": "A project designs its own indicator for digital advisory uptake and labels it an institutional KPI on its dashboard. What does governance rule 1 say?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It stays project-specific until the Design, Standards & Enablement pillar has reviewed and approved it"
+        },
+        {
+          "id": "b",
+          "text": "Any indicator that uses a unit of observation from the Toolbox is automatically institutional"
+        },
+        {
+          "id": "c",
+          "text": "It becomes institutional once the investor accepts it in the indicator crosswalk"
+        },
+        {
+          "id": "d",
+          "text": "It becomes institutional after the Regional MEAL Lead signs off the measurement plan"
+        }
+      ],
+      "correctOptionId": "a",
+      "misconceptions": {
+        "b": "label-equals-harmonised",
+        "c": "silent-redefinition",
+        "d": "silent-redefinition"
+      },
+      "explanation": "Projects can add project-specific indicators, but these are not reported as institutional KPIs until the Design, Standards & Enablement pillar has reviewed and approved them. A dashboard label, an investor agreement or a plan signature does not make an indicator institutional.",
+      "source": {
+        "section": "5.3",
+        "title": "Governance",
+        "kind": "application"
+      },
+      "reviewTip": "Read the second sentence of rule 1 in section 5.3."
+    },
+    {
+      "id": "Q211",
+      "topicId": "kpis-measurement",
+      "difficulty": "advanced",
+      "pool": "check",
+      "objectiveIds": [
+        "kpis-measurement.O5"
+      ],
+      "question": "A reference sheet requires direct measurement at farm level. A project proposes satellite yield estimates instead, arguing both give tons per hectare. How should a reviewer read the sheet?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Accept: the unit matches, so the method is valid for the KPI"
+        },
+        {
+          "id": "b",
+          "text": "Decline: the sheet sets valid methods, and satellite data serve calibration or upscaling under documented rules"
+        },
+        {
+          "id": "c",
+          "text": "Accept, but assign the satellite estimates the trial-level quality rating"
+        },
+        {
+          "id": "d",
+          "text": "Decline, because satellite data can never be used for any KPI at any level"
+        }
+      ],
+      "correctOptionId": "b",
+      "misconceptions": {
+        "a": "label-equals-harmonised",
+        "c": "rating-ignored"
+      },
+      "explanation": "The reference sheet sets what is valid, and the triangulation rule says satellite or secondary data do not replace ground observations where the KPI method requires direct measurement; they are used for calibration, contextualisation, stratification or upscaling under documented rules. A matching unit is not a matching method.",
+      "source": {
+        "section": "3.2",
+        "title": "One KPI, Multiple Valid Measurement Levels",
+        "kind": "application"
+      },
+      "reviewTip": "Read the valid methods field in 3.2 together with the triangulation rule at the end of 2.6."
+    },
+    {
+      "id": "Q212",
+      "topicId": "kpis-measurement",
+      "difficulty": "foundation",
+      "pool": "check",
+      "objectiveIds": [
+        "kpis-measurement.O5"
+      ],
+      "question": "Which pair of reference sheet fields tells you how a KPI value is computed and how records are combined?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Concept and unit of observation"
+        },
+        {
+          "id": "b",
+          "text": "Data sources and disaggregation"
+        },
+        {
+          "id": "c",
+          "text": "Quality assurance and provenance"
+        },
+        {
+          "id": "d",
+          "text": "Calculation and aggregation rules"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The sheet defines calculation and aggregation rules alongside concept, unit, sources, methods, disaggregation, quality assurance and provenance. The other pairs describe what is measured, where it comes from and how it is checked, not how it is computed.",
+      "source": {
+        "section": "3.2",
+        "title": "One KPI, Multiple Valid Measurement Levels",
+        "kind": "direct"
+      },
+      "reviewTip": "List the nine fields in the last paragraph of 3.2 and group them by purpose."
+    },
+    {
+      "id": "Q213",
+      "topicId": "kpis-measurement",
+      "difficulty": "advanced",
+      "pool": "check",
+      "objectiveIds": [
+        "kpis-measurement.O5"
+      ],
+      "question": "A regional yield estimate for Kenya combines high-rated trial records and medium-rated farm records. How should its quality be reported?",
+      "options": [
+        {
+          "id": "a",
+          "text": "As variable, documenting coverage and method quality, with each record keeping its rating"
+        },
+        {
+          "id": "b",
+          "text": "As high, because the trial records carry controlled protocols"
+        },
+        {
+          "id": "c",
+          "text": "As medium, taking the lowest rating of any record in the set"
+        },
+        {
+          "id": "d",
+          "text": "Without a rating, since ratings stop mattering after aggregation"
+        }
+      ],
+      "correctOptionId": "a",
+      "misconceptions": {
+        "b": "rating-ignored",
+        "c": "rating-ignored",
+        "d": "rating-ignored"
+      },
+      "explanation": "The regional row of the yield table rates quality as variable and requires coverage and method quality to be documented, while each underlying record keeps its own method and rating. An aggregate does not inherit the best or the worst rating in the set.",
+      "source": {
+        "section": "3.2",
+        "title": "One KPI, Multiple Valid Measurement Levels",
+        "kind": "application"
+      },
+      "reviewTip": "Read the quality rating column for the region and country row."
+    },
+    {
+      "id": "Q214",
+      "topicId": "kpis-measurement",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "kpis-measurement.O6"
+      ],
+      "question": "Why can a sum of reported numbers not answer what CIMMYT contributed to yield change in Kenya?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because projects report their yields in different units and currencies"
+        },
+        {
+          "id": "b",
+          "text": "Because the sum is confidential until the annual KPI run is complete"
+        },
+        {
+          "id": "c",
+          "text": "Because contribution needs a counterfactual, modelling, adoption data and geospatial assessment"
+        },
+        {
+          "id": "d",
+          "text": "Because yield can only be measured credibly at trial stations"
+        }
+      ],
+      "correctOptionId": "c",
+      "misconceptions": {
+        "d": "one-method-everywhere"
+      },
+      "explanation": "The Kenya example in 3.3 lists what the answer needs: contribution or attribution analysis against a credible counterfactual, agronomic, socioeconomic and climate modelling, adoption data and geospatial assessment. None of those is contained in a total.",
+      "source": {
+        "section": "3.3",
+        "title": "From Observation-Level Data to Decision-Relevant Insights",
+        "kind": "direct"
+      },
+      "reviewTip": "Read the boxed example in section 3.3 and list its four ingredients."
+    },
+    {
+      "id": "Q215",
+      "topicId": "kpis-measurement",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "kpis-measurement.O6"
+      ],
+      "question": "Why does the framework insist that institutional values come from observation-level records rather than from project reports?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because project reports usually arrive too late for the annual run"
+        },
+        {
+          "id": "b",
+          "text": "Because records keep provenance, so results can be recalculated, audited, disaggregated and reused"
+        },
+        {
+          "id": "c",
+          "text": "Because investors require the raw data attached to every submission"
+        },
+        {
+          "id": "d",
+          "text": "Because narrative reports cannot be stored in the MEAL data system"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The data system keeps the underlying records and their provenance so institutional results can be recalculated, audited and reused as methods improve, and direct observations permit disaggregation and re-analysis. Timing and storage are not the reason.",
+      "source": {
+        "section": "3.3",
+        "title": "From Observation-Level Data to Decision-Relevant Insights",
+        "kind": "application"
+      },
+      "reviewTip": "Read the last paragraph of 2.5 and the first row of the evidence stack table in 2.6."
+    },
+    {
+      "id": "Q216",
+      "topicId": "kpis-measurement",
+      "difficulty": "advanced",
+      "pool": "check",
+      "objectiveIds": [
+        "kpis-measurement.O6"
+      ],
+      "question": "A MEAL lead has only three project yield totals for Kenya and is asked what CIMMYT contributed to yield change there. What can she say honestly?",
+      "options": [
+        {
+          "id": "a",
+          "text": "That CIMMYT raised yields by the sum of the three totals"
+        },
+        {
+          "id": "b",
+          "text": "That the average of the three totals is CIMMYT's contribution"
+        },
+        {
+          "id": "c",
+          "text": "That the highest of the three totals is the safest estimate"
+        },
+        {
+          "id": "d",
+          "text": "That the totals show what was reported, and the contribution question needs its own analysis"
+        }
+      ],
+      "correctOptionId": "d",
+      "misconceptions": {
+        "a": "sum-of-totals",
+        "b": "sum-of-totals",
+        "c": "sum-of-totals"
+      },
+      "explanation": "Totals describe what projects reported; contribution needs analysis against a credible counterfactual with modelling, adoption and geospatial data built from observation-level records. Any arithmetic on the three totals dresses up a report count as a contribution claim.",
+      "source": {
+        "section": "3.3",
+        "title": "From Observation-Level Data to Decision-Relevant Insights",
+        "kind": "application"
+      },
+      "reviewTip": "Separate the question of what was reported from the question of what changed because of CIMMYT."
+    }
+  ]
+}

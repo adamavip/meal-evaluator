@@ -1,0 +1,2221 @@
+{
+  "module": {
+    "id": "results-framework",
+    "order": 3,
+    "title": "Results framework",
+    "short": "Results framework",
+    "minutes": 30,
+    "sections": [
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "5.4"
+    ],
+    "assessed": true,
+    "prerequisites": [
+      "theory-of-change"
+    ],
+    "scenario": {
+      "title": "Two reports, one real change",
+      "intro": "A maize project in western Kenya and a wheat project in South Asia both report success. The maize team can show 40 demonstration plots, 600 field-day participants and a surge in reach every quarter. The wheat team reports fewer farmers but can show which of them changed their sowing date, and what happened to their yields afterwards. Both call it a result. This module gives you the test that tells them apart.",
+      "persona": [
+        "project-lead",
+        "field-officer",
+        "scientist",
+        "partner-liaison"
+      ]
+    },
+    "objectives": [
+      {
+        "id": "results-framework.O1",
+        "text": "Define each of the four results levels (processes, outputs, outcomes, impact) and give one example of each.",
+        "bloom": "remember"
+      },
+      {
+        "id": "results-framework.O2",
+        "text": "Classify a project result or indicator by results level, including policy change.",
+        "bloom": "apply"
+      },
+      {
+        "id": "results-framework.O3",
+        "text": "Distinguish reach from quality and explain why counting people is not measuring change.",
+        "bloom": "understand"
+      },
+      {
+        "id": "results-framework.O4",
+        "text": "Use an indicator crosswalk to connect project, investor and institutional indicators without silent redefinition.",
+        "bloom": "apply"
+      },
+      {
+        "id": "results-framework.O5",
+        "text": "Write a measurement plan row with unit, source, method, frequency, coverage, disaggregation, owner and timing.",
+        "bloom": "apply"
+      },
+      {
+        "id": "results-framework.O6",
+        "text": "State who owns evidence at each results level and what central MEAL adds.",
+        "bloom": "understand"
+      }
+    ],
+    "lessons": [
+      {
+        "id": "L3.1",
+        "moduleId": "results-framework",
+        "title": "Four levels, four kinds of evidence",
+        "objectiveIds": [
+          "results-framework.O1",
+          "results-framework.O6"
+        ],
+        "minutes": 5,
+        "beats": {
+          "hook": "Two projects reported success. Only one measured change. The difference is which level of the results chain each of them was describing.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m3-hero"
+          },
+          "example": {
+            "kind": "text",
+            "title": "One maize project across the four levels",
+            "body": [
+              "Processes. The team coordinates trials with two seed companies, tracks its workplan and manages the budget. Evidence comes from workplans, financial records and the partnership registry. Owner: the project team.",
+              "Outputs. A drought-tolerant variety is released, 40 demonstration plots are established and 600 farmers attend field days. Evidence comes from delivery records, trial results and training logs. Owner: the project team, with KPI definitions and deduplication rules from central MEAL.",
+              "Outcomes. A season later, follow-up visits find that 35% of field-day participants planted the new variety and the seed companies multiply it on their own account. Evidence comes from adoption surveys and partner records. Owner: shared. The project collects, central MEAL integrates and analyses.",
+              "Impact. Five years on, panel data show sustained yield and income gains among adopters, interpreted alongside rainfall and price data. Owner: central MEAL with science and evaluation specialists. The project supplies source data and context.",
+              "Same project, four levels, four kinds of evidence, four owners. The logic is cumulative, but no level is proof of the next one."
+            ]
+          },
+          "microCheck": [
+            "Q161",
+            "Q162",
+            "Q170"
+          ],
+          "recap": {
+            "bullets": [
+              "Processes enable delivery, outputs are what is delivered, outcomes are what changes for people and systems, impact is lasting change in agrifood systems.",
+              "Each level has its own data sources and products. Different levels, different evidence.",
+              "Projects own process and output evidence. Outcomes are shared. Impact sits with central MEAL and specialists."
+            ],
+            "source": {
+              "section": "2",
+              "title": "The MEAL Framework: From Data to Impact"
+            }
+          }
+        },
+        "glossary": [
+          "Results chain",
+          "Process",
+          "Output",
+          "Outcome",
+          "Impact"
+        ]
+      },
+      {
+        "id": "L3.2",
+        "moduleId": "results-framework",
+        "title": "Output or outcome? The classification test",
+        "objectiveIds": [
+          "results-framework.O2"
+        ],
+        "minutes": 6,
+        "beats": {
+          "hook": "\"Farmers trained\" feels like a result. It is. But at which level? Get this wrong and the whole results framework reports the wrong thing.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m3-sorter"
+          },
+          "example": {
+            "kind": "interactive",
+            "title": "Sort eight results into their levels",
+            "widget": "sorter",
+            "prompt": "Drop each result into the level the framework assigns it. Ask: was it done, was it delivered, did something change, or did the change last?",
+            "bins": [
+              {
+                "id": "process",
+                "label": "Processes",
+                "hint": "Activities, partnerships and management actions that enable delivery."
+              },
+              {
+                "id": "output",
+                "label": "Outputs",
+                "hint": "Products, services, technologies and capacity delivered."
+              },
+              {
+                "id": "outcome",
+                "label": "Outcomes",
+                "hint": "Changes in behaviour, practice, systems, capacity or policy."
+              },
+              {
+                "id": "impact",
+                "label": "Impact",
+                "hint": "Positive, lasting change in agrifood systems."
+              }
+            ],
+            "cards": [
+              {
+                "label": "Four coordination meetings held with the extension service",
+                "bin": "process",
+                "why": "Coordination is a management action that enables delivery. Nothing has been delivered yet."
+              },
+              {
+                "label": "A drought-tolerant maize variety released",
+                "bin": "output",
+                "why": "The framework lists varieties developed as outputs: products delivered through projects and partnerships."
+              },
+              {
+                "label": "600 farmers attended field days",
+                "bin": "output",
+                "why": "Training delivered is an output. Attendance says nothing yet about what the farmers do next."
+              },
+              {
+                "label": "35% of participants planted the new variety the next season",
+                "bin": "outcome",
+                "why": "Adoption is a change in practice among beneficiaries. That is the outcome level."
+              },
+              {
+                "label": "A seed company now multiplies the variety on its own account",
+                "bin": "outcome",
+                "why": "A partner changed its behaviour and its business system. Outcome."
+              },
+              {
+                "label": "The ministry adopted the fertiliser guideline into national extension materials",
+                "bin": "outcome",
+                "why": "Policy implementation is explicitly listed as an outcome example."
+              },
+              {
+                "label": "Household incomes among adopters remain higher five years later",
+                "bin": "impact",
+                "why": "Lasting change in incomes, interpreted alongside other factors, is impact."
+              },
+              {
+                "label": "Procurement of trial inputs completed on schedule",
+                "bin": "process",
+                "why": "Workplan execution and procurement are process evidence with immediate management value."
+              }
+            ]
+          },
+          "microCheck": [
+            "Q163",
+            "Q164"
+          ],
+          "recap": {
+            "bullets": [
+              "Was it done? Process. Was it delivered? Output. Did something change for people, partners or systems? Outcome. Did the change last? Impact.",
+              "Training, tools and seed are delivered. Adoption, policy implementation and new partner behaviour are changes.",
+              "Counting a delivery more often does not move it up a level."
+            ],
+            "source": {
+              "section": "2.3",
+              "title": "Outcomes"
+            }
+          }
+        },
+        "glossary": [
+          "Output",
+          "Outcome",
+          "Process",
+          "Impact"
+        ]
+      },
+      {
+        "id": "L3.3",
+        "moduleId": "results-framework",
+        "title": "Reach versus quality: counting people is not measuring change",
+        "objectiveIds": [
+          "results-framework.O3"
+        ],
+        "minutes": 4,
+        "beats": {
+          "hook": "A dashboard shows reach rising every quarter. The adoption survey shows no change in practice. Which one is lying? Neither. They measure different things.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m3-reach"
+          },
+          "example": {
+            "kind": "text",
+            "title": "Two reports of 3,000 farmers reached",
+            "body": [
+              "Report A: \"3,000 farmers reached through 20 training events.\" That is the whole record.",
+              "Report B: \"3,000 farmers reached through 20 training events in three districts; 54% women; each participant registered with a persistent identifier; delivery quality scored by a post-session check; 2,100 received the full two-day module and 900 a half-day version.\"",
+              "Both counts are outputs. Neither is evidence of adoption. But Report B shows where, to whom, with what quality and at what scale the training was delivered. That is the foundation the framework asks for, because a season later you can link those 3,000 identifiers to an adoption survey and ask what changed, for whom.",
+              "Report A cannot be linked to anything. Its 3,000 might include the same farmer counted at three events."
+            ]
+          },
+          "microCheck": [
+            "Q165",
+            "Q166"
+          ],
+          "recap": {
+            "bullets": [
+              "Counting what was delivered is the starting point, not the result.",
+              "Output evidence should show where, how, to whom, with what quality and at what scale.",
+              "Reach rising while adoption stays flat means delivery is growing and change is not yet shown."
+            ],
+            "source": {
+              "section": "2.2",
+              "title": "Outputs"
+            }
+          }
+        },
+        "glossary": [
+          "Output",
+          "Persistent identifier",
+          "Disaggregation"
+        ]
+      },
+      {
+        "id": "L3.4",
+        "moduleId": "results-framework",
+        "title": "Policy change as a result",
+        "objectiveIds": [
+          "results-framework.O2"
+        ],
+        "minutes": 4,
+        "beats": {
+          "hook": "A policy brief is published. A regulation is revised. A guideline is used by every extension agent in the country. Three events, three different levels.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m3-policy"
+          },
+          "example": {
+            "kind": "text",
+            "title": "From policy brief to policy in use",
+            "body": [
+              "A wheat project in South Asia works with a national seed regulator. Over two years it produces a policy brief on faster variety release (output: a recommendation produced), the regulator revises its release procedure using that evidence (outcome: a partner's system changed) and, two seasons later, new varieties reach farmers a year earlier than before (a further outcome: a stronger service delivery system).",
+              "Whether that leads to lasting productivity or income gains is an impact question. It needs its own evidence, interpreted alongside other factors. The revised procedure does not prove it.",
+              "The trap runs both ways. Publishing the brief is not a policy outcome. And a policy outcome, however important, is not yet impact."
+            ]
+          },
+          "microCheck": [
+            "Q167"
+          ],
+          "recap": {
+            "bullets": [
+              "Producing policy advice is an output. A partner implementing a policy is an outcome.",
+              "Policy implementation and stronger service delivery systems are explicit outcome examples in the framework.",
+              "Impact still needs evidence of lasting change in agrifood systems."
+            ],
+            "source": {
+              "section": "2.3",
+              "title": "Outcomes"
+            }
+          }
+        },
+        "glossary": [
+          "Outcome",
+          "Output",
+          "Impact"
+        ]
+      },
+      {
+        "id": "L3.5",
+        "moduleId": "results-framework",
+        "title": "Crosswalks: one project indicator, several reporting frames",
+        "objectiveIds": [
+          "results-framework.O4"
+        ],
+        "minutes": 5,
+        "beats": {
+          "hook": "CGIAR wants one number. The investor wants a slightly different one. Your dashboard wants a third. Do you collect three times? No. You build a crosswalk.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m3-crosswalk"
+          },
+          "example": {
+            "kind": "text",
+            "title": "A crosswalk for one adoption result",
+            "body": [
+              "Project measure: number of registered farmers who planted the new variety on at least one plot in the 2027 main season, by gender and district.",
+              "Institutional KPI: participants adopting an improved variety, as defined in the Toolbox reference sheet (unit: farmer; method: adoption survey or verified registry; disaggregation: gender, age, territory).",
+              "Investor indicator: \"farmers using improved seed\", defined by the investor as any farmer who received seed from the project.",
+              "CGIAR PRMS: innovation use, reported under the relevant results framework category.",
+              "The crosswalk row records how the four relate: the project measure feeds the institutional KPI directly; the investor definition is broader (receipt rather than use) so the project reports it separately from the same registry, with the difference noted; the PRMS entry is generated from the institutional KPI by the central mapping. The institutional definition is never quietly changed to match the investor template."
+            ]
+          },
+          "microCheck": [
+            "Q168"
+          ],
+          "recap": {
+            "bullets": [
+              "The indicator crosswalk maps applicable institutional KPIs, investor indicators and project-specific measures to each other.",
+              "Projects may set local scope. They may not silently redefine an institutional indicator.",
+              "Same validated records, several reporting frames: collect data once."
+            ],
+            "source": {
+              "section": "5.4",
+              "title": "Minimum MEAL Implementation Package"
+            }
+          }
+        },
+        "glossary": [
+          "Indicator crosswalk",
+          "Institutional KPI",
+          "Local scope",
+          "Collect data once",
+          "PRMS"
+        ]
+      },
+      {
+        "id": "L3.6",
+        "moduleId": "results-framework",
+        "title": "The measurement plan row",
+        "objectiveIds": [
+          "results-framework.O5"
+        ],
+        "minutes": 5,
+        "beats": {
+          "hook": "An indicator with a name and a target is a wish. An indicator with a measurement plan row is a commitment someone can act on.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m3-plan"
+          },
+          "example": {
+            "kind": "interactive",
+            "title": "What belongs in the row?",
+            "widget": "sorter",
+            "prompt": "The minimum package lists what a measurement plan must specify for each indicator. Sort these items into the row or out of it.",
+            "bins": [
+              {
+                "id": "in",
+                "label": "Belongs in the measurement plan row",
+                "hint": "Required by section 5.4 for every indicator."
+              },
+              {
+                "id": "out",
+                "label": "Belongs somewhere else",
+                "hint": "Useful, but it lives in another document."
+              }
+            ],
+            "cards": [
+              {
+                "label": "Unit of observation: plot",
+                "bin": "in",
+                "why": "The unit of observation is the first field of the row."
+              },
+              {
+                "label": "Data source: crop cuts on sampled plots",
+                "bin": "in",
+                "why": "The source is required."
+              },
+              {
+                "label": "Valid method: net-plot harvest adjusted to standard moisture",
+                "bin": "in",
+                "why": "The method must be one the KPI reference sheet accepts."
+              },
+              {
+                "label": "Frequency: every main season",
+                "bin": "in",
+                "why": "Frequency is required."
+              },
+              {
+                "label": "Coverage: 240 plots across three districts",
+                "bin": "in",
+                "why": "Sample or coverage is required."
+              },
+              {
+                "label": "Disaggregation: gender of plot manager, district",
+                "bin": "in",
+                "why": "Disaggregation is required."
+              },
+              {
+                "label": "Owner: Project MEAL Focal Point; timing: within four weeks of harvest",
+                "bin": "in",
+                "why": "Responsible owner and timing complete the row."
+              },
+              {
+                "label": "Annual target: 4.2 t/ha",
+                "bin": "out",
+                "why": "Targets belong in the results framework, not the measurement plan row."
+              },
+              {
+                "label": "Dashboard layout for the investor report",
+                "bin": "out",
+                "why": "Visualisation is designed later from the collected records."
+              },
+              {
+                "label": "Budget line for enumerator days",
+                "bin": "out",
+                "why": "The cost sits in the MEAL budget, not the measurement plan."
+              }
+            ]
+          },
+          "microCheck": [
+            "Q169",
+            "Q171"
+          ],
+          "recap": {
+            "bullets": [
+              "A measurement plan row names unit of observation, source, valid method, frequency, sample or coverage, disaggregation, owner and timing.",
+              "It is part of the minimum package every project leaves inception with.",
+              "Targets, budgets and dashboards live elsewhere."
+            ],
+            "source": {
+              "section": "5.4",
+              "title": "Minimum MEAL Implementation Package"
+            }
+          }
+        },
+        "glossary": [
+          "Measurement plan",
+          "Minimum MEAL package",
+          "Project MEAL Focal Point"
+        ]
+      }
+    ],
+    "storyboards": [
+      {
+        "id": "sb-m3-hero",
+        "title": "Four levels, four kinds of evidence",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 6,
+            "narration": "Two projects reported success. Only one measured change.",
+            "scene": {
+              "kind": "title",
+              "title": "Count or change?",
+              "subtitle": "Two projects. Two reports. One measured change."
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 14,
+            "narration": "The framework sorts evidence into four levels. Processes enable delivery. Outputs are what is delivered. Outcomes are what changes for people and systems. Impact is lasting change in agrifood systems.",
+            "scene": {
+              "kind": "chain",
+              "steps": [
+                {
+                  "label": "Processes",
+                  "detail": "Workplans, coordination, finance",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Outputs",
+                  "detail": "Varieties, tools, training",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Outcomes",
+                  "detail": "Adoption, policy, capacity",
+                  "tone": "green"
+                },
+                {
+                  "label": "Impact",
+                  "detail": "Lasting change",
+                  "tone": "green"
+                }
+              ]
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 24,
+            "narration": "Watch six results find their level. Trials coordinated: a process. Variety released: an output. Farmers adopting: an outcome. Incomes sustained: impact.",
+            "scene": {
+              "kind": "sort",
+              "bins": [
+                "Processes",
+                "Outputs",
+                "Outcomes",
+                "Impact"
+              ],
+              "cards": [
+                {
+                  "label": "Trials coordinated",
+                  "bin": 0
+                },
+                {
+                  "label": "Variety released",
+                  "bin": 1
+                },
+                {
+                  "label": "Farmers adopting",
+                  "bin": 2
+                },
+                {
+                  "label": "Incomes sustained",
+                  "bin": 3
+                },
+                {
+                  "label": "Budget tracked",
+                  "bin": 0
+                },
+                {
+                  "label": "Policy implemented",
+                  "bin": 2
+                }
+              ]
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 14,
+            "narration": "Here is the one everyone gets wrong. Farmers trained tries to land in outcomes. It bounces back. Training is delivered. Adoption is a change.",
+            "scene": {
+              "kind": "sort",
+              "bins": [
+                "Processes",
+                "Outputs",
+                "Outcomes",
+                "Impact"
+              ],
+              "cards": [
+                {
+                  "label": "Farmers trained",
+                  "bin": 1,
+                  "wrong": 2
+                }
+              ],
+              "stamp": "Delivered, not changed"
+            }
+          },
+          {
+            "id": "f5",
+            "seconds": 20,
+            "narration": "Even inside outputs, there are two ways to look. Reach counts how many. Quality asks where, to whom, how well and at what scale. Only the second side gives you a foundation for outcome evidence.",
+            "scene": {
+              "kind": "split",
+              "left": {
+                "title": "Reach",
+                "lines": [
+                  "3,000 farmers",
+                  "20 events"
+                ],
+                "value": 3000,
+                "tone": "gold"
+              },
+              "right": {
+                "title": "Quality",
+                "lines": [
+                  "3 districts",
+                  "54% women",
+                  "Identifiers recorded",
+                  "Delivery scored"
+                ],
+                "tone": "green"
+              },
+              "gap": "Same count. Different evidence."
+            }
+          },
+          {
+            "id": "f6",
+            "seconds": 12,
+            "narration": "Each level has its own data, its own products and its own owner. Projects own processes and outputs. Outcomes are shared. Impact sits with central MEAL and specialists.",
+            "scene": {
+              "kind": "cards",
+              "layout": "row",
+              "items": [
+                {
+                  "label": "Processes",
+                  "detail": "Owner: project team",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Outputs",
+                  "detail": "Owner: project team",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Outcomes",
+                  "detail": "Shared",
+                  "tone": "green"
+                },
+                {
+                  "label": "Impact",
+                  "detail": "Central MEAL + specialists",
+                  "tone": "green"
+                }
+              ],
+              "stamp": "§2.1–2.4, 5.2"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m3-sorter",
+        "title": "The classification test",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 8,
+            "narration": "Four questions sort any result. Was it done? Was it delivered? Did something change? Did the change last?",
+            "scene": {
+              "kind": "cards",
+              "layout": "row",
+              "items": [
+                {
+                  "label": "Was it done?",
+                  "detail": "Process",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Was it delivered?",
+                  "detail": "Output",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Did something change?",
+                  "detail": "Outcome",
+                  "tone": "green"
+                },
+                {
+                  "label": "Did it last?",
+                  "detail": "Impact",
+                  "tone": "green"
+                }
+              ]
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 14,
+            "narration": "Apply the test. A digital advisory tool is deployed: delivered, so an output. Farmers change their planting date after using it: a change, so an outcome.",
+            "scene": {
+              "kind": "sort",
+              "bins": [
+                "Processes",
+                "Outputs",
+                "Outcomes",
+                "Impact"
+              ],
+              "cards": [
+                {
+                  "label": "Advisory tool deployed",
+                  "bin": 1
+                },
+                {
+                  "label": "Planting date changed",
+                  "bin": 2
+                }
+              ]
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 14,
+            "narration": "Partners count too. A seed company multiplying the variety on its own account has changed its behaviour. A ministry adopting a guideline has changed a policy. Both are outcomes.",
+            "scene": {
+              "kind": "sort",
+              "bins": [
+                "Processes",
+                "Outputs",
+                "Outcomes",
+                "Impact"
+              ],
+              "cards": [
+                {
+                  "label": "Seed company multiplies variety",
+                  "bin": 2
+                },
+                {
+                  "label": "Ministry adopts guideline",
+                  "bin": 2
+                },
+                {
+                  "label": "Guideline drafted",
+                  "bin": 1,
+                  "wrong": 2
+                }
+              ]
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 8,
+            "narration": "When in doubt, ask who or what changed. If the answer is nobody yet, you are still at output level.",
+            "scene": {
+              "kind": "title",
+              "title": "Who or what changed?",
+              "subtitle": "If the answer is nobody yet, it is an output.",
+              "stamp": "The test"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m3-reach",
+        "title": "Reach versus quality",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 8,
+            "narration": "Reach is a count. Three thousand farmers, twenty events. The number rolls up nicely.",
+            "scene": {
+              "kind": "counter",
+              "items": [
+                {
+                  "label": "Farmers reached",
+                  "value": 3000,
+                  "tone": "gold"
+                },
+                {
+                  "label": "Training events",
+                  "value": 20,
+                  "tone": "gold"
+                }
+              ],
+              "note": "The whole of Report A"
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 16,
+            "narration": "Quality asks what the count hides. Where were they? Who were they? How well was it delivered? At what scale? Report B answers each question and records an identifier for every participant.",
+            "scene": {
+              "kind": "split",
+              "left": {
+                "title": "Report A",
+                "lines": [
+                  "3,000 farmers reached",
+                  "20 events"
+                ],
+                "tone": "gold"
+              },
+              "right": {
+                "title": "Report B",
+                "lines": [
+                  "3 districts, 54% women",
+                  "Persistent identifiers",
+                  "Delivery quality scored",
+                  "Full module: 2,100; half-day: 900"
+                ],
+                "tone": "green"
+              },
+              "gap": "Only B can be linked to an adoption survey"
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 12,
+            "narration": "When reach rises and adoption stays flat, nothing is wrong with the data. Delivery is growing. Change has not been shown. Say exactly that.",
+            "scene": {
+              "kind": "split",
+              "left": {
+                "title": "Reach",
+                "lines": [
+                  "Q1: 800",
+                  "Q2: 1,600",
+                  "Q3: 3,000"
+                ],
+                "value": 3000,
+                "tone": "gold"
+              },
+              "right": {
+                "title": "Adoption",
+                "lines": [
+                  "Baseline: 12%",
+                  "Follow-up: 12%"
+                ],
+                "value": 12,
+                "tone": "sky"
+              },
+              "gap": "Delivery up. Change not yet shown."
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m3-policy",
+        "title": "Policy change as a result",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 10,
+            "narration": "A policy brief is written and published. That is a recommendation produced: an output.",
+            "scene": {
+              "kind": "chain",
+              "steps": [
+                {
+                  "label": "Policy brief published",
+                  "detail": "Output",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Procedure revised",
+                  "detail": "?",
+                  "tone": "paper"
+                },
+                {
+                  "label": "Varieties reach farmers earlier",
+                  "detail": "?",
+                  "tone": "paper"
+                }
+              ],
+              "spotlight": 0
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 12,
+            "narration": "The regulator revises its release procedure using that evidence. A partner's system changed. Policy implementation is an outcome.",
+            "scene": {
+              "kind": "chain",
+              "steps": [
+                {
+                  "label": "Policy brief published",
+                  "detail": "Output",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Procedure revised",
+                  "detail": "Outcome",
+                  "tone": "green"
+                },
+                {
+                  "label": "Varieties reach farmers earlier",
+                  "detail": "?",
+                  "tone": "paper"
+                }
+              ],
+              "spotlight": 1,
+              "stamp": "Outcome"
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 12,
+            "narration": "Two seasons later, varieties reach farmers a year earlier. Stronger service delivery: still an outcome. Whether yields and incomes rise and stay up is the impact question, and it needs its own evidence.",
+            "scene": {
+              "kind": "chain",
+              "steps": [
+                {
+                  "label": "Policy brief published",
+                  "detail": "Output",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Procedure revised",
+                  "detail": "Outcome",
+                  "tone": "green"
+                },
+                {
+                  "label": "Varieties reach farmers earlier",
+                  "detail": "Outcome",
+                  "tone": "green"
+                },
+                {
+                  "label": "Lasting yield and income gains",
+                  "detail": "Impact: evidence needed",
+                  "tone": "paper"
+                }
+              ],
+              "links": [
+                {},
+                {},
+                {
+                  "label": "Not yet shown",
+                  "broken": true
+                }
+              ],
+              "spotlight": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m3-crosswalk",
+        "title": "Crosswalks",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 10,
+            "narration": "One adoption result. Four places it has to appear: the institutional KPI, the investor template, the CGIAR system and the project's own dashboard.",
+            "scene": {
+              "kind": "fan",
+              "source": "Adoption records (one registry)",
+              "branches": [
+                {
+                  "label": "Institutional KPI",
+                  "detail": "Toolbox definition"
+                },
+                {
+                  "label": "Investor indicator",
+                  "detail": "Investor definition"
+                },
+                {
+                  "label": "PRMS entry",
+                  "detail": "CGIAR format"
+                },
+                {
+                  "label": "Project dashboard",
+                  "detail": "Local scope"
+                }
+              ],
+              "target": "Collected once"
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 14,
+            "narration": "The crosswalk is a table that says how each one relates to the others. Where definitions differ, it records the difference instead of hiding it. The institutional definition stays as the Toolbox wrote it.",
+            "scene": {
+              "kind": "grid",
+              "rows": [
+                "Project measure",
+                "Institutional KPI",
+                "Investor indicator",
+                "PRMS"
+              ],
+              "cols": [
+                "Definition",
+                "Relation",
+                "Source"
+              ],
+              "cells": [
+                [
+                  "Planted on ≥1 plot",
+                  "Feeds KPI directly",
+                  "Registry"
+                ],
+                [
+                  "Adopting improved variety",
+                  "Toolbox definition kept",
+                  "Registry"
+                ],
+                [
+                  "Received seed",
+                  "Broader; reported separately",
+                  "Registry"
+                ],
+                [
+                  "Innovation use",
+                  "Mapped centrally from KPI",
+                  "KPI engine"
+                ]
+              ]
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 8,
+            "narration": "Relabelling is not harmonising. Shared definitions are. If a label is the only thing two indicators share, the crosswalk must say so.",
+            "scene": {
+              "kind": "title",
+              "title": "Same label is not same meaning",
+              "subtitle": "Map the definitions. Keep the institutional one intact.",
+              "stamp": "§5.4"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m3-plan",
+        "title": "The measurement plan row",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 8,
+            "narration": "Here is an indicator as it often arrives: a name and a target. Nobody can collect it from this.",
+            "scene": {
+              "kind": "checklist",
+              "items": [
+                {
+                  "label": "Indicator: yield (t/ha)",
+                  "done": true
+                },
+                {
+                  "label": "Target: 4.2 t/ha",
+                  "done": true
+                },
+                {
+                  "label": "Unit of observation"
+                },
+                {
+                  "label": "Data source"
+                },
+                {
+                  "label": "Valid method"
+                },
+                {
+                  "label": "Frequency"
+                },
+                {
+                  "label": "Sample / coverage"
+                },
+                {
+                  "label": "Disaggregation"
+                },
+                {
+                  "label": "Owner"
+                },
+                {
+                  "label": "Timing"
+                }
+              ]
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 18,
+            "narration": "Section 5.4 lists what the row needs. Unit of observation: plot. Source: crop cuts. Method: net-plot harvest at standard moisture. Frequency: each main season. Coverage: 240 sampled plots in three districts. Disaggregation: gender of plot manager. Owner: the Focal Point. Timing: within four weeks of harvest.",
+            "scene": {
+              "kind": "checklist",
+              "items": [
+                {
+                  "label": "Unit of observation: plot",
+                  "done": true
+                },
+                {
+                  "label": "Data source: crop cuts",
+                  "done": true
+                },
+                {
+                  "label": "Valid method: net-plot, standard moisture",
+                  "done": true
+                },
+                {
+                  "label": "Frequency: each main season",
+                  "done": true
+                },
+                {
+                  "label": "Coverage: 240 plots, 3 districts",
+                  "done": true
+                },
+                {
+                  "label": "Disaggregation: gender, district",
+                  "done": true
+                },
+                {
+                  "label": "Owner: Project MEAL Focal Point",
+                  "done": true
+                },
+                {
+                  "label": "Timing: within 4 weeks of harvest",
+                  "done": true
+                }
+              ],
+              "stamp": "Complete row"
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 8,
+            "narration": "Eight fields. One row per indicator. It is part of the minimum package, so it is finished at inception, not at reporting time.",
+            "scene": {
+              "kind": "title",
+              "title": "Eight fields, one row",
+              "subtitle": "Finished at inception, not at reporting time.",
+              "stamp": "Minimum package"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "tag": "output-vs-outcome",
+      "description": "You picked something that was delivered (training, a tool, seed, advice) when the question asked for a change in behaviour, practice, policy or systems.",
+      "remedyLessonIds": [
+        "L3.2",
+        "L3.3"
+      ]
+    },
+    {
+      "tag": "process-vs-output",
+      "description": "You treated a management activity such as coordination, procurement or workplan tracking as a delivered product or service.",
+      "remedyLessonIds": [
+        "L3.1",
+        "L3.2"
+      ]
+    },
+    {
+      "tag": "outcome-vs-impact",
+      "description": "You treated a change in practice, policy or partner behaviour as proof of lasting change in agrifood systems.",
+      "remedyLessonIds": [
+        "L3.1",
+        "L3.4"
+      ]
+    },
+    {
+      "tag": "reach-equals-change",
+      "description": "You treated the number of people reached as evidence that something changed for them.",
+      "remedyLessonIds": [
+        "L3.3"
+      ]
+    },
+    {
+      "tag": "relabel-indicator",
+      "description": "You tried to make indicators comparable by giving them the same name instead of mapping their definitions.",
+      "remedyLessonIds": [
+        "L3.5"
+      ]
+    },
+    {
+      "tag": "indicator-without-plan",
+      "description": "You accepted an indicator list without saying how, when, from whom and by whom each one is measured.",
+      "remedyLessonIds": [
+        "L3.6"
+      ]
+    }
+  ],
+  "diagnosticTags": {
+    "Q021": {
+      "objectiveIds": [
+        "results-framework.O1"
+      ]
+    },
+    "Q022": {
+      "objectiveIds": [
+        "results-framework.O2"
+      ],
+      "misconceptions": {
+        "b": "process-vs-output"
+      }
+    },
+    "Q023": {
+      "objectiveIds": [
+        "results-framework.O2"
+      ],
+      "misconceptions": {
+        "d": "output-vs-outcome",
+        "c": "process-vs-output"
+      }
+    },
+    "Q024": {
+      "objectiveIds": [
+        "results-framework.O2"
+      ],
+      "misconceptions": {
+        "b": "output-vs-outcome",
+        "d": "outcome-vs-impact"
+      }
+    },
+    "Q025": {
+      "objectiveIds": [
+        "results-framework.O1"
+      ],
+      "misconceptions": {
+        "c": "output-vs-outcome"
+      }
+    },
+    "Q026": {
+      "objectiveIds": [
+        "results-framework.O2"
+      ],
+      "misconceptions": {
+        "d": "output-vs-outcome",
+        "a": "outcome-vs-impact"
+      }
+    },
+    "Q027": {
+      "objectiveIds": [
+        "results-framework.O3"
+      ],
+      "misconceptions": {
+        "a": "reach-equals-change",
+        "c": "reach-equals-change"
+      }
+    },
+    "Q028": {
+      "objectiveIds": [
+        "results-framework.O4"
+      ],
+      "misconceptions": {
+        "c": "relabel-indicator"
+      }
+    },
+    "Q029": {
+      "objectiveIds": [
+        "results-framework.O6"
+      ]
+    },
+    "Q030": {
+      "objectiveIds": [
+        "results-framework.O5"
+      ],
+      "misconceptions": {
+        "d": "indicator-without-plan"
+      }
+    }
+  },
+  "questions": [
+    {
+      "id": "Q161",
+      "topicId": "results-framework",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "results-framework.O1"
+      ],
+      "question": "A regional team records partner meetings, procurement steps and workplan milestones. At which results level does this evidence sit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Outcomes"
+        },
+        {
+          "id": "b",
+          "text": "Processes"
+        },
+        {
+          "id": "c",
+          "text": "Impact"
+        },
+        {
+          "id": "d",
+          "text": "Outputs"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Processes are the activities, partnerships and management actions that enable delivery, including workplan implementation, coordination and financial tracking. This evidence has immediate management value but says nothing about what was delivered or what changed.",
+      "source": {
+        "section": "2.1",
+        "title": "Processes",
+        "kind": "application"
+      },
+      "reviewTip": "List the process examples in section 2.1 and compare them with the output examples in 2.2."
+    },
+    {
+      "id": "Q162",
+      "topicId": "results-framework",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "results-framework.O1"
+      ],
+      "question": "Which list contains only outputs as the framework defines them?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Varieties developed, digital tools deployed, training delivered, datasets published"
+        },
+        {
+          "id": "b",
+          "text": "Farmers adopting, policies implemented, incomes rising, capacity improving"
+        },
+        {
+          "id": "c",
+          "text": "Workplans executed, partners engaged, budgets tracked, risks managed"
+        },
+        {
+          "id": "d",
+          "text": "Food security improved, emissions reduced, resilience strengthened, inclusion widened"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Outputs are the products, services, technologies and capacity delivered through projects and partnerships. The other lists mix outcomes, processes and impact-level changes.",
+      "source": {
+        "section": "2.2",
+        "title": "Outputs",
+        "kind": "direct"
+      },
+      "reviewTip": "Read the first sentence of section 2.2 and its list of examples."
+    },
+    {
+      "id": "Q163",
+      "topicId": "results-framework",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "results-framework.O2"
+      ],
+      "question": "A seed company that partnered with the project now multiplies the new variety on its own account. Which results level is this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Output"
+        },
+        {
+          "id": "b",
+          "text": "Process"
+        },
+        {
+          "id": "c",
+          "text": "Outcome"
+        },
+        {
+          "id": "d",
+          "text": "Impact"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "A partner changed its behaviour and its business system, which the framework classes as an outcome. It is not yet evidence of lasting change in agrifood systems.",
+      "source": {
+        "section": "2.3",
+        "title": "Outcomes",
+        "kind": "application"
+      },
+      "reviewTip": "Ask who or what changed. If a partner changed its behaviour, the result is an outcome."
+    },
+    {
+      "id": "Q164",
+      "topicId": "results-framework",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "results-framework.O2"
+      ],
+      "question": "Five years after release, household panels show sustained income gains among adopters that persist after project closure. Which level does this evidence most directly describe?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Processes"
+        },
+        {
+          "id": "b",
+          "text": "Outputs"
+        },
+        {
+          "id": "c",
+          "text": "Outcomes"
+        },
+        {
+          "id": "d",
+          "text": "Impact"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Impact is positive, lasting change in agrifood systems, including incomes. Sustained gains measured over years, interpreted alongside other factors, sit at this level.",
+      "source": {
+        "section": "2.4",
+        "title": "Impact",
+        "kind": "application"
+      },
+      "reviewTip": "Check the impact definition for the word lasting."
+    },
+    {
+      "id": "Q165",
+      "topicId": "results-framework",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "results-framework.O3"
+      ],
+      "question": "A training log shows 1,200 participants. What does that count establish on its own?",
+      "options": [
+        {
+          "id": "a",
+          "text": "That training was delivered, not that any practice changed"
+        },
+        {
+          "id": "b",
+          "text": "That 1,200 farmers adopted the recommended practice"
+        },
+        {
+          "id": "c",
+          "text": "That the project's outcome target has been met"
+        },
+        {
+          "id": "d",
+          "text": "That the project contributed to income gains"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "A report can confirm that training took place or that farmers were reached. It cannot by itself show whether practices changed or benefits followed.",
+      "source": {
+        "section": "1",
+        "title": "A New MEAL Approach for CIMMYT",
+        "kind": "application"
+      },
+      "reviewTip": "Separate the delivery count from the question of what changed afterwards."
+    },
+    {
+      "id": "Q166",
+      "topicId": "results-framework",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "results-framework.O3"
+      ],
+      "question": "Which addition turns a bare delivery count into output evidence that can support later outcome work?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A narrative summary without participant records"
+        },
+        {
+          "id": "b",
+          "text": "Where, to whom, with what quality and at what scale it was delivered"
+        },
+        {
+          "id": "c",
+          "text": "A higher total reported more often"
+        },
+        {
+          "id": "d",
+          "text": "Relabelling the count as adoption"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Counting what was delivered is the starting point. Showing where, how, to whom, with what quality and at what scale is the foundation for outcome-level evidence.",
+      "source": {
+        "section": "2.2",
+        "title": "Outputs",
+        "kind": "application"
+      },
+      "reviewTip": "Read the last paragraph of section 2.2."
+    },
+    {
+      "id": "Q167",
+      "topicId": "results-framework",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "results-framework.O2"
+      ],
+      "question": "A ministry adopts the project's recommended fertiliser guideline into national extension materials. Which results level is this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Output, because the project produced the guideline"
+        },
+        {
+          "id": "b",
+          "text": "Process, because it involved coordination with the ministry"
+        },
+        {
+          "id": "c",
+          "text": "Impact, because national materials are lasting"
+        },
+        {
+          "id": "d",
+          "text": "Outcome, because a partner implemented a policy"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Policy implementation is an explicit outcome example in the framework. The guideline itself was an output; its adoption by the ministry is the change.",
+      "source": {
+        "section": "2.3",
+        "title": "Outcomes",
+        "kind": "application"
+      },
+      "reviewTip": "Find policy implementation in the outcome examples of section 2.3."
+    },
+    {
+      "id": "Q168",
+      "topicId": "results-framework",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "results-framework.O4"
+      ],
+      "question": "An investor template asks for \"farmers trained\" while the institutional KPI counts participants in capacity development, disaggregated by gender. What does the crosswalk do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Replaces the institutional KPI with the investor label so that both reports show one number"
+        },
+        {
+          "id": "b",
+          "text": "Reports both numbers side by side without recording how the two definitions relate"
+        },
+        {
+          "id": "c",
+          "text": "Maps the investor indicator to the institutional KPI and project measure, keeping the institutional definition"
+        },
+        {
+          "id": "d",
+          "text": "Rewrites the institutional definition to match the investor template for this project"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The indicator crosswalk links applicable institutional KPIs, investor indicators and project-specific measures with no silent redefinition of institutional indicators. Differences are recorded, not hidden.",
+      "source": {
+        "section": "5.4",
+        "title": "Minimum MEAL Implementation Package",
+        "kind": "application"
+      },
+      "reviewTip": "Read the indicator crosswalk element of the minimum package."
+    },
+    {
+      "id": "Q169",
+      "topicId": "results-framework",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "results-framework.O5"
+      ],
+      "question": "Which set of fields belongs in a measurement plan row?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Indicator name, target, deadline and investor contact"
+        },
+        {
+          "id": "b",
+          "text": "Budget line, staff name, dashboard and report format"
+        },
+        {
+          "id": "c",
+          "text": "Activity, output, outcome and impact statements"
+        },
+        {
+          "id": "d",
+          "text": "Unit of observation, source, valid method, frequency, coverage, disaggregation, owner and timing"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Section 5.4 specifies these eight fields for each indicator in the measurement plan. Targets, budgets and dashboards belong in other documents.",
+      "source": {
+        "section": "5.4",
+        "title": "Minimum MEAL Implementation Package",
+        "kind": "direct"
+      },
+      "reviewTip": "Read element 3 of the minimum package."
+    },
+    {
+      "id": "Q170",
+      "topicId": "results-framework",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "results-framework.O6"
+      ],
+      "question": "In the division of responsibility, who is the primary operational owner of outcome evidence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Shared: project teams generate and collect, central MEAL integrates and analyses"
+        },
+        {
+          "id": "b",
+          "text": "Project teams alone, as for processes and outputs"
+        },
+        {
+          "id": "c",
+          "text": "Central MEAL alone, as for impact"
+        },
+        {
+          "id": "d",
+          "text": "The Data Group, which owns the data system"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The outcome row of the division-of-responsibility table is shared. Projects generate and collect, and central MEAL designs methods, integrates across projects and analyses.",
+      "source": {
+        "section": "5.2",
+        "title": "Division of Responsibility: Project Delivery vs. Institutional MEAL",
+        "kind": "direct"
+      },
+      "reviewTip": "Read the four rows of the table in section 5.2."
+    },
+    {
+      "id": "Q171",
+      "topicId": "results-framework",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "results-framework.O5",
+        "results-framework.O1"
+      ],
+      "question": "Why does the framework call outcomes the level where CIMMYT's contribution is most important to establish credibly?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They are the easiest level to count from delivery logs"
+        },
+        {
+          "id": "b",
+          "text": "They are the only level that investors ask about"
+        },
+        {
+          "id": "c",
+          "text": "They show whether people, organisations and systems are changing as a result of the interventions"
+        },
+        {
+          "id": "d",
+          "text": "They remove the need for impact evidence"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Outcomes answer the essential institutional question: are people, organisations and systems changing as a result of CIMMYT's interventions? That is where contribution first becomes visible.",
+      "source": {
+        "section": "2.3",
+        "title": "Outcomes",
+        "kind": "direct"
+      },
+      "reviewTip": "Read the boxed question at the end of section 2.3."
+    },
+    {
+      "id": "Q172",
+      "topicId": "results-framework",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "results-framework.O2"
+      ],
+      "question": "A project reports that 40 demonstration plots were established and 600 farmers attended field days. Which results level do these figures describe?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Processes"
+        },
+        {
+          "id": "b",
+          "text": "Outputs"
+        },
+        {
+          "id": "c",
+          "text": "Outcomes"
+        },
+        {
+          "id": "d",
+          "text": "Impact"
+        }
+      ],
+      "correctOptionId": "b",
+      "misconceptions": {
+        "c": "output-vs-outcome",
+        "a": "process-vs-output"
+      },
+      "explanation": "Demonstration plots and field-day attendance are products and services delivered, which the framework classes as outputs. They do not yet show any change in practice.",
+      "source": {
+        "section": "2.2",
+        "title": "Outputs",
+        "kind": "application"
+      },
+      "reviewTip": "Apply the test: was it delivered, or did something change?"
+    },
+    {
+      "id": "Q173",
+      "topicId": "results-framework",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "results-framework.O2"
+      ],
+      "question": "Follow-up visits find that 35% of field-day participants changed their planting date as recommended. Which results level does this evidence describe?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Impact"
+        },
+        {
+          "id": "b",
+          "text": "Processes"
+        },
+        {
+          "id": "c",
+          "text": "Outputs"
+        },
+        {
+          "id": "d",
+          "text": "Outcomes"
+        }
+      ],
+      "correctOptionId": "d",
+      "misconceptions": {
+        "c": "output-vs-outcome",
+        "a": "outcome-vs-impact"
+      },
+      "explanation": "A change in agronomic practice among beneficiaries is an outcome. Whether the change leads to lasting benefit is a separate impact question.",
+      "source": {
+        "section": "2.3",
+        "title": "Outcomes",
+        "kind": "application"
+      },
+      "reviewTip": "Compare the outcome examples in 2.3 with the impact definition in 2.4."
+    },
+    {
+      "id": "Q174",
+      "topicId": "results-framework",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "results-framework.O2"
+      ],
+      "question": "The partner engagement log shows four coordination meetings and a signed memorandum with the extension service. Which results level is this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Processes"
+        },
+        {
+          "id": "b",
+          "text": "Outcomes"
+        },
+        {
+          "id": "c",
+          "text": "Outputs"
+        },
+        {
+          "id": "d",
+          "text": "Impact"
+        }
+      ],
+      "correctOptionId": "a",
+      "misconceptions": {
+        "c": "process-vs-output",
+        "b": "output-vs-outcome"
+      },
+      "explanation": "Coordination and partner engagement are management actions that enable delivery, so they are process evidence. A memorandum formalising a partnership can count as an output once delivered, but meetings themselves are processes.",
+      "source": {
+        "section": "2.1",
+        "title": "Processes",
+        "kind": "application"
+      },
+      "reviewTip": "Check the process examples: coordination, partner engagement, workplan execution."
+    },
+    {
+      "id": "Q175",
+      "topicId": "results-framework",
+      "difficulty": "foundation",
+      "pool": "check",
+      "objectiveIds": [
+        "results-framework.O1"
+      ],
+      "question": "Which statement matches the framework's definition of impact?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Delivery of products, services and technologies at scale across the project area"
+        },
+        {
+          "id": "b",
+          "text": "Changes in partner behaviour, practice or policy observed during the project"
+        },
+        {
+          "id": "c",
+          "text": "Positive, lasting change in agrifood systems such as productivity, incomes or resilience"
+        },
+        {
+          "id": "d",
+          "text": "Completion of planned activities within budget and on time, confirmed by reports"
+        }
+      ],
+      "correctOptionId": "c",
+      "misconceptions": {
+        "b": "outcome-vs-impact",
+        "a": "output-vs-outcome"
+      },
+      "explanation": "Impact is positive, lasting change in agrifood systems. The framework seeks credible evidence of CIMMYT's contribution to that change alongside other factors.",
+      "source": {
+        "section": "2.4",
+        "title": "Impact",
+        "kind": "direct"
+      },
+      "reviewTip": "Read the first sentence of section 2.4."
+    },
+    {
+      "id": "Q176",
+      "topicId": "results-framework",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "results-framework.O3"
+      ],
+      "question": "Two projects each report 3,000 farmers reached. One can also show location, participant identity, delivery quality and scale. Why does the framework value the second report more?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It proves that adoption occurred"
+        },
+        {
+          "id": "b",
+          "text": "It provides the foundation needed for outcome-level evidence"
+        },
+        {
+          "id": "c",
+          "text": "It counts as impact evidence"
+        },
+        {
+          "id": "d",
+          "text": "It removes the need for outcome studies"
+        }
+      ],
+      "correctOptionId": "b",
+      "misconceptions": {
+        "a": "reach-equals-change",
+        "c": "reach-equals-change"
+      },
+      "explanation": "Output evidence should show where, how, to whom, with what quality and at what scale. That detail is the foundation for outcome-level evidence; it is not outcome evidence itself.",
+      "source": {
+        "section": "2.2",
+        "title": "Outputs",
+        "kind": "application"
+      },
+      "reviewTip": "Read the final paragraph of section 2.2."
+    },
+    {
+      "id": "Q177",
+      "topicId": "results-framework",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "results-framework.O3"
+      ],
+      "question": "A dashboard shows reach rising every quarter while adoption surveys show no change in practice. What should the team conclude?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reach growth demonstrates outcome success"
+        },
+        {
+          "id": "b",
+          "text": "The adoption survey must be wrong"
+        },
+        {
+          "id": "c",
+          "text": "The impact target has been met"
+        },
+        {
+          "id": "d",
+          "text": "Delivery is growing but there is no outcome evidence of change yet"
+        }
+      ],
+      "correctOptionId": "d",
+      "misconceptions": {
+        "a": "reach-equals-change",
+        "c": "reach-equals-change"
+      },
+      "explanation": "Reach is output evidence; adoption is outcome evidence. The two measure different things, so rising reach with flat adoption means delivery is growing and change has not yet been shown.",
+      "source": {
+        "section": "2.3",
+        "title": "Outcomes",
+        "kind": "application"
+      },
+      "reviewTip": "Keep output and outcome questions separate when reading a dashboard."
+    },
+    {
+      "id": "Q178",
+      "topicId": "results-framework",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "results-framework.O2"
+      ],
+      "question": "A national seed regulator revises its variety-release procedure using evidence the project provided. Which level is this, and why?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Output, because the project produced the evidence"
+        },
+        {
+          "id": "b",
+          "text": "Impact, because regulation is lasting"
+        },
+        {
+          "id": "c",
+          "text": "Outcome, because a partner's system or policy changed"
+        },
+        {
+          "id": "d",
+          "text": "Process, because it involved coordination with the regulator"
+        }
+      ],
+      "correctOptionId": "c",
+      "misconceptions": {
+        "a": "output-vs-outcome",
+        "b": "outcome-vs-impact"
+      },
+      "explanation": "Policy implementation and stronger service delivery systems are outcome examples in the framework. The evidence the project produced was an output; the regulator's change is the outcome.",
+      "source": {
+        "section": "2.3",
+        "title": "Outcomes",
+        "kind": "application"
+      },
+      "reviewTip": "Separate the output (evidence provided) from the outcome (procedure revised)."
+    },
+    {
+      "id": "Q179",
+      "topicId": "results-framework",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "results-framework.O4"
+      ],
+      "question": "A project must report the same adoption result to CGIAR PRMS, an investor and its own dashboard. What should the inception crosswalk show?",
+      "options": [
+        {
+          "id": "a",
+          "text": "How the institutional KPI, investor indicator and project measure relate, with no silent redefinition"
+        },
+        {
+          "id": "b",
+          "text": "A single label used for all three systems regardless of definition"
+        },
+        {
+          "id": "c",
+          "text": "Three separate data collections, one per reporting system"
+        },
+        {
+          "id": "d",
+          "text": "Only the investor indicator, because it is contractual"
+        }
+      ],
+      "correctOptionId": "a",
+      "misconceptions": {
+        "b": "relabel-indicator"
+      },
+      "explanation": "The crosswalk maps applicable institutional KPIs, investor indicators and project-specific measures to one another. Submissions are then generated from the same validated records, so data are collected once.",
+      "source": {
+        "section": "5.4",
+        "title": "Minimum MEAL Implementation Package",
+        "kind": "application"
+      },
+      "reviewTip": "Read the crosswalk element in 5.4 and the collect-once principle in 4.3."
+    },
+    {
+      "id": "Q180",
+      "topicId": "results-framework",
+      "difficulty": "advanced",
+      "pool": "check",
+      "objectiveIds": [
+        "results-framework.O4"
+      ],
+      "question": "An investor defines an adopter as any farmer who received seed, while the institutional KPI counts farmers who planted it. What does the crosswalk approach allow?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quietly adopting the investor definition for the institutional KPI"
+        },
+        {
+          "id": "b",
+          "text": "Recording the mapping and the difference, and reporting each measure under its own definition"
+        },
+        {
+          "id": "c",
+          "text": "Choosing whichever definition yields the larger number"
+        },
+        {
+          "id": "d",
+          "text": "Dropping the institutional KPI from the project"
+        }
+      ],
+      "correctOptionId": "b",
+      "misconceptions": {
+        "a": "relabel-indicator",
+        "c": "relabel-indicator"
+      },
+      "explanation": "Projects may specify local scope and report investor measures, but they do not silently redefine the institutional indicator. The crosswalk records the relation and the difference.",
+      "source": {
+        "section": "3.2",
+        "title": "One KPI, Multiple Valid Measurement Levels",
+        "kind": "application"
+      },
+      "reviewTip": "Read the sentence in 3.2 about local scope and silent redefinition."
+    },
+    {
+      "id": "Q181",
+      "topicId": "results-framework",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "results-framework.O5"
+      ],
+      "question": "A measurement plan row for \"area under improved varieties\" names the indicator and a target but nothing else. What is missing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A dashboard design and a reporting template"
+        },
+        {
+          "id": "b",
+          "text": "A budget line and an investor contact"
+        },
+        {
+          "id": "c",
+          "text": "A theory of change narrative for the indicator"
+        },
+        {
+          "id": "d",
+          "text": "Unit of observation, source, method, frequency, coverage, disaggregation, owner and timing"
+        }
+      ],
+      "correctOptionId": "d",
+      "misconceptions": {
+        "a": "indicator-without-plan",
+        "c": "indicator-without-plan"
+      },
+      "explanation": "The measurement plan specifies these eight fields for each indicator. Without them nobody can collect the indicator consistently.",
+      "source": {
+        "section": "5.4",
+        "title": "Minimum MEAL Implementation Package",
+        "kind": "application"
+      },
+      "reviewTip": "Check an indicator in your own project against the eight fields."
+    },
+    {
+      "id": "Q182",
+      "topicId": "results-framework",
+      "difficulty": "advanced",
+      "pool": "check",
+      "objectiveIds": [
+        "results-framework.O5"
+      ],
+      "question": "Which measurement plan row is complete for a plot-level yield indicator?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Unit: farmer; source: farmer recall interviews; method: not specified; frequency: once; coverage: volunteer households that responded; disaggregation: none; owner: enumerator team; timing: at endline"
+        },
+        {
+          "id": "b",
+          "text": "Indicator: yield; target: 4 t/ha; reporter: project lead; frequency: annual; format: investor template; coverage: all project districts; disaggregation: none recorded; timing: at reporting"
+        },
+        {
+          "id": "c",
+          "text": "Unit: plot; source: crop cuts; method: net-plot harvest at standard moisture; frequency: each season; coverage: 240 sampled plots in three districts; disaggregation: gender of plot manager; owner: Focal Point; timing: within four weeks of harvest"
+        },
+        {
+          "id": "d",
+          "text": "Source: satellite imagery; method: to be decided with the Data Group; owner: Data Group; disaggregation: none; frequency: as imagery becomes available; coverage: whole region; unit: pixel"
+        }
+      ],
+      "correctOptionId": "c",
+      "misconceptions": {
+        "b": "indicator-without-plan"
+      },
+      "explanation": "Only this row names unit, source, a valid method, frequency, coverage, disaggregation, owner and timing. The others leave method, coverage or disaggregation unspecified.",
+      "source": {
+        "section": "5.4",
+        "title": "Minimum MEAL Implementation Package",
+        "kind": "application"
+      },
+      "reviewTip": "Count the eight required fields in each option."
+    },
+    {
+      "id": "Q183",
+      "topicId": "results-framework",
+      "difficulty": "foundation",
+      "pool": "check",
+      "objectiveIds": [
+        "results-framework.O6"
+      ],
+      "question": "Who holds primary responsibility for impact evidence, and what do projects provide?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Central MEAL with science and evaluation specialists; projects provide source data and context"
+        },
+        {
+          "id": "b",
+          "text": "Project teams alone; central MEAL provides a reporting template"
+        },
+        {
+          "id": "c",
+          "text": "Regional MEAL Leads alone; projects provide the final narrative"
+        },
+        {
+          "id": "d",
+          "text": "The Data Group; projects provide dashboard access"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The impact row of the division-of-responsibility table assigns central MEAL with science and evaluation specialists as owner, with projects supplying source data and context.",
+      "source": {
+        "section": "5.2",
+        "title": "Division of Responsibility: Project Delivery vs. Institutional MEAL",
+        "kind": "direct"
+      },
+      "reviewTip": "Read the impact row of the table in 5.2."
+    },
+    {
+      "id": "Q184",
+      "topicId": "results-framework",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "results-framework.O6"
+      ],
+      "question": "A project lead argues that outcome analysis is entirely central MEAL's job and stops collecting outcome data. What does the division of responsibility say?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The lead is right: outcomes belong to central MEAL alone"
+        },
+        {
+          "id": "b",
+          "text": "Outcomes are shared: projects generate and collect, central MEAL integrates and analyses"
+        },
+        {
+          "id": "c",
+          "text": "Outcomes belong to the Data Group once the system is live"
+        },
+        {
+          "id": "d",
+          "text": "Outcomes are optional for projects below Large scale"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Outcome evidence is shared. Project teams generate and collect it; central MEAL designs methods, integrates across projects and supports analysis.",
+      "source": {
+        "section": "5.2",
+        "title": "Division of Responsibility: Project Delivery vs. Institutional MEAL",
+        "kind": "application"
+      },
+      "reviewTip": "Compare the outcome row with the impact row in 5.2."
+    },
+    {
+      "id": "Q185",
+      "topicId": "results-framework",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "results-framework.O1"
+      ],
+      "question": "A proposal describes its results chain as activities, outputs and impact, with no outcome level. What does the framework's results chain require?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Three levels are sufficient whenever the impact statement is well defined and costed"
+        },
+        {
+          "id": "b",
+          "text": "Outcomes can be merged into outputs for small projects with limited evidence budgets"
+        },
+        {
+          "id": "c",
+          "text": "Impact can be reported directly from outputs when delivery targets are met"
+        },
+        {
+          "id": "d",
+          "text": "Four levels, with outcomes capturing change in behaviour, systems, practice or policy"
+        }
+      ],
+      "correctOptionId": "d",
+      "misconceptions": {
+        "c": "output-vs-outcome",
+        "b": "output-vs-outcome"
+      },
+      "explanation": "The framework organises evidence across four levels: Processes, Outputs, Outcomes and Impact. Outcomes are where CIMMYT's contribution becomes visible, so they cannot be skipped.",
+      "source": {
+        "section": "2",
+        "title": "The MEAL Framework: From Data to Impact",
+        "kind": "application"
+      },
+      "reviewTip": "Read the opening paragraph of section 2."
+    },
+    {
+      "id": "Q186",
+      "topicId": "results-framework",
+      "difficulty": "advanced",
+      "pool": "check",
+      "objectiveIds": [
+        "results-framework.O3",
+        "results-framework.O2"
+      ],
+      "question": "A project claims improved food security from the number of nutrition training sessions held. Which two mistakes does this make?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It treats delivery as change, and it skips the outcome level between training and food security"
+        },
+        {
+          "id": "b",
+          "text": "It counts sessions instead of participants, and it omits the budget"
+        },
+        {
+          "id": "c",
+          "text": "It reports too rarely, and it uses the wrong unit of observation"
+        },
+        {
+          "id": "d",
+          "text": "It uses an institutional KPI, and it lacks a target"
+        }
+      ],
+      "correctOptionId": "a",
+      "misconceptions": {
+        "b": "reach-equals-change"
+      },
+      "explanation": "Training sessions are outputs. Food security is an impact-level change. The claim jumps from delivery to lasting change without evidence of any outcome in between.",
+      "source": {
+        "section": "2.4",
+        "title": "Impact",
+        "kind": "application"
+      },
+      "reviewTip": "Trace the claim through all four levels and find the gaps."
+    }
+  ]
+}

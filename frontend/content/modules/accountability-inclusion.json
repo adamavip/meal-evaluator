@@ -1,0 +1,1069 @@
+{
+  "id": "accountability-inclusion",
+  "order": 9,
+  "title": "Accountability & inclusion",
+  "short": "Accountability",
+  "minutes": 26,
+  "sections": [
+    "2.3",
+    "2.7",
+    "4.1",
+    "5.1",
+    "5.4",
+    "6.1"
+  ],
+  "assessed": true,
+  "prerequisites": [
+    "learning-adaptation"
+  ],
+  "scenario": {
+    "title": "Every deadline met, one audience served",
+    "intro": "A seed-systems project in Mexico has met every investor deadline for three years. Then its outcome study comes back: adoption and yield gains overall, but no measurable benefit for women-headed households. The same week, a seed company partner asks for the participant records so it can run its own analysis. The team has been accountable to one audience. This module covers the other three, and what each one is owed.",
+    "persona": [
+      "project-lead",
+      "partner-liaison",
+      "field-officer",
+      "meal-specialist"
+    ]
+  },
+  "objectives": [
+    {
+      "id": "accountability-inclusion.O1",
+      "text": "Name the four directions of accountability and state what each requires in practice and how MEAL supports it.",
+      "bloom": "remember"
+    },
+    {
+      "id": "accountability-inclusion.O2",
+      "text": "Design a community feedback loop that links participant feedback to evidence, a decision and a management response, and returns the answer to the community.",
+      "bloom": "apply"
+    },
+    {
+      "id": "accountability-inclusion.O3",
+      "text": "Apply disaggregation by gender, age, territory and other equity dimensions to show who benefits and who may be excluded.",
+      "bloom": "analyse"
+    },
+    {
+      "id": "accountability-inclusion.O4",
+      "text": "Handle a negative finding openly and meet scientific accountability through FAIR data, documented methods and open publication.",
+      "bloom": "apply"
+    },
+    {
+      "id": "accountability-inclusion.O5",
+      "text": "Apply consent, access and data-sharing rules to a partner data request, identify who is accountable and responsible, and state how internal accountability is divided.",
+      "bloom": "apply"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "L9.1",
+      "moduleId": "accountability-inclusion",
+      "title": "Four directions of accountability",
+      "objectiveIds": [
+        "accountability-inclusion.O1"
+      ],
+      "minutes": 5,
+      "beats": {
+        "hook": "Every investor deadline met. Does that make the project accountable? The framework says accountability runs in four directions, and the investor is only one of them.",
+        "explainer": {
+          "kind": "storyboard",
+          "storyboardId": "sb-m9-hero"
+        },
+        "example": {
+          "kind": "interactive",
+          "title": "Sort eight practices into their accountability direction",
+          "widget": "sorter",
+          "prompt": "Each practice supports one direction of accountability in the table in section 2.7. Drop it where it belongs. Ask: who is this evidence or response for?",
+          "bins": [
+            {
+              "id": "investors",
+              "label": "Investors and institutional partners",
+              "hint": "Transparent, timely and comparable reporting on what was delivered, what changed and what was learned."
+            },
+            {
+              "id": "farmers",
+              "label": "Farmers, communities and stakeholders",
+              "hint": "Showing real benefits, saying openly when they do not occur, disaggregating, returning evidence."
+            },
+            {
+              "id": "science",
+              "label": "Scientific community and CGIAR",
+              "hint": "Rigour, reproducibility and transparency; adding to the global knowledge base."
+            },
+            {
+              "id": "internal",
+              "label": "Internal",
+              "hint": "Teams answer for processes and outputs in their remit; leadership for portfolio-level results."
+            }
+          ],
+          "cards": [
+            {
+              "label": "Harmonised KPIs so results compare across projects in the portfolio report",
+              "bin": "investors",
+              "why": "Harmonised KPIs are listed as how MEAL supports transparent and comparable reporting to investors and institutional partners."
+            },
+            {
+              "label": "A portfolio synthesis turned into an institutional evidence product",
+              "bin": "investors",
+              "why": "Synthesis across the portfolio into credible institutional evidence products sits in the investor row."
+            },
+            {
+              "label": "Outcome results presented back to the communities the study was done in",
+              "bin": "farmers",
+              "why": "Feedback mechanisms that return evidence to the communities it concerns support accountability to farmers and communities."
+            },
+            {
+              "label": "Outcome evidence broken down by gender and vulnerability",
+              "bin": "farmers",
+              "why": "Disaggregation by gender and vulnerability is how MEAL shows who benefits. It sits in the farmers and communities row."
+            },
+            {
+              "label": "The study dataset published openly under FAIR practices",
+              "bin": "science",
+              "why": "FAIR data practices and open publication of datasets and findings are how MEAL meets accountability to the scientific community and CGIAR."
+            },
+            {
+              "label": "An evaluation design chosen so other CGIAR centres can learn from the result",
+              "bin": "science",
+              "why": "Evaluation designs that support learning across the CGIAR system are listed under the scientific community and CGIAR."
+            },
+            {
+              "label": "Breeding-portal data unpacked so each team's contribution is visible",
+              "bin": "internal",
+              "why": "Section 2.7 gives this as its example of how MEAL supports internal accountability."
+            },
+            {
+              "label": "A programme leader answering for portfolio-level results",
+              "bin": "internal",
+              "why": "Internal accountability places portfolio-level results with leadership, and processes and outputs with the teams that own them."
+            }
+          ]
+        },
+        "microCheck": [
+          "Q341",
+          "Q342"
+        ],
+        "recap": {
+          "bullets": [
+            "Accountability runs to investors and institutional partners, to farmers and communities, to the scientific community and CGIAR, and inside CIMMYT.",
+            "Each direction needs different evidence and a different response. An on-time investor report covers one of the four.",
+            "The common thread is openness about what works, what does not, and what CIMMYT is learning."
+          ],
+          "source": {
+            "section": "2.7",
+            "title": "Accountability in Practice"
+          }
+        }
+      },
+      "glossary": [
+        "Four directions of accountability",
+        "MEAL",
+        "FAIR data",
+        "Disaggregation"
+      ]
+    },
+    {
+      "id": "L9.2",
+      "moduleId": "accountability-inclusion",
+      "title": "Community feedback that reaches decisions",
+      "objectiveIds": [
+        "accountability-inclusion.O2"
+      ],
+      "minutes": 4,
+      "beats": {
+        "hook": "Fourteen pieces of participant feedback sit in a folder. Nobody has acted on any of them. Is that a feedback mechanism? Not yet. The framework measures feedback by what it changes.",
+        "explainer": {
+          "kind": "storyboard",
+          "storyboardId": "sb-m9-loop"
+        },
+        "example": {
+          "kind": "text",
+          "title": "From a complaint about seed delivery to a decision and back",
+          "body": [
+            "The seed-systems project in Mexico runs a low-bandwidth feedback channel. In one season, participants in two municipalities report that certified seed arrived after the planting window. The Focal Point logs each report against the participant's identifier and the delivery record. That is the first link the framework asks for: feedback tied to the evidence behind it.",
+            "At the seasonal evidence review the reports appear beside the delivery dates. The review produces a decision log entry: deliveries to those municipalities move three weeks earlier next season, the field coordinator owns the change, and a follow-up date is set. Section 5.1 asks for exactly that: a quarterly or seasonal review with actions, owners and follow-up.",
+            "The management response is recorded with the decision. Then the loop goes back to the community. The response is reported at the next participant meeting, on the date set in the project's learning and accountability cycle. The minimum package requires that cycle to include participant and partner feedback and communication back to relevant stakeholders.",
+            "Count what the framework can now trace. A participant said something, the evidence confirmed it, a decision was made, an owner acted, and the participants heard the answer. Without the links, the folder of fourteen reports was a count. With them, it is accountability."
+          ]
+        },
+        "microCheck": [
+          "Q343",
+          "Q344"
+        ],
+        "recap": {
+          "bullets": [
+            "The learning and feedback functionality links participant feedback to the evidence behind it, to decision logs and to management responses.",
+            "A quarterly or seasonal evidence review turns feedback into actions with owners and follow-up dates.",
+            "The learning and accountability cycle fixes when evidence and responses go back to participants and partners."
+          ],
+          "source": {
+            "section": "4.1",
+            "title": "Required Functionalities"
+          }
+        }
+      },
+      "glossary": [
+        "Decision log",
+        "Management response",
+        "Minimum MEAL package",
+        "Learning and accountability cycle"
+      ]
+    },
+    {
+      "id": "L9.3",
+      "moduleId": "accountability-inclusion",
+      "title": "Disaggregation and inclusion",
+      "objectiveIds": [
+        "accountability-inclusion.O3"
+      ],
+      "minutes": 4,
+      "beats": {
+        "hook": "The outcome study says 31% of participants adopted the variety and yields rose. True. It also says nothing about women-headed households, because nobody asked. Which groups does your average hide?",
+        "explainer": {
+          "kind": "storyboard",
+          "storyboardId": "sb-m9-split"
+        },
+        "example": {
+          "kind": "text",
+          "title": "One average, four answers",
+          "body": [
+            "The pooled result for the Mexico project is a real gain: adoption up, yields up among adopters. A report that stops there fills the investor template. It does not answer the question section 2.7 puts on behalf of farmers and communities: does CIMMYT's work produce real benefits for the households it serves, and for which of them?",
+            "The study was designed with the measurement plan's disaggregation field filled in: gender of household head, age group of the plot manager, municipality. Because participants were registered with persistent identifiers, the same records can be re-analysed by those dimensions without new fieldwork.",
+            "Disaggregated, the picture changes. Men-headed households show the gain. Women-headed households show no measurable change in adoption or yield. Younger plot managers adopted at a higher rate than older ones. Two highland municipalities lag on everything. The average was true and incomplete.",
+            "This is what section 2.3 calls heterogeneity by gender, age and territory, and what section 6.1 describes as attention to who benefits and who may be excluded. The point is not to find a worse number. It is to know whom the innovation is reaching, so the next decision can target the households it missed."
+          ]
+        },
+        "microCheck": [
+          "Q345",
+          "Q346"
+        ],
+        "recap": {
+          "bullets": [
+            "Accountability to farmers and communities includes disaggregating evidence by gender, age and other equity dimensions.",
+            "Disaggregation is fixed in the measurement plan row and made possible by observation-level records with persistent identifiers.",
+            "A pooled average can hide a group that gained nothing. Report both the average and who benefited."
+          ],
+          "source": {
+            "section": "2.7",
+            "title": "Accountability in Practice"
+          }
+        }
+      },
+      "glossary": [
+        "Disaggregation",
+        "Measurement plan",
+        "Persistent identifier"
+      ]
+    },
+    {
+      "id": "L9.4",
+      "moduleId": "accountability-inclusion",
+      "title": "Negative findings and scientific accountability",
+      "objectiveIds": [
+        "accountability-inclusion.O4"
+      ],
+      "minutes": 4,
+      "beats": {
+        "hook": "The subgroup result is negative, the investor report is due, and a colleague suggests leaving it for the annex. What does the framework say to do with a finding nobody wants?",
+        "explainer": {
+          "kind": "storyboard",
+          "storyboardId": "sb-m9-open"
+        },
+        "example": {
+          "kind": "text",
+          "title": "Reporting a result that did not happen",
+          "body": [
+            "The Mexico project's outcome study shows no benefit for women-headed households. Three audiences are waiting: the investor, the communities and the scientific community. The framework gives one instruction for all of them: be open about what works, what does not, and what CIMMYT is learning.",
+            "To the investor, the finding goes into the report with the pooled result, not instead of it. The method, coverage and limits are documented, as section 2.5 asks of every analysis. The management response sits beside the finding: what the project will change in targeting and delivery, who owns it and when.",
+            "To the communities, the result is returned through the feedback mechanism. Women-headed households hear that the variety has not yet reached them and what the project will do about it.",
+            "To the scientific community and CGIAR, the finding becomes reusable knowledge. The dataset is published under FAIR practices with documented methods and reproducible analysis scripts, within CIMMYT's data rules. A null result for one group, properly documented, tells other centres something a positive average never could.",
+            "The temptation is to treat the negative finding as a failure to hide. The framework treats it as evidence to act on and to share."
+          ]
+        },
+        "microCheck": [
+          "Q347",
+          "Q348"
+        ],
+        "recap": {
+          "bullets": [
+            "Accountability means being open about what works and what does not, with investors, communities, the scientific community and inside CIMMYT.",
+            "A negative finding travels with its documented method, its limits and a management response.",
+            "Scientific accountability needs FAIR data, documented methods, open publication and reproducible analysis."
+          ],
+          "source": {
+            "section": "2.7",
+            "title": "Accountability in Practice"
+          }
+        }
+      },
+      "glossary": [
+        "FAIR data",
+        "Provenance",
+        "Management response"
+      ]
+    },
+    {
+      "id": "L9.5",
+      "moduleId": "accountability-inclusion",
+      "title": "Consent, access and internal responsibility",
+      "objectiveIds": [
+        "accountability-inclusion.O5"
+      ],
+      "minutes": 4,
+      "beats": {
+        "hook": "A partner wants the participant records: names, phone numbers, plot locations. They are a partner, so it should be fine? The framework says four things must be in place first, and it names who answers for them.",
+        "explainer": {
+          "kind": "storyboard",
+          "storyboardId": "sb-m9-checklist"
+        },
+        "example": {
+          "kind": "interactive",
+          "title": "The partner data request",
+          "widget": "branch",
+          "prompt": "You are the Project MEAL Focal Point. Walk the request through the framework's rules and see where each choice leads.",
+          "start": "start",
+          "nodes": {
+            "start": {
+              "text": "A seed company partner emails you: \"Please send the participant list with names, phone numbers and plot locations so we can run a joint adoption analysis before the investor visit.\" The partner is named in the proposal. What do you do first?",
+              "choices": [
+                {
+                  "label": "Send it. They are a project partner and the analysis helps everyone.",
+                  "next": "sent",
+                  "feedback": "A shared purpose does not remove the requirement. Section 4.1 lists consent records, role-based access, protection of personal data and data-sharing rules with partners as required functions. Personal records do not move on goodwill."
+                },
+                {
+                  "label": "Check the consent records and the data-sharing arrangement with this partner.",
+                  "next": "check",
+                  "feedback": "Right first move. Consent and the agreed data-sharing rules decide what can be shared, with whom and in what form.",
+                  "good": true
+                },
+                {
+                  "label": "Refuse. Participant data never leaves CIMMYT.",
+                  "next": "refuse",
+                  "feedback": "Too far the other way. The framework expects data-sharing rules with partners, not a ban. The question is what consent and the agreed rules allow."
+                }
+              ]
+            },
+            "sent": {
+              "text": "The records go out by email. Nobody checked consent, nobody set an access role, and nothing records what the partner may do with the data. If a participant or the investor asks how their data were handled, the project has no answer. Go back and start with the check.",
+              "end": true
+            },
+            "refuse": {
+              "text": "The partner escalates to the project lead. Joint analysis was part of the design, and the framework provides for data-sharing rules with partners. A blanket refusal is not accountability either. Start again and check what consent and the arrangement allow.",
+              "end": true
+            },
+            "check": {
+              "text": "The consent records show participants agreed to their data being used by the project and its research partners, with personal details protected. But no data-sharing arrangement with this partner was set at the Phase 3 gate. What now?",
+              "choices": [
+                {
+                  "label": "Share now. The consent mentions research partners, so it is covered.",
+                  "next": "consentonly",
+                  "feedback": "Consent is one of four requirements. Role-based access and data-sharing rules with this partner are still missing, and protection of personal details has not been arranged."
+                },
+                {
+                  "label": "Ask the project lead to set the data-sharing arrangement, consulting the Regional MEAL Lead, Pillar B and the Data Group, before any record moves.",
+                  "next": "arrange",
+                  "feedback": "That matches the RACI row: the project lead is accountable, you are responsible, and those three roles are consulted.",
+                  "good": true
+                },
+                {
+                  "label": "Ask the Data Group to decide, since it owns the infrastructure.",
+                  "next": "dgdecides",
+                  "feedback": "The Data Group owns the infrastructure and is consulted. Accountability for consent, privacy and data-sharing arrangements sits with the project lead."
+                }
+              ]
+            },
+            "consentonly": {
+              "text": "You send a version with personal details removed, to be safe. The partner replies that without identifiers it cannot link records to its own sales data. Now you need the arrangement anyway, and the first transfer was never agreed or documented.",
+              "choices": [
+                {
+                  "label": "Stop. Set the data-sharing arrangement now, through the project lead.",
+                  "next": "arrange",
+                  "feedback": "Yes. Late is better than undocumented twice.",
+                  "good": true
+                },
+                {
+                  "label": "Send the identifiers too, since the first file already went.",
+                  "next": "sent",
+                  "feedback": "Two undocumented transfers are worse than one. Stop and set the arrangement."
+                }
+              ]
+            },
+            "dgdecides": {
+              "text": "The Data Group replies that it does not approve data-sharing with partners on a project's behalf. It asks who is accountable on the project side. Who is?",
+              "choices": [
+                {
+                  "label": "The project lead, with the Focal Point doing the work.",
+                  "next": "arrange",
+                  "feedback": "Correct. A for the project lead, R for the Focal Point.",
+                  "good": true
+                },
+                {
+                  "label": "The Regional MEAL Lead, because MEAL owns the content.",
+                  "next": "arrange",
+                  "feedback": "The Regional MEAL Lead is consulted. The MEAL team owns indicators, the data dictionary and quality rules; it is not the accountable role for this project's arrangement."
+                }
+              ]
+            },
+            "arrange": {
+              "text": "The arrangement is set: which fields the partner receives, for what purpose, under which access role, and how personal details are protected. The transfer is documented. Later, the partner asks who answers for portfolio-level results across all the CIMMYT seed projects it works with. What do you tell them?",
+              "choices": [
+                {
+                  "label": "CIMMYT leadership, as the internal accountability row states.",
+                  "next": "done",
+                  "feedback": "Yes. Teams answer for processes and outputs in their remit; leadership answers for portfolio-level results.",
+                  "good": true
+                },
+                {
+                  "label": "This project's team, since it collected the records.",
+                  "next": "done",
+                  "feedback": "The team is accountable for its own processes and outputs. Portfolio-level results sit with leadership."
+                }
+              ]
+            },
+            "done": {
+              "text": "Consent checked, access role defined, data-sharing rules agreed, project lead accountable, Focal Point responsible, transfer documented. The partner gets what the rules allow and the request is traceable. And when the question moves to the portfolio, you know whose answer it is.",
+              "end": true
+            }
+          }
+        },
+        "microCheck": [
+          "Q349",
+          "Q350"
+        ],
+        "recap": {
+          "bullets": [
+            "The privacy, consent and access functionality requires consent records, role-based access, protection of personal data and data-sharing rules with partners.",
+            "These are set at the Phase 3 gate. The project lead is accountable, the Focal Point responsible, and the Regional MEAL Lead, Pillar B and the Data Group are consulted.",
+            "Internally, teams answer for processes and outputs within their remit and leadership answers for portfolio-level results."
+          ],
+          "source": {
+            "section": "4.1",
+            "title": "Required Functionalities"
+          }
+        }
+      },
+      "glossary": [
+        "RACI",
+        "Project MEAL Focal Point",
+        "Minimum MEAL package",
+        "Role-based access"
+      ]
+    }
+  ],
+  "storyboards": [
+    {
+      "id": "sb-m9-hero",
+      "title": "The accountability compass",
+      "frames": [
+        {
+          "id": "f1",
+          "seconds": 8,
+          "narration": "Every investor deadline met. Is the project accountable? Only in one direction.",
+          "scene": {
+            "kind": "title",
+            "title": "More than a deadline",
+            "subtitle": "Accountability runs in four directions."
+          }
+        },
+        {
+          "id": "f2",
+          "seconds": 12,
+          "narration": "Section 2.7 names four directions. Investors and institutional partners. Farmers and communities. The scientific community and CGIAR. And CIMMYT itself.",
+          "scene": {
+            "kind": "compass",
+            "directions": [
+              {
+                "label": "Investors & institutional partners",
+                "detail": "Transparent, timely, comparable"
+              },
+              {
+                "label": "Farmers & communities",
+                "detail": "Real benefits, said openly"
+              },
+              {
+                "label": "Scientific community & CGIAR",
+                "detail": "Rigour, reproducibility, transparency"
+              },
+              {
+                "label": "Internal",
+                "detail": "Remit and portfolio"
+              }
+            ]
+          }
+        },
+        {
+          "id": "f3",
+          "seconds": 16,
+          "narration": "Investors and partners are owed transparent, timely and comparable reporting on what was delivered, what changed and what was learned. MEAL supports it with harmonised KPIs, documented methods, data-quality governance and portfolio synthesis.",
+          "scene": {
+            "kind": "compass",
+            "directions": [
+              {
+                "label": "Investors & institutional partners",
+                "detail": "Harmonised KPIs, documented methods, quality governance, synthesis"
+              },
+              {
+                "label": "Farmers & communities",
+                "detail": "Real benefits, said openly"
+              },
+              {
+                "label": "Scientific community & CGIAR",
+                "detail": "Rigour, reproducibility, transparency"
+              },
+              {
+                "label": "Internal",
+                "detail": "Remit and portfolio"
+              }
+            ],
+            "active": [
+              0
+            ]
+          }
+        },
+        {
+          "id": "f4",
+          "seconds": 20,
+          "narration": "Farmers and communities are owed proof of real benefit, and an honest answer when there is none. That means disaggregation by gender, age and equity dimensions, and feedback that returns evidence to the communities it concerns.",
+          "scene": {
+            "kind": "compass",
+            "directions": [
+              {
+                "label": "Investors & institutional partners",
+                "detail": "Transparent, timely, comparable"
+              },
+              {
+                "label": "Farmers & communities",
+                "detail": "Farmer-centred measurement, disaggregation, feedback that returns evidence"
+              },
+              {
+                "label": "Scientific community & CGIAR",
+                "detail": "Rigour, reproducibility, transparency"
+              },
+              {
+                "label": "Internal",
+                "detail": "Remit and portfolio"
+              }
+            ],
+            "active": [
+              1
+            ]
+          }
+        },
+        {
+          "id": "f5",
+          "seconds": 16,
+          "narration": "The scientific community and CGIAR are owed rigour, reproducibility and transparency. FAIR data, documented methods, open publication and evaluation designs others can learn from.",
+          "scene": {
+            "kind": "compass",
+            "directions": [
+              {
+                "label": "Investors & institutional partners",
+                "detail": "Transparent, timely, comparable"
+              },
+              {
+                "label": "Farmers & communities",
+                "detail": "Real benefits, said openly"
+              },
+              {
+                "label": "Scientific community & CGIAR",
+                "detail": "FAIR data, documented methods, open publication, shared evaluation designs"
+              },
+              {
+                "label": "Internal",
+                "detail": "Remit and portfolio"
+              }
+            ],
+            "active": [
+              2
+            ]
+          }
+        },
+        {
+          "id": "f6",
+          "seconds": 14,
+          "narration": "Inside CIMMYT, teams answer for the processes and outputs in their remit. Leadership answers for portfolio-level results. MEAL makes contributions visible through synthesised information.",
+          "scene": {
+            "kind": "compass",
+            "directions": [
+              {
+                "label": "Investors & institutional partners",
+                "detail": "Transparent, timely, comparable"
+              },
+              {
+                "label": "Farmers & communities",
+                "detail": "Real benefits, said openly"
+              },
+              {
+                "label": "Scientific community & CGIAR",
+                "detail": "Rigour, reproducibility, transparency"
+              },
+              {
+                "label": "Internal",
+                "detail": "Teams: processes and outputs in remit. Leadership: portfolio results."
+              }
+            ],
+            "active": [
+              3
+            ]
+          }
+        },
+        {
+          "id": "f7",
+          "seconds": 12,
+          "narration": "All four lit. The thread running through them: be open about what works, what does not, and what CIMMYT is learning.",
+          "scene": {
+            "kind": "compass",
+            "directions": [
+              {
+                "label": "Investors & institutional partners",
+                "detail": "What was delivered, what changed, what was learned"
+              },
+              {
+                "label": "Farmers & communities",
+                "detail": "Who benefits, who may be excluded"
+              },
+              {
+                "label": "Scientific community & CGIAR",
+                "detail": "Added to the global knowledge base"
+              },
+              {
+                "label": "Internal",
+                "detail": "Contributions visible"
+              }
+            ],
+            "active": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "sb-m9-loop",
+      "title": "Feedback that reaches a decision",
+      "frames": [
+        {
+          "id": "f1",
+          "seconds": 8,
+          "narration": "Feedback that is collected and counted is a number. Feedback that changes a decision is accountability.",
+          "scene": {
+            "kind": "title",
+            "title": "Count it, or close the loop?",
+            "subtitle": "Feedback, evidence, decision, response, back to the community."
+          }
+        },
+        {
+          "id": "f2",
+          "seconds": 14,
+          "narration": "Participants in two municipalities report late seed. Each report is logged against the participant's identifier and the delivery record, so the feedback is tied to the evidence behind it.",
+          "scene": {
+            "kind": "loop",
+            "steps": [
+              {
+                "label": "Participant feedback",
+                "detail": "Low-bandwidth channel"
+              },
+              {
+                "label": "Linked to evidence",
+                "detail": "Identifier and delivery record"
+              },
+              {
+                "label": "Decision and management response",
+                "detail": "Seasonal evidence review"
+              },
+              {
+                "label": "Communicated back",
+                "detail": "On the cycle calendar"
+              }
+            ],
+            "active": 0,
+            "log": "14 reports: seed arrived after the planting window"
+          }
+        },
+        {
+          "id": "f3",
+          "seconds": 14,
+          "narration": "At the seasonal review the reports meet the delivery data. The decision log records what changes, who acts and by when. The management response is written beside it.",
+          "scene": {
+            "kind": "loop",
+            "steps": [
+              {
+                "label": "Participant feedback",
+                "detail": "Low-bandwidth channel"
+              },
+              {
+                "label": "Linked to evidence",
+                "detail": "Identifier and delivery record"
+              },
+              {
+                "label": "Decision and management response",
+                "detail": "Seasonal evidence review"
+              },
+              {
+                "label": "Communicated back",
+                "detail": "On the cycle calendar"
+              }
+            ],
+            "active": 2,
+            "log": "Decision: deliveries three weeks earlier. Owner: field coordinator. Follow-up: next season."
+          }
+        },
+        {
+          "id": "f4",
+          "seconds": 12,
+          "narration": "Then the answer goes back to the community on the date in the learning and accountability cycle. The loop is closed when the participants hear what changed.",
+          "scene": {
+            "kind": "loop",
+            "steps": [
+              {
+                "label": "Participant feedback",
+                "detail": "Low-bandwidth channel"
+              },
+              {
+                "label": "Linked to evidence",
+                "detail": "Identifier and delivery record"
+              },
+              {
+                "label": "Decision and management response",
+                "detail": "Seasonal evidence review"
+              },
+              {
+                "label": "Communicated back",
+                "detail": "On the cycle calendar"
+              }
+            ],
+            "active": 3,
+            "log": "Reported back at the participant meeting, per the learning and accountability cycle"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sb-m9-split",
+      "title": "The average is true",
+      "frames": [
+        {
+          "id": "f1",
+          "seconds": 8,
+          "narration": "Adoption 31 percent, yields up. The average is true. Which households does it hide?",
+          "scene": {
+            "kind": "title",
+            "title": "The average is true",
+            "subtitle": "It is also incomplete."
+          }
+        },
+        {
+          "id": "f2",
+          "seconds": 16,
+          "narration": "Break the same records down by gender of household head, age and municipality. Women-headed households show no change. Two municipalities lag on everything.",
+          "scene": {
+            "kind": "split",
+            "left": {
+              "title": "Pooled",
+              "lines": [
+                "Adoption: 31%",
+                "Yield gain among adopters"
+              ],
+              "value": 31,
+              "tone": "gold"
+            },
+            "right": {
+              "title": "Disaggregated",
+              "lines": [
+                "Men-headed households: gain",
+                "Women-headed households: no change",
+                "Under 35: higher adoption",
+                "Two highland municipalities: lagging"
+              ],
+              "tone": "green"
+            },
+            "gap": "Same records. A different question."
+          }
+        },
+        {
+          "id": "f3",
+          "seconds": 12,
+          "narration": "Section 2.3 names gender, age and territory for heterogeneity analysis. Section 2.7 adds other equity dimensions. The measurement plan row fixes them before collection starts.",
+          "scene": {
+            "kind": "cards",
+            "layout": "row",
+            "items": [
+              {
+                "label": "Gender",
+                "detail": "Household head, plot manager",
+                "tone": "green"
+              },
+              {
+                "label": "Age",
+                "detail": "Younger and older managers",
+                "tone": "green"
+              },
+              {
+                "label": "Territory",
+                "detail": "Municipality, agroecology",
+                "tone": "green"
+              },
+              {
+                "label": "Other equity dimensions",
+                "detail": "Vulnerability relevant to the population",
+                "tone": "sky"
+              }
+            ],
+            "stamp": "Measurement plan: disaggregation"
+          }
+        },
+        {
+          "id": "f4",
+          "seconds": 8,
+          "narration": "Accountability to participants improves through attention to who benefits and who may be excluded. The average alone cannot show it.",
+          "scene": {
+            "kind": "title",
+            "title": "Who benefits, who may be excluded",
+            "subtitle": "Report the average and the breakdown.",
+            "stamp": "§2.7, 6.1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sb-m9-open",
+      "title": "A result nobody wanted",
+      "frames": [
+        {
+          "id": "f1",
+          "seconds": 8,
+          "narration": "The subgroup result is negative and the report is due. What does the framework do with a finding nobody wanted?",
+          "scene": {
+            "kind": "title",
+            "title": "A result nobody wanted",
+            "subtitle": "No benefit for women-headed households."
+          }
+        },
+        {
+          "id": "f2",
+          "seconds": 14,
+          "narration": "One path softens: pooled gain only, subgroup in an annex, wait a season. The other is open: report it, document the method and its limits, respond, return it to the community.",
+          "scene": {
+            "kind": "split",
+            "left": {
+              "title": "Soften",
+              "lines": [
+                "Report the pooled gain only",
+                "Move the subgroup to an annex",
+                "Wait for better numbers"
+              ],
+              "tone": "gold"
+            },
+            "right": {
+              "title": "Open",
+              "lines": [
+                "Report the finding",
+                "Document method and limits",
+                "Record a management response",
+                "Return it to the community"
+              ],
+              "tone": "green"
+            },
+            "gap": "Accountability is the right-hand column"
+          }
+        },
+        {
+          "id": "f3",
+          "seconds": 14,
+          "narration": "To the scientific community and CGIAR the finding is knowledge. FAIR data, documented methods, open publication and designs others can learn from are how MEAL meets that standard.",
+          "scene": {
+            "kind": "cards",
+            "layout": "row",
+            "items": [
+              {
+                "label": "FAIR data practices",
+                "detail": "Findable, accessible, interoperable, reusable",
+                "tone": "green"
+              },
+              {
+                "label": "Documented methods",
+                "detail": "Reproducible analysis",
+                "tone": "green"
+              },
+              {
+                "label": "Open publication",
+                "detail": "Datasets and findings",
+                "tone": "green"
+              },
+              {
+                "label": "Shared evaluation designs",
+                "detail": "Learning across CGIAR",
+                "tone": "green"
+              }
+            ],
+            "stamp": "Scientific accountability"
+          }
+        },
+        {
+          "id": "f4",
+          "seconds": 12,
+          "narration": "A negative finding travels with its method, its limits and a response. Then it goes to the investor, the community, the scientific community and CIMMYT itself.",
+          "scene": {
+            "kind": "chain",
+            "steps": [
+              {
+                "label": "Negative finding",
+                "detail": "No benefit for one group",
+                "tone": "gold"
+              },
+              {
+                "label": "Method and limits documented",
+                "detail": "Coverage, uncertainty",
+                "tone": "sky"
+              },
+              {
+                "label": "Management response logged",
+                "detail": "What changes, who, when",
+                "tone": "sky"
+              },
+              {
+                "label": "Shared in all four directions",
+                "detail": "Investor, community, science, CIMMYT",
+                "tone": "green"
+              }
+            ],
+            "traveler": true,
+            "stamp": "Open about what does not work"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sb-m9-checklist",
+      "title": "The partner wants the records",
+      "frames": [
+        {
+          "id": "f1",
+          "seconds": 8,
+          "narration": "A partner asks for the participant list. They are on the project. Does that settle it?",
+          "scene": {
+            "kind": "title",
+            "title": "The partner wants the records",
+            "subtitle": "Names, phone numbers, plot locations."
+          }
+        },
+        {
+          "id": "f2",
+          "seconds": 14,
+          "narration": "Section 4.1 lists what the system must provide: consent records, role-based access, protection of personal data and data-sharing rules with partners. Four boxes. None is ticked yet.",
+          "scene": {
+            "kind": "checklist",
+            "items": [
+              {
+                "label": "Consent records cover this use"
+              },
+              {
+                "label": "Role-based access defined"
+              },
+              {
+                "label": "Personal data protected"
+              },
+              {
+                "label": "Data-sharing rules agreed with this partner"
+              }
+            ],
+            "stamp": "Required functionality, §4.1"
+          }
+        },
+        {
+          "id": "f3",
+          "seconds": 12,
+          "narration": "They are ticked at the Phase 3 gate, when protocols, roles, consent and QA procedures are approved. Before routine collection, not when the request arrives.",
+          "scene": {
+            "kind": "checklist",
+            "items": [
+              {
+                "label": "Consent records cover this use",
+                "done": true
+              },
+              {
+                "label": "Role-based access defined",
+                "done": true
+              },
+              {
+                "label": "Personal data protected",
+                "done": true
+              },
+              {
+                "label": "Data-sharing rules agreed with this partner",
+                "done": true
+              }
+            ],
+            "stamp": "Phase 3 gate"
+          }
+        },
+        {
+          "id": "f4",
+          "seconds": 14,
+          "narration": "The RACI row for consent, privacy and data-sharing arrangements: the project lead is accountable, the Focal Point does the work, and the Regional MEAL Lead, Pillar B and the Data Group are consulted.",
+          "scene": {
+            "kind": "cards",
+            "layout": "row",
+            "items": [
+              {
+                "label": "Project lead",
+                "detail": "Accountable",
+                "tone": "green"
+              },
+              {
+                "label": "Project MEAL Focal Point",
+                "detail": "Responsible",
+                "tone": "green"
+              },
+              {
+                "label": "Regional MEAL Lead",
+                "detail": "Consulted",
+                "tone": "sky"
+              },
+              {
+                "label": "Evidence Systems pillar",
+                "detail": "Consulted",
+                "tone": "sky"
+              },
+              {
+                "label": "Data Group",
+                "detail": "Consulted",
+                "tone": "sky"
+              }
+            ],
+            "spotlight": [
+              0,
+              1
+            ],
+            "stamp": "RACI, Phase 3"
+          }
+        },
+        {
+          "id": "f5",
+          "seconds": 10,
+          "narration": "And inside CIMMYT: teams answer for the processes and outputs in their remit. Leadership answers for portfolio-level results.",
+          "scene": {
+            "kind": "cards",
+            "layout": "row",
+            "items": [
+              {
+                "label": "Individuals, leads and teams",
+                "detail": "Processes and outputs within their remit",
+                "tone": "sky"
+              },
+              {
+                "label": "Leadership",
+                "detail": "Portfolio-level results",
+                "tone": "green"
+              }
+            ],
+            "stamp": "Internal accountability"
+          }
+        }
+      ]
+    }
+  ]
+}

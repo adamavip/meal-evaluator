@@ -1,0 +1,407 @@
+[
+  {
+    "term": "MEAL",
+    "definition": "Monitoring, Evaluation, Accountability and Learning: the four connected functions that turn evidence into decisions and credible accounts of change.",
+    "section": "1"
+  },
+  {
+    "term": "Observation-level evidence",
+    "definition": "Records from farmers, plots, trials, households and institutions that describe what changed, for whom, where and under what conditions, as opposed to aggregated project reports.",
+    "section": "1"
+  },
+  {
+    "term": "Report-based monitoring",
+    "definition": "Monitoring built mainly from project reports and aggregated figures. It can describe delivery but cannot consistently reconstruct what changed on the ground.",
+    "section": "1"
+  },
+  {
+    "term": "Four strategic effects",
+    "definition": "Evidence, Collaboration, Agility and foresight, and Impact: the four institutional effects the new approach is expected to produce, each reinforcing the others.",
+    "section": "1.2"
+  },
+  {
+    "term": "Results chain",
+    "definition": "The four cumulative levels at which the framework organises evidence: Processes, Outputs, Outcomes and Impact.",
+    "section": "2"
+  },
+  {
+    "term": "Process",
+    "definition": "The activities, partnerships and management actions that enable delivery: workplan implementation, resource mobilisation, coordination, financial tracking, partner engagement and risk management.",
+    "section": "2.1"
+  },
+  {
+    "term": "Output",
+    "definition": "The products, services, technologies and capacity delivered through CIMMYT projects and partnerships, such as varieties developed, tools deployed, training delivered or datasets published.",
+    "section": "2.2"
+  },
+  {
+    "term": "Outcome",
+    "definition": "A change in behaviour, systems, practice, capacity, policy or performance among beneficiaries and partners, such as adoption of a technology or implementation of a policy.",
+    "section": "2.3"
+  },
+  {
+    "term": "Impact",
+    "definition": "Positive, lasting change in agrifood systems: productivity, incomes, food security, resilience, resource-use efficiency, emissions, biodiversity, inclusion and institutional transformation.",
+    "section": "2.4"
+  },
+  {
+    "term": "Contribution",
+    "definition": "The role that CIMMYT's technologies, partnerships, capacity and services played, alongside other factors, in producing lasting change. CIMMYT does not claim to be the sole cause of observed change.",
+    "section": "2.4"
+  },
+  {
+    "term": "Attribution",
+    "definition": "An estimate of how much of an observed change is caused by a specific intervention, usually established against a counterfactual. One of several impact analysis methods the framework names.",
+    "section": "2.4"
+  },
+  {
+    "term": "Counterfactual",
+    "definition": "A credible estimate of what would have happened without the intervention, for example from a comparison group, against which observed change is assessed.",
+    "section": "2.4"
+  },
+  {
+    "term": "Five evidence functions",
+    "definition": "Capture, Quality Assurance, Integration, Analysis, and Use & Visualization: the operational sequence for designing and running MEAL in every project.",
+    "section": "2.5"
+  },
+  {
+    "term": "Capture",
+    "definition": "The first evidence function: identify the question, then capture the observation-level and contextual data needed to answer it using the method the indicator requires.",
+    "section": "2.5"
+  },
+  {
+    "term": "Quality assurance",
+    "definition": "The evidence function that validates, standardises, de-duplicates and documents provenance and quality across six dimensions: completeness, accuracy, consistency, timeliness, uniqueness and representativeness.",
+    "section": "2.5"
+  },
+  {
+    "term": "Integration",
+    "definition": "The evidence function that links records across sources, projects, partners, locations and time using common identifiers, controlled vocabularies and interoperable structures.",
+    "section": "2.5"
+  },
+  {
+    "term": "Six quality dimensions",
+    "definition": "Completeness, accuracy, consistency, timeliness, uniqueness and representativeness: the controls that quality assurance applies to every dataset.",
+    "section": "2.5"
+  },
+  {
+    "term": "Representativeness",
+    "definition": "Whether the observed units support a claim about the wider population named in the claim. A survey of easily reached farms cannot by itself describe a whole region.",
+    "section": "2.5"
+  },
+  {
+    "term": "Provenance",
+    "definition": "The documented origin and history of a record: where it came from, who changed it and how a figure was calculated, so results can be audited and recalculated.",
+    "section": "2.5"
+  },
+  {
+    "term": "Evidence stack",
+    "definition": "The four complementary evidence layers the data system combines: direct observations, earth observation and sensors, external and context data, and operational records.",
+    "section": "2.6"
+  },
+  {
+    "term": "Direct observations",
+    "definition": "Plot, farm, household, participant, trial, institution or result-object records: the closest evidence of the actual state or change, permitting disaggregation and re-analysis.",
+    "section": "2.6"
+  },
+  {
+    "term": "Operational records",
+    "definition": "Workplans, training logs, distribution systems, financial and partner records that give traceability from intervention to output and link delivery to later outcomes.",
+    "section": "2.6"
+  },
+  {
+    "term": "Triangulation rule",
+    "definition": "A source strengthens a claim only when it measures the same construct, population, geography and period under compatible definitions.",
+    "section": "2.6"
+  },
+  {
+    "term": "Four directions of accountability",
+    "definition": "Accountability to investors and institutional partners; to farmers, communities and stakeholders; to the scientific community and CGIAR; and internal accountability within CIMMYT.",
+    "section": "2.7"
+  },
+  {
+    "term": "Disaggregation",
+    "definition": "Breaking evidence down by gender, age, territory and other equity dimensions so that who benefits, and who may be excluded, becomes visible.",
+    "section": "2.7"
+  },
+  {
+    "term": "FAIR data",
+    "definition": "Data that are Findable, Accessible, Interoperable and Reusable. The framework applies FAIR principles to meet scientific accountability and to design the data system.",
+    "section": "2.7"
+  },
+  {
+    "term": "KPI Toolbox",
+    "definition": "The institutional set of 142 indicators organised in 13 volumes, ten covering impact pathways and three covering enabling pathways, each with full reference sheets.",
+    "section": "3.1"
+  },
+  {
+    "term": "Thrust",
+    "definition": "One of CIMMYT's three top-level results groupings, Human Wellbeing, Planetary Health and Peace, under which impact-pathway volumes are aggregated and reported.",
+    "section": "3.1"
+  },
+  {
+    "term": "KPI harmonisation",
+    "definition": "When projects measure the same concept they share a definition, a methodological logic and rules for interpretation and, where valid, aggregation. It does not require identical methods everywhere.",
+    "section": "3"
+  },
+  {
+    "term": "KPI reference sheet",
+    "definition": "The definition of a KPI: concept, unit of observation, data sources, valid methods by measurement level, calculation and aggregation rules, disaggregation, quality requirements and provenance.",
+    "section": "3.2"
+  },
+  {
+    "term": "Measurement level",
+    "definition": "The level at which a KPI is measured, for example farm or plot, trial or station, and region or country, each with its own valid methods and quality rating.",
+    "section": "3.2"
+  },
+  {
+    "term": "Quality rating",
+    "definition": "A documented judgement of how reliable a measurement is given the method used, for example high for controlled trial protocols and high to medium for farm-level methods.",
+    "section": "3.2"
+  },
+  {
+    "term": "Local scope",
+    "definition": "A project's own specification of where and for whom an institutional KPI applies. Projects may set local scope but may not silently redefine the institutional indicator.",
+    "section": "3.2"
+  },
+  {
+    "term": "Aggregation",
+    "definition": "Recomputing institutional values from eligible underlying records with the indicator's method, which may involve de-duplication, weighting, pooling, extrapolation, modelling or triangulation. Never an unqualified sum of project totals.",
+    "section": "3.3"
+  },
+  {
+    "term": "Persistent identifier",
+    "definition": "A unique, stable ID for a farmer, plot, household, organisation, trial or project that holds across projects and years, linking delivery to later uptake and preventing double counting.",
+    "section": "4.1"
+  },
+  {
+    "term": "KPI engine",
+    "definition": "The data-system function that calculates institutional KPIs from eligible records with the approved method and reports coverage, uncertainty and method version.",
+    "section": "4.1"
+  },
+  {
+    "term": "Authoritative system",
+    "definition": "The system that is the recognised source of truth for an indicator, such as breeding, trial, finance or project-management systems. The MEAL data system connects to it rather than copying data by hand.",
+    "section": "4"
+  },
+  {
+    "term": "Collect data once",
+    "definition": "The principle that every investor or CGIAR submission is generated from the same validated records used for institutional KPIs, so projects do not re-enter results for each reporting system.",
+    "section": "4.3"
+  },
+  {
+    "term": "PRMS",
+    "definition": "CGIAR's Performance and Results Management System, one of the reporting systems the MEAL data system maps its validated records to.",
+    "section": "4.3"
+  },
+  {
+    "term": "Decision log",
+    "definition": "The record produced by quarterly or seasonal evidence reviews: what changes, who acts and by when.",
+    "section": "5.7"
+  },
+  {
+    "term": "Management response",
+    "definition": "A documented answer to an evaluation finding or recommendation stating what will be done, by whom, and tracked until acted upon.",
+    "section": "5.8"
+  },
+  {
+    "term": "Evidence-gap register",
+    "definition": "The annual record of where institutional evidence is missing, weak or uncertain, produced alongside the portfolio dashboard and method notes.",
+    "section": "5.7"
+  },
+  {
+    "term": "Operating cadence",
+    "definition": "The regular rhythm of assurance and review: continuous or monthly checks, quarterly or seasonal evidence reviews, annual KPI runs, and midterm, endline or trigger-based studies.",
+    "section": "5.7"
+  },
+  {
+    "term": "MEAL Matrix",
+    "definition": "The Annex A tool that classifies a project by type and scale, returning its default M&E complexity, applicable KPIs, MEAL support, deliverables and base MEAL budget.",
+    "section": "Annex A"
+  },
+  {
+    "term": "M&E complexity",
+    "definition": "Standard, Intermediate or Complex: set by project type according to how many Toolbox KPIs apply and how many are outcome and impact indicators, then adjusted by the Matrix adjustment rule.",
+    "section": "Annex A"
+  },
+  {
+    "term": "Adjustment rule",
+    "definition": "A project moves up one complexity level if it commits to report farmer- or household-level adoption, outcomes or impact to investors, runs its own ground measurement of outcomes, or depends on primary data from several implementing partners.",
+    "section": "Annex A"
+  },
+  {
+    "term": "Minimum MEAL package",
+    "definition": "The eight elements every new project leaves inception with: results architecture, indicator crosswalk, measurement plan, data architecture, quality plan, baseline or reference, learning and accountability cycle, and handover and capacity.",
+    "section": "5.4"
+  },
+  {
+    "term": "Indicator crosswalk",
+    "definition": "The inception document mapping applicable institutional KPIs, investor indicators and project-specific measures to one another, with no silent redefinition of institutional indicators.",
+    "section": "5.4"
+  },
+  {
+    "term": "Measurement plan",
+    "definition": "For each indicator: unit of observation, data source, valid method, frequency, sample or coverage, disaggregation, responsible owner and timing.",
+    "section": "5.4"
+  },
+  {
+    "term": "Baseline",
+    "definition": "A starting measurement, comparison group or other valid reference required when the outcome or impact method calls for one; otherwise a documented alternative.",
+    "section": "5.4"
+  },
+  {
+    "term": "Base MEAL contribution",
+    "definition": "The budget each project includes for institutional MEAL services, set by the Matrix: fixed amounts for Small projects, a percentage with a floor for Medium, and co-design for Large and MEGA.",
+    "section": "5.10"
+  },
+  {
+    "term": "Project MEAL Focal Point",
+    "definition": "The project-layer role, usually one per major project, that maintains the MEAL plan, keeps source-level records, runs first-line quality checks and works with the Regional MEAL Lead.",
+    "section": "5.8"
+  },
+  {
+    "term": "Regional MEAL Lead",
+    "definition": "The senior role, one per region, that oversees the regional portfolio and proposal pipeline, confirms Matrix classification, coaches Focal Points and links projects to the Core Layer.",
+    "section": "5.8"
+  },
+  {
+    "term": "Core Layer",
+    "definition": "The MEAL Group Lead and three technical pillars: Design, Standards & Enablement; Evidence Systems & Portfolio Performance; and Evaluation, Learning & Accountability.",
+    "section": "5.8"
+  },
+  {
+    "term": "MEAL Review Committee",
+    "definition": "The institutional body at the level of CIMMYT's scientific leadership that reviews and endorses the Handbook, KPI Toolbox and MEAL Matrix once a year.",
+    "section": "5.3"
+  },
+  {
+    "term": "RACI",
+    "definition": "A matrix stating who is Responsible, Accountable, Consulted and Informed for each lifecycle activity, with one accountable role per activity.",
+    "section": "5.1"
+  },
+  {
+    "term": "Trigger-based study",
+    "definition": "An outcome or impact study started by an event rather than the calendar, for example shock-event measurement after a severe disruption.",
+    "section": "5.7"
+  },
+  {
+    "term": "Institutional KPI",
+    "definition": "An indicator from the KPI Toolbox whose definition and method are set centrally. Projects may report project-specific indicators too, but these are not institutional KPIs until reviewed and approved.",
+    "section": "5.3"
+  },
+  {
+    "term": "Role-based access",
+    "definition": "Access to records granted according to a person's role rather than to everyone. One of the requirements of the privacy, consent and access functionality, alongside consent records, protection of personal data and data-sharing rules with partners.",
+    "section": "4.1"
+  },
+  {
+    "term": "Learning and accountability cycle",
+    "definition": "Element 7 of the minimum MEAL package: a calendar for evidence reviews, adaptation decisions, participant and partner feedback, and communication back to relevant stakeholders.",
+    "section": "5.4"
+  },
+  {
+    "term": "Audit trail",
+    "definition": "The record-level log of what changed in a dataset, when, by whom and why, kept so that institutional figures can be audited and recalculated.",
+    "section": "4.1"
+  },
+  {
+    "term": "Quality plan",
+    "definition": "Element of the minimum MEAL package that sets validation rules, first-line checks, deduplication, exception handling, provenance, audit trail and periodic MEAL assurance for a project.",
+    "section": "5.4"
+  },
+  {
+    "term": "First-line quality checks",
+    "definition": "The routine checks run by the Project MEAL Focal Point and project team on source-level records, close to collection, before periodic assurance by regional and central MEAL.",
+    "section": "5.8"
+  },
+  {
+    "term": "Earth observation and sensors",
+    "definition": "The second layer of the Evidence Stack: satellite imagery, weather, sensors and geospatial layers that add spatial coverage, frequency and extrapolation between observed locations.",
+    "section": "2.6"
+  },
+  {
+    "term": "External and context data",
+    "definition": "The third layer of the Evidence Stack: government statistics, public datasets, prices, climate and market series that supply context, denominators, benchmarks and covariates for interpreting change.",
+    "section": "2.6"
+  },
+  {
+    "term": "Nine required functionalities",
+    "definition": "The functions the MEAL data system must provide: multi-channel capture, persistent identifiers, quality assurance and provenance, privacy consent and access, integration, KPI engine, analytics and geospatial, dashboards and reporting, and learning and feedback.",
+    "section": "4.1"
+  },
+  {
+    "term": "Multi-channel capture",
+    "definition": "Online and offline mobile collection, web forms and low-bandwidth channels, plus import from partner systems, sensors and remote sensing, using forms built from the KPI reference sheets.",
+    "section": "4.1"
+  },
+  {
+    "term": "Data dictionary",
+    "definition": "The shared definitions and controlled vocabularies, owned by the MEAL team, that let records from different projects and sources mean the same thing when they are integrated.",
+    "section": "4.1"
+  },
+  {
+    "term": "Reporting mapping",
+    "definition": "The central link from source variables already collected to the fields a reporting system such as PRMS or an investor template requires. Adding a reporting system means adding a mapping, not a new collection.",
+    "section": "4.3"
+  },
+  {
+    "term": "Comparison group",
+    "definition": "Similar farms, households or institutions that did not receive the intervention, measured in the same way over the same period, whose result stands in for what would have happened without it.",
+    "section": "5.4"
+  },
+  {
+    "term": "Project scale",
+    "definition": "The size band of a project in the MEAL Matrix, set by budget and duration: Small (up to about USD 280,000, around one year), Medium (about USD 280,000 to 800,000, 1.5 to 3 years), Large (above USD 800,000 up to USD 10 million) or MEGA (above USD 10 million).",
+    "section": "Annex A"
+  },
+  {
+    "term": "MEAL Group Lead",
+    "definition": "Senior leader of the institutional MEAL function. Accountable for Handbook changes and KPI method exceptions, and prepares and presents the annual review to the MEAL Review Committee.",
+    "section": "5.8"
+  },
+  {
+    "term": "Extended MEAL Network",
+    "definition": "The Project Layer of the MEAL structure: Project MEAL Focal Points embedded in and funded by major projects, applying institutional standards with guidance from their Regional MEAL Lead.",
+    "section": "5.8"
+  },
+  {
+    "term": "Eight strategic capabilities",
+    "definition": "The capabilities the framework aims to give CIMMYT by 2030: a consolidated portfolio view, comparability of indicators, credible evidence with traceable methods, clearer attribution and contribution narratives, adaptive management during implementation, reduced reporting burden, greater data reuse, and an institutional learning infrastructure.",
+    "section": "6.2"
+  },
+  {
+    "term": "Analysis",
+    "definition": "The evidence function that applies methods matched to the question and the claim (descriptive, performance, contribution, counterfactual, geospatial, modelling or scenario analysis) and explicitly documents uncertainty and limits.",
+    "section": "2.5"
+  },
+  {
+    "term": "Use and visualization",
+    "definition": "The evidence function that turns evidence into dashboards, maps, briefs, learning reviews and decision products for specific users. Its purpose is action: adaptation, accountability, strategy and impact demonstration.",
+    "section": "2.5"
+  },
+  {
+    "term": "Evidence assets",
+    "definition": "The data CIMMYT already holds: multi-environment trial data across 90+ countries, adoption surveys and outcome studies, genomic and trait data, satellite imagery and remote sensing, socioeconomic and gender datasets, and partner and NARS performance records.",
+    "section": "1.3"
+  },
+  {
+    "term": "Strategic institutional capability",
+    "definition": "What MEAL is meant to be by 2030 instead of a compliance function: a transversal capacity connecting data, science, management, strategy and impact.",
+    "section": "6"
+  },
+  {
+    "term": "Theory of change",
+    "definition": "The project's intervention logic, co-developed with central MEAL at opportunity and proposal stage: how activities are expected to lead through outputs and outcomes to impact. With decision and learning questions and links to CIMMYT Strategy it forms the results architecture of the minimum package.",
+    "section": "5.1"
+  },
+  {
+    "term": "Assumption",
+    "definition": "A condition a results chain relies on but the project does not control. The MEAL Matrix asks system change projects to check the assumptions in their theory of change and other project types to check that their adoption logic holds.",
+    "section": "Annex A"
+  },
+  {
+    "term": "Adoption pathway",
+    "definition": "The route by which a delivered technology or service is expected to lead to changed practice. The MEAL Matrix describes different logics by project type, such as adoption and diffusion for seed systems and usefulness, engagement and behaviour change for digital advice.",
+    "section": "Annex A"
+  }
+]

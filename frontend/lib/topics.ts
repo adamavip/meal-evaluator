@@ -1,0 +1,15 @@
+export const TOPICS = [
+  { id: 'meal-foundations', title: 'MEAL foundations', short: 'Foundations', icon: 'compass', color: 'green', focus: 'Purpose, evidence and the four parts of MEAL.', sections: '1.1–1.3; 2.5; 2.7', study: 'Revisit why CIMMYT links monitoring, evaluation, accountability and learning.' },
+  { id: 'theory-of-change', title: 'Theory of change', short: 'Theory of change', icon: 'route', color: 'gold', focus: 'How activities are expected to contribute to change.', sections: '2.1–2.4; 5.1; 5.4', study: 'Trace a project’s activities through outputs and outcomes to impact. State the assumptions behind each link.' },
+  { id: 'results-framework', title: 'Results framework', short: 'Results framework', icon: 'layers', color: 'sky', focus: 'Processes, outputs, outcomes and impact.', sections: '2.1–2.4; 5.4', study: 'Check which results level each project indicator measures.' },
+  { id: 'kpis-measurement', title: 'KPIs & measurement', short: 'KPIs', icon: 'target', color: 'green', focus: 'Indicator definitions, methods and aggregation.', sections: '3.1–3.3', study: 'Compare indicator definitions, valid measurement methods and the rules for institutional totals.' },
+  { id: 'data-quality', title: 'Data quality & collection', short: 'Data quality', icon: 'check', color: 'gold', focus: 'Collection plans, validation and usable records.', sections: '2.5–2.6; 4.1; 5.4', study: 'Review how collection plans and quality checks make observations fit for use.' },
+  { id: 'evidence-systems', title: 'Evidence & data systems', short: 'Evidence systems', icon: 'database', color: 'sky', focus: 'Connecting, storing and reusing evidence.', sections: '2.6; 4.1–4.3', study: 'Follow an observation from collection through integration, analysis and reporting.' },
+  { id: 'impact-assessment', title: 'Impact assessment', short: 'Impact assessment', icon: 'scan', color: 'green', focus: 'Credible claims about lasting change.', sections: '1.3; 2.4; 2.6; 3.3', study: 'Review contribution, causal evidence and the role of comparison groups.' },
+  { id: 'learning-adaptation', title: 'Learning & adaptation', short: 'Learning', icon: 'refresh', color: 'gold', focus: 'Using findings to change decisions and practice.', sections: '2.5; 5.4; 5.7; 6.2', study: 'Identify when evidence should trigger a decision, a change or a further question.' },
+  { id: 'accountability-inclusion', title: 'Accountability & inclusion', short: 'Accountability', icon: 'users', color: 'sky', focus: 'Responsibilities to partners and communities.', sections: '2.7; 4.1; 5.4; 6.1', study: 'Review who needs an account of results and how feedback reaches decisions.' },
+  { id: 'implementation-governance', title: 'Implementation & governance', short: 'Implementation', icon: 'network', color: 'green', focus: 'Roles, project requirements and coordination.', sections: '5.1–5.10; Annex A', study: 'Review the minimum MEAL package, shared roles and project-level responsibilities.' },
+] as const;
+
+export type TopicId = typeof TOPICS[number]['id'];
+export const topicById = (id: string) => TOPICS.find(topic => topic.id === id)!;

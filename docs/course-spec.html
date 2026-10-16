@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MEAL Course Engine</title>
+<meta name="description" content="Philosophy, rules, modules and architecture behind the CIMMYT MEAL course engine, with live demonstrations of its motion language.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--green:#77bc43;--deep-green:#365d22;--gold:#fdbe50;--sky:#8ec1cb;--ink:#231f20;--gray:#58595b;--paper:#fffef9;--pale:#edf5e5;--green-tint:#e4f1d8;--gold-tint:#fff1d2;--sky-tint:#e3f1f4;--line:2px solid var(--ink);--shadow:5px 5px 0 var(--ink);--slab:180ms;--move:400ms}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Space Grotesk',sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3,p{margin:0}
+h1,h2{font-family:'Archivo Black',sans-serif;font-weight:400;letter-spacing:-.035em;line-height:1.1}
+h1{font-size:clamp(40px,6vw,76px);letter-spacing:-.045em}
+h2{font-size:clamp(26px,3.4vw,40px)}
+h3{font-size:17px;font-weight:700;letter-spacing:-.02em;line-height:1.3}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer;border-radius:0}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--deep-green);outline-offset:4px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;display:flex;gap:9px;align-items:center}
+.eyebrow::before{content:'';width:8px;height:8px;background:var(--green);border:1px solid var(--ink)}
+.micro{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)}
+.paper{border:var(--line);background:white;box-shadow:var(--shadow)}
+.green{background:var(--green)}.gold{background:var(--gold)}.sky{background:var(--sky)}.tint-g{background:var(--green-tint)}.tint-y{background:var(--gold-tint)}.tint-b{background:var(--sky-tint)}.pale{background:var(--pale)}
+.button{border:var(--line);box-shadow:4px 4px 0 var(--ink);padding:10px 16px;display:inline-flex;gap:10px;align-items:center;font-weight:700;font-size:13px;background:white;transition:transform .13s,box-shadow .13s}
+.button:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+.button:active{transform:translate(4px,4px);box-shadow:0 0 0 var(--ink)}
+.button.primary{background:var(--green)}
+.small-tag{font-size:10px;padding:4px 8px;border:1px solid var(--ink);font-weight:500;display:inline-block;white-space:nowrap;background:white}
+
+/* header */
+header.site{position:sticky;top:0;z-index:20;background:white;border-bottom:var(--line)}
+header.site .wrap{display:flex;align-items:center;gap:18px;min-height:64px;flex-wrap:wrap}
+.brand{font-family:'Archivo Black',sans-serif;font-size:20px;letter-spacing:-.05em;display:flex;align-items:center;gap:10px}
+.brand i{width:14px;height:14px;background:var(--green);border:2px solid var(--ink);display:inline-block}
+header nav{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+header nav a{text-decoration:none;font-size:12px;font-weight:600;padding:7px 10px;border:2px solid transparent}
+header nav a:hover{background:var(--pale)}
+header nav a.active{border-color:var(--ink);background:var(--green-tint);box-shadow:2px 2px 0 var(--ink)}
+
+/* sections */
+section.block{padding:72px 0 56px;border-bottom:1px solid #d7dacd}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:26px;flex-wrap:wrap}
+.head .eyebrow{margin-bottom:12px}
+.intro{font-size:15px;color:#3f3d3e;max-width:720px;line-height:1.7;margin-top:12px}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.card{padding:20px 22px;display:flex;flex-direction:column;gap:8px}
+.card p{font-size:13px;line-height:1.65;color:#3f3d3e}
+.num{font-family:'Archivo Black',sans-serif;font-size:34px;letter-spacing:-.04em;line-height:1;font-variant-numeric:tabular-nums}
+
+/* reveal: slab in */
+[data-reveal]{opacity:0;transform:translate(-8px,-8px)}
+[data-reveal].in{opacity:1;transform:none;transition:opacity var(--slab) ease-out,transform var(--slab) ease-out;transition-delay:calc(var(--i,0)*120ms)}
+.stamp{display:inline-block;background:var(--gold);border:var(--line);box-shadow:3px 3px 0 var(--ink);padding:6px 12px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;transform:rotate(-4deg)}
+.stamp.anim{animation:stamp .25s ease-out both}
+@keyframes stamp{from{opacity:0;transform:scale(1.5) rotate(0)}to{opacity:1;transform:scale(1) rotate(-4deg)}}
+.stamp.green{background:var(--green)}.stamp.sky{background:var(--sky)}.stamp.white{background:white}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:60px;padding:72px 0 64px;align-items:center}
+.hero h1{margin:18px 0 20px}
+.hero .highlight{display:inline-block;background:var(--green);border:var(--line);padding:0 12px 4px;box-shadow:5px 5px 0 var(--ink);transform:rotate(-2deg);margin:6px 0}
+.hero p.lead{font-size:17px;color:#3f3d3e;max-width:520px;line-height:1.65}
+.facts{display:flex;margin-top:24px;flex-wrap:wrap}
+.facts span{padding:0 20px;border-right:1px solid #c3c6ba;font-size:12px}
+.facts span:first-child{padding-left:0}.facts span:last-child{border:0}
+.facts strong{display:block;font-size:22px;line-height:1.4}
+.chain-demo{padding:26px 22px;background:var(--pale);position:relative}
+.chain-demo .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}
+.chain{display:flex;align-items:stretch;position:relative}
+.chain .cell{flex:1;display:flex;align-items:center;min-width:0}
+.slab{border:var(--line);background:white;box-shadow:6px 6px 0 var(--ink);padding:12px 12px;display:flex;flex-direction:column;gap:3px;flex:1;min-height:82px;justify-content:center;opacity:0;transform:translate(-10px,-10px)}
+.slab strong{font-size:13px;line-height:1.25}.slab span{font-size:10px;color:#3f3d3e;line-height:1.4}
+.slab.in{animation:slab var(--slab) ease-out forwards}
+@keyframes slab{to{opacity:1;transform:none}}
+.conn{width:34px;flex-shrink:0;height:30px;position:relative;display:flex;align-items:center}
+.conn i{display:block;height:4px;width:100%;background:var(--ink);transform:scaleX(0);transform-origin:left}
+.conn i.in{animation:connect var(--move) ease-out forwards}
+@keyframes connect{to{transform:scaleX(1)}}
+.conn b{position:absolute;right:-2px;width:0;height:0;border-left:10px solid var(--ink);border-top:7px solid transparent;border-bottom:7px solid transparent;transform:scale(0)}
+.conn b.in{animation:pop .15s ease-out forwards}
+@keyframes pop{to{transform:scale(1)}}
+.conn em{position:absolute;left:50%;top:-24px;transform:translateX(-50%);font-style:normal;font-size:9px;background:var(--gold-tint);border:1px solid var(--ink);padding:1px 6px;white-space:nowrap;opacity:0}
+.conn em.in{animation:fade .3s ease-out forwards}
+@keyframes fade{to{opacity:1}}
+.traveler{position:absolute;top:50%;left:8%;width:18px;height:18px;border-radius:50%;background:var(--gold);border:2px solid var(--ink);box-shadow:2px 2px 0 var(--ink);transform:translate(-50%,-50%);opacity:0;z-index:2}
+.traveler.in{animation:travel 2.4s ease-in-out .9s forwards}
+@keyframes travel{0%{opacity:1;left:8%}100%{opacity:1;left:92%}}
+.chain-foot{margin-top:20px;padding-top:12px;border-top:1px solid #b6c4ac;font-size:11px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.replay{background:white;border:1px solid var(--ink);padding:5px 10px;font-size:11px;font-weight:600;box-shadow:2px 2px 0 var(--ink)}
+.replay:hover{background:var(--gold)}
+
+/* journey */
+.journey{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;align-items:start}
+.journey .step{padding:16px 16px 14px;display:flex;flex-direction:column;gap:6px;position:relative}
+.journey .step .n{width:30px;height:30px;background:var(--gold);border:var(--line);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700}
+.journey .step p{font-size:12px;color:#3f3d3e;line-height:1.55}
+.bands{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
+.band{padding:14px;border:var(--line);display:flex;flex-direction:column;gap:6px;font-size:12px;box-shadow:3px 3px 0 var(--ink)}
+.band strong{font-size:13px}
+.loopline{display:flex;gap:10px;align-items:center;margin-top:18px;font-size:12px;flex-wrap:wrap}
+.loopline .pill{border:1px solid var(--ink);padding:5px 10px;background:white}
+.loopline .arrow{font-weight:700}
+
+/* rules: status simulator */
+.sim{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.sim fieldset{border:var(--line);padding:16px 18px;margin:0;display:flex;flex-direction:column;gap:10px;background:white}
+.sim legend{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:0 6px}
+.sim label{display:flex;align-items:center;gap:10px;font-size:13px}
+.sim input[type=checkbox],.sim input[type=radio]{width:18px;height:18px;accent-color:var(--deep-green)}
+.sim .result{padding:22px 24px;background:var(--pale);display:flex;flex-direction:column;gap:12px;min-height:220px}
+.sim .result .big{font-family:'Archivo Black',sans-serif;font-size:28px;letter-spacing:-.04em;line-height:1.1}
+.rules{width:100%;border-collapse:collapse;font-size:12px;background:white;border:var(--line);margin-top:22px}
+.rules th,.rules td{border:1px solid var(--ink);padding:8px 10px;text-align:left;vertical-align:top}
+.rules thead th{background:var(--ink);color:white;font-size:10px;letter-spacing:.06em;text-transform:uppercase}
+.rules tr.hit td{background:var(--green-tint)}
+.formula{font-family:'Archivo Black',sans-serif;font-size:18px;letter-spacing:-.02em;padding:14px 18px;border:var(--line);background:var(--gold-tint);box-shadow:4px 4px 0 var(--ink);display:inline-block;margin-top:14px}
+.counter{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+.counter .card{align-items:center;text-align:center}
+
+/* check timeline */
+.checkdemo{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:22px}
+.draw{display:flex;gap:10px;flex-wrap:wrap;min-height:70px;align-items:flex-start}
+.qcard{border:var(--line);background:white;box-shadow:3px 3px 0 var(--ink);padding:8px 10px;font-size:11px;font-weight:600;opacity:0;transform:translate(-8px,-8px);display:flex;flex-direction:column;gap:2px}
+.qcard em{font-style:normal;font-size:9px;color:var(--gray)}
+.qcard.in{animation:slab var(--slab) ease-out forwards}
+.qcard.seen{background:#ececea;color:#8a8a86;text-decoration:line-through}
+.bins{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:10px}
+.bin{border:var(--line);background:var(--pale);min-height:60px}
+.bin .lab{background:var(--ink);color:white;font-size:10px;padding:4px 8px;letter-spacing:.06em;text-transform:uppercase}
+.bin .body{padding:8px;display:flex;gap:6px;flex-wrap:wrap}
+.timeline{display:flex;flex-direction:column;gap:8px;font-size:12px}
+.timeline .t{display:grid;grid-template-columns:90px 1fr;gap:12px;align-items:center;padding:8px 10px;border:1px solid var(--ink);background:white;opacity:0;transform:translateX(-8px)}
+.timeline .t.in{animation:slab var(--slab) ease-out forwards}
+.timeline .t b{font-size:11px}
+.bar{height:10px;border:1px solid var(--ink);background:#e6e8df;position:relative;overflow:hidden}
+.bar i{position:absolute;inset:0;background:var(--green);transform-origin:left;transform:scaleX(0)}
+.bar i.in{animation:connect 1.2s linear forwards}
+
+/* lesson anatomy */
+.beats{display:flex;gap:6px;margin-top:18px;height:66px}
+.beat{border:var(--line);display:flex;flex-direction:column;justify-content:center;padding:0 10px;font-size:11px;font-weight:700;min-width:0;overflow:hidden;opacity:0;transform:translateY(-16px)}
+.beat span{font-weight:400;font-size:10px;color:#3f3d3e;white-space:nowrap}
+.beat.in{animation:drop .42s ease-out forwards}
+@keyframes drop{0%{opacity:0;transform:translateY(-40px)}80%{opacity:1;transform:translateY(4px)}100%{transform:none}}
+
+/* modules */
+.modules{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.mod{padding:18px 18px 14px;display:flex;flex-direction:column;gap:8px;position:relative;overflow:hidden}
+.mod .top{display:flex;align-items:center;gap:10px}
+.mod .top .micro{margin-left:auto}
+.mod h3{font-size:18px}
+.mod .scn{font-size:12px;font-style:italic;color:#3f3d3e}
+.mod .hero-line{font-size:12px;border-left:4px solid var(--green);padding-left:10px;line-height:1.5}
+.mod .meta{display:flex;gap:10px;flex-wrap:wrap;font-size:10px;margin-top:auto;padding-top:10px;border-top:1px solid #b9bfb0}
+.mod .meta span{border:1px solid var(--ink);padding:2px 6px;background:white}
+.order-chip{width:30px;height:30px;border:var(--line);display:inline-flex;align-items:center;justify-content:center;font-family:'Archivo Black',sans-serif;font-size:12px}
+.logic{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 26px;align-items:center;font-size:12px}
+.logic .pill{border:var(--line);padding:6px 10px;background:white;font-weight:600;box-shadow:2px 2px 0 var(--ink)}
+.px{display:inline-block;vertical-align:middle;margin:0 2px}
+
+/* motion language */
+.prims{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.prim{padding:16px;display:flex;flex-direction:column;gap:10px;min-height:250px}
+.prim .stage{flex:1;border:1px solid var(--ink);background:var(--pale);position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;min-height:130px;padding:12px}
+.prim h3{font-size:15px}
+.prim p{font-size:11px;color:#3f3d3e;line-height:1.5}
+.prim .foot{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.mini{border:var(--line);background:white;box-shadow:5px 5px 0 var(--ink);padding:8px 10px;font-size:11px;font-weight:700}
+.st-stack{display:flex;flex-direction:column;gap:6px;width:80%}
+.st-stack .mini{opacity:0;transform:translateY(-40px)}
+.st-stack .mini.in{animation:drop .42s ease-out forwards}
+.st-split{display:grid;grid-template-columns:1fr 5px 1fr;gap:8px;width:100%;height:100%}
+.st-split .mini{display:flex;align-items:center;justify-content:center;opacity:0}
+.st-split .cut{background:var(--ink);transform:scaleY(0);transform-origin:top}
+.st-split .cut.in{animation:cut .2s linear forwards}
+@keyframes cut{to{transform:scaleY(1)}}
+.st-split .mini.in{animation:fade .25s ease-out .2s forwards}
+.st-spot{display:flex;gap:8px;width:100%}
+.st-spot .mini{flex:1;text-align:center;transition:opacity .4s}
+.st-spot.in .mini:not(.focus){opacity:.3}
+.st-spot.in .focus{outline:3px solid var(--ink);outline-offset:3px}
+.st-count .num{font-size:40px}
+.st-sort{display:flex;flex-direction:column;gap:8px;width:100%;height:100%}
+.st-sort .tray{min-height:30px;display:flex;gap:6px;justify-content:center}
+.st-sort .lanes{display:grid;grid-template-columns:1fr 1fr;gap:6px;flex:1}
+.st-sort .lane{border:1px solid var(--ink);background:white;padding:4px;display:flex;flex-direction:column;gap:4px;align-items:center}
+.st-sort .lane .lab{font-size:9px;letter-spacing:.06em;text-transform:uppercase;font-weight:700}
+.st-sort .mini{padding:4px 8px;font-size:10px;transition:transform .45s cubic-bezier(.2,.9,.3,1.1)}
+.st-sort .mini.wrong{background:var(--gold);animation:shake .5s ease-in-out}
+@keyframes shake{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.st-conn{display:flex;align-items:center;width:100%}
+.st-conn .mini{opacity:0}
+.st-conn .mini.in{animation:fade .2s ease-out forwards}
+
+/* architecture */
+.arch{display:grid;grid-template-columns:1fr 50px 1fr 50px 1fr;gap:0;align-items:stretch}
+.col{padding:18px;display:flex;flex-direction:column;gap:10px}
+.col h3{display:flex;align-items:center;gap:8px}
+.col ul{margin:0;padding-left:16px;font-size:12px;line-height:1.6}
+.col code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;background:var(--pale);border:1px solid #c7cdbf;padding:1px 5px}
+.vconn{display:flex;align-items:center;justify-content:center}
+.vconn i{display:block;width:100%;height:4px;background:var(--ink);transform:scaleX(0);transform-origin:left}
+.vconn i.in{animation:connect var(--move) ease-out forwards}
+.pipeline{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:26px;align-items:start}
+.pipeline .card{min-height:150px}
+.routes{width:100%;border-collapse:collapse;font-size:12px;border:var(--line);background:white;margin-top:22px}
+.routes th,.routes td{border:1px solid var(--ink);padding:7px 10px;text-align:left}
+.routes thead th{background:var(--ink);color:white;font-size:10px;letter-spacing:.06em;text-transform:uppercase}
+.routes code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px}
+.entities{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:22px}
+.ent{padding:12px 14px;font-size:11px;display:flex;flex-direction:column;gap:6px}
+.ent h3{font-size:13px;font-family:ui-monospace,Menlo,Consolas,monospace}
+.ent ul{margin:0;padding-left:14px;line-height:1.6}
+.state{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;line-height:1.7;background:var(--ink);color:#f3f1ea;padding:16px 18px;border:var(--line);box-shadow:4px 4px 0 var(--green);overflow:auto;margin-top:18px}
+.state .k{color:var(--gold)}.state .c{color:#9fc98b}
+
+/* roadmap */
+.phases{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.phase{padding:14px;display:flex;flex-direction:column;gap:6px;font-size:12px}
+.phase .micro{color:var(--ink)}
+.phase.done{background:var(--green-tint)}
+footer.site{padding:34px 0;font-size:11px;color:var(--gray);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+
+@media(max-width:1000px){.hero{grid-template-columns:1fr;gap:34px}.g4,.prims,.journey,.bands{grid-template-columns:repeat(2,1fr)}.g3,.modules{grid-template-columns:repeat(2,1fr)}.arch{grid-template-columns:1fr}.vconn{height:36px}.vconn i{width:4px;height:100%;transform:scaleY(0);transform-origin:top}.vconn i.in{animation:cutfull var(--move) ease-out forwards}.pipeline,.entities,.phases{grid-template-columns:repeat(2,1fr)}.sim,.checkdemo{grid-template-columns:1fr}}
+@keyframes cutfull{to{transform:scaleY(1)}}
+@media(max-width:640px){.g2,.g3,.g4,.prims,.journey,.bands,.modules,.pipeline,.entities,.phases,.counter{grid-template-columns:1fr}.chain{flex-direction:column;gap:10px}.conn{width:100%;height:28px;justify-content:center}.conn i{width:4px;height:100%;transform:scaleY(0);transform-origin:top}.conn i.in{animation:cutfull var(--move) ease-out forwards}.conn b{right:auto;bottom:-2px;left:calc(50% - 7px);border-left:7px solid transparent;border-right:7px solid transparent;border-top:10px solid var(--ink);border-bottom:0}.conn em{top:auto;left:60%;transform:none}.traveler{display:none}.beats{flex-direction:column;height:auto}.beat{padding:8px 10px}.facts span{padding:0 12px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important}[data-reveal]{opacity:1;transform:none}.slab,.qcard,.beat,.timeline .t,.st-stack .mini,.st-split .mini,.st-conn .mini{opacity:1;transform:none}.conn i,.bar i,.vconn i,.st-split .cut{transform:none}.conn b{transform:scale(1)}.conn em{opacity:1}.traveler{display:none}}
+</style>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<header class="site"><div class="wrap">
+  <span class="brand"><i></i>MEAL course engine</span>
+  <nav aria-label="Sections"><a href="#philosophy">Philosophy</a><a href="#journey">Journey</a><a href="#rules">Rules</a><a href="#modules">Modules</a><a href="#lesson">Lesson</a><a href="#motion">Motion</a><a href="#architecture">Architecture</a><a href="#roadmap">Roadmap</a></nav>
+</div></header>
+
+<main id="main" class="wrap">
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <p class="eyebrow">CIMMYT MEAL Framework 2026–2030 · Course specification</p>
+    <h1>Diagnose.<br><span class="highlight">Study</span><br>what matters.</h1>
+    <p class="lead">A self-paced course that wraps the 15-question assessment. The diagnostic becomes a prescription, each module ends in a mastery check, and the plan shrinks as gaps close. This page shows the philosophy, the rules, the modules and the engine behind it, with the motion language demonstrated live.</p>
+    <div class="facts"><span><strong>10</strong> modules</span><span><strong>62</strong> lessons</span><span><strong>347</strong> questions</span><span><strong>280</strong> storyboard frames</span><span><strong>~5.5 h</strong> of study</span></div>
+  </div>
+  <div class="chain-demo paper" id="heroChain">
+    <div class="top"><span class="eyebrow">The learner journey</span><span class="small-tag">assembles on load</span></div>
+    <div class="chain">
+      <div class="cell"><div class="slab tint-b"><strong>Diagnostic</strong><span>15 questions, Sure or Not sure</span></div><div class="conn"><i></i><b></b><em>scored</em></div></div>
+      <div class="cell"><div class="slab tint-y"><strong>Plan</strong><span>Modules and lessons, with reasons</span></div><div class="conn"><i></i><b></b><em>per module</em></div></div>
+      <div class="cell"><div class="slab tint-g"><strong>Lessons</strong><span>3 to 6 minutes, five beats</span></div><div class="conn"><i></i><b></b><em>4 of 5</em></div></div>
+      <div class="cell"><div class="slab green"><strong>Mastered</strong><span>Check passed, plan shrinks</span></div></div>
+      <span class="traveler" aria-hidden="true"></span>
+    </div>
+    <div class="chain-foot"><span>Nothing is locked. Watching is never required to unlock a check.</span><button class="replay" type="button" data-replay="heroChain">Replay</button></div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section class="block" id="philosophy">
+  <div class="head"><div><p class="eyebrow">Philosophy</p><h2>Eight principles, one rhythm.</h2><p class="intro">Borrowed from learning science and from the self-paced platforms that work: short lessons, self-standing modules, a diagnostic that tells you what to skip, and mastery proved by a check rather than by seat time.</p></div></div>
+  <div class="grid g4">
+    <article class="card paper tint-g" data-reveal style="--i:0"><span class="micro">01</span><h3>Backward design</h3><p>Every module states 4 to 6 objectives written as observable behaviours. Every quiz item maps to an objective. Every lesson teaches exactly one, or a tightly linked pair.</p></article>
+    <article class="card paper" data-reveal style="--i:1"><span class="micro">02</span><h3>Bloom's ladder</h3><p>Lessons move from remember and understand to apply and analyse. The bank keeps the same ladder: foundation, applied, advanced.</p></article>
+    <article class="card paper tint-y" data-reveal style="--i:2"><span class="micro">03</span><h3>Microlearning</h3><p>Three to six minutes. One idea, one animation, one check. Nobody has to find forty minutes to make progress.</p></article>
+    <article class="card paper" data-reveal style="--i:3"><span class="micro">04</span><h3>Scenario first</h3><p>Each module opens on a realistic CIMMYT situation and returns to it. Maize in Kenya, wheat in South Asia, seed systems in Mexico. No real projects, no real people.</p></article>
+    <article class="card paper tint-b" data-reveal style="--i:4"><span class="micro">05</span><h3>Retrieval everywhere</h3><p>A micro-check after every lesson, a mastery check after every module, a spaced re-check 7 days after passing.</p></article>
+    <article class="card paper" data-reveal style="--i:5"><span class="micro">06</span><h3>Diagnose, then prescribe</h3><p>The learner is told what to skip as clearly as what to study. The plan is short and every line carries a reason.</p></article>
+    <article class="card paper tint-g" data-reveal style="--i:6"><span class="micro">07</span><h3>Mastery, not seat time</h3><p>A module is mastered when its check is passed, whether or not the lessons were opened. Checks are always available.</p></article>
+    <article class="card paper" data-reveal style="--i:7"><span class="micro">08</span><h3>Mayer's principles</h3><p>Signalling, segmenting, coherence. Narration as captions with on-screen keywords, learner-paced frames, no decorative motion.</p></article>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section class="block" id="journey">
+  <div class="head"><div><p class="eyebrow">Learner journey</p><h2>From one diagnostic to one certificate.</h2></div></div>
+  <div class="journey">
+    <div class="step paper" data-reveal style="--i:0"><span class="n">1</span><h3>Diagnostic</h3><p>One item per topic plus a second in five random topics, shuffled, from the 100-item diagnostic pool. After each answer: Sure or Not sure.</p></div>
+    <div class="step paper" data-reveal style="--i:1"><span class="n">2</span><h3>Plan</h3><p>Every topic lands in a band with a reason, a first lesson and an estimate. Three study modules first, the rest folded under Later.</p></div>
+    <div class="step paper" data-reveal style="--i:2"><span class="n">3</span><h3>Module, lessons, check</h3><p>Open any lesson or go straight to the five-question check. Pass at 4 of 5 and the module stamps Mastered and leaves the plan.</p></div>
+    <div class="step paper" data-reveal style="--i:3"><span class="n">4</span><h3>Capstone, certificate</h3><p>One project from concept note to impact study, eight decisions. All ten mastered plus the capstone unlocks a completion record. No score on it.</p></div>
+  </div>
+  <div class="bands">
+    <div class="band gold" data-reveal style="--i:4"><span class="stamp white">Start here</span><strong>Take the full module.</strong>A foundation question was missed, or nothing in the topic was right.</div>
+    <div class="band tint-b" data-reveal style="--i:5"><span class="stamp sky">Review</span><strong>Start at lesson X.</strong>A miss that is not foundation, or a confident miss, which usually means a mix-up.</div>
+    <div class="band" data-reveal style="--i:6"><span class="stamp white">Check first</span><strong>Right but not sure.</strong>Take the 5-question check; study only if needed.</div>
+    <div class="band tint-g" data-reveal style="--i:7"><span class="stamp green">Looking good</span><strong>Optional.</strong>Take the check whenever you want the module marked as mastered.</div>
+  </div>
+  <div class="loopline"><span class="pill">pass ≥ 80%</span><span class="px" aria-hidden="true"></span><span class="pill">mastered, plan updates</span><span class="pill">fail</span><span class="px" aria-hidden="true"></span><span class="pill">lessons for missed objectives, fresh draw</span><span class="pill">7 days later</span><span class="px" aria-hidden="true"></span><span class="pill">3-question refresher</span></div>
+</section>
+
+<!-- RULES -->
+<section class="block" id="rules">
+  <div class="head"><div><p class="eyebrow">Rules</p><h2>Status rules you can try.</h2><p class="intro">For each topic the engine computes five signals from the diagnostic rows, then applies four rules in order. Flip the signals and watch the stamp land. The table highlights the rule that fired.</p></div></div>
+  <div class="sim">
+    <fieldset><legend>Signals for one topic</legend>
+      <label><input type="radio" name="asked" value="1"> asked = 1</label>
+      <label><input type="radio" name="asked" value="2" checked> asked = 2</label>
+      <label><input type="checkbox" id="s-foundation"> foundationMiss: missed an item tagged foundation</label>
+      <label><input type="checkbox" id="s-miss" checked> any miss (correct &lt; asked)</label>
+      <label><input type="checkbox" id="s-zero"> correct = 0</label>
+      <label><input type="checkbox" id="s-confident" checked> confidentMiss: missed while tapping Sure</label>
+      <label><input type="checkbox" id="s-unsure"> unsureCorrect: right while tapping Not sure</label>
+    </fieldset>
+    <div class="result paper" aria-live="polite">
+      <span class="micro">Status</span>
+      <div id="statusStamp"></div>
+      <div class="big" id="statusLine"></div>
+      <p id="statusReason" style="font-size:13px;color:#3f3d3e"></p>
+      <p style="font-size:11px;color:var(--gray)">Rules apply in order; the first that matches wins. A topic with every answer right but one of them unsure is Check first however many items were asked.</p>
+    </div>
+  </div>
+  <table class="rules" id="rulesTable"><thead><tr><th>Status</th><th>Rule</th><th>Plan wording</th></tr></thead><tbody>
+    <tr data-s="start-here"><td><strong>Start here</strong></td><td>foundationMiss, or correct = 0</td><td>Take the full module. A foundation question was missed.</td></tr>
+    <tr data-s="review"><td><strong>Review</strong></td><td>any miss that is not a foundation miss, or confidentMiss</td><td>Start at lesson X. One answer suggests a mix-up between A and B.</td></tr>
+    <tr data-s="check-first"><td><strong>Check first</strong></td><td>all correct and unsureCorrect</td><td>You were right but not sure. Take the 5-question check; study only if needed.</td></tr>
+    <tr data-s="looking-good"><td><strong>Looking good</strong></td><td>all correct and no unsureCorrect</td><td>Optional. Take the check whenever you want the module marked as mastered.</td></tr>
+  </tbody></table>
+
+  <div style="margin-top:34px"><p class="eyebrow">Priority inside a band</p>
+    <div class="formula">gap = Σ missWeight + 0.5 × confident misses</div>
+    <p class="intro">Weights: foundation 1.5, applied 1.0, advanced 0.7. Ties resolve by module order, prerequisites first. Lesson targeting then takes each missed item's objectives and lists the lessons that teach them; a tagged distractor adds its misconception's remedy lessons and a plain-language description of the mix-up.</p>
+    <div class="counter" id="gapCounter">
+      <div class="card paper tint-y"><span class="num" data-count="2.0">0</span><span class="micro">foundation miss, Sure (1.5 + 0.5)</span></div>
+      <div class="card paper"><span class="num" data-count="1.0">0</span><span class="micro">applied miss, Not sure (1.0)</span></div>
+      <div class="card paper tint-g"><span class="num" data-count="3.0">0</span><span class="micro">topic gap score</span></div>
+    </div>
+  </div>
+
+  <div style="margin-top:40px"><p class="eyebrow">Mastery check rules</p>
+    <div class="checkdemo">
+      <div class="card paper">
+        <h3>A fresh draw, every time</h3>
+        <p>Five items from the module's check pool of 13 to 15, covering at least four objectives, never repeating an item seen in this browser until the pool is exhausted. Press draw twice to see the seen items grey out and the next five avoid them.</p>
+        <div class="draw" id="drawArea"></div>
+        <div class="bins"><div class="bin"><div class="lab">Objectives covered</div><div class="body" id="objBins"></div></div><div class="bin"><div class="lab">Seen in this browser</div><div class="body" id="seenBins"></div></div></div>
+        <div class="foot" style="display:flex;gap:10px;margin-top:12px;flex-wrap:wrap"><button class="button primary" type="button" id="drawBtn">Draw 5</button><button class="button" type="button" id="resetDraw">Reset seen</button></div>
+      </div>
+      <div class="card paper pale">
+        <h3>After the submit button</h3>
+        <div class="timeline" id="checkTimeline">
+          <div class="t"><b>4 of 5</b><span>Pass. Module stamped <span class="stamp green" style="font-size:9px;padding:2px 7px">Mastered</span>, removed from the plan, explanations and sources shown.</span></div>
+          <div class="t"><b>3 of 5</b><span>Not yet. Plan lists the lessons for the missed objectives, then offers a retry with a fresh draw.</span></div>
+          <div class="t"><b>2 misses in a row</b><span>Ten-minute cool-down with a prompt to open the lessons. <span class="bar" style="display:block;margin-top:6px"><i></i></span></span></div>
+          <div class="t"><b>7 days later</b><span>Home page offers a 3-item refresher. Failing it moves the module to Review, never back to Start here.</span></div>
+          <div class="t"><b>All ten</b><span>Capstone, then a completion record with name, date, module list and bank version. Completed, not scored.</span></div>
+        </div>
+        <button class="replay" type="button" data-replay="checkTimeline" style="margin-top:12px">Replay</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODULES -->
+<section class="block" id="modules">
+  <div class="head"><div><p class="eyebrow">Modules</p><h2>Ten modules, in the framework's own order.</h2><p class="intro">Each maps one to one to a diagnostic topic, so topic scores drive recommendations with no translation layer. The order is a recommendation, never a gate.</p></div></div>
+  <div class="logic" aria-label="Module logic"><span class="pill">Why</span><span class="px" aria-hidden="true"></span><span class="pill">What</span><span class="px" aria-hidden="true"></span><span class="pill">How to measure</span><span class="px" aria-hidden="true"></span><span class="pill">How to manage data</span><span class="px" aria-hidden="true"></span><span class="pill">How to claim impact</span><span class="px" aria-hidden="true"></span><span class="pill">How to learn and account</span><span class="px" aria-hidden="true"></span><span class="pill">How to run it</span></div>
+  <div class="modules" id="moduleGrid"></div>
+</section>
+
+<!-- LESSON ANATOMY -->
+<section class="block" id="lesson">
+  <div class="head"><div><p class="eyebrow">Lesson anatomy</p><h2>Five beats, every time.</h2><p class="intro">Widths are proportional to time. The explainer is a storyboard: frames with narration and a scene, played learner-paced with captions and a transcript. A rendered video can take its place later without touching the lesson.</p></div></div>
+  <div class="beats" id="beats">
+    <div class="beat tint-b" style="flex:20">1 Hook<span>20 s · one sentence</span></div>
+    <div class="beat tint-g" style="flex:135">2 Explainer<span>90 to 180 s · storyboard, captions</span></div>
+    <div class="beat tint-y" style="flex:75">3 Worked example<span>60 to 90 s · text or widget</span></div>
+    <div class="beat" style="flex:45">4 Micro-check<span>30 to 60 s · instant feedback</span></div>
+    <div class="beat green" style="flex:15">5 Recap<span>15 s · 3 bullets, §</span></div>
+  </div>
+  <div class="grid g3" style="margin-top:22px">
+    <div class="card paper" data-reveal style="--i:0"><h3>What every lesson exposes</h3><p>A transcript, a Read the source link to the framework section, the glossary terms it uses, and a Was this clear? rating stored locally and exportable.</p></div>
+    <div class="card paper" data-reveal style="--i:1"><h3>Interactive examples</h3><p>Seven keyboard-operable widgets: sorter, order, branching scenario, quality dial, MEAL Matrix classifier, budget calculator, persona picker. No drag and drop.</p></div>
+    <div class="card paper" data-reveal style="--i:2"><h3>Next for you</h3><p>The button at the end of a lesson follows the plan, not the module order. It picks the first unfinished lesson of the highest-priority module that still needs study.</p></div>
+  </div>
+</section>
+
+<!-- MOTION -->
+<section class="block" id="motion">
+  <div class="head"><div><p class="eyebrow">Motion language</p><h2>Eight primitives. No decoration.</h2><p class="intro">Motion does three jobs: explain structure, direct attention, give feedback. If an animation can be removed without losing meaning, it is removed. Timings: 150 to 250 ms for entries, 400 to 800 ms for explanatory moves, one move at a time, no bounces longer than a frame. Everything respects reduced motion.</p></div><button class="button" type="button" id="replayAll">Replay all</button></div>
+  <div class="prims">
+    <div class="prim paper"><h3>Slab in</h3><div class="stage" id="p-slab"><div class="slab" style="max-width:150px"><strong>New card</strong><span>6 px shadow snaps in</span></div></div><div class="foot"><p>180 ms, ease-out. Any new card, step or option.</p><button class="replay" type="button" data-replay="p-slab">Replay</button></div></div>
+    <div class="prim paper"><h3>Connect</h3><div class="stage" id="p-conn"><div class="st-conn"><span class="mini in">A</span><div class="conn" style="width:70px"><i></i><b></b></div><span class="mini">B</span></div></div><div class="foot"><p>A thick line draws A to B over 400 ms, arrowhead pops.</p><button class="replay" type="button" data-replay="p-conn">Replay</button></div></div>
+    <div class="prim paper"><h3>Stack</h3><div class="stage" id="p-stack"><div class="st-stack"><span class="mini tint-b">Operational records</span><span class="mini">External and context</span><span class="mini tint-y">Earth observation</span><span class="mini tint-g">Direct observations</span></div></div><div class="foot"><p>Layers drop from above and settle with a one-frame overshoot.</p><button class="replay" type="button" data-replay="p-stack">Replay</button></div></div>
+    <div class="prim paper"><h3>Split</h3><div class="stage" id="p-split"><div class="st-split"><span class="mini tint-g">With</span><span class="cut"></span><span class="mini tint-y">Without</span></div></div><div class="foot"><p>A hard vertical cut. Counterfactual, before and after.</p><button class="replay" type="button" data-replay="p-split">Replay</button></div></div>
+    <div class="prim paper"><h3>Dim and spotlight</h3><div class="stage" id="p-spot"><div class="st-spot"><span class="mini">Process</span><span class="mini">Output</span><span class="mini focus tint-g">Outcome</span><span class="mini">Impact</span></div></div><div class="foot"><p>Everything except the focus drops to 30%. Signalling.</p><button class="replay" type="button" data-replay="p-spot">Replay</button></div></div>
+    <div class="prim paper"><h3>Count up</h3><div class="stage st-count" id="p-count"><div style="text-align:center"><span class="num" data-count="18000" data-prefix="USD ">0</span><div class="micro">Medium, Complex, floor applies</div></div></div><div class="foot"><p>Numbers roll with tabular figures, 600 ms. Scores, budgets, totals.</p><button class="replay" type="button" data-replay="p-count">Replay</button></div></div>
+    <div class="prim paper"><h3>Stamp</h3><div class="stage" id="p-stamp"><span class="stamp green anim">Mastered</span></div><div class="foot"><p>A label rotates in 4° and lands with a shadow. Status, classification.</p><button class="replay" type="button" data-replay="p-stamp">Replay</button></div></div>
+    <div class="prim paper"><h3>Sort</h3><div class="stage" id="p-sort"><div class="st-sort"><div class="tray"></div><div class="lanes"><div class="lane"><span class="lab">Outputs</span></div><div class="lane"><span class="lab">Outcomes</span></div></div></div></div><div class="foot"><p>Items slide into bins. A wrong drop bounces back with a reason.</p><button class="replay" type="button" data-replay="p-sort">Replay</button></div></div>
+  </div>
+  <div class="grid g2" style="margin-top:22px">
+    <div class="card paper pale" data-reveal style="--i:0"><h3>Scene kinds in the storyboard DSL</h3><p>title · cards · chain · stack · sort · split · dial · fan · compass · grid · loop · counter · dissolve · checklist. 280 frames across 62 storyboards, about 61 minutes of explainer. The most used: title 63, cards 48, chain 43, split 28, loop 16.</p></div>
+    <div class="card paper pale" data-reveal style="--i:1"><h3>Accessibility and performance</h3><p>Captions on by default, transcript always visible, no colour-only meaning, no flashing above 3 Hz, no auto-playing loops behind text. Reduced motion shows stills and instant state changes. Interactive pieces never block input.</p></div>
+  </div>
+</section>
+
+<!-- ARCHITECTURE -->
+<section class="block" id="architecture">
+  <div class="head"><div><p class="eyebrow">Architecture</p><h2>Content in, screens out, nothing on a server.</h2><p class="intro">A Next.js static export. Content is JSON validated by a schema test. The engine is three files of pure functions with a seeded random source for tests. Learner state lives in the browser and exports as JSON.</p></div></div>
+  <div class="arch" id="archDiagram">
+    <div class="col paper tint-y"><h3><span class="order-chip">1</span>Content</h3><ul><li><code>content/modules/*.json</code> modules, lessons, storyboards</li><li><code>content/misconceptions.json</code></li><li><code>content/glossary.json</code> 81 terms</li><li><code>content/capstone.json</code></li><li><code>data/question-bank.json</code> 347 items in three pools</li><li><code>content/drafts/*.json</code> authoring bundles</li></ul></div>
+    <div class="vconn"><i></i></div>
+    <div class="col paper tint-g"><h3><span class="order-chip">2</span>Engine</h3><ul><li><code>lib/assessment.ts</code> diagnostic draw and scoring</li><li><code>lib/plan.ts</code> signals, status, gap, targeting, next-for-you</li><li><code>lib/checks.ts</code> draws, pass rule, cool-down, re-check</li><li><code>lib/learner.ts</code> state v2, validation, v1 migration, export</li><li><code>lib/content.ts</code> types, loaders, lookups</li></ul></div>
+    <div class="vconn"><i></i></div>
+    <div class="col paper tint-b"><h3><span class="order-chip">3</span>Screens</h3><ul><li><code>components/Explainer.tsx</code> + <code>Scene.tsx</code> storyboard player</li><li><code>components/Widgets.tsx</code> seven interactive examples</li><li><code>components/PlanPanel.tsx</code>, <code>CheckPage.tsx</code>, <code>LessonPage.tsx</code></li><li><code>components/LearnerProvider.tsx</code> local storage, migration</li><li><code>app/**</code> eleven routes, 93 static pages</li></ul></div>
+  </div>
+
+  <p class="eyebrow" style="margin-top:36px">Content pipeline</p>
+  <div class="pipeline">
+    <div class="card paper" data-reveal style="--i:0"><span class="micro">Step 1</span><h3>Author a draft</h3><p>One bundle per module: module, misconceptions, tags for its ten diagnostic items, new practice and check questions in its own id block.</p></div>
+    <div class="card paper" data-reveal style="--i:1"><span class="micro">Step 2</span><h3>Validate</h3><p><code>validate-draft.mjs</code>: ids, beats, scene fields, pools, objective coverage, key balance, option lengths, no em dashes.</p></div>
+    <div class="card paper" data-reveal style="--i:2"><span class="micro">Step 3</span><h3>Merge</h3><p><code>merge-drafts.mjs</code> writes modules, appends questions, applies diagnostic tags, collects misconceptions and glossary additions.</p></div>
+    <div class="card paper" data-reveal style="--i:3"><span class="micro">Step 4</span><h3>Test</h3><p><code>content.test.ts</code> enforces the schema; engine and learner tests run against the real content with seeded draws.</p></div>
+    <div class="card paper" data-reveal style="--i:4"><span class="micro">Step 5</span><h3>Build</h3><p><code>next build</code> exports every module, lesson and check page statically. No server, no database.</p></div>
+  </div>
+
+  <p class="eyebrow" style="margin-top:36px">Entities</p>
+  <div class="entities">
+    <div class="ent paper" data-reveal style="--i:0"><h3>Module</h3><ul><li>id = topic id</li><li>order, minutes, sections</li><li>scenario, objectives</li><li>lessons[], storyboards[]</li><li>prerequisites, assessed</li></ul></div>
+    <div class="ent paper" data-reveal style="--i:1"><h3>Lesson</h3><ul><li>objectiveIds</li><li>beats: hook, explainer, example, microCheck, recap</li><li>glossary terms</li></ul></div>
+    <div class="ent paper" data-reveal style="--i:2"><h3>Storyboard</h3><ul><li>frames[]: seconds, narration, scene</li><li>scene.kind is one of 14</li><li>transcript derived from narration</li></ul></div>
+    <div class="ent paper" data-reveal style="--i:3"><h3>Question</h3><ul><li>pool: diagnostic | practice | check</li><li>objectiveIds</li><li>misconceptions: option id to tag</li><li>source: section, title, kind</li></ul></div>
+    <div class="ent paper" data-reveal style="--i:4"><h3>Misconception</h3><ul><li>tag (kebab-case)</li><li>description to the learner</li><li>remedyLessonIds</li></ul></div>
+  </div>
+
+  <div class="grid g2" style="margin-top:30px;align-items:start">
+    <div>
+      <p class="eyebrow">Learner state v2</p>
+      <pre class="state" aria-label="Learner state shape"><span class="c">// localStorage: cimmyt-meal-learner-v2, migrates from the v1 assessment key</span>
+{
+  <span class="k">version</span>: 2, <span class="k">bankVersion</span>: "2.0.0", <span class="k">name</span>, <span class="k">persona</span>?,
+  <span class="k">diagnostic</span>: Attempt | null,
+  <span class="k">confidence</span>: { [questionId]: "sure" | "unsure" },
+  <span class="k">plan</span>: { [topicId]: { status, reasons[], startAt[], gap, updatedAt, known? } },
+  <span class="k">lessons</span>: { [lessonId]: { opened, completed?, rating? } },
+  <span class="k">checks</span>: { [topicId]: { attempts[], masteredAt?, lastRecheckAt? } },
+  <span class="k">seenQuestionIds</span>: string[],      <span class="c">// oldest first</span>
+  <span class="k">capstone</span>?: { completedAt, choices },
+  <span class="k">activeCheck</span>?: CheckAttempt | null
+}</pre>
+    </div>
+    <div>
+      <p class="eyebrow">Routes</p>
+      <table class="routes"><thead><tr><th>Route</th><th>Screen</th></tr></thead><tbody>
+        <tr><td><code>/</code></td><td>Home, Continue your plan, refreshers</td></tr>
+        <tr><td><code>/assess</code></td><td>Diagnostic with confidence tap</td></tr>
+        <tr><td><code>/results</code></td><td>Score, plan panel, review, print</td></tr>
+        <tr><td><code>/course</code></td><td>Course map, export and import</td></tr>
+        <tr><td><code>/course/[module]</code></td><td>Scenario, lessons, Start at markers</td></tr>
+        <tr><td><code>/course/[module]/[lesson]</code></td><td>Five-beat lesson player</td></tr>
+        <tr><td><code>/course/[module]/check</code></td><td>Mastery check, refresher</td></tr>
+        <tr><td><code>/capstone</code></td><td>Eight decisions</td></tr>
+        <tr><td><code>/certificate</code></td><td>Completion record</td></tr>
+        <tr><td><code>/bank</code>, <code>/about</code></td><td>Dictionary with pool and objective filters; design notes</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section class="block" id="roadmap">
+  <div class="head"><div><p class="eyebrow">Quality and roadmap</p><h2>Definition of done, by module.</h2><p class="intro">All objectives covered by a lesson and two check items each. Hero explainer with captions and transcript. Check pool of at least 12 items, source-referenced and blind-reviewed. Engine and schema tests green. Playtested by two non-MEAL colleagues who could pass the check after the lessons.</p></div></div>
+  <div class="phases">
+    <div class="phase paper done" data-reveal style="--i:0"><span class="micro">Phase 1 · built</span><h3>Engine and plan</h3>Confidence tap, objective tags, status rules, plan panel, state v2, tests.</div>
+    <div class="phase paper done" data-reveal style="--i:1"><span class="micro">Phase 2 · built</span><h3>Pilot modules</h3>Orientation, Theory of change and Results framework end to end; template frozen.</div>
+    <div class="phase paper done" data-reveal style="--i:2"><span class="micro">Phase 3 · built</span><h3>Remaining modules</h3>All ten modules; bank at 347 items.</div>
+    <div class="phase paper done" data-reveal style="--i:3"><span class="micro">Phase 4 · built</span><h3>Capstone and certificate</h3>Branching capstone, completion record, spaced re-checks, export and import.</div>
+    <div class="phase paper" data-reveal style="--i:4"><span class="micro">Phase 5 · next</span><h3>Rollout</h3>Workshop pilot with two regional teams, narration recording, rendered explainers, Level 1 and 2 data, go or no-go for LMS packaging and localisation.</div>
+  </div>
+</section>
+
+<footer class="site"><span>CIMMYT MEAL Framework 2026–2030 · Course specification v0.1, 13 October 2026 · MEAL team</span><span>Source: docs/course-spec.md · Engine: frontend/</span></footer>
+</main>
+
+<script>
+(function () {
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // --- modules (figures taken from the built content) ---
+  const MODULES = [
+    { n: 1, t: 'MEAL foundations', s: 'Same yield gain, two bodies of evidence', h: 'Reports to observations', min: 30, l: 5, q: '10 practice · 14 check', sec: '1 to 1.3, 2.5, 2.7', tone: 'tint-g' },
+    { n: 2, t: 'Theory of change', s: 'A variety with no route to change', h: 'Building the chain: four slabs, three links', min: 35, l: 6, q: '10 · 13', sec: '2.1 to 2.4, 5.1, 5.4, Annex A', tone: 'tint-y' },
+    { n: 3, t: 'Results framework', s: 'Two reports, one real change', h: 'Four levels, four kinds of evidence', min: 30, l: 6, q: '11 · 15', sec: '2.1 to 2.4, 5.4', tone: 'tint-b' },
+    { n: 4, t: 'KPIs & measurement', s: 'Three yields, one number', h: 'One KPI, many methods', min: 40, l: 7, q: '11 · 15', sec: '3 to 3.3, 5.3', tone: 'tint-g' },
+    { n: 5, t: 'Data quality & collection', s: 'The survey that arrived a week before the review', h: 'The quality dial', min: 35, l: 6, q: '10 · 14', sec: '2.3, 2.5, 2.6, 4.1, 5.4, 5.7, 5.8', tone: 'tint-y' },
+    { n: 6, t: 'Evidence & data systems', s: 'One result, four reports, no signal for weeks', h: 'The journey of one observation', min: 30, l: 5, q: '10 · 14', sec: '2.6, 4 to 4.3', tone: 'tint-b' },
+    { n: 7, t: 'Impact assessment', s: 'Two good seasons and one hard question', h: 'The split-screen farm', min: 40, l: 7, q: '10 · 14', sec: '1.3, 2.4 to 2.6, 3.3, 5.2, 5.4, 5.7', tone: 'tint-g' },
+    { n: 8, t: 'Learning & adaptation', s: 'Low uptake, one week to decide', h: 'The evidence review loop', min: 25, l: 5, q: '11 · 14', sec: '2.5, 4.1, 5.1, 5.5 to 5.8, 6.1, 6.2', tone: 'tint-y' },
+    { n: 9, t: 'Accountability & inclusion', s: 'Every deadline met, one audience served', h: 'The accountability compass', min: 26, l: 5, q: '10 · 15', sec: '2.3, 2.7, 4.1, 5.1, 5.4, 6.1', tone: 'tint-b' },
+    { n: 10, t: 'Implementation & governance', s: 'Three weeks to submit', h: 'Classify and budget with the MEAL Matrix', min: 40, l: 7, q: '11 · 15', sec: '5.1 to 5.10, Annex A', tone: 'tint-g' },
+  ];
+  const grid = document.getElementById('moduleGrid');
+  MODULES.forEach((m, i) => {
+    const el = document.createElement('article');
+    el.className = 'mod paper ' + m.tone; el.setAttribute('data-reveal', ''); el.style.setProperty('--i', i % 3);
+    el.innerHTML = `<div class="top"><span class="order-chip">${m.n}</span><span class="micro">§${m.sec}</span></div><h3>${m.t}</h3><p class="scn">${m.s}</p><p class="hero-line"><strong>Hero explainer:</strong> ${m.h}</p><div class="meta"><span>${m.min} min</span><span>${m.l} lessons</span><span>${m.q}</span><span>5-question check</span></div>`;
+    grid.appendChild(el);
+  });
+  const extra = document.createElement('article');
+  extra.className = 'mod paper pale'; extra.setAttribute('data-reveal', ''); extra.style.setProperty('--i', 1);
+  extra.innerHTML = `<div class="top"><span class="order-chip">0</span><span class="micro">plus capstone</span></div><h3>Orientation and capstone</h3><p class="scn">Ten minutes before you start; one project, end to end</p><p class="hero-line"><strong>Orientation:</strong> how the course works, the framework in 90 seconds, set your goal. <strong>Capstone:</strong> drought-tolerant maize in western Kenya, eight decisions tagged to modules.</p><div class="meta"><span>10 + 20 min</span><span>not assessed</span><span>certificate gate</span></div>`;
+  grid.appendChild(extra);
+
+  // pixel arrows in the logic strip
+  const CELLS = [[0,3],[1,3],[2,3],[3,3],[4,3],[5,3],[6,3],[5,0],[6,1],[7,2],[8,3],[7,4],[6,5],[5,6],[6,2],[6,4],[7,3]];
+  document.querySelectorAll('.px, .loopline .arrow').forEach(el => {
+    el.innerHTML = `<svg width="18" height="14" viewBox="0 0 9 7" shape-rendering="crispEdges" aria-hidden="true">${CELLS.map(([x, y]) => `<rect x="${x}" y="${y}" width="1" height="1" fill="currentColor"/>`).join('')}</svg>`;
+    el.classList.add('px');
+  });
+
+  // --- reveal on scroll ---
+  const io = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' });
+  document.querySelectorAll('[data-reveal]').forEach(el => io.observe(el));
+
+  // --- count up ---
+  function countUp(el) {
+    const target = parseFloat(el.dataset.count); const prefix = el.dataset.prefix || ''; const decimals = (el.dataset.count.split('.')[1] || '').length;
+    const fmt = n => prefix + n.toLocaleString('en-US', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+    if (reduced) { el.textContent = fmt(target); return; }
+    const start = performance.now();
+    (function tick(now) { const t = Math.min((now - start) / 600, 1); el.textContent = fmt(target * (1 - Math.pow(1 - t, 3))); if (t < 1) requestAnimationFrame(tick); })(start);
+  }
+  const cio = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) { e.target.querySelectorAll('[data-count]').forEach(countUp); cio.unobserve(e.target); } }), { threshold: .4 });
+  ['gapCounter', 'p-count'].forEach(id => cio.observe(document.getElementById(id)));
+
+  // --- sequenced demos ---
+  function restart(el, cls) { el.classList.remove(cls); void el.offsetWidth; el.classList.add(cls); }
+  function sequence(root, selector, step, cls = 'in') {
+    const items = root.querySelectorAll(selector);
+    items.forEach(it => it.classList.remove(cls)); void root.offsetWidth;
+    items.forEach((it, i) => setTimeout(() => it.classList.add(cls), reduced ? 0 : i * step));
+  }
+  const demos = {
+    heroChain(root) { root.querySelectorAll('.slab, .conn i, .conn b, .conn em, .traveler').forEach(el => el.classList.remove('in')); void root.offsetWidth;
+      root.querySelectorAll('.cell').forEach((cell, i) => { const d = reduced ? 0 : i * 520; setTimeout(() => cell.querySelector('.slab').classList.add('in'), d); const line = cell.querySelector('.conn i'), head = cell.querySelector('.conn b'), tag = cell.querySelector('.conn em'); if (line) { setTimeout(() => line.classList.add('in'), d + 200); setTimeout(() => head.classList.add('in'), d + 600); setTimeout(() => tag.classList.add('in'), d + 500); } });
+      const tr = root.querySelector('.traveler'); setTimeout(() => tr.classList.add('in'), reduced ? 0 : 1400); },
+    checkTimeline(root) { sequence(root, '.t', 260); const bar = root.querySelector('.bar i'); bar.classList.remove('in'); void bar.offsetWidth; setTimeout(() => bar.classList.add('in'), reduced ? 0 : 900); },
+    beats(root) { sequence(root, '.beat', 220); },
+    archDiagram(root) { sequence(root, '.vconn i', 500); },
+    'p-slab'(root) { restart(root.querySelector('.slab'), 'in'); },
+    'p-conn'(root) { const i = root.querySelector('.conn i'), b = root.querySelector('.conn b'), end = root.querySelectorAll('.mini')[1]; [i, b, end].forEach(el => el.classList.remove('in')); void root.offsetWidth; i.classList.add('in'); setTimeout(() => { b.classList.add('in'); end.classList.add('in'); }, reduced ? 0 : 400); },
+    'p-stack'(root) { const items = [...root.querySelectorAll('.mini')]; items.forEach(it => it.classList.remove('in')); void root.offsetWidth; items.slice().reverse().forEach((it, i) => setTimeout(() => it.classList.add('in'), reduced ? 0 : i * 280)); },
+    'p-split'(root) { root.querySelectorAll('.cut, .mini').forEach(el => el.classList.remove('in')); void root.offsetWidth; root.querySelectorAll('.cut, .mini').forEach(el => el.classList.add('in')); },
+    'p-spot'(root) { const s = root.querySelector('.st-spot'); s.classList.remove('in'); void root.offsetWidth; setTimeout(() => s.classList.add('in'), reduced ? 0 : 350); },
+    'p-count'(root) { root.querySelectorAll('[data-count]').forEach(countUp); },
+    'p-stamp'(root) { restart(root.querySelector('.stamp'), 'anim'); },
+    'p-sort'(root) {
+      const tray = root.querySelector('.tray'); const lanes = root.querySelectorAll('.lane');
+      tray.innerHTML = ''; lanes.forEach(l => l.querySelectorAll('.mini').forEach(m => m.remove()));
+      const cards = [['Training delivered', 0], ['Farmers adopting', 1], ['Farmers trained', 0, 1]];
+      cards.forEach(([label, bin, wrong], i) => {
+        const el = document.createElement('span'); el.className = 'mini'; el.textContent = label; tray.appendChild(el);
+        const move = (target) => { const first = el.getBoundingClientRect(); lanes[target].appendChild(el); const last = el.getBoundingClientRect(); if (!reduced) { el.style.transition = 'none'; el.style.transform = `translate(${first.left - last.left}px,${first.top - last.top}px)`; void el.offsetWidth; el.style.transition = ''; el.style.transform = ''; } };
+        setTimeout(() => { if (wrong !== undefined) { move(wrong); el.classList.add('wrong'); setTimeout(() => { el.classList.remove('wrong'); move(bin); }, reduced ? 0 : 900); } else move(bin); }, reduced ? 0 : 400 + i * 800);
+      });
+    },
+  };
+  document.querySelectorAll('[data-replay]').forEach(btn => btn.addEventListener('click', () => demos[btn.dataset.replay](document.getElementById(btn.dataset.replay))));
+  document.getElementById('replayAll').addEventListener('click', () => Object.keys(demos).filter(k => k.startsWith('p-')).forEach(k => demos[k](document.getElementById(k))));
+  const dio = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) { demos[e.target.id](e.target); dio.unobserve(e.target); } }), { threshold: .35 });
+  ['heroChain', 'checkTimeline', 'beats', 'archDiagram', 'p-slab', 'p-conn', 'p-stack', 'p-split', 'p-spot', 'p-stamp', 'p-sort'].forEach(id => dio.observe(document.getElementById(id)));
+
+  // --- status simulator ---
+  const LABEL = { 'start-here': ['Start here', 'gold', 'Take the full module. A foundation question was missed.'], review: ['Review', 'sky', 'Start at lesson X. One answer suggests a mix-up between A and B.'], 'check-first': ['Check first', 'white', 'You were right but not sure. Take the 5-question check; study only if needed.'], 'looking-good': ['Looking good', 'green', 'Optional. Take the check whenever you want the module marked as mastered.'] };
+  function simulate() {
+    const asked = Number(document.querySelector('input[name=asked]:checked').value);
+    const foundation = document.getElementById('s-foundation').checked, miss = document.getElementById('s-miss').checked || foundation, zero = document.getElementById('s-zero').checked, confident = document.getElementById('s-confident').checked, unsure = document.getElementById('s-unsure').checked;
+    const correct = zero ? 0 : miss ? asked - 1 : asked;
+    let status; if (foundation || correct === 0) status = 'start-here'; else if (correct < asked || (confident && miss)) status = 'review'; else if (unsure) status = 'check-first'; else status = 'looking-good';
+    const [label, tone, reason] = LABEL[status];
+    const stamp = document.getElementById('statusStamp'); stamp.innerHTML = `<span class="stamp ${tone} anim">${label}</span>`;
+    document.getElementById('statusLine').textContent = `asked ${asked}, correct ${correct}${foundation ? ', foundation missed' : ''}${confident && miss ? ', confident miss' : ''}${unsure && correct > 0 ? ', unsure correct' : ''}`;
+    document.getElementById('statusReason').textContent = reason;
+    document.querySelectorAll('#rulesTable tr[data-s]').forEach(tr => tr.classList.toggle('hit', tr.dataset.s === status));
+  }
+  document.querySelectorAll('.sim input').forEach(i => i.addEventListener('change', simulate)); simulate();
+
+  // --- check draw demo ---
+  const POOL = Array.from({ length: 14 }, (_, i) => ({ id: 'Q' + (172 + i), obj: 'O' + (1 + (i % 6)) }));
+  let seen = [];
+  function draw() {
+    const unseen = POOL.filter(q => !seen.includes(q.id)).sort(() => Math.random() - .5);
+    const stale = POOL.filter(q => seen.includes(q.id)).sort((a, b) => seen.indexOf(a.id) - seen.indexOf(b.id));
+    const cand = [...unseen, ...stale]; const chosen = []; const covered = new Set();
+    while (chosen.length < 5 && cand.length) { let idx = 0; if (covered.size < 4) { const f = cand.findIndex(q => !covered.has(q.obj)); if (f >= 0) idx = f; } const [p] = cand.splice(idx, 1); chosen.push(p); covered.add(p.obj); }
+    const area = document.getElementById('drawArea'); area.innerHTML = '';
+    chosen.forEach((q, i) => { const el = document.createElement('span'); el.className = 'qcard' + (seen.includes(q.id) ? ' seen' : ''); el.innerHTML = `${q.id}<em>${q.obj}</em>`; area.appendChild(el); setTimeout(() => el.classList.add('in'), reduced ? 0 : i * 160); });
+    document.getElementById('objBins').innerHTML = [...covered].sort().map(o => `<span class="qcard in">${o}</span>`).join('');
+    seen = [...seen.filter(id => !chosen.some(q => q.id === id)), ...chosen.map(q => q.id)];
+    document.getElementById('seenBins').innerHTML = seen.map(id => `<span class="qcard in seen" style="text-decoration:none">${id}</span>`).join('') || '<span class="micro">none yet</span>';
+  }
+  document.getElementById('drawBtn').addEventListener('click', draw);
+  document.getElementById('resetDraw').addEventListener('click', () => { seen = []; document.getElementById('seenBins').innerHTML = '<span class="micro">none yet</span>'; document.getElementById('drawArea').innerHTML = ''; document.getElementById('objBins').innerHTML = ''; });
+  document.getElementById('seenBins').innerHTML = '<span class="micro">none yet</span>';
+
+  // --- active nav ---
+  const links = [...document.querySelectorAll('header nav a')];
+  const nio = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id)); }), { rootMargin: '-40% 0px -55% 0px' });
+  document.querySelectorAll('section.block').forEach(s => nio.observe(s));
+})();
+</script>
+</body>
+</html>

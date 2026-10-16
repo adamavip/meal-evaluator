@@ -1,0 +1,526 @@
+[TABLE]
+CIMMYT Monitoring, Evaluation, Accountability & Learning MEAL Framework Better evidence. Better decisions. Greater impact. MEAL Group Lead 2026–2030
+[/TABLE]
+[TABLE]
+Section 1  ·  A New MEAL Approach for CIMMYT
+[/TABLE]
+## A New MEAL Approach for CIMMYT
+Better evidence. Better decisions. Greater impact.
+[TABLE]
+Why now? The operating environment for agricultural research has changed. Major investors, including bilateral agencies, foundations and governments, now ask for evidence of impact as well as delivery outputs. NGOs, national research systems, universities and private companies are all investing in better evidence systems, and CIMMYT competes with them for the same funding. Institutions that can demonstrate what changed, how, for whom, and why will be better positioned to attract funding, influence policy and sustain partnerships. Those that cannot will increasingly be asked to justify their relevance. This is why CIMMYT’s MEAL function needs to change.
+[/TABLE]
+CIMMYT is changing how it monitors, evaluates and learns. Instead of compiling what projects report, it will build a traceable body of evidence on what changed, for whom, where, under what conditions and at what scale. This requires new methods and a new way for projects, MEAL, data teams and scientists to work together.
+CIMMYT already produces a large amount of evidence through trials, producer registries, field surveys, research platforms, administrative systems, sensors, satellite imagery, digital tools and partner systems. The task is to connect these sources through common questions, indicators, identifiers and quality rules, so that evidence can be reused across projects and aggregated at portfolio and institutional level.
+When monitoring is built mainly from project reports and aggregated figures, CIMMYT can describe delivery but cannot consistently reconstruct what changed on the ground. A report can confirm that training took place or that farmers were reached; it cannot, by itself, show whether practices changed, yields improved, risks declined,  benefits persisted or any changes in the livelihoods. The new approach therefore works from the underlying evidence: observation-level records from farmers, plots, trials, households and institutions, combined with geospatial and contextual data when these strengthen the measurement.
+[TABLE]
+Reporting summaries stay. The objective is to connect them to observation-level data that can be analyzed, aggregated and used for learning and impact.
+[/TABLE]
+## 1.1  From Report-Based Monitoring to Observation-Based Evidence
+The new approach changes the role of evidence in five ways:
+[TABLE]
+FROM: Reported Figures for Compliance | TO: Data for Learning & Impact
+We reported activities and outputs from aggregated project reports | We use quality data to understand progress, adapt, and demonstrate impact
+Siloed information and manual processes | Integrated data systems that are interoperable and trusted
+Limited ability to analyze, aggregate, and generate insights | Stronger analysis, aggregation, and evidence to answer key questions
+Time-consuming reporting for compliance | High-frequency insights for better decision-making and learning
+Hard to link our work to CIMMYT’s strategy | Credible evidence of CIMMYT’s contribution to strategy-level results
+[/TABLE]
+## 1.2  Four Strategic Effects
+Four institutional effects are expected, each reinforcing the others:
+[TABLE]
+Evidence Quality data used to understand progress and demonstrate impact | Collaboration Integrated systems connecting science, MEAL, data, KMIT and management | Agility & Foresight High-frequency insights informing decisions during implementation | Impact Credible evidence of CIMMYT’s contribution to change
+[/TABLE]
+## 1.3  MEAL in the Context of CIMMYT
+CIMMYT is a global agricultural research institution with 50+ years of maize and wheat improvement work, a genebank conserving over 180,000 seed accessions, trial networks spanning more than 90 countries, and partnerships with national agricultural research systems (NARS), extension services, seed companies, governments and farmers across the Global South.
+This shapes what MEAL means at CIMMYT. Most of the evidence CIMMYT produces concerns scientific contribution to change in agrifood systems, more than service delivery. Its data (multi-environment trial results, adoption surveys, genomic data, remote sensing, agronomic datasets and socioeconomic studies) are a valuable institutional asset that is still underused for cross-portfolio learning and impact demonstration.
+The framework connects breeding data from CIMMYT scientists, adoption evidence from socioeconomics teams, agronomic performance data from field programs and outcome data from development projects. Together they form one evidence base that covers CIMMYT’s full contribution to change.
+[TABLE]
+CIMMYT's evidence assets | What the new MEAL system connects (e.g.) | What becomes possible
+•  Multi-environment trial data across 90+ countries •  Adoption surveys and outcome studies •  Genomic and trait data from breeding pipelines •  Satellite imagery and remote sensing •  Socioeconomic and gender datasets •  Partner and NARS performance records | •  Breeding results → adoption evidence (seed-company data, existing adoption studies and modeling) •  Agronomic performance → farmer-level outcomes •  Project delivery data → systemic change indicators •  Historical datasets → longitudinal trend analysis •  Cross-country data → scalable contribution narratives | •  Credible claims of CIMMYT's contribution to yield gains, food security and resilience •  Evidence that resonates with investors, governments and scientific peers •  Learning that improves breeding decisions and delivery strategies •  Accountability to farmers and communities as well as investors
+[/TABLE]
+[TABLE]
+Section 2  ·  The MEAL Framework: From Data to Impact
+[/TABLE]
+## The MEAL Framework
+From data to impact, across the results pyramid.
+The framework organizes evidence across four levels of the results chain (Processes, Outputs, Outcomes and Impact) and five operational functions (Capture, Quality Assurance, Integration, Analysis, and Use & Visualization). The logic is cumulative, but responsibilities differ by level. Project teams generate and manage routine processes and output evidence. The institutional MEAL function sets standards and integrates evidence from outcomes upward, and works with projects early enough that the required data are generated correctly from the start.
+CIMMYT generates and uses data at every step of the results chain to understand what works, for whom, in what context and at what scale. Different types of data serve different analytical purposes, and the framework does not ask all of them to carry the same evidential weight.
+## 2.1  Processes
+Processes are the activities, partnerships, and management actions that enable delivery. They represent the day-to-day execution of projects: workplan implementation, resource mobilization, coordination, financial tracking, partner engagement and risk management.
+Data at this level come from activity tracking systems, workplans, financial records and partnership registries. The priority is completeness, accuracy and timeliness. Integration connects planning, finance and implementation data. Analysis focuses on process efficiency, implementation quality, bottlenecks and resource use. Products include activity dashboards, workplan trackers and resource-use monitoring.
+[TABLE]
+Process data has immediate management value: it allows teams to identify and address execution problems before they become outcome problems.
+[/TABLE]
+## 2.2  Outputs
+Outputs are the products, services, technologies and capacity delivered through CIMMYT projects and partnerships. They include varieties developed, digital tools deployed, training delivered, recommendations produced, datasets published, platforms established and partnerships formalized.
+Data come from delivery records, uptake registries, trial results, training logs and distribution systems. Quality work verifies completeness, removes duplicates and standardizes formats. Integration connects delivery data with baselines, targets and geospatial information. Analysis examines reach, coverage, quality, efficiency and initial uptake. Products include output dashboards, delivery trackers and adoption maps.
+Counting what was delivered is the starting point. The purpose is to show where, how, to whom, with what quality and at what scale, which is the foundation for outcome-level evidence.
+## 2.3  Outcomes
+Outcomes reflect changes in behaviors, systems, practice, capacity, policy or performance among beneficiaries and partners. They are the level at which CIMMYT's contribution to change becomes most visible and most important to establish credibly.
+Examples include adoption of climate-smart technologies; changes in agronomic practices; improved institutional capacity; policy implementation; stronger service delivery systems; and shifts in investment decisions.
+Data come from adoption surveys, outcome studies, administrative records, partner performance data and digital monitoring. Quality work addresses consistency, missing values, outliers and comparability across projects. Integration combines information across projects, regions and time periods. Analysis focuses on contribution, outcome mapping, trends, heterogeneity by gender, age and territory, and factors associated with change. Products include outcome dashboards, beneficiary profiles, thematic maps and stories of change grounded in data.
+[TABLE]
+Outcomes answer the essential institutional question: are people, organizations and systems changing as a result of CIMMYT's interventions?
+[/TABLE]
+## 2.4  Impact
+Impact is positive, lasting change in agrifood systems: productivity, incomes, food security, resilience, resource-use efficiency, emissions, biodiversity, inclusion and institutional transformation.
+Data come from surveys, impact evaluations, longitudinal panels, remote sensing, external databases and models. Integration links impact data with outcomes, interventions, contextual data, climate information and market dynamics. Analysis can include counterfactual impact evaluations, attribution and contribution analysis, geospatial impact assessment, modeling and scenario analysis. Products include impact dashboards, geospatial maps, stories of change, contribution analyses and evaluation findings.
+CIMMYT does not claim to be the sole cause of observed changes. The aim is credible evidence of contribution: the role that CIMMYT’s technologies, partnerships, capacity and services played, alongside other factors, in producing lasting change.
+## 2.5  The Five Evidence Functions
+Five functions run across the results pyramid. They provide a practical sequence for designing and operating MEAL in every project and for integrating evidence institution-wide:
+[TABLE]
+Capture | Identify the question first, then capture the observation-level and contextual data needed to answer it. Use direct field measurement, digital records, partner systems, remote sensing or secondary sources according to the indicator method.
+Quality Assurance | Validate, standardize, de-duplicate and document provenance and quality. Controls cover completeness, accuracy, consistency, timeliness, uniqueness and representativeness.
+Integration | Link records across sources, projects, partners, locations and time using common identifiers, controlled vocabularies and interoperable structures. Recompute institutional indicators from the underlying eligible records rather than summing project reports.
+Analysis | Apply methods that match the question and claim: descriptive, performance, contribution, counterfactual, geospatial, modeling or scenario analysis. Explicitly document uncertainty and limits.
+Use & Visualization | Turn evidence into dashboards, maps, briefs, learning reviews and decision products for specific users. The purpose is action: adaptation, accountability, strategy and impact demonstration.
+[/TABLE]
+Data systems serve MEAL. With the Data Group, CIMMYT will make sure evidence moves from collection to quality assurance, integration, analysis and use without repeated manual reporting. The MEAL data system (Section 4) keeps the underlying records and their provenance, so institutional results can be recalculated, audited and reused as methods improve.
+## 2.6  The Evidence Stack
+The MEAL data system does not treat a project report as the primary unit of evidence. It works as close as possible to what is being measured and combines complementary sources, so that each result can be checked from more than one angle. Not every indicator needs every source; the KPI reference sheet sets what is valid.
+[TABLE]
+Evidence layer | Typical sources | What it adds | Example use
+1. Direct observations | Plot, farm, household, participant, trial, institution or result-object records | The closest evidence of the actual state or change; permits disaggregation and re-analysis | Crop cuts and plot records to estimate yield; farmer records to measure adoption
+2. Earth observation & sensors | Satellite imagery, weather, sensors, geospatial layers | Spatial coverage, frequency and extrapolation between observed locations | Map land under practices after calibration with ground observations
+3. External/context data | Government statistics, FAO and other public datasets, prices, climate and market series | Context, denominators, benchmarking and covariates needed to interpret change | Compare observed productivity changes with rainfall, prices or national trends
+4. Operational records | Workplans, training logs, distribution systems, financial and partner records | Traceability from intervention to output and links between delivery and later outcomes | Link who received a service to later uptake or performance
+[/TABLE]
+Triangulation rule. A source strengthens a claim only when it measures the same construct, population, geography and period under compatible definitions. Satellite or secondary data do not replace ground observations where the KPI method requires direct measurement; they are used for calibration, contextualization, stratification or upscaling under documented rules.
+## 2.7  Accountability in Practice
+Accountability is the dimension of MEAL that is most often stated and least often operationalized. For CIMMYT, it is more than submitting reports to investors on time. It runs in four directions, each with different requirements:
+[TABLE]
+Accountability to | What it means in practice | How MEAL supports it
+Investors & institutional partners | Transparent, timely and comparable reporting on what was delivered, what changed and what was learned, using evidence that meets the methodological standards investors now expect. | Harmonized KPIs, documented methodologies, governance over data quality, and synthesis across the portfolio into credible institutional evidence products.
+Farmers, communities and relevant stakeholders | Showing that CIMMYT’s work produces real benefits for the smallholder farmers, households and communities it serves, and saying so openly when it does not. This includes disaggregating evidence by gender, age and other equity dimensions. | Outcome and impact measurement that is farmer-centered; disaggregation by gender and vulnerability; feedback mechanisms that return evidence to the communities it concerns.
+The scientific community & CGIAR | Evidence that meets scientific standards of rigor, reproducibility and transparency and adds to the global knowledge base on agricultural transformation, beyond internal reporting. | FAIR data practices, documented methods, open publication of datasets and findings, and evaluation designs that support learning across the CGIAR system.
+Internal | Individuals, leads and teams are accountable for the processes and outputs within their remit; leadership is accountable for portfolio-level results. | Easier access to synthesized information, e.g., unpacking breeding-portal data so that individual and team contributions are visible.
+[/TABLE]
+[TABLE]
+Accountability means being open about what works, what does not, and what CIMMYT is learning: within CIMMYT, with investors, with the scientific community, and with the farmers and communities whose lives agricultural research is meant to improve.
+[/TABLE]
+[TABLE]
+Section 3  ·  KPI Approach: Comparable and Fit for Purpose
+[/TABLE]
+## KPI Approach
+One toolbox, methods fit for purpose, results that can be aggregated.
+CIMMYT is building a KPI toolbox to guide monitoring across the results pyramid. Each KPI has defined methods for different levels of measurement and aggregation, so that evidence is comparable and answers the questions that matter.
+KPI harmonization does not require every project to measure the same thing in the same way. It means that when projects measure the same concept, they share a definition, a methodological logic and rules that allow interpretation and, where valid, aggregation.
+## 3.1  KPI Toolbox: Volumes and Thrusts
+The KPI Toolbox holds 142 indicators organized in 13 volumes, each covering one pathway: ten impact pathways, which measure CIMMYT’s contribution to change, and three enabling pathways, which measure how CIMMYT itself performs. The impact-pathway volumes are grouped under CIMMYT’s three Thrusts, Human Wellbeing, Planetary Health and Peace, which are the top level at which institutional results are aggregated and reported. Each volume contains full reference sheets with definitions, methods, disaggregation, data sources and aggregation rules.
+[TABLE]
+Vol. | Volume (pathway) | Pathway type | KPIs (output / outcome / impact) | Thrust
+1 | Innovation development and scaling | Impact | 15 (7 / 7 / 1) | Cross-cutting
+2 | Capacity, data and institutions | Impact | 10 (5 / 5 / 0) | Peace
+3 | Nutrition and food security | Impact | 12 (4 / 7 / 1) | Peace
+4 | Genetic resources, breeding and seed systems | Impact | 11 (8 / 3 / 0) | Human Wellbeing
+5 | Income and livelihoods | Impact | 9 (2 / 5 / 2) | Human Wellbeing
+6 | Resilience and climate adaptation | Impact | 9 (2 / 3 / 4) | Planetary Health
+7 | Productivity | Impact | 8 (4 / 3 / 1) | Human Wellbeing
+8 | Gender equality, youth and social inclusion | Impact | 10 (4 / 5 / 1) | Human Wellbeing
+9 | Environmental sustainability | Impact | 13 (2 / 7 / 4) | Planetary Health
+10 | Policy, finance and market systems | Impact | 16 (10 / 3 / 3) | Peace
+11 | Institutional performance and operations | Enabling | 16 (8 / 8 / 0) | Institutional enabler
+12 | Workforce and talent | Enabling | 5 (2 / 3 / 0) | Institutional enabler
+13 | Resource mobilization and donor relations | Enabling | 8 (3 / 5 / 0) | Institutional enabler
+[/TABLE]
+Volume 1 applies across all three Thrusts, since innovations and partnerships feed every pathway. The three enabling volumes are reported alongside the Thrusts as CIMMYT’s institutional performance.
+## 3.2  One KPI, Multiple Valid Measurement Levels
+A common KPI does not imply one method everywhere. Yield, in tons per hectare, shows how one concept can be measured at different levels with different methods, each suited to the decision at hand:
+[TABLE]
+Level | How we measure it | Key standards | Quality rating
+Farm / Plot (Parcel) | • Direct measurement • Crop cut • Farmer survey | • Use the most reliable method feasible in context • Document method used and assign quality rating | High to medium, depending on method
+Trial / Station (On-farm / On-station) | • Direct measurement of harvested plot • Standard protocols | • Measure yield on net plot • Adjust to standard moisture (e.g. 12.5% for maize) • Minimum plot size / repetitions required | High (controlled protocols)
+Region / Country (Aggregated) | • Aggregated from multiple trials and farm data • Modeling / spatial interpolation where needed | • Define inclusion criteria • Weight by area / representativeness • Report uncertainty bounds | Variable; document coverage and method quality
+[/TABLE]
+For every KPI, CIMMYT defines the concept, unit of observation, data sources, valid methods by measurement level, calculation and aggregation rules, disaggregation, quality assurance requirements, and data provenance. Projects may specify their local scope, but they do not silently redefine the institutional indicator. This is what makes evidence comparable and reusable across projects and contexts.
+## 3.3  From Observation-Level Data to Decision-Relevant Insights
+Data generated at different levels (plots, trials, farms, regions) have to be combined to produce comparable estimates at institutional scale.
+Institutional values are recomputed from eligible underlying records using the method defined for the indicator. Depending on the KPI, this may involve de-duplication, weighting, pooling of microdata, extrapolation, spatial interpolation, modeling or meta-analysis, and triangulation with compatible secondary sources. The result is reported with its coverage, uncertainty, provenance and method quality. It is never an unqualified sum of project totals. Results are then rolled up by KPI volume and by Thrust.
+[TABLE]
+Example: What has CIMMYT contributed to yield change in Kenya? Answering this needs contribution or attribution analysis against a credible counterfactual, agronomic, socioeconomic and climate modeling, adoption data and geospatial assessment. A sum of reported numbers cannot answer it.
+[/TABLE]
+This approach builds five institutional capabilities:
+▸  Common definitions and standards that enable comparability across projects, regions and years
+▸  Foresight and better targeting: using past and current evidence to inform institutional strategy and future investment
+▸  Quality and data assurance embedded throughout the evidence lifecycle
+▸  Capacity and methodological guidance for teams at all levels
+▸  Continuous improvement as the quality and use of evidence grow
+[TABLE]
+Section 4  ·  The MEAL Data Ecosystem
+[/TABLE]
+## The MEAL Data Ecosystem
+What the system must do so that evidence moves from collection to use without manual re-reporting.
+The framework depends on a MEAL data ecosystem. At its center is a MEAL data system that holds observation-level records, applies common quality rules and calculates institutional indicators directly from those records. The system is built with the Data Group. It does not replace CIMMYT’s scientific and corporate systems or investors’ reporting systems: where another system is the authoritative source for an indicator (breeding, trials, finance, project management), the MEAL data system connects to it instead of copying data by hand.
+The requirements below describe the functions the system needs, not a specific product. They can guide decisions on existing tools, new development or a combination of both.
+## 4.1  Required Functionalities
+The system must provide nine functionalities:
+[TABLE]
+Functionality | What the system must do | Why MEAL needs it
+Multi-channel capture | Online/offline mobile collection, web forms and low-bandwidth channels (e.g., WhatsApp, IVR); import from partner systems, sensors and remote sensing; forms built from the KPI reference sheets. | Projects collect data once, in the format the KPI method requires.
+Persistent identifiers | Unique, stable IDs for farmers, plots, households, organizations, trials and projects across projects and years. | Links delivery to later uptake and outcomes; prevents double counting.
+Quality assurance & provenance | Validation at entry; automated completeness, range, consistency and duplicate checks; quality flags; audit trail and record-level provenance. | Institutional figures can be audited and recalculated.
+Privacy, consent & access | Consent records, role-based access, protection of personal data and data-sharing rules with partners. | Compliance with CIMMYT data policy and investor requirements.
+Integration | APIs to CIMMYT systems (breeding, trials, finance, project management) and external sources (climate, prices, national statistics); shared data dictionary and controlled vocabularies. | One evidence base across projects and sources.
+KPI engine | Calculates institutional KPIs from eligible records with the approved method and reports coverage, uncertainty and method version. | Replaces summing project reports.
+Analytics & geospatial | Statistical, geospatial and modeling workflows on integrated data, with reproducible scripts. | Outcome, contribution and impact analysis.
+Dashboards & reporting | Role-based dashboards (project, regional, institutional), maps, standard reporting packs, and exports in investor and CGIAR formats. | Evidence reaches decision-makers on time.
+Learning & feedback | Decision logs, management responses and participant feedback linked to the evidence behind them. | Closes the loop from evidence to action.
+[/TABLE]
+## 4.2  Design Principles
+The system follows open standards and FAIR principles. It works offline where connectivity is poor, and it is modular, so each project configures what it needs from shared components. Responsibility is split: the Data Group owns the infrastructure, and the MEAL team owns the content (indicators, data dictionary and quality rules).
+## 4.3  Alignment with Investor Reporting Systems: Collect Data Once
+CIMMYT has to feed many reporting systems: CGIAR’s, such as the Performance and Results Management System (PRMS), investors’ own platforms and templates, and in some cases national or partner systems. The MEAL data system is built to adapt to any of them. For each system, the MEAL team maps the required fields to the source variables already collected and sets up the connection: a direct, automated link where the receiving system allows it, and an export in the required format where it does not. Every submission is generated from the same validated records used for institutional KPIs, so projects collect data once and do not enter the same result again for each system.
+Adding a new reporting system, or adjusting to changed requirements, means adding or updating a mapping, not creating a new data collection. The MEAL team does this centrally, and projects keep collecting through the same forms.
+[TABLE]
+Section 5  ·  Operating Model, Roadmap and Team
+[/TABLE]
+## MEAL Operating Model & Roadmap
+How MEAL is designed into projects, handed over for implementation, and integrated into institutional evidence.
+The framework is implemented through two connected cycles: a project lifecycle, which makes sure MEAL is designed and resourced before implementation starts, and an institutional rollout, which gradually embeds the KPI toolbox, systems and capacities across the portfolio. The central MEAL team does not replace project-level monitoring. Its role is to set standards, enable teams, assure quality and integrate evidence so that outcomes and impact can be understood across projects.
+## 5.1  Project Lifecycle: MEAL from Proposal to Impact
+MEAL must enter a project before indicators, budgets and data systems are fixed. The lifecycle below defines the minimum institutional engagement and the handoff between the central MEAL function and project teams. Engagement intensity is proportional to project scale, M&E complexity and evidence ambition, but the gates are common. The RACI matrix that follows the table sets who is responsible, accountable, consulted and informed at each phase.
+[TABLE]
+Phase | Central MEAL role | Project / program role | Required gate / deliverable
+1. Opportunity & proposal | Join concept/proposal design; co-develop the theory of change; classify project type, scale and M&E complexity through the MEAL Matrix; select applicable institutional KPIs; define learning/evaluation questions; estimate evidence and data-system costs. | Define intended results, intervention logic, investor requirements, geography, target populations and operational feasibility. | MEAL section + KPI crosswalk + indicative data architecture + costed MEAL budget before submission.
+2. Award & inception | Confirm results chain, indicator applicability, minimum data needed, baseline/endline or panel requirements, evaluation design and institutional reporting obligations. | Confirm workplan, partners, targets, field operating model and project MEAL focal point. | Approved MEAL plan and measurement matrix within inception period.
+3. System & protocol design | Co-design forms/data structures, identifiers, integration points, quality checks, sampling/measurement protocols and data flows with the Data Group and science specialists. | Configure local workflows, partner responsibilities and field logistics; test feasibility. | Data collection system tested; protocols, roles, consent and QA procedures approved.
+4. Enable & hand over | Train project staff and partners; provide indicator guidance, reusable tools and office hours; document escalation path. | Operate routine monitoring, collect and manage process/output records, perform first-line QA and resolve operational issues. | Competency check + live system + named data/MEAL owners.
+5. Implementation & adaptive management | Run periodic quality assurance; integrate project data where needed; support outcome measurement, analytics, learning reviews and adaptive-management questions. | Maintain timely data capture; investigate anomalies; use dashboards/reviews to adapt implementation; document decisions. | Quarterly/seasonal evidence review with actions, owners and follow-up.
+6. Outcome, impact, synthesis & learning | Lead or coordinate cross-project integration from outcomes upward; apply aggregation, geospatial, contribution or evaluation methods; synthesize institutional claims with uncertainty. | Provide complete underlying records, contextual interpretation and implementation history; support validation with partners and participants. | Validated outcome/impact dataset + institutional KPI update + evidence product/learning note.
+[/TABLE]
+The RACI matrix below sets who does what at each step (R = responsible for doing the work, A = accountable for the result, with one A per activity, C = consulted, I = informed). Columns: PI = project lead; FP = Project MEAL Focal Point; RL = Regional MEAL Lead; A, B and C = Core Layer pillars (Design, Standards & Enablement; Evidence Systems & Portfolio Performance; Evaluation, Learning & Accountability); GL = MEAL Group Lead; DG = Data Group; RC = MEAL Review Committee.
+[TABLE]
+Activity | PI | FP | RL | A | B | C | GL | DG | RC
+Phase 1 · Opportunity & proposal
+Classify project type, scale and M&E complexity in the MEAL Matrix | R |  | A | C |  |  | I |  | 
+Develop the theory of change and results framework | A |  | R | C |  | C |  |  | 
+Select institutional KPIs and build the crosswalk with investor indicators | C |  | R | A | C |  |  |  | 
+Define learning and evaluation questions | C |  | R | C |  | A |  |  | 
+Cost the MEAL and data-system budget | A |  | R | C | C | C | I | C | 
+Co-design MEAL for Large and MEGA projects | C |  | R | R | R | R | A | C | 
+Phase 2 · Award & inception
+Appoint the Project MEAL Focal Point | A |  | C |  |  |  | I |  | 
+Finalize the MEAL plan and measurement matrix | A | R | R | C | C | C |  |  | 
+Design baseline, endline and evaluation studies | C | C | C | C |  | A | I |  | 
+Phase 3 · System & protocol design
+Specify data fields, identifiers and data dictionary entries | I | C | C | C | A |  |  | R | 
+Configure forms and data flows in the MEAL data system | I | R | C |  | A |  |  | R | 
+Set consent, privacy and data-sharing arrangements | A | R | C |  | C |  |  | C | 
+Define QA rules and run the readiness review | I | C | C |  | A |  |  | C | 
+Phase 4 · Enable & hand over
+Train project staff and partners | I | C | R | A | C |  |  |  | 
+Onboard the Focal Point and confirm competency | C | R | R | A |  |  |  |  | 
+Phase 5 · Implementation & adaptive management
+Collect routine activity and output data; first-line QA | A | R | I |  |  |  |  |  | 
+Periodic QA and completeness checks | I | R | A |  | C |  |  |  | 
+Quarterly or seasonal evidence reviews and adaptation decisions | A | R | C |  |  | C |  |  | 
+Project reporting to investors | A | R | C |  | C |  |  |  | 
+Phase 6 · Outcome, impact, synthesis & learning
+Outcome and impact studies | C | R | C |  | C | A | I | C | 
+Contribution analysis and institutional impact claims | C |  | C |  | C | R | A |  | 
+Learning reviews and management responses | R | C | R |  |  | A | I |  | 
+Institutional processes
+Annual institutional KPI run and roll-up by Thrust | I | C | R |  | R |  | A | C | I
+Mapping and submissions to PRMS and other reporting systems | I | I | C |  | R |  | A | C | 
+KPI method exceptions | C |  | C | R | C |  | A |  | 
+Implementing changes to the Toolbox, Handbook and Matrix | I | I | C | R | C | C | A | C | 
+Annual review and endorsement of the Toolbox, Handbook and Matrix |  |  | C | C | C | C | R | C | A
+[/TABLE]
+For Small projects that proceed directly with the standard package, the Regional MEAL Lead’s role in Phase 1 is limited to confirming the classification and the base budget.
+## 5.2  Division of Responsibility: Project Delivery vs. Institutional MEAL
+The operating principle is “central standards, distributed implementation, institutional integration.” Project teams remain accountable for generating the evidence closest to delivery; the central MEAL team ensures that the evidence can support comparable outcome and impact analysis across CIMMYT.
+[TABLE]
+Results level | Primary operational owner | Central MEAL contribution | Institutional use
+Processes | Project / program teams | Standards, minimum requirements, selected QA and system integration support | Implementation oversight and portfolio risk signals
+Outputs | Project / program teams | KPI definitions, deduplication/aggregation rules, QA and cross-project harmonization | Comparable delivery and reach evidence
+Outcomes | Shared: project teams generate/collect; central MEAL integrates and analyzes | Design outcome methods; integrate across projects; support sampling, attribution/contribution and heterogeneity analysis | Portfolio outcome monitoring and adaptive learning
+Impact | Central MEAL with science/evaluation specialists; projects provide source data and context | Evaluation design, triangulation, geospatial/modeling methods, synthesis and uncertainty | Institutional impact claims and learning
+[/TABLE]
+## 5.3  Governance
+Three rules keep the system coherent as it grows.
+1. KPI Toolbox: No new institutional KPI is added, and no existing KPI is redefined, without review by the MEAL team. Projects can add project-specific indicators, but these are not reported as institutional KPIs until the Design, Standards & Enablement pillar has reviewed and approved them. Approved changes are published in a new version of the MEAL Handbook.
+2. Proposal review: Every proposal goes through the MEAL team at proposal stage, where the MEAL Matrix sets its scale and M&E complexity (Annex A). Small projects can proceed directly with the standard MEAL package, provided they include the base MEAL budget for their complexity level (USD 8,000 to 18,000). Medium projects confirm their MEAL budget with the team while the proposal is written. Large and MEGA projects co-design MEAL with the team from the start of proposal development.
+3. Decisions and exceptions: The MEAL Group Lead is accountable for implementing changes to the Handbook and for exceptions to KPI methods. Once a year, a MEAL Review Committee reviews the Handbook, the KPI Toolbox and the MEAL Matrix, using the results of the annual KPI run and the evidence-gap register, and endorses the changes for the following year. The Committee is an institutional body, not an internal MEAL one: it sits at the level of CIMMYT’s scientific leadership, and the MEAL Group Lead prepares and presents the annual review to it.
+## 5.4  Minimum MEAL Implementation Package
+Every new project should leave inception with the following minimum package. The depth varies by scale, but none of these elements should be left to end-of-project reporting.
+1. Results architecture: Theory of Change / results chain, decision and learning questions, and links to CIMMYT Strategy.
+2. Indicator crosswalk: Applicable institutional KPIs, investor indicators and project-specific measures, with no silent redefinition of institutional indicators.
+3. Measurement plan: Unit of observation, data source, valid method, frequency, sample/coverage, disaggregation, responsible owner and timing for each indicator.
+4. Data architecture: Authoritative systems, persistent identifiers, integration points, access rules, consent/privacy requirements and planned data flows.
+5. Quality plan: Validation rules, first-line checks, deduplication, exception handling, provenance, audit trail and periodic MEAL assurance.
+6. Baseline / reference: Baseline, comparison group or other valid reference where the outcome/impact method requires it; otherwise a documented alternative.
+7. Learning & accountability cycle: Calendar for evidence reviews, adaptation decisions, participant/partner feedback and communication back to relevant stakeholders.
+8. Handover & capacity: Named project MEAL/data owners, training completed, reusable guidance available and escalation route to central MEAL/Data Group.
+## 5.5  Institutional Rollout Roadmap
+The milestones below show how CIMMYT will embed this operating model across the portfolio. They run alongside the project lifecycle described in 5.1.
+[TABLE]
+1 | May–September 2026  ·  Design DESIGN & BUILD Finalizing the MEAL Handbook and KPI Toolbox: indicators, methods and guidance. →  Co-developing the 13 KPI volumes under the three Thrusts: Human Wellbeing, Planetary Health and Peace →  Defining methods, standards and aggregation approaches for each KPI volume →  Setting the minimum MEAL package required for all projects
+[/TABLE]
+[TABLE]
+2 | September 2026  ·  Milestone MEAL HANDBOOK & KPI TOOLBOX The MEAL Handbook, including the KPI Toolbox, is finalized and ready for peer validation. →  Guidance on indicators, definitions, methods, standards and aggregation rules →  Peer validation with science programs and regional teams before approval →  Available to all project teams, science programs and implementation partners
+[/TABLE]
+[TABLE]
+3 | Early October 2026  ·  Milestone LAUNCH WEBINAR Before regional training starts, the Senior Leadership Team launches the MEAL Handbook and KPI Toolbox in a global webinar. →  What the Handbook and Toolbox are, and when they apply →  Why they matter and how teams are expected to use them →  What comes next: regional training from October 12
+[/TABLE]
+[TABLE]
+4 | From October 12, 2026  ·  Milestone REGIONAL TRAINING ON MEAL APPROACHES & PRACTICES Regional training starts on October 12, 2026, so that all regions work from the same understanding of CIMMYT’s MEAL approach. →  Shared understanding of indicators, their purpose and use →  Hands-on training on the tools and on institutional results aggregation →  Identify Project MEAL Focal Points and country-level MEAL contacts
+[/TABLE]
+[TABLE]
+5 | From October 2026  ·  Milestone APPLY IN PROJECT PROPOSALS All new proposals use the KPI Toolbox and MEAL guidance from October 2026. →  Integrate KPIs and MEAL plans in the design of every new proposal →  Align with data systems and capacity needs from the outset →  Budget for data collection, quality assurance, analysis and learning, not only reporting Entry point: Every proposal goes through the MEAL team at concept-note stage using the MEAL Matrix. The proposal lead selects the project type (upstream discovery science; breeding and varietal development; seed systems and deployment; applied agronomy and farming systems; digital agriculture and AI; or system change and transformation), which sets the M&E complexity level, and the project scale (Small, Medium, Large or MEGA). The Matrix returns the MEAL support, the applicable KPIs, expected deliverables and base MEAL budget. Small projects can proceed directly with the standard package and the base budget (see 5.3 and Annex A).
+[/TABLE]
+[TABLE]
+6 | From November 2026  ·  Pilot SELECT & PILOT IN PROJECTS Ongoing projects with more than two years of implementation remaining pilot the KPI system. Pilot projects will be defined after regional training. →  Confirm pilot projects using the selection criteria below →  Pilot KPIs, methods and data collection in real implementation contexts →  Refine guidance and tools based on what the pilots show Entry point: Pilots join work already underway, so the MEAL Matrix alone is not enough. For each shortlisted project, MEAL runs (1) a short readiness diagnostic of existing indicators, data systems and gaps against the MEAL Handbook; (2) a selection check on remaining duration, budget flexibility, data-system maturity and team capacity; and (3) for confirmed pilots, a KPI crosswalk workshop that maps existing indicators onto the KPI Toolbox and flags what must change.
+[/TABLE]
+[TABLE]
+7 | 2027–2030  ·  Scale SCALE, LEARN & DRIVE IMPACT Expand across the portfolio and institutionalize the MEAL system. →  First institutional KPI run: baseline portfolio dashboard and evidence-gap register →  Scale to more projects and programs across regions →  Use evidence to inform decisions, adapt implementation and demonstrate impact →  Strengthen cross-project synthesis, geospatial analysis, modeling and contribution analysis →  Build CIMMYT’s capacity to answer what changed, for whom, where, under what conditions and at what scale
+[/TABLE]
+## 5.6  Enabling Success
+Five enabling conditions will determine whether the roadmap translates into a functioning MEAL system:
+[TABLE]
+Strong Data Systems Working with the Data Group to ensure systems are integrated, reliable and user-friendly | Clear Roles & Governance Defined responsibilities across project teams, MEAL, Data Group, science and leadership | Quality & Accountability Quality controls, assurance reviews and documented standards embedded throughout the lifecycle | Capacity Development Role-based training, communities of practice, office hours and reusable learning resources | Continuous Learning & Adaptation Evidence reviewed and acted on; improvements released as new versions of the guidance
+[/TABLE]
+## 5.7  Operating Cadence and Assurance
+Implementation runs on a light, regular cadence in addition to annual reporting. Frequency is adapted to seasonality and project risk.
+[TABLE]
+Cadence | Purpose | Typical output
+Continuous / monthly | Automated or routine data-quality checks; exceptions resolved close to collection. | Quality flags, corrected records, system issue log
+Quarterly / seasonal | Joint evidence review focused on implementation, reach, early uptake and emerging outcomes. | Decision log: what changes, who acts, by when
+Annual | Recompute institutional KPIs from eligible records; review coverage, uncertainty and evidence gaps. | Portfolio dashboard + evidence-gap register + method notes
+Midterm / endline / trigger-based | Outcome or impact studies, contribution/evaluation analysis, shock-event measurement where relevant. | Evaluation findings, contribution analysis, updated impact narrative
+[/TABLE]
+## 5.8  MEAL Team Structure and Roles
+The MEAL function is organized in three connected layers. The Core Layer, made up of the MEAL Group Lead and three technical pillars, provides institutional standards, specialist expertise, systems and portfolio-level analysis. The Regional Layer makes these approaches work across each regional portfolio. The Project Layer, the Extended MEAL Network of Project MEAL Focal Points, keeps monitoring and evidence generation close to implementation. The structure is deliberately lean: thirteen positions in the Core and Regional Layers, with focal points added as the portfolio grows.
+Figure 5.1. CIMMYT MEAL organizational structure: core, regional and project layers. Solid lines indicate direct reporting; dotted lines indicate functional coordination.
+[TABLE]
+Operating principle: central standards, distributed implementation, institutional integration. Project teams remain responsible for routine implementation monitoring and source-level records. Regional MEAL Leads make sure institutional requirements are applied consistently across projects and are the main interface between projects and the Core Layer. The Core Layer develops common methods and systems, solves complex technical issues, integrates evidence across the portfolio and supports institutional learning and decision-making.
+[/TABLE]
+Senior Leads work as player-coaches: they set priorities and lead their teams, and they also do the most complex technical work in their area. Mid-level specialists provide dedicated technical capacity; analysts and officers carry most of the recurring implementation, analysis, reporting and support work.
+1. Core Layer
+The Core Layer brings together the MEAL Group Lead and three technical pillars, each with a Senior Lead and two support roles (ten positions). The pillars hold the capabilities CIMMYT needs once, not project by project: they set methods, maintain institutional tools, solve complex technical problems, build capacity, integrate evidence and produce portfolio-level analysis. They do not replace routine project monitoring.
+MEAL Group Lead  ·  Senior leadership
+Purpose: Leads the institutional MEAL function and makes sure the three technical pillars, the Regional MEAL Leads and the Extended MEAL Network work as one system. The role creates the conditions for evidence to inform institutional strategy, management decisions, resource allocation and accountability.
+Core responsibilities
+▸  Set institutional MEAL strategy, priorities and annual workplan
+▸  Ensure coherence across the three technical pillars and regional portfolios
+▸  Allocate MEAL resources according to institutional priorities and evidence gaps
+▸  Approve major institutional standards and significant methodological exceptions
+▸  Review portfolio-level performance, evidence quality and major evidence gaps
+▸  Resolve cross-pillar and cross-regional issues
+▸  Present institutional MEAL findings and priorities to senior leadership
+▸  Lead engagement on MEAL with key investors, partners and institutional bodies
+▸  Promote systematic use of evidence in planning, management and learning
+▸  Prepare and present the annual review of the MEAL Framework, KPI Toolbox and MEAL Matrix to the MEAL Review Committee
+Key outputs: Institutional MEAL priorities; leadership evidence reviews; major methodological decisions; portfolio-level actions; annual institutional MEAL review.
+Pillar A. Design, Standards & Enablement
+Makes sure projects start with a credible results logic, use comparable indicators and apply appropriate measurement approaches, and makes institutional MEAL methods practical for project teams.
+Lead – Design, Standards & Enablement  ·  Senior
+Purpose: Makes sure CIMMYT projects are designed around clear results pathways and a common institutional measurement logic, so that weak theories of change, inconsistent indicators and incompatible measurement approaches are not locked in at proposal stage.
+Core responsibilities
+▸  Lead Theory of Change, results architecture and MEAL design for complex or strategic proposals
+▸  Own the institutional KPI architecture and overall measurement standards
+▸  Review and approve the use of institutional indicators and project-specific adaptations
+▸  Define principles for baseline, target-setting, measurement frequency, disaggregation and methodological quality
+▸  Review major proposal MEAL sections and measurement plans
+▸  Resolve complex methodological issues and proposed exceptions
+▸  Ensure consistency between the KPI Toolbox, MEAL Framework and project-level guidance
+▸  Supervise capacity development and implementation support
+▸  Provide senior technical backstopping to Regional MEAL Leads
+Key outputs: Approved results architectures; institutional measurement standards; methodological decisions; major proposal reviews; KPI guidance; updated institutional methods.
+MEAL Measurement Specialist  ·  Mid-level
+Purpose: Translates results frameworks into precise and implementable measurement requirements so that projects know exactly what needs to be measured, from whom, how often and using which method.
+Core responsibilities
+▸  Develop and update KPI reference sheets and measurement guidance
+▸  Support projects in selecting applicable institutional KPIs
+▸  Map investor indicators to CIMMYT institutional indicators
+▸  Develop project measurement matrices and indicator protocols
+▸  Specify units of observation, frequency, disaggregation and evidence requirements
+▸  Support baseline and target-setting approaches
+▸  Define sampling and coverage requirements where relevant
+▸  Document approved methodological decisions and maintain institutional measurement documentation
+▸  Support Regional MEAL Leads and Project MEAL Focal Points with technical indicator questions
+Key outputs: KPI reference sheets; indicator crosswalks; measurement matrices; methodological notes; project-specific measurement guidance.
+MEAL Enablement & Backstopping Officer  ·  Junior–mid
+Purpose: Makes institutional standards usable in practice and provides the day-to-day capacity-development and support infrastructure required for consistent implementation.
+Core responsibilities
+▸  Develop practical templates, checklists and implementation guides
+▸  Coordinate onboarding for Project MEAL Focal Points
+▸  Organize institutional and regional training activities
+▸  Coordinate refresher sessions, clinics and office hours
+▸  Maintain FAQs, training resources and implementation guidance
+▸  Provide first-line support on routine MEAL implementation questions
+▸  Maintain a log of recurrent implementation issues and escalate technical issues as needed
+▸  Support communities of practice and peer learning across the Extended MEAL Network
+Key outputs: Training materials; onboarding packages; practical guidance; support logs; capacity-development sessions; communities of practice.
+Pillar B. Evidence Systems & Portfolio Performance
+Makes sure project-level evidence moves reliably from source records into institutional analysis and reporting. It connects MEAL requirements to data structures, quality controls, reporting systems, dashboards and portfolio-level performance analysis.
+The Data Group and other technical functions remain responsible for the technical infrastructure and for specialist capabilities such as software engineering, advanced data science and geospatial processing. MEAL defines the evidence requirements, quality rules, indicator logic and institutional use of those systems, in line with the split set out in 4.2.
+Lead – Evidence Systems & Portfolio Performance  ·  Senior
+Purpose: Connects project-level evidence to a reliable institutional performance system. The role ensures that data structures, quality controls, aggregation methods and portfolio analysis support management and institutional reporting without recreating separate reporting processes for every project.
+Core responsibilities
+▸  Define the institutional MEAL evidence architecture and minimum data requirements
+▸  Translate institutional performance needs into system and integration priorities
+▸  Define data-quality and governance principles for MEAL evidence
+▸  Coordinate requirements with the Data Group, Digital, ICT and other relevant technical functions
+▸  Determine where data flows, KPI calculation and reporting should be automated
+▸  Oversee institutional KPI aggregation and portfolio performance processes
+▸  Lead complex portfolio analysis and interpretation
+▸  Identify systemic evidence gaps and data-quality problems
+▸  Set priorities for dashboards, institutional reporting and management information
+▸  Resolve complex evidence-system and portfolio-performance issues
+▸  Provide senior technical support to Regional MEAL Leads
+Key outputs: Institutional evidence architecture; system requirements; portfolio analyses; institutional performance reviews; data-quality priorities; reporting and dashboard priorities.
+Evidence Systems, Data Quality & Reporting Analyst  ·  Mid-level
+Purpose: Makes institutional evidence technically usable, traceable and trustworthy, and operates the recurring calculation and reporting processes built on that evidence.
+Core responsibilities
+▸  Translate KPI requirements into fields, identifiers and data-flow specifications
+▸  Maintain the institutional MEAL data dictionary
+▸  Define and implement validation, completeness, consistency, deduplication and provenance rules
+▸  Conduct project and system data-readiness reviews
+▸  Monitor recurrent data-quality issues and support remediation
+▸  Execute approved institutional KPI calculations and aggregation routines
+▸  Maintain mappings between CIMMYT data and systems such as PRMS and investor reporting requirements
+▸  Prepare validated institutional and investor results tables
+▸  Maintain the institutional reporting calendar and supporting documentation
+▸  Work with Regional MEAL Leads to resolve data-quality and reporting gaps
+Key outputs: Data specifications; data dictionary; QA rules; readiness assessments; validated KPI calculations; reporting mappings; institutional results tables.
+Portfolio Performance & Visualization Analyst  ·  Junior–mid
+Purpose: Keeps a current, accessible view of performance across the portfolio, so management, regions and project teams can see progress, gaps and emerging issues without waiting for annual reports.
+Core responsibilities
+▸  Maintain the institutional project and KPI portfolio tracker
+▸  Monitor completeness, timeliness and target-versus-actual performance
+▸  Coordinate follow-up on missing or delayed evidence with Regional MEAL Leads
+▸  Prepare quarterly, seasonal and annual portfolio-performance packs
+▸  Build and maintain institutional and regional dashboards and scorecards
+▸  Automate dashboard and reporting refreshes where feasible
+▸  Ensure that visual products use approved source tables and calculations
+▸  Maintain the institutional evidence-gap register
+▸  Produce standard performance visualizations for management and regional reviews
+Key outputs: Portfolio tracker; KPI status views; dashboards; management scorecards; performance packs; evidence-gap register.
+Pillar C. Evaluation, Learning & Accountability
+Answers the questions routine monitoring cannot: whether intended outcomes are occurring, why results differ across contexts, what CIMMYT can credibly learn from its work, and how evidence and stakeholder feedback are turned into action.
+Lead – Evaluation, Learning & Accountability  ·  Senior
+Purpose: Takes CIMMYT beyond tracking delivery: understanding change, answering strategic evaluative questions, learning across projects and responding systematically to evidence and stakeholder feedback.
+Core responsibilities
+▸  Set the institutional evaluation and learning agenda
+▸  Identify and prioritize outcome and evaluation questions across the portfolio
+▸  Personally design high-complexity or strategically important evaluations
+▸  Define institutional evaluation quality standards
+▸  Review major evaluation designs and Terms of Reference
+▸  Lead major cross-project learning and evidence-synthesis processes
+▸  Establish institutional approaches to stakeholder feedback and accountability
+▸  Ensure evaluation findings and learning are translated into management responses
+▸  Track whether significant recommendations are acted upon
+▸  Synthesize major findings for senior leadership and institutional decision-making
+▸  Support Regional MEAL Leads in prioritizing and interpreting evaluation and learning work
+Key outputs: Institutional evaluation agenda; strategic evaluation designs; learning reviews; accountability guidance; management-response actions; institutional evidence syntheses.
+Evaluation & Research Specialist  ·  Mid-level
+Purpose: Provides the methodological capacity to design and manage outcome and evaluation studies, so the Lead does not have to run every study directly.
+Core responsibilities
+▸  Design outcome assessments, process evaluations and mixed-method studies
+▸  Develop evaluation protocols, research questions and study instruments
+▸  Develop sampling approaches with relevant technical expertise where needed
+▸  Draft evaluation Terms of Reference
+▸  Manage external evaluators, consultants and commissioned studies
+▸  Provide technical quality assurance for regional or project-led studies
+▸  Lead the interpretation of findings and the preparation of evaluation reports and briefs
+▸  Support Regional MEAL Leads in scoping and quality-assuring regional studies
+Key outputs: Study designs; protocols and instruments; Terms of Reference; quality-assurance reviews; evaluation reports and briefs.
+Evaluation / Research Analyst  ·  Junior–mid
+Purpose: Provides hands-on analytical and research capacity for evaluations, studies and learning reviews.
+Core responsibilities
+▸  Prepare and clean study datasets
+▸  Support survey programming, testing and fieldwork coordination
+▸  Conduct descriptive and statistical analysis and qualitative coding
+▸  Carry out literature and secondary-data reviews
+▸  Prepare evidence tables, annexes and preliminary findings
+▸  Support learning reviews and keep the decision and management-response log up to date
+▸  Document analyses so they can be reproduced
+Key outputs: Clean study datasets; analysis files; study instruments and annexes; preliminary findings; updated management-response log.
+2. Regional Layer
+One Regional MEAL Lead in each of the three regions: Latin America, Africa and South Asia. Regional MEAL Leads report directly to the MEAL Group Lead and draw on all three pillars instead of sitting under one of them.
+Regional MEAL Lead  ·  Senior (one per region)
+Purpose: Makes the institutional MEAL system work across a regional portfolio and is the main point of contact between projects and the Core Layer.
+Core responsibilities
+▸  Oversee the regional project portfolio and proposal pipeline, including MEAL Matrix classification and the MEAL review of proposals
+▸  Make sure major projects have credible MEAL plans and Project MEAL Focal Points
+▸  Review KPI completeness and performance through regional dashboards
+▸  Follow up data-quality and reporting gaps with project teams, with support from Pillar B
+▸  Coach Project MEAL Focal Points and guide their technical work
+▸  Escalate complex technical issues to the relevant pillar
+▸  Identify regional evaluation and learning priorities with Pillar C
+▸  Coordinate regional learning reviews
+▸  Represent MEAL with regional leadership and partners
+Key outputs: Regional portfolio reviews; proposal reviews; data-gap action plans; regional evaluation priorities; regional learning actions.
+3. Project Layer
+Project MEAL Focal Points form the Extended MEAL Network. They are embedded in and funded by major projects, apply institutional standards and receive technical guidance from their Regional MEAL Lead.
+Project MEAL Focal Point  ·  Usually mid-level (one per major project)
+Purpose: Keeps MEAL close to implementation, so CIMMYT can run one institutional system without centralizing project-level monitoring.
+Core responsibilities
+▸  Maintain the project MEAL plan
+▸  Coordinate activity and output monitoring and keep source-level records
+▸  Apply institutional KPIs, tools and data standards
+▸  Run first-line quality checks
+▸  Manage the project’s data collection through the MEAL data system
+▸  Prepare indicator evidence for project, investor and institutional reporting
+▸  Support baseline, outcome and evaluation data collection
+▸  Take part in institutional training and in the Extended MEAL Network
+▸  Work regularly with the Regional MEAL Lead
+Key outputs: Up-to-date monitoring records; validated indicator inputs; documented quality checks; evidence ready for institutional integration.
+## 5.9  How the Roles Work Together
+Each task has one owner, and handoffs between pillars are explicit. The Design pillar defines what must be measured and the valid method; Evidence Systems specifies how the evidence is structured, quality-assured, aggregated and visualized; Evaluation, Learning & Accountability addresses questions that routine monitoring cannot answer and closes the evidence-to-action loop. Regional MEAL Leads bring these capabilities to each regional portfolio, while Project MEAL Focal Points remain responsible for day-to-day project monitoring and source evidence. Advanced geospatial, software-development, data-science and corporate data-governance capabilities are mobilized through CIMMYT's relevant technical functions rather than duplicated inside MEAL.
+## 5.10  Funding the MEAL Function
+The MEAL function is funded from three sources, and the balance between them is expected to shift over time.
+1. Base contribution from every project: Each project budgets a base MEAL contribution set in the MEAL Matrix according to its scale and M&E complexity (table below and Annex A). It pays for the institutional services every project receives: standards and guidance, proposal review, quality assurance, integration into the MEAL data system, portfolio reporting and PRMS and investor reporting. Large and MEGA projects draw most on the team’s capacity, so they are expected to fund a significant share of the Core Layer through charged staff time.
+Base MEAL budget by project scale and M&E complexity, from the MEAL Matrix:
+[TABLE]
+Scale | Typical size and duration | Base MEAL budget
+Small | Up to about USD 280,000; around one year | Standard: USD 8,000 · Intermediate: USD 13,000 · Complex: USD 18,000 per project for life time.
+Medium | About USD 280,000 to 800,000; 1.5 to 3 years | Standard: 3% · Intermediate: 4% · Complex: 5% of the total project budget, never less than the Small amount for the same complexity level; confirmed with MEAL during proposal writing
+Large | Above USD 800,000 and up to USD 10 million; multi-country and/or multi-year | Co-designed with MEAL from the start of proposal development.
+MEGA | Above USD 10 million; flagship, multi-country, multi-year | Co-designed with MEAL from the start of proposal development. The budget covers project-specific MEAL work and an institutional contribution, charged as staff time of the Core Layer, of at least USD 27,000 per project year.
+[/TABLE]
+2. Extended services: Beyond the base package, the MEAL team offers services projects can budget for: running project monitoring, baseline and endline surveys, outcome studies and evaluations, dashboards and data-system configuration. These services are charged at cost and give projects access to specialized capacity without hiring it separately.
+3. New resources: The team co-develops proposals in which evaluation, learning or data systems are a substantial component, and seeks funding for cross-portfolio evidence work such as impact studies and syntheses.
+Most projects active in 2026 and 2027 were designed before the base contribution existed, so income from it will grow gradually as new projects start. Core and Regional Layer positions will need bridge funding until enough projects contribute to cover them. The MEAL Matrix amounts will be reviewed every year against the actual cost of the team, the number of active projects and their complexity mix.
+[TABLE]
+Section 6  ·  What CIMMYT Will Achieve by 2030
+[/TABLE]
+## What CIMMYT Will Achieve
+[TABLE]
+Where will CIMMYT be by 2030? Leadership will know, with evidence, what the institution achieved, for whom, how and at what scale. Project teams will adapt during implementation, not only at closure. Scientists will build on harmonized, reusable data instead of starting from scratch in each project. Investors will receive transparent, comparable reporting that meets rigorous evidence standards. And the smallholder farmers CIMMYT works with across Africa, Asia and Latin America will benefit from innovations designed with better evidence of what works in their contexts. MEAL will no longer be perceived as a compliance function. It will be a strategic institutional capability.
+[/TABLE]
+The implementation of the MEAL framework will create value at four institutional levels and build eight strategic capabilities that currently do not exist in a systematic way.
+## 6.1  Value at Four Institutional Levels
+[TABLE]
+Portfolio Leadership | Leadership will have a coherent view of performance, reach, outcomes, risks and evidence gaps across projects, regions and the three Thrusts. This supports strategic choices, resource allocation and institutional positioning.
+Project & Program Management | Teams will receive timely information on implementation quality, participant reach, bottlenecks, adoption and early outcomes, so they can adapt while delivery is still underway.
+Science & Impact | Researchers will have better access to harmonized datasets and documented methods that support synthesis, modeling, evaluation, cross-site comparison and credible contribution claims.
+Partners, Investors, Farmers & Communities | Partners and investors will receive more transparent and comparable evidence. Accountability to participants will improve through feedback mechanisms, disaggregation and attention to who benefits and who may be excluded. The farmers and communities at the center of CIMMYT's mission will benefit from innovations better targeted to their actual conditions, because evidence will show what works where, for whom, and why.
+[/TABLE]
+## 6.2  Eight Strategic Capabilities by 2030
+By 2030, full implementation of the MEAL framework will give CIMMYT eight capabilities it does not currently have in a systematic form:
+▸  A consolidated view of results across the portfolio, beyond individual project reports
+▸  Comparability of indicators across projects, regions, years and populations
+▸  Credible evidence with traceable methodology and documented quality
+▸  Clearer attribution and contribution narratives linking processes, outputs, outcomes and impact
+▸  Adaptive management using evidence during implementation as well as after closure
+▸  Reduced reporting burden through standardized, integrated data systems
+▸  Greater data reuse: data generated for one project feed institutional analysis, research and new services
+▸  An institutional learning infrastructure in which MEAL is a transversal capacity connecting data, science, management, strategy and impact
+[TABLE]
+The biggest change is in the question CIMMYT can answer. Today it is mostly “what did we do?” By 2030 it should be “what changed, for whom, where, under what conditions, at what scale, and what did CIMMYT contribute?”
+[/TABLE]
+CIMMYT MEAL Framework  ·  2026–2030  ·  MEAL Group
+## Annex A. MEAL Matrix
+How to use the Matrix. Find your project type in the left column and your project scale across the top (Small, Medium, Large or MEGA). Each cell shows how MEAL helps you, what the project contributes, what MEAL delivers and the reference MEAL budget. The project type sets the default M&E complexity level (Standard, Intermediate or Complex), based on how many KPIs in the Toolbox apply to it and how many of those are outcome and impact indicators. The Regional MEAL Lead confirms the classification at proposal review (see 5.3).
+At every scale, MEAL coordinates with the Data Group so that data collection, integration and data flows are fit for the project’s needs.
+Adjustment rule: A project moves up one complexity level if it commits to report farmer- or household-level adoption, outcomes or impact to investors, runs its own ground measurement of outcomes, or depends on primary data from several implementing partners.
+[TABLE]
+Project type | Small Up to ~USD 280K · ~1 year | Medium ~USD 280K–800K · 1.5–3 years | Large >USD 800K–10M · multi-country and/or multi-year | MEGA >USD 10M · flagship, multi-country, multi-year
+Upstream discovery science Standard complexity Applicable KPIs: 21 KPIs (15 / 6 / 0) (output / outcome / impact) | Proof-of-concept gene editing, genomic characterization, metabolic pathway discovery, small computational studies MEAL helps you: Build a theory of change and select KPIs relevant to your research; align monitoring with investor expectations; train the team on laboratory data and reporting standards You contribute: Operational monitoring of laboratory outputs; research data and results for reporting MEAL delivers: Results framework with key indicators and reporting structure; laboratory data collection tailored to your workflow; periodic review against your theory of change Budget: USD 8,000 | Integrated genomics platforms, multi-partner discovery science, AI-enabled genomics, advanced phenotyping pilots MEAL helps you: Set up a results framework harmonized across partners; connect scientific advances to impact pathways and innovation readiness; track milestones and deliverables You contribute: Laboratory, phenotyping and field data; participation in system design and training MEAL delivers: Tracking dashboard with harmonized indicators; integrated collection for phenotyping and sensor data; outcome monitoring linked to scientific pathways Budget: 3% of total project budget (minimum USD 8,000) | CGIAR-scale discovery platforms, multi-country genomic initiatives, AI-enabled phenomics and genomics MEAL helps you: Integrate laboratory, phenotyping and field data in one monitoring system; harmonize monitoring across centers and countries; link your work to system-level impact pathways You contribute: Data flows from centers and countries; participation in the design of the data architecture MEAL delivers: Integrated scientific monitoring with dashboards; data architecture for laboratory, imaging and sensor data; strategic outcome monitoring Budget: Co-designed from the proposal stage; institutional contribution of at least USD 27,000 per project year | Global scientific consortia and flagship programs combining multi-center genomics, phenomics and large-scale data infrastructure MEAL helps you: Lead and harmonize MEAL across CGIAR centers and global partners; connect scientific outputs to food security and climate goals; govern data flows and data-sharing agreements You contribute: Federated data from CGIAR centers, national programs and international partners; participation in data governance MEAL delivers: Consortium-wide monitoring system with shared dashboards; interoperable data architecture; system-level, PRMS and investor reporting Budget: Co-designed from the proposal stage; institutional contribution of at least USD 27,000 per project year
+Breeding and varietal development Intermediate complexity Applicable KPIs: 76 KPIs (35 / 30 / 11) (output / outcome / impact) | Adaptive varietal trials, line evaluation, breeding support studies, nursery testing MEAL helps you: Define KPIs for varietal advancement and trial performance; check that reporting is consistent with your theory of change and investor expectations; train the team on field data collection You contribute: Operational monitoring of trial outputs; field data and nursery results MEAL delivers: Validated KPI structure and reporting flows; digital field data collection tools; consistency review against your theory of change and investor requirements Budget: USD 13,000 | Regional breeding acceleration, multi-environment testing, integrated breeding and agronomy projects MEAL helps you: Set up harmonized digital trial monitoring with standard workflows; track varietal performance, climate adaptation and deployment readiness; support output monitoring at partner level You contribute: Multi-environment trial data; site-level environmental data from experimental locations MEAL delivers: Integrated collection (mobile/web tools, georeferenced and environmental data); varietal performance dashboards and outcome tracking; training for field teams and analysts Budget: 4% of total project budget (minimum USD 13,000) | Multi-country breeding acceleration programs linked to seed systems and agronomy MEAL helps you: Integrate genomic, environmental and field data; track yield stability, climate resilience and genetic gain; support analytics and scenario modeling for breeding decisions You contribute: Multi-country breeding and trial data; participation in the design of the data infrastructure MEAL delivers: Interoperable data infrastructure (field, satellite, weather and sensor data); analytics and scenario modeling; advanced training for technical and analytics teams Budget: Co-designed from the proposal stage; institutional contribution of at least USD 27,000 per project year | Global breeding programs covering multiple crops and climate-adaptation mega-environments MEAL helps you: Run an integrated breeding data system across partner institutions and countries; track genetic gain, climate resilience and deployment at global scale; support decisions on breeding resource allocation You contribute: Multi-crop breeding and trial data from all participating institutions and countries; participation in data governance MEAL delivers: Global breeding monitoring integrating genomic, environmental, field and market data; analytics for genetic gain and climate scenarios; investor and system-level reporting across geographies and crops Budget: Co-designed from the proposal stage; institutional contribution of at least USD 27,000 per project year
+Applied agronomy and farming systems Complex complexity Applicable KPIs: 85 KPIs (34 / 36 / 15) (output / outcome / impact) | Demonstration plots, localized agronomic pilots, baseline validation studies MEAL helps you: Build a basic theory of change and KPIs oriented to adoption pathways; check that field monitoring is consistent with expected outcomes and adoption logic; train enumerators and technicians on data collection and quality control You contribute: Operational monitoring of project outputs; demonstration plot data and site context MEAL delivers: Theory of change and KPI framework with reporting structure; mobile/web forms with basic georeferencing; periodic data quality review Budget: USD 18,000 | Regional scaling pilots, sustainability validation projects, integrated agronomic packages MEAL helps you: Set up a full MEAL framework including sustainability scorecards; track adoption, productivity, resilience and inclusion; visualize yield, cost, water use and income through dashboards You contribute: Field data and site information; participation in regional monitoring system design MEAL delivers: MEAL framework with sustainability scorecards; dashboards for yield, costs, water use and income; integration of field, geospatial and environmental data, including remote sensing Budget: 5% of total project budget (minimum USD 18,000) | National or multi-country regenerative agriculture programs and climate adaptation portfolios MEAL helps you: Operate integrated digital monitoring; monitor productivity, resilience, biodiversity, water, soils, GHG emissions and income at high frequency; support adaptive management You contribute: Multi-country farming-system data; participation in the design of the data architecture MEAL delivers: Integrated monitoring combining satellite, sensor and field data; outcome studies and contribution analysis; scalable data infrastructure across countries Budget: Co-designed from the proposal stage; institutional contribution of at least USD 27,000 per project year | Global regenerative agriculture and climate resilience programs linking several national portfolios MEAL helps you: Operate integrated monitoring across national programs and climate frameworks; monitor productivity, resilience, biodiversity, soils, water, GHG emissions and income at global scale; support portfolio managers with adaptive management evidence You contribute: Multi-country farming-system data and national datasets; participation in data governance and interoperability design MEAL delivers: Global monitoring system integrating satellite, sensor and field data; impact evaluation; climate-finance, PRMS and investor reporting Budget: Co-designed from the proposal stage; institutional contribution of at least USD 27,000 per project year
+Seed systems and deployment Complex complexity Applicable KPIs: 93 KPIs (39 / 39 / 15) (output / outcome / impact) | Seed multiplication pilots, adaptive seed testing, local dissemination initiatives MEAL helps you: Define KPIs and reporting structures for multiplication and dissemination; check that the adoption and diffusion logic holds You contribute: Operational output reporting; seed registry and distribution data MEAL delivers: KPI definitions and investor-aligned reporting structure; basic digital registration and data collection tools Budget: USD 18,000 | Regional seed deployment programs and varietal dissemination networks MEAL helps you: Set up digital registries and adoption dashboards; harmonize output monitoring across seed-system partners; track adoption and varietal diffusion at regional scale You contribute: Dissemination network data; participation in digital registration systems MEAL delivers: Digital registries and varietal adoption dashboards; integration of geospatial monitoring and partner reporting systems Budget: 5% of total project budget (minimum USD 18,000) | Large-scale seed system transformation programs across countries and value chains MEAL helps you: Monitor seed flows end to end with traceability; manage persistent identifiers for farmers and seed-sector actors; use analytics to inform adoption and deployment strategies You contribute: Multi-country supply chain data; participation in the design of identifier and traceability systems MEAL delivers: Traceability monitoring with persistent identifiers for key actors; analytics for adoption and deployment; operational dashboards covering supply chain, geospatial and sustainability data Budget: Co-designed from the proposal stage; | Global seed system programs spanning several crops, value chains, national regulatory systems and climate-adaptation strategies MEAL helps you: Monitor seed traceability across crops and countries; govern identifiers for farmers, aggregators, seed companies and regulators; provide analytics for global adoption and deployment strategy You contribute: Global multi-crop supply chain and regulatory data; participation in data governance MEAL delivers: Global traceability monitoring from seed production to farmer adoption; analytics for adoption, market segmentation and deployment; integrated dashboards and investor reporting Budget: Co-designed from the proposal stage;
+Digital agriculture and AI Intermediate complexity Applicable KPIs: 65 KPIs (26 / 28 / 11) (output / outcome / impact) | Chatbot pilots, advisory prototypes, interoperability assessments MEAL helps you: Build a user-centered theory of change covering usefulness, behavior change and relevance; define usage, engagement and analytics KPIs; train UX, field and data teams on platform monitoring You contribute: Operational monitoring of platform outputs and user-experience data MEAL delivers: Theory of change with usage and engagement KPIs; platform analytics and monitoring set-up Budget: USD 13,000 | Operational advisory systems, digital extension at scale, interoperable data systems MEAL helps you: Structure engagement and adoption monitoring at scale; link advisory effectiveness to adoption pathways and behavior change; support data governance and interoperability You contribute: Platform data; participation in defining engagement metrics MEAL delivers: Engagement and digital adoption dashboards; integration of platform analytics, geospatial layers and interoperability flows Budget: 4% of total project budget (minimum USD 13,000) | National digital ecosystems and AI-enabled agricultural intelligence systems MEAL helps you: Integrate data collection and advisory systems into platform monitoring; monitor long-term digital transformation with behavioral and agronomic indicators; design ground measurement for outcomes You contribute: National digital-ecosystem data; participation in architecture design MEAL delivers: Continuous behavioral and agronomic monitoring; outcome studies; investor reporting and adaptive management tools Budget: Co-designed from the proposal stage; | Multi-country AI-powered agricultural intelligence ecosystems combining advisory systems and national digital infrastructure MEAL helps you: Integrate monitoring across advisory systems and national digital infrastructure in several countries; monitor long-term behavior change, adoption and system-level impact You contribute: Multi-country platform data and integration with government systems; participation in digital governance MEAL delivers: Unified multi-country monitoring across advisory and monitoring systems; impact evaluation; investor and system-level reporting Budget: Co-designed from the proposal stage;
+System change and transformation Complex complexity Applicable KPIs: 93 KPIs (38 / 39 / 16) (output / outcome / impact) | Innovation ecosystem pilots, local hub models, targeted livelihood interventions, early-stage coordination pilots MEAL helps you: Build a systems-oriented theory of change with stakeholder and ecosystem mapping; check the project’s contribution to systemic outcomes and the assumptions in its theory of change; train local teams on monitoring and reporting You contribute: Operational output monitoring; local context knowledge MEAL delivers: Systems-oriented theory of change with stakeholder and ecosystem mapping; data collection adapted to the project’s scale and context; training for local teams Budget: USD 18,000 | Regional transformation programs, integrated hub models, sustainable sourcing ecosystems, multi-stakeholder scaling initiatives MEAL helps you: Implement an integrated MEAL architecture with indicators for jobs, enterprises, hectares, inclusion and resilience; track behavior change, ecosystem coordination and scaling pathways; facilitate adaptive management and contribution analysis workshops You contribute: Operational and partner data; participation in adaptive management workshops MEAL delivers: Integrated MEAL architecture with systemic indicator dashboards; integration of operational, geospatial and partner datasets; contribution analysis and adaptive management support Budget: 5% of total project budget (minimum USD 18,000) | Multi-country employment ecosystems, climate transitions, national digital agriculture systems MEAL helps you: Operate an integrated monitoring system with persistent identifiers; monitor jobs, income, yield, market participation, GHG emissions, water and climate resilience at high frequency; support adaptive management You contribute: Multi-country, multi-actor transformation data; participation in the design of the data architecture MEAL delivers: Integrated monitoring combining mobile/web, satellite, sensor and transactional data; outcome studies and contribution analysis; advanced analytics and investor reporting Budget: Co-designed from the proposal stage | Global flagship programs for agrifood system transformation covering employment ecosystems, climate transitions, policy integration and digital agriculture at scale MEAL helps you: Operate integrated monitoring across countries and program components; monitor jobs, income, yield, markets, GHG emissions, water and resilience in near real time; support decisions by portfolio managers and investors You contribute: Data from all program components and partner institutions; participation in governance frameworks MEAL delivers: Global monitoring system across all components; impact evaluation and contribution analysis; system-level, PRMS and investor reporting Budget: Co-designed from the proposal stage;
+[/TABLE]

@@ -1,0 +1,2301 @@
+{
+  "module": {
+    "id": "theory-of-change",
+    "order": 2,
+    "title": "Theory of change",
+    "short": "Theory of change",
+    "minutes": 35,
+    "sections": [
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "5.1",
+      "5.4",
+      "Annex A"
+    ],
+    "assessed": true,
+    "prerequisites": [
+      "meal-foundations"
+    ],
+    "scenario": {
+      "title": "A variety with no route to change",
+      "intro": "A maize team in Kenya is writing a concept note. They know their science: two agro-ecologies, a drought-tolerant candidate ready for release, a seed company willing to multiply it. What they have never written is a results chain. The note says the variety will be released and incomes will rise, and nothing about what has to happen in between. The MEAL review is in ten days. This module gives you the chain, the assumptions on each link and the roles, so the note can say how a release becomes a change for farmers.",
+      "persona": [
+        "project-lead",
+        "scientist",
+        "meal-specialist"
+      ]
+    },
+    "objectives": [
+      {
+        "id": "theory-of-change.O1",
+        "text": "Trace a project's activities through processes, outputs, outcomes and impact and explain why no level is proof of the next.",
+        "bloom": "understand"
+      },
+      {
+        "id": "theory-of-change.O2",
+        "text": "State the assumption behind each link in a results chain and name the evidence that would test it.",
+        "bloom": "apply"
+      },
+      {
+        "id": "theory-of-change.O3",
+        "text": "Distinguish the adoption pathways the MEAL Matrix describes for seed systems, digital advice and upstream science, and match a project to its pathway.",
+        "bloom": "analyse"
+      },
+      {
+        "id": "theory-of-change.O4",
+        "text": "Explain when in the lifecycle the theory of change is co-developed and which role is accountable and which responsible for it.",
+        "bloom": "remember"
+      },
+      {
+        "id": "theory-of-change.O5",
+        "text": "Draft a results chain for a proposal at concept-note stage, with assumptions on each link and impact stated as a contribution.",
+        "bloom": "apply"
+      }
+    ],
+    "lessons": [
+      {
+        "id": "L2.1",
+        "moduleId": "theory-of-change",
+        "title": "What a theory of change does for a proposal",
+        "objectiveIds": [
+          "theory-of-change.O1",
+          "theory-of-change.O4"
+        ],
+        "minutes": 4,
+        "beats": {
+          "hook": "The concept note says the variety will be released and incomes will rise. A reviewer asks one question: how? The theory of change is the written answer.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m2-why"
+          },
+          "example": {
+            "kind": "text",
+            "title": "The concept note as it arrived",
+            "body": [
+              "Three pages. Breeding objectives for two agro-ecologies. A list of trial sites. A release target for year two. A seed company partnership mentioned in one line. Then a final sentence: the variety will raise maize yields and household incomes in the target counties.",
+              "Section 5.1 asks the project, in Phase 1, to define its intended results, intervention logic, investor requirements, geography, target populations and operational feasibility. The note has geography and intended results. It has no intervention logic. Nobody has written down the steps between release and income.",
+              "The theory of change is where that logic goes. Central MEAL co-develops it with the team at concept and proposal design. It traces the project's activities through outputs and outcomes to impact: trials run, variety released, seed sold, farmers plant it, gains that last. Each step is a different kind of result and will need its own evidence.",
+              "The chain then feeds the Phase 1 gate: a MEAL section, a KPI crosswalk, an indicative data architecture and a costed MEAL budget, all before submission. Without the chain, the team cannot pick KPIs or cost the evidence, because it does not yet know what has to change.",
+              "The rule behind the timing is simple. MEAL must enter before indicators, budgets and data systems are fixed. A chain written after the award inherits whatever the budget allowed."
+            ]
+          },
+          "microCheck": [
+            "Q131",
+            "Q137"
+          ],
+          "recap": {
+            "bullets": [
+              "The theory of change is the project's intervention logic written as a results chain: processes, outputs, outcomes, impact.",
+              "It is co-developed with central MEAL in Phase 1, opportunity and proposal, before indicators, budgets and data systems are fixed.",
+              "It feeds the Phase 1 gate: MEAL section, KPI crosswalk, indicative data architecture and costed MEAL budget before submission."
+            ],
+            "source": {
+              "section": "5.1",
+              "title": "Project Lifecycle: MEAL from Proposal to Impact"
+            }
+          }
+        },
+        "glossary": [
+          "Theory of change",
+          "Results chain",
+          "MEAL Matrix"
+        ]
+      },
+      {
+        "id": "L2.2",
+        "moduleId": "theory-of-change",
+        "title": "Building the chain: processes, outputs, outcomes, impact",
+        "objectiveIds": [
+          "theory-of-change.O1"
+        ],
+        "minutes": 6,
+        "beats": {
+          "hook": "Four slabs connect left to right. The slabs are easy to write. The links between them are where a proposal quietly promises more than it can show.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m2-hero"
+          },
+          "example": {
+            "kind": "text",
+            "title": "The maize chain, slab by slab",
+            "body": [
+              "Processes. Trials run with national partners in two agro-ecologies. Two seed companies engaged. Workplan and budget tracked. Evidence: workplans, financial records, the partnership registry. This is what the team does.",
+              "Outputs. The variety released and registered. Certified seed produced and sold by the companies. Field days held in the target counties. Evidence: delivery records, trial results, training logs, distribution systems. This is what the team delivers.",
+              "Outcomes. Farmers plant the variety on their own plots. The seed companies keep multiplying it on their own account. Evidence: adoption surveys, partner records. This is what changes for people and partners. Section 2.3 calls it the level where CIMMYT's contribution becomes most visible.",
+              "Impact. Yield and income gains that last, interpreted alongside rainfall, prices and other actors. Evidence: panels, impact evaluations, remote sensing, external data. Section 2.4 is explicit: CIMMYT does not claim to be the sole cause. The chain states a contribution.",
+              "The logic is cumulative, but no slab proves the next. Section 2 says different types of data serve different analytical purposes and do not all carry the same evidential weight. Field days held does not show farmers planted. Farmers planted does not show gains lasted."
+            ]
+          },
+          "microCheck": [
+            "Q132"
+          ],
+          "recap": {
+            "bullets": [
+              "Processes are what you do, outputs what you deliver, outcomes what changes for people and partners, impact what lasts in agrifood systems.",
+              "The logic is cumulative, but each level needs its own evidence; delivery is the foundation for outcome evidence, not a substitute for it.",
+              "The impact link is a contribution alongside other factors, never a claim to be the sole cause."
+            ],
+            "source": {
+              "section": "2",
+              "title": "The MEAL Framework: From Data to Impact"
+            }
+          }
+        },
+        "glossary": [
+          "Results chain",
+          "Process",
+          "Output",
+          "Outcome",
+          "Impact",
+          "Assumption",
+          "Contribution"
+        ]
+      },
+      {
+        "id": "L2.3",
+        "moduleId": "theory-of-change",
+        "title": "Assumptions: the links you cannot control",
+        "objectiveIds": [
+          "theory-of-change.O2"
+        ],
+        "minutes": 5,
+        "beats": {
+          "hook": "Seed is sold. Do farmers plant it? That depends on things the project does not control. Every link in your chain hides one of these. The job is to write them down.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m2-assume"
+          },
+          "example": {
+            "kind": "text",
+            "title": "Three tags for the maize chain",
+            "body": [
+              "Link one, processes to outputs. Trials run, so the variety is released. Assumption: the national release process accepts the candidate on the trial evidence, and the seed companies produce certified seed in time for the season. Evidence that would test it: release records and the seed registry. Both are operational records the project already keeps.",
+              "Link two, outputs to outcomes. Seed is sold and field days held, so farmers plant the variety. Assumption: seed reaches the agro-dealers farmers actually use, at a price they will pay, and farmers choose it over what they planted last year. Evidence: an adoption survey among farmers who bought seed or attended a field day, with persistent identifiers so the two records link.",
+              "Link three, outcomes to impact. Farmers plant it, so yields and incomes rise and stay up. Assumption: the gain holds across seasons and markets, not only in a good year. Evidence: panel data interpreted alongside rainfall and price series, which section 2.6 lists as context data needed to interpret change.",
+              "The MEAL Matrix names this check for every project type. Seed systems: check that the adoption and diffusion logic holds. Applied agronomy: check that field monitoring is consistent with expected outcomes and adoption logic. System change: check the project's contribution to systemic outcomes and the assumptions in its theory of change. Breeding and upstream science: periodic review against the theory of change.",
+              "An assumption with no planned evidence is a hope. Once it is written down with its evidence, it becomes a row in the measurement plan and a learning question for the quarterly review."
+            ]
+          },
+          "microCheck": [
+            "Q133",
+            "Q134"
+          ],
+          "recap": {
+            "bullets": [
+              "At each link ask: what has to be true, outside the project's control, for the next level to happen?",
+              "Write the assumption down and pair it with the data source that could show it failing.",
+              "The Matrix asks seed projects to check their adoption and diffusion logic and system change projects to check the assumptions in their theory of change."
+            ],
+            "source": {
+              "section": "Annex A",
+              "title": "MEAL Matrix"
+            }
+          }
+        },
+        "glossary": [
+          "Assumption",
+          "Adoption pathway",
+          "Measurement plan"
+        ]
+      },
+      {
+        "id": "L2.4",
+        "moduleId": "theory-of-change",
+        "title": "Three pathways compared: seed systems, digital advice, upstream science",
+        "objectiveIds": [
+          "theory-of-change.O3"
+        ],
+        "minutes": 6,
+        "beats": {
+          "hook": "Three concept notes all promise adoption. One sells seed, one sends advice to phones, one edits a gene. The route from output to outcome is different in each. Copy the wrong one and the chain breaks.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m2-paths"
+          },
+          "example": {
+            "kind": "interactive",
+            "title": "Which pathway does the Matrix describe?",
+            "widget": "sorter",
+            "prompt": "Each statement comes from one row of the MEAL Matrix. Drop it on the project type whose theory of change it belongs to.",
+            "bins": [
+              {
+                "id": "seed",
+                "label": "Seed systems and deployment",
+                "hint": "Multiplication, dissemination, adoption and diffusion."
+              },
+              {
+                "id": "digital",
+                "label": "Digital agriculture and AI",
+                "hint": "Usefulness, engagement, behaviour change."
+              },
+              {
+                "id": "upstream",
+                "label": "Upstream discovery science",
+                "hint": "Scientific advances, innovation readiness, impact pathways."
+              }
+            ],
+            "cards": [
+              {
+                "label": "Check that the adoption and diffusion logic holds",
+                "bin": "seed",
+                "why": "The seed systems row asks MEAL to check that the adoption and diffusion logic holds beyond distribution records."
+              },
+              {
+                "label": "Seed registry and distribution data are what the project contributes",
+                "bin": "seed",
+                "why": "Seed pilots contribute operational output reporting and seed registry and distribution data."
+              },
+              {
+                "label": "Track adoption and varietal diffusion at regional scale through digital registries",
+                "bin": "seed",
+                "why": "At Medium scale the seed systems row sets up digital registries and adoption dashboards to track diffusion regionally."
+              },
+              {
+                "label": "A user-centred theory of change covering usefulness, behaviour change and relevance",
+                "bin": "digital",
+                "why": "This is the Small column of the digital agriculture and AI row."
+              },
+              {
+                "label": "Usage, engagement and analytics KPIs",
+                "bin": "digital",
+                "why": "Digital pilots define usage, engagement and analytics KPIs so the path from advice to practice can be followed."
+              },
+              {
+                "label": "Link advisory effectiveness to adoption pathways and behaviour change",
+                "bin": "digital",
+                "why": "At Medium scale the digital row links advisory effectiveness to adoption pathways and behaviour change."
+              },
+              {
+                "label": "Connect scientific advances to impact pathways and innovation readiness",
+                "bin": "upstream",
+                "why": "The Medium column of the upstream discovery science row connects advances to impact pathways and innovation readiness."
+              },
+              {
+                "label": "Periodic review of laboratory outputs against the theory of change",
+                "bin": "upstream",
+                "why": "Small upstream projects get a results framework and periodic review against their theory of change."
+              },
+              {
+                "label": "Research data and laboratory output monitoring are what the project contributes",
+                "bin": "upstream",
+                "why": "Upstream projects contribute operational monitoring of laboratory outputs and research data for reporting."
+              }
+            ]
+          },
+          "microCheck": [
+            "Q135",
+            "Q136"
+          ],
+          "recap": {
+            "bullets": [
+              "Seed systems: seed multiplied and distributed, farmers adopt, the variety diffuses; MEAL checks that the adoption and diffusion logic holds.",
+              "Digital advice: advice is useful and users engage before practice changes; the theory of change covers usefulness, behaviour change and relevance.",
+              "Upstream science: scientific advances connect to impact pathways and innovation readiness; a laboratory output is not farmer adoption."
+            ],
+            "source": {
+              "section": "Annex A",
+              "title": "MEAL Matrix"
+            }
+          }
+        },
+        "glossary": [
+          "Adoption pathway",
+          "MEAL Matrix"
+        ]
+      },
+      {
+        "id": "L2.5",
+        "moduleId": "theory-of-change",
+        "title": "Ownership: who holds which part of the chain",
+        "objectiveIds": [
+          "theory-of-change.O4"
+        ],
+        "minutes": 4,
+        "beats": {
+          "hook": "The Regional MEAL Lead drafted the chain. So is it MEAL's document now? The RACI matrix says no, and the difference matters when the chain has to be defended.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m2-own"
+          },
+          "example": {
+            "kind": "text",
+            "title": "One row, four roles",
+            "body": [
+              "The RACI row reads: develop the theory of change and results framework. Project lead: A. Regional MEAL Lead: R. Design, Standards and Enablement pillar: C. Evaluation, Learning and Accountability pillar: C. One A per activity.",
+              "Accountable means the project lead owns the result. If a reviewer asks why the chain skips an outcome, it is the project lead who answers. Responsible means the Regional MEAL Lead does the work: facilitates the session, drafts the slabs and links, checks the pathway against the Matrix row. Holding the pen does not transfer ownership.",
+              "The two pillars are consulted. The Design pillar leads theory of change and results architecture work for complex or strategic proposals and approves results architectures; its stated purpose is to stop weak theories of change being locked in at proposal stage. The Evaluation pillar is consulted because the chain will shape the learning and evaluation questions it later owns.",
+              "Scale changes the intensity, not the row. For a Small project that proceeds with the standard package, the Regional MEAL Lead's Phase 1 role is limited to confirming the classification and the base budget. Large and MEGA projects co-design MEAL with the team from the start of proposal development.",
+              "After submission the chain stays live. Phase 2 confirms the results chain at inception. Phase 5 uses quarterly or seasonal reviews to adapt. Phase 6 applies contribution analysis to it. The Project MEAL Focal Point, appointed in Phase 2, maintains the MEAL plan built on it."
+            ]
+          },
+          "microCheck": [
+            "Q138",
+            "Q140"
+          ],
+          "recap": {
+            "bullets": [
+              "Project lead accountable, Regional MEAL Lead responsible, Design and Evaluation pillars consulted: one A per activity.",
+              "For Small projects on the standard package, the Regional MEAL Lead's Phase 1 role is limited to confirming the classification and the base budget.",
+              "The chain is confirmed at inception and revisited in reviews and contribution analysis; ownership does not end at submission."
+            ],
+            "source": {
+              "section": "5.1",
+              "title": "Project Lifecycle: MEAL from Proposal to Impact"
+            }
+          }
+        },
+        "glossary": [
+          "RACI",
+          "Regional MEAL Lead",
+          "Core Layer",
+          "Project MEAL Focal Point"
+        ]
+      },
+      {
+        "id": "L2.6",
+        "moduleId": "theory-of-change",
+        "title": "Worked example: draft a chain for a maize variety project in 6 minutes",
+        "objectiveIds": [
+          "theory-of-change.O5"
+        ],
+        "minutes": 5,
+        "beats": {
+          "hook": "Ten days to the MEAL review. The team has the science and no chain. Here is how to get a reviewable draft on one page before the budget is fixed.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m2-draft"
+          },
+          "example": {
+            "kind": "interactive",
+            "title": "Put the maize chain in order",
+            "widget": "order",
+            "prompt": "The team's six steps are scrambled. Arrange them from the first process to the lasting change. Think: what is done, what is delivered, what changes, what lasts.",
+            "items": [
+              {
+                "label": "Trials run with national partners; two seed companies engaged",
+                "detail": "Process: the activities and partnerships that enable delivery."
+              },
+              {
+                "label": "Drought-tolerant variety released and registered",
+                "detail": "Output: a product delivered."
+              },
+              {
+                "label": "Certified seed sold by the companies; field days held in target counties",
+                "detail": "Output: services and seed delivered. Assumption on the next link: seed reaches dealers farmers use."
+              },
+              {
+                "label": "Farmers plant the variety on their own plots",
+                "detail": "Outcome: a change in practice among beneficiaries."
+              },
+              {
+                "label": "Seed companies keep multiplying the variety on their own account in later seasons",
+                "detail": "Outcome: a partner's behaviour and business system changed, sustained by farmer demand."
+              },
+              {
+                "label": "Lasting yield and income gains among adopters, as a contribution alongside other factors",
+                "detail": "Impact: positive, lasting change, stated as a contribution."
+              }
+            ],
+            "why": "The chain runs process, output, output, outcome, outcome, impact. Trials come first because nothing can be released without them. Release precedes seed sales and field days. Farmers planting comes before the companies' independent multiplication, because the proposal's logic is that demand shown in the first seasons is what keeps the companies producing. Impact is last and is written as a contribution, not a sole-cause claim."
+          },
+          "microCheck": [
+            "Q139"
+          ],
+          "recap": {
+            "bullets": [
+              "Six moves: four slabs, a tag on every link, evidence for each tag, impact as a contribution, one learning question, a pathway check against your Matrix row.",
+              "The chain is element one of the minimum package, results architecture, together with decision and learning questions and links to CIMMYT Strategy.",
+              "Draft it at concept-note stage, before indicators, budgets and data systems are fixed."
+            ],
+            "source": {
+              "section": "5.4",
+              "title": "Minimum MEAL Implementation Package"
+            }
+          }
+        },
+        "glossary": [
+          "Theory of change",
+          "Minimum MEAL package",
+          "Contribution"
+        ]
+      }
+    ],
+    "storyboards": [
+      {
+        "id": "sb-m2-why",
+        "title": "What a theory of change does for a proposal",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 6,
+            "narration": "Your team knows the variety. The concept note still cannot say how a release becomes a change for farmers.",
+            "scene": {
+              "kind": "title",
+              "title": "A concept note with no chain",
+              "subtitle": "The science is clear. The route to change is not written down."
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 14,
+            "narration": "In Phase 1 the project defines intended results, intervention logic, investor requirements, geography, target populations and feasibility. The theory of change is where the intervention logic gets written down.",
+            "scene": {
+              "kind": "cards",
+              "layout": "grid",
+              "items": [
+                {
+                  "label": "Intended results",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Intervention logic",
+                  "detail": "The theory of change",
+                  "tone": "green"
+                },
+                {
+                  "label": "Investor requirements",
+                  "tone": "paper"
+                },
+                {
+                  "label": "Geography",
+                  "tone": "paper"
+                },
+                {
+                  "label": "Target populations",
+                  "tone": "paper"
+                },
+                {
+                  "label": "Operational feasibility",
+                  "tone": "paper"
+                }
+              ],
+              "spotlight": [
+                1
+              ],
+              "stamp": "Phase 1: what the project defines"
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 14,
+            "narration": "Central MEAL co-develops it with you. It traces your activities through outputs and outcomes to impact, so the proposal can say what will change, not only what will be delivered.",
+            "scene": {
+              "kind": "chain",
+              "steps": [
+                {
+                  "label": "Processes",
+                  "detail": "What you do",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Outputs",
+                  "detail": "What you deliver",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Outcomes",
+                  "detail": "What changes",
+                  "tone": "green"
+                },
+                {
+                  "label": "Impact",
+                  "detail": "What lasts",
+                  "tone": "green"
+                }
+              ],
+              "traveler": true
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 12,
+            "narration": "The chain feeds the Phase 1 gate: a MEAL section, a KPI crosswalk, an indicative data architecture and a costed MEAL budget, all before submission.",
+            "scene": {
+              "kind": "checklist",
+              "items": [
+                {
+                  "label": "MEAL section with the theory of change",
+                  "done": true
+                },
+                {
+                  "label": "KPI crosswalk"
+                },
+                {
+                  "label": "Indicative data architecture"
+                },
+                {
+                  "label": "Costed MEAL budget"
+                }
+              ],
+              "stamp": "Before submission"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m2-hero",
+        "title": "Building the chain: four slabs, three links",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 6,
+            "narration": "A results chain is four slabs and three links. The slabs are easy. The links are where proposals go wrong.",
+            "scene": {
+              "kind": "title",
+              "title": "Four slabs, three links",
+              "subtitle": "Every link carries an assumption."
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 14,
+            "narration": "Slab one: processes. Trials run with national partners. Slab two: outputs. A variety released, seed sold, field days held. Slab three: outcomes. Farmers plant it. Slab four: impact. Gains that last.",
+            "scene": {
+              "kind": "chain",
+              "steps": [
+                {
+                  "label": "Processes",
+                  "detail": "Trials run with partners; seed companies engaged",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Outputs",
+                  "detail": "Variety released; seed sold; field days held",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Outcomes",
+                  "detail": "Farmers plant it; companies multiply it",
+                  "tone": "green"
+                },
+                {
+                  "label": "Impact",
+                  "detail": "Lasting yield and income gains",
+                  "tone": "green"
+                }
+              ]
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 20,
+            "narration": "Now hang a tag on each link. Each tag is an assumption: something the chain relies on but the project does not control. Write them down. A link without a tag is a hope, not a plan.",
+            "scene": {
+              "kind": "chain",
+              "steps": [
+                {
+                  "label": "Processes",
+                  "detail": "Trials run; companies engaged",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Outputs",
+                  "detail": "Variety released; seed sold",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Outcomes",
+                  "detail": "Farmers plant it",
+                  "tone": "green"
+                },
+                {
+                  "label": "Impact",
+                  "detail": "Gains that last",
+                  "tone": "green"
+                }
+              ],
+              "links": [
+                {
+                  "label": "Assumes: release approved; seed ready for the season"
+                },
+                {
+                  "label": "Assumes: seed reaches dealers; farmers choose it"
+                },
+                {
+                  "label": "Assumes: gains hold across seasons and markets"
+                }
+              ],
+              "stamp": "Assumptions"
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 14,
+            "narration": "Follow one farmer along the chain. She attends a field day. That is an output. She plants the variety next season. That is an outcome. Nothing at slab two told you slab three would happen.",
+            "scene": {
+              "kind": "chain",
+              "steps": [
+                {
+                  "label": "Processes",
+                  "detail": "Trials run",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Outputs",
+                  "detail": "She attends a field day",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Outcomes",
+                  "detail": "She plants the variety",
+                  "tone": "green"
+                },
+                {
+                  "label": "Impact",
+                  "detail": "Her gains last",
+                  "tone": "green"
+                }
+              ],
+              "traveler": true,
+              "spotlight": 2
+            }
+          },
+          {
+            "id": "f5",
+            "seconds": 20,
+            "narration": "Now the assumption fails. Certified seed never reaches her agro-dealer. Outputs are complete. The outcome slab stays empty. The chain breaks at the link, not at the slab.",
+            "scene": {
+              "kind": "chain",
+              "steps": [
+                {
+                  "label": "Processes",
+                  "detail": "Trials run",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Outputs",
+                  "detail": "Variety released; field days held",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Outcomes",
+                  "detail": "No change yet",
+                  "tone": "paper"
+                },
+                {
+                  "label": "Impact",
+                  "detail": "Not reached",
+                  "tone": "paper"
+                }
+              ],
+              "links": [
+                {
+                  "label": "Held"
+                },
+                {
+                  "label": "Seed not available locally",
+                  "broken": true
+                },
+                {
+                  "label": "Never tested"
+                }
+              ],
+              "spotlight": 2,
+              "stamp": "Assumption failed"
+            }
+          },
+          {
+            "id": "f6",
+            "seconds": 14,
+            "narration": "The last link is different again. Impact is lasting change. CIMMYT does not claim to be the sole cause. The chain states a contribution alongside rainfall, prices and other actors.",
+            "scene": {
+              "kind": "chain",
+              "steps": [
+                {
+                  "label": "Processes",
+                  "detail": "Trials run",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Outputs",
+                  "detail": "Variety released; seed sold",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Outcomes",
+                  "detail": "Farmers plant it",
+                  "tone": "green"
+                },
+                {
+                  "label": "Impact",
+                  "detail": "Lasting gains, alongside other factors",
+                  "tone": "green"
+                }
+              ],
+              "links": [
+                {},
+                {},
+                {
+                  "label": "Contribution, not sole cause"
+                }
+              ],
+              "spotlight": 3,
+              "stamp": "§2.4"
+            }
+          },
+          {
+            "id": "f7",
+            "seconds": 8,
+            "narration": "Slabs are what you deliver and what changes. Links are what you assume. Name each one and plan the evidence that will test it.",
+            "scene": {
+              "kind": "title",
+              "title": "Slabs you deliver. Links you assume.",
+              "subtitle": "Name every assumption. Plan evidence for each.",
+              "stamp": "§2.1 to 2.4"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m2-assume",
+        "title": "Assumptions: the links you cannot control",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 6,
+            "narration": "Ask one question at every link: what has to be true, outside your control, for the next slab to fill?",
+            "scene": {
+              "kind": "title",
+              "title": "The link you cannot control",
+              "subtitle": "What has to be true for the next slab to fill?"
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 16,
+            "narration": "Seed sold, to farmers plant it: the assumption is that seed reaches the dealers farmers use, at a price they will pay, and that they choose it. Farmers plant it, to lasting gains: the assumption is that the gain persists across seasons and markets.",
+            "scene": {
+              "kind": "chain",
+              "steps": [
+                {
+                  "label": "Certified seed sold",
+                  "detail": "Output",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Farmers plant it",
+                  "detail": "Outcome",
+                  "tone": "green"
+                },
+                {
+                  "label": "Lasting gains",
+                  "detail": "Impact",
+                  "tone": "green"
+                }
+              ],
+              "links": [
+                {
+                  "label": "Seed reaches dealers farmers use; they choose it"
+                },
+                {
+                  "label": "Gain persists across seasons and markets"
+                }
+              ]
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 14,
+            "narration": "The Matrix names this check. Seed systems: does the adoption and diffusion logic hold? System change: check the assumptions in the theory of change. Breeding and upstream science: periodic review against the theory of change.",
+            "scene": {
+              "kind": "cards",
+              "layout": "grid",
+              "items": [
+                {
+                  "label": "Seed systems",
+                  "detail": "Check that the adoption and diffusion logic holds",
+                  "tone": "gold"
+                },
+                {
+                  "label": "System change",
+                  "detail": "Check contribution and the assumptions in the theory of change",
+                  "tone": "green"
+                },
+                {
+                  "label": "Applied agronomy",
+                  "detail": "Monitoring consistent with expected outcomes and adoption logic",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Breeding and upstream",
+                  "detail": "Periodic review against the theory of change",
+                  "tone": "paper"
+                }
+              ],
+              "stamp": "Annex A"
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 12,
+            "narration": "An unstated assumption cannot be checked. A stated one names the evidence that would show it failing. That evidence becomes a row in the measurement plan.",
+            "scene": {
+              "kind": "split",
+              "left": {
+                "title": "Unstated",
+                "lines": [
+                  "Farmers will adopt",
+                  "Partners will cooperate"
+                ],
+                "tone": "paper"
+              },
+              "right": {
+                "title": "Stated and testable",
+                "lines": [
+                  "Seed reaches dealers: seed registry",
+                  "Farmers plant it: adoption survey",
+                  "Companies keep multiplying: partner records"
+                ],
+                "tone": "green"
+              },
+              "gap": "Same chain. Only one side can be checked."
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m2-paths",
+        "title": "Three pathways compared",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 10,
+            "narration": "Three project types, three different routes from output to outcome. The Matrix describes each one. Copying the wrong route is a common proposal error.",
+            "scene": {
+              "kind": "cards",
+              "layout": "row",
+              "items": [
+                {
+                  "label": "Seed systems and deployment",
+                  "detail": "Complex complexity",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Digital agriculture and AI",
+                  "detail": "Intermediate complexity",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Upstream discovery science",
+                  "detail": "Standard complexity",
+                  "tone": "paper"
+                }
+              ]
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 14,
+            "narration": "Seed systems: seed is multiplied and distributed, farmers adopt it, and the variety diffuses. MEAL checks that the adoption and diffusion logic holds, with registries and adoption dashboards.",
+            "scene": {
+              "kind": "chain",
+              "steps": [
+                {
+                  "label": "Seed multiplied and distributed",
+                  "detail": "Output",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Farmers adopt",
+                  "detail": "Outcome",
+                  "tone": "green"
+                },
+                {
+                  "label": "Variety diffuses regionally",
+                  "detail": "Outcome",
+                  "tone": "green"
+                }
+              ],
+              "links": [
+                {
+                  "label": "Adoption logic holds"
+                },
+                {
+                  "label": "Diffusion logic holds"
+                }
+              ],
+              "stamp": "Seed systems"
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 14,
+            "narration": "Digital advice: the chain runs through usefulness and engagement before practice changes. The Matrix asks for a user-centred theory of change covering usefulness, behaviour change and relevance, with usage and engagement KPIs.",
+            "scene": {
+              "kind": "chain",
+              "steps": [
+                {
+                  "label": "Advice delivered",
+                  "detail": "Output",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Advice is useful; users engage",
+                  "detail": "Usage and engagement KPIs",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Practice changes",
+                  "detail": "Outcome",
+                  "tone": "green"
+                }
+              ],
+              "links": [
+                {
+                  "label": "Relevance"
+                },
+                {
+                  "label": "Engagement leads to behaviour change"
+                }
+              ],
+              "stamp": "Digital advice"
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 14,
+            "narration": "Upstream science: the chain connects scientific advances to impact pathways and innovation readiness. It does not pretend that a laboratory output is farmer adoption.",
+            "scene": {
+              "kind": "chain",
+              "steps": [
+                {
+                  "label": "Scientific advance",
+                  "detail": "Output",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Innovation readiness",
+                  "detail": "Closer to use",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Impact pathway",
+                  "detail": "Picked up downstream",
+                  "tone": "green"
+                }
+              ],
+              "links": [
+                {
+                  "label": "Advance moves toward use"
+                },
+                {
+                  "label": "A pathway takes it up"
+                }
+              ],
+              "stamp": "Upstream science"
+            }
+          },
+          {
+            "id": "f5",
+            "seconds": 14,
+            "narration": "Match the logic to the type. Adoption and diffusion belongs to seed systems. Usefulness and engagement to digital. Innovation readiness to upstream science. Seed logic dropped into a digital project bounces back.",
+            "scene": {
+              "kind": "sort",
+              "bins": [
+                "Seed systems",
+                "Digital advice",
+                "Upstream science"
+              ],
+              "cards": [
+                {
+                  "label": "Adoption and diffusion logic",
+                  "bin": 0
+                },
+                {
+                  "label": "Usefulness and engagement KPIs",
+                  "bin": 1
+                },
+                {
+                  "label": "Innovation readiness",
+                  "bin": 2
+                },
+                {
+                  "label": "Behaviour change after useful advice",
+                  "bin": 1,
+                  "wrong": 0
+                }
+              ],
+              "stamp": "One logic per type"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m2-own",
+        "title": "Ownership: who holds which part of the chain",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 14,
+            "narration": "One RACI row. The project lead is accountable. The Regional MEAL Lead is responsible for doing the work. The Design pillar and the Evaluation pillar are consulted. One A per activity.",
+            "scene": {
+              "kind": "grid",
+              "rows": [
+                "Develop the theory of change and results framework"
+              ],
+              "cols": [
+                "Project lead",
+                "Focal Point",
+                "Regional MEAL Lead",
+                "Pillar A",
+                "Pillar C"
+              ],
+              "cells": [
+                [
+                  "A",
+                  "",
+                  "R",
+                  "C",
+                  "C"
+                ]
+              ],
+              "token": {
+                "row": 0,
+                "col": 0,
+                "label": "One A"
+              }
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 14,
+            "narration": "Accountable means you own the result, even if someone else drafts it. The Regional MEAL Lead holds the pen. For complex or strategic proposals the Design pillar leads the theory of change work.",
+            "scene": {
+              "kind": "cards",
+              "layout": "grid",
+              "items": [
+                {
+                  "label": "Project lead",
+                  "detail": "Accountable for the result",
+                  "tone": "green"
+                },
+                {
+                  "label": "Regional MEAL Lead",
+                  "detail": "Responsible: drafts and facilitates",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Design, Standards & Enablement",
+                  "detail": "Consulted; leads ToC for complex or strategic proposals",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Evaluation, Learning & Accountability",
+                  "detail": "Consulted on learning and evaluation questions",
+                  "tone": "sky"
+                }
+              ]
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 12,
+            "narration": "The chain is co-developed in Phase 1, confirmed at inception, and revisited in reviews and contribution analysis. Ownership does not end at submission.",
+            "scene": {
+              "kind": "loop",
+              "steps": [
+                {
+                  "label": "Phase 1",
+                  "detail": "Co-develop the theory of change"
+                },
+                {
+                  "label": "Phase 2",
+                  "detail": "Confirm the results chain"
+                },
+                {
+                  "label": "Phase 5",
+                  "detail": "Quarterly or seasonal reviews"
+                },
+                {
+                  "label": "Phase 6",
+                  "detail": "Contribution analysis"
+                }
+              ],
+              "active": 0
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 8,
+            "narration": "For a Small project on the standard package, the Regional MEAL Lead's Phase 1 role is limited to confirming the classification and the base budget. The chain is still yours.",
+            "scene": {
+              "kind": "title",
+              "title": "Small projects",
+              "subtitle": "The Regional MEAL Lead confirms the classification and the base budget. The chain is still the project's.",
+              "stamp": "§5.1"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m2-draft",
+        "title": "Draft a chain in six minutes",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 12,
+            "narration": "Six minutes, six moves. Four slabs. A tag on each link. Evidence for each tag. Impact as a contribution. One learning question. A pathway check against your Matrix row.",
+            "scene": {
+              "kind": "checklist",
+              "items": [
+                {
+                  "label": "Write the four slabs for your project"
+                },
+                {
+                  "label": "Tag each link with its assumption"
+                },
+                {
+                  "label": "Name the evidence that would test each tag"
+                },
+                {
+                  "label": "Write impact as a contribution alongside other factors"
+                },
+                {
+                  "label": "Note the learning question the chain raises"
+                },
+                {
+                  "label": "Check the pathway against your project type"
+                }
+              ],
+              "stamp": "Six moves"
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 16,
+            "narration": "Here is the maize draft. Trials with partners. Variety released, seed sold, field days held. Farmers plant it and companies keep multiplying it. Lasting gains, alongside other factors.",
+            "scene": {
+              "kind": "chain",
+              "steps": [
+                {
+                  "label": "Trials with partners",
+                  "detail": "Process",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Variety released; seed sold; field days",
+                  "detail": "Outputs",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Farmers plant it; companies keep multiplying",
+                  "detail": "Outcomes",
+                  "tone": "green"
+                },
+                {
+                  "label": "Lasting gains, alongside other factors",
+                  "detail": "Impact",
+                  "tone": "green"
+                }
+              ],
+              "links": [
+                {
+                  "label": "Release approved; seed ready in time"
+                },
+                {
+                  "label": "Seed reaches dealers; farmers choose it"
+                },
+                {
+                  "label": "Gain holds across seasons"
+                }
+              ],
+              "stamp": "Draft v1"
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 12,
+            "narration": "The chain is element one of the minimum package: results architecture. Add the learning questions it raises and the link to CIMMYT Strategy, and it is ready for the MEAL review.",
+            "scene": {
+              "kind": "checklist",
+              "items": [
+                {
+                  "label": "Theory of change / results chain",
+                  "done": true
+                },
+                {
+                  "label": "Decision and learning questions"
+                },
+                {
+                  "label": "Links to CIMMYT Strategy"
+                }
+              ],
+              "stamp": "Results architecture"
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 8,
+            "narration": "Draft it now, at concept-note stage. The Design pillar exists so that weak theories of change are not locked in at proposal stage.",
+            "scene": {
+              "kind": "title",
+              "title": "Draft it before the budget is fixed",
+              "subtitle": "A weak chain locked in at proposal stage is expensive to fix later.",
+              "stamp": "§5.4"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "tag": "delivery-proves-adoption",
+      "description": "You treated something delivered (seed, training, advice, a meeting) as evidence that farmers or partners changed what they do.",
+      "remedyLessonIds": [
+        "L2.2",
+        "L2.3"
+      ]
+    },
+    {
+      "tag": "toc-after-award",
+      "description": "You placed the theory of change after the award, at inception or at reporting time, when the lifecycle co-develops it at proposal stage before indicators, budgets and data systems are fixed.",
+      "remedyLessonIds": [
+        "L2.1",
+        "L2.5"
+      ]
+    },
+    {
+      "tag": "assumption-untested",
+      "description": "You kept an assumption in the chain without naming it or saying what evidence would show it failing.",
+      "remedyLessonIds": [
+        "L2.3"
+      ]
+    },
+    {
+      "tag": "trial-to-income-leap",
+      "description": "You jumped from trial performance or a laboratory result to household benefit without the outcome evidence in between.",
+      "remedyLessonIds": [
+        "L2.2",
+        "L2.4"
+      ]
+    },
+    {
+      "tag": "pathway-mismatch",
+      "description": "You applied one project type's adoption logic to a different type of project, instead of the pathway the MEAL Matrix describes for it.",
+      "remedyLessonIds": [
+        "L2.4"
+      ]
+    },
+    {
+      "tag": "toc-sole-cause-claim",
+      "description": "You wrote the impact link as if CIMMYT were the only cause of the change, instead of a contribution alongside other factors.",
+      "remedyLessonIds": [
+        "L2.2",
+        "L2.3"
+      ]
+    },
+    {
+      "tag": "meal-owns-toc",
+      "description": "You handed the theory of change to MEAL alone. The project lead is accountable; the Regional MEAL Lead is responsible for the work, with the pillars consulted.",
+      "remedyLessonIds": [
+        "L2.5"
+      ]
+    }
+  ],
+  "diagnosticTags": {
+    "Q011": {
+      "objectiveIds": [
+        "theory-of-change.O4"
+      ],
+      "misconceptions": {
+        "a": "toc-after-award",
+        "b": "toc-after-award",
+        "c": "toc-after-award"
+      }
+    },
+    "Q012": {
+      "objectiveIds": [
+        "theory-of-change.O5"
+      ]
+    },
+    "Q013": {
+      "objectiveIds": [
+        "theory-of-change.O2"
+      ],
+      "misconceptions": {
+        "a": "delivery-proves-adoption",
+        "c": "assumption-untested"
+      }
+    },
+    "Q014": {
+      "objectiveIds": [
+        "theory-of-change.O3"
+      ],
+      "misconceptions": {
+        "a": "delivery-proves-adoption",
+        "b": "delivery-proves-adoption",
+        "d": "delivery-proves-adoption"
+      }
+    },
+    "Q015": {
+      "objectiveIds": [
+        "theory-of-change.O1",
+        "theory-of-change.O2"
+      ],
+      "misconceptions": {
+        "a": "trial-to-income-leap",
+        "b": "toc-sole-cause-claim",
+        "d": "trial-to-income-leap"
+      }
+    },
+    "Q016": {
+      "objectiveIds": [
+        "theory-of-change.O1"
+      ],
+      "misconceptions": {
+        "a": "delivery-proves-adoption",
+        "b": "delivery-proves-adoption",
+        "c": "delivery-proves-adoption"
+      }
+    },
+    "Q017": {
+      "objectiveIds": [
+        "theory-of-change.O2"
+      ],
+      "misconceptions": {
+        "a": "assumption-untested",
+        "b": "delivery-proves-adoption",
+        "d": "assumption-untested"
+      }
+    },
+    "Q018": {
+      "objectiveIds": [
+        "theory-of-change.O3"
+      ],
+      "misconceptions": {
+        "a": "toc-after-award",
+        "c": "trial-to-income-leap",
+        "d": "pathway-mismatch"
+      }
+    },
+    "Q019": {
+      "objectiveIds": [
+        "theory-of-change.O3"
+      ],
+      "misconceptions": {
+        "a": "delivery-proves-adoption",
+        "b": "delivery-proves-adoption",
+        "d": "delivery-proves-adoption"
+      }
+    },
+    "Q020": {
+      "objectiveIds": [
+        "theory-of-change.O4"
+      ],
+      "misconceptions": {
+        "c": "meal-owns-toc",
+        "d": "meal-owns-toc"
+      }
+    }
+  },
+  "questions": [
+    {
+      "id": "Q131",
+      "topicId": "theory-of-change",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "theory-of-change.O1"
+      ],
+      "question": "The framework says the logic of the results chain is cumulative. What does that mean for a proposal's theory of change?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Each level builds on the one before, and each needs its own evidence"
+        },
+        {
+          "id": "b",
+          "text": "Once outputs are delivered, the outcomes can be assumed to follow"
+        },
+        {
+          "id": "c",
+          "text": "Impact is reported as the total of the outputs delivered"
+        },
+        {
+          "id": "d",
+          "text": "All four levels can be measured from one project report"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Section 2 says the logic is cumulative but that different types of data serve different analytical purposes and do not carry the same evidential weight. Delivered outputs are the foundation for outcome evidence, not a substitute for it.",
+      "source": {
+        "section": "2",
+        "title": "The MEAL Framework: From Data to Impact",
+        "kind": "direct"
+      },
+      "reviewTip": "Read the opening paragraphs of section 2 and note the word cumulative."
+    },
+    {
+      "id": "Q132",
+      "topicId": "theory-of-change",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "theory-of-change.O1"
+      ],
+      "question": "A maize concept note in Kenya lists \"farmers trained at field days\" as the project's main outcome. Where does the results chain place training delivered?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Outcome, because farmers were present and learned something"
+        },
+        {
+          "id": "b",
+          "text": "Output, because training is a service delivered"
+        },
+        {
+          "id": "c",
+          "text": "Impact, because trained farmers keep the knowledge"
+        },
+        {
+          "id": "d",
+          "text": "Process, because field days are an activity in the workplan"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Training delivered is listed among the outputs in section 2.2. The outcome is what trained farmers do differently afterwards, which the concept note still has to state.",
+      "source": {
+        "section": "2.2",
+        "title": "Outputs",
+        "kind": "application"
+      },
+      "reviewTip": "Rewrite the outcome as a change in practice among the farmers trained."
+    },
+    {
+      "id": "Q133",
+      "topicId": "theory-of-change",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "theory-of-change.O2"
+      ],
+      "question": "A seed pilot's chain reads: certified seed distributed, then farmers adopt the variety. Which assumption sits on that link?",
+      "options": [
+        {
+          "id": "a",
+          "text": "That the seed companies will report their sales on time"
+        },
+        {
+          "id": "b",
+          "text": "That the variety outyields the local check in on-station trials"
+        },
+        {
+          "id": "c",
+          "text": "That the investor accepts the institutional adoption KPI"
+        },
+        {
+          "id": "d",
+          "text": "That farmers who receive the seed plant it and keep planting it"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The link from seed distributed to farmers adopting relies on farmers choosing to plant the seed and continuing to do so. Annex A asks seed systems projects to check that this adoption and diffusion logic holds rather than assume it from distribution records.",
+      "source": {
+        "section": "Annex A",
+        "title": "MEAL Matrix",
+        "kind": "application"
+      },
+      "reviewTip": "For each link, ask what has to be true outside the project's control."
+    },
+    {
+      "id": "Q134",
+      "topicId": "theory-of-change",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "theory-of-change.O2"
+      ],
+      "question": "What does the system change row of the MEAL Matrix ask MEAL to check for a Small project?",
+      "options": [
+        {
+          "id": "a",
+          "text": "That the stakeholder and ecosystem map lists every partner organisation"
+        },
+        {
+          "id": "b",
+          "text": "That the coordination budget is proportional to the number of partners"
+        },
+        {
+          "id": "c",
+          "text": "The project's contribution to systemic outcomes and the assumptions in its theory of change"
+        },
+        {
+          "id": "d",
+          "text": "That partners have delivered the outputs listed in the workplan"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Annex A says MEAL helps system change projects build a systems-oriented theory of change and check the project's contribution to systemic outcomes and the assumptions in that theory. Output delivery by partners is tracked, but it is not the check the row describes.",
+      "source": {
+        "section": "Annex A",
+        "title": "MEAL Matrix",
+        "kind": "direct"
+      },
+      "reviewTip": "Read the Small column of the system change row in Annex A."
+    },
+    {
+      "id": "Q135",
+      "topicId": "theory-of-change",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "theory-of-change.O3"
+      ],
+      "question": "For a Small digital advisory pilot, what does the MEAL Matrix say the theory of change should cover?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seed multiplication, dissemination and varietal diffusion"
+        },
+        {
+          "id": "b",
+          "text": "Usefulness, behaviour change and relevance"
+        },
+        {
+          "id": "c",
+          "text": "Genetic gain, trial performance and deployment readiness"
+        },
+        {
+          "id": "d",
+          "text": "Stakeholder mapping and ecosystem coordination"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The digital agriculture and AI row asks for a user-centred theory of change covering usefulness, behaviour change and relevance, with usage, engagement and analytics KPIs. The other options belong to seed systems, breeding and system change projects.",
+      "source": {
+        "section": "Annex A",
+        "title": "MEAL Matrix",
+        "kind": "direct"
+      },
+      "reviewTip": "Compare the Small column across the project-type rows of Annex A."
+    },
+    {
+      "id": "Q136",
+      "topicId": "theory-of-change",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "theory-of-change.O3"
+      ],
+      "question": "A Medium seed deployment project in Mexico asks what MEAL will track beyond distribution volumes. What does the Matrix describe for this type and scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adoption and varietal diffusion at regional scale, through digital registries and dashboards"
+        },
+        {
+          "id": "b",
+          "text": "Platform usage and engagement analytics, through integrated advisory monitoring"
+        },
+        {
+          "id": "c",
+          "text": "Innovation readiness of laboratory outputs, through harmonised research indicators"
+        },
+        {
+          "id": "d",
+          "text": "Genetic gain across mega-environments, through multi-environment trial data"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The seed systems row at Medium scale sets up digital registries and adoption dashboards and tracks adoption and varietal diffusion at regional scale. Usage analytics, innovation readiness and genetic gain are the logics of other project types.",
+      "source": {
+        "section": "Annex A",
+        "title": "MEAL Matrix",
+        "kind": "application"
+      },
+      "reviewTip": "Find the Medium column of the seed systems and deployment row."
+    },
+    {
+      "id": "Q137",
+      "topicId": "theory-of-change",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "theory-of-change.O4"
+      ],
+      "question": "In Phase 1 of the project lifecycle, what does the project team itself define while the theory of change is being co-developed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The selection of institutional KPIs and the investor crosswalk"
+        },
+        {
+          "id": "b",
+          "text": "The classification of M&E complexity in the MEAL Matrix"
+        },
+        {
+          "id": "c",
+          "text": "The configuration of forms and data flows in the data system"
+        },
+        {
+          "id": "d",
+          "text": "Intended results, intervention logic, geography and target populations"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Phase 1 table gives the project the job of defining intended results, intervention logic, investor requirements, geography, target populations and operational feasibility. KPI selection, Matrix classification and system configuration are led by MEAL or the Data Group.",
+      "source": {
+        "section": "5.1",
+        "title": "Project Lifecycle: MEAL from Proposal to Impact",
+        "kind": "direct"
+      },
+      "reviewTip": "Read the project column of Phase 1 in the lifecycle table."
+    },
+    {
+      "id": "Q138",
+      "topicId": "theory-of-change",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "theory-of-change.O4"
+      ],
+      "question": "In the RACI row for developing the theory of change and results framework, which role is responsible for doing the work?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The project lead"
+        },
+        {
+          "id": "b",
+          "text": "The Project MEAL Focal Point"
+        },
+        {
+          "id": "c",
+          "text": "The Regional MEAL Lead"
+        },
+        {
+          "id": "d",
+          "text": "The MEAL Group Lead"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The RACI row marks the Regional MEAL Lead as responsible and the project lead as accountable. The Focal Point is not yet appointed in Phase 1, and the Group Lead has no role in this row.",
+      "source": {
+        "section": "5.1",
+        "title": "Project Lifecycle: MEAL from Proposal to Impact",
+        "kind": "direct"
+      },
+      "reviewTip": "Separate R, who does the work, from A, who owns the result, in the RACI row."
+    },
+    {
+      "id": "Q139",
+      "topicId": "theory-of-change",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "theory-of-change.O5"
+      ],
+      "question": "At concept-note stage a maize team writes its chain as \"variety released, so incomes rise\". What should the draft add before submission?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The outcome step, farmers planting the variety, and the assumption that links release to planting"
+        },
+        {
+          "id": "b",
+          "text": "A larger multi-environment trial network to strengthen the yield claim"
+        },
+        {
+          "id": "c",
+          "text": "A counterfactual impact evaluation design with a comparison group"
+        },
+        {
+          "id": "d",
+          "text": "A dashboard mock-up showing the expected income trend by district"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The chain skips the outcome level, where farmers change what they plant, and leaves the link from release to planting unstated. Evaluation designs and dashboards come later in the lifecycle; the chain must be complete first.",
+      "source": {
+        "section": "2.3",
+        "title": "Outcomes",
+        "kind": "application"
+      },
+      "reviewTip": "Check every draft chain for a missing outcome slab."
+    },
+    {
+      "id": "Q140",
+      "topicId": "theory-of-change",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "theory-of-change.O4"
+      ],
+      "question": "The proposal is awarded. What happens to the results chain in Phase 2, award and inception?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is replaced by the final indicator list"
+        },
+        {
+          "id": "b",
+          "text": "It is archived until the endline evaluation"
+        },
+        {
+          "id": "c",
+          "text": "It is confirmed, with indicator applicability and the minimum data needed"
+        },
+        {
+          "id": "d",
+          "text": "It is rewritten by the Data Group for the data system"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Phase 2 confirms the results chain, indicator applicability, minimum data needed, baseline or panel requirements and evaluation design. The chain stays live; it is not replaced or shelved.",
+      "source": {
+        "section": "5.1",
+        "title": "Project Lifecycle: MEAL from Proposal to Impact",
+        "kind": "direct"
+      },
+      "reviewTip": "Read the central MEAL column of Phase 2 in the lifecycle table."
+    },
+    {
+      "id": "Q141",
+      "topicId": "theory-of-change",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "theory-of-change.O1"
+      ],
+      "question": "A draft chain for the Kenya maize project reads: trials run, variety released, 5,000 farmers receive seed, incomes rise. What is wrong with it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It should drop the trials step, because processes are not results"
+        },
+        {
+          "id": "b",
+          "text": "It needs a larger reach target before incomes can be expected to rise"
+        },
+        {
+          "id": "c",
+          "text": "It jumps from seed received to incomes, with no outcome level in between"
+        },
+        {
+          "id": "d",
+          "text": "It should claim incomes rise only where CIMMYT is the sole cause"
+        }
+      ],
+      "correctOptionId": "c",
+      "misconceptions": {
+        "b": "delivery-proves-adoption",
+        "d": "toc-sole-cause-claim"
+      },
+      "explanation": "Seed received is an output and incomes rising is impact, so the chain is missing the outcome: farmers planting the variety and changing their practice. A bigger reach number does not fill that gap.",
+      "source": {
+        "section": "2",
+        "title": "The MEAL Framework: From Data to Impact",
+        "kind": "application"
+      },
+      "reviewTip": "Trace every draft through all four levels and look for the missing slab."
+    },
+    {
+      "id": "Q142",
+      "topicId": "theory-of-change",
+      "difficulty": "foundation",
+      "pool": "check",
+      "objectiveIds": [
+        "theory-of-change.O1"
+      ],
+      "question": "Why does the framework not accept one results level as proof of the next?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because once outputs are delivered the next level can be assumed to follow"
+        },
+        {
+          "id": "b",
+          "text": "Because CIMMYT must be shown as the sole cause before a link counts"
+        },
+        {
+          "id": "c",
+          "text": "Because only the impact level needs evidence in a proposal"
+        },
+        {
+          "id": "d",
+          "text": "Because different data serve different purposes and carry different evidential weight"
+        }
+      ],
+      "correctOptionId": "d",
+      "misconceptions": {
+        "a": "delivery-proves-adoption",
+        "b": "toc-sole-cause-claim",
+        "c": "trial-to-income-leap"
+      },
+      "explanation": "Section 2 says the logic is cumulative but that different types of data serve different analytical purposes and do not all carry the same evidential weight. Each level therefore needs its own evidence.",
+      "source": {
+        "section": "2",
+        "title": "The MEAL Framework: From Data to Impact",
+        "kind": "direct"
+      },
+      "reviewTip": "Reread the second paragraph of section 2."
+    },
+    {
+      "id": "Q143",
+      "topicId": "theory-of-change",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "theory-of-change.O2"
+      ],
+      "question": "In the maize chain, one link reads: seed companies sell certified seed, then farmers plant it. Which option states the assumption on that link and a way to test it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The variety outyields the check in trials; test by adding more trial sites"
+        },
+        {
+          "id": "b",
+          "text": "Farmers can get and afford the seed and choose to plant it; test with an adoption survey among seed buyers"
+        },
+        {
+          "id": "c",
+          "text": "Seed companies have signed a memorandum; test by counting coordination meetings"
+        },
+        {
+          "id": "d",
+          "text": "The investor accepts the adoption target; test at the annual report"
+        }
+      ],
+      "correctOptionId": "b",
+      "misconceptions": {
+        "a": "trial-to-income-leap",
+        "c": "delivery-proves-adoption",
+        "d": "assumption-untested"
+      },
+      "explanation": "The link relies on farmers obtaining, affording and choosing the seed, none of which the project controls, and adoption surveys are the outcome-level source section 2.3 names. Trial yields and signed memoranda test other links, not this one.",
+      "source": {
+        "section": "2.3",
+        "title": "Outcomes",
+        "kind": "application"
+      },
+      "reviewTip": "Pair each assumption with the data source that could show it failing."
+    },
+    {
+      "id": "Q144",
+      "topicId": "theory-of-change",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "theory-of-change.O2"
+      ],
+      "question": "A seed systems proposal assumes that farmers who buy seed will plant it, but plans no evidence for that link. What does Annex A expect MEAL to do for this project type?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Accept the assumption, because seed sales are already recorded"
+        },
+        {
+          "id": "b",
+          "text": "Defer the check to the end-of-project evaluation"
+        },
+        {
+          "id": "c",
+          "text": "Replace the assumption with usage and engagement KPIs from the digital row"
+        },
+        {
+          "id": "d",
+          "text": "Define KPIs and check that the adoption and diffusion logic holds"
+        }
+      ],
+      "correctOptionId": "d",
+      "misconceptions": {
+        "a": "delivery-proves-adoption",
+        "b": "assumption-untested",
+        "c": "pathway-mismatch"
+      },
+      "explanation": "The seed systems row says MEAL helps define KPIs and reporting structures and checks that the adoption and diffusion logic holds. Sales records show delivery; they do not show planting.",
+      "source": {
+        "section": "Annex A",
+        "title": "MEAL Matrix",
+        "kind": "application"
+      },
+      "reviewTip": "Read the Small column of the seed systems and deployment row."
+    },
+    {
+      "id": "Q145",
+      "topicId": "theory-of-change",
+      "difficulty": "advanced",
+      "pool": "check",
+      "objectiveIds": [
+        "theory-of-change.O2"
+      ],
+      "question": "Which draft chain states its assumptions clearly enough to be checked?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Field days held, then farmers plant (assuming participants can get seed locally), then yields rise (assuming a normal season)"
+        },
+        {
+          "id": "b",
+          "text": "Field days held, then farmers plant, then yields rise; assumptions to be added at the endline review"
+        },
+        {
+          "id": "c",
+          "text": "Field days held, then yields rise, because a drought-tolerant variety needs no adoption step"
+        },
+        {
+          "id": "d",
+          "text": "Field days held, then farmers plant, then incomes rise, with CIMMYT recorded as the sole cause"
+        }
+      ],
+      "correctOptionId": "a",
+      "misconceptions": {
+        "b": "assumption-untested",
+        "c": "delivery-proves-adoption",
+        "d": "toc-sole-cause-claim"
+      },
+      "explanation": "Only the first chain names what has to be true at each link, so the project can plan evidence for it. Leaving assumptions to the endline, skipping the adoption step or claiming sole cause each hides a link the framework wants visible.",
+      "source": {
+        "section": "2.4",
+        "title": "Impact",
+        "kind": "application"
+      },
+      "reviewTip": "Write the assumption in brackets after every arrow in your chain."
+    },
+    {
+      "id": "Q146",
+      "topicId": "theory-of-change",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "theory-of-change.O3"
+      ],
+      "question": "Which pathway logic does the MEAL Matrix describe for digital advisory projects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seed multiplied, then distributed, then adopted and diffused"
+        },
+        {
+          "id": "b",
+          "text": "Advice is useful and users engage, then adoption and behaviour change follow"
+        },
+        {
+          "id": "c",
+          "text": "Scientific advance, then innovation readiness, then an impact pathway"
+        },
+        {
+          "id": "d",
+          "text": "Advice messages sent, then incomes rise among recipients"
+        }
+      ],
+      "correctOptionId": "b",
+      "misconceptions": {
+        "a": "pathway-mismatch",
+        "c": "pathway-mismatch",
+        "d": "delivery-proves-adoption"
+      },
+      "explanation": "The digital row asks for a theory of change covering usefulness, behaviour change and relevance, and at Medium scale links advisory effectiveness to adoption pathways and behaviour change. Message counts alone skip that logic.",
+      "source": {
+        "section": "Annex A",
+        "title": "MEAL Matrix",
+        "kind": "direct"
+      },
+      "reviewTip": "Read the digital agriculture and AI row from Small to Medium."
+    },
+    {
+      "id": "Q147",
+      "topicId": "theory-of-change",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "theory-of-change.O3"
+      ],
+      "question": "A team copies a seed systems chain, registry to distribution to adoption, into a proposal for an upstream genomics project. What is the problem?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nothing is wrong: every project type uses the same chain in the Matrix"
+        },
+        {
+          "id": "b",
+          "text": "The chain should count publications and datasets as the impact level"
+        },
+        {
+          "id": "c",
+          "text": "Upstream projects are exempt from a theory of change until field work starts"
+        },
+        {
+          "id": "d",
+          "text": "Upstream science links scientific advances to impact pathways and innovation readiness"
+        }
+      ],
+      "correctOptionId": "d",
+      "misconceptions": {
+        "a": "pathway-mismatch",
+        "b": "trial-to-income-leap",
+        "c": "toc-after-award"
+      },
+      "explanation": "The upstream discovery science row builds a theory of change for the research and, at Medium scale, connects scientific advances to impact pathways and innovation readiness. Seed distribution is not this project's route to use.",
+      "source": {
+        "section": "Annex A",
+        "title": "MEAL Matrix",
+        "kind": "application"
+      },
+      "reviewTip": "Match the chain to the project type the Matrix classifies you as."
+    },
+    {
+      "id": "Q148",
+      "topicId": "theory-of-change",
+      "difficulty": "advanced",
+      "pool": "check",
+      "objectiveIds": [
+        "theory-of-change.O3"
+      ],
+      "question": "Three concept notes, for a seed project, a digital advisory project and an upstream science project, each claim \"adoption\" as their outcome. Which set of outcome logics matches Annex A?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seed: platform usage analytics; Digital: seed registry and distribution; Upstream: varietal diffusion at regional scale"
+        },
+        {
+          "id": "b",
+          "text": "Seed: farmers reached; Digital: users registered; Upstream: laboratory outputs counted, each reported as adoption"
+        },
+        {
+          "id": "c",
+          "text": "Seed: adoption and diffusion of the variety; Digital: behaviour change after useful advice; Upstream: innovation readiness on an impact pathway"
+        },
+        {
+          "id": "d",
+          "text": "Seed: household incomes; Digital: household incomes; Upstream: household incomes, each inferred from delivery"
+        }
+      ],
+      "correctOptionId": "c",
+      "misconceptions": {
+        "a": "pathway-mismatch",
+        "b": "delivery-proves-adoption",
+        "d": "trial-to-income-leap"
+      },
+      "explanation": "Each row of the Matrix carries its own logic: adoption and diffusion for seed systems, usefulness and behaviour change for digital advice, innovation readiness and impact pathways for upstream science. Reach counts and incomes inferred from delivery are not outcomes for any of them.",
+      "source": {
+        "section": "Annex A",
+        "title": "MEAL Matrix",
+        "kind": "application"
+      },
+      "reviewTip": "Write the outcome in the words the Matrix uses for your project type."
+    },
+    {
+      "id": "Q149",
+      "topicId": "theory-of-change",
+      "difficulty": "foundation",
+      "pool": "check",
+      "objectiveIds": [
+        "theory-of-change.O4"
+      ],
+      "question": "Section 5.1 says MEAL must enter a project before certain things are fixed. Which things?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Partner memoranda and the field operating model"
+        },
+        {
+          "id": "b",
+          "text": "Indicators, budgets and data systems"
+        },
+        {
+          "id": "c",
+          "text": "Investor reports and dashboards"
+        },
+        {
+          "id": "d",
+          "text": "Baseline and endline surveys"
+        }
+      ],
+      "correctOptionId": "b",
+      "misconceptions": {
+        "c": "toc-after-award",
+        "d": "toc-after-award"
+      },
+      "explanation": "The lifecycle opens with the rule that MEAL enters before indicators, budgets and data systems are fixed, which is why the theory of change is co-developed in Phase 1. Baselines, dashboards and reports all come after award.",
+      "source": {
+        "section": "5.1",
+        "title": "Project Lifecycle: MEAL from Proposal to Impact",
+        "kind": "direct"
+      },
+      "reviewTip": "Read the first sentence of section 5.1."
+    },
+    {
+      "id": "Q150",
+      "topicId": "theory-of-change",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "theory-of-change.O4"
+      ],
+      "question": "A Regional MEAL Lead drafts the theory of change for a Medium maize project. The project lead says it is now MEAL's document. What does the RACI row say?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The project lead stays accountable; the Regional MEAL Lead is responsible for drafting"
+        },
+        {
+          "id": "b",
+          "text": "The Regional MEAL Lead becomes accountable because she did the drafting work"
+        },
+        {
+          "id": "c",
+          "text": "The Design pillar is accountable because it reviews results architectures"
+        },
+        {
+          "id": "d",
+          "text": "The Project MEAL Focal Point becomes accountable once appointed at inception"
+        }
+      ],
+      "correctOptionId": "a",
+      "misconceptions": {
+        "b": "meal-owns-toc",
+        "c": "meal-owns-toc",
+        "d": "meal-owns-toc"
+      },
+      "explanation": "The RACI row gives the project lead the single A and the Regional MEAL Lead the R, with the Design and Evaluation pillars consulted. Doing the drafting does not transfer accountability.",
+      "source": {
+        "section": "5.1",
+        "title": "Project Lifecycle: MEAL from Proposal to Impact",
+        "kind": "application"
+      },
+      "reviewTip": "Remember: one A per activity, and R is the person holding the pen."
+    },
+    {
+      "id": "Q151",
+      "topicId": "theory-of-change",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "theory-of-change.O4"
+      ],
+      "question": "A Small agronomy project takes the standard MEAL package. What is the Regional MEAL Lead's Phase 1 role?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Full co-design of MEAL from the start of proposal development"
+        },
+        {
+          "id": "b",
+          "text": "None until the inception period begins"
+        },
+        {
+          "id": "c",
+          "text": "Drafting the complete evaluation design and baseline study"
+        },
+        {
+          "id": "d",
+          "text": "Limited to confirming the classification and the base budget"
+        }
+      ],
+      "correctOptionId": "d",
+      "misconceptions": {
+        "b": "toc-after-award"
+      },
+      "explanation": "Section 5.1 says that for Small projects proceeding with the standard package, the Regional MEAL Lead's Phase 1 role is limited to confirming the classification and the base budget. Full co-design from the start is for Large and MEGA projects.",
+      "source": {
+        "section": "5.1",
+        "title": "Project Lifecycle: MEAL from Proposal to Impact",
+        "kind": "direct"
+      },
+      "reviewTip": "Read the note after the RACI matrix in section 5.1."
+    },
+    {
+      "id": "Q152",
+      "topicId": "theory-of-change",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "theory-of-change.O5"
+      ],
+      "question": "A proposal is due in two weeks. The team has an indicator list and a budget but no results chain. What does the Phase 1 gate require before submission?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Indicators and a budget; the results chain can wait until the inception period"
+        },
+        {
+          "id": "b",
+          "text": "A MEAL section with the chain, a KPI crosswalk, an indicative data architecture and a costed MEAL budget"
+        },
+        {
+          "id": "c",
+          "text": "The indicators alone; the chain is written for end-of-project reporting"
+        },
+        {
+          "id": "d",
+          "text": "The costed MEAL budget alone; the rest is added during system design"
+        }
+      ],
+      "correctOptionId": "b",
+      "misconceptions": {
+        "a": "toc-after-award",
+        "c": "toc-after-award"
+      },
+      "explanation": "The Phase 1 gate is a MEAL section, a KPI crosswalk, an indicative data architecture and a costed MEAL budget before submission. The theory of change is co-developed in this phase, not deferred to inception or reporting.",
+      "source": {
+        "section": "5.1",
+        "title": "Project Lifecycle: MEAL from Proposal to Impact",
+        "kind": "application"
+      },
+      "reviewTip": "Check your proposal against the four gate deliverables of Phase 1."
+    },
+    {
+      "id": "Q153",
+      "topicId": "theory-of-change",
+      "difficulty": "advanced",
+      "pool": "check",
+      "objectiveIds": [
+        "theory-of-change.O5"
+      ],
+      "question": "Which draft chain for the Kenya maize project is ready for a MEAL review at concept-note stage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Trials with partners, variety released, farmers reached through field days, incomes rise, with reach reported as adoption"
+        },
+        {
+          "id": "b",
+          "text": "Variety outyields the check in trials, incomes rise for every household in the district, with no adoption step in between"
+        },
+        {
+          "id": "c",
+          "text": "Trials with partners, variety released, seed sold and field days held, farmers plant it (assumption: seed available locally), lasting gains as a contribution alongside other factors"
+        },
+        {
+          "id": "d",
+          "text": "Trials with partners, variety released, farmers plant it, incomes rise, with CIMMYT recorded as the sole cause of the gain"
+        }
+      ],
+      "correctOptionId": "c",
+      "misconceptions": {
+        "a": "delivery-proves-adoption",
+        "b": "trial-to-income-leap",
+        "d": "toc-sole-cause-claim"
+      },
+      "explanation": "Only this chain has all four levels, a named assumption on the key link and an impact statement written as a contribution alongside other factors, as section 2.4 requires. The others report reach as adoption, leap from trials to incomes or claim sole cause.",
+      "source": {
+        "section": "2.4",
+        "title": "Impact",
+        "kind": "application"
+      },
+      "reviewTip": "Before review, check: four levels, tagged links, contribution not sole cause."
+    }
+  ],
+  "glossaryAdditions": [
+    {
+      "term": "Theory of change",
+      "definition": "The project's intervention logic, co-developed with central MEAL at opportunity and proposal stage: how activities are expected to lead through outputs and outcomes to impact. With decision and learning questions and links to CIMMYT Strategy it forms the results architecture of the minimum package.",
+      "section": "5.1"
+    },
+    {
+      "term": "Assumption",
+      "definition": "A condition a results chain relies on but the project does not control. The MEAL Matrix asks system change projects to check the assumptions in their theory of change and other project types to check that their adoption logic holds.",
+      "section": "Annex A"
+    },
+    {
+      "term": "Adoption pathway",
+      "definition": "The route by which a delivered technology or service is expected to lead to changed practice. The MEAL Matrix describes different logics by project type, such as adoption and diffusion for seed systems and usefulness, engagement and behaviour change for digital advice.",
+      "section": "Annex A"
+    }
+  ]
+}

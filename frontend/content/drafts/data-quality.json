@@ -1,0 +1,2127 @@
+{
+  "module": {
+    "id": "data-quality",
+    "order": 5,
+    "title": "Data quality & collection",
+    "short": "Data quality",
+    "minutes": 35,
+    "sections": [
+      "2.3",
+      "2.5",
+      "2.6",
+      "4.1",
+      "5.4",
+      "5.7",
+      "5.8"
+    ],
+    "assessed": true,
+    "prerequisites": [
+      "kpis-measurement"
+    ],
+    "scenario": {
+      "title": "The survey that arrived a week before the review",
+      "intro": "An adoption survey from a seed-systems project in central Mexico lands on your desk a week before the quarterly evidence review. The same farmer appears three times under different spellings. One plot reports a maize yield far above anything seen in the area, another has a plot area of zero. Forty households have no answer to the adoption question. And every surveyed village sits on the main road, although the project wants to report adoption for the whole state. The number the review needs is in there somewhere. This module shows you how to get it out without inventing it.",
+      "persona": [
+        "field-officer",
+        "meal-specialist",
+        "project-lead",
+        "scientist"
+      ]
+    },
+    "objectives": [
+      {
+        "id": "data-quality.O1",
+        "text": "Name the six quality dimensions (completeness, accuracy, consistency, timeliness, uniqueness, representativeness) and match each problem in a dataset to the dimension it fails.",
+        "bloom": "apply"
+      },
+      {
+        "id": "data-quality.O2",
+        "text": "Design persistent identifiers and record-level provenance so that an observation can be found again and an institutional figure can be audited and recalculated.",
+        "bloom": "apply"
+      },
+      {
+        "id": "data-quality.O3",
+        "text": "Handle missing values and outliers by investigating and documenting them, rather than assuming zero or deleting them.",
+        "bloom": "apply"
+      },
+      {
+        "id": "data-quality.O4",
+        "text": "Judge whether a sample represents the population named in the claim and state the limits of the claim where it does not.",
+        "bloom": "analyse"
+      },
+      {
+        "id": "data-quality.O5",
+        "text": "Set a validation cadence and assign quality roles: first-line checks at project level, periodic assurance at regional level, rules and remediation centrally.",
+        "bloom": "apply"
+      }
+    ],
+    "lessons": [
+      {
+        "id": "L5.1",
+        "moduleId": "data-quality",
+        "title": "Six dimensions of data quality",
+        "objectiveIds": [
+          "data-quality.O1"
+        ],
+        "minutes": 6,
+        "beats": {
+          "hook": "A dataset with 2,000 rows looks solid. Then you notice the same farmer three times, a yield nobody has ever seen and forty blanks. How bad is it, exactly? The framework gives you six questions to answer that.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m5-hero"
+          },
+          "example": {
+            "kind": "interactive",
+            "title": "Fix the survey, watch the needle",
+            "widget": "dial",
+            "prompt": "Each dimension below has a problem from the Mexico adoption survey. Toggle the fix and watch the quality needle move. Notice which fix is not a cleaning step at all.",
+            "dimensions": [
+              {
+                "label": "Completeness",
+                "problem": "Forty households have no answer to the question on whether they planted the new variety.",
+                "fix": "Follow up the blanks where you can. Record the rest as unknown, not as zero, and note the gap."
+              },
+              {
+                "label": "Accuracy",
+                "problem": "One plot reports a maize yield far above anything seen in the area. Another records a plot area of zero.",
+                "fix": "Range and consistency checks at entry flag these values. Each flagged value is investigated at source before anything is changed."
+              },
+              {
+                "label": "Consistency",
+                "problem": "Plot area is recorded in hectares in one municipality and in a local unit in another, with no conversion noted.",
+                "fix": "Standardise formats and units using the shared data dictionary and controlled vocabularies."
+              },
+              {
+                "label": "Timeliness",
+                "problem": "The dataset arrived three months after the season ended, after the review that needed it.",
+                "fix": "Run routine checks monthly and resolve exceptions close to collection, so the data are ready when decisions are made."
+              },
+              {
+                "label": "Uniqueness",
+                "problem": "The same farmer appears three times under slightly different spellings of her name.",
+                "fix": "Use a persistent farmer identifier from the registry and apply the deduplication rule. Three rows become one."
+              },
+              {
+                "label": "Representativeness",
+                "problem": "Every surveyed village sits on the main road. The claim is about smallholders across the whole state.",
+                "fix": "Compare the sample with the population in the claim. Extend coverage, or narrow the claim to the area sampled and say so."
+              }
+            ]
+          },
+          "microCheck": [
+            "Q221",
+            "Q222"
+          ],
+          "recap": {
+            "bullets": [
+              "Quality assurance validates, standardises, de-duplicates and documents provenance and quality.",
+              "Controls cover completeness, accuracy, consistency, timeliness, uniqueness and representativeness.",
+              "A dataset can pass five dimensions and still fail the sixth. Check all six before you report."
+            ],
+            "source": {
+              "section": "2.5",
+              "title": "The Five Evidence Functions"
+            }
+          }
+        },
+        "glossary": [
+          "Quality assurance",
+          "Six quality dimensions",
+          "Representativeness"
+        ]
+      },
+      {
+        "id": "L5.2",
+        "moduleId": "data-quality",
+        "title": "Identifiers and provenance: can you find this observation again?",
+        "objectiveIds": [
+          "data-quality.O2"
+        ],
+        "minutes": 5,
+        "beats": {
+          "hook": "An investor asks how the figure of 1,240 adopting farmers was calculated. You have a total in a spreadsheet. Can you get from that total back to one farmer, one plot, one form?",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m5-ids"
+          },
+          "example": {
+            "kind": "text",
+            "title": "One observation, from the field to the institutional figure",
+            "body": [
+              "A seed-systems project in Mexico registers a farmer. She gets a persistent identifier: unique, stable, the same across this project, the next one and every year in between. Her plot gets one too. The framework asks for such identifiers for farmers, plots, households, organisations, trials and projects, because they link delivery to later uptake and outcomes and prevent double counting.",
+              "Her name would not do the job. It is spelled three ways in the dataset, two farmers in the municipality share it, and her phone number changed last year. An identifier assigned by the project in its own format is not enough either, because the next project would assign a new one and the link would be lost.",
+              "At the follow-up survey, the enumerator records her adoption answer against her identifier. The record carries its provenance: which form version, which date, which enumerator, which method. When the plot area is corrected a week later, the audit trail keeps the old value, the new value and the reason.",
+              "At the annual KPI run, the KPI engine calculates adoption from the eligible records with the approved method and reports coverage, uncertainty and method version. When the method improves next year, the figure can be recalculated from the same records. A total copied into a spreadsheet can be read. It cannot be audited, recalculated or reused.",
+              "That is the test for your own data: pick any figure in a report and try to reach one source record. If you cannot, the figure has no provenance."
+            ]
+          },
+          "microCheck": [
+            "Q223",
+            "Q224"
+          ],
+          "recap": {
+            "bullets": [
+              "Persistent identifiers are unique and stable for farmers, plots, households, organisations, trials and projects across projects and years.",
+              "Record-level provenance and an audit trail let institutional figures be audited and recalculated.",
+              "Names, phone numbers and project-specific numbers are not persistent identifiers."
+            ],
+            "source": {
+              "section": "4.1",
+              "title": "Required Functionalities"
+            }
+          }
+        },
+        "glossary": [
+          "Persistent identifier",
+          "Provenance",
+          "Audit trail",
+          "KPI engine",
+          "Observation-level evidence"
+        ]
+      },
+      {
+        "id": "L5.3",
+        "moduleId": "data-quality",
+        "title": "Outliers, missingness and what to do before deleting anything",
+        "objectiveIds": [
+          "data-quality.O3"
+        ],
+        "minutes": 5,
+        "beats": {
+          "hook": "A plot reports a yield three times higher than its neighbours. Forty households left the adoption question blank. The quickest fix is delete one and zero the other. Both would be wrong.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m5-outliers"
+          },
+          "example": {
+            "kind": "text",
+            "title": "Two values, one process",
+            "body": [
+              "The outlier first. The framework does not give you a rule such as drop anything above a certain value. It gives you a process: outcome-level quality work addresses missing values, outliers, consistency and comparability, and the project team's role during implementation is to investigate anomalies. So you go back to the record. Was the plot area entered in the wrong unit? Did the enumerator measure a net plot or the whole field? Is this a trial plot that should not be in a farmer dataset at all? Each of those answers leads to a different, documented decision: correct the record, exclude it with a stated reason, or keep it because it is genuine.",
+              "If you simply deleted it, you would lose a true observation if it was real, and you would lose the chance to find a systematic error if it was not. Either way the audit trail would show a gap nobody can explain.",
+              "Now the blanks. A missing answer means you do not know whether that household planted the variety. Coding it as zero turns forty unknowns into forty confirmed non-adopters and silently lowers the adoption rate. Deleting the forty rows changes who is in your sample. The honest path is to follow up where you can, record the rest as missing, and report how many were missing and why.",
+              "Both decisions are exception handling, which the quality plan in the minimum package asks you to define. Write down what you flagged, what you found and what you decided. The next person to recalculate the figure, perhaps with a better method, needs to see it."
+            ]
+          },
+          "microCheck": [
+            "Q225",
+            "Q226"
+          ],
+          "recap": {
+            "bullets": [
+              "Outcome-level quality work addresses consistency, missing values, outliers and comparability.",
+              "Investigate a flagged value at source before you correct, exclude or keep it. Then document the decision.",
+              "A blank is an unknown, not a zero. Follow up, record it as missing and report the gap."
+            ],
+            "source": {
+              "section": "2.3",
+              "title": "Outcomes"
+            }
+          }
+        },
+        "glossary": [
+          "Quality assurance",
+          "Quality plan",
+          "Audit trail"
+        ]
+      },
+      {
+        "id": "L5.4",
+        "moduleId": "data-quality",
+        "title": "Representativeness: who is not in your sample?",
+        "objectiveIds": [
+          "data-quality.O4"
+        ],
+        "minutes": 4,
+        "beats": {
+          "hook": "Two thousand farmers answered the survey. That sounds like plenty. But every one of them lives within a short drive of the project office, and the report says the whole state.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m5-sample"
+          },
+          "example": {
+            "kind": "text",
+            "title": "The claim and the sample, side by side",
+            "body": [
+              "Write the claim first: adoption of the new variety among smallholder maize farmers in the state. Now describe who was actually observed: farmers in the villages that host demonstration plots, all on the main road, surveyed in the dry season when remote households are hardest to reach. The gap between those two descriptions is the representativeness problem, and no amount of cleaning closes it. A big, clean sample of the wrong population is still the wrong population.",
+              "The framework's answer runs through its aggregation rules. At regional level, estimates define inclusion criteria, weight by area or representativeness, and report uncertainty bounds. Every institutional result is reported with its coverage, uncertainty, provenance and method quality. So the Focal Point has three honest options: extend coverage to the villages that were missed, narrow the claim to the area that was sampled, or report the state figure with its coverage and limits stated plainly.",
+              "There is a tempting fourth option: use satellite imagery to stand in for the villages you could not reach. The triangulation rule is strict here. A source strengthens a claim only when it measures the same construct, population, geography and period under compatible definitions. Satellite data do not replace ground observations where the KPI method requires direct measurement. They can calibrate, contextualise, stratify or upscale, under documented rules.",
+              "Representativeness is also an accountability question. The framework asks who benefits and who may be excluded. A sample that skips remote households cannot answer that."
+            ]
+          },
+          "microCheck": [
+            "Q227",
+            "Q228"
+          ],
+          "recap": {
+            "bullets": [
+              "Representativeness asks whether the observed sample matches the population named in the claim.",
+              "Results are reported with coverage, uncertainty, provenance and method quality. Narrow the claim or extend coverage; never quietly generalise.",
+              "A source strengthens a claim only if it measures the same construct, population, geography and period."
+            ],
+            "source": {
+              "section": "2.5",
+              "title": "The Five Evidence Functions"
+            }
+          }
+        },
+        "glossary": [
+          "Representativeness",
+          "Triangulation rule",
+          "Disaggregation"
+        ]
+      },
+      {
+        "id": "L5.5",
+        "moduleId": "data-quality",
+        "title": "Validation, re-analysis and cadence",
+        "objectiveIds": [
+          "data-quality.O5"
+        ],
+        "minutes": 5,
+        "beats": {
+          "hook": "If the first quality check happens at endline, every error has had two years to spread into dashboards, reports and decisions. When should the first check happen instead?",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m5-cadence"
+          },
+          "example": {
+            "kind": "text",
+            "title": "A quality plan for the Mexico survey",
+            "body": [
+              "The minimum package asks every project to leave inception with a quality plan: validation rules, first-line checks, deduplication, exception handling, provenance, audit trail and periodic MEAL assurance. None of these is left to end-of-project reporting. Here is what that means for the adoption survey.",
+              "At entry: the form, built from the KPI reference sheet, validates as data are collected. Automated completeness, range, consistency and duplicate checks raise quality flags. A plot area of zero and a yield far outside the expected range are flagged on the spot, not discovered three months later.",
+              "Continuous or monthly: the Focal Point works through the flags, investigates exceptions close to collection, corrects records and logs system issues. The typical outputs are quality flags, corrected records and a system issue log.",
+              "Quarterly or seasonal: the evidence review looks at implementation, reach and early uptake, and ends in a decision log of what changes, who acts and by when. Clean data make that meeting useful.",
+              "Annual: institutional KPIs are recomputed from eligible records, with coverage, uncertainty and evidence gaps reviewed. Because the records and their provenance were kept, a method improvement next year can be applied to this year's data. That is what re-analysis means. Frequency is adapted to seasonality and project risk, but the sequence is the same."
+            ]
+          },
+          "microCheck": [
+            "Q229"
+          ],
+          "recap": {
+            "bullets": [
+              "Continuous or monthly checks resolve exceptions close to collection. Outputs: quality flags, corrected records, system issue log.",
+              "The quality plan sets validation rules, first-line checks, deduplication, exception handling, provenance, audit trail and periodic assurance at inception.",
+              "Annual KPI runs recompute from eligible records, so kept records can be re-analysed as methods improve."
+            ],
+            "source": {
+              "section": "5.7",
+              "title": "Operating Cadence and Assurance"
+            }
+          }
+        },
+        "glossary": [
+          "Operating cadence",
+          "Quality plan",
+          "Audit trail",
+          "KPI engine",
+          "Decision log"
+        ]
+      },
+      {
+        "id": "L5.6",
+        "moduleId": "data-quality",
+        "title": "Roles: who checks what, and when",
+        "objectiveIds": [
+          "data-quality.O5"
+        ],
+        "minutes": 5,
+        "beats": {
+          "hook": "The duplicates are found. The outlier is explained. Who was supposed to do that, who follows up when it keeps happening, and who writes the rule so it stops happening everywhere?",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m5-roles"
+          },
+          "example": {
+            "kind": "interactive",
+            "title": "Who does what?",
+            "widget": "sorter",
+            "prompt": "Sort each quality task to the role the framework gives it. Think in layers: project, regional, core, infrastructure.",
+            "bins": [
+              {
+                "id": "focal-point",
+                "label": "Project MEAL Focal Point",
+                "hint": "Keeps source records and runs first-line checks close to implementation."
+              },
+              {
+                "id": "regional-lead",
+                "label": "Regional MEAL Lead",
+                "hint": "Follows up gaps across the regional portfolio and coaches Focal Points."
+              },
+              {
+                "id": "es-analyst",
+                "label": "Evidence Systems, Data Quality & Reporting Analyst",
+                "hint": "Core Layer. Defines the rules and monitors recurrent issues."
+              },
+              {
+                "id": "data-group",
+                "label": "Data Group",
+                "hint": "Owns the infrastructure that runs the checks."
+              }
+            ],
+            "cards": [
+              {
+                "label": "Run first-line quality checks on this month's adoption records",
+                "bin": "focal-point",
+                "why": "First-line quality checks are a core responsibility of the Project MEAL Focal Point."
+              },
+              {
+                "label": "Keep the project's source-level records up to date",
+                "bin": "focal-point",
+                "why": "The Focal Point coordinates monitoring and keeps source-level records."
+              },
+              {
+                "label": "Investigate the anomalies the system flagged this week",
+                "bin": "focal-point",
+                "why": "During implementation, the project role is to maintain timely capture and investigate anomalies."
+              },
+              {
+                "label": "Follow up recurring data-quality gaps with three project teams in the region",
+                "bin": "regional-lead",
+                "why": "Regional MEAL Leads follow up data-quality and reporting gaps with project teams, with support from Pillar B."
+              },
+              {
+                "label": "Review KPI completeness across the regional dashboard",
+                "bin": "regional-lead",
+                "why": "Reviewing KPI completeness and performance through regional dashboards is a Regional MEAL Lead task."
+              },
+              {
+                "label": "Coach a new Focal Point through an identifier problem",
+                "bin": "regional-lead",
+                "why": "Regional MEAL Leads coach Project MEAL Focal Points and guide their technical work."
+              },
+              {
+                "label": "Define the deduplication and provenance rules for adoption records",
+                "bin": "es-analyst",
+                "why": "The analyst defines and implements validation, completeness, consistency, deduplication and provenance rules. Pillar B is accountable; the Data Group builds them into the system."
+              },
+              {
+                "label": "Maintain the institutional MEAL data dictionary",
+                "bin": "es-analyst",
+                "why": "The data dictionary is maintained by the Evidence Systems, Data Quality and Reporting Analyst."
+              },
+              {
+                "label": "Monitor recurrent data-quality issues across projects and support remediation",
+                "bin": "es-analyst",
+                "why": "Monitoring recurrent issues and supporting remediation sits with the analyst, who works with Regional MEAL Leads to resolve gaps."
+              },
+              {
+                "label": "Run and maintain the infrastructure that executes the checks",
+                "bin": "data-group",
+                "why": "The Data Group owns the infrastructure. MEAL owns the content: indicators, data dictionary and quality rules."
+              },
+              {
+                "label": "Software engineering for the MEAL data system",
+                "bin": "data-group",
+                "why": "Software engineering, advanced data science and geospatial processing remain with the Data Group and other technical functions."
+              }
+            ]
+          },
+          "microCheck": [
+            "Q230"
+          ],
+          "recap": {
+            "bullets": [
+              "Focal Points keep source records and run first-line checks. Regional MEAL Leads follow up gaps and are accountable for periodic QA.",
+              "The Evidence Systems, Data Quality and Reporting Analyst defines the rules and monitors recurrent issues centrally.",
+              "MEAL owns the quality rules. The Data Group owns the infrastructure that runs them."
+            ],
+            "source": {
+              "section": "5.8",
+              "title": "MEAL Team Structure and Roles"
+            }
+          }
+        },
+        "glossary": [
+          "Project MEAL Focal Point",
+          "Regional MEAL Lead",
+          "Core Layer",
+          "First-line quality checks"
+        ]
+      }
+    ],
+    "storyboards": [
+      {
+        "id": "sb-m5-hero",
+        "title": "The quality dial",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 8,
+            "narration": "A survey arrives from a seed-systems project in Mexico. Before you report anything from it, you need to know how good it is.",
+            "scene": {
+              "kind": "title",
+              "title": "How good is this dataset?",
+              "subtitle": "2,000 rows. Six questions."
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 16,
+            "narration": "The framework checks six things: completeness, accuracy, consistency, timeliness, uniqueness and representativeness. This dataset has a problem on every one. The needle sits near the bottom.",
+            "scene": {
+              "kind": "dial",
+              "segments": [
+                "Completeness",
+                "Accuracy",
+                "Consistency",
+                "Timeliness",
+                "Uniqueness",
+                "Representativeness"
+              ],
+              "value": 0.1,
+              "label": "As received",
+              "flagged": [0, 1, 2, 3, 4, 5]
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 14,
+            "narration": "Start with uniqueness. Three rows for one farmer become one, because the registry uses a persistent identifier, not a name. The needle moves.",
+            "scene": {
+              "kind": "dial",
+              "segments": [
+                "Completeness",
+                "Accuracy",
+                "Consistency",
+                "Timeliness",
+                "Uniqueness",
+                "Representativeness"
+              ],
+              "value": 0.3,
+              "label": "Duplicates removed",
+              "flagged": [0, 1, 2, 3, 5]
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 16,
+            "narration": "Accuracy and consistency next. Range checks flag the impossible yield and the zero-area plot for investigation at source. Units are standardised with the data dictionary.",
+            "scene": {
+              "kind": "dial",
+              "segments": [
+                "Completeness",
+                "Accuracy",
+                "Consistency",
+                "Timeliness",
+                "Uniqueness",
+                "Representativeness"
+              ],
+              "value": 0.55,
+              "label": "Values investigated, units standardised",
+              "flagged": [0, 3, 5]
+            }
+          },
+          {
+            "id": "f5",
+            "seconds": 14,
+            "narration": "Completeness and timeliness. The blanks are followed up, not set to zero. Monthly checks will catch the next batch close to collection, not three months later.",
+            "scene": {
+              "kind": "dial",
+              "segments": [
+                "Completeness",
+                "Accuracy",
+                "Consistency",
+                "Timeliness",
+                "Uniqueness",
+                "Representativeness"
+              ],
+              "value": 0.8,
+              "label": "Gaps followed up, monthly checks set",
+              "flagged": [5]
+            }
+          },
+          {
+            "id": "f6",
+            "seconds": 16,
+            "narration": "The last segment does not move by cleaning. Only villages near the road were surveyed. You extend coverage, or you narrow the claim to the area you sampled and say so. Then the needle can move.",
+            "scene": {
+              "kind": "dial",
+              "segments": [
+                "Completeness",
+                "Accuracy",
+                "Consistency",
+                "Timeliness",
+                "Uniqueness",
+                "Representativeness"
+              ],
+              "value": 0.9,
+              "label": "Claim narrowed to the sampled area",
+              "flagged": []
+            }
+          },
+          {
+            "id": "f7",
+            "seconds": 8,
+            "narration": "Six dimensions, one dial. Clean what you can. Document what you cannot. Never report what you have not checked.",
+            "scene": {
+              "kind": "title",
+              "title": "Six dimensions, one dial",
+              "subtitle": "Clean what you can. Document what you cannot.",
+              "stamp": "§2.5"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m5-ids",
+        "title": "Can you find this observation again?",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 8,
+            "narration": "Here is a report figure: 1,240 adopting farmers. Try to get from it back to one farmer, one plot, one form.",
+            "scene": {
+              "kind": "title",
+              "title": "1,240 adopting farmers",
+              "subtitle": "Where did this number come from?"
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 18,
+            "narration": "Follow one observation forward. A farmer is registered with a persistent identifier. Her adoption answer is recorded against it, with its provenance: form, date, enumerator, method. A later correction is logged in the audit trail. The KPI engine computes the figure from records like hers.",
+            "scene": {
+              "kind": "chain",
+              "steps": [
+                {
+                  "label": "Farmer registered",
+                  "detail": "Persistent ID",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Answer recorded",
+                  "detail": "Form, date, enumerator, method",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Correction logged",
+                  "detail": "Audit trail: old, new, reason",
+                  "tone": "gold"
+                },
+                {
+                  "label": "KPI computed",
+                  "detail": "Coverage, uncertainty, method version",
+                  "tone": "green"
+                }
+              ],
+              "traveler": true
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 14,
+            "narration": "Now try the same walk with a name as the identifier. Three spellings, two farmers with the same name, a phone number that changed. The chain breaks at the first link.",
+            "scene": {
+              "kind": "chain",
+              "steps": [
+                {
+                  "label": "Name recorded",
+                  "detail": "Three spellings, two namesakes",
+                  "tone": "paper"
+                },
+                {
+                  "label": "Answer recorded",
+                  "detail": "Which farmer?",
+                  "tone": "paper"
+                },
+                {
+                  "label": "Total in spreadsheet",
+                  "detail": "No source records",
+                  "tone": "paper"
+                }
+              ],
+              "links": [
+                {
+                  "label": "Cannot link",
+                  "broken": true
+                },
+                {
+                  "label": "Cannot recalculate",
+                  "broken": true
+                }
+              ],
+              "stamp": "No provenance"
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 12,
+            "narration": "With identifiers and provenance, a figure can be audited, recalculated when the method improves, and reused by the next project. Without them it is just a number.",
+            "scene": {
+              "kind": "split",
+              "left": {
+                "title": "Total only",
+                "lines": [
+                  "1,240 adopters",
+                  "No source records",
+                  "No method version"
+                ],
+                "tone": "paper"
+              },
+              "right": {
+                "title": "Records with provenance",
+                "lines": [
+                  "Persistent IDs",
+                  "Form, date, method per record",
+                  "Audit trail of changes",
+                  "Recalculable"
+                ],
+                "tone": "green"
+              },
+              "gap": "Same number. Only one can be audited."
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m5-outliers",
+        "title": "Before you delete anything",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 10,
+            "narration": "Three values from the Mexico survey. A yield far above every neighbour. A plot area of zero. Forty blank adoption answers. Each one tempts a quick fix.",
+            "scene": {
+              "kind": "cards",
+              "layout": "row",
+              "items": [
+                {
+                  "label": "Yield far above neighbours",
+                  "detail": "Delete it?",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Plot area: 0",
+                  "detail": "Ignore it?",
+                  "tone": "gold"
+                },
+                {
+                  "label": "40 blank answers",
+                  "detail": "Zero them?",
+                  "tone": "gold"
+                }
+              ]
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 16,
+            "narration": "The framework gives a process, not a threshold. A check flags the value. Someone investigates it at source. A decision follows: correct, exclude with a reason, or keep because it is genuine. Then it is documented in the audit trail.",
+            "scene": {
+              "kind": "chain",
+              "steps": [
+                {
+                  "label": "Flag",
+                  "detail": "Range or consistency check",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Investigate",
+                  "detail": "Back to the form, the plot, the enumerator",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Decide",
+                  "detail": "Correct, exclude with reason, or keep",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Document",
+                  "detail": "Audit trail",
+                  "tone": "green"
+                }
+              ],
+              "traveler": true
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 14,
+            "narration": "Watch the two tempting fixes bounce. A blank tries to become a zero and comes back: it is unknown, so follow it up. The extreme yield tries the delete bin and comes back: investigate first.",
+            "scene": {
+              "kind": "sort",
+              "bins": [
+                "Unknown: follow up",
+                "Zero",
+                "Delete",
+                "Investigate first"
+              ],
+              "cards": [
+                {
+                  "label": "Blank adoption answer",
+                  "bin": 0,
+                  "wrong": 1
+                },
+                {
+                  "label": "Extreme yield value",
+                  "bin": 3,
+                  "wrong": 2
+                },
+                {
+                  "label": "Plot area of zero",
+                  "bin": 3,
+                  "wrong": 2
+                }
+              ],
+              "stamp": "No shortcuts"
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 8,
+            "narration": "Investigate before you delete. Record the unknown as unknown. Write down what you did, so the next analyst can see it.",
+            "scene": {
+              "kind": "title",
+              "title": "Investigate. Decide. Document.",
+              "subtitle": "A blank is not a zero. An outlier is not an error until you have checked.",
+              "stamp": "§2.3"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m5-sample",
+        "title": "Who is not in your sample?",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 16,
+            "narration": "On the left, who was surveyed: two thousand farmers in roadside villages that host demonstration plots, reached in the dry season. On the right, who the claim is about: all smallholder maize farmers in the state. These are not the same population.",
+            "scene": {
+              "kind": "split",
+              "left": {
+                "title": "Sampled",
+                "lines": [
+                  "2,000 farmers",
+                  "Roadside villages only",
+                  "Villages with demonstration plots",
+                  "Dry season visits"
+                ],
+                "value": 2000,
+                "tone": "gold"
+              },
+              "right": {
+                "title": "Population in the claim",
+                "lines": [
+                  "All smallholders in the state",
+                  "Remote villages included",
+                  "Villages without demonstration plots",
+                  "All seasons"
+                ],
+                "tone": "sky"
+              },
+              "gap": "Who is missing?"
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 14,
+            "narration": "Three honest options. Extend coverage to the villages you missed. Narrow the claim to the area you sampled. Or report the wider figure with its coverage, uncertainty and limits stated plainly. Quietly generalising is not on the list.",
+            "scene": {
+              "kind": "cards",
+              "layout": "row",
+              "items": [
+                {
+                  "label": "Extend coverage",
+                  "detail": "Reach the missing villages",
+                  "tone": "green"
+                },
+                {
+                  "label": "Narrow the claim",
+                  "detail": "Report for the sampled area",
+                  "tone": "green"
+                },
+                {
+                  "label": "State the limits",
+                  "detail": "Coverage, uncertainty, method quality",
+                  "tone": "green"
+                },
+                {
+                  "label": "Generalise quietly",
+                  "detail": "Not an option",
+                  "tone": "paper"
+                }
+              ],
+              "spotlight": [0, 1, 2]
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 10,
+            "narration": "A big sample of the wrong population is still the wrong population. Size does not fix representativeness. Coverage and honest limits do.",
+            "scene": {
+              "kind": "title",
+              "title": "Big is not representative",
+              "subtitle": "Compare the sample with the population in the claim.",
+              "stamp": "§2.5, 3.3"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m5-cadence",
+        "title": "Check monthly, not at endline",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 14,
+            "narration": "Quality runs as a loop, not an event. Data are captured. The form validates at entry. Automated checks raise flags. Exceptions are resolved close to collection. The log records what changed.",
+            "scene": {
+              "kind": "loop",
+              "steps": [
+                {
+                  "label": "Capture",
+                  "detail": "Form built from the KPI sheet"
+                },
+                {
+                  "label": "Validate at entry",
+                  "detail": "Range, completeness, consistency, duplicates"
+                },
+                {
+                  "label": "Flag exceptions",
+                  "detail": "Quality flags"
+                },
+                {
+                  "label": "Resolve close to collection",
+                  "detail": "Investigate, correct, document"
+                },
+                {
+                  "label": "Log",
+                  "detail": "Corrected records, system issues"
+                }
+              ],
+              "active": 1
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 12,
+            "narration": "This loop runs continuously or monthly. Its outputs are quality flags, corrected records and a system issue log. Nothing waits for the annual report.",
+            "scene": {
+              "kind": "loop",
+              "steps": [
+                {
+                  "label": "Capture"
+                },
+                {
+                  "label": "Validate at entry"
+                },
+                {
+                  "label": "Flag exceptions"
+                },
+                {
+                  "label": "Resolve close to collection"
+                },
+                {
+                  "label": "Log"
+                }
+              ],
+              "active": 3,
+              "log": [
+                "Quality flags",
+                "Corrected records",
+                "System issue log"
+              ]
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 16,
+            "narration": "The monthly loop sits inside a wider cadence. Quarterly or seasonal reviews turn clean data into decisions. The annual run recomputes KPIs from eligible records and reviews coverage, uncertainty and gaps. Studies come at midterm, endline or when a trigger fires.",
+            "scene": {
+              "kind": "cards",
+              "layout": "row",
+              "items": [
+                {
+                  "label": "Continuous / monthly",
+                  "detail": "Flags, corrected records, issue log",
+                  "tone": "green"
+                },
+                {
+                  "label": "Quarterly / seasonal",
+                  "detail": "Evidence review, decision log",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Annual",
+                  "detail": "Recompute KPIs from eligible records",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Midterm / endline / trigger",
+                  "detail": "Outcome and impact studies",
+                  "tone": "ink"
+                }
+              ],
+              "spotlight": [0]
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 8,
+            "narration": "Because the records and their provenance are kept, this year's figure can be recalculated next year with a better method. Check monthly. Re-analyse annually.",
+            "scene": {
+              "kind": "title",
+              "title": "Check monthly. Re-analyse annually.",
+              "subtitle": "Exceptions resolved close to collection, never at endline.",
+              "stamp": "§5.7"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m5-roles",
+        "title": "Who checks what",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 16,
+            "narration": "Quality has four layers. The Focal Point keeps source records and runs first-line checks. The Regional MEAL Lead follows up gaps across projects. The Evidence Systems analyst writes the rules and watches recurrent issues. The Data Group runs the infrastructure.",
+            "scene": {
+              "kind": "stack",
+              "layers": [
+                {
+                  "label": "Data Group",
+                  "detail": "Infrastructure that runs the checks",
+                  "tone": "ink"
+                },
+                {
+                  "label": "Evidence Systems, Data Quality & Reporting Analyst",
+                  "detail": "Rules, data dictionary, recurrent issues",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Regional MEAL Lead",
+                  "detail": "Follow-up of gaps, coaching, periodic QA",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Project MEAL Focal Point",
+                  "detail": "Source records, first-line checks",
+                  "tone": "green"
+                }
+              ]
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 16,
+            "narration": "Watch four tasks find their owner. First-line checks try the Data Group and bounce back to the Focal Point. Follow-up across the region lands with the Regional Lead. The deduplication rule goes to the analyst. The server goes to the Data Group.",
+            "scene": {
+              "kind": "sort",
+              "bins": [
+                "Focal Point",
+                "Regional MEAL Lead",
+                "Evidence Systems analyst",
+                "Data Group"
+              ],
+              "cards": [
+                {
+                  "label": "First-line checks",
+                  "bin": 0,
+                  "wrong": 3
+                },
+                {
+                  "label": "Follow up gaps across projects",
+                  "bin": 1
+                },
+                {
+                  "label": "Write the deduplication rule",
+                  "bin": 2
+                },
+                {
+                  "label": "Run the infrastructure",
+                  "bin": 3
+                }
+              ]
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 8,
+            "narration": "Central standards, distributed implementation, institutional integration. Each task has one owner, and the handoffs are explicit.",
+            "scene": {
+              "kind": "title",
+              "title": "One owner per task",
+              "subtitle": "Rules centrally. Checks at the project. Follow-up in the region.",
+              "stamp": "§5.8"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "tag": "missing-as-zero",
+      "description": "You treated a blank or missing value as a confirmed zero. A blank means you do not know; coding it as zero invents an observation and hides the gap.",
+      "remedyLessonIds": [
+        "L5.3"
+      ]
+    },
+    {
+      "tag": "delete-outliers",
+      "description": "You removed or capped an unusual value without investigating its cause. An outlier is not an error until you have checked the record at source and documented the decision.",
+      "remedyLessonIds": [
+        "L5.3"
+      ]
+    },
+    {
+      "tag": "big-sample-is-representative",
+      "description": "You assumed that a large or clean sample can speak for the whole population in the claim. Size does not fix who was left out.",
+      "remedyLessonIds": [
+        "L5.4",
+        "L5.1"
+      ]
+    },
+    {
+      "tag": "name-as-identifier",
+      "description": "You used a name, phone number or project-specific number to link records. The framework asks for identifiers that are unique and stable across projects and years.",
+      "remedyLessonIds": [
+        "L5.2"
+      ]
+    },
+    {
+      "tag": "total-without-provenance",
+      "description": "You accepted a reported total, screenshot or summary as sufficient. Without record-level provenance and an audit trail, a figure cannot be audited or recalculated.",
+      "remedyLessonIds": [
+        "L5.2",
+        "L5.5"
+      ]
+    },
+    {
+      "tag": "qa-only-at-endline",
+      "description": "You placed quality checks at endline or at the annual report. The cadence runs continuous or monthly checks, with exceptions resolved close to collection.",
+      "remedyLessonIds": [
+        "L5.5"
+      ]
+    },
+    {
+      "tag": "qa-is-central-only",
+      "description": "You handed first-line quality work to central MEAL or the Data Group. Project teams run first-line checks and keep source records; central roles set rules and follow up.",
+      "remedyLessonIds": [
+        "L5.6"
+      ]
+    }
+  ],
+  "diagnosticTags": {
+    "Q041": {
+      "objectiveIds": [
+        "data-quality.O1"
+      ]
+    },
+    "Q042": {
+      "objectiveIds": [
+        "data-quality.O2"
+      ],
+      "misconceptions": {
+        "c": "name-as-identifier",
+        "a": "name-as-identifier"
+      }
+    },
+    "Q043": {
+      "objectiveIds": [
+        "data-quality.O3"
+      ],
+      "misconceptions": {
+        "a": "delete-outliers",
+        "b": "missing-as-zero",
+        "c": "total-without-provenance"
+      }
+    },
+    "Q044": {
+      "objectiveIds": [
+        "data-quality.O4",
+        "data-quality.O1"
+      ]
+    },
+    "Q045": {
+      "objectiveIds": [
+        "data-quality.O2"
+      ],
+      "misconceptions": {
+        "b": "total-without-provenance",
+        "c": "total-without-provenance"
+      }
+    },
+    "Q046": {
+      "objectiveIds": [
+        "data-quality.O5"
+      ],
+      "misconceptions": {
+        "c": "qa-only-at-endline"
+      }
+    },
+    "Q047": {
+      "objectiveIds": [
+        "data-quality.O2"
+      ],
+      "misconceptions": {
+        "a": "total-without-provenance",
+        "c": "total-without-provenance",
+        "d": "total-without-provenance"
+      }
+    },
+    "Q048": {
+      "objectiveIds": [
+        "data-quality.O5"
+      ],
+      "misconceptions": {
+        "d": "qa-only-at-endline"
+      }
+    },
+    "Q049": {
+      "objectiveIds": [
+        "data-quality.O5"
+      ],
+      "misconceptions": {
+        "a": "qa-is-central-only",
+        "d": "qa-is-central-only"
+      }
+    },
+    "Q050": {
+      "objectiveIds": [
+        "data-quality.O5"
+      ]
+    }
+  },
+  "questions": [
+    {
+      "id": "Q221",
+      "topicId": "data-quality",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "data-quality.O1"
+      ],
+      "question": "In an adoption dataset from a seed-systems project in Mexico, the same farmer appears three times under slightly different spellings. Which quality dimension is failing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Timeliness"
+        },
+        {
+          "id": "b",
+          "text": "Uniqueness"
+        },
+        {
+          "id": "c",
+          "text": "Representativeness"
+        },
+        {
+          "id": "d",
+          "text": "Completeness"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Uniqueness is the control that catches the same entity recorded more than once, and quality assurance de-duplicates records. Completeness is about missing values, not repeated ones.",
+      "source": {
+        "section": "2.5",
+        "title": "The Five Evidence Functions",
+        "kind": "application"
+      },
+      "reviewTip": "Read the Quality Assurance row of the five functions table and list its six controls."
+    },
+    {
+      "id": "Q222",
+      "topicId": "data-quality",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "data-quality.O1"
+      ],
+      "question": "Plot area is recorded in hectares in one municipality and in a local unit in another, with no conversion noted. Which dimension does this fail?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Consistency"
+        },
+        {
+          "id": "b",
+          "text": "Uniqueness"
+        },
+        {
+          "id": "c",
+          "text": "Timeliness"
+        },
+        {
+          "id": "d",
+          "text": "Representativeness"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Mixed formats and units are a consistency problem, which quality assurance addresses by standardising. Uniqueness concerns duplicate records, not differing units.",
+      "source": {
+        "section": "2.5",
+        "title": "The Five Evidence Functions",
+        "kind": "application"
+      },
+      "reviewTip": "Match each of the six controls to one concrete problem in a dataset you know."
+    },
+    {
+      "id": "Q223",
+      "topicId": "data-quality",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "data-quality.O2"
+      ],
+      "question": "What does the framework require of identifiers for farmers, plots, households, organisations, trials and projects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Renewed each year so old records are not confused with new ones"
+        },
+        {
+          "id": "b",
+          "text": "Assigned by each project in whatever format suits its forms"
+        },
+        {
+          "id": "c",
+          "text": "Unique and stable across projects and years"
+        },
+        {
+          "id": "d",
+          "text": "Built from the participant's name and village of residence"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Persistent identifiers are unique, stable IDs that hold across projects and years, so delivery can be linked to later uptake and double counting is prevented. An identifier that changes each year or each project breaks that link.",
+      "source": {
+        "section": "4.1",
+        "title": "Required Functionalities",
+        "kind": "direct"
+      },
+      "reviewTip": "Read the persistent identifiers row of the nine functionalities."
+    },
+    {
+      "id": "Q224",
+      "topicId": "data-quality",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "data-quality.O2"
+      ],
+      "question": "Why does the framework keep the underlying records and their provenance, rather than only the reported totals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "So that project reports can be shortened to a single total"
+        },
+        {
+          "id": "b",
+          "text": "So that results can be recalculated, audited and reused as methods improve"
+        },
+        {
+          "id": "c",
+          "text": "So that each investor can keep its own copy of the dataset"
+        },
+        {
+          "id": "d",
+          "text": "So that enumerators can be paid per record collected"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The MEAL data system keeps the underlying records and their provenance so institutional results can be recalculated, audited and reused as methods improve. A total on its own supports none of that.",
+      "source": {
+        "section": "2.5",
+        "title": "The Five Evidence Functions",
+        "kind": "application"
+      },
+      "reviewTip": "Read the paragraph after the five functions table about what the data system keeps."
+    },
+    {
+      "id": "Q225",
+      "topicId": "data-quality",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "data-quality.O3"
+      ],
+      "question": "Forty households left the question on planting the new variety blank. What should the team do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Record them as non-adopters so that the total can be reported on time"
+        },
+        {
+          "id": "b",
+          "text": "Drop the forty households from every analysis of the dataset"
+        },
+        {
+          "id": "c",
+          "text": "Treat the answer as unknown, follow up where possible and document the gap"
+        },
+        {
+          "id": "d",
+          "text": "Replace each blank with the most common answer in the district"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Outcome-level quality work addresses missing values, and a blank is an unknown, not a zero. Recording them as non-adopters invents forty observations and lowers the adoption rate without evidence.",
+      "source": {
+        "section": "2.3",
+        "title": "Outcomes",
+        "kind": "application"
+      },
+      "reviewTip": "Separate the question of what the value is from the question of how to report that you do not know it."
+    },
+    {
+      "id": "Q226",
+      "topicId": "data-quality",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "data-quality.O3"
+      ],
+      "question": "A smallholder maize plot shows a yield several times higher than any other plot in the dataset. What is the first step?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Delete the record so that it cannot distort the average"
+        },
+        {
+          "id": "b",
+          "text": "Investigate the record: check plot area, units and the source form"
+        },
+        {
+          "id": "c",
+          "text": "Keep it unchanged and publish the average without comment"
+        },
+        {
+          "id": "d",
+          "text": "Cap the value at the next highest plot in the dataset"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "During implementation, the project role is to investigate anomalies, and quality work addresses outliers before comparison. Deleting or capping without checking loses a genuine observation if it was real and hides a systematic error if it was not.",
+      "source": {
+        "section": "5.1",
+        "title": "Project Lifecycle: MEAL from Proposal to Impact",
+        "kind": "application"
+      },
+      "reviewTip": "Read the project role in Phase 5 of the lifecycle table."
+    },
+    {
+      "id": "Q227",
+      "topicId": "data-quality",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "data-quality.O4"
+      ],
+      "question": "Which question tests the representativeness of a dataset?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Does the sample match the population the claim is about?"
+        },
+        {
+          "id": "b",
+          "text": "Are all the recorded values within the permitted range?"
+        },
+        {
+          "id": "c",
+          "text": "Were the records submitted before the review meeting?"
+        },
+        {
+          "id": "d",
+          "text": "Is each farmer counted exactly once in the dataset?"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Representativeness is about whether the observed units can stand for the population named in the claim. The other questions test accuracy, timeliness and uniqueness.",
+      "source": {
+        "section": "2.5",
+        "title": "The Five Evidence Functions",
+        "kind": "direct"
+      },
+      "reviewTip": "Write the claim and the sample description side by side and look for the gap."
+    },
+    {
+      "id": "Q228",
+      "topicId": "data-quality",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "data-quality.O4"
+      ],
+      "question": "A team surveyed 2,000 farmers along the main road and wants to report adoption for the whole state. What does the framework expect?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Report the state figure, because 2,000 is a large sample"
+        },
+        {
+          "id": "b",
+          "text": "Report with coverage and limits stated, or narrow the claim to the area sampled"
+        },
+        {
+          "id": "c",
+          "text": "Discard the survey, because it cannot be used for anything"
+        },
+        {
+          "id": "d",
+          "text": "Double the sample size along the same road next season"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Results are reported with their coverage, uncertainty, provenance and method quality, and aggregation defines inclusion criteria and weights by representativeness. A larger sample of the same roadside villages does not change who is missing.",
+      "source": {
+        "section": "3.3",
+        "title": "From Observation-Level Data to Decision-Relevant Insights",
+        "kind": "application"
+      },
+      "reviewTip": "Read how institutional values are reported in 3.3 and the regional row of the yield table in 3.2."
+    },
+    {
+      "id": "Q229",
+      "topicId": "data-quality",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "data-quality.O5"
+      ],
+      "question": "What are the typical outputs of the continuous or monthly cadence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Evaluation findings and an updated impact narrative"
+        },
+        {
+          "id": "b",
+          "text": "A portfolio dashboard and an evidence-gap register"
+        },
+        {
+          "id": "c",
+          "text": "A decision log of what changes, who acts and by when"
+        },
+        {
+          "id": "d",
+          "text": "Quality flags, corrected records and a system issue log"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The continuous or monthly row of the cadence table lists quality flags, corrected records and a system issue log. The decision log belongs to the quarterly review and the dashboard and gap register to the annual run.",
+      "source": {
+        "section": "5.7",
+        "title": "Operating Cadence and Assurance",
+        "kind": "direct"
+      },
+      "reviewTip": "Read the four rows of the cadence table and their typical outputs."
+    },
+    {
+      "id": "Q230",
+      "topicId": "data-quality",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "data-quality.O5"
+      ],
+      "question": "Data-quality gaps keep appearing in several projects in one region. Who follows them up with the project teams?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Regional MEAL Lead, with support from Pillar B"
+        },
+        {
+          "id": "b",
+          "text": "The MEAL Group Lead, in person with each project"
+        },
+        {
+          "id": "c",
+          "text": "The Data Group, through the system issue log"
+        },
+        {
+          "id": "d",
+          "text": "The Evaluation and Research Specialist"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Regional MEAL Leads follow up data-quality and reporting gaps with project teams, supported by Pillar B. The Group Lead reviews portfolio-level evidence quality but does not chase individual project gaps.",
+      "source": {
+        "section": "5.8",
+        "title": "MEAL Team Structure and Roles",
+        "kind": "application"
+      },
+      "reviewTip": "Read the Regional MEAL Lead responsibilities in 5.8."
+    },
+    {
+      "id": "Q231",
+      "topicId": "data-quality",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "data-quality.O1"
+      ],
+      "question": "A clean, complete adoption dataset reaches the Focal Point three months after the season, after the review that needed it. Which dimension failed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Accuracy"
+        },
+        {
+          "id": "b",
+          "text": "Completeness"
+        },
+        {
+          "id": "c",
+          "text": "Uniqueness"
+        },
+        {
+          "id": "d",
+          "text": "Timeliness"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Timeliness is one of the six quality controls, and data that arrive after the decision they were meant to inform fail it. Completeness and accuracy were fine here; the problem was when the data arrived.",
+      "source": {
+        "section": "2.5",
+        "title": "The Five Evidence Functions",
+        "kind": "application"
+      },
+      "reviewTip": "Check each dataset against all six controls, not only the ones that are easy to see."
+    },
+    {
+      "id": "Q232",
+      "topicId": "data-quality",
+      "difficulty": "advanced",
+      "pool": "check",
+      "objectiveIds": [
+        "data-quality.O1",
+        "data-quality.O4"
+      ],
+      "question": "A dataset has every row filled, no duplicates, values in range and arrived on time. It was collected only in villages near the project office. What can you say about its quality?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It passes all six quality dimensions"
+        },
+        {
+          "id": "b",
+          "text": "It fails completeness because some villages are absent"
+        },
+        {
+          "id": "c",
+          "text": "It fails uniqueness because villages are repeated"
+        },
+        {
+          "id": "d",
+          "text": "It passes five dimensions and fails representativeness"
+        }
+      ],
+      "correctOptionId": "d",
+      "misconceptions": {
+        "a": "big-sample-is-representative"
+      },
+      "explanation": "Representativeness is a separate control: a dataset can be complete, accurate, consistent, timely and unique and still not stand for the population in the claim. Completeness concerns missing values in the records collected, not villages that were never sampled.",
+      "source": {
+        "section": "2.5",
+        "title": "The Five Evidence Functions",
+        "kind": "application"
+      },
+      "reviewTip": "Keep representativeness as its own check, after the other five pass."
+    },
+    {
+      "id": "Q233",
+      "topicId": "data-quality",
+      "difficulty": "foundation",
+      "pool": "check",
+      "objectiveIds": [
+        "data-quality.O1"
+      ],
+      "question": "Which statement about the six quality dimensions is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Passing one dimension does not guarantee passing the others"
+        },
+        {
+          "id": "b",
+          "text": "A large dataset passes representativeness automatically"
+        },
+        {
+          "id": "c",
+          "text": "Duplicate records are a completeness problem"
+        },
+        {
+          "id": "d",
+          "text": "Timeliness only matters at endline reporting"
+        }
+      ],
+      "correctOptionId": "a",
+      "misconceptions": {
+        "b": "big-sample-is-representative",
+        "d": "qa-only-at-endline"
+      },
+      "explanation": "The six controls are separate, so a dataset must be checked against each one. Duplicates are a uniqueness problem, size does not settle representativeness, and timeliness matters whenever a decision depends on the data.",
+      "source": {
+        "section": "2.5",
+        "title": "The Five Evidence Functions",
+        "kind": "direct"
+      },
+      "reviewTip": "Apply the six controls one by one to a dataset you have handled recently."
+    },
+    {
+      "id": "Q234",
+      "topicId": "data-quality",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "data-quality.O2"
+      ],
+      "question": "Two projects in the same region record the same farmer. One uses her name, the other a phone number that changed last year. What does the framework ask for instead?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A name-plus-village key agreed between the two projects"
+        },
+        {
+          "id": "b",
+          "text": "A separate total from each project, added together"
+        },
+        {
+          "id": "c",
+          "text": "A persistent, unique identifier shared across projects and years"
+        },
+        {
+          "id": "d",
+          "text": "A note in each report that overlap between them is possible"
+        }
+      ],
+      "correctOptionId": "c",
+      "misconceptions": {
+        "a": "name-as-identifier",
+        "b": "total-without-provenance"
+      },
+      "explanation": "Persistent identifiers are unique and stable across projects and years, which is what links delivery to later uptake and prevents double counting. A name-plus-village key still breaks on spelling, namesakes and moves.",
+      "source": {
+        "section": "4.1",
+        "title": "Required Functionalities",
+        "kind": "application"
+      },
+      "reviewTip": "Read why MEAL needs persistent identifiers in the 4.1 table."
+    },
+    {
+      "id": "Q235",
+      "topicId": "data-quality",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "data-quality.O2"
+      ],
+      "question": "An investor asks how the figure of 1,240 adopting farmers was calculated. The team has only the total in a spreadsheet. What is missing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A larger sample of farmers drawn from the same districts"
+        },
+        {
+          "id": "b",
+          "text": "A signed approval of the total from the project lead"
+        },
+        {
+          "id": "c",
+          "text": "Record-level provenance and an audit trail linking the figure to source records"
+        },
+        {
+          "id": "d",
+          "text": "A more recent dashboard export showing the same total"
+        }
+      ],
+      "correctOptionId": "c",
+      "misconceptions": {
+        "b": "total-without-provenance",
+        "d": "total-without-provenance"
+      },
+      "explanation": "The system keeps record-level provenance and an audit trail so that institutional figures can be audited and recalculated. A signature or a dashboard export vouches for the number without showing where it came from.",
+      "source": {
+        "section": "4.1",
+        "title": "Required Functionalities",
+        "kind": "application"
+      },
+      "reviewTip": "Pick a figure from your last report and try to reach one source record from it."
+    },
+    {
+      "id": "Q236",
+      "topicId": "data-quality",
+      "difficulty": "advanced",
+      "pool": "check",
+      "objectiveIds": [
+        "data-quality.O2"
+      ],
+      "question": "The KPI Toolbox updates the method for an adoption indicator. Which project can rerun last year's figure under the new method?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The one that kept its investor report as a signed PDF"
+        },
+        {
+          "id": "b",
+          "text": "The one that kept the reported total and the enumerator names"
+        },
+        {
+          "id": "c",
+          "text": "The one that kept a monthly screenshot of its dashboard"
+        },
+        {
+          "id": "d",
+          "text": "The one that kept the underlying records with their provenance"
+        }
+      ],
+      "correctOptionId": "d",
+      "misconceptions": {
+        "a": "total-without-provenance",
+        "b": "total-without-provenance",
+        "c": "total-without-provenance"
+      },
+      "explanation": "The data system keeps underlying records and their provenance precisely so results can be recalculated as methods improve, and the KPI engine reports the method version used. Totals, PDFs and screenshots cannot be recomputed.",
+      "source": {
+        "section": "2.5",
+        "title": "The Five Evidence Functions",
+        "kind": "application"
+      },
+      "reviewTip": "Read the KPI engine row in 4.1 alongside the paragraph on the data system in 2.5."
+    },
+    {
+      "id": "Q237",
+      "topicId": "data-quality",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "data-quality.O3"
+      ],
+      "question": "A field officer proposes filling every blank yield cell with zero so that the dataset is complete. What is wrong with this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A blank is an unknown value, so coding it as zero invents an observation and hides the gap"
+        },
+        {
+          "id": "b",
+          "text": "Nothing is wrong, because a blank and a zero mean the same thing in a survey"
+        },
+        {
+          "id": "c",
+          "text": "The blanks should be filled with the district mean instead of with zero"
+        },
+        {
+          "id": "d",
+          "text": "Only the Data Group is allowed to fill blank cells in a project dataset"
+        }
+      ],
+      "correctOptionId": "a",
+      "misconceptions": {
+        "b": "missing-as-zero",
+        "c": "missing-as-zero",
+        "d": "qa-is-central-only"
+      },
+      "explanation": "Missing values are a quality issue to be addressed, not erased: a zero yield is a measured result, a blank is the absence of one. Filling with a mean also invents data; the honest record says the value is missing and why.",
+      "source": {
+        "section": "2.3",
+        "title": "Outcomes",
+        "kind": "application"
+      },
+      "reviewTip": "Report how many values are missing and why, rather than making the gap disappear."
+    },
+    {
+      "id": "Q238",
+      "topicId": "data-quality",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "data-quality.O3"
+      ],
+      "question": "After investigation, an unusually high yield turns out to be a genuine, correctly measured observation. What should happen to it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Delete it, because it will distort the comparison across projects"
+        },
+        {
+          "id": "b",
+          "text": "Replace it with the sample median to keep the average stable"
+        },
+        {
+          "id": "c",
+          "text": "Keep it, record the investigation, and consider its effect on comparability"
+        },
+        {
+          "id": "d",
+          "text": "Move it to a separate dataset so that it is not reported at all"
+        }
+      ],
+      "correctOptionId": "c",
+      "misconceptions": {
+        "a": "delete-outliers",
+        "b": "delete-outliers",
+        "d": "delete-outliers"
+      },
+      "explanation": "A verified observation is evidence; outcome-level quality work handles outliers and comparability by investigating and documenting, not by removing what is true. Deleting or replacing it would falsify the record and leave an unexplained gap in the audit trail.",
+      "source": {
+        "section": "2.3",
+        "title": "Outcomes",
+        "kind": "application"
+      },
+      "reviewTip": "Decide what to do with a flagged value only after you know its cause."
+    },
+    {
+      "id": "Q239",
+      "topicId": "data-quality",
+      "difficulty": "advanced",
+      "pool": "check",
+      "objectiveIds": [
+        "data-quality.O3"
+      ],
+      "question": "A Focal Point notes that 12 records were excluded as duplicates and 3 extreme values were kept after verification. Why does the framework want this written down?",
+      "options": [
+        {
+          "id": "a",
+          "text": "So the audit trail shows what changed and why, and the figure can be recalculated"
+        },
+        {
+          "id": "b",
+          "text": "So the enumerators responsible for the errors can be identified"
+        },
+        {
+          "id": "c",
+          "text": "So the dataset looks cleaner when it is shared with investors"
+        },
+        {
+          "id": "d",
+          "text": "So the extreme values can be deleted later without a new review"
+        }
+      ],
+      "correctOptionId": "a",
+      "misconceptions": {
+        "d": "delete-outliers",
+        "c": "total-without-provenance"
+      },
+      "explanation": "The quality plan includes exception handling, provenance and an audit trail, and the data system keeps record-level provenance so figures can be audited and recalculated. Documentation is for traceability, not for blame or appearance.",
+      "source": {
+        "section": "5.4",
+        "title": "Minimum MEAL Implementation Package",
+        "kind": "application"
+      },
+      "reviewTip": "Read element 5 of the minimum package, the quality plan."
+    },
+    {
+      "id": "Q240",
+      "topicId": "data-quality",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "data-quality.O4"
+      ],
+      "question": "A project reports adoption for smallholders across the state from a sample drawn only from villages that host demonstration plots. What should the Focal Point do first?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increase the sample within the same demonstration villages"
+        },
+        {
+          "id": "b",
+          "text": "Report the state figure, since the sample is large and clean"
+        },
+        {
+          "id": "c",
+          "text": "Replace the survey with satellite imagery of the whole state"
+        },
+        {
+          "id": "d",
+          "text": "Compare the sampled villages with the population in the claim and narrow or qualify the claim"
+        }
+      ],
+      "correctOptionId": "d",
+      "misconceptions": {
+        "a": "big-sample-is-representative",
+        "b": "big-sample-is-representative"
+      },
+      "explanation": "Representativeness asks whether the observed farms can support the intended claim, and results are reported with their coverage and limits. More farmers from the same villages do not change who was left out, and satellite data cannot replace required ground observations.",
+      "source": {
+        "section": "2.5",
+        "title": "The Five Evidence Functions",
+        "kind": "application"
+      },
+      "reviewTip": "Write down the population in the claim before you look at the sample."
+    },
+    {
+      "id": "Q241",
+      "topicId": "data-quality",
+      "difficulty": "advanced",
+      "pool": "check",
+      "objectiveIds": [
+        "data-quality.O4"
+      ],
+      "question": "A team wants satellite imagery to stand in for the villages it could not reach in its adoption survey. What does the triangulation rule say?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Satellite data can replace the missing ground observations whenever field coverage is incomplete"
+        },
+        {
+          "id": "b",
+          "text": "Satellite data help only if they measure the same construct, population, geography and period, under documented rules"
+        },
+        {
+          "id": "c",
+          "text": "Satellite data are never a valid source for any adoption indicator at any measurement level"
+        },
+        {
+          "id": "d",
+          "text": "Satellite data count as direct observations once they have been calibrated once"
+        }
+      ],
+      "correctOptionId": "b",
+      "misconceptions": {
+        "a": "big-sample-is-representative"
+      },
+      "explanation": "A source strengthens a claim only when it measures the same construct, population, geography and period under compatible definitions, and satellite data do not replace ground observations where the KPI method requires direct measurement. They can calibrate, contextualise, stratify or upscale under documented rules.",
+      "source": {
+        "section": "2.6",
+        "title": "The Evidence Stack",
+        "kind": "application"
+      },
+      "reviewTip": "Read the triangulation rule at the end of section 2.6."
+    },
+    {
+      "id": "Q242",
+      "topicId": "data-quality",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "data-quality.O5"
+      ],
+      "question": "A project plans to check data quality once, at endline, just before the final report. What does the operating cadence say?",
+      "options": [
+        {
+          "id": "a",
+          "text": "That is sufficient if the endline study is well resourced"
+        },
+        {
+          "id": "b",
+          "text": "Checks run continuously or monthly, with exceptions resolved close to collection"
+        },
+        {
+          "id": "c",
+          "text": "Checks happen only during the annual institutional KPI run"
+        },
+        {
+          "id": "d",
+          "text": "Checks are the Data Group's job once collection has ended"
+        }
+      ],
+      "correctOptionId": "b",
+      "misconceptions": {
+        "a": "qa-only-at-endline",
+        "c": "qa-only-at-endline",
+        "d": "qa-is-central-only"
+      },
+      "explanation": "The cadence table places routine data-quality checks in the continuous or monthly row, with exceptions resolved close to collection. An endline-only check lets errors spread into every dashboard and decision before anyone sees them.",
+      "source": {
+        "section": "5.7",
+        "title": "Operating Cadence and Assurance",
+        "kind": "application"
+      },
+      "reviewTip": "Read the first row of the cadence table and the quality plan element in 5.4."
+    },
+    {
+      "id": "Q243",
+      "topicId": "data-quality",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "data-quality.O5"
+      ],
+      "question": "Who runs first-line quality checks on routine activity and output data, and who is accountable for periodic QA and completeness checks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Data Group for first-line checks; Core Layer for periodic QA"
+        },
+        {
+          "id": "b",
+          "text": "Regional MEAL Lead for first-line checks; Focal Point for periodic QA"
+        },
+        {
+          "id": "c",
+          "text": "Focal Point for first-line checks; Regional MEAL Lead accountable for periodic QA"
+        },
+        {
+          "id": "d",
+          "text": "Core Layer for both first-line checks and periodic QA"
+        }
+      ],
+      "correctOptionId": "c",
+      "misconceptions": {
+        "a": "qa-is-central-only",
+        "d": "qa-is-central-only"
+      },
+      "explanation": "In the RACI, the Focal Point is responsible for routine collection and first-line QA, and the Regional MEAL Lead is accountable for periodic QA and completeness checks, with Pillar B consulted. Central roles set rules and follow up; they do not run first-line checks.",
+      "source": {
+        "section": "5.1",
+        "title": "Project Lifecycle: MEAL from Proposal to Impact",
+        "kind": "application"
+      },
+      "reviewTip": "Read the Phase 5 rows of the RACI matrix."
+    },
+    {
+      "id": "Q244",
+      "topicId": "data-quality",
+      "difficulty": "advanced",
+      "pool": "check",
+      "objectiveIds": [
+        "data-quality.O5"
+      ],
+      "question": "Who owns the content of the quality rules (validation, deduplication, provenance), and who owns the infrastructure that runs them?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Data Group owns both the rules and the infrastructure"
+        },
+        {
+          "id": "b",
+          "text": "Each project owns its own rules and its own infrastructure"
+        },
+        {
+          "id": "c",
+          "text": "The Regional MEAL Lead owns both for the regional portfolio"
+        },
+        {
+          "id": "d",
+          "text": "MEAL owns the rules; the Data Group owns the infrastructure"
+        }
+      ],
+      "correctOptionId": "d",
+      "misconceptions": {
+        "a": "qa-is-central-only"
+      },
+      "explanation": "The design principles split responsibility: the Data Group owns the infrastructure and the MEAL team owns the content, meaning indicators, data dictionary and quality rules. Within MEAL, the Evidence Systems, Data Quality and Reporting Analyst defines and implements those rules.",
+      "source": {
+        "section": "4.2",
+        "title": "Design Principles",
+        "kind": "direct"
+      },
+      "reviewTip": "Read the last sentence of 4.2 and the analyst's responsibilities in 5.8."
+    }
+  ],
+  "glossaryAdditions": [
+    {
+      "term": "Audit trail",
+      "definition": "The record-level log of what changed in a dataset, when, by whom and why, kept so that institutional figures can be audited and recalculated.",
+      "section": "4.1"
+    },
+    {
+      "term": "Quality plan",
+      "definition": "Element of the minimum MEAL package that sets validation rules, first-line checks, deduplication, exception handling, provenance, audit trail and periodic MEAL assurance for a project.",
+      "section": "5.4"
+    },
+    {
+      "term": "First-line quality checks",
+      "definition": "The routine checks run by the Project MEAL Focal Point and project team on source-level records, close to collection, before periodic assurance by regional and central MEAL.",
+      "section": "5.8"
+    }
+  ]
+}

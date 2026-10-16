@@ -1,0 +1,2385 @@
+{
+  "module": {
+    "id": "impact-assessment",
+    "order": 7,
+    "title": "Impact assessment",
+    "short": "Impact assessment",
+    "minutes": 40,
+    "sections": [
+      "1.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "3.3",
+      "5.2",
+      "5.4",
+      "5.7"
+    ],
+    "assessed": true,
+    "prerequisites": [
+      "evidence-systems"
+    ],
+    "scenario": {
+      "title": "Two good seasons and one hard question",
+      "intro": "A maize project in western Kenya promoted a drought-tolerant variety through partner seed companies and extension field days. Over the next two seasons, yields in the project area rose. So did rainfall, which was unusually good, and so did maize prices. The investor's programme officer sends one question: what did CIMMYT contribute? A sum of delivery figures will not answer it. This module shows what will.",
+      "persona": [
+        "meal-specialist",
+        "scientist",
+        "project-lead"
+      ]
+    },
+    "objectives": [
+      {
+        "id": "impact-assessment.O1",
+        "text": "Distinguish contribution from attribution and state the impact claim CIMMYT makes: credible evidence of its contribution alongside other factors, never sole cause.",
+        "bloom": "understand"
+      },
+      {
+        "id": "impact-assessment.O2",
+        "text": "Explain in plain terms what a counterfactual and a comparison group are, why before-and-after change alone is not an effect, and which method family the framework names for a given impact question.",
+        "bloom": "understand"
+      },
+      {
+        "id": "impact-assessment.O3",
+        "text": "Apply the triangulation rule to decide whether a second source strengthens a claim, and keep required ground measurement where the KPI method demands it.",
+        "bloom": "apply"
+      },
+      {
+        "id": "impact-assessment.O4",
+        "text": "Plan a baseline, comparison group or other valid reference at inception, or document the alternative, as the minimum package requires.",
+        "bloom": "apply"
+      },
+      {
+        "id": "impact-assessment.O5",
+        "text": "Communicate an impact finding with its coverage, uncertainty and limits stated, and spot a claim that overreaches its evidence.",
+        "bloom": "analyse"
+      },
+      {
+        "id": "impact-assessment.O6",
+        "text": "Recognise when a trigger-based or shock-event study applies, and name who owns impact evidence and what projects provide.",
+        "bloom": "apply"
+      }
+    ],
+    "lessons": [
+      {
+        "id": "L7.1",
+        "moduleId": "impact-assessment",
+        "title": "Contribution, not attribution",
+        "objectiveIds": [
+          "impact-assessment.O1"
+        ],
+        "minutes": 5,
+        "beats": {
+          "hook": "Yields rose. Rain was good, prices were high, and the new variety was in the ground. The investor asks what CIMMYT did. Answer with the wrong word and you promise more than the evidence can keep.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m7-contribution"
+          },
+          "example": {
+            "kind": "text",
+            "title": "Five things moved yield in one Kenyan project area",
+            "body": [
+              "Rainfall. Both seasons were wetter than the usual pattern. Even farmers with old varieties harvested well.",
+              "Prices. Maize prices rose, so farmers bought more fertiliser and weeded on time. That lifts yield on its own.",
+              "The variety. A drought-tolerant variety developed by CIMMYT with national research partners was multiplied by two seed companies and planted on part of the area.",
+              "Advice and other programmes. Extension field days and a county input programme ran at the same time, in the same villages.",
+              "What to claim. Attribution would ask how much of the rise the variety caused, estimated against a credible counterfactual. Contribution asks what role CIMMYT's technologies, partnerships, capacity and services played alongside the rest. The framework asks for credible evidence of contribution. Sole cause is off the table, whichever method you use."
+            ]
+          },
+          "microCheck": [
+            "Q281",
+            "Q282"
+          ],
+          "recap": {
+            "bullets": [
+              "Impact is positive, lasting change in agrifood systems. CIMMYT does not claim to be the sole cause of it.",
+              "Attribution estimates how much of a change an intervention caused, against a counterfactual. Contribution describes the role CIMMYT played alongside other factors.",
+              "Whatever the method, the claim is contribution: what CIMMYT's technologies, partnerships, capacity and services added."
+            ],
+            "source": {
+              "section": "2.4",
+              "title": "Impact"
+            }
+          }
+        },
+        "glossary": [
+          "Impact",
+          "Contribution",
+          "Attribution",
+          "Counterfactual"
+        ]
+      },
+      {
+        "id": "L7.2",
+        "moduleId": "impact-assessment",
+        "title": "Counterfactuals: the split-screen farm",
+        "objectiveIds": [
+          "impact-assessment.O2"
+        ],
+        "minutes": 6,
+        "beats": {
+          "hook": "You cannot plant the same field twice, once with the variety and once without. So how do you ever know what the variety did?",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m7-hero"
+          },
+          "example": {
+            "kind": "text",
+            "title": "One project area, no second field",
+            "body": [
+              "The clean version. Imagine two identical fields: same soil, same rain, same prices, same farmer. One gets the variety. The other does not. At harvest, the gap between them is the effect. Nothing else could have caused it, because nothing else differed.",
+              "The real version. The Kenya project area has one history. Yields rose between baseline and endline. But rain and prices rose over the same two seasons. Before-and-after shows change. It does not show what the project added, because the comparison with the same area without the project is missing.",
+              "The stand-in. A counterfactual is a credible estimate of what would have happened without the intervention. The usual way to build one is a comparison group: similar farms, in similar conditions, over the same seasons, that did not get the intervention. Their result stands in for the missing second field. The gap between project farms and comparison farms is the estimate of the effect.",
+              "The blur. Real farms are not identical. Soils, management and luck vary. The gap is still an estimate of the effect, but its edges are blurred. That blur is uncertainty, and the report has to say how wide it is. Lesson 7.6 returns to it.",
+              "The limit. Even a clean gap is the effect of the whole package: variety, seed partners, advice. It is CIMMYT's contribution alongside other actors, not proof that CIMMYT alone did it."
+            ]
+          },
+          "microCheck": [
+            "Q283",
+            "Q284"
+          ],
+          "recap": {
+            "bullets": [
+              "A counterfactual is a credible estimate of what would have happened without the intervention.",
+              "Before-and-after change is not an effect. Rain, prices and other programmes move the before and the after too.",
+              "A comparison group of similar farms that did not get the intervention stands in for the missing second field. The gap is the effect estimate, with uncertainty."
+            ],
+            "source": {
+              "section": "2.4",
+              "title": "Impact"
+            }
+          }
+        },
+        "glossary": [
+          "Counterfactual",
+          "Comparison group",
+          "Baseline",
+          "Contribution"
+        ]
+      },
+      {
+        "id": "L7.3",
+        "moduleId": "impact-assessment",
+        "title": "Study designs the framework recognises",
+        "objectiveIds": [
+          "impact-assessment.O2",
+          "impact-assessment.O1"
+        ],
+        "minutes": 5,
+        "beats": {
+          "hook": "Four method families. One question from an investor. Pick the family that can carry the claim, or the answer will be a sum of reports dressed up as impact.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m7-methods"
+          },
+          "example": {
+            "kind": "interactive",
+            "title": "Which method family fits the question?",
+            "widget": "sorter",
+            "prompt": "Section 2.4 names four impact method families, and section 2.5 adds descriptive and performance analysis for simpler questions. Drop each question into the family that can answer it. Ask what claim the question is trying to support.",
+            "bins": [
+              {
+                "id": "descriptive",
+                "label": "Descriptive or performance analysis",
+                "hint": "How many, how much, on time, within budget. No causal claim."
+              },
+              {
+                "id": "counterfactual",
+                "label": "Counterfactual impact evaluation",
+                "hint": "The effect, estimated against what would have happened without the intervention."
+              },
+              {
+                "id": "contribution",
+                "label": "Attribution and contribution analysis",
+                "hint": "How much, or what role, CIMMYT played alongside other factors and actors."
+              },
+              {
+                "id": "geospatial",
+                "label": "Geospatial impact assessment",
+                "hint": "Change across space, extended between observed locations after ground calibration."
+              },
+              {
+                "id": "modelling",
+                "label": "Modelling and scenario analysis",
+                "hint": "What might happen under different climates, markets or adoption paths."
+              }
+            ],
+            "cards": [
+              {
+                "label": "How many farmers received the variety, and on how many plots was it planted?",
+                "bin": "descriptive",
+                "why": "This is a count from delivery records and the registry. It supports a reach claim, not a causal one."
+              },
+              {
+                "label": "How much higher were yields on adopting farms than on comparable non-adopting farms over the same seasons?",
+                "bin": "counterfactual",
+                "why": "The question asks for an effect against a stand-in for what would have happened anyway. That is a counterfactual impact evaluation."
+              },
+              {
+                "label": "What role did the variety, the seed companies and extension play in the yield rise, alongside rainfall and prices?",
+                "bin": "contribution",
+                "why": "The question is about CIMMYT's role among several factors and actors. That is contribution analysis, the claim the framework asks for."
+              },
+              {
+                "label": "Can we map land under the new practice across the region from imagery calibrated on surveyed plots?",
+                "bin": "geospatial",
+                "why": "Earth observation extends between observed locations once calibrated on the ground. That is geospatial impact assessment under documented rules."
+              },
+              {
+                "label": "What might regional yields look like in ten years under a drier climate if adoption continues?",
+                "bin": "modelling",
+                "why": "A future under assumed conditions cannot be observed. It is estimated by modelling and scenario analysis."
+              },
+              {
+                "label": "Did the project meet its delivery targets on time and within budget?",
+                "bin": "descriptive",
+                "why": "This is performance analysis of process and output data. It says nothing about change on farms."
+              },
+              {
+                "label": "Which other programmes and market changes also pushed adoption, and how strong was CIMMYT's part?",
+                "bin": "contribution",
+                "why": "Weighing CIMMYT's part against other drivers is contribution analysis."
+              },
+              {
+                "label": "Which of three investment paths would narrow the yield gap most by 2035?",
+                "bin": "modelling",
+                "why": "Comparing paths that have not happened yet is scenario analysis."
+              },
+              {
+                "label": "How far has the conservation practice spread across the district beyond the plots we visited?",
+                "bin": "geospatial",
+                "why": "Spatial coverage and extrapolation between observed locations is what the earth-observation layer adds, calibrated on ground observations."
+              }
+            ]
+          },
+          "microCheck": [
+            "Q285"
+          ],
+          "recap": {
+            "bullets": [
+              "For impact, the framework names counterfactual impact evaluations, attribution and contribution analysis, geospatial impact assessment, and modelling and scenario analysis.",
+              "Methods match the question and the claim. Descriptive analysis answers how many; it cannot answer what CIMMYT contributed.",
+              "The Kenya yield-change example needs contribution or attribution analysis against a credible counterfactual, modelling, adoption data and geospatial assessment. A sum of reported numbers cannot answer it."
+            ],
+            "source": {
+              "section": "3.3",
+              "title": "From Observation-Level Data to Decision-Relevant Insights"
+            }
+          }
+        },
+        "glossary": [
+          "Counterfactual",
+          "Attribution",
+          "Contribution",
+          "Aggregation"
+        ]
+      },
+      {
+        "id": "L7.4",
+        "moduleId": "impact-assessment",
+        "title": "Baselines and timing",
+        "objectiveIds": [
+          "impact-assessment.O4"
+        ],
+        "minutes": 5,
+        "beats": {
+          "hook": "An endline without a baseline is a photograph without the before. You can admire it. You cannot say what changed.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m7-baseline"
+          },
+          "example": {
+            "kind": "text",
+            "title": "Deciding the reference at inception",
+            "body": [
+              "Phase 1, proposal. The team defines its learning and evaluation questions with the Regional MEAL Lead and the Evaluation, Learning and Accountability pillar. One question is about yield change among adopters. That question already implies a method, and the method implies a reference.",
+              "Phase 2, inception. The MEAL plan confirms baseline, endline or panel requirements and the evaluation design. In the RACI, Pillar C is accountable for designing baseline, endline and evaluation studies. For the yield question, the plan names a baseline measurement on project farms and on comparison farms before the first season, using the same crop-cut method that the endline will use.",
+              "Element 6 of the minimum package. Every project leaves inception with a baseline, comparison group or other valid reference where the outcome or impact method requires it. If none is feasible, the package requires a documented alternative. The framework does not list what the alternative can be. It requires that the choice is valid for the method, written down and agreed before implementation, not improvised at endline.",
+              "What goes wrong. The Kenya team skipped the baseline to save a season of fieldwork. Two years later the endline shows good yields, and nobody can say what they were before, or on which farms. The target becomes the baseline in the report. That is not a reference. It is a wish."
+            ]
+          },
+          "microCheck": [
+            "Q286"
+          ],
+          "recap": {
+            "bullets": [
+              "Baseline, comparison group or other valid reference is element 6 of the minimum package. It is decided at inception.",
+              "Where no reference is feasible, the package requires a documented alternative, agreed before implementation.",
+              "Measure the reference with a method compatible with the endline, on the same kind of units, or the two cannot be compared."
+            ],
+            "source": {
+              "section": "5.4",
+              "title": "Minimum MEAL Implementation Package"
+            }
+          }
+        },
+        "glossary": [
+          "Baseline",
+          "Comparison group",
+          "Minimum MEAL package",
+          "Counterfactual"
+        ]
+      },
+      {
+        "id": "L7.5",
+        "moduleId": "impact-assessment",
+        "title": "Triangulation and direct measurement",
+        "objectiveIds": [
+          "impact-assessment.O3"
+        ],
+        "minutes": 5,
+        "beats": {
+          "hook": "Two sources agree, so the finding must be solid. Not so fast. Agreement counts only when both measure the same thing, for the same people, in the same place and time.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m7-triangulation"
+          },
+          "example": {
+            "kind": "interactive",
+            "title": "Does the second source strengthen the claim?",
+            "widget": "sorter",
+            "prompt": "Each card pairs a primary source with a second one. Apply the triangulation rule: same construct, same population, same geography, same period, compatible definitions. And remember the limit: satellite or secondary data do not replace required ground measurement.",
+            "bins": [
+              {
+                "id": "meets",
+                "label": "Meets the rule: strengthens the claim",
+                "hint": "All five conditions hold, and no required ground measurement is being replaced."
+              },
+              {
+                "id": "fails",
+                "label": "Does not meet the rule",
+                "hint": "At least one condition fails. The source may still give context, calibration or a denominator, but it does not confirm the claim."
+              }
+            ],
+            "cards": [
+              {
+                "label": "Crop cuts on 240 sampled plots in the 2027 main season, plus a farmer-reported yield for the same plots and season",
+                "bin": "meets",
+                "why": "Same construct (yield), same plots, same place, same season, compatible definitions. The second source strengthens the estimate."
+              },
+              {
+                "label": "A 2027 adoption survey of project farmers, plus national statistics on all maize farmers for 2022",
+                "bin": "fails",
+                "why": "Different population and different period. Both rising is not triangulation. The national series is context at most."
+              },
+              {
+                "label": "A household income survey among adopters, plus the district maize price series for the same years",
+                "bin": "fails",
+                "why": "Different construct. Prices are a covariate that helps interpret income change; they do not confirm it."
+              },
+              {
+                "label": "A satellite greenness index across the region, used instead of the crop cuts the KPI method requires",
+                "bin": "fails",
+                "why": "Satellite data do not replace ground observations where the method requires direct measurement. This substitutes rather than strengthens."
+              },
+              {
+                "label": "A satellite land-cover map calibrated on ground plots in the same districts and season, used to extend the area estimate",
+                "bin": "meets",
+                "why": "Same construct, place and period, calibrated on direct observations and used for upscaling under documented rules. This is the supporting role the framework allows."
+              },
+              {
+                "label": "Seed-company sales of the variety in the project districts, plus registry records of which farmers planted it",
+                "bin": "fails",
+                "why": "Seed sold and seed planted are different constructs. Sales records link delivery to uptake; they do not confirm adoption."
+              },
+              {
+                "label": "Two adoption surveys in the same villages and season, one counting farmers who received seed, the other farmers who planted it",
+                "bin": "fails",
+                "why": "Incompatible definitions of adopter. Record the difference; do not treat agreement or disagreement as evidence."
+              },
+              {
+                "label": "On-station trial yields of the variety, plus farm-level crop cuts from project farms in the same season",
+                "bin": "fails",
+                "why": "Different population. Station plots under controlled protocols do not stand in for farmer fields."
+              },
+              {
+                "label": "A second enumerator team re-measuring a random subset of the same plots with the same crop-cut protocol",
+                "bin": "meets",
+                "why": "Same construct, units, place, period and method. This is a direct check on the primary measurement."
+              }
+            ]
+          },
+          "microCheck": [
+            "Q287",
+            "Q288"
+          ],
+          "recap": {
+            "bullets": [
+              "Triangulation rule: a source strengthens a claim only when it measures the same construct, population, geography and period under compatible definitions.",
+              "Satellite and secondary data do not replace ground observations where the KPI method requires direct measurement.",
+              "They are used for calibration, contextualisation, stratification or upscaling under documented rules."
+            ],
+            "source": {
+              "section": "2.6",
+              "title": "The Evidence Stack"
+            }
+          }
+        },
+        "glossary": [
+          "Triangulation rule",
+          "Evidence stack",
+          "Direct observations",
+          "KPI reference sheet"
+        ]
+      },
+      {
+        "id": "L7.6",
+        "moduleId": "impact-assessment",
+        "title": "Uncertainty: saying how sure you are",
+        "objectiveIds": [
+          "impact-assessment.O5"
+        ],
+        "minutes": 4,
+        "beats": {
+          "hook": "A clean number travels fast. A clean number with no coverage, no uncertainty and no limits travels faster, and lands as a promise you never made.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m7-uncertainty"
+          },
+          "example": {
+            "kind": "text",
+            "title": "Two ways to write the same finding",
+            "body": [
+              "Version A. The project raised maize yields in Kenya. One sentence, no qualifier. Leadership repeats it. The investor puts it in a newsletter. Two years later a drought season arrives and the sentence looks like a broken promise.",
+              "Version B. In three of the seven project districts, farms that adopted the variety out-yielded comparable non-adopting farms over the two study seasons. Both seasons had unusually good rainfall and high prices. The estimate is based on crop cuts from sampled plots and carries wide uncertainty. It does not yet show whether the gain lasts.",
+              "Version B is longer and less quotable. It is also the only one the Analysis function allows: methods that match the question and the claim, with uncertainty and limits documented explicitly. Section 3.3 says the same for institutional values: reported with coverage, uncertainty, provenance and method quality.",
+              "Honesty runs both ways. Accountability to farmers means saying openly when the work did not produce benefits. A finding of no measurable effect, stated with its limits, is still a finding."
+            ]
+          },
+          "microCheck": [
+            "Q289"
+          ],
+          "recap": {
+            "bullets": [
+              "The Analysis function: apply methods that match the question and the claim, and explicitly document uncertainty and limits.",
+              "Institutional results are reported with coverage, uncertainty, provenance and method quality, never as an unqualified sum.",
+              "State what the evidence covers, how sure you are and what it cannot yet show, including whether the change lasts."
+            ],
+            "source": {
+              "section": "2.5",
+              "title": "The Five Evidence Functions"
+            }
+          }
+        },
+        "glossary": [
+          "Five evidence functions",
+          "Provenance",
+          "Aggregation"
+        ]
+      },
+      {
+        "id": "L7.7",
+        "moduleId": "impact-assessment",
+        "title": "Shock-event studies and roles",
+        "objectiveIds": [
+          "impact-assessment.O6"
+        ],
+        "minutes": 5,
+        "beats": {
+          "hook": "A drought arrives in year two. Nobody planned a study for it. The calendar says the next evaluation is at endline. The framework says something else.",
+          "explainer": {
+            "kind": "storyboard",
+            "storyboardId": "sb-m7-cadence"
+          },
+          "example": {
+            "kind": "text",
+            "title": "A drought in year two",
+            "body": [
+              "The event. A severe drought hits the project area in the second season. How adopters fare under stress is exactly the claim the variety was bred for, and the moment to measure it is now, not at endline when the season is a memory.",
+              "The cadence. Section 5.7 adds a fourth row to the regular rhythm: midterm, endline or trigger-based. A trigger-based study starts from an event rather than the calendar, and the framework names shock-event measurement where relevant. The output is evaluation findings, contribution analysis and an updated impact narrative.",
+              "The owners. Impact evidence sits with central MEAL and science and evaluation specialists. In the RACI, the Evaluation, Learning and Accountability pillar is accountable for outcome and impact studies, with the Project MEAL Focal Point responsible for the project's part. For contribution analysis and institutional impact claims, that pillar is responsible and the MEAL Group Lead is accountable.",
+              "What the project brings. Complete underlying records, contextual interpretation and implementation history: which farms got seed and when, what else happened in the area, and what the baseline measured. Without that, the specialists have nothing to analyse. With it, the drought becomes evidence instead of an excuse."
+            ]
+          },
+          "microCheck": [
+            "Q290"
+          ],
+          "recap": {
+            "bullets": [
+              "Cadence row four: midterm, endline or trigger-based studies, including shock-event measurement where relevant.",
+              "Impact evidence is owned by central MEAL with science and evaluation specialists. Projects provide source data, context and implementation history.",
+              "Pillar C is accountable for outcome and impact studies and responsible for contribution analysis. The MEAL Group Lead is accountable for institutional impact claims."
+            ],
+            "source": {
+              "section": "5.7",
+              "title": "Operating Cadence and Assurance"
+            }
+          }
+        },
+        "glossary": [
+          "Trigger-based study",
+          "Operating cadence",
+          "Core Layer",
+          "Project MEAL Focal Point"
+        ]
+      }
+    ],
+    "storyboards": [
+      {
+        "id": "sb-m7-contribution",
+        "title": "Contribution, not attribution",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 6,
+            "narration": "Yields rose in the project area. The investor wants to know what CIMMYT did.",
+            "scene": {
+              "kind": "title",
+              "title": "Who made the yield rise?",
+              "subtitle": "Two good seasons. One new variety. Many hands."
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 16,
+            "narration": "Rain was good. Prices were high. A new variety went in through partners. Extension and a county programme ran at the same time. All of these fed one change.",
+            "scene": {
+              "kind": "fan",
+              "source": "Two seasons in western Kenya",
+              "branches": [
+                {
+                  "label": "Good rainfall",
+                  "detail": "Both seasons wetter than usual"
+                },
+                {
+                  "label": "High maize prices",
+                  "detail": "More fertiliser, timely weeding"
+                },
+                {
+                  "label": "New variety",
+                  "detail": "CIMMYT, national partners, two seed companies"
+                },
+                {
+                  "label": "Extension and county programme",
+                  "detail": "Field days, input support"
+                }
+              ],
+              "target": "Yields rose"
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 18,
+            "narration": "Attribution asks how much of the change the intervention caused, against a counterfactual. Contribution asks what role CIMMYT played alongside the rest. Both are impact methods the framework names. Neither claims sole cause.",
+            "scene": {
+              "kind": "split",
+              "left": {
+                "title": "Attribution",
+                "lines": [
+                  "How much of the rise did the intervention cause?",
+                  "Estimated against a counterfactual"
+                ],
+                "tone": "sky"
+              },
+              "right": {
+                "title": "Contribution",
+                "lines": [
+                  "What role did CIMMYT's technologies, partnerships, capacity and services play?",
+                  "Alongside other factors"
+                ],
+                "tone": "green"
+              },
+              "gap": "Two methods. Neither claims sole cause."
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 10,
+            "narration": "CIMMYT does not claim to be the sole cause of observed changes. The aim is credible evidence of contribution, and that is the word to use with the investor.",
+            "scene": {
+              "kind": "title",
+              "title": "Not the sole cause",
+              "subtitle": "The aim is credible evidence of contribution.",
+              "stamp": "§2.4"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m7-hero",
+        "title": "The split-screen farm",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 8,
+            "narration": "To know what an intervention did, you need to know what would have happened without it. Here is the cleanest way to picture that.",
+            "scene": {
+              "kind": "title",
+              "title": "The split-screen farm",
+              "subtitle": "What would have happened anyway?"
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 18,
+            "narration": "Imagine two identical fields. Same soil, same rain, same prices, same farmer. Only one gets the new variety. At harvest, the gap between them is the effect. Nothing else differed, so nothing else can explain it.",
+            "scene": {
+              "kind": "split",
+              "left": {
+                "title": "Field A: with the variety",
+                "lines": [
+                  "Same soil",
+                  "Same rain",
+                  "Same prices",
+                  "New variety planted"
+                ],
+                "value": 2.6,
+                "tone": "green"
+              },
+              "right": {
+                "title": "Field B: without",
+                "lines": [
+                  "Same soil",
+                  "Same rain",
+                  "Same prices",
+                  "Old variety planted"
+                ],
+                "value": 2.0,
+                "tone": "paper"
+              },
+              "gap": "The gap is the effect (illustrative t/ha)"
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 18,
+            "narration": "In real life you have one field and two seasons. Yield rose from before to after. But rain and prices rose too. Before-and-after shows change. It cannot show the effect, because the field without the variety is missing.",
+            "scene": {
+              "kind": "split",
+              "left": {
+                "title": "Before",
+                "lines": [
+                  "Normal rain",
+                  "Normal prices",
+                  "Old variety"
+                ],
+                "value": 1.9,
+                "tone": "gold"
+              },
+              "right": {
+                "title": "After",
+                "lines": [
+                  "Good rain",
+                  "High prices",
+                  "New variety"
+                ],
+                "value": 2.6,
+                "tone": "gold"
+              },
+              "gap": "Change, not effect"
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 20,
+            "narration": "You cannot run the same field twice. So you build a stand-in: a comparison group of similar farms that did not get the variety, measured the same way over the same seasons. Their result estimates what would have happened anyway. The gap is your effect estimate.",
+            "scene": {
+              "kind": "split",
+              "left": {
+                "title": "Project farms",
+                "lines": [
+                  "Similar soils",
+                  "Same two seasons",
+                  "New variety"
+                ],
+                "value": 2.6,
+                "tone": "green"
+              },
+              "right": {
+                "title": "Comparison farms",
+                "lines": [
+                  "Similar soils",
+                  "Same two seasons",
+                  "No new variety"
+                ],
+                "value": 2.3,
+                "tone": "sky"
+              },
+              "gap": "Counterfactual: what happened without it"
+            }
+          },
+          {
+            "id": "f5",
+            "seconds": 18,
+            "narration": "Real farms are noisy. Soils differ, rain is patchy, some farmers were already ahead. The gap is still there, but its edges are blurred. That blur is uncertainty, and the report has to say how wide it is.",
+            "scene": {
+              "kind": "split",
+              "left": {
+                "title": "Project farms",
+                "lines": [
+                  "Soils vary",
+                  "Rain is patchy",
+                  "Some farmers ahead already"
+                ],
+                "value": 2.6,
+                "tone": "green"
+              },
+              "right": {
+                "title": "Comparison farms",
+                "lines": [
+                  "Soils vary",
+                  "Rain is patchy",
+                  "Some farmers ahead already"
+                ],
+                "value": 2.3,
+                "tone": "sky"
+              },
+              "gap": "Same gap, blurred edges: uncertainty",
+              "noise": true
+            }
+          },
+          {
+            "id": "f6",
+            "seconds": 14,
+            "narration": "The stand-in only works if it is truly comparable. Same thing measured, same kind of farms, same seasons, same method. Break one of these and the gap measures the difference between the groups, not the effect.",
+            "scene": {
+              "kind": "cards",
+              "layout": "row",
+              "items": [
+                {
+                  "label": "Same construct",
+                  "detail": "Yield by crop cut",
+                  "tone": "green"
+                },
+                {
+                  "label": "Same kind of farms",
+                  "detail": "Similar soils and systems",
+                  "tone": "green"
+                },
+                {
+                  "label": "Same seasons",
+                  "detail": "Rain and prices shared",
+                  "tone": "green"
+                },
+                {
+                  "label": "Same method",
+                  "detail": "Baseline and endline alike",
+                  "tone": "green"
+                }
+              ],
+              "stamp": "Comparable, or not a comparison"
+            }
+          },
+          {
+            "id": "f7",
+            "seconds": 12,
+            "narration": "Even a clean gap is the effect of the whole package: variety, seed partners, advice. Report it as CIMMYT's contribution alongside other factors, with the uncertainty attached.",
+            "scene": {
+              "kind": "title",
+              "title": "Contribution, not sole cause",
+              "subtitle": "The gap is CIMMYT's part, alongside rain, prices and partners.",
+              "stamp": "§2.4"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m7-methods",
+        "title": "Four method families",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 14,
+            "narration": "Section 2.4 names four method families for impact. Counterfactual impact evaluation estimates an effect against what would have happened anyway. Attribution and contribution analysis ask how much, or what role. Geospatial assessment extends change across space. Modelling and scenario analysis explore what might happen.",
+            "scene": {
+              "kind": "cards",
+              "layout": "grid",
+              "items": [
+                {
+                  "label": "Counterfactual impact evaluation",
+                  "detail": "Effect against what would have happened anyway",
+                  "tone": "green"
+                },
+                {
+                  "label": "Attribution and contribution analysis",
+                  "detail": "How much, or what role, alongside other factors",
+                  "tone": "green"
+                },
+                {
+                  "label": "Geospatial impact assessment",
+                  "detail": "Change across space, calibrated on the ground",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Modelling and scenario analysis",
+                  "detail": "What if: climate, markets, adoption paths",
+                  "tone": "sky"
+                }
+              ]
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 16,
+            "narration": "The framework's own example: what has CIMMYT contributed to yield change in Kenya? It needs contribution or attribution analysis against a credible counterfactual, agronomic, socioeconomic and climate modelling, adoption data and geospatial assessment. Several families, one question.",
+            "scene": {
+              "kind": "fan",
+              "source": "What has CIMMYT contributed to yield change in Kenya?",
+              "branches": [
+                {
+                  "label": "Contribution or attribution analysis",
+                  "detail": "Against a credible counterfactual"
+                },
+                {
+                  "label": "Agronomic, socioeconomic and climate modelling",
+                  "detail": "Separate rain and prices from the variety"
+                },
+                {
+                  "label": "Adoption data",
+                  "detail": "Who planted it, where, when"
+                },
+                {
+                  "label": "Geospatial assessment",
+                  "detail": "Change across the area"
+                }
+              ],
+              "target": "A credible answer"
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 12,
+            "narration": "Match the method to the question. How many farmers got seed is descriptive. What did CIMMYT contribute tries to land in descriptive too, and bounces back. A sum of reported numbers cannot answer it.",
+            "scene": {
+              "kind": "sort",
+              "bins": [
+                "Descriptive",
+                "Contribution or counterfactual"
+              ],
+              "cards": [
+                {
+                  "label": "How many farmers got seed?",
+                  "bin": 0
+                },
+                {
+                  "label": "What did CIMMYT contribute?",
+                  "bin": 1,
+                  "wrong": 0
+                }
+              ],
+              "stamp": "A sum of reports cannot answer it"
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 8,
+            "narration": "The Analysis function in one line: apply methods that match the question and the claim, and document uncertainty and limits.",
+            "scene": {
+              "kind": "title",
+              "title": "Match the method to the question and the claim",
+              "subtitle": "Descriptive, performance, contribution, counterfactual, geospatial, modelling, scenario.",
+              "stamp": "§2.5"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m7-baseline",
+        "title": "Baselines and timing",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 14,
+            "narration": "A project starts without a baseline. Two years later the endline measures yields. Good yields. Compared with what? Nobody can say.",
+            "scene": {
+              "kind": "chain",
+              "steps": [
+                {
+                  "label": "Project starts",
+                  "detail": "No baseline taken",
+                  "tone": "paper"
+                },
+                {
+                  "label": "Endline",
+                  "detail": "Yields measured",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Change?",
+                  "detail": "Unknown",
+                  "tone": "paper"
+                }
+              ],
+              "links": [
+                {
+                  "label": "Nothing to compare with",
+                  "broken": true
+                },
+                {}
+              ],
+              "spotlight": 2
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 18,
+            "narration": "Now the same project with the reference decided at inception. Baseline on project and comparison farms before the first season. The same measures repeated each season. Endline with the same method on the same farms. The gap at the end is an effect estimate, with its uncertainty.",
+            "scene": {
+              "kind": "chain",
+              "steps": [
+                {
+                  "label": "Inception",
+                  "detail": "Evaluation design agreed",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Baseline",
+                  "detail": "Project and comparison farms",
+                  "tone": "green"
+                },
+                {
+                  "label": "Seasons 1 and 2",
+                  "detail": "Same measures repeated",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Endline",
+                  "detail": "Same method, same farms",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Effect estimate",
+                  "detail": "Gap, with uncertainty",
+                  "tone": "green"
+                }
+              ],
+              "spotlight": 1,
+              "traveler": true
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 14,
+            "narration": "Element 6 of the minimum package: a baseline, a comparison group or another valid reference where the method requires it. Otherwise a documented alternative. What it never allows is leaving the question to end-of-project reporting.",
+            "scene": {
+              "kind": "checklist",
+              "items": [
+                {
+                  "label": "Baseline",
+                  "done": true
+                },
+                {
+                  "label": "Comparison group",
+                  "done": true
+                },
+                {
+                  "label": "Other valid reference, where the method allows",
+                  "done": true
+                },
+                {
+                  "label": "Otherwise: a documented alternative",
+                  "done": true
+                },
+                {
+                  "label": "Left to end-of-project reporting",
+                  "done": false
+                }
+              ],
+              "stamp": "Minimum package, element 6"
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 8,
+            "narration": "Decide the reference at inception. An endline without a reference is a photograph without the before.",
+            "scene": {
+              "kind": "title",
+              "title": "Decide the reference at inception",
+              "subtitle": "An endline without a reference is a photograph without the before.",
+              "stamp": "§5.4"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m7-triangulation",
+        "title": "Triangulation and direct measurement",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 14,
+            "narration": "The evidence stack has four layers. Direct observations sit closest to what is being measured. Earth observation, context data and operational records add coverage, interpretation and traceability. Not every indicator needs every layer.",
+            "scene": {
+              "kind": "stack",
+              "layers": [
+                {
+                  "label": "Direct observations",
+                  "detail": "Plot, farm, household, trial records",
+                  "tone": "green"
+                },
+                {
+                  "label": "Earth observation and sensors",
+                  "detail": "Coverage and extrapolation after calibration",
+                  "tone": "sky"
+                },
+                {
+                  "label": "External and context data",
+                  "detail": "Rainfall, prices, national trends",
+                  "tone": "paper"
+                },
+                {
+                  "label": "Operational records",
+                  "detail": "Who got what, when",
+                  "tone": "gold"
+                }
+              ],
+              "spotlight": 0
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 16,
+            "narration": "The triangulation rule has five conditions. Same construct. Same population. Same geography. Same period. Compatible definitions. A second source strengthens a claim only when all five hold.",
+            "scene": {
+              "kind": "cards",
+              "layout": "row",
+              "items": [
+                {
+                  "label": "Same construct",
+                  "tone": "green"
+                },
+                {
+                  "label": "Same population",
+                  "tone": "green"
+                },
+                {
+                  "label": "Same geography",
+                  "tone": "green"
+                },
+                {
+                  "label": "Same period",
+                  "tone": "green"
+                },
+                {
+                  "label": "Compatible definitions",
+                  "tone": "green"
+                }
+              ],
+              "stamp": "All five, or it is not triangulation"
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 16,
+            "narration": "On the left, a project survey from one year and a national series from another, both rising. Looks like confirmation. It is not: different population, different period. On the right, crop cuts and farmer reports from the same plots in the same season. That is triangulation.",
+            "scene": {
+              "kind": "split",
+              "left": {
+                "title": "Looks like triangulation",
+                "lines": [
+                  "Project survey, 2027",
+                  "National series, all farmers, 2022",
+                  "Both rising"
+                ],
+                "tone": "gold"
+              },
+              "right": {
+                "title": "Is triangulation",
+                "lines": [
+                  "Crop cuts, sampled plots, 2027",
+                  "Farmer reports, same plots, 2027",
+                  "Same construct, same farms"
+                ],
+                "tone": "green"
+              },
+              "gap": "Agreement is not the test. Compatibility is."
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 14,
+            "narration": "And the limit. Where the KPI method requires direct measurement, satellite or secondary data do not replace it. They calibrate, contextualise, stratify or upscale, under documented rules. The ground stays.",
+            "scene": {
+              "kind": "split",
+              "left": {
+                "title": "Satellite replaces crop cuts",
+                "lines": [
+                  "Cheaper",
+                  "More frequent",
+                  "Not the required method"
+                ],
+                "tone": "paper"
+              },
+              "right": {
+                "title": "Satellite supports crop cuts",
+                "lines": [
+                  "Calibration",
+                  "Contextualisation",
+                  "Stratification",
+                  "Upscaling under documented rules"
+                ],
+                "tone": "green"
+              },
+              "gap": "Ground measurement stays where the method requires it"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m7-uncertainty",
+        "title": "Saying how sure you are",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 12,
+            "narration": "Here is the footprint of one impact estimate. Three of seven districts. Two seasons, both with good rain. Two hundred and forty sampled plots. Before you quote the number, quote this.",
+            "scene": {
+              "kind": "counter",
+              "items": [
+                {
+                  "label": "Districts covered",
+                  "value": 3,
+                  "suffix": " of 7",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Seasons studied",
+                  "value": 2,
+                  "suffix": ", both good rain",
+                  "tone": "gold"
+                },
+                {
+                  "label": "Sampled plots",
+                  "value": 240,
+                  "tone": "sky"
+                }
+              ],
+              "note": "A finding is only as wide as its coverage, and only as sure as its uncertainty allows"
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 16,
+            "narration": "Version A: the project raised maize yields in Kenya. Version B: adopters out-yielded comparison farms in three districts over two good-rain seasons, with wide uncertainty, and lasting change not yet shown. Same data. Only one is honest about it.",
+            "scene": {
+              "kind": "split",
+              "left": {
+                "title": "Version A",
+                "lines": [
+                  "The project raised maize yields in Kenya."
+                ],
+                "tone": "gold"
+              },
+              "right": {
+                "title": "Version B",
+                "lines": [
+                  "Adopters out-yielded comparison farms in 3 districts",
+                  "Two good-rain seasons",
+                  "Wide uncertainty",
+                  "Lasting change not yet shown"
+                ],
+                "tone": "green"
+              },
+              "gap": "Same data. Only one is honest about it."
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 12,
+            "narration": "Section 3.3 names what travels with every institutional result: coverage, uncertainty, provenance and method quality. Never an unqualified sum.",
+            "scene": {
+              "kind": "cards",
+              "layout": "row",
+              "items": [
+                {
+                  "label": "Coverage",
+                  "detail": "Where and whom it covers",
+                  "tone": "green"
+                },
+                {
+                  "label": "Uncertainty",
+                  "detail": "How wide the blur is",
+                  "tone": "green"
+                },
+                {
+                  "label": "Provenance",
+                  "detail": "Which records, which method version",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Method quality",
+                  "detail": "Crop cut or recall, calibrated or not",
+                  "tone": "sky"
+                }
+              ],
+              "stamp": "§3.3: reported with every result"
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 8,
+            "narration": "Say how sure you are. The Analysis function requires uncertainty and limits to be documented explicitly, every time.",
+            "scene": {
+              "kind": "title",
+              "title": "Say how sure you are",
+              "subtitle": "Document uncertainty and limits explicitly.",
+              "stamp": "§2.5"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sb-m7-cadence",
+        "title": "Shock-event studies and roles",
+        "frames": [
+          {
+            "id": "f1",
+            "seconds": 14,
+            "narration": "The operating cadence has four rows. Continuous checks. Quarterly or seasonal reviews. The annual KPI run. And a fourth row: midterm, endline or trigger-based studies. A drought in season two lights up that row.",
+            "scene": {
+              "kind": "loop",
+              "steps": [
+                {
+                  "label": "Continuous / monthly",
+                  "detail": "Data-quality checks"
+                },
+                {
+                  "label": "Quarterly / seasonal",
+                  "detail": "Evidence review"
+                },
+                {
+                  "label": "Annual",
+                  "detail": "KPI run, evidence-gap register"
+                },
+                {
+                  "label": "Midterm / endline / trigger-based",
+                  "detail": "Outcome and impact studies"
+                }
+              ],
+              "active": 3,
+              "log": "Season 2: severe drought. Trigger."
+            }
+          },
+          {
+            "id": "f2",
+            "seconds": 12,
+            "narration": "Most studies follow the calendar. A trigger-based study follows an event. The framework names shock-event measurement where relevant. Measure while the shock is still measurable.",
+            "scene": {
+              "kind": "cards",
+              "layout": "row",
+              "items": [
+                {
+                  "label": "Calendar",
+                  "detail": "Midterm, endline",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Event",
+                  "detail": "Shock-event measurement where relevant",
+                  "tone": "gold"
+                }
+              ],
+              "stamp": "Trigger-based"
+            }
+          },
+          {
+            "id": "f3",
+            "seconds": 16,
+            "narration": "Who does what. Impact evidence is owned by central MEAL with science and evaluation specialists. The Evaluation, Learning and Accountability pillar is accountable for outcome and impact studies and responsible for contribution analysis. The MEAL Group Lead is accountable for institutional impact claims. The project provides source data, context and implementation history.",
+            "scene": {
+              "kind": "cards",
+              "layout": "grid",
+              "items": [
+                {
+                  "label": "Central MEAL + specialists",
+                  "detail": "Own impact evidence: design, triangulation, synthesis, uncertainty",
+                  "tone": "green"
+                },
+                {
+                  "label": "Pillar C",
+                  "detail": "Accountable for outcome and impact studies; responsible for contribution analysis",
+                  "tone": "green"
+                },
+                {
+                  "label": "MEAL Group Lead",
+                  "detail": "Accountable for institutional impact claims",
+                  "tone": "sky"
+                },
+                {
+                  "label": "Project team and Focal Point",
+                  "detail": "Source data, context, implementation history",
+                  "tone": "gold"
+                }
+              ],
+              "stamp": "§5.2 and the RACI in §5.1"
+            }
+          },
+          {
+            "id": "f4",
+            "seconds": 8,
+            "narration": "The project brings the records. The specialists bring the design. Together they turn a shock into evidence.",
+            "scene": {
+              "kind": "title",
+              "title": "The project brings the records",
+              "subtitle": "The specialists bring the design. Together, a shock becomes evidence.",
+              "stamp": "§5.7"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "tag": "sole-cause-claim",
+      "description": "You treated the whole observed change as caused by CIMMYT. The framework asks for credible evidence of contribution alongside other factors, and says CIMMYT does not claim to be the sole cause.",
+      "remedyLessonIds": [
+        "L7.1",
+        "L7.2"
+      ]
+    },
+    {
+      "tag": "before-after-is-impact",
+      "description": "You read a rise between baseline and endline, or a target met, as the effect of the intervention. Without a counterfactual it is change, not effect, and not yet lasting change.",
+      "remedyLessonIds": [
+        "L7.2",
+        "L7.4"
+      ]
+    },
+    {
+      "tag": "method-mismatch",
+      "description": "You picked a method that cannot answer the question or support the claim, such as summing reports or counting deliveries to answer what CIMMYT contributed.",
+      "remedyLessonIds": [
+        "L7.3"
+      ]
+    },
+    {
+      "tag": "trend-agreement-is-triangulation",
+      "description": "You treated two sources that move the same way as confirming each other, without checking that they share construct, population, geography, period and definitions.",
+      "remedyLessonIds": [
+        "L7.5"
+      ]
+    },
+    {
+      "tag": "satellite-replaces-ground",
+      "description": "You let satellite or secondary data stand in for the ground measurement the KPI method requires, instead of using them for calibration, context, stratification or upscaling.",
+      "remedyLessonIds": [
+        "L7.5"
+      ]
+    },
+    {
+      "tag": "baseline-at-endline",
+      "description": "You left the baseline or reference to the end of the project, or used the target as the baseline, when the minimum package requires it to be decided at inception.",
+      "remedyLessonIds": [
+        "L7.4"
+      ]
+    },
+    {
+      "tag": "hide-uncertainty",
+      "description": "You presented a precise-looking result without its coverage, uncertainty and limits, or stretched a finding beyond the districts, seasons or populations it covers.",
+      "remedyLessonIds": [
+        "L7.6"
+      ]
+    }
+  ],
+  "diagnosticTags": {
+    "Q061": {
+      "objectiveIds": [
+        "impact-assessment.O1"
+      ],
+      "misconceptions": {
+        "a": "sole-cause-claim",
+        "d": "method-mismatch"
+      }
+    },
+    "Q062": {
+      "objectiveIds": [
+        "impact-assessment.O1",
+        "impact-assessment.O2"
+      ],
+      "misconceptions": {
+        "a": "sole-cause-claim",
+        "c": "method-mismatch"
+      }
+    },
+    "Q063": {
+      "objectiveIds": [
+        "impact-assessment.O2"
+      ],
+      "misconceptions": {
+        "a": "method-mismatch",
+        "b": "before-after-is-impact",
+        "d": "method-mismatch"
+      }
+    },
+    "Q064": {
+      "objectiveIds": [
+        "impact-assessment.O3"
+      ],
+      "misconceptions": {
+        "b": "trend-agreement-is-triangulation",
+        "d": "trend-agreement-is-triangulation"
+      }
+    },
+    "Q065": {
+      "objectiveIds": [
+        "impact-assessment.O3"
+      ],
+      "misconceptions": {
+        "a": "satellite-replaces-ground",
+        "c": "satellite-replaces-ground",
+        "d": "satellite-replaces-ground"
+      }
+    },
+    "Q066": {
+      "objectiveIds": [
+        "impact-assessment.O2"
+      ],
+      "misconceptions": {
+        "a": "method-mismatch",
+        "b": "method-mismatch",
+        "d": "method-mismatch"
+      }
+    },
+    "Q067": {
+      "objectiveIds": [
+        "impact-assessment.O4"
+      ],
+      "misconceptions": {
+        "a": "baseline-at-endline",
+        "c": "baseline-at-endline",
+        "d": "baseline-at-endline"
+      }
+    },
+    "Q068": {
+      "objectiveIds": [
+        "impact-assessment.O5"
+      ],
+      "misconceptions": {
+        "a": "hide-uncertainty",
+        "b": "hide-uncertainty",
+        "c": "hide-uncertainty"
+      }
+    },
+    "Q069": {
+      "objectiveIds": [
+        "impact-assessment.O6"
+      ]
+    },
+    "Q070": {
+      "objectiveIds": [
+        "impact-assessment.O6"
+      ],
+      "misconceptions": {
+        "a": "method-mismatch"
+      }
+    }
+  },
+  "questions": [
+    {
+      "id": "Q281",
+      "topicId": "impact-assessment",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "impact-assessment.O1"
+      ],
+      "question": "A draft investor report says the CIMMYT variety caused the yield increase in the project area. What does the framework ask you to claim instead?",
+      "options": [
+        {
+          "id": "a",
+          "text": "That CIMMYT alone caused the change, because the variety was the only new input"
+        },
+        {
+          "id": "b",
+          "text": "That no claim can be made until every other factor has been ruled out"
+        },
+        {
+          "id": "c",
+          "text": "CIMMYT's contribution to the change, alongside rainfall, prices and partners"
+        },
+        {
+          "id": "d",
+          "text": "That the change should be reported as an output of the project"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The framework seeks credible evidence of the role CIMMYT's technologies, partnerships, capacity and services played alongside other factors. It explicitly rejects sole-cause claims, but it does not ask you to stay silent until every other factor is excluded.",
+      "source": {
+        "section": "2.4",
+        "title": "Impact",
+        "kind": "application"
+      },
+      "reviewTip": "Read the last paragraph of section 2.4 and underline the word contribution."
+    },
+    {
+      "id": "Q282",
+      "topicId": "impact-assessment",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "impact-assessment.O1"
+      ],
+      "question": "Which statement is a contribution claim as the framework defines it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adopting farms out-yielded similar non-adopting farms; the variety, seed partners and advice played a role alongside two good seasons"
+        },
+        {
+          "id": "b",
+          "text": "Yields in the project area rose above the target, so the project has achieved its planned impact in the two seasons"
+        },
+        {
+          "id": "c",
+          "text": "The project delivered seed to four thousand farmers across the area, which demonstrates impact at scale"
+        },
+        {
+          "id": "d",
+          "text": "The yield rise is fully explained by the project, because no other intervention was present in the area"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "A contribution claim names the role CIMMYT's technologies, partnerships and services played alongside other factors, backed by a comparison. A target met or a delivery count is not impact evidence, and a sole-cause claim is what the framework rules out.",
+      "source": {
+        "section": "2.4",
+        "title": "Impact",
+        "kind": "application"
+      },
+      "reviewTip": "Check a claim for two things: a comparison, and the words alongside other factors."
+    },
+    {
+      "id": "Q283",
+      "topicId": "impact-assessment",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "impact-assessment.O2"
+      ],
+      "question": "What is a counterfactual, in plain terms?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The baseline value measured before the project started"
+        },
+        {
+          "id": "b",
+          "text": "A credible estimate of what would have happened without the intervention"
+        },
+        {
+          "id": "c",
+          "text": "The target the project set for its impact indicator"
+        },
+        {
+          "id": "d",
+          "text": "The national trend for the same indicator over the same years"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "A counterfactual is a credible estimate of what would have happened without the intervention, often from a comparison group. A baseline tells you where things started, not where they would have gone on their own.",
+      "source": {
+        "section": "2.4",
+        "title": "Impact",
+        "kind": "direct"
+      },
+      "reviewTip": "Say it in one sentence: what would have happened anyway?"
+    },
+    {
+      "id": "Q284",
+      "topicId": "impact-assessment",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "impact-assessment.O2"
+      ],
+      "question": "A project measured yields at baseline and endline on its own farms. Yields rose. Why is this not yet evidence of the intervention's effect?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because yields have to be measured on station plots before any farm-level claim can be made"
+        },
+        {
+          "id": "b",
+          "text": "Because endline surveys only count when central MEAL runs them directly"
+        },
+        {
+          "id": "c",
+          "text": "Because baseline measurements are not part of the minimum MEAL package"
+        },
+        {
+          "id": "d",
+          "text": "Because the rise might have happened anyway, and nothing shows what would have occurred without it"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Before-and-after shows change, and rain, prices and other programmes move the before and after too. Without a counterfactual there is no estimate of what the project added, however good the baseline was.",
+      "source": {
+        "section": "2.4",
+        "title": "Impact",
+        "kind": "application"
+      },
+      "reviewTip": "Picture the split-screen farm: which field is missing from a before-and-after design?"
+    },
+    {
+      "id": "Q285",
+      "topicId": "impact-assessment",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "impact-assessment.O2"
+      ],
+      "question": "Which question is a counterfactual impact evaluation designed to answer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "How much did the project spend per farmer reached?"
+        },
+        {
+          "id": "b",
+          "text": "How far did the practice spread beyond the surveyed plots?"
+        },
+        {
+          "id": "c",
+          "text": "How much did yields differ from what they would have been without the intervention?"
+        },
+        {
+          "id": "d",
+          "text": "What might yields look like under a drier future climate?"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "A counterfactual evaluation estimates an effect against what would have happened anyway. Spread across space is a geospatial question and a future climate is a scenario question; cost per farmer is performance analysis.",
+      "source": {
+        "section": "2.5",
+        "title": "The Five Evidence Functions",
+        "kind": "application"
+      },
+      "reviewTip": "Match each method family in 2.4 to the kind of question it can carry."
+    },
+    {
+      "id": "Q286",
+      "topicId": "impact-assessment",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "impact-assessment.O4"
+      ],
+      "question": "A project's outcome method needs a comparison group, but the team says it will sort that out at endline. What does the minimum package require?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A baseline, comparison group or other valid reference planned at inception, or a documented alternative"
+        },
+        {
+          "id": "b",
+          "text": "A larger endline sample, so that the missing reference does not affect the estimate"
+        },
+        {
+          "id": "c",
+          "text": "Using the project target as the baseline when the outcome study starts"
+        },
+        {
+          "id": "d",
+          "text": "Waiting for the annual KPI run to supply a national reference value"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Element 6 of the minimum package requires a baseline, comparison group or other valid reference where the method needs one, decided at inception, with a documented alternative otherwise. A bigger endline cannot recover a comparison that was never set up.",
+      "source": {
+        "section": "5.4",
+        "title": "Minimum MEAL Implementation Package",
+        "kind": "application"
+      },
+      "reviewTip": "Read element 6 of the minimum package and note the words at inception in the opening line."
+    },
+    {
+      "id": "Q287",
+      "topicId": "impact-assessment",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "impact-assessment.O3"
+      ],
+      "question": "A farmer survey and crop cuts both measure yield on the same sampled plots in the same season. Does the second source strengthen the claim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, because two different methods can never be compared with each other"
+        },
+        {
+          "id": "b",
+          "text": "No, because only satellite imagery can confirm a plot-level yield estimate"
+        },
+        {
+          "id": "c",
+          "text": "Yes, because any extra source adds weight regardless of what it measures"
+        },
+        {
+          "id": "d",
+          "text": "Yes, because it measures the same construct, population, geography and period under compatible definitions"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The triangulation rule is met: same yield construct, same plots, same place, same season. A source does not add weight merely by existing; it adds weight when the five conditions hold.",
+      "source": {
+        "section": "2.6",
+        "title": "The Evidence Stack",
+        "kind": "application"
+      },
+      "reviewTip": "Run the five conditions of the triangulation rule as a checklist."
+    },
+    {
+      "id": "Q288",
+      "topicId": "impact-assessment",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "impact-assessment.O3"
+      ],
+      "question": "The KPI method for yield requires crop cuts. Which use of satellite imagery does the framework allow?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Replacing the crop cuts, because imagery covers more area"
+        },
+        {
+          "id": "b",
+          "text": "Reporting imagery-based estimates as direct observations"
+        },
+        {
+          "id": "c",
+          "text": "Calibration, contextualisation, stratification or upscaling under documented rules"
+        },
+        {
+          "id": "d",
+          "text": "Skipping ground calibration once the imagery is high resolution"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Satellite and secondary data do not replace ground observations where the KPI method requires direct measurement. They are used for calibration, contextualisation, stratification or upscaling under documented rules.",
+      "source": {
+        "section": "2.6",
+        "title": "The Evidence Stack",
+        "kind": "direct"
+      },
+      "reviewTip": "Read the second sentence of the triangulation rule in section 2.6."
+    },
+    {
+      "id": "Q289",
+      "topicId": "impact-assessment",
+      "difficulty": "foundation",
+      "pool": "practice",
+      "objectiveIds": [
+        "impact-assessment.O5"
+      ],
+      "question": "Section 3.3 says every institutional result is reported with four things. Which four?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Target, deadline, budget and investor contact"
+        },
+        {
+          "id": "b",
+          "text": "Coverage, uncertainty, provenance and method quality"
+        },
+        {
+          "id": "c",
+          "text": "Reach, outputs, outcomes and impact"
+        },
+        {
+          "id": "d",
+          "text": "The sum of project totals and the number of projects"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Institutional values are reported with their coverage, uncertainty, provenance and method quality, and are never an unqualified sum of project totals. The other lists describe planning fields or results levels, not how a result is qualified.",
+      "source": {
+        "section": "3.3",
+        "title": "From Observation-Level Data to Decision-Relevant Insights",
+        "kind": "direct"
+      },
+      "reviewTip": "Find the sentence in 3.3 that begins The result is reported with."
+    },
+    {
+      "id": "Q290",
+      "topicId": "impact-assessment",
+      "difficulty": "applied",
+      "pool": "practice",
+      "objectiveIds": [
+        "impact-assessment.O6"
+      ],
+      "question": "A severe drought hits the project area in year two. The team wants to measure how adopters fared. Which cadence row applies, and who leads?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The annual KPI run, led by the Data Group"
+        },
+        {
+          "id": "b",
+          "text": "The quarterly evidence review, led by the project lead alone"
+        },
+        {
+          "id": "c",
+          "text": "Continuous data-quality checks, led by the Focal Point"
+        },
+        {
+          "id": "d",
+          "text": "Trigger-based shock-event measurement, led with central MEAL and evaluation specialists"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The midterm, endline or trigger-based row covers shock-event measurement where relevant, and impact evidence sits with central MEAL and science and evaluation specialists. The project supplies source data, context and implementation history; it does not run the impact study alone.",
+      "source": {
+        "section": "5.7",
+        "title": "Operating Cadence and Assurance",
+        "kind": "application"
+      },
+      "reviewTip": "Read the fourth row of the cadence table together with the impact row in 5.2."
+    },
+    {
+      "id": "Q291",
+      "topicId": "impact-assessment",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "impact-assessment.O1"
+      ],
+      "question": "Maize yields in a Kenyan project area rose over two seasons of good rain and strong prices. The investor asks what CIMMYT achieved. Which claim fits the framework?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CIMMYT caused the yield rise, because its variety was planted across the area"
+        },
+        {
+          "id": "b",
+          "text": "CIMMYT contributed to the rise alongside rainfall, prices and partners, as far as the evidence shows"
+        },
+        {
+          "id": "c",
+          "text": "The yield rise proves impact, because it exceeded the target set at inception"
+        },
+        {
+          "id": "d",
+          "text": "Nothing can be claimed, because external factors were present in both seasons"
+        }
+      ],
+      "correctOptionId": "b",
+      "misconceptions": {
+        "a": "sole-cause-claim",
+        "c": "before-after-is-impact"
+      },
+      "explanation": "The framework asks for credible evidence of CIMMYT's contribution alongside other factors, which is exactly what rain and prices are. A sole-cause claim overreaches, and a target exceeded is change, not an effect.",
+      "source": {
+        "section": "2.4",
+        "title": "Impact",
+        "kind": "application"
+      },
+      "reviewTip": "When context moved the result, name the context and claim contribution."
+    },
+    {
+      "id": "Q292",
+      "topicId": "impact-assessment",
+      "difficulty": "foundation",
+      "pool": "check",
+      "objectiveIds": [
+        "impact-assessment.O1"
+      ],
+      "question": "How do attribution and contribution differ, as section 2.4 and the glossary use the terms?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Attribution estimates how much of a change the intervention caused; contribution describes its role alongside other factors"
+        },
+        {
+          "id": "b",
+          "text": "Attribution applies to output-level results; contribution applies only to outcome-level results"
+        },
+        {
+          "id": "c",
+          "text": "Attribution is done by project teams; contribution is done by central MEAL and its specialists"
+        },
+        {
+          "id": "d",
+          "text": "Attribution is the claim CIMMYT seeks; contribution is a weaker claim the framework avoids"
+        }
+      ],
+      "correctOptionId": "a",
+      "misconceptions": {
+        "d": "sole-cause-claim"
+      },
+      "explanation": "Attribution estimates how much of an observed change an intervention caused, usually against a counterfactual; contribution describes the role played alongside other factors. The framework names both as impact methods, and the claim it seeks is contribution.",
+      "source": {
+        "section": "2.4",
+        "title": "Impact",
+        "kind": "direct"
+      },
+      "reviewTip": "Compare the glossary entries for attribution and contribution side by side."
+    },
+    {
+      "id": "Q293",
+      "topicId": "impact-assessment",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "impact-assessment.O2"
+      ],
+      "question": "A team compares adopters' yields with the yields of similar farms that did not adopt, measured over the same seasons. What does the second group provide?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An estimate of what would have happened without the intervention"
+        },
+        {
+          "id": "b",
+          "text": "A baseline value for the adopting farms"
+        },
+        {
+          "id": "c",
+          "text": "Proof that the variety was the sole cause of any difference"
+        },
+        {
+          "id": "d",
+          "text": "A national benchmark for the yield indicator"
+        }
+      ],
+      "correctOptionId": "a",
+      "misconceptions": {
+        "c": "sole-cause-claim"
+      },
+      "explanation": "A comparison group stands in for the missing second field: its result estimates what would have happened anyway, which is the counterfactual. Even a clear gap is the effect of the whole package alongside other factors, not proof of sole cause.",
+      "source": {
+        "section": "5.4",
+        "title": "Minimum MEAL Implementation Package",
+        "kind": "application"
+      },
+      "reviewTip": "Say what a comparison group is for in one sentence without using the word control."
+    },
+    {
+      "id": "Q294",
+      "topicId": "impact-assessment",
+      "difficulty": "advanced",
+      "pool": "check",
+      "objectiveIds": [
+        "impact-assessment.O2"
+      ],
+      "question": "Yields on project farms rose from baseline to endline. Yields on comparison farms rose by about the same amount. What is the most defensible reading?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The project worked, because yields on project farms rose above their baseline"
+        },
+        {
+          "id": "b",
+          "text": "The comparison farms must have received the intervention as well"
+        },
+        {
+          "id": "c",
+          "text": "The evidence shows no effect of the intervention; something else moved both groups"
+        },
+        {
+          "id": "d",
+          "text": "The baseline on the project farms must have been measured wrongly"
+        }
+      ],
+      "correctOptionId": "c",
+      "misconceptions": {
+        "a": "before-after-is-impact"
+      },
+      "explanation": "When the comparison group moves the same way, the gap is close to zero and the before-and-after rise is not an effect of the intervention. Rain, prices or another programme is the likelier explanation, and the report should say so with its limits.",
+      "source": {
+        "section": "2.4",
+        "title": "Impact",
+        "kind": "application"
+      },
+      "reviewTip": "Look at the gap between groups, not the rise within one group."
+    },
+    {
+      "id": "Q295",
+      "topicId": "impact-assessment",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "impact-assessment.O2"
+      ],
+      "question": "A programme wants to know how regional yields might change by 2035 under a drier climate if adoption continues. Which method family does the framework name for this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Counterfactual impact evaluation"
+        },
+        {
+          "id": "b",
+          "text": "Descriptive analysis of delivery records"
+        },
+        {
+          "id": "c",
+          "text": "Modelling and scenario analysis"
+        },
+        {
+          "id": "d",
+          "text": "Attribution against a comparison group"
+        }
+      ],
+      "correctOptionId": "c",
+      "misconceptions": {
+        "a": "method-mismatch",
+        "b": "method-mismatch",
+        "d": "method-mismatch"
+      },
+      "explanation": "A future under assumed conditions cannot be observed, so it is estimated by modelling and scenario analysis. Counterfactual and attribution methods estimate effects that have already occurred, and descriptive analysis only counts what was delivered.",
+      "source": {
+        "section": "2.4",
+        "title": "Impact",
+        "kind": "application"
+      },
+      "reviewTip": "Ask whether the question is about something that happened or something that might."
+    },
+    {
+      "id": "Q296",
+      "topicId": "impact-assessment",
+      "difficulty": "advanced",
+      "pool": "check",
+      "objectiveIds": [
+        "impact-assessment.O3"
+      ],
+      "question": "A 2027 adoption survey of project farmers and a national statistics series on all farmers from 2022 both show adoption rising. A colleague says the two sources triangulate. What is wrong?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nothing; two series rising in the same direction confirm the same underlying change"
+        },
+        {
+          "id": "b",
+          "text": "The national series should replace the survey, because it covers far more farmers"
+        },
+        {
+          "id": "c",
+          "text": "They cover different populations and periods, so the second source is context, not triangulation"
+        },
+        {
+          "id": "d",
+          "text": "National statistics should never be used in MEAL analysis of any kind"
+        }
+      ],
+      "correctOptionId": "c",
+      "misconceptions": {
+        "a": "trend-agreement-is-triangulation",
+        "b": "trend-agreement-is-triangulation"
+      },
+      "explanation": "A source strengthens a claim only when it measures the same construct, population, geography and period under compatible definitions. External series are valuable for context, denominators and benchmarking, but agreement in direction is not the test.",
+      "source": {
+        "section": "2.6",
+        "title": "The Evidence Stack",
+        "kind": "application"
+      },
+      "reviewTip": "Before saying triangulated, check population and period first; they fail most often."
+    },
+    {
+      "id": "Q297",
+      "topicId": "impact-assessment",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "impact-assessment.O3"
+      ],
+      "question": "A team proposes to estimate area under conservation agriculture from satellite imagery alone and skip the ground plots the KPI method requires. What does the framework say?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Imagery can replace the plots once it covers the whole project region"
+        },
+        {
+          "id": "b",
+          "text": "Keep the required ground observations; use imagery for calibration or upscaling under documented rules"
+        },
+        {
+          "id": "c",
+          "text": "Imagery is acceptable on its own once the Data Group approves the processing"
+        },
+        {
+          "id": "d",
+          "text": "Imagery should not be used anywhere in the evidence for this indicator"
+        }
+      ],
+      "correctOptionId": "b",
+      "misconceptions": {
+        "a": "satellite-replaces-ground",
+        "c": "satellite-replaces-ground"
+      },
+      "explanation": "Satellite data do not replace ground observations where the KPI method requires direct measurement. They have a real role, mapping land under practices after calibration with ground observations, which is why banning them is also wrong.",
+      "source": {
+        "section": "2.6",
+        "title": "The Evidence Stack",
+        "kind": "application"
+      },
+      "reviewTip": "Check the evidence stack's earth-observation row: coverage and extrapolation after calibration."
+    },
+    {
+      "id": "Q298",
+      "topicId": "impact-assessment",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "impact-assessment.O4"
+      ],
+      "question": "At inception a Large project confirms that its impact method needs a comparison group. When is the right time to design it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "At endline, once it is clear which farms adopted and which did not"
+        },
+        {
+          "id": "b",
+          "text": "During the annual KPI run in the project's final year"
+        },
+        {
+          "id": "c",
+          "text": "After the investor asks for an impact figure in the final report"
+        },
+        {
+          "id": "d",
+          "text": "Now, in the inception MEAL plan, as part of the evaluation design"
+        }
+      ],
+      "correctOptionId": "d",
+      "misconceptions": {
+        "a": "baseline-at-endline",
+        "b": "baseline-at-endline",
+        "c": "baseline-at-endline"
+      },
+      "explanation": "Phase 2 of the lifecycle confirms baseline, endline or panel requirements and the evaluation design, and the minimum package requires the reference before implementation. A comparison group chosen at endline, after adoption is known, cannot stand in for what would have happened anyway.",
+      "source": {
+        "section": "5.1",
+        "title": "Project Lifecycle: MEAL from Proposal to Impact",
+        "kind": "application"
+      },
+      "reviewTip": "Find the Phase 2 row in the lifecycle table and the RACI line for baseline, endline and evaluation studies."
+    },
+    {
+      "id": "Q299",
+      "topicId": "impact-assessment",
+      "difficulty": "advanced",
+      "pool": "check",
+      "objectiveIds": [
+        "impact-assessment.O4"
+      ],
+      "question": "A project has no feasible comparison group and no baseline for an outcome its method would normally measure against one. What does the minimum package require?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Drop the outcome from the results framework altogether"
+        },
+        {
+          "id": "b",
+          "text": "Record the target as the baseline and proceed with the study"
+        },
+        {
+          "id": "c",
+          "text": "Reconstruct a baseline from farmer memory at endline"
+        },
+        {
+          "id": "d",
+          "text": "Document a valid alternative reference, agreed at inception"
+        }
+      ],
+      "correctOptionId": "d",
+      "misconceptions": {
+        "b": "baseline-at-endline",
+        "c": "baseline-at-endline"
+      },
+      "explanation": "Element 6 of the minimum package asks for a baseline, comparison group or other valid reference where the method requires it, and otherwise a documented alternative. The target is a wish, not a reference, and an endline reconstruction is improvised rather than agreed.",
+      "source": {
+        "section": "5.4",
+        "title": "Minimum MEAL Implementation Package",
+        "kind": "application"
+      },
+      "reviewTip": "Read the words otherwise a documented alternative in element 6 and ask what documented means."
+    },
+    {
+      "id": "Q300",
+      "topicId": "impact-assessment",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "impact-assessment.O5"
+      ],
+      "question": "An impact brief for leadership reports a single headline yield gain with no coverage or uncertainty. Which change does the Analysis function require?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Remove the number, because impact estimates should not be published"
+        },
+        {
+          "id": "b",
+          "text": "Move the caveats to an internal annex so the brief stays clean"
+        },
+        {
+          "id": "c",
+          "text": "Replace the gain with the number of farmers reached"
+        },
+        {
+          "id": "d",
+          "text": "Add the coverage, uncertainty and limits of the claim"
+        }
+      ],
+      "correctOptionId": "d",
+      "misconceptions": {
+        "b": "hide-uncertainty",
+        "c": "method-mismatch"
+      },
+      "explanation": "The Analysis function requires methods that match the question and claim and explicit documentation of uncertainty and limits. Caveats hidden in an annex are not explicit, and a reach count answers a different question.",
+      "source": {
+        "section": "2.5",
+        "title": "The Five Evidence Functions",
+        "kind": "application"
+      },
+      "reviewTip": "Read the Analysis row of the five functions table and find the word explicitly."
+    },
+    {
+      "id": "Q301",
+      "topicId": "impact-assessment",
+      "difficulty": "advanced",
+      "pool": "check",
+      "objectiveIds": [
+        "impact-assessment.O5"
+      ],
+      "question": "Which report wording keeps the claim within its evidence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adopters in three districts out-yielded comparison farms in two good seasons; the estimate is uncertain and lasting change is not yet shown"
+        },
+        {
+          "id": "b",
+          "text": "The project raised yields across the whole country, as the results from the three study districts clearly demonstrate"
+        },
+        {
+          "id": "c",
+          "text": "Yields rose between baseline and endline on project farms, so the intervention has caused lasting impact in the area"
+        },
+        {
+          "id": "d",
+          "text": "The project met its yield target in both seasons, which confirms impact at scale for the investor report"
+        }
+      ],
+      "correctOptionId": "a",
+      "misconceptions": {
+        "b": "hide-uncertainty",
+        "c": "before-after-is-impact",
+        "d": "before-after-is-impact"
+      },
+      "explanation": "The first wording names the comparison, the coverage, the context, the uncertainty and what is not yet shown. The others stretch the coverage, treat before-and-after as effect, or treat a target met as impact.",
+      "source": {
+        "section": "3.3",
+        "title": "From Observation-Level Data to Decision-Relevant Insights",
+        "kind": "application"
+      },
+      "reviewTip": "Check every impact sentence for coverage, comparison, uncertainty and the word lasting."
+    },
+    {
+      "id": "Q302",
+      "topicId": "impact-assessment",
+      "difficulty": "foundation",
+      "pool": "check",
+      "objectiveIds": [
+        "impact-assessment.O6"
+      ],
+      "question": "Which cadence row covers an impact study prompted by a severe mid-project shock?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Continuous or monthly data-quality checks"
+        },
+        {
+          "id": "b",
+          "text": "Midterm, endline or trigger-based studies"
+        },
+        {
+          "id": "c",
+          "text": "Quarterly or seasonal evidence review"
+        },
+        {
+          "id": "d",
+          "text": "Annual institutional KPI run"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The fourth cadence row covers outcome or impact studies, contribution and evaluation analysis, and shock-event measurement where relevant. The other rows handle quality flags, implementation decisions and the annual KPI recompute.",
+      "source": {
+        "section": "5.7",
+        "title": "Operating Cadence and Assurance",
+        "kind": "direct"
+      },
+      "reviewTip": "Read the purpose column of the cadence table row by row."
+    },
+    {
+      "id": "Q303",
+      "topicId": "impact-assessment",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "impact-assessment.O6"
+      ],
+      "question": "A flood hits the project area mid-project. The project lead drafts the impact study alone and plans to publish an institutional impact claim. What does the division of responsibility say?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Central MEAL and evaluation specialists lead; the project provides source data and context"
+        },
+        {
+          "id": "b",
+          "text": "The project lead owns impact evidence, so the plan is in order"
+        },
+        {
+          "id": "c",
+          "text": "The Data Group owns impact evidence once the data system is live"
+        },
+        {
+          "id": "d",
+          "text": "No impact study is possible until the project has closed"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Impact evidence is owned by central MEAL with science and evaluation specialists, and projects provide source data and context. A trigger-based study is possible mid-project, but the institutional claim is not the project lead's to publish alone.",
+      "source": {
+        "section": "5.2",
+        "title": "Division of Responsibility: Project Delivery vs. Institutional MEAL",
+        "kind": "application"
+      },
+      "reviewTip": "Read the impact row of the 5.2 table, then the Phase 6 project role in 5.1."
+    },
+    {
+      "id": "Q304",
+      "topicId": "impact-assessment",
+      "difficulty": "applied",
+      "pool": "check",
+      "objectiveIds": [
+        "impact-assessment.O6"
+      ],
+      "question": "In the Phase 6 RACI, who is accountable for contribution analysis and institutional impact claims, and who is responsible for doing the work?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The project lead is accountable; the Project MEAL Focal Point is responsible"
+        },
+        {
+          "id": "b",
+          "text": "The MEAL Group Lead is accountable; the Evaluation, Learning and Accountability pillar is responsible"
+        },
+        {
+          "id": "c",
+          "text": "The Regional MEAL Lead is accountable; the Data Group is responsible"
+        },
+        {
+          "id": "d",
+          "text": "The Data Group is accountable; the Evidence Systems pillar is responsible"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The RACI line for contribution analysis and institutional impact claims gives R to Pillar C and A to the MEAL Group Lead, with the project lead consulted. The Focal Point is responsible for the project's part of outcome and impact studies, not for the institutional claim.",
+      "source": {
+        "section": "5.1",
+        "title": "Project Lifecycle: MEAL from Proposal to Impact",
+        "kind": "direct"
+      },
+      "reviewTip": "Find the two Phase 6 lines in the RACI matrix and compare their A columns."
+    }
+  ],
+  "glossaryAdditions": [
+    {
+      "term": "Comparison group",
+      "definition": "Similar farms, households or institutions that did not receive the intervention, measured in the same way over the same period, whose result stands in for what would have happened without it.",
+      "section": "5.4"
+    }
+  ]
+}
